@@ -1,0 +1,74 @@
+{
+  "snapshotDate": "2026-10-07",
+  "postsEndpoint": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts",
+  "authors": [
+    {
+      "id": 1,
+      "name": "Raul Morales",
+      "slug": "raulmorales",
+      "profileUrl": "https://blog.rauvia.com.mx/author/raulmorales/"
+    }
+  ],
+  "posts": [
+    {
+      "id": 45,
+      "slug": "que-revisar-antes-implementar-crm",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/45"
+    },
+    {
+      "id": 42,
+      "slug": "prospectos-no-avanzan-demanda-seguimiento-decision-2",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/42"
+    },
+    {
+      "id": 34,
+      "slug": "que-es-frente-comercial-no-es-pagina-web",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/34"
+    },
+    {
+      "id": 31,
+      "slug": "cuando-experiencia-se-comunica-como-catalogo",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/31"
+    },
+    {
+      "id": 28,
+      "slug": "brecha-capacidad-real-percepcion-mercado",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/28"
+    },
+    {
+      "id": 39,
+      "slug": "prospectos-no-avanzan-demanda-seguimiento-decision",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/39"
+    },
+    {
+      "id": 25,
+      "slug": "cuando-whatsapp-carga-con-todo-el-proceso-comercial",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/25"
+    },
+    {
+      "id": 22,
+      "slug": "por-que-pyme-pierde-oportunidades-clientes-interesados",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/22"
+    },
+    {
+      "id": 18,
+      "slug": "la-ilusion-del-crecimiento-sin-capacidad",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/18"
+    },
+    {
+      "id": 15,
+      "slug": "la-diferencia-entre-informacion-y-comprension",
+      "authorId": 1,
+      "metadataUrl": "https://blog.rauvia.com.mx/wp-json/wp/v2/posts/15"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "nodeEnv": "production",
+  "argv": [
+    "node",
+    "dist/server.cjs"
+  ],
+  "loadedViteOrRolldown": [],
+  "nodeWorkersStarted": 0,
+  "childProcessesStarted": 0,
+  "activeHandles": [
+    "Server"
+  ]
+}

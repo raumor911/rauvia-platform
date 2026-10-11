@@ -1,0 +1,37 @@
+[
+  {
+    "classification": "GLOBAL MOBILE INFRASTRUCTURE",
+    "files": "src/styles/mobileExperience.css; src/components/MainNavbar.tsx; Navbar.tsx; Footer.tsx; src/App.tsx",
+    "change": "Capa opt-in en las ocho páginas; header, drawer, safe areas, anclas, footer y espacio de lectura. Landings mantienen la rama anterior."
+  },
+  {
+    "classification": "PAGE-SPECIFIC RESPONSIVE",
+    "files": "HeroSection.tsx; SolucionesPage.tsx; AethryonPage.tsx; Ruta90Page.tsx; FrenteComercialPage.tsx; NosotrosPage.tsx",
+    "change": "Jerarquía de hero, selector y flujo, tablas, navegación de capítulos y paquetes. Texto, destinos y narrativa conservados."
+  },
+  {
+    "classification": "PERFORMANCE",
+    "files": "src/lib/routeLoader.ts; src/main.tsx; src/App.tsx; scripts/render-static.tsx; scripts/prerender.js; vite.config.ts; componentes de imágenes; public/media/*mobile*.webp y *optimized.svg",
+    "change": "Carga por ruta, preloads deduplicados, CSS por cierre de ruta, deferred WP fetch en Recursos, imágenes con tamaños, lazy y prioridad basada en LCP."
+  },
+  {
+    "classification": "ACCESSIBILITY",
+    "files": "MainNavbar.tsx; AIAssistantWidget.tsx; SolucionesPage.tsx; Ruta90Page.tsx; mobileExperience.css",
+    "change": "Foco, Escape, inert, scroll lock restaurado, 44 px, tablas semánticas, regiones de desplazamiento y disclosures nativos."
+  },
+  {
+    "classification": "FOLD ENHANCEMENT",
+    "files": "mobileExperience.css; src/App.tsx",
+    "change": "Mejora experimental sólo cuando el navegador declara dos segmentos reales; reserva el primer panel de lectura y separa bisagra. No inferencia por ancho."
+  },
+  {
+    "classification": "ANALYTICS",
+    "files": "src/lib/analytics.ts",
+    "change": "Añade ancho, alto, orientación y clase de viewport a eventos existentes sólo en páginas principales; segmentos únicamente cuando matchMedia declara dos."
+  },
+  {
+    "classification": "TEST ONLY",
+    "files": "tests/mobile-experience.test.mjs; tests/fixtures/v72-*.json; ajustes a aethryon-ux, ruta90.test y ruta90-events; docs/v72-evidencias",
+    "change": "Regresión semántica, transferencias, hints existentes, controles excluidos y mocks de viewport sin sustituir QA físico."
+  }
+]

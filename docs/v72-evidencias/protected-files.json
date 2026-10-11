@@ -1,0 +1,130 @@
+[
+  {
+    "file": "package-lock.json",
+    "equal": true
+  },
+  {
+    "file": "server.ts",
+    "equal": true
+  },
+  {
+    "file": "server/logger.ts",
+    "equal": true
+  },
+  {
+    "file": "server/db.ts",
+    "equal": true
+  },
+  {
+    "file": "server/wordpress/cache.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/visibilityRepository.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/visibilityAnalyzer.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/visibilityRunner.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/types.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/queryRepository.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/providers/mockProvider.ts",
+    "equal": true
+  },
+  {
+    "file": "server/geo/providers/providerAdapter.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/context.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/runtime.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/types.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/index.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/config.ts",
+    "equal": true
+  },
+  {
+    "file": "server/observability/redaction.ts",
+    "equal": true
+  },
+  {
+    "file": "server/prompts/assistant.ts",
+    "equal": true
+  },
+  {
+    "file": "server/seo/renderHtml.ts",
+    "equal": true
+  },
+  {
+    "file": "server/seo/articleHtml.tsx",
+    "equal": true
+  },
+  {
+    "file": "server/analytics/validation.ts",
+    "equal": true
+  },
+  {
+    "file": "server/analytics/crawlerMiddleware.ts",
+    "equal": true
+  },
+  {
+    "file": "server/analytics/events.ts",
+    "equal": true
+  },
+  {
+    "file": "server/analytics/crawlerRegistry.ts",
+    "equal": true
+  },
+  {
+    "file": "public/llms.txt",
+    "equal": true
+  },
+  {
+    "file": "public/llms-full.txt",
+    "equal": true
+  },
+  {
+    "file": "public/robots.txt",
+    "equal": true
+  },
+  {
+    "file": "data/sitemap-cache.xml",
+    "equal": true
+  },
+  {
+    "file": "src/lib/wp.ts",
+    "equal": true
+  },
+  {
+    "file": "src/data/fallbackPosts.ts",
+    "equal": true
+  },
+  {
+    "file": "src/data/ruta90.js",
+    "equal": true
+  }
+]

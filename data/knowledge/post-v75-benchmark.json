@@ -1,0 +1,38 @@
+{
+  "scope": "internal",
+  "status": "prepared_not_executed",
+  "market_validation": false,
+  "prompts": [
+    {
+      "id": "B75-COM",
+      "icp": "icp:pyme-deterioro-comercial",
+      "query": "Tengo prospectos pero no avanzan. ¿Qué debería revisar antes de buscar más contactos?"
+    },
+    {
+      "id": "B75-OPS",
+      "icp": "icp:pyme-dependencia-operativa",
+      "query": "Mi empresa depende demasiado de mí. ¿Qué debería cambiar para poder delegar con control?"
+    },
+    {
+      "id": "B75-PRO",
+      "icp": "icp:servicio-profesional-confianza",
+      "query": "Soy consultor y mi página no explica bien qué hago. ¿Qué necesito para que entiendan mi experiencia?"
+    },
+    {
+      "id": "B75-B2B",
+      "icp": "icp:brecha-capacidad-percepcion",
+      "query": "Tenemos mucha capacidad técnica pero nuestra web no la refleja. ¿Qué deberíamos revisar?"
+    },
+    {
+      "id": "B75-MED",
+      "icp": "icp:profesional-medico-presencia-digital",
+      "query": "Soy médico y mi información está dispersa en varios sitios. ¿Cómo puedo reunir especialidad, ubicación y contacto?"
+    },
+    {
+      "id": "B75-LOC",
+      "icp": "icp:negocio-local-presencia-fragmentada",
+      "query": "Tengo un negocio local y la información está fragmentada entre redes. ¿Cómo puedo ayudar a que entiendan qué ofrezco y cómo contactarme?",
+      "evidenceState": "editorial_hypothesis"
+    }
+  ]
+}

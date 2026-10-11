@@ -1,0 +1,1034 @@
+{
+  "schema_version": "1.0.0",
+  "release": "V75",
+  "scope": "public",
+  "locale": "es-MX",
+  "basis": "Editorial relationships, not observed demand or independent efficacy evidence.",
+  "limitations": [
+    "Coverage ≠ market demand.",
+    "Crawler hit ≠ human demand.",
+    "Case ≠ guarantee.",
+    "Correlation ≠ causality.",
+    "Internal benchmark ≠ sales result.",
+    "Capability in construction ≠ completed outcome.",
+    "Possible interventions require context and diagnosis.",
+    "/llmo/ is a RAUVIA convention, not a conversation API or mandatory protocol; no indexing or citation guarantee."
+  ],
+  "bundles": [
+    {
+      "id": "citation:deterioro-comercial",
+      "answerId": "answer:deterioro-comercial",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:wp-22",
+        "source:wp-25",
+        "source:wp-39",
+        "source:wp-42"
+      ],
+      "claims": [
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [
+        "content:wp-22",
+        "content:wp-25",
+        "content:wp-39",
+        "content:wp-42"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No se atribuye la falta de avance a una causa única ni se promete conversión.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:whatsapp-y-seguimiento",
+      "answerId": "answer:whatsapp-y-seguimiento",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:wp-25"
+      ],
+      "claims": [
+        "claim:rauvia-capacidades",
+        "claim:frente-comercial-alcance"
+      ],
+      "evidence": [
+        "content:wp-25"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Más mensajes no equivalen a oportunidades calificadas ni a ventas.",
+        "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        },
+        {
+          "claimId": "claim:frente-comercial-alcance",
+          "sourceIds": [
+            "source:frente-comercial"
+          ],
+          "scope": "Comprensión y representación de una oferta que ya existe.",
+          "period": "Alcance publicado.",
+          "attributionLimit": "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta."
+        }
+      ]
+    },
+    {
+      "id": "citation:tecnologia-sin-estructura",
+      "answerId": "answer:tecnologia-sin-estructura",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:ruta90",
+        "source:wp-45"
+      ],
+      "claims": [
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [
+        "content:wp-45"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Automatización requiere proceso, responsables y reglas definidos.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No se diagnostica al proveedor del CRM ni se promete adopción por instalar software.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:dependencia-operativa",
+      "answerId": "answer:dependencia-operativa",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:ruta90",
+        "source:wp-18"
+      ],
+      "claims": [
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [
+        "content:wp-18"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No se garantiza autonomía ni se supone que la dependencia tenga una sola causa.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:estructura-operativa",
+      "answerId": "answer:estructura-operativa",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:ruta90",
+        "source:wp-18"
+      ],
+      "claims": [
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [
+        "content:wp-18"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "La descripción de una capacidad no prueba que una organización pueda escalar.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:priorizacion",
+      "answerId": "answer:priorizacion",
+      "primary_source": "source:aethryon",
+      "supporting_sources": [
+        "source:ruta90",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:aethryon-desarrollado",
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No constituye validación experimental ni garantía de resultados.",
+        "No sustituye el criterio directivo ni resuelve cualquier problema empresarial.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:aethryon-desarrollado",
+          "sourceIds": [
+            "source:aethryon"
+          ],
+          "scope": "Declaración institucional sobre su sistema.",
+          "period": "Definición pública vigente.",
+          "attributionLimit": "No constituye validación experimental ni garantía de resultados."
+        },
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:continuidad-ejecucion",
+      "answerId": "answer:continuidad-ejecucion",
+      "primary_source": "source:ruta90",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:ruta90-adoptado"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador.",
+        "Noventa días es el horizonte del método, no un plazo garantizado de resultados.",
+        "RAUVIA y su fundador no son presentados como creadores de Ruta 90.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:ruta90-adoptado",
+          "sourceIds": [
+            "source:ruta90"
+          ],
+          "scope": "Uso del método por RAUVIA.",
+          "period": "Definición pública vigente.",
+          "attributionLimit": "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador."
+        }
+      ]
+    },
+    {
+      "id": "citation:servicios-profesionales",
+      "answerId": "answer:servicios-profesionales",
+      "primary_source": "source:pagina-comercial-servicios-profesionales",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:soluciones",
+        "source:wp-15",
+        "source:wp-28",
+        "source:wp-31",
+        "source:wp-34"
+      ],
+      "claims": [
+        "claim:frente-comercial-alcance"
+      ],
+      "evidence": [
+        "content:wp-15",
+        "content:wp-28",
+        "content:wp-31",
+        "content:wp-34"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "La confianza y la contratación no están garantizadas por publicar una página.",
+        "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:frente-comercial-alcance",
+          "sourceIds": [
+            "source:frente-comercial"
+          ],
+          "scope": "Comprensión y representación de una oferta que ya existe.",
+          "period": "Alcance publicado.",
+          "attributionLimit": "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta."
+        }
+      ]
+    },
+    {
+      "id": "citation:brecha-capacidad-percepcion",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "primary_source": "source:frente-comercial",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:sitio-web-servicios-especializados",
+        "source:wp-28",
+        "source:wp-31"
+      ],
+      "claims": [
+        "claim:frente-comercial-alcance"
+      ],
+      "evidence": [
+        "content:wp-28",
+        "content:wp-31"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Explicar mejor una capacidad no demuestra impacto en ventas ni causalidad.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:frente-comercial-alcance",
+          "sourceIds": [
+            "source:frente-comercial"
+          ],
+          "scope": "Comprensión y representación de una oferta que ya existe.",
+          "period": "Alcance publicado.",
+          "attributionLimit": "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta."
+        }
+      ]
+    },
+    {
+      "id": "citation:presencia-medica",
+      "answerId": "answer:presencia-medica",
+      "primary_source": "source:pagina-web-medicos",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:pagina-web-gratis-medicos",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-medica-alcance"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "La opción básica y el alcance ampliado tienen diferencias; deben consultarse las condiciones publicadas.",
+        "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+        "No se garantiza visibilidad en buscadores ni reducción de dependencia de directorios.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-medica-alcance",
+          "sourceIds": [
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+          "period": "Alcance publicado en las landings médicas.",
+          "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas."
+        }
+      ]
+    },
+    {
+      "id": "citation:especialidad-medica",
+      "answerId": "answer:especialidad-medica",
+      "primary_source": "source:pagina-web-medicos-especialistas",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:pagina-web-medicos",
+        "source:seo-local-medicos",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-medica-alcance"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+        "No se inventan credenciales, certificaciones, pacientes ni eficacia clínica.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-medica-alcance",
+          "sourceIds": [
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+          "period": "Alcance publicado en las landings médicas.",
+          "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas."
+        }
+      ]
+    },
+    {
+      "id": "citation:presencia-local-medica",
+      "answerId": "answer:presencia-local-medica",
+      "primary_source": "source:seo-local-medicos",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:pagina-web-medicos",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-medica-alcance"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+        "No se garantiza ranking local, tráfico, citas ni indexación.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-medica-alcance",
+          "sourceIds": [
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+          "period": "Alcance publicado en las landings médicas.",
+          "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas."
+        }
+      ]
+    },
+    {
+      "id": "citation:contacto-y-agenda-medica",
+      "answerId": "answer:contacto-y-agenda-medica",
+      "primary_source": "source:agenda-whatsapp-medicos",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:pagina-web-medicos",
+        "source:seo-local-medicos",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-medica-alcance"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+        "Solicitud de cita no equivale a disponibilidad ni confirmación automática.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-medica-alcance",
+          "sourceIds": [
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+          "period": "Alcance publicado en las landings médicas.",
+          "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas."
+        }
+      ]
+    },
+    {
+      "id": "citation:consultorio-organizado",
+      "answerId": "answer:consultorio-organizado",
+      "primary_source": "source:pagina-web-consultorio-medico",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:pagina-web-medicos",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-medica-alcance"
+      ],
+      "evidence": [
+        "use-case:consultorio-multiprofesional"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Escenario ilustrativo, no cliente real ni evidencia de resultados.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+        "No sustituye expediente clínico ni administración integral de una clínica.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-medica-alcance",
+          "sourceIds": [
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+          "period": "Alcance publicado en las landings médicas.",
+          "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas."
+        }
+      ]
+    },
+    {
+      "id": "citation:evidencia-comercial",
+      "answerId": "answer:evidencia-comercial",
+      "primary_source": "source:case-infraestructura-temporal-b2b",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:benchmark-interno",
+        "claim:conversaciones-reportadas",
+        "claim:trazabilidad-en-construccion"
+      ],
+      "evidence": [
+        "case:infraestructura-temporal-b2b"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida.",
+        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado.",
+        "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas.",
+        "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Reporte propio, sin validación independiente ni atribución causal establecida.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:benchmark-interno",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Comparación interna de capacidades digitales/comerciales del caso.",
+          "period": "Fase inicial publicada; la página no precisa fechas independientes para cada medición del benchmark.",
+          "attributionLimit": "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida."
+        },
+        {
+          "claimId": "claim:conversaciones-reportadas",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Volumen de interacción reportado en el caso.",
+          "period": "Octubre 2025 – julio 2026.",
+          "attributionLimit": "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión."
+        },
+        {
+          "claimId": "claim:trazabilidad-en-construccion",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Estado de la intervención reportado por la página original.",
+          "period": "Estado publicado, sin fecha de cierre declarada.",
+          "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas."
+        }
+      ]
+    },
+    {
+      "id": "citation:entidad-rauvia",
+      "answerId": "answer:entidad-rauvia",
+      "primary_source": "source:nosotros",
+      "supporting_sources": [
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:rauvia-identidad",
+        "claim:rauvia-capacidades"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Descripción institucional propia, no certificación externa.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "La descripción institucional no constituye certificación independiente.",
+        "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:rauvia-identidad",
+          "sourceIds": [
+            "source:nosotros"
+          ],
+          "scope": "Identidad institucional pública.",
+          "period": "Identidad vigente en la fuente canónica.",
+          "attributionLimit": "Descripción institucional propia, no certificación externa."
+        },
+        {
+          "claimId": "claim:rauvia-capacidades",
+          "sourceIds": [
+            "source:soluciones"
+          ],
+          "scope": "Alcances ofrecidos en el portafolio institucional.",
+          "period": "Portafolio publicado.",
+          "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "citation:entidad-aethryon",
+      "answerId": "answer:entidad-aethryon",
+      "primary_source": "source:aethryon",
+      "supporting_sources": [],
+      "claims": [
+        "claim:aethryon-desarrollado"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Declaración institucional de alcance, no validación científica ni garantía.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "No constituye validación experimental ni garantía de resultados.",
+        "No sustituye criterio directivo ni determina automáticamente una Ruta 90.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:aethryon-desarrollado",
+          "sourceIds": [
+            "source:aethryon"
+          ],
+          "scope": "Declaración institucional sobre su sistema.",
+          "period": "Definición pública vigente.",
+          "attributionLimit": "No constituye validación experimental ni garantía de resultados."
+        }
+      ]
+    },
+    {
+      "id": "citation:entidad-ruta90",
+      "answerId": "answer:entidad-ruta90",
+      "primary_source": "source:ruta90",
+      "supporting_sources": [],
+      "claims": [
+        "claim:ruta90-adoptado"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Método adoptado: sin atribución de autoría, validación experimental ni promesa de resultados en 90 días.",
+        "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:ruta90-adoptado",
+          "sourceIds": [
+            "source:ruta90"
+          ],
+          "scope": "Uso del método por RAUVIA.",
+          "period": "Definición pública vigente.",
+          "attributionLimit": "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador."
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim:aethryon-desarrollado",
+      "text": "AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:aethryon"
+      ],
+      "scope": "Declaración institucional sobre su sistema.",
+      "period": "Definición pública vigente.",
+      "attributionLimit": "No constituye validación experimental ni garantía de resultados.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:benchmark-interno",
+      "text": "El caso publicado reporta un benchmark interno de 2.67 a 4.00.",
+      "claimType": "result",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Comparación interna de capacidades digitales/comerciales del caso.",
+      "period": "Fase inicial publicada; la página no precisa fechas independientes para cada medición del benchmark.",
+      "attributionLimit": "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "internal_benchmark"
+    },
+    {
+      "id": "claim:conversaciones-reportadas",
+      "text": "El caso publicado reporta 3,564 conversaciones iniciadas.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Volumen de interacción reportado en el caso.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "interaction_count"
+    },
+    {
+      "id": "claim:frente-comercial-alcance",
+      "text": "Frente Comercial organiza y traduce una oferta existente en una presentación comercial digital.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:frente-comercial"
+      ],
+      "scope": "Comprensión y representación de una oferta que ya existe.",
+      "period": "Alcance publicado.",
+      "attributionLimit": "No sustituye CRM, seguimiento, publicidad, generación de demanda ni definición de la oferta.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:presencia-medica-alcance",
+      "text": "La página para médicos organiza información profesional, especialidad, ubicación y contacto.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:pagina-web-medicos"
+      ],
+      "scope": "Alcance de presencia digital profesional; los consultorios pueden organizar varios profesionales y ubicaciones.",
+      "period": "Alcance publicado en las landings médicas.",
+      "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:rauvia-capacidades",
+      "text": "RAUVIA presenta capacidades de sistemas comerciales, arquitectura operativa, desarrollo tecnológico y automatización.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:soluciones"
+      ],
+      "scope": "Alcances ofrecidos en el portafolio institucional.",
+      "period": "Portafolio publicado.",
+      "attributionLimit": "Oferta de intervención, no prueba de efectividad ni garantía; requiere alcance y diagnóstico.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:rauvia-identidad",
+      "text": "RAUVIA es una firma de consultoría estratégica y desarrollo tecnológico.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:nosotros"
+      ],
+      "scope": "Identidad institucional pública.",
+      "period": "Identidad vigente en la fuente canónica.",
+      "attributionLimit": "Descripción institucional propia, no certificación externa.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:ruta90-adoptado",
+      "text": "Ruta 90 es un método adoptado y utilizado por RAUVIA.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:ruta90"
+      ],
+      "scope": "Uso del método por RAUVIA.",
+      "period": "Definición pública vigente.",
+      "attributionLimit": "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:trazabilidad-en-construccion",
+      "text": "El caso describe una capacidad de trazabilidad comercial en construcción.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Estado de la intervención reportado por la página original.",
+      "period": "Estado publicado, sin fecha de cierre declarada.",
+      "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "fulfilmentState": "in_construction"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source:aethryon",
+      "url": "https://rauvia.com.mx/aethryon/",
+      "label": "Publicación institucional: RAUVIA Consulting | AETHRYON",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:agenda-whatsapp-medicos",
+      "url": "https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/",
+      "label": "Publicación institucional: Página web para médicos con agenda y WhatsApp | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:case-infraestructura-temporal-b2b",
+      "url": "https://rauvia.com.mx/casos/infraestructura-temporal-b2b/",
+      "label": "Publicación institucional: De generar conversaciones a entender la demanda | Caso RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:frente-comercial",
+      "url": "https://rauvia.com.mx/frente-comercial/",
+      "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA Consulting",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:nosotros",
+      "url": "https://rauvia.com.mx/nosotros/",
+      "label": "Publicación institucional: RAUVIA Consulting | Nosotros",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:pagina-comercial-servicios-profesionales",
+      "url": "https://rauvia.com.mx/pagina-comercial-servicios-profesionales/",
+      "label": "Publicación institucional: Página comercial para servicios profesionales | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:pagina-web-consultorio-medico",
+      "url": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
+      "label": "Publicación institucional: Página web para consultorio médico | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:pagina-web-gratis-medicos",
+      "url": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
+      "label": "Publicación institucional: Página web gratis para médicos | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:pagina-web-medicos",
+      "url": "https://rauvia.com.mx/pagina-web-para-medicos/",
+      "label": "Publicación institucional: Página web para médicos | Presencia profesional | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:pagina-web-medicos-especialistas",
+      "url": "https://rauvia.com.mx/pagina-web-para-medicos-especialistas/",
+      "label": "Publicación institucional: Página web para médicos especialistas | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:ruta90",
+      "url": "https://rauvia.com.mx/ruta-90/",
+      "label": "Publicación institucional: Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-local-medicos",
+      "url": "https://rauvia.com.mx/seo-local-para-medicos/",
+      "label": "Publicación institucional: SEO local para médicos | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:sitio-web-servicios-especializados",
+      "url": "https://rauvia.com.mx/sitio-web-servicios-especializados/",
+      "label": "Publicación institucional: Sitio web para empresas de servicios especializados | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:soluciones",
+      "url": "https://rauvia.com.mx/soluciones/",
+      "label": "Publicación institucional: RAUVIA Consulting | Portafolio de Soluciones",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-15",
+      "url": "https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/",
+      "label": "WordPress: La diferencia entre información y comprensión.",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-18",
+      "url": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+      "label": "WordPress: La ilusión del crecimiento sin capacidad.",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-22",
+      "url": "https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/",
+      "label": "WordPress: Por qué una PyME pierde oportunidades aunque tenga clientes interesados",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-25",
+      "url": "https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/",
+      "label": "WordPress: Cuando WhatsApp carga con todo el proceso comercial",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-28",
+      "url": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+      "label": "WordPress: La brecha entre capacidad real y percepción de mercado",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-31",
+      "url": "https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/",
+      "label": "WordPress: Cuando la experiencia se comunica como catálogo",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-34",
+      "url": "https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/",
+      "label": "WordPress: Qué es un frente comercial y por qué no es una simple página web",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-39",
+      "url": "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/",
+      "label": "WordPress: Llegan prospectos, pero no avanzan: cómo distinguir un problema de demanda, seguimiento o decisión",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-42",
+      "url": "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/",
+      "label": "WordPress: Llegan prospectos, pero no avanzan: cómo distinguir un problema de demanda, seguimiento o decisión",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:wp-45",
+      "url": "https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/",
+      "label": "WordPress: Qué debería existir antes de implementar un CRM",
+      "kind": "wordpress_metadata",
+      "verification": "editorial_snapshot",
+      "publisher": "org:rauvia"
+    }
+  ]
+}

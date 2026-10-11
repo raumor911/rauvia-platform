@@ -1,0 +1,123 @@
+{
+  "modifiedExistingSource": [
+    {
+      "path": "src/lib/ruta90Session.js",
+      "V70": "e621150502568628286ff883f9a0ac6f351807f73e6a2deddceef68d843718b8",
+      "V71": "0ecdaf473ab51fbe39b1774574b07404befa57a239b6dfb0b7ccf64dfc6afa15"
+    },
+    {
+      "path": "src/pages/AethryonPage.tsx",
+      "V70": "80f5bb44140b8086c5d644d6e44ca8f7e22ea978b79f9527f2d4be60841409b4",
+      "V71": "95ba43f61efb5d26eb2e98a188497e6e978e13eccff8eae1bc13b8b44797543e"
+    },
+    {
+      "path": "package.json",
+      "V70": "a5f268b545b89b6be2d0545a477e1f841015e9786aa20aeefffd933412288521",
+      "V71": "855133e5a443ad3473d9385690a11e46fb11a5853a2dad908a633a7ec0fd925a"
+    }
+  ],
+  "newSource": [
+    "src/pages/AethryonPage.css"
+  ],
+  "newTests": [
+    "tests/aethryon-ux.test.mjs",
+    "tests/aethryon-events.test.ts",
+    "tests/fixtures/aethryon-v70-seo.json",
+    "tests/fixtures/v70-control-html.json"
+  ],
+  "protectedSourceFilesUnchanged": true,
+  "hashesCompared": 285,
+  "controls": [
+    {
+      "path": "/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "8a26d0b66452e055af5f96f3c3d729baeeee095af3a760dd048775e2065c7f6d",
+      "V71Hash": "8a26d0b66452e055af5f96f3c3d729baeeee095af3a760dd048775e2065c7f6d",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/\">"
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER."
+      ]
+    },
+    {
+      "path": "/soluciones/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "44c57aab3c3d915ec684034fee06945e4f83cd6eaf2707598190b3ac79b10194",
+      "V71Hash": "44c57aab3c3d915ec684034fee06945e4f83cd6eaf2707598190b3ac79b10194",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/soluciones/\">"
+      ],
+      "h1": [
+        "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER ."
+      ]
+    },
+    {
+      "path": "/ruta-90/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "5081fd1bf3770a5032ae32989d23ce6ca3f6d134ae78ca3baea4b832c2712fd6",
+      "V71Hash": "5081fd1bf3770a5032ae32989d23ce6ca3f6d134ae78ca3baea4b832c2712fd6",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/ruta-90/\">"
+      ],
+      "h1": [
+        "Ruta 90: convierte una prioridad en capacidad instalada."
+      ]
+    },
+    {
+      "path": "/frente-comercial/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "a06edbfa1f2537d81e0cbebab869836b057107a8b8f392995579304bb53ba6b7",
+      "V71Hash": "a06edbfa1f2537d81e0cbebab869836b057107a8b8f392995579304bb53ba6b7",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/frente-comercial/\">"
+      ],
+      "h1": [
+        "Haz más fácil entender, confiar y avanzar con tu empresa."
+      ]
+    },
+    {
+      "path": "/nosotros/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "842673bfceb9a964f1cdc65066039b8f6b7595e2f599bc2b6e300a132a20f510",
+      "V71Hash": "842673bfceb9a964f1cdc65066039b8f6b7595e2f599bc2b6e300a132a20f510",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/nosotros/\">"
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD ."
+      ]
+    },
+    {
+      "path": "/recursos/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "5bbf757711a6768712cd57c653c8c08dc0112fb3a1e58b1b3f62ab1345735ce3",
+      "V71Hash": "5bbf757711a6768712cd57c653c8c08dc0112fb3a1e58b1b3f62ab1345735ce3",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/\">"
+      ],
+      "h1": [
+        "Recursos"
+      ]
+    },
+    {
+      "path": "/casos/",
+      "status": 200,
+      "htmlEqualAfterBuildHashNormalization": true,
+      "V70Hash": "16bfcb27cc59a5e720133b7f7d08b1c7db7fde10bc4426193d62a41ca6e6403f",
+      "V71Hash": "16bfcb27cc59a5e720133b7f7d08b1c7db7fde10bc4426193d62a41ca6e6403f",
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/casos/\">"
+      ],
+      "h1": [
+        "Casos y evidencia"
+      ]
+    }
+  ]
+}

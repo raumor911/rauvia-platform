@@ -1,0 +1,25 @@
+[
+  {
+    "id": "hypothesis:v74-explicit-knowledge",
+    "date": "2026-10-06",
+    "status": "editorial_implementation",
+    "observation": "Revisión local: conceptos públicos distribuidos entre entity.ts, páginas y mapas editoriales sin un grafo tipado común. No es observación de demanda.",
+    "problem": "Las relaciones entre identidad, ICP, necesidad, capacidad, intervención y evidencia no tienen una vista estructurada única.",
+    "hypothesis": "Un grafo estático tipado y auditable puede hacer explícitas esas relaciones conservando límites de evidencia y privacidad.",
+    "change": "Compilador offline y proyección pública aprobada con matrices derivadas.",
+    "expected_result": "Referencias consistentes, sin hipótesis privadas, falsa autoría ni efectos en el cliente.",
+    "observed_result": null,
+    "market_validation": false
+  },
+  {
+    "id": "hypothesis:v75-retrieval-association",
+    "date": "2026-10-06",
+    "status": "editorial_implementation",
+    "observation": "Local review: V74 has concepts and references without compact answer/citation families.",
+    "hypothesis": "Explicit answers and attribution bundles can clarify association with relevant problems.",
+    "change": "Build-only retrieval layer and prepared post-publication benchmark.",
+    "expected_result": "Coherent answers without unsupported recommendations.",
+    "observed_result": null,
+    "market_validation": false
+  }
+]

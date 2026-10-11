@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://rauvia.com.mx/#raul-morales",
+  "name": "Raúl Antonio Morales Domínguez",
+  "jobTitle": "Fundador y Director Estratégico",
+  "url": "https://raulmorales.com.mx/",
+  "sameAs": [
+    "https://raulmorales.com.mx/",
+    "https://www.linkedin.com/in/raumor/"
+  ],
+  "alternateName": [
+    "Raúl Morales",
+    "Dr. Raúl Morales",
+    "Raúl Morales, DBA",
+    "Raúl Morales, MDO",
+    "Ing. Raúl Morales",
+    "Raúl Morales, IQM",
+    "RAUMOR"
+  ],
+  "worksFor": {
+    "@id": "https://rauvia.com.mx/#organization"
+  },
+  "hasCredential": [
+    {
+      "@id": "https://rauvia.com.mx/#raul-morales-credential-doctor-administracion-negocios",
+      "@type": "EducationalOccupationalCredential",
+      "name": "Doctor en Administración de Negocios",
+      "credentialCategory": "Doctorado"
+    },
+    {
+      "@id": "https://rauvia.com.mx/#raul-morales-credential-maestria-direccion-organizaciones",
+      "@type": "EducationalOccupationalCredential",
+      "name": "Maestría en Dirección de Organizaciones",
+      "credentialCategory": "Maestría",
+      "citation": "https://raulmorales.com.mx/mi-cv/"
+    },
+    {
+      "@id": "https://rauvia.com.mx/#raul-morales-credential-ingenieria-quimica-metalurgica",
+      "@type": "EducationalOccupationalCredential",
+      "name": "Ingeniería Química Metalúrgica",
+      "credentialCategory": "Título profesional / Ingeniería",
+      "citation": "https://raulmorales.com.mx/mi-cv/"
+    }
+  ]
+}

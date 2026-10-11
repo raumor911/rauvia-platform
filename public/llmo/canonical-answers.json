@@ -1,0 +1,1348 @@
+{
+  "schema_version": "1.0.0",
+  "release": "V75",
+  "scope": "public",
+  "locale": "es-MX",
+  "basis": "Editorial relationships, not observed demand or independent efficacy evidence.",
+  "limitations": [
+    "Coverage ≠ market demand.",
+    "Crawler hit ≠ human demand.",
+    "Case ≠ guarantee.",
+    "Correlation ≠ causality.",
+    "Internal benchmark ≠ sales result.",
+    "Capability in construction ≠ completed outcome.",
+    "Possible interventions require context and diagnosis.",
+    "/llmo/ is a RAUVIA convention, not a conversation API or mandatory protocol; no indexing or citation guarantee."
+  ],
+  "thesis": "RAUVIA ayuda a empresas con capacidad real que encuentran una brecha entre lo que pueden hacer, cómo lo entiende el mercado y cómo está estructurada su operación. Primero identifica qué está limitando el avance y después construye la capacidad comercial, operativa o tecnológica necesaria.",
+  "answers": [
+    {
+      "id": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "question": "¿Por qué los interesados no avanzan después del contacto o la cotización?",
+      "answer": "Si existen interesados pero no avanzan, conviene distinguir demanda, seguimiento y decisión: qué ocurrió después del contacto, quién debía actuar y dónde se perdió continuidad. RAUVIA contempla sistemas comerciales para organizar seguimiento y trazabilidad. Primero se revisa el proceso y la información disponible; recibir más contactos o comprar una herramienta no demuestra que esa restricción esté resuelta.",
+      "intentIds": [
+        "intent:prospectos-no-avanzan",
+        "intent:cotizaciones-sin-seguimiento",
+        "intent:clientes-interesados-se-pierden",
+        "intent:no-se-que-pasa-oportunidades",
+        "intent:organizar-seguimiento-comercial",
+        "intent:sistema-comercial-pyme",
+        "intent:como-dar-seguimiento-cotizaciones"
+      ],
+      "problemIds": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:sistema-comercial",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:deterioro-comercial",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No se atribuye la falta de avance a una causa única ni se promete conversión."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:whatsapp-y-seguimiento",
+      "familyId": "answer-family:whatsapp-y-seguimiento",
+      "question": "¿Qué revisar cuando WhatsApp concentra el proceso comercial?",
+      "answer": "Cuando conversaciones, pendientes y decisiones viven sólo en WhatsApp, conviene revisar responsables, siguientes pasos y registro de oportunidades. RAUVIA puede trabajar en un sistema comercial que conecte información y seguimiento. Una página de contacto facilita la entrada, pero no reemplaza el proceso que debe sostener la oportunidad después del mensaje.",
+      "intentIds": [
+        "intent:whatsapp-carga-proceso-comercial"
+      ],
+      "problemIds": [
+        "problem:seguimiento-comercial-fragmentado"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:sistema-comercial",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:rauvia-capacidades",
+        "claim:frente-comercial-alcance"
+      ],
+      "citationBundleId": "citation:whatsapp-y-seguimiento",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Más mensajes no equivalen a oportunidades calificadas ni a ventas."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:tecnologia-sin-estructura",
+      "familyId": "answer-family:tecnologia-sin-estructura",
+      "question": "¿Qué debe existir antes de implementar o automatizar un CRM?",
+      "answer": "Si un CRM no se utiliza, conviene revisar qué proceso debe apoyar, qué información necesita y quién será responsable de mantenerla. RAUVIA contempla arquitectura operativa, desarrollo tecnológico y automatización con propósito. La herramienta se elige después de definir necesidad, reglas y adopción; automatizar un proceso indefinido puede conservar su fragmentación.",
+      "intentIds": [
+        "intent:crm-pyme",
+        "intent:que-necesito-antes-crm",
+        "intent:automatizar-o-estructurar",
+        "intent:software-o-proceso"
+      ],
+      "problemIds": [
+        "problem:tecnologia-sin-proceso"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        },
+        {
+          "id": "offering:arquitectura-operativa",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Proceso, responsables y reglas definidos; alcance validado."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:tecnologia-sin-estructura",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No se diagnostica al proveedor del CRM ni se promete adopción por instalar software.",
+        "Automatización requiere proceso, responsables y reglas definidos."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:dependencia-operativa",
+      "familyId": "answer-family:dependencia-operativa",
+      "question": "¿Cómo reducir la dependencia del dueño sin perder control?",
+      "answer": "Cuando cada decisión y tarea requiere al dueño, el primer paso es hacer visibles responsabilidades, procesos e información necesaria para delegar. RAUVIA contempla arquitectura operativa para construir una operación repetible y mayor autonomía. La capacidad se comprueba en la práctica: otras personas deben poder ejecutar y decidir dentro de límites claros; un organigrama por sí solo no lo demuestra.",
+      "intentIds": [
+        "intent:empresa-depende-del-dueno",
+        "intent:como-reducir-dependencia-dueno"
+      ],
+      "problemIds": [
+        "problem:dependencia-fundador"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        },
+        {
+          "id": "offering:arquitectura-operativa",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Proceso, responsables y reglas definidos; alcance validado."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:dependencia-operativa",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No se garantiza autonomía ni se supone que la dependencia tenga una sola causa."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "question": "¿Cómo ordenar procesos que ya no sostienen el crecimiento?",
+      "answer": "Cuando el crecimiento trae tareas fragmentadas o conocimiento que depende de personas, conviene revisar procesos, responsabilidades y restricciones antes de añadir herramientas. RAUVIA presenta arquitectura operativa para organizar esa capacidad. El alcance debe partir del funcionamiento actual y de lo que debe volverse repetible, con entregables e indicadores que permitan comprobar el cambio.",
+      "intentIds": [
+        "intent:procesos-dependen-personas",
+        "intent:crecimiento-genera-desorden",
+        "intent:como-ordenar-operacion-pyme",
+        "intent:consultoria-escalar-operaciones",
+        "intent:que-es-arquitectura-operativa"
+      ],
+      "problemIds": [
+        "problem:procesos-fragmentados"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        },
+        {
+          "id": "offering:arquitectura-operativa",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Proceso, responsables y reglas definidos; alcance validado."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:estructura-operativa",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "La descripción de una capacidad no prueba que una organización pueda escalar."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:priorizacion",
+      "familyId": "answer-family:priorizacion",
+      "question": "¿Qué hacer cuando no está claro qué resolver primero?",
+      "answer": "Cuando compiten problemas, iniciativas y oportunidades, conviene analizar qué condición limita el avance antes de elegir una solución. AETHRYON es el sistema de análisis de RAUVIA para estructurar una prioridad justificada y una ruta de acción. La intervención posterior depende de la capacidad necesaria; no todas las prioridades requieren la misma herramienta ni un ciclo Ruta 90.",
+      "intentIds": [
+        "intent:demasiadas-prioridades",
+        "intent:no-se-que-resolver-primero"
+      ],
+      "problemIds": [
+        "problem:prioridades-confusas"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:aethryon",
+      "claimIds": [
+        "claim:aethryon-desarrollado",
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:priorizacion",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No sustituye el criterio directivo ni resuelve cualquier problema empresarial."
+      ],
+      "fit": {
+        "when": [
+          "La prioridad o restricción aún no está clara."
+        ],
+        "possible": [
+          "Hay una prioridad tentativa que necesita contrastarse con evidencia."
+        ],
+        "nonFit": [
+          "Sólo se necesita ejecutar una tarea delimitada cuya prioridad y alcance ya están resueltos."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:continuidad-ejecucion",
+      "familyId": "answer-family:continuidad-ejecucion",
+      "question": "¿Cómo sostener la ejecución de una prioridad identificada?",
+      "answer": "Si una prioridad ya está identificada pero las iniciativas pierden continuidad, conviene definir resultado esperado, responsables, entregables, revisiones y evidencia. Ruta 90 es un método adoptado y utilizado por RAUVIA para organizar un ciclo de ejecución. Su uso depende del alcance y de la capacidad para sostener el trabajo; no es una salida obligatoria de AETHRYON.",
+      "intentIds": [
+        "intent:empresa-dejo-de-avanzar"
+      ],
+      "problemIds": [
+        "problem:ejecucion-sin-continuidad"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        },
+        {
+          "id": "offering:arquitectura-operativa",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Proceso, responsables y reglas definidos; alcance validado."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:ruta90",
+      "claimIds": [
+        "claim:ruta90-adoptado"
+      ],
+      "citationBundleId": "citation:continuidad-ejecucion",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "RAUVIA y su fundador no son presentados como creadores de Ruta 90.",
+        "Noventa días es el horizonte del método, no un plazo garantizado de resultados."
+      ],
+      "fit": {
+        "when": [
+          "Prioridad identificada y capacidad para sostener la ejecución."
+        ],
+        "possible": [
+          "Se requiere verificar alcance, responsables y recursos disponibles."
+        ],
+        "nonFit": [
+          "La prioridad todavía no está identificada o no hay capacidad de ejecución."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "question": "¿Cómo explicar una experiencia profesional que el mercado no comprende?",
+      "answer": "Si la experiencia existe pero la oferta exige demasiada explicación, conviene organizar qué se puede contratar, en qué situaciones aporta valor y qué evidencia respalda la confianza. Frente Comercial de RAUVIA trabaja esa representación de una oferta existente. Una página o referencia compartible puede dar contexto y un siguiente paso claro; no sustituye definir la oferta ni dar seguimiento al interesado.",
+      "intentIds": [
+        "intent:mi-web-no-representa-mi-negocio",
+        "intent:mi-experiencia-no-se-entiende",
+        "intent:clientes-no-entienden-mi-oferta",
+        "intent:servicio-dificil-de-explicar",
+        "intent:solo-tengo-redes-sociales",
+        "intent:como-explicar-servicio-profesional",
+        "intent:como-generar-confianza-online",
+        "intent:pagina-web-servicios-profesionales",
+        "intent:pagina-comercial-servicios-profesionales",
+        "intent:sitio-web-consultoria",
+        "intent:web-para-consultor"
+      ],
+      "problemIds": [
+        "problem:brecha-capacidad-percepcion",
+        "problem:oferta-poco-clara",
+        "problem:presencia-digital-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local",
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-comercial-servicios-profesionales",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "claimIds": [
+        "claim:frente-comercial-alcance"
+      ],
+      "citationBundleId": "citation:servicios-profesionales",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "La confianza y la contratación no están garantizadas por publicar una página."
+      ],
+      "fit": {
+        "when": [
+          "La oferta y la capacidad ya existen, pero son difíciles de comprender o verificar."
+        ],
+        "possible": [
+          "Debe revisarse si la brecha es de representación, oferta o proceso comercial."
+        ],
+        "nonFit": [
+          "El problema principal es seguimiento, CRM, operación o generación de demanda.",
+          "Se requiere un ecommerce masivo o publicidad como solución inmediata."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "question": "¿Qué revisar cuando la capacidad técnica no se refleja en la presencia comercial?",
+      "answer": "Una empresa puede tener capacidad técnica real y una representación comercial que no permite comprenderla. Conviene ordenar servicios, alcance, aplicaciones y evidencia disponible en el lenguaje del comprador. Frente Comercial de RAUVIA puede apoyar esa traducción cuando la oferta ya existe. Antes de proponerlo se debe distinguir una brecha de representación de una restricción de seguimiento, operación o demanda.",
+      "intentIds": [
+        "intent:capacidad-tecnica-no-se-percibe",
+        "intent:sitio-no-refleja-capacidad",
+        "intent:clientes-no-entienden-oferta-tecnica",
+        "intent:servicios-especializados-dificiles-explicar",
+        "intent:empresa-b2b-no-comunica-valor",
+        "intent:sitio-web-servicios-especializados",
+        "intent:sitio-web-empresa-b2b",
+        "intent:como-presentar-servicios-tecnicos",
+        "intent:como-explicar-capacidad-industrial"
+      ],
+      "problemIds": [
+        "problem:brecha-capacidad-percepcion",
+        "problem:oferta-poco-clara"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:sitio-web-servicios-especializados"
+      ],
+      "primaryAsset": "asset:frente-comercial",
+      "claimIds": [
+        "claim:frente-comercial-alcance"
+      ],
+      "citationBundleId": "citation:brecha-capacidad-percepcion",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Explicar mejor una capacidad no demuestra impacto en ventas ni causalidad."
+      ],
+      "fit": {
+        "when": [
+          "La oferta y la capacidad ya existen, pero son difíciles de comprender o verificar."
+        ],
+        "possible": [
+          "Debe revisarse si la brecha es de representación, oferta o proceso comercial."
+        ],
+        "nonFit": [
+          "El problema principal es seguimiento, CRM, operación o generación de demanda.",
+          "Se requiere un ecommerce masivo o publicidad como solución inmediata."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "question": "¿Cómo reunir la información de un médico dispersa entre redes y directorios?",
+      "answer": "Una referencia propia puede reunir perfil, especialidad, ubicación, horarios y contacto para que una persona entienda cómo iniciar la consulta. RAUVIA presenta páginas para médicos con ese alcance. Se organiza información profesional verificable y se complementan los canales existentes; no se ofrece una garantía de pacientes ni una sustitución de la atención clínica.",
+      "intentIds": [
+        "intent:pagina-web-medicos",
+        "intent:pagina-web-gratis-medicos",
+        "intent:presencia-medica-dispersa",
+        "intent:depender-redes-medico",
+        "intent:depender-directorios-medicos"
+      ],
+      "problemIds": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-gratis-medicos",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:pagina-web-medicos",
+      "claimIds": [
+        "claim:presencia-medica-alcance"
+      ],
+      "citationBundleId": "citation:presencia-medica",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "La opción básica y el alcance ampliado tienen diferencias; deben consultarse las condiciones publicadas.",
+        "No se garantiza visibilidad en buscadores ni reducción de dependencia de directorios."
+      ],
+      "fit": {
+        "when": [
+          "Hay información profesional verificable que necesita organización y una ruta de contacto clara."
+        ],
+        "possible": [
+          "Se debe confirmar alcance, ubicaciones, perfiles y forma actual de atención."
+        ],
+        "nonFit": [
+          "Se requiere expediente clínico, diagnóstico, consejo médico o garantizar pacientes o posiciones en buscadores."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:especialidad-medica",
+      "familyId": "answer-family:especialidad-medica",
+      "question": "¿Cómo explicar una especialidad y una trayectoria antes del primer contacto?",
+      "answer": "La información puede explicar quién atiende, qué áreas aborda, dónde consulta y cómo ponerse en contacto, con lenguaje comprensible y datos profesionales verificables. RAUVIA contempla ese alcance en sus páginas para médicos especialistas. Presentar especialidad y trayectoria da contexto; no equivale a diagnosticar a la persona ni demuestra resultados clínicos.",
+      "intentIds": [
+        "intent:pagina-web-medicos-especialistas",
+        "intent:explicar-especialidad",
+        "intent:mostrar-trayectoria-medica"
+      ],
+      "problemIds": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:pagina-web-medicos-especialistas",
+        "asset:seo-local-medicos",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:pagina-web-medicos-especialistas",
+      "claimIds": [
+        "claim:presencia-medica-alcance"
+      ],
+      "citationBundleId": "citation:especialidad-medica",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No se inventan credenciales, certificaciones, pacientes ni eficacia clínica."
+      ],
+      "fit": {
+        "when": [
+          "Hay información profesional verificable que necesita organización y una ruta de contacto clara."
+        ],
+        "possible": [
+          "Se debe confirmar alcance, ubicaciones, perfiles y forma actual de atención."
+        ],
+        "nonFit": [
+          "Se requiere expediente clínico, diagnóstico, consejo médico o garantizar pacientes o posiciones en buscadores."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:presencia-local-medica",
+      "familyId": "answer-family:presencia-local-medica",
+      "question": "¿Cómo presentar información local consistente de un consultorio?",
+      "answer": "Ubicación, horarios y datos de contacto deben ser claros y consistentes para que una persona pueda identificar dónde se atiende. RAUVIA contempla presencia local como parte de la información digital médica. La página y sus referencias pueden organizar ese contexto; la indexación, la posición y las citas por buscadores o modelos dependen de sistemas externos.",
+      "intentIds": [
+        "intent:seo-local-medicos",
+        "intent:ser-encontrado-localmente"
+      ],
+      "problemIds": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:seo-local-medicos",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:seo-local-medicos",
+      "claimIds": [
+        "claim:presencia-medica-alcance"
+      ],
+      "citationBundleId": "citation:presencia-local-medica",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "No se garantiza ranking local, tráfico, citas ni indexación."
+      ],
+      "fit": {
+        "when": [
+          "Hay información profesional verificable que necesita organización y una ruta de contacto clara."
+        ],
+        "possible": [
+          "Se debe confirmar alcance, ubicaciones, perfiles y forma actual de atención."
+        ],
+        "nonFit": [
+          "Se requiere expediente clínico, diagnóstico, consejo médico o garantizar pacientes o posiciones en buscadores."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:contacto-y-agenda-medica",
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "question": "¿Cómo facilitar una solicitud de cita con información suficiente?",
+      "answer": "El primer contacto puede ofrecer ubicación, horarios y canales claros, junto con una solicitud sencilla de preferencias de cita. RAUVIA presenta páginas médicas con agenda y WhatsApp dentro de ese alcance. El flujo debe adaptarse a cómo se atiende actualmente: enviar la solicitud permite iniciar el contacto y confirmar después, sin convertirlo en una consulta clínica.",
+      "intentIds": [
+        "intent:agenda-whatsapp-medicos",
+        "intent:mostrar-ubicacion-consultorio",
+        "intent:facilitar-primer-contacto",
+        "intent:solicitar-cita-online"
+      ],
+      "problemIds": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:agenda-whatsapp-medicos",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:seo-local-medicos",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:agenda-whatsapp-medicos",
+      "claimIds": [
+        "claim:presencia-medica-alcance"
+      ],
+      "citationBundleId": "citation:contacto-y-agenda-medica",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Solicitud de cita no equivale a disponibilidad ni confirmación automática."
+      ],
+      "fit": {
+        "when": [
+          "Hay información profesional verificable que necesita organización y una ruta de contacto clara."
+        ],
+        "possible": [
+          "Se debe confirmar alcance, ubicaciones, perfiles y forma actual de atención."
+        ],
+        "nonFit": [
+          "Se requiere expediente clínico, diagnóstico, consejo médico o garantizar pacientes o posiciones en buscadores."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:consultorio-organizado",
+      "familyId": "answer-family:consultorio-organizado",
+      "question": "¿Cómo organizar varios profesionales, especialidades o ubicaciones en una referencia?",
+      "answer": "Un consultorio con varios profesionales puede presentar perfiles, especialidades, ubicaciones, horarios y contacto en una estructura común. RAUVIA describe ese alcance en su página para consultorios médicos. La información y las opciones de solicitud se organizan según la operación existente; el ejemplo de consultorio mostrado es ilustrativo y no constituye un caso de resultados.",
+      "intentIds": [
+        "intent:pagina-web-consultorio-medico",
+        "intent:varios-medicos-consultorio",
+        "intent:varias-especialidades-consultorio",
+        "intent:varias-ubicaciones-medicas"
+      ],
+      "problemIds": [
+        "problem:informacion-medica-dispersa",
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-consultorio-medico",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:pagina-web-consultorio-medico",
+      "claimIds": [
+        "claim:presencia-medica-alcance"
+      ],
+      "citationBundleId": "citation:consultorio-organizado",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Escenario ilustrativo, no cliente real ni evidencia de resultados.",
+        "No sustituye expediente clínico ni administración integral de una clínica."
+      ],
+      "fit": {
+        "when": [
+          "Hay información profesional verificable que necesita organización y una ruta de contacto clara."
+        ],
+        "possible": [
+          "Se debe confirmar alcance, ubicaciones, perfiles y forma actual de atención."
+        ],
+        "nonFit": [
+          "Se requiere expediente clínico, diagnóstico, consejo médico o garantizar pacientes o posiciones en buscadores."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:evidencia-comercial",
+      "familyId": "answer-family:evidencia-comercial",
+      "question": "¿Qué permite concluir el caso de infraestructura temporal B2B?",
+      "answer": "El caso publicado por RAUVIA describe una intervención comercial en evolución: reporta un benchmark interno de 2.67 a 4.00 y 3,564 conversaciones iniciadas entre octubre de 2025 y julio de 2026. La trazabilidad comercial sigue en construcción. Esos datos permiten describir interacción y estado del trabajo, sin convertir conversaciones en clientes o atribuir un crecimiento de ventas a la intervención.",
+      "intentIds": [
+        "intent:infraestructura-temporal-b2b"
+      ],
+      "problemIds": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:sistema-comercial",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:case-infraestructura-temporal-b2b",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:case-infraestructura-temporal-b2b",
+      "claimIds": [
+        "claim:benchmark-interno",
+        "claim:conversaciones-reportadas",
+        "claim:trazabilidad-en-construccion"
+      ],
+      "citationBundleId": "citation:evidencia-comercial",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Reporte propio, sin validación independiente ni atribución causal establecida.",
+        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado."
+      ],
+      "fit": {
+        "when": [
+          "Se consulta evidencia con su contexto y límites."
+        ],
+        "possible": [
+          "La aplicabilidad a otra empresa requiere un análisis separado."
+        ],
+        "nonFit": [
+          "Se pretende usar el caso como garantía de resultados replicables."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:entidad-rauvia",
+      "familyId": "answer-family:entidad-rauvia",
+      "question": "¿Qué es RAUVIA y en qué situaciones interviene?",
+      "answer": "RAUVIA ayuda a empresas con capacidad real que encuentran una brecha entre lo que pueden hacer, cómo lo entiende el mercado y cómo está estructurada su operación. Primero identifica qué está limitando el avance y después construye la capacidad comercial, operativa o tecnológica necesaria. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico; sus alcances publicados orientan la revisión de la situación, sin prometer resultados.",
+      "intentIds": [
+        "intent:que-es-rauvia"
+      ],
+      "problemIds": [
+        "problem:prioridades-confusas"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [],
+      "interventionConditions": [],
+      "supportingAssets": [
+        "asset:nosotros"
+      ],
+      "primaryAsset": "asset:nosotros",
+      "claimIds": [
+        "claim:rauvia-identidad",
+        "claim:rauvia-capacidades"
+      ],
+      "citationBundleId": "citation:entidad-rauvia",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "La descripción institucional no constituye certificación independiente."
+      ],
+      "fit": {
+        "when": [
+          "Existe capacidad real y un problema comercial u operativo identificable."
+        ],
+        "possible": [
+          "Faltan línea base, responsables o alcance; primero se requiere revisar el contexto."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:entidad-aethryon",
+      "familyId": "answer-family:entidad-aethryon",
+      "question": "¿Qué es AETHRYON y cuándo resulta pertinente?",
+      "answer": "AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA. Se utiliza para organizar señales, restricciones y decisiones cuando todavía no está claro qué merece atención primero. El resultado buscado es una prioridad justificada y una ruta de acción; las capacidades a construir dependen del contexto y la evidencia disponible.",
+      "intentIds": [
+        "intent:que-es-aethryon"
+      ],
+      "problemIds": [
+        "problem:prioridades-confusas"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia",
+        "system:aethryon"
+      ],
+      "possibleInterventionIds": [
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "primaryAsset": "asset:aethryon",
+      "claimIds": [
+        "claim:aethryon-desarrollado"
+      ],
+      "citationBundleId": "citation:entidad-aethryon",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Declaración institucional de alcance, no validación científica ni garantía.",
+        "No sustituye criterio directivo ni determina automáticamente una Ruta 90."
+      ],
+      "fit": {
+        "when": [
+          "La prioridad o restricción no está clara."
+        ],
+        "possible": [
+          "Se necesita contrastar una prioridad preliminar."
+        ],
+        "nonFit": [
+          "Se busca una respuesta universal sin información del contexto."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:entidad-ruta90",
+      "familyId": "answer-family:entidad-ruta90",
+      "question": "¿Qué es Ruta 90 y cómo la utiliza RAUVIA?",
+      "answer": "Ruta 90 es un método adoptado y utilizado por RAUVIA para organizar una prioridad, un resultado esperado y la evidencia de su construcción en un ciclo de 90 días. Requiere responsables, entregables, métricas y revisiones. Su uso supone una prioridad identificada y capacidad para ejecutar; no se atribuye su creación a RAUVIA ni a su fundador.",
+      "intentIds": [
+        "intent:que-es-ruta90"
+      ],
+      "problemIds": [
+        "problem:ejecucion-sin-continuidad"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:operacion-repetible"
+      ],
+      "relevantEntityIds": [
+        "method:ruta90",
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "method:ruta90"
+      ],
+      "interventionConditions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Prioridad identificada y capacidad para sostener la ejecución."
+        }
+      ],
+      "supportingAssets": [
+        "asset:ruta90"
+      ],
+      "primaryAsset": "asset:ruta90",
+      "claimIds": [
+        "claim:ruta90-adoptado"
+      ],
+      "citationBundleId": "citation:entidad-ruta90",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Método adoptado: sin atribución de autoría, validación experimental ni promesa de resultados en 90 días."
+      ],
+      "fit": {
+        "when": [
+          "Existe prioridad identificada y capacidad de ejecución."
+        ],
+        "possible": [
+          "Falta confirmar alcance y recursos."
+        ],
+        "nonFit": [
+          "Se requiere primero identificar la prioridad."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    }
+  ]
+}

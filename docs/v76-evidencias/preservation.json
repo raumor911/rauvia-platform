@@ -1,0 +1,20 @@
+{
+  "baseRelease": "V75.1",
+  "baseDownloadedFrom": "Hostinger hbuilds/last-source",
+  "hostingerCurrentBuild": "01a11820-f8b6-70e9-87a6-5d6972e5073f",
+  "baseDownloadSha256": "6eb8684a5249bc1e62ff3977cfedad8215c4be31400809f1556952fb386d7d11",
+  "originalManifestEntries": 1090,
+  "mismatchesBeforeEdits": 0,
+  "changedOriginalFiles": [
+    ".env.example",
+    ".gitignore",
+    "dist/server.cjs",
+    "dist/server.cjs.map",
+    "package-lock.json",
+    "package.json",
+    "server.ts"
+  ],
+  "originalFrontendFilesVerifiedUnchanged": 265,
+  "removedOriginalFiles": [],
+  "dependenciesChanged": false
+}

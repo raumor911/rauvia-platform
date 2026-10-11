@@ -1,0 +1,64 @@
+{
+  "release": "V75",
+  "closedDate": "2026-10-07",
+  "implementation": "local_source_and_compiled_package",
+  "deployment": "not_deployed",
+  "publicIntentCount": 64,
+  "internalHypothesisIntents": 9,
+  "archetypes": 64,
+  "naturalExpressions": 96,
+  "answers": 18,
+  "citationBundles": 18,
+  "citationsClaims": 9,
+  "citationSources": 24,
+  "wordpressRows": 10,
+  "wordpressActions": {
+    "KEEP": 8,
+    "UPDATE": 2
+  },
+  "editorialGapBriefs": 11,
+  "externalBenchmark": "prepared_not_executed",
+  "externalObservations": 0,
+  "authorityExternalReferenceCount": null,
+  "suiteProduction": {
+    "passed": 233,
+    "failed": 0,
+    "skipped": 0
+  },
+  "devHttpChecks": {
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0
+  },
+  "audits": [
+    "seo",
+    "entities",
+    "content",
+    "authority",
+    "llmo",
+    "migration",
+    "knowledge",
+    "retrieval"
+  ],
+  "auditsPassed": 8,
+  "browserCombinations": 56,
+  "cssIdenticalToV74": 13,
+  "clientLogicAddedBytes": 0,
+  "clientGzipDeltaBytes": 453,
+  "directDependencyChanges": 0,
+  "patchedDependencyVersions": {
+    "proxy-addr": "2.0.8",
+    "source-map-js": "1.2.2",
+    "postcss-selector-parser": "7.1.6"
+  },
+  "knownNpmAuditFindings": 0,
+  "liveDatabasePersistenceVerified": false,
+  "hostingerProxyTopologyVerified": false,
+  "physicalDeviceCertification": false,
+  "wordpressPublished": false,
+  "profilesCreated": false,
+  "clientSitesModified": false,
+  "newRuntimeApi": false,
+  "telemetryModified": false,
+  "performanceOptimization": false
+}

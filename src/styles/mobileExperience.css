@@ -1,0 +1,143 @@
+/* V72 is opt-in to the eight main routes. */
+.rv-main-site{--rv-header-height:calc(64px + env(safe-area-inset-top,0px));--rv-anchor-offset:calc(var(--rv-header-height) + 20px);min-height:100svh}
+.rv-main-site main .min-h-screen,.rv-main-site main.min-h-screen{min-height:100svh}
+.rv-main-site :is(section[id],h2[id],h3[id]){scroll-margin-top:var(--rv-anchor-offset)}
+.rv-main-site :focus-visible,.rv-menu-panel :focus-visible,.rv-assistant :focus-visible{outline:3px solid #1e4a74;outline-offset:4px}
+.rv-main-site :is(a,button,summary,select),.rv-menu-panel :is(a,button){min-height:44px;min-width:44px}
+.rv-main-site main a:not([class*="flex"]):not([class*="block"]){display:inline-flex;align-items:center}
+.rv-main-site :is(a,button,select){touch-action:manipulation}
+.rv-main-site [hidden],.rv-assistant [hidden]{display:none!important}
+.rv-navbar{padding-top:env(safe-area-inset-top,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+.rv-nav-inner{min-height:64px;gap:12px}
+.rv-desktop-nav,.rv-nav-action{display:none}
+.rv-menu-toggle,.rv-menu-heading button{width:44px;min-height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rv-menu-overlay{position:fixed;inset:0;z-index:80;display:flex;justify-content:flex-end;background:#05132080}
+.rv-menu-panel{width:min(88%,384px);height:100vh;height:100dvh;overflow-y:auto;overscroll-behavior:contain;background:#fff;color:#0a2540;display:flex;flex-direction:column;padding:max(12px,env(safe-area-inset-top,0px)) max(20px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+.rv-menu-heading{display:flex;justify-content:space-between;align-items:center;font-weight:800;letter-spacing:.12em;margin-bottom:12px}
+.rv-menu-links{display:flex;flex-direction:column;flex:1;gap:6px}
+.rv-menu-links a{padding:14px 0;border-bottom:1px solid #e2e8f0;font-size:18px;font-weight:700}
+.rv-menu-action{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;padding:16px 12px;font-size:14px}
+.rv-footer{min-height:0;padding-bottom:env(safe-area-inset-bottom,0px)}
+.rv-footer a[aria-label]{width:44px;height:44px}
+.rv-footer>div:last-child a{color:#b7c5d5}
+.rv-assistant{bottom:max(24px,env(safe-area-inset-bottom,0px));right:max(20px,env(safe-area-inset-right,0px))}
+.rv-assistant button{min-width:44px;min-height:44px}
+.rv-assistant input{font-size:16px}
+.rv-main-site .r90-progress{top:var(--rv-header-height)}
+.rv-main-site .r90-chapter{scroll-margin-top:var(--rv-anchor-offset)}
+.rv-main-site .r90-figure figcaption a{align-self:flex-start}
+.rv-main-site .r90-actions a{white-space:normal}
+.rv-table-scroll{overflow-x:auto;max-width:100%;overscroll-behavior-x:contain}
+.rv-table-scroll table{min-width:560px}
+.rv-table-scroll:focus-visible{outline:3px solid #1e4a74;outline-offset:2px}
+@media(min-width:1024px){
+ .rv-main-site{--rv-header-height:calc(80px + env(safe-area-inset-top,0px))}
+ .rv-nav-inner{min-height:80px}
+ .rv-desktop-nav{display:flex;gap:8px}
+ .rv-desktop-nav a{display:flex;align-items:center;padding:8px;font-size:12px;font-weight:650;letter-spacing:.09em}
+ .rv-nav-action{display:flex;align-items:center;gap:8px}
+ .rv-menu-toggle{display:none}
+}
+@media(max-width:1023px){
+ .rv-main-site main{padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+ .rv-main-site main :is(p,li){line-height:1.65}
+ .rv-main-site .rv-category-nav{position:static}
+ .rv-main-site main [class*="grid"]>*{min-width:0}
+ .rv-main-site .rv-footer>div:nth-child(2){padding-top:56px;padding-bottom:48px}
+ .rv-main-site .rv-footer>div:nth-child(2)>div{gap:28px}
+ .rv-main-site .rv-footer>div:nth-child(2)>div>div:nth-child(2){display:none}
+ .rv-main-site .r90-progress-mobile select{min-height:44px;max-width:65%;width:220px}
+ .rv-main-site .rv-packages{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(min-width:700px) and (max-width:1023px){
+ .rv-main-site .rv-catalog-layout{grid-template-columns:minmax(180px,.65fr) minmax(0,1.6fr);gap:24px;align-items:start}
+ .rv-main-site .rv-category-nav{position:sticky;top:calc(var(--rv-header-height) + 16px)}
+ .rv-main-site .rv-catalog-layout button{overflow-wrap:anywhere}
+ .rv-main-site .rv-catalog-layout .md\:grid-cols-2{grid-template-columns:1fr}
+ .rv-main-site .rv-catalog-layout .md\:col-span-2{grid-column:auto}
+}
+@media(max-width:699px){
+ .rv-main-site .rv-category-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .rv-main-site .rv-category-nav button{margin:0;gap:8px;padding:12px;align-items:center}
+ .rv-main-site .rv-category-nav button p{display:none}
+ .rv-main-site .rv-category-nav button>div:last-child>div:last-of-type{font-size:13px;letter-spacing:0;overflow-wrap:anywhere}
+ .rv-main-site .rv-catalog-layout{gap:24px}
+ .rv-main-site .rv-solutions-table{display:block}
+ .rv-main-site .rv-solutions-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .rv-main-site .rv-solutions-table :is(tbody,tr,td){display:block;width:100%}
+ .rv-main-site .rv-solutions-table tr{padding:20px;border-bottom:1px solid #e2e8f0}
+ .rv-main-site .rv-solutions-table td{border:0;padding:0;font-size:16px}
+ .rv-main-site .rv-solutions-table td+td{margin-top:14px}
+ .rv-main-site .rv-solutions-table td::before{content:attr(data-label);display:block;color:#475569;font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:7px}
+ .rv-main-site .rv-packages{grid-template-columns:1fr}
+}
+@media(max-width:599px){
+ .rv-main-site main :is(.rv-home-hero,.rv-soluciones-hero,.rv-nosotros-hero){padding-top:calc(var(--rv-header-height) + 32px);padding-bottom:44px}
+ .rv-main-site .rv-frente-hero{padding-top:28px}
+ .rv-main-site main>section.pt-32,.rv-main-site main>main.pt-32{padding-top:calc(var(--rv-header-height) + 32px)}
+ .rv-main-site main h1{font-size:clamp(2rem,8.8vw,2.375rem)!important;line-height:1.14;overflow-wrap:normal}
+ .rv-main-site .aethryon-ux h1{font-size:2rem!important}
+ .rv-main-site .rv-home-hero h1 br{display:none}
+ .rv-main-site main h2:not([class*="text-xl"]):not([class*="text-lg"]):not([class*="text-sm"]){font-size:28px;line-height:1.25}
+ .rv-main-site main p{font-size:1rem}
+ .rv-main-site main :is(.r90-lead,.r90-intro){font-size:18px}
+ .rv-main-site .rv-home-hero .space-y-6>:not(:last-child),.rv-main-site .rv-nosotros-hero .space-y-6>:not(:last-child){margin-bottom:16px}
+ .rv-main-site .rv-home-hero [class*="pt-4"]{padding-top:0}
+ .rv-main-site .rv-home-hero img{min-width:0}
+ .rv-main-site .rv-soluciones-hero .mt-12{margin-top:16px}
+ .rv-main-site .rv-soluciones-hero .aspect-square{max-height:280px}
+ .rv-main-site .rv-nosotros-hero img{max-height:300px}
+ .rv-main-site .ruta90{padding-top:calc(var(--rv-header-height) + 20px)}
+ .rv-main-site .r90-hero{padding-top:16px}
+ .rv-main-site .r90-breadcrumb{margin-bottom:20px}
+ .rv-main-site .r90-actions{gap:12px}
+ .rv-main-site .r90-progress-mobile{padding:8px 20px;gap:8px}
+ .rv-main-site .ruta90 table{font-size:16px}
+ .rv-main-site .ruta90 th,.rv-main-site .ruta90 td{padding:12px 8px}
+ .rv-main-site .r90-contact{margin-bottom:70px}
+ .rv-main-site .rv-packages>div{padding:24px}
+ .rv-main-site .rv-footer p{font-size:20px}
+ .rv-main-site .rv-footer .max-w-sm{font-size:16px}
+}
+@media(max-width:374px){
+ .rv-main-site main h1{font-size:2rem!important}
+ .rv-main-site main h2:not([class*="text-xl"]):not([class*="text-lg"]):not([class*="text-sm"]){font-size:26px}
+ .rv-main-site .r90-progress-mobile>span{font-size:12px;max-width:32%}
+ .rv-main-site .rv-packages>div{padding:20px}
+}
+/* Real segment information only: reserve a complete reading pane. */
+@media(horizontal-viewport-segments:2){
+ .rv-main-site{width:env(viewport-segment-width 0 0);margin-left:env(viewport-segment-left 0 0)}
+ .rv-main-site .rv-navbar{right:auto;left:env(viewport-segment-left 0 0);width:env(viewport-segment-width 0 0)}
+ .rv-main-site{--rv-header-height:calc(64px + env(safe-area-inset-top,0px))}
+ .rv-main-site .rv-nav-inner{min-height:64px}
+ .rv-main-site :is(.rv-desktop-nav,.rv-nav-action){display:none}
+ .rv-main-site .rv-menu-toggle{display:flex}
+ .rv-main-site main [class*="grid-cols-"],.rv-main-site .rv-footer .grid{grid-template-columns:minmax(0,1fr)}
+ .rv-main-site main [class*="col-span-"],.rv-main-site .rv-footer [class*="col-span-"]{grid-column:auto}
+ .rv-main-site .rv-catalog-layout{grid-template-columns:1fr}
+ .rv-main-site .rv-solution-flow{flex-direction:column;align-items:stretch}
+ .rv-main-site .rv-solution-flow>svg{align-self:center;transform:rotate(90deg)}
+ .rv-main-site main h1{font-size:clamp(2rem,5vw,2.375rem)!important;line-height:1.14}
+ .rv-main-site .rv-footer>div:nth-child(2)>div>div:nth-child(2){display:none}
+ .rv-menu-panel{position:absolute;left:env(viewport-segment-left 0 0);width:min(384px,env(viewport-segment-width 0 0))}
+ .rv-assistant{right:auto;left:calc(env(viewport-segment-right 0 0) - 80px)}
+ .rv-assistant>div{left:auto;right:0;width:min(380px,calc(env(viewport-segment-width 0 0) - 40px));max-width:calc(env(viewport-segment-width 0 0) - 40px)}
+}
+/* Stacked segments keep one scrollable reading pane above the hinge. */
+@media(vertical-viewport-segments:2){
+ .rv-main-site{min-height:env(viewport-segment-height 0 0);max-height:env(viewport-segment-height 0 0);overflow-y:auto;overscroll-behavior:contain}
+ .rv-menu-panel{height:env(viewport-segment-height 0 0)}
+ .rv-assistant{bottom:calc(100dvh - env(viewport-segment-bottom 0 0) + 24px)!important}
+ .rv-assistant>div{height:min(600px,calc(env(viewport-segment-height 0 0) - 112px))!important;max-height:calc(env(viewport-segment-height 0 0) - 112px)!important}
+}
+@media(prefers-reduced-motion:reduce){.rv-main-site *,.rv-menu-overlay *,.rv-assistant *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+.rv-main-site .r90-figure > a{display:block;width:100%}
+@media(max-width:599px){.rv-main-site .rv-nosotros-hero h1 br{display:none}.rv-main-site main .whitespace-nowrap{white-space:normal}}
+
+.rv-main-site :is(footer,.bg-rauvia-navy,.bg-rauvia-navy-dark) :focus-visible{outline-color:#ffd766}
+@media(max-width:699px){.rv-main-site .rv-category-nav button>div{min-width:0}.rv-main-site .rv-category-nav button svg{flex-shrink:0}.rv-main-site .rv-category-nav button>div:last-child>.font-bold{font-size:13px;letter-spacing:0;overflow-wrap:anywhere}}
+@media(max-width:374px){.rv-main-site .rv-category-nav{grid-template-columns:1fr}}
+
+@media(min-width:700px) and (max-width:1023px){.rv-main-site .rv-solution-flow{flex-direction:column;align-items:stretch}.rv-main-site .rv-solution-flow>svg{align-self:center;transform:rotate(90deg)}}

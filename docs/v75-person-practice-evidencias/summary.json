@@ -1,0 +1,61 @@
+{
+  "scope": "backend_only",
+  "status": "passed",
+  "graph": {
+    "internalNodes": 241,
+    "publicNodes": 230,
+    "internalEdges": 1245,
+    "publicEdges": 1209,
+    "types": {
+      "ActionRoute": 1,
+      "Asset": 20,
+      "CapabilityGap": 8,
+      "Capability": 13,
+      "CareerEvidence": 3,
+      "Case": 1,
+      "Claim": 12,
+      "Concept": 2,
+      "Content": 10,
+      "Credential": 3,
+      "ICP": 6,
+      "Intent": 73,
+      "Method": 1,
+      "Offering": 5,
+      "Opportunity": 1,
+      "Organization": 1,
+      "Person": 1,
+      "PracticeArea": 8,
+      "Priority": 1,
+      "Problem": 12,
+      "Restriction": 8,
+      "Signal": 1,
+      "Source": 35,
+      "System": 1,
+      "TopicTerritory": 6,
+      "UseCase": 1,
+      "Vertical": 6,
+      "WebSite": 1
+    }
+  },
+  "aliases": 44,
+  "publicAliases": 7,
+  "tests": {
+    "knowledge": 107,
+    "retrievalBackend": 30,
+    "total": 137,
+    "failures": 0
+  },
+  "checks": {
+    "auditKnowledge": "passed",
+    "auditRetrievalBackend": "passed",
+    "typecheckKnowledge": "passed",
+    "jsonCopies": "five public/dist JSON pairs equal"
+  },
+  "notExecuted": [
+    "frontend tests",
+    "UI/browser/DOM",
+    "HTML build or prerender",
+    "live deployment",
+    "HTTP suite"
+  ]
+}

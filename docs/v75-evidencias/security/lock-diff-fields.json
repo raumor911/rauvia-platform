@@ -1,0 +1,33 @@
+[
+  {
+    "path": "node_modules/postcss-selector-parser",
+    "changedFields": [
+      "integrity",
+      "resolved",
+      "version"
+    ],
+    "beforeVersion": "6.0.10",
+    "afterVersion": "7.1.6"
+  },
+  {
+    "path": "node_modules/proxy-addr",
+    "changedFields": [
+      "funding",
+      "integrity",
+      "resolved",
+      "version"
+    ],
+    "beforeVersion": "2.0.7",
+    "afterVersion": "2.0.8"
+  },
+  {
+    "path": "node_modules/source-map-js",
+    "changedFields": [
+      "integrity",
+      "resolved",
+      "version"
+    ],
+    "beforeVersion": "1.2.1",
+    "afterVersion": "1.2.2"
+  }
+]

@@ -1,0 +1,958 @@
+--- V70/package.json
++++ V71/package.json
+@@ -19,7 +19,8 @@
+     "audit:migration": "node scripts/phase-0-migration-audit.js",
+     "test:seo": "node --import tsx --test tests/wordpress-cache.test.ts tests/ruta90-events.test.ts && node --test tests/seo-html.test.mjs tests/ruta90.test.mjs",
+     "test:favicon": "node --test tests/favicon.test.mjs",
+-    "test:ruta90-integration": "node --import tsx --test tests/ruta90-events.test.ts && node --test tests/ruta90-integration.test.mjs"
++    "test:ruta90-integration": "node --import tsx --test tests/ruta90-events.test.ts && node --test tests/ruta90-integration.test.mjs",
++    "test:aethryon": "node --import tsx --test tests/aethryon-events.test.ts && node --test tests/aethryon-ux.test.mjs"
+   },
+   "dependencies": {
+     "@google/genai": "^2.21.0",
+--- V70/src/lib/ruta90Session.js
++++ V71/src/lib/ruta90Session.js
+@@ -1,7 +1,7 @@
+ // One observation per analytics session; storage failure never breaks reading.
+ const fallback = new Set();
+-export function recordOnce(storage, session, event, chapter, send) {
+-  const key = `rv:ruta90:1.0:${session}:${event}:${chapter || 'page'}`;
++export function recordOnce(storage, session, event, chapter, send, scope = 'ruta90:1.0') {
++  const key = `rv:${scope}:${session}:${event}:${chapter || 'page'}`;
+   try {
+     if (storage.getItem(key)) return false;
+     storage.setItem(key, '1');
+--- V70/src/pages/AethryonPage.tsx
++++ V71/src/pages/AethryonPage.tsx
+@@ -1,20 +1,43 @@
++import {useEffect, useRef} from 'react';
+ import {trackEvent} from '../lib/analytics';
++import {getSessionId} from '../lib/analyticsIdentity';
++import {recordOnce} from '../lib/ruta90Session.js';
+ import RouteSEO from '../seo/PageMetadata';
+-import { RAUVIA_ENTITY, AETHRYON_ENTITY } from '../config/entity';
+-import { Link } from "react-router-dom";
+-import { ArrowRight, Target, Hexagon, Filter, Route, Box, AlertCircle, TrendingUp, Compass, Network, Activity, FileText, CheckCircle2, ChevronDown, MonitorPlay } from 'lucide-react';
+-import FadeInUp from '../components/FadeInUp';
++import {Link} from 'react-router-dom';
++import {ArrowRight, CheckCircle2, ChevronDown, MonitorPlay} from 'lucide-react';
+ import WhatsAppCTA from '../components/WhatsAppCTA';
++import './AethryonPage.css';
++
++function trackAethryonClick(destination: string, context: string) {
++  trackEvent('cta_click', {source_page: '/aethryon/', destination, context, ux_version: 'V71'});
++}
+ 
+ export default function AethryonPage() {
++  const root = useRef<HTMLDivElement>(null);
++  useEffect(() => {
++    if (!('IntersectionObserver' in window)) return;
++    // Exposure means half of a section heading is visible below the fixed header.
++    // One observer; the existing analytics session governs deduplication across remounts.
++    const observer = new IntersectionObserver(entries => {
++      for (const entry of entries) {
++        if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;
++        const section = entry.target.getAttribute('data-aethryon-section');
++        if (!section) continue;
++        try {
++          recordOnce(window.localStorage, getSessionId(), 'aethryon_view', section,
++            () => trackEvent('aethryon_view', {section, context: 'section_view', ux_version: 'V71'}), 'aethryon:V71');
++        } catch { /* Reading and navigation remain available when storage is blocked. */ }
++      }
++    }, {threshold: 0.5, rootMargin: '-100px 0px -10% 0px'});
++    root.current?.querySelectorAll('[data-aethryon-section]').forEach(element => observer.observe(element));
++    return () => observer.disconnect();
++  }, []);
+ 
+   return (
+-    <>
++    <div ref={root} className="aethryon-ux">
+       <RouteSEO path="/aethryon" />
+-      
+-
+-      {/* SECCIÓN 1 — HERO */}
+-      <section className="pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden relative bg-rauvia-bg">
++
++<section id="aethryon-hero" className="aethryon-hero pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden relative bg-rauvia-bg">
+         <div className="absolute inset-0 pointer-events-none opacity-20" 
+              style={{ backgroundImage: 'linear-gradient(#cbd5e1 1px, transparent 1px), linear-gradient(90deg, #cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+         </div>
+@@ -25,7 +48,7 @@
+             <div className="lg:col-span-6 xl:col-span-5 space-y-6 relative z-20">
+               <div className="inline-block">
+                 <span className="text-xs font-bold tracking-widest text-rauvia-blue uppercase bg-blue-50 px-3 py-1 rounded">
+-                  SISTEMA DE ANÁLISIS Y DECISIÓN
++                  RAUVIA · AETHRYON · SISTEMA DE ANÁLISIS Y DECISIÓN
+                 </span>
+               </div>
+               
+@@ -41,7 +64,7 @@
+               </div>
+ 
+               <div className="pt-4 flex flex-col sm:flex-row gap-4">
+-                <WhatsAppCTA href="https://wa.me/525586494076" className="inline-flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-6 py-3 rounded text-sm font-bold tracking-wider transition-all shadow-lg min-h-[52px]">
++                <WhatsAppCTA href="https://wa.me/525586494076" onClick={() => trackAethryonClick('https://wa.me/525586494076', 'hero')} className="inline-flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-6 py-3 rounded text-sm font-bold tracking-wider transition-all shadow-lg min-h-[52px]">
+                   ANALIZAR MI SITUACIÓN
+                   <ArrowRight className="w-4 h-4" />
+                 </WhatsAppCTA>
+@@ -52,7 +75,7 @@
+               </div>
+             </div>
+ 
+-            <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
++            <div className="lg:col-span-6 xl:col-span-7 hidden lg:flex justify-center relative z-0 mt-12 lg:mt-0">
+                <img 
+                  src="/media/aethryon-hero-orbital-v2-clean.svg" 
+                  alt="AETHRYON" 
+@@ -64,63 +87,239 @@
+         </div>
+       </section>
+ 
+-      {/* SECCIÓN 2 — IDENTIFICACIÓN DEL CASO */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-white border-y border-slate-100">
++<section id="aethryon-resumen" className="py-10 md:py-16 bg-white border-y border-slate-100">
++        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
++          <h2 data-aethryon-section="aethryon_quick_summary" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-8">AETHRYON en 30 segundos</h2>
++          <div className="grid md:grid-cols-3 gap-6">
++            {[
++              ['Úsalo cuando', 'Tienes varios problemas, oportunidades o iniciativas y no está claro qué conviene resolver primero.'],
++              ['Recibes', 'Una prioridad justificada y una ruta de acción.'],
++              ['No es', 'Una sustitución del criterio del dueño o del equipo directivo, ni una garantía automática de resultados.']
++            ].map(([title, text]) => <div key={title} className="border-l-4 border-rauvia-blue pl-5 py-1"><h3 className="text-lg font-bold text-rauvia-navy mb-2">{title}</h3><p className="text-slate-600 leading-relaxed">{text}</p></div>)}
++          </div>
++        </div>
++      </section>
++
++<section id="aethryon-situaciones" className="py-10 md:py-16 bg-rauvia-bg">
++        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
++          <h2 data-aethryon-section="aethryon_recognition" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-8">¿Te ocurre algo de esto?</h2>
++          <div className="grid lg:grid-cols-3 gap-6">
++            {[
++              ['01-oportunidades-sin-avance', 'Hay oportunidades, pero no avanzan', 'Hay clientes, proyectos o ideas, pero no está claro cuál atender primero.'],
++              ['02-friccion-operativa', 'La operación genera fricción', 'Crecer aumenta el retrabajo, el desorden y la presión sobre el equipo.'],
++              ['03-decisiones-abiertas', 'Hay demasiadas decisiones abiertas', 'Tiempo, dinero y atención se reparten sin una prioridad clara.']
++            ].map(([icon, title, text]) => <div key={icon} className="bg-white border border-slate-200 p-6 rounded-xl"><img src={'/media/iconos-situacion-rauvia/' + icon + '.svg'} alt="" width="28" height="28" className="mb-4" /><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
++          </div>
++          <details className="aethryon-disclosure mt-6 bg-white border border-slate-200 rounded-xl">
++            <summary className="p-5 font-semibold text-rauvia-navy">Ampliar el contexto de estas situaciones</summary>
++            <div className="p-6 pt-0 space-y-4 text-slate-600 aethryon-reading">
++              <p>Puede haber oportunidades comerciales, problemas operativos, tecnología sin integrar, procesos que dependen de personas específicas o varias iniciativas compitiendo por los mismos recursos.</p>
++              <p>El problema no siempre es la falta de capacidad. Con frecuencia es no saber dónde intervenir primero.</p>
++              <dl className="space-y-4">
++                <div><dt className="font-bold text-rauvia-navy">Oportunidades sin avance</dt><dd>Existen clientes, proyectos o ideas, pero no está claro cuál merece atención inmediata ni qué condiciones deben cumplirse para avanzar.</dd></div>
++                <div><dt className="font-bold text-rauvia-navy">Fricción operativa</dt><dd>Los procesos dependen de personas, existe retrabajo o cada intento de crecer aumenta el desorden y la presión sobre el equipo.</dd></div>
++                <div><dt className="font-bold text-rauvia-navy">Decisiones abiertas</dt><dd>Se distribuyen tiempo, dinero y atención entre distintas iniciativas sin saber cuál puede producir mayor impacto.</dd></div>
++              </dl>
++            </div>
++          </details>
++        </div>
++      </section>
++
++<section id="aethryon-ejemplo" className="aethryon-dark py-10 md:py-16 bg-rauvia-navy text-white">
++        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
++          <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-4 block">CASO DE USO · EJEMPLO CONCEPTUAL</span>
++          <h2 data-aethryon-section="aethryon_use_case" className="text-3xl lg:text-4xl font-extrabold leading-tight mb-4">Una empresa quiere crecer, pero tiene tres opciones.</h2>
++          <p className="text-slate-300 mb-8">Ejemplo para explicar una decisión; no representa un caso de éxito documentado.</p>
++          <ol className="space-y-4">
++            {[
++              ['Situación', 'La empresa quiere crecer.'],
++              ['Opciones', 'Invertir en marketing, contratar personal o automatizar su operación.'],
++              ['Análisis AETHRYON', 'El análisis muestra que la empresa ya recibe demanda suficiente, pero su operación depende de tareas manuales y no puede absorber más trabajo sin aumentar errores y presión sobre el equipo.'],
++              ['Prioridad', 'Estructurar y automatizar el proceso operativo antes de aumentar la captación.'],
++              ['Por qué', 'Esta prioridad busca evitar invertir en crecimiento antes de contar con la capacidad necesaria para sostenerlo.']
++            ].map(([title, text], index) => <li key={title} className={'aethryon-case-step grid md:grid-cols-[180px_1fr] gap-2 md:gap-6 p-5 md:p-6 rounded-lg border ' + (index === 3 ? 'border-rauvia-gold/50 bg-slate-900' : 'border-slate-700 bg-slate-800/50')}><h3 className="font-bold text-rauvia-gold-light"><span className="text-xs mr-2" aria-hidden="true">0{index + 1}</span>{title}</h3><p className="text-slate-200 leading-relaxed aethryon-reading">{text}</p></li>)}
++          </ol>
++        </div>
++      </section>
++
++<section id="aethryon-resultados" className="py-10 md:py-20 bg-white border-y border-slate-100">
++        <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
++          <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
++            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">RESULTADO</span>
++            <h2 data-aethryon-section="aethryon_outcomes" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-4">Qué recibes</h2>
++            <p className="text-lg font-semibold text-rauvia-navy mb-4">No recibes solo un diagnóstico. Recibes una decisión estructurada.</p>
++            <p className="text-slate-600 text-lg">
++              El valor del análisis no está en describir el problema, sino en convertirlo en una decisión que pueda ejecutarse y medirse.
++            </p>
++          </div>
++
++          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-6">
++            {[
++              ['Prioridad justificada', 'Qué conviene resolver primero y por qué.'],
++              ['Ruta de acción', 'Acciones, orden y responsables.'],
++              ['Riesgos y dependencias', 'Qué puede bloquear el avance y qué condiciones vigilar.'],
++              ['Indicadores de seguimiento', 'Cómo observar si la decisión comienza a producir avance.']
++            ].map(([title, text]) => <div key={title} className="border border-slate-200 rounded-lg bg-slate-50 p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-2">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
++          </div>
++          <details className="aethryon-disclosure max-w-6xl mx-auto border border-slate-200 rounded-xl">
++            <summary className="p-5 font-semibold text-rauvia-navy">Ver los seis resultados del análisis</summary>
++            <div className="p-6 pt-0">
++          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
++            {/* 01 */}
++            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
++              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">01</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Definición del Problema</h3>
++              <p className="text-sm text-slate-600">Qué está ocurriendo y por qué necesita atención.</p>
++            </div>
++            
++            {/* 02 */}
++            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
++              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">02</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Mapa de Señales y Restricciones</h3>
++              <p className="text-sm text-slate-600">Qué información respalda la situación y qué puede bloquearla.</p>
++            </div>
++
++            {/* 03 */}
++            <div className="border border-rauvia-gold/30 p-6 rounded-lg bg-orange-50/50 shadow-sm relative overflow-hidden">
++              <div className="absolute right-0 top-0 w-16 h-16 bg-rauvia-gold/10 rounded-bl-full -z-10"></div>
++              <span className="text-[10px] font-mono font-bold text-rauvia-gold block mb-2">03</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Prioridad Recomendada</h3>
++              <p className="text-sm text-slate-600">Qué conviene resolver primero y con qué justificación.</p>
++            </div>
++
++            {/* 04 */}
++            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
++              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">04</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Escenarios y Riesgos</h3>
++              <p className="text-sm text-slate-600">Qué puede ocurrir y qué condiciones deben vigilarse.</p>
++            </div>
++
++            {/* 05 */}
++            <div className="border border-rauvia-blue/30 p-6 rounded-lg bg-blue-50/50 shadow-sm">
++              <span className="text-[10px] font-mono font-bold text-rauvia-blue block mb-2">05</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Ruta de Acción</h3>
++              <p className="text-sm text-slate-600">Qué debe hacerse, en qué orden y con qué responsables.</p>
++            </div>
++
++            {/* 06 */}
++            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
++              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">06</span>
++              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Indicadores de Seguimiento</h3>
++              <p className="text-sm text-slate-600">Cómo saber si la decisión comienza a producir avance.</p>
++            </div>
++          </div>
++            </div>
++          </details>
++        </div>
++      </section>
++
++<section id="aethryon-caminos" className="py-10 md:py-16 bg-rauvia-bg border-y border-slate-100">
++        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
++          <h2 data-aethryon-section="aethryon_solution_paths" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-4">Posibles rutas después del análisis</h2>
++          <p className="text-slate-600 text-lg aethryon-reading mb-8">Según la prioridad identificada, la intervención puede requerir distintas capacidades. Estos caminos ayudan a explorar opciones; un síntoma no determina por sí solo qué solución necesitas.</p>
++          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
++            {[
++              ['Frente Comercial', 'Una presencia digital que explique tu valor y facilite el contacto.', '/frente-comercial/', 'Explorar Frente Comercial'],
++              ['Sistema Comercial / CRM', 'Organizar oportunidades, seguimiento y responsabilidades comerciales.', '/soluciones/', 'Explorar soluciones comerciales'],
++              ['Arquitectura Operativa', 'Definir procesos, roles y reglas para una operación más consistente.', '/soluciones/', 'Explorar arquitectura operativa'],
++              ['Desarrollo Tecnológico', 'Construir la capacidad digital que necesita un proceso definido.', '/soluciones/', 'Explorar desarrollo tecnológico'],
++              ['Automatización', 'Ejecutar tareas repetitivas con reglas claras e integración entre sistemas.', '/soluciones/', 'Explorar automatización'],
++              ['Ruta 90', 'Organizar una prioridad clara cuando requiere un ciclo estructurado de ejecución.', '/ruta-90/', 'Explorar Ruta 90']
++            ].map(([title, text, destination, label]) => <div key={title} className="flex flex-col bg-white border border-slate-200 rounded-xl p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed mb-4">{text}</p><Link to={destination} onClick={() => trackAethryonClick(destination, 'solution_pathways')} className="inline-flex items-center gap-2 text-rauvia-blue font-semibold text-sm mt-auto py-3 min-h-[44px]">{label}<ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" /></Link></div>)}
++          </div>
++          <Link to="/soluciones/" onClick={() => trackAethryonClick('/soluciones/', 'solution_pathways')} className="inline-flex items-center justify-center gap-2 bg-rauvia-navy text-white px-6 py-3 rounded font-bold text-sm min-h-[52px] mt-8">EXPLORAR SOLUCIONES<ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
++        </div>
++      </section>
++
++<section id="como-funciona" className="py-10 md:py-20 bg-white border-b border-slate-100 scroll-mt-20">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
+-            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">LA SITUACIÓN</span>
+-            <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
+-              QUIERES HACER CRECER TU EMPRESA, <br className="hidden md:block"/>
+-              PERO NO SABES QUÉ RESOLVER PRIMERO.
++            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">PROCESO</span>
++            <h2 data-aethryon-section="aethryon_how_it_works" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
++              CÓMO FUNCIONA AETHRYON
+             </h2>
+-            <div className="text-slate-600 text-lg space-y-4">
+-              <p>Puede haber oportunidades comerciales, problemas operativos, tecnología sin integrar, procesos que dependen de personas específicas o varias iniciativas compitiendo por los mismos recursos.</p>
+-              <p className="font-semibold text-rauvia-navy">El problema no siempre es la falta de capacidad. Con frecuencia es no saber dónde intervenir primero.</p>
+-            </div>
+-          </div>
+-
+-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+-            {/* ESCENARIO 01 */}
+-            <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl hover:shadow-md hover:border-rauvia-blue/30 transition-all group flex flex-col items-center text-center">
+-              <div className="w-12 h-12 bg-white rounded-lg border border-slate-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+-                <img src="/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg" alt="Oportunidades sin avance" className="w-6 h-6" />
+-              </div>
+-              <h3 className="text-lg font-bold text-rauvia-navy mb-3">HAY OPORTUNIDADES, PERO NO AVANZAN</h3>
+-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Existen clientes, proyectos o ideas, pero no está claro cuál merece atención inmediata ni qué condiciones deben cumplirse para avanzar.</p>
+-            </div>
+-            
+-            {/* ESCENARIO 02 */}
+-            <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl hover:shadow-md hover:border-rauvia-blue/30 transition-all group flex flex-col items-center text-center">
+-              <div className="w-12 h-12 bg-white rounded-lg border border-slate-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+-                <img src="/media/iconos-situacion-rauvia/02-friccion-operativa.svg" alt="Fricción operativa" className="w-6 h-6" />
+-              </div>
+-              <h3 className="text-lg font-bold text-rauvia-navy mb-3">LA OPERACIÓN GENERA FRICCIÓN</h3>
+-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Los procesos dependen de personas, existe retrabajo o cada intento de crecer aumenta el desorden y la presión sobre el equipo.</p>
+-            </div>
+-
+-            {/* ESCENARIO 03 */}
+-            <div className="bg-slate-50 border border-slate-200 p-8 rounded-xl hover:shadow-md hover:border-rauvia-blue/30 transition-all group flex flex-col items-center text-center">
+-              <div className="w-12 h-12 bg-white rounded-lg border border-slate-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+-                <img src="/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg" alt="Decisiones abiertas" className="w-6 h-6" />
+-              </div>
+-              <h3 className="text-lg font-bold text-rauvia-navy mb-3">HAY DEMASIADAS DECISIONES ABIERTAS</h3>
+-              <p className="text-sm text-slate-600 leading-relaxed text-justify">Se distribuyen tiempo, dinero y atención entre distintas iniciativas sin saber cuál puede producir mayor impacto.</p>
+-            </div>
+-          </div>
+-        </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 3 — REVELACIÓN DEL PROBLEMA */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-rauvia-bg">
++            <p className="text-slate-600 text-lg">
++              El análisis se desarrolla en cuatro pasos. Cada uno reduce una parte de la incertidumbre hasta convertir una situación ambigua en una ruta ejecutable.
++            </p>
++          </div>
++
++          <div className="relative">
++            {/* Connecting line for Desktop */}
++            <div className="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-slate-100 z-0"></div>
++
++            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative z-10">
++              
++              {/* PASO 01 */}
++              <div className="flex flex-col items-center text-center">
++                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">1</div>
++                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center">
++                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 01</span>
++                  <h3 className="text-base font-bold text-rauvia-navy mb-3">ENTENDER LA SITUACIÓN</h3>
++                  <p className="text-sm text-slate-600 mb-6 flex-grow text-left">Reunimos el contexto, el objetivo, las señales disponibles y las restricciones reales de la empresa.</p>
++                  <div className="bg-white border border-slate-100 p-3 rounded-lg mt-auto w-full">
++                    <span className="text-[10px] font-bold text-slate-400 uppercase block mb-1">Resultado</span>
++                    <span className="text-sm font-semibold text-rauvia-navy">Una definición clara del problema.</span>
++                  </div>
++                </div>
++              </div>
++
++              {/* PASO 02 */}
++              <div className="flex flex-col items-center text-center">
++                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">2</div>
++                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
++                  {/* Vertical connector for mobile */}
++                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
++                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 02</span>
++                  <h3 className="text-base font-bold text-rauvia-navy mb-3">EVALUAR LAS CONDICIONES</h3>
++                  <p className="text-sm text-slate-600 mb-6 flex-grow text-left">Analizamos si existe una necesidad real, qué obstáculos pueden presentarse y qué tan preparada está la empresa para actuar.</p>
++                  <div className="bg-white border border-slate-100 p-3 rounded-lg mt-auto w-full">
++                    <span className="text-[10px] font-bold text-slate-400 uppercase block mb-1">Resultado</span>
++                    <span className="text-sm font-semibold text-rauvia-navy">Una lectura objetiva de viabilidad y riesgo.</span>
++                  </div>
++                </div>
++              </div>
++
++              {/* PASO 03 */}
++              <div className="flex flex-col items-center text-center">
++                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-rauvia-gold rounded-full items-center justify-center mb-6 z-10 text-rauvia-gold font-bold">3</div>
++                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
++                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
++                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 03</span>
++                  <h3 className="text-base font-bold text-rauvia-navy mb-3">ENCONTRAR LA PRIORIDAD</h3>
++                  <p className="text-sm text-slate-600 mb-6 flex-grow text-left">Comparamos problemas, oportunidades y dependencias para identificar qué intervención puede producir mayor avance.</p>
++                  <div className="bg-orange-50 border border-rauvia-gold/30 p-3 rounded-lg mt-auto w-full">
++                    <span className="text-[10px] font-bold text-rauvia-gold uppercase block mb-1">Resultado</span>
++                    <span className="text-sm font-bold text-rauvia-navy">Una prioridad justificada.</span>
++                  </div>
++                </div>
++              </div>
++
++              {/* PASO 04 */}
++              <div className="flex flex-col items-center text-center">
++                <div className="hidden lg:flex w-12 h-12 bg-rauvia-navy border-2 border-rauvia-navy rounded-full items-center justify-center mb-6 z-10 text-white font-bold">4</div>
++                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative shadow-sm">
++                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
++                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 04</span>
++                  <h3 className="text-base font-bold text-rauvia-navy mb-3">DISEÑAR LA RUTA</h3>
++                  <p className="text-sm text-slate-600 mb-6 flex-grow text-left">Convertimos la prioridad en una secuencia de acciones, responsables, dependencias e indicadores.</p>
++                  <div className="bg-blue-50 border border-blue-200 p-3 rounded-lg mt-auto w-full">
++                    <span className="text-[10px] font-bold text-rauvia-blue uppercase block mb-1">Resultado</span>
++                    <span className="text-sm font-bold text-rauvia-navy">Una ruta ejecutable.</span>
++                  </div>
++                </div>
++              </div>
++
++            </div>
++          </div>
++          <details className="aethryon-disclosure mt-10 border border-slate-200 rounded-xl overflow-hidden">
++            <summary className="p-5 font-semibold text-rauvia-navy">Profundizar: por qué priorizar y cómo se organiza la información</summary>
++<div className="py-10 md:py-20 bg-rauvia-bg">
+         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+           <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">LA CAUSA</span>
+-          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
++          <h3 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
+             NO SIEMPRE FALTA UNA SOLUCIÓN.<br/>
+             <span className="text-rauvia-blue">FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO.</span>
+-          </h2>
++          </h3>
+           <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
+             <p>Una empresa puede tener talento, conocimiento, tecnología, clientes y oportunidades y, aun así, no conseguir avanzar.</p>
+             <p>Cuando las señales están dispersas, las prioridades compiten y las dependencias no son visibles, tomar una decisión se vuelve más difícil.</p>
+@@ -138,18 +337,14 @@
+                <span className="text-sm font-medium text-slate-700">Abiertas</span>
+              </div>
+              <ArrowRight className="w-5 h-5 text-rauvia-blue rotate-90 md:rotate-0 flex-shrink-0" />
+-             <div className="bg-rauvia-navy border border-rauvia-navy-dark p-4 rounded-lg shadow-md flex flex-col items-center w-full md:w-auto">
++             <div className="aethryon-dark bg-rauvia-navy border border-rauvia-navy-dark p-4 rounded-lg shadow-md flex flex-col items-center w-full md:w-auto">
+                <span className="text-xs font-bold text-rauvia-gold uppercase mb-1">Prioridad</span>
+                <span className="text-sm font-bold text-white">Visible</span>
+              </div>
+           </div>
+         </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 4 — PRESENTACIÓN DE AETHRYON */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-rauvia-navy text-white relative overflow-hidden">
++      </div>
++<div className="aethryon-dark py-10 md:py-20 bg-rauvia-navy text-white relative overflow-hidden">
+         <div className="absolute inset-0 pointer-events-none opacity-5">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+               <defs>
+@@ -164,10 +359,10 @@
+ 
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+           <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-4 block">AETHRYON</span>
+-          <h2 className="text-3xl lg:text-5xl font-extrabold leading-tight mb-8">
++          <h3 className="text-3xl lg:text-5xl font-extrabold leading-tight mb-8">
+             CONVIERTE INFORMACIÓN DISPERSA<br/>
+             EN UNA DECISIÓN EJECUTABLE.
+-          </h2>
++          </h3>
+           
+           <div className="max-w-3xl mx-auto bg-slate-800/50 border border-slate-700 p-8 rounded-xl mb-10 md:mb-16 backdrop-blur-sm">
+             <p className="text-xl font-bold text-white mb-4">
+@@ -181,128 +376,41 @@
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+             <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-lg text-left">
+               <div className="text-xs font-bold text-slate-400 mb-2 font-mono">01</div>
+-              <h3 className="text-lg font-bold text-white mb-2">ORDENA</h3>
++              <h4 className="text-lg font-bold text-white mb-2">ORDENA</h4>
+               <p className="text-sm text-slate-400">Reúne señales, problemas, restricciones y oportunidades.</p>
+             </div>
+             <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-lg text-left">
+               <div className="text-xs font-bold text-slate-400 mb-2 font-mono">02</div>
+-              <h3 className="text-lg font-bold text-white mb-2">EVALÚA</h3>
++              <h4 className="text-lg font-bold text-white mb-2">EVALÚA</h4>
+               <p className="text-sm text-slate-400">Analiza las condiciones reales para avanzar y los obstáculos que podrían impedirlo.</p>
+             </div>
+             <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-lg text-left">
+               <div className="text-xs font-bold text-slate-400 mb-2 font-mono">03</div>
+-              <h3 className="text-lg font-bold text-rauvia-gold mb-2">PRIORIZA</h3>
++              <h4 className="text-lg font-bold text-rauvia-gold mb-2">PRIORIZA</h4>
+               <p className="text-sm text-slate-400">Distingue qué debe atenderse ahora, después o descartarse.</p>
+             </div>
+             <div className="bg-slate-900/50 border border-slate-700/50 p-6 rounded-lg text-left">
+               <div className="text-xs font-bold text-slate-400 mb-2 font-mono">04</div>
+-              <h3 className="text-lg font-bold text-rauvia-blue mb-2">CONVIERTE</h3>
++              <h4 className="text-lg font-bold text-sky-200 mb-2">CONVIERTE</h4>
+               <p className="text-sm text-slate-400">Transforma la prioridad en acciones, responsables, dependencias e indicadores.</p>
+             </div>
+           </div>
+         </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 5 — CÓMO FUNCIONA */}
+-      <FadeInUp>
+-      <section id="como-funciona" className="py-10 md:py-20 bg-white border-b border-slate-100 scroll-mt-20">
+-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+-          <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
+-            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">PROCESO</span>
+-            <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
+-              CÓMO FUNCIONA AETHRYON
+-            </h2>
+-            <p className="text-slate-600 text-lg">
+-              El análisis se desarrolla en cuatro pasos. Cada uno reduce una parte de la incertidumbre hasta convertir una situación ambigua en una ruta ejecutable.
+-            </p>
+-          </div>
+-
+-          <div className="relative">
+-            {/* Connecting line for Desktop */}
+-            <div className="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-slate-100 z-0"></div>
+-
+-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative z-10">
+-              
+-              {/* PASO 01 */}
+-              <div className="flex flex-col items-center text-center">
+-                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">1</div>
+-                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center">
+-                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 01</span>
+-                  <h3 className="text-base font-bold text-rauvia-navy mb-3">ENTENDER LA SITUACIÓN</h3>
+-                  <p className="text-sm text-slate-600 mb-6 flex-grow text-justify">Reunimos el contexto, el objetivo, las señales disponibles y las restricciones reales de la empresa.</p>
+-                  <div className="bg-white border border-slate-100 p-3 rounded-lg mt-auto w-full">
+-                    <span className="text-[10px] font-bold text-slate-400 uppercase block mb-1">Resultado</span>
+-                    <span className="text-sm font-semibold text-rauvia-navy">Una definición clara del problema.</span>
+-                  </div>
+-                </div>
+-              </div>
+-
+-              {/* PASO 02 */}
+-              <div className="flex flex-col items-center text-center">
+-                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">2</div>
+-                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
+-                  {/* Vertical connector for mobile */}
+-                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
+-                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 02</span>
+-                  <h3 className="text-base font-bold text-rauvia-navy mb-3">EVALUAR LAS CONDICIONES</h3>
+-                  <p className="text-sm text-slate-600 mb-6 flex-grow text-justify">Analizamos si existe una necesidad real, qué obstáculos pueden presentarse y qué tan preparada está la empresa para actuar.</p>
+-                  <div className="bg-white border border-slate-100 p-3 rounded-lg mt-auto w-full">
+-                    <span className="text-[10px] font-bold text-slate-400 uppercase block mb-1">Resultado</span>
+-                    <span className="text-sm font-semibold text-rauvia-navy">Una lectura objetiva de viabilidad y riesgo.</span>
+-                  </div>
+-                </div>
+-              </div>
+-
+-              {/* PASO 03 */}
+-              <div className="flex flex-col items-center text-center">
+-                <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-rauvia-gold rounded-full items-center justify-center mb-6 z-10 text-rauvia-gold font-bold">3</div>
+-                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
+-                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
+-                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 03</span>
+-                  <h3 className="text-base font-bold text-rauvia-navy mb-3">ENCONTRAR LA PRIORIDAD</h3>
+-                  <p className="text-sm text-slate-600 mb-6 flex-grow text-justify">Comparamos problemas, oportunidades y dependencias para identificar qué intervención puede producir mayor avance.</p>
+-                  <div className="bg-orange-50 border border-rauvia-gold/30 p-3 rounded-lg mt-auto w-full">
+-                    <span className="text-[10px] font-bold text-rauvia-gold uppercase block mb-1">Resultado</span>
+-                    <span className="text-sm font-bold text-rauvia-navy">Una prioridad justificada.</span>
+-                  </div>
+-                </div>
+-              </div>
+-
+-              {/* PASO 04 */}
+-              <div className="flex flex-col items-center text-center">
+-                <div className="hidden lg:flex w-12 h-12 bg-rauvia-navy border-2 border-rauvia-navy rounded-full items-center justify-center mb-6 z-10 text-white font-bold">4</div>
+-                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative shadow-sm">
+-                  <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
+-                  <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 04</span>
+-                  <h3 className="text-base font-bold text-rauvia-navy mb-3">DISEÑAR LA RUTA</h3>
+-                  <p className="text-sm text-slate-600 mb-6 flex-grow text-justify">Convertimos la prioridad en una secuencia de acciones, responsables, dependencias e indicadores.</p>
+-                  <div className="bg-blue-50 border border-blue-200 p-3 rounded-lg mt-auto w-full">
+-                    <span className="text-[10px] font-bold text-rauvia-blue uppercase block mb-1">Resultado</span>
+-                    <span className="text-sm font-bold text-rauvia-navy">Una ruta ejecutable.</span>
+-                  </div>
+-                </div>
+-              </div>
+-
+-            </div>
+-          </div>
+-        </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 6 — QUÉ OBSERVA */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-rauvia-bg">
++      </div>          </details>
++        </div>
++      </section>
++
++<section id="aethryon-criterios" className="py-10 md:py-20 bg-rauvia-bg">
+         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-10 md:mb-16">
+             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">CRITERIOS DE ANÁLISIS</span>
+-            <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight">
++            <h2 data-aethryon-section="aethryon_criteria" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight">
+               AETHRYON OBSERVA<br/>CINCO CONDICIONES.
+             </h2>
+           </div>
+ 
+           <div className="space-y-4">
+-            <details className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open>
++            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open>
+               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
+                 <div className="flex-1 flex flex-col items-center gap-2">
+                   <div className="text-xs font-mono font-bold text-slate-400">01</div>
+@@ -311,11 +419,11 @@
+                 <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+               </summary>
+               <div className="p-6 pt-0 text-slate-600 border-t border-slate-100">
+-                <p className="text-justify">¿El problema y el resultado esperado están definidos con suficiente precisión?</p>
++                <p className="text-left">¿El problema y el resultado esperado están definidos con suficiente precisión?</p>
+               </div>
+             </details>
+ 
+-            <details className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
++            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
+                 <div className="flex-1 flex flex-col items-center gap-2">
+                   <div className="text-xs font-mono font-bold text-slate-400">02</div>
+@@ -324,11 +432,11 @@
+                 <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+               </summary>
+               <div className="p-6 pt-0 text-slate-600 border-t border-slate-100">
+-                <p className="text-justify">¿Qué obstáculos internos o externos pueden impedir que la iniciativa avance?</p>
++                <p className="text-left">¿Qué obstáculos internos o externos pueden impedir que la iniciativa avance?</p>
+               </div>
+             </details>
+ 
+-            <details className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
++            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
+                 <div className="flex-1 flex flex-col items-center gap-2">
+                   <div className="text-xs font-mono font-bold text-slate-400">03</div>
+@@ -337,11 +445,11 @@
+                 <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+               </summary>
+               <div className="p-6 pt-0 text-slate-600 border-t border-slate-100">
+-                <p className="text-justify">¿Las condiciones, actores y recursos necesarios comienzan a coincidir?</p>
++                <p className="text-left">¿Las condiciones, actores y recursos necesarios comienzan a coincidir?</p>
+               </div>
+             </details>
+ 
+-            <details className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
++            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
+                 <div className="flex-1 flex flex-col items-center gap-2">
+                   <div className="text-xs font-mono font-bold text-slate-400">04</div>
+@@ -350,11 +458,11 @@
+                 <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+               </summary>
+               <div className="p-6 pt-0 text-slate-600 border-t border-slate-100">
+-                <p className="text-justify">¿Existe un momento favorable para actuar o conviene esperar?</p>
++                <p className="text-left">¿Existe un momento favorable para actuar o conviene esperar?</p>
+               </div>
+             </details>
+ 
+-            <details className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
++            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
+                 <div className="flex-1 flex flex-col items-center gap-2">
+                   <div className="text-xs font-mono font-bold text-slate-400">05</div>
+@@ -363,130 +471,25 @@
+                 <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+               </summary>
+               <div className="p-6 pt-0 text-slate-600 border-t border-slate-100">
+-                <p className="text-justify">¿La empresa cuenta con responsables, recursos y condiciones para implementar la decisión?</p>
++                <p className="text-left">¿La empresa cuenta con responsables, recursos y condiciones para implementar la decisión?</p>
+               </div>
+             </details>
+           </div>
+ 
+           <div className="mt-8 p-4 bg-slate-100/50 border border-slate-200 rounded-lg flex justify-center">
+-            <p className="text-xs text-slate-500 text-center">
++            <p className="text-sm text-slate-600 text-center">
+               Nota: Dentro del sistema, estas condiciones se modelan mediante indicadores.
+             </p>
+           </div>
+         </div>
+       </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 7 — QUÉ RECIBE LA EMPRESA */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-white border-y border-slate-100">
+-        <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+-          <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
+-            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">RESULTADO</span>
+-            <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
+-              NO RECIBES SOLO UN DIAGNÓSTICO.<br/>
+-              <span className="text-rauvia-blue">RECIBES UNA DECISIÓN ESTRUCTURADA.</span>
+-            </h2>
+-            <p className="text-slate-600 text-lg">
+-              El valor del análisis no está en describir el problema, sino en convertirlo en una decisión que pueda ejecutarse y medirse.
+-            </p>
+-          </div>
+-
+-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+-            {/* 01 */}
+-            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
+-              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">01</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Definición del Problema</h3>
+-              <p className="text-sm text-slate-600">Qué está ocurriendo y por qué necesita atención.</p>
+-            </div>
+-            
+-            {/* 02 */}
+-            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
+-              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">02</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Mapa de Señales y Restricciones</h3>
+-              <p className="text-sm text-slate-600">Qué información respalda la situación y qué puede bloquearla.</p>
+-            </div>
+-
+-            {/* 03 */}
+-            <div className="border border-rauvia-gold/30 p-6 rounded-lg bg-orange-50/50 shadow-sm relative overflow-hidden">
+-              <div className="absolute right-0 top-0 w-16 h-16 bg-rauvia-gold/10 rounded-bl-full -z-10"></div>
+-              <span className="text-[10px] font-mono font-bold text-rauvia-gold block mb-2">03</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Prioridad Recomendada</h3>
+-              <p className="text-sm text-slate-600">Qué conviene resolver primero y con qué justificación.</p>
+-            </div>
+-
+-            {/* 04 */}
+-            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
+-              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">04</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Escenarios y Riesgos</h3>
+-              <p className="text-sm text-slate-600">Qué puede ocurrir y qué condiciones deben vigilarse.</p>
+-            </div>
+-
+-            {/* 05 */}
+-            <div className="border border-rauvia-blue/30 p-6 rounded-lg bg-blue-50/50 shadow-sm">
+-              <span className="text-[10px] font-mono font-bold text-rauvia-blue block mb-2">05</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Ruta de Acción</h3>
+-              <p className="text-sm text-slate-600">Qué debe hacerse, en qué orden y con qué responsables.</p>
+-            </div>
+-
+-            {/* 06 */}
+-            <div className="border border-slate-200 p-6 rounded-lg bg-slate-50">
+-              <span className="text-[10px] font-mono font-bold text-slate-400 block mb-2">06</span>
+-              <h3 className="text-sm font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Indicadores de Seguimiento</h3>
+-              <p className="text-sm text-slate-600">Cómo saber si la decisión comienza a producir avance.</p>
+-            </div>
+-          </div>
+-        </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 8 — EJEMPLO */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-rauvia-navy text-white">
+-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+-          <div className="text-center mb-10 md:mb-16">
+-            <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-4 block">CASO DE USO</span>
+-            <h2 className="text-3xl lg:text-4xl font-extrabold leading-tight">
+-              UNA EMPRESA QUIERE CRECER,<br/>
+-              PERO TIENE TRES OPCIONES.
+-            </h2>
+-          </div>
+-
+-          <div className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+-            <div className="p-8 border-b border-slate-700">
+-              <h3 className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-2">Situación</h3>
+-              <p className="text-lg font-medium">Invertir en marketing, contratar personal o automatizar su operación.</p>
+-            </div>
+-            
+-            <div className="p-8 border-b border-slate-700 bg-slate-800/50">
+-              <h3 className="text-xs font-bold tracking-widest text-rauvia-blue uppercase mb-2">Análisis AETHRYON</h3>
+-              <p className="text-slate-300">El análisis muestra que la empresa ya recibe demanda suficiente, pero su operación depende de tareas manuales y no puede absorber más trabajo sin aumentar errores y presión sobre el equipo.</p>
+-            </div>
+-
+-            <div className="p-8 border-b border-slate-700 bg-slate-900 flex items-start gap-4">
+-              <Target className="w-6 h-6 text-rauvia-gold flex-shrink-0 mt-1" />
+-              <div>
+-                <h3 className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-2">Prioridad</h3>
+-                <p className="text-lg font-bold">Estructurar y automatizar el proceso operativo antes de aumentar la captación.</p>
+-              </div>
+-            </div>
+-
+-            <div className="p-8 bg-blue-900/20">
+-              <h3 className="text-xs font-bold tracking-widest text-rauvia-blue uppercase mb-2">Resultado</h3>
+-              <p className="text-slate-200">La empresa evita invertir en crecimiento antes de contar con la capacidad necesaria para sostenerlo.</p>
+-            </div>
+-          </div>
+-        </div>
+-      </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 9 — CUÁNDO UTILIZARLO */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-rauvia-bg border-b border-slate-100">
++
++<section id="aethryon-aplicacion" className="py-10 md:py-20 bg-rauvia-bg border-b border-slate-100">
+         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-12">
+             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">APLICACIÓN</span>
+             <h2 className="text-3xl font-extrabold text-rauvia-navy">AETHRYON ES ÚTIL CUANDO...</h2>
++            <p className="text-slate-600 mt-4">Además de reconocer un síntoma, estas condiciones ayudan a valorar si necesitas analizar una decisión.</p>
+           </div>
+ 
+           <div className="space-y-3">
+@@ -508,14 +511,11 @@
+           </div>
+         </div>
+       </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 10 — RELACIÓN CON RAUVIA */}
+-      <FadeInUp>
+-      <section className="py-10 md:py-20 bg-white border-b border-slate-100">
++
++<section id="aethryon-ejecucion" className="py-10 md:py-20 bg-white border-b border-slate-100">
+         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+           <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">DE LA DECISIÓN A LA EJECUCIÓN</span>
+-          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
++          <h2 data-aethryon-section="aethryon_execution" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
+             AETHRYON IDENTIFICA LA PRIORIDAD.<br/>
+             <span className="text-rauvia-blue">RAUVIA CONSTRUYE LA SOLUCIÓN.</span>
+           </h2>
+@@ -523,11 +523,11 @@
+             El análisis define qué necesita atención y qué resultado debe buscarse. A partir de esa prioridad, RAUVIA puede diseñar e implementar el activo digital, sistema comercial, estructura operativa o solución tecnológica necesaria.
+           </p>
+ 
+-          <p className="text-slate-600 text-lg mb-10">Cuando una prioridad requiere un ciclo estructurado de ejecución, Ruta 90 permite organizarla durante 90 días mediante responsables, entregables, revisiones, métricas y evidencia. <Link className="text-rauvia-blue underline" to="/ruta-90/" onClick={()=>trackEvent('cta_click',{destination:'/ruta-90/',source_page:'/aethryon/',context:'execution_cycle'})}>Conocer Ruta 90 →</Link></p>
++          <p className="text-slate-600 text-lg mb-10">Cuando una prioridad requiere un ciclo estructurado de ejecución, Ruta 90 permite organizarla durante 90 días mediante responsables, entregables, revisiones, métricas y evidencia. <Link className="inline-flex items-center min-h-[44px] py-2 text-rauvia-blue underline" to="/ruta-90/" onClick={() => trackAethryonClick('/ruta-90/', 'execution_cycle')}>Conocer Ruta 90 →</Link></p>
+           <p className="text-slate-600 mb-10">No todas las prioridades identificadas por AETHRYON requieren una Ruta 90; el tipo de intervención depende de la capacidad que sea necesario construir.</p>
+           <div className="flex flex-col items-center justify-center max-w-lg mx-auto">
+             {/* AETHRYON Block */}
+-            <div className="w-full bg-rauvia-navy text-white p-6 rounded-t-xl border-b border-slate-700">
++            <div className="aethryon-dark w-full bg-rauvia-navy text-white p-6 rounded-t-xl border-b border-slate-700">
+               <span className="text-xs font-bold text-rauvia-gold uppercase tracking-wider block mb-1">AETHRYON</span>
+               <span className="text-lg font-bold">Análisis y prioridad</span>
+             </div>
+@@ -552,23 +552,20 @@
+           </div>
+ 
+           <div className="mt-12">
+-            <Link to="/soluciones" className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-rauvia-navy px-6 py-3 rounded text-sm font-bold tracking-wider transition-all min-h-[52px]">
++            <Link to="/soluciones/" onClick={() => trackAethryonClick('/soluciones/', 'execution')} className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-rauvia-navy px-6 py-3 rounded text-sm font-bold tracking-wider transition-all min-h-[52px]">
+               CONOCER LAS SOLUCIONES
+               <ArrowRight className="w-4 h-4" />
+             </Link>
+           </div>
+         </div>
+       </section>
+-      </FadeInUp>
+-
+-      {/* SECCIÓN 11 — CIERRE (Footer integration takes care of this partially, but we add the specific CTA block here) */}
+-      <FadeInUp>
+-      <section className="bg-rauvia-navy-dark text-white pt-16 md:pt-24 pb-12 relative overflow-hidden">
++
++<section id="aethryon-accion" className="aethryon-dark bg-rauvia-navy-dark text-white pt-16 md:pt-24 pb-12 relative overflow-hidden">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-12">
++            <h2 data-aethryon-section="aethryon_final_cta" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-12">
+               NO NECESITAS TENER<br/>
+               TODAS LAS RESPUESTAS.<br/>
+-              <span className="text-rauvia-blue mt-4 block">
++              <span className="text-sky-200 mt-4 block">
+                 NECESITAS SABER<br/>
+                 CUÁL ES LA SIGUIENTE<br/>
+                 DECISIÓN CORRECTA.
+@@ -576,19 +573,16 @@
+             </h2>
+             
+             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+-              <WhatsAppCTA href="https://wa.me/525586494076" className="flex items-center justify-center gap-2 bg-rauvia-blue hover:bg-rauvia-blue/90 text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-all shadow-lg min-h-[52px] w-full sm:w-auto">
++              <WhatsAppCTA href="https://wa.me/525586494076" onClick={() => trackAethryonClick('https://wa.me/525586494076', 'final_cta')} className="flex items-center justify-center gap-2 bg-rauvia-blue hover:bg-rauvia-blue/90 text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-all shadow-lg min-h-[52px] w-full sm:w-auto">
+                 ANALIZAR MI SITUACIÓN
+                 <ArrowRight className="w-4 h-4" />
+               </WhatsAppCTA>
+-              <WhatsAppCTA href="https://wa.me/525586494076" className="flex items-center justify-center gap-2 bg-transparent hover:bg-white/5 border border-white/20 text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-all min-h-[52px] w-full sm:w-auto">
+-                HABLAR CON RAUVIA
+-              </WhatsAppCTA>
++              <Link to="/soluciones/" onClick={() => trackAethryonClick('/soluciones/', 'final_cta')} className="flex items-center justify-center gap-2 bg-transparent hover:bg-white/5 border border-white/20 text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-all min-h-[52px] w-full sm:w-auto">
++                EXPLORAR SOLUCIONES
++              </Link>
+             </div>
+          </div>
+       </section>
+-      </FadeInUp>
+-
+-       {/* Reusing the layout that hides the big CTA in the footer itself since we just added it above */}
+-    </>
++    </div>
+   );
+ }
+--- /dev/null
++++ V71/src/pages/AethryonPage.css
+@@ -0,0 +1,30 @@
++/* Human UX adjustments are confined to this page; shared tokens remain unchanged. */
++.aethryon-ux { --aethryon-focus: #1e4a74; }
++.aethryon-ux .aethryon-dark { --aethryon-focus: #ffd766; }
++.aethryon-ux :is(a, button, summary):focus-visible {
++  outline: 3px solid var(--aethryon-focus);
++  outline-offset: 4px;
++}
++.aethryon-ux :is(section, h2) { scroll-margin-top: 104px; }
++.aethryon-ux .aethryon-reading { max-width: 70ch; }
++.aethryon-ux .aethryon-disclosure summary { cursor: pointer; min-height: 52px; }
++.aethryon-ux .aethryon-disclosure summary::marker { color: #1e4a74; }
++.aethryon-ux :where(section:not(.aethryon-dark)) .text-slate-400 { color: #475569; }
++.aethryon-ux :where(section:not(.aethryon-dark)) .text-rauvia-gold { color: #8a5b00; }
++.aethryon-ux .aethryon-dark .text-slate-400 { color: #cbd5e1; }
++.aethryon-ux .aethryon-dark .text-rauvia-gold { color: #e6a300; }
++.aethryon-ux .aethryon-hero h1 { text-wrap: balance; }
++@media (max-width: 639px) {
++  .aethryon-ux .aethryon-hero { padding-top: 104px; padding-bottom: 40px; }
++  .aethryon-ux .aethryon-hero .space-y-6 > :not(:last-child) { margin-block-end: 16px; }
++  .aethryon-ux .aethryon-hero h1 { font-size: 2rem; line-height: 1.14; }
++  .aethryon-ux .aethryon-hero .space-y-4 { row-gap: 12px; }
++  .aethryon-ux .aethryon-hero .pt-4 { padding-top: 0; gap: 12px; }
++}
++@media (prefers-reduced-motion: reduce) {
++  .aethryon-ux *, .aethryon-ux *::before, .aethryon-ux *::after {
++    animation: none !important;
++    transition: none !important;
++    scroll-behavior: auto !important;
++  }
++}
+--- /dev/null
++++ V71/tests/aethryon-ux.test.mjs
+@@ -0,0 +1,48 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import fs from 'node:fs';
++import {createHash} from 'node:crypto';
++const html=fs.readFileSync('dist/aethryon/index.html','utf8');
++const text=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
++const h1=text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)[1]);
++const old=JSON.parse(fs.readFileSync('tests/fixtures/aethryon-v70-seo.json','utf8'));
++const main=html.match(/<main>([\s\S]*?)<\/main>/)[1];
++test('AETHRYON preserves metadata, JSON-LD and the unique H1 from V70',()=>{
++ assert.equal((html.match(/<h1\b/g)||[]).length,1);assert.equal(h1,old.h1[0]);
++ assert.equal(html.match(/<title>(.*?)<\/title>/)[1],old.title);
++ assert.deepEqual([...html.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]),old.meta);
++ assert.deepEqual([...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)].map(m=>m[0]),old.canonical);
++ assert.deepEqual([...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])),old.jsonld);
++});
++test('Human reading path reaches example, outcomes and possible routes before methodology',()=>{
++ const ids=['aethryon-hero','aethryon-resumen','aethryon-situaciones','aethryon-ejemplo','aethryon-resultados','aethryon-caminos','como-funciona','aethryon-criterios','aethryon-aplicacion','aethryon-ejecucion','aethryon-accion'];
++ const positions=ids.map(id=>main.indexOf(`id="${id}"`));assert.ok(positions.every((p,i)=>p>=0&&(i===0||p>positions[i-1])));
++ assert.match(main,/Una prioridad justificada y una ruta de acción/);assert.match(main,/ni una garantía automática de resultados/);
++ assert.match(main,/EJEMPLO CONCEPTUAL/);assert.match(main,/Esta prioridad busca evitar/);assert.doesNotMatch(main,/La empresa evita invertir/);
++});
++test('Optional depth retains six original outcomes, four operations, four steps and five criteria in initial HTML',()=>{
++ const outcomes=main.slice(main.indexOf('id="aethryon-resultados"'),main.indexOf('id="aethryon-caminos"'));
++ assert.match(outcomes,/<details\b(?![^>]*open)[^>]*>[\s\S]*Ver los seis resultados del análisis/);
++ for(const s of ['Definición del Problema','Mapa de Señales y Restricciones','Prioridad Recomendada','Escenarios y Riesgos','Ruta de Acción','Indicadores de Seguimiento'])assert.ok(outcomes.includes(s),s);
++ for(const s of ['ORDENA','EVALÚA','PRIORIZA','CONVIERTE','ENTENDER LA SITUACIÓN','EVALUAR LAS CONDICIONES','ENCONTRAR LA PRIORIDAD','DISEÑAR LA RUTA'])assert.ok(main.includes(s),s);
++ const criteria=main.slice(main.indexOf('id="aethryon-criterios"'),main.indexOf('id="aethryon-aplicacion"'));
++ const disclosures=[...criteria.matchAll(/<details\b([^>]*)>/g)];assert.equal(disclosures.length,5);assert.ok(disclosures.filter(m=>/\bopen(?:=|\s|$)/.test(m[1])).length<=1);assert.ok(disclosures.every(m=>m[1].includes('name="aethryon-criteria"')));
++ for(const s of ['CLARIDAD','DIFICULTADES','ALINEACIÓN','OPORTUNIDAD','CAPACIDAD DE EJECUCIÓN'])assert.ok(criteria.includes(s),s);
++ assert.doesNotMatch(main,/Cómo citar|DOI|metodología propietaria|validación científica/);
++});
++test('Existing execution semantics and links remain; final actions have distinct destinations',()=>{
++ assert.ok(main.includes('Cuando una prioridad requiere un ciclo estructurado de ejecución'));assert.ok(main.includes('No todas las prioridades identificadas por AETHRYON requieren una Ruta 90'));
++ for(const path of ['/ruta-90/','/soluciones/','/frente-comercial/'])assert.ok(main.includes(`href="${path}"`));
++ const final=main.slice(main.indexOf('id="aethryon-accion"'));assert.ok(final.includes('href="https://wa.me/525586494076"'));assert.ok(final.includes('href="/soluciones/"'));assert.match(final,/ANALIZAR MI SITUACIÓN/);assert.match(final,/EXPLORAR SOLUCIONES/);assert.doesNotMatch(final,/HABLAR CON RAUVIA/);
++ assert.equal((main.match(/data-aethryon-section=/g)||[]).length,9);
++});
++test('Seven control routes keep identical V70 HTML after normalizing build asset hashes',()=>{
++ const controls=JSON.parse(fs.readFileSync('tests/fixtures/v70-control-html.json','utf8'));
++ for(const [route,hash] of Object.entries(controls)){
++  const path='dist/'+(route==='/'?'':route.slice(1))+'index.html';const body=fs.readFileSync(path,'utf8').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET');
++  assert.equal(createHash('sha256').update(body).digest('hex'),hash,route);
++ }
++});
++test('Compiled production returns AETHRYON content and live internal destinations', {skip:!process.env.TEST_BASE_URL},async()=>{
++ for(const path of ['/aethryon/','/soluciones/','/ruta-90/','/frente-comercial/']){const res=await fetch(process.env.TEST_BASE_URL+path,{redirect:'manual'});assert.equal(res.status,200,path);const body=await res.text();assert.match(body,/<main>[\s\S]+<\/main>/);if(path==='/aethryon/')assert.equal(body,html);}
++});
+--- /dev/null
++++ V71/tests/aethryon-events.test.ts
+@@ -0,0 +1,22 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {recordOnce} from '../src/lib/ruta90Session.js';
++import {validateEventPayload} from '../server/analytics/validation';
++const sections=['aethryon_quick_summary','aethryon_recognition','aethryon_use_case','aethryon_outcomes','aethryon_solution_paths','aethryon_how_it_works','aethryon_criteria','aethryon_execution','aethryon_final_cta'];
++test('Repeated observer callbacks and remounts send one observation per section/session',()=>{
++ const data=new Map(), sent:string[]=[];const storage={getItem:(k:string)=>data.get(k),setItem:(k:string,v:string)=>data.set(k,v)};
++ for(let pass=0;pass<100;pass++)for(const section of sections)recordOnce(storage,'session-A','aethryon_view',section,()=>sent.push(section),'aethryon:V71');
++ assert.deepEqual(sent,sections);
++ assert.equal(recordOnce(storage,'session-B','aethryon_view',sections[0],()=>sent.push(sections[0]),'aethryon:V71'),true);assert.equal(sent.length,10);
++});
++test('Namespace extension preserves Ruta 90 storage keys and failure fallback isolation',()=>{
++ const data=new Map();const storage={getItem:(k:string)=>data.get(k),setItem:(k:string,v:string)=>data.set(k,v)};
++ recordOnce(storage,'session','ruta90_view',undefined,()=>{});assert.equal(data.get('rv:ruta90:1.0:session:ruta90_view:page'),'1');
++ const broken={getItem:()=>{throw Error('blocked');},setItem:()=>{throw Error('blocked');}};let count=0;
++ for(const scope of ['ruta90:1.0','aethryon:V71'])for(let i=0;i<4;i++)recordOnce(broken,'failure-test','aethryon_view','section',()=>count++,scope);
++ assert.equal(count,2);
++});
++test('Existing endpoint taxonomy accepts section exposure and navigation without new events',()=>{
++ for(const section of sections)assert.equal(validateEventPayload({visitor_id:'qa',session_id:'qa-session',event_name:'aethryon_view',page_path:'/aethryon/',device_type:'mobile',properties:{section,context:'section_view',ux_version:'V71'}}),null);
++ for(const destination of ['/soluciones/','/ruta-90/','/frente-comercial/'])assert.equal(validateEventPayload({visitor_id:'qa',session_id:'qa-session',event_name:'cta_click',page_path:'/aethryon/',properties:{source_page:'/aethryon/',destination,context:'solution_pathways'}}),null);
++});

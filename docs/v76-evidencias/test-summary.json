@@ -1,0 +1,45 @@
+{
+  "tests": {
+    "indexnow-tests": {
+      "tests": 54,
+      "pass": 54,
+      "fail": 0,
+      "skipped": 0
+    },
+    "backend-regression": {
+      "tests": 155,
+      "pass": 155,
+      "fail": 0,
+      "skipped": 0
+    },
+    "static-regression": {
+      "tests": 24,
+      "pass": 21,
+      "fail": 0,
+      "skipped": 3
+    },
+    "security-regression": {
+      "tests": 4,
+      "pass": 4,
+      "fail": 0,
+      "skipped": 0
+    }
+  },
+  "passed": 234,
+  "skipped": 3,
+  "typecheck": "passed: tsc --noEmit",
+  "backendBuild": "passed: npm run build:server",
+  "localBuildTools": {
+    "node": "24.12.0",
+    "esbuild": "0.25.12 (cached tool; original declared ^0.28.1 retained)",
+    "typescript": "5.8.3 (cached tool; original ~5.8.2 retained)"
+  },
+  "appTestTransport": "in-memory real compiled Express app, simulated HTTP socket and WP/IndexNow fetch",
+  "notVerified": [
+    "real TCP/HTTP or browser end-to-end: local network sandbox blocked sockets",
+    "fresh frontend/Vite build: original verified production frontend retained",
+    "PHP interpreter and live WordPress hook/WP-Cron execution",
+    "live deployment, public key URL in production or real IndexNow receipt",
+    "search engine indexing"
+  ]
+}

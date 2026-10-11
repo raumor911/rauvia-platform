@@ -1,0 +1,1334 @@
+[
+  {
+    "route": "/",
+    "changedFields": [
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "RAUVIA Consulting | Consultoría y desarrollo tecnológico"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "alternateName": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales",
+            "name": "Raúl Antonio Morales Domínguez",
+            "jobTitle": "Fundador y Director Estratégico",
+            "url": "https://rauvia.com.mx/nosotros",
+            "sameAs": [
+              "https://www.linkedin.com/in/raumor/"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER.</span>"
+      ],
+      "initialHtmlSha256": "e67ade5f956cbfa4bdca2185986efabe8f7c9de033f1b52300cae80d7b358be9"
+    },
+    "after": {
+      "title": [
+        "RAUVIA Consulting | Consultoría y desarrollo tecnológico"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "alternateName": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales",
+            "name": "Raúl Antonio Morales Domínguez",
+            "jobTitle": "Fundador y Director Estratégico",
+            "url": "https://rauvia.com.mx/nosotros",
+            "sameAs": [
+              "https://www.linkedin.com/in/raumor/"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER.</span>"
+      ],
+      "initialHtmlSha256": "bdf5ac3dcfbbace14ee1fdccdc66745296c26fcc1ebb23e4209bafadf3b17224"
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "RAUVIA Consulting | Portafolio de Soluciones"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/soluciones/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/soluciones/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://rauvia.com.mx/soluciones/#webpage",
+          "url": "https://rauvia.com.mx/soluciones",
+          "name": "Portafolio de Soluciones - RAUVIA",
+          "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LOS ACTIVOS <br class=\"hidden lg:block\"/>QUE TU EMPRESA NECESITA <br class=\"hidden lg:block\"/>PARA <span class=\"text-rauvia-blue\">CRECER</span><span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "c0660916b0ae959b79dd3da37d5693d254b7ab0ba0a782ea4fe2126209036cdf"
+    },
+    "after": {
+      "title": [
+        "RAUVIA Consulting | Portafolio de Soluciones"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/soluciones/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/soluciones/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://rauvia.com.mx/soluciones/#webpage",
+          "url": "https://rauvia.com.mx/soluciones",
+          "name": "Portafolio de Soluciones - RAUVIA",
+          "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LOS ACTIVOS <br class=\"hidden lg:block\"/>QUE TU EMPRESA NECESITA <br class=\"hidden lg:block\"/>PARA <span class=\"text-rauvia-blue\">CRECER</span><span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "26d5b9b889e842fbd2bae96e7a704d796ff57b5b472c51b383551fc89055b5f0"
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "RAUVIA Consulting | AETHRYON"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/aethryon/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://rauvia.com.mx/aethryon/#webpage",
+          "name": "AETHRYON - RAUVIA",
+          "url": "https://rauvia.com.mx/aethryon",
+          "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "mainEntity": {
+            "@type": "Thing",
+            "@id": "https://rauvia.com.mx/aethryon/#entity",
+            "name": "AETHRYON",
+            "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones."
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "IDENTIFICA QUÉ ESTÁ <br class=\"hidden lg:block\"/><span class=\"text-rauvia-blue\">FRENANDO EL CRECIMIENTO</span> <br class=\"hidden lg:block\"/>DE TU EMPRESA<span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "d057f8c1ddd103e36c6d20035ff1fd072e89f91d2fa797441fe27003a120624e"
+    },
+    "after": {
+      "title": [
+        "RAUVIA Consulting | AETHRYON"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/aethryon/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://rauvia.com.mx/aethryon/#webpage",
+          "name": "AETHRYON - RAUVIA",
+          "url": "https://rauvia.com.mx/aethryon",
+          "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "mainEntity": {
+            "@type": "Thing",
+            "@id": "https://rauvia.com.mx/aethryon/#entity",
+            "name": "AETHRYON",
+            "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones."
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "IDENTIFICA QUÉ ESTÁ <br class=\"hidden lg:block\"/><span class=\"text-rauvia-blue\">FRENANDO EL CRECIMIENTO</span> <br class=\"hidden lg:block\"/>DE TU EMPRESA<span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "dfd7531229c52487ac72b1a7270313e16d5eb2a21b8ff131ab773fac64cee1af"
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp\">",
+        "<meta name=\"twitter:title\" content=\"Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp\">",
+        "<meta property=\"og:image:alt\" content=\"Una prioridad atraviesa diseñar, activar, estabilizar y consolidar hasta convertirse en capacidad instalada.\">",
+        "<meta property=\"og:image:height\" content=\"941\">",
+        "<meta property=\"og:image:width\" content=\"1672\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/ruta-90/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/ruta-90/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://rauvia.com.mx/ruta-90/#webpage",
+          "url": "https://rauvia.com.mx/ruta-90/",
+          "name": "Ruta 90: marco de ejecución empresarial",
+          "description": "Ruta 90 es un método de ejecución adoptado por RAUVIA para convertir una prioridad empresarial en capacidad instalada mediante un ciclo de 90 días con resultados esperados, responsables, entregables, métricas, revisiones y evidencia de cierre.",
+          "inLanguage": "es-MX",
+          "isPartOf": {
+            "@id": "https://rauvia.com.mx/#website"
+          },
+          "about": {
+            "@id": "https://rauvia.com.mx/ruta-90/#service"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://rauvia.com.mx/ruta-90/#service",
+          "name": "Ruta 90",
+          "description": "Ruta 90 es un método de ejecución adoptado por RAUVIA para convertir una prioridad empresarial en capacidad instalada mediante un ciclo de 90 días con resultados esperados, responsables, entregables, métricas, revisiones y evidencia de cierre.",
+          "url": "https://rauvia.com.mx/ruta-90/",
+          "provider": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "serviceType": "Aplicación de un método de ejecución empresarial"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://rauvia.com.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Soluciones",
+              "item": "https://rauvia.com.mx/soluciones/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ruta 90",
+              "item": "https://rauvia.com.mx/ruta-90/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Ruta 90: convierte una prioridad en capacidad instalada."
+      ],
+      "initialHtmlSha256": "4d31d9c83234523998e40df3ef5d67e927ab5d180180b63ddf273e3f3d7106af"
+    },
+    "after": {
+      "title": [
+        "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp\">",
+        "<meta name=\"twitter:title\" content=\"Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp\">",
+        "<meta property=\"og:image:alt\" content=\"Una prioridad atraviesa diseñar, activar, estabilizar y consolidar hasta convertirse en capacidad instalada.\">",
+        "<meta property=\"og:image:height\" content=\"941\">",
+        "<meta property=\"og:image:width\" content=\"1672\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/ruta-90/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/ruta-90/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "@id": "https://rauvia.com.mx/ruta-90/#webpage",
+          "url": "https://rauvia.com.mx/ruta-90/",
+          "name": "Ruta 90: marco de ejecución empresarial",
+          "description": "Ruta 90 es un método de ejecución adoptado por RAUVIA para convertir una prioridad empresarial en capacidad instalada mediante un ciclo de 90 días con resultados esperados, responsables, entregables, métricas, revisiones y evidencia de cierre.",
+          "inLanguage": "es-MX",
+          "isPartOf": {
+            "@id": "https://rauvia.com.mx/#website"
+          },
+          "about": {
+            "@id": "https://rauvia.com.mx/ruta-90/#service"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": "https://rauvia.com.mx/ruta-90/#service",
+          "name": "Ruta 90",
+          "description": "Ruta 90 es un método de ejecución adoptado por RAUVIA para convertir una prioridad empresarial en capacidad instalada mediante un ciclo de 90 días con resultados esperados, responsables, entregables, métricas, revisiones y evidencia de cierre.",
+          "url": "https://rauvia.com.mx/ruta-90/",
+          "provider": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "serviceType": "Aplicación de un método de ejecución empresarial"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://rauvia.com.mx/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Soluciones",
+              "item": "https://rauvia.com.mx/soluciones/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ruta 90",
+              "item": "https://rauvia.com.mx/ruta-90/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Ruta 90: convierte una prioridad en capacidad instalada."
+      ],
+      "initialHtmlSha256": "6eff69c328cc4cf0aad0443df9781747be5457f59073af93db431f150481e06c"
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "Frente Comercial para PyMES | RAUVIA Consulting"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/frente-comercial/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/frente-comercial/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Frente Comercial",
+          "provider": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "description": "Frente Comercial organiza y traduce la oferta de una empresa en un activo digital que permite al comprador entender con claridad qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Esencial",
+              "price": "6900.00",
+              "priceCurrency": "MXN",
+              "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional."
+            },
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Pro",
+              "price": "9900.00",
+              "priceCurrency": "MXN",
+              "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación."
+            },
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Portafolio",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "13900.00",
+                "priceCurrency": "MXN",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "C62"
+                }
+              },
+              "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión."
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Haz más fácil entender, confiar <br class=\"hidden md:block\"/>y avanzar con tu empresa."
+      ],
+      "initialHtmlSha256": "3acddb2fb75a567f9b33e2064d26333895bb281141d5e7f71b15b6e99ee20959"
+    },
+    "after": {
+      "title": [
+        "Frente Comercial para PyMES | RAUVIA Consulting"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/frente-comercial/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/frente-comercial/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Frente Comercial",
+          "provider": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "description": "Frente Comercial organiza y traduce la oferta de una empresa en un activo digital que permite al comprador entender con claridad qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Esencial",
+              "price": "6900.00",
+              "priceCurrency": "MXN",
+              "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional."
+            },
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Pro",
+              "price": "9900.00",
+              "priceCurrency": "MXN",
+              "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación."
+            },
+            {
+              "@type": "Offer",
+              "name": "Frente Comercial Portafolio",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "13900.00",
+                "priceCurrency": "MXN",
+                "referenceQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": "1",
+                  "unitCode": "C62"
+                }
+              },
+              "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión."
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Haz más fácil entender, confiar <br class=\"hidden md:block\"/>y avanzar con tu empresa."
+      ],
+      "initialHtmlSha256": "f12c71c8300cc2fbb1a792dc4a1d57dd93bd3a618d278304323a1828c84b3e35"
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "RAUVIA Consulting | Nosotros"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Nosotros\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Nosotros\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/nosotros/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/nosotros/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://rauvia.com.mx/nosotros/#webpage",
+          "url": "https://rauvia.com.mx/nosotros",
+          "name": "Nosotros - RAUVIA",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "mainEntity": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://rauvia.com.mx/#raul-morales",
+          "name": "Raúl Antonio Morales Domínguez",
+          "jobTitle": "Fundador y Director Estratégico",
+          "url": "https://rauvia.com.mx/nosotros",
+          "sameAs": [
+            "https://www.linkedin.com/in/raumor/"
+          ],
+          "worksFor": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER CON CLARIDAD</span><span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "49cbf63fca9281156e3fa67161f915888ee1db0185055e9332bf5ce970690ba7"
+    },
+    "after": {
+      "title": [
+        "RAUVIA Consulting | Nosotros"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Nosotros\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"RAUVIA Consulting | Nosotros\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/nosotros/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/nosotros/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "@id": "https://rauvia.com.mx/nosotros/#webpage",
+          "url": "https://rauvia.com.mx/nosotros",
+          "name": "Nosotros - RAUVIA",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          },
+          "mainEntity": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "@id": "https://rauvia.com.mx/#raul-morales",
+          "name": "Raúl Antonio Morales Domínguez",
+          "jobTitle": "Fundador y Director Estratégico",
+          "url": "https://rauvia.com.mx/nosotros",
+          "sameAs": [
+            "https://www.linkedin.com/in/raumor/"
+          ],
+          "worksFor": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER CON CLARIDAD</span><span class=\"text-rauvia-gold\">.</span>"
+      ],
+      "initialHtmlSha256": "8b95b7ad9feebd6cca94f5d2bc1f077ee127905d6054da37fe8c278e01ef0a8f"
+    }
+  },
+  {
+    "route": "/recursos/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "Recursos y Blog | RAUVIA"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Recursos y Blog | RAUVIA\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Recursos y Blog | RAUVIA\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/recursos/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://rauvia.com.mx/recursos/#webpage",
+          "url": "https://rauvia.com.mx/recursos",
+          "name": "Recursos y Blog | RAUVIA",
+          "description": "Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Recursos"
+      ],
+      "initialHtmlSha256": "03d5b4d2f65c7a7d5e3ce7720dca379c1b1694842a48ecd7032c84705f4d0747"
+    },
+    "after": {
+      "title": [
+        "Recursos y Blog | RAUVIA"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Recursos y Blog | RAUVIA\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Recursos y Blog | RAUVIA\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/recursos/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "@id": "https://rauvia.com.mx/recursos/#webpage",
+          "url": "https://rauvia.com.mx/recursos",
+          "name": "Recursos y Blog | RAUVIA",
+          "description": "Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Recursos"
+      ],
+      "initialHtmlSha256": "771f3600793838d1e84cbf74937913e08c80677db59fc8016443e6f1f2140c23"
+    }
+  },
+  {
+    "route": "/casos/",
+    "changedFields": [
+      "jsonld",
+      "initialHtmlSha256"
+    ],
+    "before": {
+      "title": [
+        "Casos y evidencia | RAUVIA Consulting"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/casos/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/casos/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Casos y evidencia",
+          "description": "Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.",
+          "url": "https://rauvia.com.mx/casos/",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Casos y evidencia"
+      ],
+      "initialHtmlSha256": "1a6841931a23cb19e2c67204e6aa994bb1bf5b8c884216dd24165d29d96b4e32"
+    },
+    "after": {
+      "title": [
+        "Casos y evidencia | RAUVIA Consulting"
+      ],
+      "meta": [
+        "<meta charset=\"UTF-8\" />",
+        "<meta name=\"description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta name=\"robots\" content=\"index, follow\">",
+        "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+        "<meta name=\"twitter:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta name=\"twitter:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\" />",
+        "<meta property=\"og:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
+        "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+        "<meta property=\"og:locale\" content=\"es_MX\">",
+        "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+        "<meta property=\"og:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+        "<meta property=\"og:type\" content=\"website\">",
+        "<meta property=\"og:url\" content=\"https://rauvia.com.mx/casos/\">"
+      ],
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/casos/\">"
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Casos y evidencia",
+          "description": "Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.",
+          "url": "https://rauvia.com.mx/casos/",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://rauvia.com.mx/#organization",
+          "name": "RAUVIA",
+          "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+          "url": "https://rauvia.com.mx",
+          "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+          "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+          "sameAs": [
+            "https://www.facebook.com/rauviaconsulting/",
+            "https://www.instagram.com/rauviaconsulting/",
+            "https://www.linkedin.com/company/rauvia/"
+          ],
+          "founder": {
+            "@id": "https://rauvia.com.mx/#raul-morales"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://rauvia.com.mx/#website",
+          "name": "RAUVIA",
+          "url": "https://rauvia.com.mx",
+          "publisher": {
+            "@id": "https://rauvia.com.mx/#organization"
+          }
+        }
+      ],
+      "h1": [
+        "Casos y evidencia"
+      ],
+      "initialHtmlSha256": "ce2406ce9e9f769b26e55e37b55628611fed797876c07ee4f033d192c36c855c"
+    }
+  }
+]

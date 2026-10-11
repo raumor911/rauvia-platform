@@ -1,0 +1,101 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 37339,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/soluciones/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 47203,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/aethryon/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 58224,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/ruta-90/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 42722,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/frente-comercial/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 52815,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/nosotros/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 27055,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/recursos/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 355834,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/casos/",
+    "status": 200,
+    "mime": "text/html; charset=utf-8",
+    "bytes": 14269,
+    "h1": 1,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/sitemap.xml",
+    "status": 200,
+    "mime": "application/xml; charset=utf-8",
+    "bytes": 2773,
+    "h1": 0,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/robots.txt",
+    "status": 200,
+    "mime": "text/plain; charset=utf-8",
+    "bytes": 511,
+    "h1": 0,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  },
+  {
+    "route": "/llms.txt",
+    "status": 200,
+    "mime": "text/plain; charset=utf-8",
+    "bytes": 3159,
+    "h1": 0,
+    "hasViteClient": false,
+    "hasQAProbe": false
+  }
+]

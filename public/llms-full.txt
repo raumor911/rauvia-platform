@@ -1,0 +1,114 @@
+# RAUVIA — referencia pública consolidada
+
+Idioma: es-MX. Revisión editorial: 2026-09-10.
+Este archivo es un resumen curado, no una copia completa del sitio ni de su base de conocimiento interna.
+
+## Organización
+
+RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.
+
+Nombre legal: RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO.
+Sitio: https://rauvia.com.mx/
+Fuente: https://rauvia.com.mx/nosotros
+
+## DOMAIN ARCHITECTURE
+
+Canonical domain:
+https://rauvia.com.mx/
+
+Associated domains:
+https://rauvia.consulting/
+https://rauvia.tech/
+
+Relationship:
+All listed domains belong to RAUVIA.
+rauvia.com.mx is the primary and canonical public domain.
+rauvia.consulting is used as a branding and referral domain.
+rauvia.tech is an associated technology domain and must not be interpreted as a separate organization.
+
+## ENTITY AND BRAND ARCHITECTURE
+
+PERSON
+
+Raúl Antonio Morales Domínguez
+
+Roles:
+Founder
+Strategic Director
+Thought Leadership
+Methodological Direction
+
+Properties:
+https://raulmorales.com.mx/
+https://raulmorales.pro/
+LinkedIn: https://www.linkedin.com/in/raumor/
+
+ORGANIZATION
+
+RAUVIA
+
+Primary domain:
+https://rauvia.com.mx/
+
+Commercial branding:
+https://rauvia.consulting/
+
+Technology and deployment:
+https://rauvia.tech/
+
+Official social properties:
+Facebook: https://www.facebook.com/rauviaconsulting/
+Instagram: https://www.instagram.com/rauviaconsulting/
+LinkedIn: https://www.linkedin.com/company/rauvia/
+
+RELATIONSHIP
+
+Raúl Morales provides strategic direction, thought leadership and methodological development.
+RAUVIA converts that direction into consulting systems, technology, products, delivery and evidence.
+
+## Capacidades
+
+No conectamos herramientas. Conectamos capacidades.
+
+- Organizar: presentación, información y seguimiento básico.
+- Sistematizar: procesos y sistemas comerciales replicables.
+- Tecnologizar: convertir procesos definidos en capacidades digitales.
+- Automatizar: reducir trabajo repetitivo y fricción.
+- Adaptar: analizar señales, restricciones y prioridades mediante AETHRYON.
+
+Las capacidades no forman una ruta obligatoria. La intervención depende del problema, la madurez y las condiciones de cada empresa.
+Fuente: https://rauvia.com.mx/soluciones
+
+## AETHRYON
+
+AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA para interpretar señales, identificar fricción, evaluar oportunidades y estructurar decisiones ejecutables. No es una organización distinta de RAUVIA.
+Fuente: https://rauvia.com.mx/aethryon
+
+## Casos y recursos
+
+Casos: https://rauvia.com.mx/casos/
+Caso de infraestructura temporal B2B: https://rauvia.com.mx/casos/infraestructura-temporal-b2b/
+Artículos: https://rauvia.com.mx/recursos
+Inventario de URLs: https://rauvia.com.mx/sitemap.xml
+
+Los resultados de un caso corresponden a su contexto y periodo. Los índices internos comparativos no equivalen a crecimiento en ventas. Las capacidades en construcción no deben interpretarse como resultados terminados. Para cifras y estado de intervención, consultar la página original; este resumen no establece nuevas métricas ni garantías.
+
+## Referencias complementarias
+
+Índice: https://rauvia.com.mx/llmo/index.json
+Entidad: https://rauvia.com.mx/llmo/organization.json
+Privacidad: https://rauvia.com.mx/aviso-de-privacidad
+Términos: https://rauvia.com.mx/terminos
+
+Estos archivos contienen únicamente información pública. No son un endpoint de conversación, un permiso de acceso a sistemas privados ni una garantía de indexación o citas por modelos.
+
+Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
+Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
+
+## Respuestas y fuentes V75
+
+Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
+
+- [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 18 familias con condiciones y límites.
+- [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.

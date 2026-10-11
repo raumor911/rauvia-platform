@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use any public architectural principles or resources from RAUVIA, please cite it as below."
+authors:
+  - family-names: "Morales"
+    given-names: "Raúl"
+    affiliation: "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO"
+title: "RAUVIA Public Resources & Architectural Guidelines"
+url: "https://rauvia.com.mx"
+repository-code: "https://github.com/rauvia/RAUVIA-Platform-V2"

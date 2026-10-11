@@ -1,0 +1,47 @@
+{
+  "internalNodes": 216,
+  "publicNodes": 205,
+  "internalEdges": 1095,
+  "publicEdges": 1059,
+  "nodeTypes": {
+    "ActionRoute": 1,
+    "Asset": 20,
+    "CapabilityGap": 8,
+    "Capability": 13,
+    "Case": 1,
+    "Claim": 6,
+    "Concept": 2,
+    "Content": 10,
+    "ICP": 6,
+    "Intent": 73,
+    "Method": 1,
+    "Offering": 5,
+    "Opportunity": 1,
+    "Organization": 1,
+    "Person": 1,
+    "Priority": 1,
+    "Problem": 12,
+    "Restriction": 8,
+    "Signal": 1,
+    "Source": 30,
+    "System": 1,
+    "TopicTerritory": 6,
+    "UseCase": 1,
+    "Vertical": 6,
+    "WebSite": 1
+  },
+  "coverage": {
+    "HIGH": 39,
+    "MEDIUM": 25,
+    "HYPOTHESIS": 9
+  },
+  "gaps": {
+    "ASSET_GAP": 13,
+    "CONTENT_GAP": 46,
+    "EVIDENCE_GAP": 70
+  },
+  "publicFiles": {
+    "knowledge-graph.json": 353641,
+    "intent-coverage.json": 84586
+  }
+}

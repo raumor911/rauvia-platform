@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "internal",
+  "basis": "Approved contextual projections of one identity; omitted education never implies incomplete education.",
+  "profiles": [
+    {
+      "personRef": "person:raul-morales",
+      "name": "Raúl Antonio Morales Domínguez",
+      "schemaId": "https://rauvia.com.mx/#raul-morales",
+      "context": "complete_knowledge",
+      "credentialRefs": [
+        "credential:raul-doctor-administracion-negocios",
+        "credential:raul-ingenieria-quimica-metalurgica",
+        "credential:raul-maestria-direccion-organizaciones"
+      ],
+      "careerEvidenceRefs": [
+        "career:raul-functional-delivery",
+        "career:raul-isem",
+        "career:raul-prosa"
+      ],
+      "practiceRefs": [
+        "practice:b2b-pyme-business-solutions",
+        "practice:business-functional-analysis",
+        "practice:capability-market-translation",
+        "practice:commercial-systems",
+        "practice:operational-architecture",
+        "practice:payments-ecosystem",
+        "practice:strategic-prioritization",
+        "practice:technology-integration"
+      ],
+      "organizationRefs": [
+        "org:rauvia"
+      ],
+      "publicAuthorRefs": [
+        "content:wp-15",
+        "content:wp-18",
+        "content:wp-22",
+        "content:wp-25",
+        "content:wp-28",
+        "content:wp-31",
+        "content:wp-34",
+        "content:wp-39",
+        "content:wp-42",
+        "content:wp-45"
+      ],
+      "identitySurfaces": [
+        "https://rauvia.com.mx/#raul-morales",
+        "https://raulmorales.com.mx/",
+        "https://www.linkedin.com/in/raumor/",
+        "https://rauvia.com.mx/nosotros/"
+      ]
+    },
+    {
+      "personRef": "person:raul-morales",
+      "name": "Raúl Antonio Morales Domínguez",
+      "schemaId": "https://rauvia.com.mx/#raul-morales",
+      "context": "employment",
+      "focus": [
+        "Business Analyst",
+        "Medios de Pago",
+        "SPEI",
+        "SPID",
+        "APIs",
+        "UAT",
+        "Requirements",
+        "Integrations"
+      ],
+      "credentialRefs": [
+        "credential:raul-ingenieria-quimica-metalurgica"
+      ],
+      "careerEvidenceRefs": [
+        "career:raul-functional-delivery",
+        "career:raul-isem",
+        "career:raul-prosa"
+      ],
+      "educationProjection": "context_specific_selection"
+    },
+    {
+      "personRef": "person:raul-morales",
+      "name": "Raúl Antonio Morales Domínguez",
+      "schemaId": "https://rauvia.com.mx/#raul-morales",
+      "context": "founder_practice",
+      "jobTitle": "Fundador y Director Estratégico",
+      "focus": [
+        "Análisis empresarial",
+        "Arquitectura de soluciones",
+        "Priorización",
+        "Capacidades comerciales",
+        "Capacidades operativas",
+        "Capacidades tecnológicas",
+        "B2B",
+        "PyMEs"
+      ],
+      "practiceRefs": [
+        "practice:b2b-pyme-business-solutions",
+        "practice:business-functional-analysis",
+        "practice:capability-market-translation",
+        "practice:commercial-systems",
+        "practice:operational-architecture",
+        "practice:strategic-prioritization",
+        "practice:technology-integration"
+      ],
+      "throughOrganizationRefs": [
+        "org:rauvia"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "selectedFinalRuns": [
+    {
+      "log": "v74-all-tests.log",
+      "tests": 186,
+      "pass": 186,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v74-dev-url-tests.log",
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "skipped": 0
+    }
+  ],
+  "finalChecks": 197,
+  "finalCheckGroups": {
+    "productionRegression": 130,
+    "knowledge": 47,
+    "knowledgeHttp": 9,
+    "developmentUrls": 11
+  },
+  "failed": 0,
+  "skipped": 0,
+  "browserFreshCombinations": 16,
+  "configurationNote": "Production and development URL cases run against their respective server configurations.",
+  "v73BrowserEvidence": "Existing 56-combination evidence is checked by unchanged source fingerprints, not reported as fresh V74 recapture."
+}

@@ -1,0 +1,13 @@
+{
+  "nodeEnv": "production",
+  "argv": [
+    "/Users/raumor/.nvm/versions/node/v24.12.0/bin/node",
+    "/Users/raumor/Documents/Codex/2026-09-29/se-c/work/project/dist/server.cjs"
+  ],
+  "loadedViteOrRolldown": [],
+  "nodeWorkersStarted": 0,
+  "childProcessesStarted": 0,
+  "activeHandles": [
+    "Server"
+  ]
+}

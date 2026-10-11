@@ -1,0 +1,17 @@
+[
+  {
+    "path": "node_modules/postcss-selector-parser",
+    "before": "6.0.10",
+    "after": "7.1.6"
+  },
+  {
+    "path": "node_modules/proxy-addr",
+    "before": "2.0.7",
+    "after": "2.0.8"
+  },
+  {
+    "path": "node_modules/source-map-js",
+    "before": "1.2.1",
+    "after": "1.2.2"
+  }
+]

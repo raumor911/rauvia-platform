@@ -1,0 +1,196 @@
+{
+  "headUnchanged": {
+    "title": true,
+    "metadata": true,
+    "canonical": true,
+    "jsonld": true,
+    "h1": true
+  },
+  "h1": [
+    "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
+  ],
+  "h2": {
+    "V70": [
+      "QUIERES HACER CRECER TU EMPRESA, PERO NO SABES QUÉ RESOLVER PRIMERO.",
+      "NO SIEMPRE FALTA UNA SOLUCIÓN. FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO.",
+      "CONVIERTE INFORMACIÓN DISPERSA EN UNA DECISIÓN EJECUTABLE.",
+      "CÓMO FUNCIONA AETHRYON",
+      "AETHRYON OBSERVA CINCO CONDICIONES.",
+      "NO RECIBES SOLO UN DIAGNÓSTICO. RECIBES UNA DECISIÓN ESTRUCTURADA.",
+      "UNA EMPRESA QUIERE CRECER, PERO TIENE TRES OPCIONES.",
+      "AETHRYON ES ÚTIL CUANDO...",
+      "AETHRYON IDENTIFICA LA PRIORIDAD. RAUVIA CONSTRUYE LA SOLUCIÓN.",
+      "NO NECESITAS TENER TODAS LAS RESPUESTAS. NECESITAS SABER CUÁL ES LA SIGUIENTE DECISIÓN CORRECTA."
+    ],
+    "V71": [
+      "AETHRYON en 30 segundos",
+      "¿Te ocurre algo de esto?",
+      "Una empresa quiere crecer, pero tiene tres opciones.",
+      "Qué recibes",
+      "Posibles rutas después del análisis",
+      "CÓMO FUNCIONA AETHRYON",
+      "AETHRYON OBSERVA CINCO CONDICIONES.",
+      "AETHRYON ES ÚTIL CUANDO...",
+      "AETHRYON IDENTIFICA LA PRIORIDAD. RAUVIA CONSTRUYE LA SOLUCIÓN.",
+      "NO NECESITAS TENER TODAS LAS RESPUESTAS. NECESITAS SABER CUÁL ES LA SIGUIENTE DECISIÓN CORRECTA."
+    ]
+  },
+  "semanticInventory": {
+    "AETHRYON": {
+      "V70": true,
+      "V71": true
+    },
+    "crecimiento": {
+      "V70": true,
+      "V71": true
+    },
+    "prioridad": {
+      "V70": true,
+      "V71": true
+    },
+    "problema": {
+      "V70": true,
+      "V71": true
+    },
+    "restricciones": {
+      "V70": true,
+      "V71": true
+    },
+    "oportunidades": {
+      "V70": true,
+      "V71": true
+    },
+    "operación": {
+      "V70": true,
+      "V71": true
+    },
+    "capacidad de ejecución": {
+      "V70": true,
+      "V71": true
+    },
+    "ruta de acción": {
+      "V70": true,
+      "V71": true
+    },
+    "responsables": {
+      "V70": true,
+      "V71": true
+    },
+    "indicadores": {
+      "V70": true,
+      "V71": true
+    },
+    "soluciones": {
+      "V70": true,
+      "V71": true
+    },
+    "Ruta 90": {
+      "V70": true,
+      "V71": true
+    }
+  },
+  "links": {
+    "V70": {
+      "/": 1,
+      "/soluciones": 2,
+      "/aethryon": 2,
+      "/casos": 2,
+      "/nosotros": 1,
+      "https://wa.me/525586494076": 5,
+      "#como-funciona": 1,
+      "/ruta-90/": 1,
+      "/recursos": 1,
+      "/aviso-de-privacidad": 1,
+      "/terminos": 1,
+      "https://www.facebook.com/rauviaconsulting/": 1,
+      "https://www.instagram.com/rauviaconsulting/": 1,
+      "https://www.linkedin.com/company/rauvia/": 1
+    },
+    "V71": {
+      "/": 1,
+      "/soluciones": 1,
+      "/aethryon": 2,
+      "/casos": 2,
+      "/nosotros": 1,
+      "https://wa.me/525586494076": 4,
+      "#como-funciona": 1,
+      "/frente-comercial/": 1,
+      "/soluciones/": 7,
+      "/ruta-90/": 2,
+      "/recursos": 1,
+      "/aviso-de-privacidad": 1,
+      "/terminos": 1,
+      "https://www.facebook.com/rauviaconsulting/": 1,
+      "https://www.instagram.com/rauviaconsulting/": 1,
+      "https://www.linkedin.com/company/rauvia/": 1
+    }
+  },
+  "images": {
+    "V70": [
+      {
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "alt": "RAUVIA Consulting"
+      },
+      {
+        "src": "/media/aethryon-hero-orbital-v2-clean.svg",
+        "alt": "AETHRYON"
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+        "alt": "Oportunidades sin avance"
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+        "alt": "Fricción operativa"
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+        "alt": "Decisiones abiertas"
+      },
+      {
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "alt": "AETHRYON Blueprint"
+      },
+      {
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "alt": "RAUVIA Consulting"
+      }
+    ],
+    "V71": [
+      {
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "alt": "RAUVIA Consulting"
+      },
+      {
+        "src": "/media/aethryon-hero-orbital-v2-clean.svg",
+        "alt": "AETHRYON"
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+        "alt": ""
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+        "alt": ""
+      },
+      {
+        "src": "/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+        "alt": ""
+      },
+      {
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "alt": "AETHRYON Blueprint"
+      },
+      {
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "alt": "RAUVIA Consulting"
+      }
+    ]
+  },
+  "sitemap": {
+    "V70": "762e9d3e79f5186d2948b8e2de518890f219366089792218b6ef4245cf3f2686",
+    "V71": "762e9d3e79f5186d2948b8e2de518890f219366089792218b6ef4245cf3f2686"
+  },
+  "productionLocalStatus": 200,
+  "servedEqualsPrerender": true
+}

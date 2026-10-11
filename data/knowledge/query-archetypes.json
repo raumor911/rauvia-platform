@@ -1,0 +1,998 @@
+{
+  "scope": "internal",
+  "basis": "Approved editorial archetypes only; private benchmark prompts remain separate.",
+  "archetypes": [
+    {
+      "id": "query-archetype:agenda-whatsapp-medicos",
+      "queries": [
+        "Agenda y WhatsApp para médicos",
+        "Soy médico y quiero que mis pacientes puedan solicitar una cita o escribirme por WhatsApp"
+      ],
+      "intentId": "intent:agenda-whatsapp-medicos",
+      "answerId": "answer:contacto-y-agenda-medica",
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:automatizar-o-estructurar",
+      "queries": [
+        "Diferencia entre automatización y estructuración",
+        "¿Automatizar o estructurar?"
+      ],
+      "intentId": "intent:automatizar-o-estructurar",
+      "answerId": "answer:tecnologia-sin-estructura",
+      "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:capacidad-tecnica-no-se-percibe",
+      "queries": [
+        "Tenemos experiencia pero nos perciben como una empresa pequeña",
+        "Tenemos mucha capacidad técnica pero nuestra web no la refleja."
+      ],
+      "intentId": "intent:capacidad-tecnica-no-se-percibe",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:clientes-interesados-se-pierden",
+      "queries": [
+        "Los clientes interesados se pierden"
+      ],
+      "intentId": "intent:clientes-interesados-se-pierden",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:clientes-no-entienden-mi-oferta",
+      "queries": [
+        "Los clientes no entienden mi oferta"
+      ],
+      "intentId": "intent:clientes-no-entienden-mi-oferta",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:clientes-no-entienden-oferta-tecnica",
+      "queries": [
+        "Los clientes no entienden la oferta técnica"
+      ],
+      "intentId": "intent:clientes-no-entienden-oferta-tecnica",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-dar-seguimiento-cotizaciones",
+      "queries": [
+        "Cómo dar seguimiento a cotizaciones"
+      ],
+      "intentId": "intent:como-dar-seguimiento-cotizaciones",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-explicar-capacidad-industrial",
+      "queries": [
+        "Cómo explicar capacidad industrial"
+      ],
+      "intentId": "intent:como-explicar-capacidad-industrial",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-explicar-servicio-profesional",
+      "queries": [
+        "Cómo explicar un servicio profesional"
+      ],
+      "intentId": "intent:como-explicar-servicio-profesional",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-generar-confianza-online",
+      "queries": [
+        "Cómo generar confianza online"
+      ],
+      "intentId": "intent:como-generar-confianza-online",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-ordenar-operacion-pyme",
+      "queries": [
+        "Cómo ordenar la operación de una PyME"
+      ],
+      "intentId": "intent:como-ordenar-operacion-pyme",
+      "answerId": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-presentar-servicios-tecnicos",
+      "queries": [
+        "Cómo presentar servicios técnicos"
+      ],
+      "intentId": "intent:como-presentar-servicios-tecnicos",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:como-reducir-dependencia-dueno",
+      "queries": [
+        "Cómo reducir la dependencia del dueño en una empresa"
+      ],
+      "intentId": "intent:como-reducir-dependencia-dueno",
+      "answerId": "answer:dependencia-operativa",
+      "familyId": "answer-family:dependencia-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:consultoria-escalar-operaciones",
+      "queries": [
+        "Consultoría para escalar operaciones",
+        "Nuestra operación no sostiene el crecimiento y necesitamos revisar cómo escalarla"
+      ],
+      "intentId": "intent:consultoria-escalar-operaciones",
+      "answerId": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:cotizaciones-sin-seguimiento",
+      "queries": [
+        "Cotizo y después dejan de responder",
+        "No sé qué ocurre después de enviar una cotización",
+        "Tengo prospectos pero después de cotizar no sé qué ocurrió."
+      ],
+      "intentId": "intent:cotizaciones-sin-seguimiento",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:crecimiento-genera-desorden",
+      "queries": [
+        "El crecimiento genera desorden"
+      ],
+      "intentId": "intent:crecimiento-genera-desorden",
+      "answerId": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:crm-pyme",
+      "queries": [
+        "Busco un CRM para mi PyME",
+        "CRM para una PyME",
+        "Compramos un CRM pero nadie lo utiliza",
+        "¿Por qué implementar un CRM no mejora las ventas?"
+      ],
+      "intentId": "intent:crm-pyme",
+      "answerId": "answer:tecnologia-sin-estructura",
+      "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:demasiadas-prioridades",
+      "queries": [
+        "Tengo demasiadas prioridades"
+      ],
+      "intentId": "intent:demasiadas-prioridades",
+      "answerId": "answer:priorizacion",
+      "familyId": "answer-family:priorizacion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:depender-directorios-medicos",
+      "queries": [
+        "Dependo de directorios médicos"
+      ],
+      "intentId": "intent:depender-directorios-medicos",
+      "answerId": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:depender-redes-medico",
+      "queries": [
+        "Como médico dependo de redes sociales"
+      ],
+      "intentId": "intent:depender-redes-medico",
+      "answerId": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:empresa-b2b-no-comunica-valor",
+      "queries": [
+        "La empresa B2B no comunica su valor"
+      ],
+      "intentId": "intent:empresa-b2b-no-comunica-valor",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:empresa-dejo-de-avanzar",
+      "queries": [
+        "La empresa dejó de avanzar"
+      ],
+      "intentId": "intent:empresa-dejo-de-avanzar",
+      "answerId": "answer:continuidad-ejecucion",
+      "familyId": "answer-family:continuidad-ejecucion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:empresa-depende-del-dueno",
+      "queries": [
+        "Mi empresa depende del dueño",
+        "Mi empresa depende demasiado de mí."
+      ],
+      "intentId": "intent:empresa-depende-del-dueno",
+      "answerId": "answer:dependencia-operativa",
+      "familyId": "answer-family:dependencia-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:explicar-especialidad",
+      "queries": [
+        "Quiero explicar mi especialidad médica"
+      ],
+      "intentId": "intent:explicar-especialidad",
+      "answerId": "answer:especialidad-medica",
+      "familyId": "answer-family:especialidad-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:facilitar-primer-contacto",
+      "queries": [
+        "Quiero facilitar el primer contacto médico"
+      ],
+      "intentId": "intent:facilitar-primer-contacto",
+      "answerId": "answer:contacto-y-agenda-medica",
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:infraestructura-temporal-b2b",
+      "queries": [
+        "Seguimiento comercial en infraestructura temporal B2B",
+        "¿Qué evidencia y límites tiene el caso de infraestructura temporal B2B de RAUVIA?"
+      ],
+      "intentId": "intent:infraestructura-temporal-b2b",
+      "answerId": "answer:evidencia-comercial",
+      "familyId": "answer-family:evidencia-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:mi-experiencia-no-se-entiende",
+      "queries": [
+        "Mi experiencia no se entiende"
+      ],
+      "intentId": "intent:mi-experiencia-no-se-entiende",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:mi-web-no-representa-mi-negocio",
+      "queries": [
+        "Mi web no representa mi negocio"
+      ],
+      "intentId": "intent:mi-web-no-representa-mi-negocio",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:mostrar-trayectoria-medica",
+      "queries": [
+        "Quiero mostrar mi trayectoria médica"
+      ],
+      "intentId": "intent:mostrar-trayectoria-medica",
+      "answerId": "answer:especialidad-medica",
+      "familyId": "answer-family:especialidad-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:mostrar-ubicacion-consultorio",
+      "queries": [
+        "Quiero mostrar la ubicación del consultorio"
+      ],
+      "intentId": "intent:mostrar-ubicacion-consultorio",
+      "answerId": "answer:contacto-y-agenda-medica",
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:no-se-que-pasa-oportunidades",
+      "queries": [
+        "No sé qué pasa con las oportunidades"
+      ],
+      "intentId": "intent:no-se-que-pasa-oportunidades",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:no-se-que-resolver-primero",
+      "queries": [
+        "No sé qué debería resolver primero",
+        "No sé qué resolver primero"
+      ],
+      "intentId": "intent:no-se-que-resolver-primero",
+      "answerId": "answer:priorizacion",
+      "familyId": "answer-family:priorizacion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:organizar-seguimiento-comercial",
+      "queries": [
+        "Quiero organizar el seguimiento comercial"
+      ],
+      "intentId": "intent:organizar-seguimiento-comercial",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-comercial-servicios-profesionales",
+      "queries": [
+        "Página comercial para servicios profesionales",
+        "Quiero presentar mis servicios profesionales con alcance, evidencia y un siguiente paso claro"
+      ],
+      "intentId": "intent:pagina-comercial-servicios-profesionales",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-web-consultorio-medico",
+      "queries": [
+        "Página web para consultorio médico",
+        "Quiero organizar la página de un consultorio con varios médicos"
+      ],
+      "intentId": "intent:pagina-web-consultorio-medico",
+      "answerId": "answer:consultorio-organizado",
+      "familyId": "answer-family:consultorio-organizado",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-web-gratis-medicos",
+      "queries": [
+        "Página web gratis para médicos",
+        "¿Qué incluye una página web gratis para médicos?"
+      ],
+      "intentId": "intent:pagina-web-gratis-medicos",
+      "answerId": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-web-medicos",
+      "queries": [
+        "Necesito una página web para mi práctica médica",
+        "Página web para médicos"
+      ],
+      "intentId": "intent:pagina-web-medicos",
+      "answerId": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-web-medicos-especialistas",
+      "queries": [
+        "Soy médico especialista y quiero que entiendan qué atiendo, dónde consulto y cómo contactarme."
+      ],
+      "intentId": "intent:pagina-web-medicos-especialistas",
+      "answerId": "answer:especialidad-medica",
+      "familyId": "answer-family:especialidad-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:pagina-web-servicios-profesionales",
+      "queries": [
+        "Necesito una página que explique mis servicios profesionales antes del primer contacto",
+        "Página web para servicios profesionales"
+      ],
+      "intentId": "intent:pagina-web-servicios-profesionales",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:presencia-medica-dispersa",
+      "queries": [
+        "Mi presencia médica está dispersa",
+        "Soy médico y mi información está dispersa en varios sitios"
+      ],
+      "intentId": "intent:presencia-medica-dispersa",
+      "answerId": "answer:presencia-medica",
+      "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:procesos-dependen-personas",
+      "queries": [
+        "Los procesos dependen de personas"
+      ],
+      "intentId": "intent:procesos-dependen-personas",
+      "answerId": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:prospectos-no-avanzan",
+      "queries": [
+        "Me llegan interesados pero no compran",
+        "Tengo prospectos pero no avanzan",
+        "¿Mi problema es demanda o seguimiento?"
+      ],
+      "intentId": "intent:prospectos-no-avanzan",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-es-aethryon",
+      "queries": [
+        "¿Qué es AETHRYON?",
+        "¿Qué es inteligencia estructural y AETHRYON?",
+        "¿Qué es inteligencia estructural?"
+      ],
+      "intentId": "intent:que-es-aethryon",
+      "answerId": "answer:entidad-aethryon",
+      "familyId": "answer-family:entidad-aethryon",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-es-arquitectura-operativa",
+      "queries": [
+        "¿Qué es arquitectura operativa?"
+      ],
+      "intentId": "intent:que-es-arquitectura-operativa",
+      "answerId": "answer:estructura-operativa",
+      "familyId": "answer-family:estructura-operativa",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-es-rauvia",
+      "queries": [
+        "¿Qué es RAUVIA?"
+      ],
+      "intentId": "intent:que-es-rauvia",
+      "answerId": "answer:entidad-rauvia",
+      "familyId": "answer-family:entidad-rauvia",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-es-ruta90",
+      "queries": [
+        "¿Qué es Ruta 90?"
+      ],
+      "intentId": "intent:que-es-ruta90",
+      "answerId": "answer:entidad-ruta90",
+      "familyId": "answer-family:entidad-ruta90",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-necesito-antes-crm",
+      "queries": [
+        "¿Qué debe existir antes de un CRM?"
+      ],
+      "intentId": "intent:que-necesito-antes-crm",
+      "answerId": "answer:tecnologia-sin-estructura",
+      "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:seo-local-medicos",
+      "queries": [
+        "SEO local para médicos",
+        "Soy médico y quiero que se entienda dónde atiendo y cómo encontrar mi consultorio"
+      ],
+      "intentId": "intent:seo-local-medicos",
+      "answerId": "answer:presencia-local-medica",
+      "familyId": "answer-family:presencia-local-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:ser-encontrado-localmente",
+      "queries": [
+        "Quiero ser encontrado localmente como médico"
+      ],
+      "intentId": "intent:ser-encontrado-localmente",
+      "answerId": "answer:presencia-local-medica",
+      "familyId": "answer-family:presencia-local-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:servicio-dificil-de-explicar",
+      "queries": [
+        "Soy consultor y mi página no explica bien qué hago."
+      ],
+      "intentId": "intent:servicio-dificil-de-explicar",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:servicios-especializados-dificiles-explicar",
+      "queries": [
+        "Los servicios especializados son difíciles de explicar"
+      ],
+      "intentId": "intent:servicios-especializados-dificiles-explicar",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:sistema-comercial-pyme",
+      "queries": [
+        "Mi PyME necesita organizar responsables, oportunidades y seguimiento comercial",
+        "Sistema comercial para PyME"
+      ],
+      "intentId": "intent:sistema-comercial-pyme",
+      "answerId": "answer:deterioro-comercial",
+      "familyId": "answer-family:deterioro-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:sitio-no-refleja-capacidad",
+      "queries": [
+        "El sitio no refleja nuestra capacidad"
+      ],
+      "intentId": "intent:sitio-no-refleja-capacidad",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:sitio-web-consultoria",
+      "queries": [
+        "Sitio web para consultoría",
+        "Tenemos una consultoría y nuestra página no explica qué se puede contratar"
+      ],
+      "intentId": "intent:sitio-web-consultoria",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:sitio-web-empresa-b2b",
+      "queries": [
+        "Nuestra empresa B2B necesita explicar sus servicios y dar contexto a los compradores",
+        "Sitio web para una empresa B2B"
+      ],
+      "intentId": "intent:sitio-web-empresa-b2b",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:sitio-web-servicios-especializados",
+      "queries": [
+        "Necesitamos explicar servicios especializados que son difíciles de comprender en nuestra web",
+        "Sitio web para servicios especializados"
+      ],
+      "intentId": "intent:sitio-web-servicios-especializados",
+      "answerId": "answer:brecha-capacidad-percepcion",
+      "familyId": "answer-family:brecha-capacidad-percepcion",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:software-o-proceso",
+      "queries": [
+        "¿Necesito software o un proceso?"
+      ],
+      "intentId": "intent:software-o-proceso",
+      "answerId": "answer:tecnologia-sin-estructura",
+      "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:solicitar-cita-online",
+      "queries": [
+        "Quiero solicitar una cita online"
+      ],
+      "intentId": "intent:solicitar-cita-online",
+      "answerId": "answer:contacto-y-agenda-medica",
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:solo-tengo-redes-sociales",
+      "queries": [
+        "Sólo tengo redes sociales"
+      ],
+      "intentId": "intent:solo-tengo-redes-sociales",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:varias-especialidades-consultorio",
+      "queries": [
+        "En nuestro consultorio atendemos varias especialidades y queremos organizar esa información",
+        "Varias especialidades en el consultorio"
+      ],
+      "intentId": "intent:varias-especialidades-consultorio",
+      "answerId": "answer:consultorio-organizado",
+      "familyId": "answer-family:consultorio-organizado",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:varias-ubicaciones-medicas",
+      "queries": [
+        "Atendemos en varias ubicaciones y los pacientes no saben a cuál acudir",
+        "Varias ubicaciones médicas"
+      ],
+      "intentId": "intent:varias-ubicaciones-medicas",
+      "answerId": "answer:consultorio-organizado",
+      "familyId": "answer-family:consultorio-organizado",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:varios-medicos-consultorio",
+      "queries": [
+        "Tenemos varios médicos en el consultorio y queremos mostrar quién atiende cada especialidad",
+        "Varios médicos en un consultorio"
+      ],
+      "intentId": "intent:varios-medicos-consultorio",
+      "answerId": "answer:consultorio-organizado",
+      "familyId": "answer-family:consultorio-organizado",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:web-para-consultor",
+      "queries": [
+        "Soy consultor y necesito que una persona entienda qué hago antes de contactarme",
+        "Web para consultor"
+      ],
+      "intentId": "intent:web-para-consultor",
+      "answerId": "answer:servicios-profesionales",
+      "familyId": "answer-family:servicios-profesionales",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:whatsapp-carga-proceso-comercial",
+      "queries": [
+        "Muchos WhatsApps pero pocas ventas",
+        "WhatsApp carga todo el proceso comercial"
+      ],
+      "intentId": "intent:whatsapp-carga-proceso-comercial",
+      "answerId": "answer:whatsapp-y-seguimiento",
+      "familyId": "answer-family:whatsapp-y-seguimiento",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    }
+  ]
+}

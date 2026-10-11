@@ -1,0 +1,45 @@
+{
+  "name": "RAUVIA — referencias públicas",
+  "language": "es-MX",
+  "reviewed_at": "2026-10-06",
+  "description": "Convención de directorio de RAUVIA; no es un protocolo obligatorio ni una API de conversación, y no garantiza indexación ni citas.",
+  "entrypoint": "https://rauvia.com.mx/llms.txt",
+  "resources": [
+    {
+      "url": "https://rauvia.com.mx/llmo/rauvia.md",
+      "type": "text/markdown"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/aethryon.md",
+      "type": "text/markdown"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/evidencia.md",
+      "type": "text/markdown"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/organization.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/knowledge-graph.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/intent-coverage.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/retrieval-map.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/canonical-answers.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/citation-bundles.json",
+      "type": "application/json"
+    }
+  ]
+}

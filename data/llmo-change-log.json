@@ -1,0 +1,24 @@
+[
+  {
+    "id": "change:v74-knowledge-intent-graph",
+    "date": "2026-10-06",
+    "scope": "static knowledge/intent/evidence layer",
+    "hypothesis_id": "hypothesis:v74-explicit-knowledge",
+    "change": "Typed editorial master, controlled publication, two static public resources, deterministic audits and derived matrices.",
+    "excluded": "No UX/performance/runtime telemetry/DB/Search Console/Kyberion changes.",
+    "expected_result": "Explicit, traceable public knowledge without private hypotheses or false Ruta90 authorship.",
+    "observed_result": null,
+    "deployment": "not_deployed"
+  },
+  {
+    "id": "change:v75-retrieval-citation-authority",
+    "date": "2026-10-06",
+    "scope": "static retrieval/citation, authority/editorial preparation, three targeted security patches",
+    "hypothesis_id": "hypothesis:v75-retrieval-association",
+    "change": "18 answer families, 64 archetypes, claim/source/limit bundles, five page microcopy adjustments and security hardening.",
+    "excluded": "No WordPress/profile publishing, telemetry, APIs, Search Console, Kyberion or performance initiative.",
+    "expected_result": "Traceable problem/entity/capability associations and bounded citations.",
+    "observed_result": null,
+    "deployment": "not_deployed"
+  }
+]

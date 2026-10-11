@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="851" height="346" viewBox="0 0 851 346" role="img" aria-labelledby="title desc">
+  <title id="title">RAUVIA Consulting</title>
+  <desc id="desc">Logotipo editable de RAUVIA Consulting con retícula azul y acentos dorados.</desc>
+
+  <!-- Fondo deliberadamente transparente -->
+  <defs>
+    <style><![CDATA[
+      .display {
+        fill: #00335b;
+        font-family: "Bodoni 72", Didot, "Bodoni MT", "Times New Roman", serif;
+        font-weight: 400;
+      }
+      .tagline {
+        fill: #ffffff;
+        stroke: #00335b;
+        stroke-width: 1.55px;
+        paint-order: stroke fill;
+        font-family: Montserrat, Gotham, Avenir, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 1.3px;
+      }
+    ]]></style>
+  </defs>
+
+  <!-- Símbolo: cada módulo es un rectángulo independiente y editable -->
+  <g id="simbolo" shape-rendering="geometricPrecision">
+    <!-- Fila 1 -->
+    <rect x="15"  y="15" width="35" height="35" rx="1" fill="#276c8b"/>
+    <rect x="60"  y="15" width="36" height="35" rx="1" fill="#1f6383"/>
+    <rect x="105" y="15" width="34" height="35" rx="1" fill="#175a7d"/>
+    <rect x="146" y="15" width="34" height="35" rx="1" fill="#0f5074"/>
+    <rect x="188" y="15" width="33" height="35" rx="1" fill="#064467"/>
+    <rect x="228" y="15" width="30" height="35" rx="1" fill="#ffc64e"/>
+
+    <!-- Fila 2 -->
+    <rect x="15"  y="58" width="35" height="36" rx="1" fill="#2a708f"/>
+    <rect x="60"  y="58" width="36" height="36" rx="1" fill="#236887"/>
+    <rect x="105" y="58" width="34" height="36" rx="1" fill="#1a5e7f"/>
+    <rect x="146" y="58" width="34" height="36" rx="1" fill="#125578"/>
+    <rect x="188" y="58" width="33" height="36" rx="1" fill="#094a6d"/>
+    <rect x="228" y="58" width="30" height="36" rx="1" fill="#003c61"/>
+
+    <!-- Fila 3 -->
+    <rect x="15"  y="103" width="35" height="36" rx="1" fill="#327a98"/>
+    <rect x="60"  y="103" width="36" height="36" rx="1" fill="#28718f"/>
+    <rect x="105" y="103" width="34" height="36" rx="1" fill="#1d6685"/>
+    <rect x="146" y="103" width="34" height="36" rx="1" fill="#135a7b"/>
+    <rect x="188" y="103" width="33" height="36" rx="1" fill="#094c70"/>
+    <rect x="228" y="103" width="30" height="36" rx="1" fill="#003d63"/>
+
+    <!-- Fila 4 -->
+    <rect x="15"  y="148" width="35" height="36" rx="1" fill="#347d9a"/>
+    <rect x="60"  y="148" width="36" height="36" rx="1" fill="#075074"/>
+    <rect x="105" y="148" width="34" height="36" rx="1" fill="#0a5275"/>
+    <rect x="146" y="148" width="34" height="36" rx="1" fill="#084d70"/>
+    <rect x="188" y="148" width="33" height="36" rx="1" fill="#034568"/>
+    <rect x="228" y="148" width="30" height="36" rx="1" fill="#003b60"/>
+
+    <!-- Fila 5 -->
+    <rect x="15"  y="193" width="35" height="36" rx="1" fill="#ffc64e"/>
+    <rect x="60"  y="193" width="36" height="36" rx="1" fill="#064b6e"/>
+    <rect x="105" y="193" width="34" height="36" rx="1" fill="#064a6d"/>
+    <rect x="146" y="193" width="34" height="36" rx="1" fill="#044668"/>
+    <rect x="188" y="193" width="33" height="36" rx="1" fill="#014063"/>
+    <rect x="228" y="193" width="30" height="36" rx="1" fill="#00395d"/>
+
+    <!-- Fila 6 -->
+    <rect x="15"  y="238" width="35" height="36" rx="1" fill="#064d70"/>
+    <rect x="60"  y="238" width="36" height="36" rx="1" fill="#064a6d"/>
+    <rect x="105" y="238" width="34" height="36" rx="1" fill="#044669"/>
+    <rect x="146" y="238" width="34" height="36" rx="1" fill="#024265"/>
+    <rect x="188" y="238" width="33" height="36" rx="1" fill="#003d61"/>
+    <rect x="228" y="238" width="30" height="36" rx="1" fill="#00375a"/>
+  </g>
+
+  <!-- Logotipo tipográfico editable -->
+  <g id="logotipo">
+    <text class="display" x="302" y="113" font-size="135" letter-spacing="-2.8" textLength="542" lengthAdjust="spacingAndGlyphs">RAUVIA</text>
+    <text class="display" x="303" y="200" font-size="72" letter-spacing="-1.15" textLength="535" lengthAdjust="spacingAndGlyphs">CONSULTING</text>
+  </g>
+
+  <!-- Lema editable -->
+  <g id="lema">
+    <text class="tagline" x="305" y="285" font-size="39" textLength="536" lengthAdjust="spacingAndGlyphs">CRECIMIENTO DISEÑADO.</text>
+    <text class="tagline" x="306" y="339" font-size="39" textLength="383" lengthAdjust="spacingAndGlyphs">NO IMPROVISADO.</text>
+  </g>
+</svg>

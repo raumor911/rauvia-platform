@@ -1,0 +1,242 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/soluciones/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/aethryon/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/ruta-90/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/frente-comercial/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/nosotros/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/recursos/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/casos/",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/llms.txt",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/llmo/index.json",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/copywriting-textos-vender-facebook-pymes/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/marketing-bajo-presupuesto-5-estrategias/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/despega-tu-marketing/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/tag/facebook-ads/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/tag/consultoria-para-pymes/feed/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/category/startups-y-emprendimiento/feed/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/errores-planeacion-estrategica-90-dias/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/ruta-90/",
+    "robots": null
+  },
+  {
+    "path": "/categoria-producto/estrategia-y-planificacion/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/aethryon/",
+    "robots": null
+  },
+  {
+    "path": "/privacidad/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/aviso-de-privacidad/",
+    "robots": null
+  },
+  {
+    "path": "/brand/rauvia-consulting/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/nosotros/",
+    "robots": null
+  },
+  {
+    "path": "/categoria-producto/servicios-de-consultoria/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/soluciones/",
+    "robots": null
+  },
+  {
+    "path": "/tag/errores-de-negocio/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/etiqueta-producto/consultoria-estrategica/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/aethryon/",
+    "robots": null
+  },
+  {
+    "path": "/tag/transformacion-digital/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/tag/innovacion/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/tag/sistemas-de-negocio/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/tag/consultoria-cdmx/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/soluciones/",
+    "robots": null
+  },
+  {
+    "path": "/tag/gestion-de-equipos/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+    "robots": null
+  },
+  {
+    "path": "/clients/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/casos/",
+    "robots": null
+  },
+  {
+    "path": "/ruta-90-dias-rauvia-para-quien-es/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/ruta-90/",
+    "robots": null
+  },
+  {
+    "path": "/category/automatizacion-empresarial/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/tag/crecimiento-de-negocio/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+    "robots": null
+  },
+  {
+    "path": "/guia-definitiva-como-usar-el-seo-basico-para-superar-a-tu-competencia-en-marketplaces/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/",
+    "robots": null
+  },
+  {
+    "path": "/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+    "robots": null
+  },
+  {
+    "path": "/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/feed/",
+    "status": 301,
+    "location": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+    "robots": null
+  },
+  {
+    "path": "/v73-ruta-inventada/",
+    "status": 404,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/ruta-90/no-existe-v73/",
+    "status": 410,
+    "location": null,
+    "robots": null
+  },
+  {
+    "path": "/diagnostico-inventado-v73/",
+    "status": 410,
+    "location": null,
+    "robots": null
+  }
+]

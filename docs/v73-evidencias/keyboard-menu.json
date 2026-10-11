@@ -1,0 +1,40 @@
+{
+  "focus": {
+    "href": "/soluciones/",
+    "outline": "rgb(216, 224, 231) solid 3px",
+    "outlineOffset": "0.5px",
+    "tag": "A",
+    "text": "CONOCER NUESTROS PRODUCTOS"
+  },
+  "menu": {
+    "bodyOverflow": "hidden",
+    "dialogs": [
+      {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      }
+    ],
+    "expanded": "true"
+  },
+  "closed": {
+    "bodyOverflow": "",
+    "expanded": "false",
+    "focused": "Abrir menú"
+  }
+}

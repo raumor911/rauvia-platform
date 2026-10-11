@@ -1,0 +1,162 @@
+[
+  {
+    "path": "/ruta-90/",
+    "status": 200,
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "canonical": "https://rauvia.com.mx/ruta-90/",
+    "h1": 1,
+    "schemas": 5
+  },
+  {
+    "path": "/",
+    "status": 200,
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "canonical": "https://rauvia.com.mx/",
+    "h1": 1,
+    "schemas": 2
+  },
+  {
+    "path": "/nosotros/",
+    "status": 200,
+    "title": "RAUVIA Consulting | Nosotros",
+    "canonical": "https://rauvia.com.mx/nosotros/",
+    "h1": 1,
+    "schemas": 4
+  },
+  {
+    "path": "/soluciones/",
+    "status": 200,
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "canonical": "https://rauvia.com.mx/soluciones/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/aethryon/",
+    "status": 200,
+    "title": "RAUVIA Consulting | AETHRYON",
+    "canonical": "https://rauvia.com.mx/aethryon/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/recursos/",
+    "status": 200,
+    "title": "Recursos y Blog | RAUVIA",
+    "canonical": "https://rauvia.com.mx/recursos/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/frente-comercial/",
+    "status": 200,
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "canonical": "https://rauvia.com.mx/frente-comercial/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/sitio-web-comercial-para-pymes/",
+    "status": 200,
+    "title": "Sitio web comercial para PyMES | RAUVIA",
+    "canonical": "https://rauvia.com.mx/sitio-web-comercial-para-pymes/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/sitio-web-servicios-especializados/",
+    "status": 200,
+    "title": "Sitio web para empresas de servicios especializados | RAUVIA",
+    "canonical": "https://rauvia.com.mx/sitio-web-servicios-especializados/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/casos/",
+    "status": 200,
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "canonical": "https://rauvia.com.mx/casos/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/casos/infraestructura-temporal-b2b/",
+    "status": 200,
+    "title": "De generar conversaciones a entender la demanda | Caso RAUVIA",
+    "canonical": "https://rauvia.com.mx/casos/infraestructura-temporal-b2b/",
+    "h1": 1,
+    "schemas": 3
+  },
+  {
+    "path": "/pagina-comercial-servicios-profesionales/",
+    "status": 200,
+    "title": "Página comercial para servicios profesionales | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-comercial-servicios-profesionales/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/pagina-web-gratis-para-medicos/",
+    "status": 200,
+    "title": "Página web gratis para médicos | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/pagina-web-para-medicos-especialistas/",
+    "status": 200,
+    "title": "Página web para médicos especialistas | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-web-para-medicos-especialistas/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/seo-local-para-medicos/",
+    "status": 200,
+    "title": "SEO local para médicos | RAUVIA",
+    "canonical": "https://rauvia.com.mx/seo-local-para-medicos/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/pagina-web-para-medicos/",
+    "status": 200,
+    "title": "Página web para médicos | Presencia profesional | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-web-para-medicos/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/pagina-web-para-consultorio-medico/",
+    "status": 200,
+    "title": "Página web para consultorio médico | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/pagina-web-medicos-agenda-whatsapp/",
+    "status": 200,
+    "title": "Página web para médicos con agenda y WhatsApp | RAUVIA",
+    "canonical": "https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/",
+    "h1": 1,
+    "schemas": 6
+  },
+  {
+    "path": "/aviso-de-privacidad/",
+    "status": 200,
+    "title": "Aviso de Privacidad | RAUVIA",
+    "canonical": "https://rauvia.com.mx/aviso-de-privacidad/",
+    "h1": 1,
+    "schemas": 2
+  },
+  {
+    "path": "/terminos/",
+    "status": 200,
+    "title": "Términos y Condiciones | RAUVIA",
+    "canonical": "https://rauvia.com.mx/terminos/",
+    "h1": 1,
+    "schemas": 2
+  }
+]

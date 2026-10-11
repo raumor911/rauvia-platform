@@ -1,0 +1,146 @@
+[
+  {
+    "route": "/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER."
+    ],
+    "after_h1": [
+      "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER."
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER ."
+    ],
+    "after_h1": [
+      "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER ."
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
+    ],
+    "after_h1": [
+      "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "Ruta 90: convierte una prioridad en capacidad instalada."
+    ],
+    "after_h1": [
+      "Ruta 90: convierte una prioridad en capacidad instalada."
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "Haz más fácil entender, confiar y avanzar con tu empresa."
+    ],
+    "after_h1": [
+      "Haz más fácil entender, confiar y avanzar con tu empresa."
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD ."
+    ],
+    "after_h1": [
+      "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD ."
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "Recursos"
+    ],
+    "after_h1": [
+      "Recursos"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "seo_equal": true,
+    "initial_text_equal": true,
+    "removed_main_links": [],
+    "before_h1": [
+      "Casos y evidencia"
+    ],
+    "after_h1": [
+      "Casos y evidencia"
+    ]
+  },
+  {
+    "excluded_file": "sitio-web-comercial-para-pymes/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-web-para-medicos-especialistas/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "aviso-de-privacidad/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "seo-local-para-medicos/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-web-para-medicos/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-web-para-consultorio-medico/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-web-medicos-agenda-whatsapp/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "casos/infraestructura-temporal-b2b/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "terminos/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-web-gratis-para-medicos/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "sitio-web-servicios-especializados/index.html",
+    "identical_html": true
+  },
+  {
+    "excluded_file": "pagina-comercial-servicios-profesionales/index.html",
+    "identical_html": true
+  }
+]

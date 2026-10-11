@@ -1,0 +1,1159 @@
+{
+  "checked": 192,
+  "failures": [],
+  "samples": [
+    {
+      "text": "RAUVIA · AETHRYON · SISTEMA DE ANÁLISIS Y DECISIÓN",
+      "ratio": 8.43,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "FRENANDO EL CRECIMIENTO",
+      "ratio": 8.78,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": ".",
+      "ratio": 5.61,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Quieres hacer crecer tu empresa, pero quizá no está claro qué problema debes resolver prim",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON organiza esa situación y la convierte en una ruta de acción.",
+      "ratio": 14.85,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "ANALIZAR MI SITUACIÓN",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "VER CÓMO FUNCIONA",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON en 30 segundos",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Úsalo cuando",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Tienes varios problemas, oportunidades o iniciativas y no está claro qué conviene resolver",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Recibes",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una prioridad justificada y una ruta de acción.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "No es",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una sustitución del criterio del dueño o del equipo directivo, ni una garantía automática ",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿Te ocurre algo de esto?",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Hay oportunidades, pero no avanzan",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Hay clientes, proyectos o ideas, pero no está claro cuál atender primero.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "La operación genera fricción",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Crecer aumenta el retrabajo, el desorden y la presión sobre el equipo.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Hay demasiadas decisiones abiertas",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Tiempo, dinero y atención se reparten sin una prioridad clara.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ampliar el contexto de estas situaciones",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Puede haber oportunidades comerciales, problemas operativos, tecnología sin integrar, proc",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "El problema no siempre es la falta de capacidad. Con frecuencia es no saber dónde interven",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Oportunidades sin avance",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Existen clientes, proyectos o ideas, pero no está claro cuál merece atención inmediata ni ",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Fricción operativa",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Los procesos dependen de personas, existe retrabajo o cada intento de crecer aumenta el de",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Decisiones abiertas",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Se distribuyen tiempo, dinero y atención entre distintas iniciativas sin saber cuál puede ",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CASO DE USO · EJEMPLO CONCEPTUAL",
+      "ratio": 7.11,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una empresa quiere crecer, pero tiene tres opciones.",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Ejemplo para explicar una decisión; no representa un caso de éxito documentado.",
+      "ratio": 10.47,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "01Situación",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "01",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "La empresa quiere crecer.",
+      "ratio": 12.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "02Opciones",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "02",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Invertir en marketing, contratar personal o automatizar su operación.",
+      "ratio": 12.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "03Análisis AETHRYON",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "03",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "El análisis muestra que la empresa ya recibe demanda suficiente, pero su operación depende",
+      "ratio": 12.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "04Prioridad",
+      "ratio": 12.89,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "04",
+      "ratio": 12.89,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Estructurar y automatizar el proceso operativo antes de aumentar la captación.",
+      "ratio": 14.49,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "05Por qué",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "05",
+      "ratio": 10.93,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Esta prioridad busca evitar invertir en crecimiento antes de contar con la capacidad neces",
+      "ratio": 12.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "RESULTADO",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué recibes",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "No recibes solo un diagnóstico. Recibes una decisión estructurada.",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "El valor del análisis no está en describir el problema, sino en convertirlo en una decisió",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Prioridad justificada",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué conviene resolver primero y por qué.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ruta de acción",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Acciones, orden y responsables.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Riesgos y dependencias",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué puede bloquear el avance y qué condiciones vigilar.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Indicadores de seguimiento",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Cómo observar si la decisión comienza a producir avance.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ver los seis resultados del análisis",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "01",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Definición del Problema",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué está ocurriendo y por qué necesita atención.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "02",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Mapa de Señales y Restricciones",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué información respalda la situación y qué puede bloquearla.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "03",
+      "ratio": 5.7,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Prioridad Recomendada",
+      "ratio": 15.08,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué conviene resolver primero y con qué justificación.",
+      "ratio": 7.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "04",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Escenarios y Riesgos",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué puede ocurrir y qué condiciones deben vigilarse.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "05",
+      "ratio": 8.8,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ruta de Acción",
+      "ratio": 14.89,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Qué debe hacerse, en qué orden y con qué responsables.",
+      "ratio": 7.25,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "06",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Indicadores de Seguimiento",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Cómo saber si la decisión comienza a producir avance.",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Posibles rutas después del análisis",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Según la prioridad identificada, la intervención puede requerir distintas capacidades. Est",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Frente Comercial",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una presencia digital que explique tu valor y facilite el contacto.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar Frente Comercial",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Sistema Comercial / CRM",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Organizar oportunidades, seguimiento y responsabilidades comerciales.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar soluciones comerciales",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Arquitectura Operativa",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Definir procesos, roles y reglas para una operación más consistente.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar arquitectura operativa",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Desarrollo Tecnológico",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Construir la capacidad digital que necesita un proceso definido.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar desarrollo tecnológico",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Automatización",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ejecutar tareas repetitivas con reglas claras e integración entre sistemas.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar automatización",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ruta 90",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Organizar una prioridad clara cuando requiere un ciclo estructurado de ejecución.",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Explorar Ruta 90",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "EXPLORAR SOLUCIONES",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "PROCESO",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CÓMO FUNCIONA AETHRYON",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "El análisis se desarrolla en cuatro pasos. Cada uno reduce una parte de la incertidumbre h",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "ENTENDER LA SITUACIÓN",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Reunimos el contexto, el objetivo, las señales disponibles y las restricciones reales de l",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Resultado",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una definición clara del problema.",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "EVALUAR LAS CONDICIONES",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Analizamos si existe una necesidad real, qué obstáculos pueden presentarse y qué tan prepa",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Resultado",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una lectura objetiva de viabilidad y riesgo.",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "ENCONTRAR LA PRIORIDAD",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Comparamos problemas, oportunidades y dependencias para identificar qué intervención puede",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Resultado",
+      "ratio": 5.53,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una prioridad justificada.",
+      "ratio": 14.64,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "DISEÑAR LA RUTA",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Convertimos la prioridad en una secuencia de acciones, responsables, dependencias e indica",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Resultado",
+      "ratio": 8.43,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Una ruta ejecutable.",
+      "ratio": 14.26,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Profundizar: por qué priorizar y cómo se organiza la información",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "LA CAUSA",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "NO SIEMPRE FALTA UNA SOLUCIÓN.FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO.",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO.",
+      "ratio": 8.78,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Una empresa puede tener talento, conocimiento, tecnología, clientes y oportunidades y, aun",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Cuando las señales están dispersas, las prioridades compiten y las dependencias no son vis",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Antes de construir una solución, es necesario identificar la intervención correcta.",
+      "ratio": 14.85,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Información",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Dispersa",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Decisiones",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Abiertas",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Prioridad",
+      "ratio": 7.11,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Visible",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON",
+      "ratio": 7.11,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CONVIERTE INFORMACIÓN DISPERSAEN UNA DECISIÓN EJECUTABLE.",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimi",
+      "ratio": 15.13,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "No sustituye la experiencia del dueño o del equipo directivo. La organiza, la contrasta y ",
+      "ratio": 10.19,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "ORDENA",
+      "ratio": 16.75,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Reúne señales, problemas, restricciones y oportunidades.",
+      "ratio": 11.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "EVALÚA",
+      "ratio": 16.75,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Analiza las condiciones reales para avanzar y los obstáculos que podrían impedirlo.",
+      "ratio": 11.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "PRIORIZA",
+      "ratio": 7.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Distingue qué debe atenderse ahora, después o descartarse.",
+      "ratio": 11.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CONVIERTE",
+      "ratio": 12.61,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Transforma la prioridad en acciones, responsables, dependencias e indicadores.",
+      "ratio": 11.28,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CRITERIOS DE ANÁLISIS",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON OBSERVACINCO CONDICIONES.",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "01CLARIDAD",
+      "ratio": 14.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CLARIDAD",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿El problema y el resultado esperado están definidos con suficiente precisión?",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "02DIFICULTADES",
+      "ratio": 14.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "DIFICULTADES",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿Qué obstáculos internos o externos pueden impedir que la iniciativa avance?",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "03ALINEACIÓN",
+      "ratio": 14.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "ALINEACIÓN",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿Las condiciones, actores y recursos necesarios comienzan a coincidir?",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "04OPORTUNIDAD",
+      "ratio": 14.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "OPORTUNIDAD",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿Existe un momento favorable para actuar o conviene esperar?",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "05CAPACIDAD DE EJECUCIÓN",
+      "ratio": 14.66,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CAPACIDAD DE EJECUCIÓN",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "¿La empresa cuenta con responsables, recursos y condiciones para implementar la decisión?",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Nota: Dentro del sistema, estas condiciones se modelan mediante indicadores.",
+      "ratio": 7.06,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "APLICACIÓN",
+      "ratio": 7.24,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON ES ÚTIL CUANDO...",
+      "ratio": 14.85,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "Además de reconocer un síntoma, estas condiciones ayudan a valorar si necesitas analizar u",
+      "ratio": 7.23,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Quieres hacer crecer tu empresa, pero no sabes qué resolver primero.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Tienes varias iniciativas compitiendo por tiempo y recursos.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Detectaste una oportunidad, pero no sabes si el momento es adecuado.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "La empresa crece, pero también aumenta la complejidad.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Necesitas justificar una decisión antes de invertir.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Quieres convertir un problema ambiguo en una ruta clara.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Necesitas distinguir entre una señal real y una percepción interna.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Existen distintas opiniones y no hay un criterio común para decidir.",
+      "ratio": 10.34,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "DE LA DECISIÓN A LA EJECUCIÓN",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON IDENTIFICA LA PRIORIDAD.RAUVIA CONSTRUYE LA SOLUCIÓN.",
+      "ratio": 15.54,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "RAUVIA CONSTRUYE LA SOLUCIÓN.",
+      "ratio": 9.18,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "El análisis define qué necesita atención y qué resultado debe buscarse. A partir de esa pr",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Cuando una prioridad requiere un ciclo estructurado de ejecución, Ruta 90 permite organiza",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Conocer Ruta 90 →",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "No todas las prioridades identificadas por AETHRYON requieren una Ruta 90; el tipo de inte",
+      "ratio": 7.56,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "AETHRYON",
+      "ratio": 7.11,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Análisis y prioridad",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "SOLUCIÓN RAUVIA",
+      "ratio": 8.77,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Activo, sistema o estructura",
+      "ratio": 14.84,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "IMPLEMENTACIÓN",
+      "ratio": 7.58,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "Ejecución, medición y mejora",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "CONOCER LAS SOLUCIONES",
+      "ratio": 15.54,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "NO NECESITAS TENERTODAS LAS RESPUESTAS.NECESITAS SABERCUÁL ES LA SIGUIENTEDECISIÓN CORRECT",
+      "ratio": 18.74,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "NECESITAS SABERCUÁL ES LA SIGUIENTEDECISIÓN CORRECTA.",
+      "ratio": 14.11,
+      "threshold": 3,
+      "pass": true
+    },
+    {
+      "text": "ANALIZAR MI SITUACIÓN",
+      "ratio": 9.18,
+      "threshold": 4.5,
+      "pass": true
+    },
+    {
+      "text": "EXPLORAR SOLUCIONES",
+      "ratio": 18.74,
+      "threshold": 4.5,
+      "pass": true
+    }
+  ],
+  "limit": "Computed foreground/background colors; does not assess image pixels, gradients, shared navigation or text comprehension."
+}

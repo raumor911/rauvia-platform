@@ -1,0 +1,344 @@
+{
+  "before": [
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "https://wa.me/525586494076",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 52,
+          "width": 358,
+          "x": 16,
+          "y": 525.171875
+        },
+        "target": "_blank",
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 52,
+          "width": 358,
+          "x": 16,
+          "y": 593.171875
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    ],
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "https://wa.me/525586494076",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 44,
+          "width": 282.71875,
+          "x": 24,
+          "y": 783.953125
+        },
+        "target": "_blank",
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          850,
+          1000
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 44,
+          "width": 190.640625,
+          "x": 322.71875,
+          "y": 783.953125
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          850,
+          1000
+        ]
+      }
+    ],
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "https://wa.me/525586494076",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 64,
+          "width": 239.125,
+          "x": 48,
+          "y": 1043.375
+        },
+        "target": "_blank",
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 64,
+          "width": 160.875,
+          "x": 303.125,
+          "y": 1043.375
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          1440,
+          1000
+        ]
+      }
+    ]
+  ],
+  "after": [
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "/soluciones/",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 52,
+          "width": 358,
+          "x": 16,
+          "y": 525.2890625
+        },
+        "target": null,
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          390,
+          844
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 52,
+          "width": 358,
+          "x": 16,
+          "y": 593.2890625
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          390,
+          844
+        ]
+      }
+    ],
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "/soluciones/",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 44,
+          "width": 282.7109375,
+          "x": 24,
+          "y": 784
+        },
+        "target": null,
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          850,
+          1000
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 44,
+          "width": 190.640625,
+          "x": 322.7109375,
+          "y": 784
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          850,
+          1000
+        ]
+      }
+    ],
+    [
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]",
+        "href": "/soluciones/",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right w-4 h-4\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
+        "rect": {
+          "height": 64,
+          "width": 239.1171875,
+          "x": 48,
+          "y": 1043.375
+        },
+        "target": null,
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "viewport": [
+          1440,
+          1000
+        ]
+      },
+      {
+        "class": "w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]",
+        "href": "/aethryon",
+        "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-play w-5 h-5 text-rauvia-blue\" aria-hidden=\"true\"><path d=\"M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>",
+        "rect": {
+          "height": 64,
+          "width": 160.8828125,
+          "x": 303.1171875,
+          "y": 1043.375
+        },
+        "target": null,
+        "text": "CÓMO TRABAJAMOS",
+        "viewport": [
+          1440,
+          1000
+        ]
+      }
+    ]
+  ],
+  "navigation": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "method": "click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/soluciones/"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "method": "secondary_click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/aethryon"
+    },
+    {
+      "viewport": [
+        850,
+        1000
+      ],
+      "method": "click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/soluciones/"
+    },
+    {
+      "viewport": [
+        850,
+        1000
+      ],
+      "method": "secondary_click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/aethryon"
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/soluciones/"
+    },
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "method": "secondary_click",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/aethryon"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "method": "keyboard_enter",
+      "tab": "4",
+      "url": "http://127.0.0.1:3374/soluciones/",
+      "focus": {
+        "href": "/soluciones/",
+        "outline": "rgb(216, 224, 231) solid 3px",
+        "outlineOffset": "0.5px",
+        "tag": "A",
+        "text": "CONOCER NUESTROS PRODUCTOS"
+      }
+    }
+  ],
+  "keyboard": {
+    "focus": {
+      "href": "/soluciones/",
+      "outline": "rgb(216, 224, 231) solid 3px",
+      "outlineOffset": "0.5px",
+      "tag": "A",
+      "text": "CONOCER NUESTROS PRODUCTOS"
+    },
+    "menu": {
+      "bodyOverflow": "hidden",
+      "dialogs": [
+        {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "bottom": 844,
+          "height": 844,
+          "left": 46.8046875,
+          "right": 390,
+          "top": 0,
+          "width": 343.1953125,
+          "x": 46.8046875,
+          "y": 0
+        }
+      ],
+      "expanded": "true"
+    },
+    "closed": {
+      "bodyOverflow": "",
+      "expanded": "false",
+      "focused": "Abrir menú"
+    }
+  },
+  "sourceHashes": {
+    "src/components/HeroSection.tsx": "4236bfc4950f394f247f80438537bd4cf95f07d992a0b823b2135b0df62bdf8e",
+    "src/components/Footer.tsx": "35adab88e7305c0fbc827817eb3101532a3502cdc6e1c7fcf5f2e4a0d75b8a0a",
+    "src/components/AethryonCore.tsx": "d4fc0bee8cf9e7a23b6733f40b9970cd7f55ba8194eeffa2ecd51481886a13cb",
+    "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
+    "src/pages/SolucionesPage.tsx": "bf95075b5139a9235091b03f1203e9a6e4a152f2f56d015f3ea49d30146fd878",
+    "src/pages/NosotrosPage.tsx": "d09fa2a7d21783520b9908c59bea97bbda2aff8a549661ea445b05f272725b26",
+    "src/App.tsx": "cebde4d58c097256e92a153c0a4a43182c17779df08c6a318152abd9d7057ee7"
+  },
+  "geometryToleranceCssPx": 0.25
+}

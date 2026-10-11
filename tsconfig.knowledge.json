@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/knowledge/**/*.ts",
+    "src/retrieval/**/*.ts",
+    "src/config/entity.ts",
+    "src/config/personKnowledge.ts",
+    "src/seo/personSchema.ts",
+    "src/seo/buildMetaTags.ts",
+    "tests/person-knowledge.test.ts",
+    "tests/person-practice.test.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

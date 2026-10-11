@@ -1,0 +1,708 @@
+{
+  "context": "AETHRYON: recorrido de teclado, menú, giro y accordion, sin envío",
+  "metrics": {
+    "cls": 0,
+    "interactions": [
+      {
+        "duration": 40,
+        "interactionId": 4581,
+        "name": "keydown"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4581,
+        "name": "keypress"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4581,
+        "name": "click"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4581,
+        "name": "keyup"
+      },
+      {
+        "duration": 24,
+        "interactionId": 4588,
+        "name": "keydown"
+      },
+      {
+        "duration": 24,
+        "interactionId": 4588,
+        "name": "keypress"
+      },
+      {
+        "duration": 24,
+        "interactionId": 4588,
+        "name": "click"
+      },
+      {
+        "duration": 24,
+        "interactionId": 4588,
+        "name": "keyup"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerover"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseover"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 16,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 48,
+        "interactionId": 4595,
+        "name": "pointerdown"
+      },
+      {
+        "duration": 48,
+        "interactionId": 0,
+        "name": "mousedown"
+      },
+      {
+        "duration": 48,
+        "interactionId": 4595,
+        "name": "pointerup"
+      },
+      {
+        "duration": 48,
+        "interactionId": 0,
+        "name": "mouseup"
+      },
+      {
+        "duration": 48,
+        "interactionId": 4595,
+        "name": "click"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerout"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerover"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseout"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseover"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 24,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerout"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "pointerover"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseout"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseleave"
+      },
+      {
+        "duration": 40,
+        "interactionId": 0,
+        "name": "mouseover"
+      },
+      {
+        "duration": 24,
+        "interactionId": 4602,
+        "name": "keydown"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4609,
+        "name": "keydown"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4609,
+        "name": "keyup"
+      },
+      {
+        "duration": 40,
+        "interactionId": 4602,
+        "name": "keyup"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerover"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "pointerenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseover"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseenter"
+      },
+      {
+        "duration": 56,
+        "interactionId": 0,
+        "name": "mouseenter"
+      }
+    ],
+    "lcp": {
+      "size": 20536,
+      "start": 148,
+      "tag": "H2",
+      "text": "AETHRYON OBSERVACINCO CONDICIONES.",
+      "url": ""
+    },
+    "longTasks": [],
+    "navigation": {
+      "dom": 83.10000002384186,
+      "load": 90.30000001192091,
+      "ttfb": 11.400000035762789
+    },
+    "observationEnd": 2091.5,
+    "paint": [
+      {
+        "name": "first-paint",
+        "start": 112
+      },
+      {
+        "name": "first-contentful-paint",
+        "start": 112
+      }
+    ],
+    "resources": [
+      {
+        "duration": 16.900000035762787,
+        "encoded": 26681,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/jsx-runtime-DQUdydyj.js",
+        "start": 22.899999976158146,
+        "transfer": 26981
+      },
+      {
+        "duration": 19.600000023841854,
+        "encoded": 429759,
+        "initiator": "script",
+        "name": "http://127.0.0.1:3164/assets/index-Kv9IefrJ.js",
+        "start": 22.899999976158146,
+        "transfer": 430059
+      },
+      {
+        "duration": 16.100000023841858,
+        "encoded": 105224,
+        "initiator": "link",
+        "name": "http://127.0.0.1:3164/assets/index-Bp_G60Qy.css",
+        "start": 23,
+        "transfer": 105524
+      },
+      {
+        "duration": 18.69999998807907,
+        "encoded": 117,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/chevron-down-Cq9jcokk.js",
+        "start": 23.100000023841854,
+        "transfer": 417
+      },
+      {
+        "duration": 19.599999964237213,
+        "encoded": 167,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/circle-check-BvA5Naq9.js",
+        "start": 23.100000023841854,
+        "transfer": 467
+      },
+      {
+        "duration": 22.19999998807907,
+        "encoded": 66042,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/PageMetadata-SmnwwXrc.js",
+        "start": 23.100000023841854,
+        "transfer": 66342
+      },
+      {
+        "duration": 23.799999952316284,
+        "encoded": 1281,
+        "initiator": "link",
+        "name": "http://127.0.0.1:3164/assets/AethryonPage-BJH03QuE.css",
+        "start": 23.100000023841854,
+        "transfer": 1581
+      },
+      {
+        "duration": 25.299999952316284,
+        "encoded": 196,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/ruta90Session-DEPGvLjf.js",
+        "start": 23.100000023841854,
+        "transfer": 496
+      },
+      {
+        "duration": 17.100000023841858,
+        "encoded": 41198,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/assets/AethryonPage-BmWOTaBu.js",
+        "start": 23.19999998807907,
+        "transfer": 41498
+      },
+      {
+        "duration": 27,
+        "encoded": 4415,
+        "initiator": "link",
+        "name": "http://127.0.0.1:3164/media/RAUVIA_CONSULTING_LOGO.svg",
+        "start": 23.19999998807907,
+        "transfer": 4715
+      },
+      {
+        "duration": 3.600000023841858,
+        "encoded": 494383,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/aethryon-end-screen-blueprint.svg",
+        "start": 56.89999997615814,
+        "transfer": 494683
+      },
+      {
+        "duration": 2.899999976158142,
+        "encoded": 751,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+        "start": 69.5,
+        "transfer": 1051
+      },
+      {
+        "duration": 3.699999988079071,
+        "encoded": 671,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+        "start": 69.5,
+        "transfer": 971
+      },
+      {
+        "duration": 4.5,
+        "encoded": 582,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+        "start": 69.5,
+        "transfer": 882
+      },
+      {
+        "duration": 3,
+        "encoded": 402,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "start": 98.39999997615814,
+        "transfer": 702
+      },
+      {
+        "duration": 3.399999976158142,
+        "encoded": 408,
+        "initiator": "img",
+        "name": "http://127.0.0.1:3164/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "start": 98.5,
+        "transfer": 708
+      },
+      {
+        "duration": 1.300000011920929,
+        "encoded": 11,
+        "initiator": "beacon",
+        "name": "http://127.0.0.1:3164/api/events",
+        "start": 102.89999997615814,
+        "transfer": 311
+      },
+      {
+        "duration": 2,
+        "encoded": 11,
+        "initiator": "beacon",
+        "name": "http://127.0.0.1:3164/api/events",
+        "start": 103,
+        "transfer": 311
+      },
+      {
+        "duration": 1.5,
+        "encoded": 1835,
+        "initiator": "other",
+        "name": "http://127.0.0.1:3164/favicon.svg",
+        "start": 106.60000002384186,
+        "transfer": 2135
+      },
+      {
+        "duration": 3.299999952316284,
+        "encoded": 11,
+        "initiator": "beacon",
+        "name": "http://127.0.0.1:3164/api/events",
+        "start": 115.60000002384186,
+        "transfer": 311
+      },
+      {
+        "duration": 12.399999976158142,
+        "encoded": 11,
+        "initiator": "beacon",
+        "name": "http://127.0.0.1:3164/api/events",
+        "start": 84002.5,
+        "transfer": 311
+      }
+    ],
+    "supported": [
+      "element",
+      "event",
+      "first-input",
+      "interaction-contentful-paint",
+      "largest-contentful-paint",
+      "layout-shift",
+      "long-animation-frame",
+      "longtask",
+      "mark",
+      "measure",
+      "navigation",
+      "paint",
+      "resource",
+      "soft-navigation",
+      "visibility-state"
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "visibleImages": [
+      {
+        "complete": true,
+        "src": "http://127.0.0.1:3164/media/RAUVIA_CONSULTING_LOGO.svg",
+        "width": 851
+      },
+      {
+        "complete": true,
+        "src": "http://127.0.0.1:3164/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "width": 32
+      }
+    ]
+  },
+  "limits": "Observación local única, CPU sin throttling. Event Timing no equivale a INP de campo; proxy de long tasks no es Lighthouse TBT."
+}

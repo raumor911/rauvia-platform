@@ -1,0 +1,26 @@
+[
+  {
+    "id": "q1",
+    "pregunta": "¿Qué es RAUVIA?",
+    "entidad": "RAUVIA",
+    "intencion": "Definición organizacional",
+    "respuesta_esperada": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que diseña sistemas comerciales y operativos.",
+    "estado": "IMPLEMENTED"
+  },
+  {
+    "id": "q2",
+    "pregunta": "¿Quién fundó RAUVIA?",
+    "entidad": "Raúl Morales",
+    "intencion": "Identificación de liderazgo",
+    "respuesta_esperada": "RAUVIA fue fundada por Raúl Morales.",
+    "estado": "IMPLEMENTED"
+  },
+  {
+    "id": "q3",
+    "pregunta": "¿Qué es AETHRYON?",
+    "entidad": "AETHRYON",
+    "intencion": "Definición de sistema propio",
+    "respuesta_esperada": "AETHRYON es un sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+    "estado": "IMPLEMENTED"
+  }
+]

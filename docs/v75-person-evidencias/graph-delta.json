@@ -1,0 +1,47 @@
+{
+  "scope": "backend_graph_json_only",
+  "addedNodes": [
+    "claim:raul-doctor-administracion-negocios",
+    "claim:raul-ingenieria-quimica-metalurgica",
+    "claim:raul-maestria-direccion-organizaciones",
+    "credential:raul-doctor-administracion-negocios",
+    "credential:raul-ingenieria-quimica-metalurgica",
+    "credential:raul-maestria-direccion-organizaciones",
+    "source:raul-editorial-declaration",
+    "source:raul-personal-site",
+    "source:raul-public-cv",
+    "source:wp-author-raul"
+  ],
+  "modifiedNodes": [
+    "content:wp-15",
+    "content:wp-18",
+    "content:wp-22",
+    "content:wp-25",
+    "content:wp-28",
+    "content:wp-31",
+    "content:wp-34",
+    "content:wp-39",
+    "content:wp-42",
+    "content:wp-45",
+    "person:raul-morales",
+    "source:wp-15",
+    "source:wp-18",
+    "source:wp-22",
+    "source:wp-25",
+    "source:wp-28",
+    "source:wp-31",
+    "source:wp-34",
+    "source:wp-39",
+    "source:wp-42",
+    "source:wp-45"
+  ],
+  "removedNodes": [],
+  "addedRelations": {
+    "supportedBy": 7,
+    "authoredBy": 10,
+    "containsClaim": 6,
+    "hasCredential": 3,
+    "worksFor": 1
+  },
+  "removedEdges": 0
+}

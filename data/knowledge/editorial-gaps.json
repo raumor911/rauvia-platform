@@ -1,0 +1,354 @@
+{
+  "scope": "internal",
+  "snapshot": "2026-10-06",
+  "limitations": [
+    "Gap de catálogo, no demanda observada.",
+    "No crear ni publicar contenido en V75."
+  ],
+  "gaps": [
+    {
+      "familyId": "answer-family:priorizacion",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué hacer cuando no está claro qué resolver primero?",
+        "intents": [
+          "intent:demasiadas-prioridades",
+          "intent:no-se-que-resolver-primero"
+        ],
+        "problems": [
+          "problem:prioridades-confusas"
+        ],
+        "capabilities": [
+          "capability:priorizacion"
+        ],
+        "primarySource": "asset:aethryon",
+        "claims": [
+          "claim:aethryon-desarrollado",
+          "claim:rauvia-capacidades"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "No sustituye el criterio directivo ni resuelve cualquier problema empresarial."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:continuidad-ejecucion",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo sostener la ejecución de una prioridad identificada?",
+        "intents": [
+          "intent:empresa-dejo-de-avanzar"
+        ],
+        "problems": [
+          "problem:ejecucion-sin-continuidad"
+        ],
+        "capabilities": [
+          "capability:operacion-repetible",
+          "capability:priorizacion"
+        ],
+        "primarySource": "asset:ruta90",
+        "claims": [
+          "claim:ruta90-adoptado"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "RAUVIA y su fundador no son presentados como creadores de Ruta 90.",
+          "Noventa días es el horizonte del método, no un plazo garantizado de resultados."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:presencia-medica",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo reunir la información de un médico dispersa entre redes y directorios?",
+        "intents": [
+          "intent:pagina-web-medicos",
+          "intent:pagina-web-gratis-medicos",
+          "intent:presencia-medica-dispersa",
+          "intent:depender-redes-medico",
+          "intent:depender-directorios-medicos"
+        ],
+        "problems": [
+          "problem:presencia-digital-fragmentada"
+        ],
+        "capabilities": [
+          "capability:presencia-digital-profesional",
+          "capability:presencia-local"
+        ],
+        "primarySource": "asset:pagina-web-medicos",
+        "claims": [
+          "claim:presencia-medica-alcance"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "La opción básica y el alcance ampliado tienen diferencias; deben consultarse las condiciones publicadas.",
+          "No se garantiza visibilidad en buscadores ni reducción de dependencia de directorios."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:especialidad-medica",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo explicar una especialidad y una trayectoria antes del primer contacto?",
+        "intents": [
+          "intent:pagina-web-medicos-especialistas",
+          "intent:explicar-especialidad",
+          "intent:mostrar-trayectoria-medica"
+        ],
+        "problems": [
+          "problem:informacion-medica-dispersa"
+        ],
+        "capabilities": [
+          "capability:contacto-claro",
+          "capability:informacion-especialidad",
+          "capability:representacion-comercial",
+          "capability:ubicacion-clara"
+        ],
+        "primarySource": "asset:pagina-web-medicos-especialistas",
+        "claims": [
+          "claim:presencia-medica-alcance"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "No se inventan credenciales, certificaciones, pacientes ni eficacia clínica."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:presencia-local-medica",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo presentar información local consistente de un consultorio?",
+        "intents": [
+          "intent:seo-local-medicos",
+          "intent:ser-encontrado-localmente"
+        ],
+        "problems": [
+          "problem:presencia-digital-fragmentada"
+        ],
+        "capabilities": [
+          "capability:presencia-digital-profesional",
+          "capability:presencia-local"
+        ],
+        "primarySource": "asset:seo-local-medicos",
+        "claims": [
+          "claim:presencia-medica-alcance"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "No se garantiza ranking local, tráfico, citas ni indexación."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:contacto-y-agenda-medica",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo facilitar una solicitud de cita con información suficiente?",
+        "intents": [
+          "intent:agenda-whatsapp-medicos",
+          "intent:mostrar-ubicacion-consultorio",
+          "intent:facilitar-primer-contacto",
+          "intent:solicitar-cita-online"
+        ],
+        "problems": [
+          "problem:ruta-contacto-fragmentada"
+        ],
+        "capabilities": [
+          "capability:contacto-claro",
+          "capability:ubicacion-clara"
+        ],
+        "primarySource": "asset:agenda-whatsapp-medicos",
+        "claims": [
+          "claim:presencia-medica-alcance"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Solicitud de cita no equivale a disponibilidad ni confirmación automática."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:consultorio-organizado",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Cómo organizar varios profesionales, especialidades o ubicaciones en una referencia?",
+        "intents": [
+          "intent:pagina-web-consultorio-medico",
+          "intent:varios-medicos-consultorio",
+          "intent:varias-especialidades-consultorio",
+          "intent:varias-ubicaciones-medicas"
+        ],
+        "problems": [
+          "problem:informacion-medica-dispersa",
+          "problem:ruta-contacto-fragmentada"
+        ],
+        "capabilities": [
+          "capability:contacto-claro",
+          "capability:informacion-especialidad",
+          "capability:representacion-comercial",
+          "capability:ubicacion-clara"
+        ],
+        "primarySource": "asset:pagina-web-consultorio-medico",
+        "claims": [
+          "claim:presencia-medica-alcance"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Escenario ilustrativo, no cliente real ni evidencia de resultados.",
+          "No sustituye expediente clínico ni administración integral de una clínica."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:evidencia-comercial",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué permite concluir el caso de infraestructura temporal B2B?",
+        "intents": [
+          "intent:infraestructura-temporal-b2b"
+        ],
+        "problems": [
+          "problem:oportunidades-sin-trazabilidad"
+        ],
+        "capabilities": [
+          "capability:medicion",
+          "capability:seguimiento-comercial-estructurado",
+          "capability:trazabilidad-comercial"
+        ],
+        "primarySource": "asset:case-infraestructura-temporal-b2b",
+        "claims": [
+          "claim:benchmark-interno",
+          "claim:conversaciones-reportadas",
+          "claim:trazabilidad-en-construccion"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Reporte propio, sin validación independiente ni atribución causal establecida.",
+          "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:entidad-rauvia",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué es RAUVIA y en qué situaciones interviene?",
+        "intents": [
+          "intent:que-es-rauvia"
+        ],
+        "problems": [
+          "problem:prioridades-confusas"
+        ],
+        "capabilities": [
+          "capability:priorizacion"
+        ],
+        "primarySource": "asset:nosotros",
+        "claims": [
+          "claim:rauvia-identidad",
+          "claim:rauvia-capacidades"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "La descripción institucional no constituye certificación independiente."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:entidad-aethryon",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué es AETHRYON y cuándo resulta pertinente?",
+        "intents": [
+          "intent:que-es-aethryon"
+        ],
+        "problems": [
+          "problem:prioridades-confusas"
+        ],
+        "capabilities": [
+          "capability:priorizacion"
+        ],
+        "primarySource": "asset:aethryon",
+        "claims": [
+          "claim:aethryon-desarrollado"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Declaración institucional de alcance, no validación científica ni garantía.",
+          "No sustituye criterio directivo ni determina automáticamente una Ruta 90."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:entidad-ruta90",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué es Ruta 90 y cómo la utiliza RAUVIA?",
+        "intents": [
+          "intent:que-es-ruta90"
+        ],
+        "problems": [
+          "problem:ejecucion-sin-continuidad"
+        ],
+        "capabilities": [
+          "capability:operacion-repetible"
+        ],
+        "primarySource": "asset:ruta90",
+        "claims": [
+          "claim:ruta90-adoptado"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Método adoptado: sin atribución de autoría, validación experimental ni promesa de resultados en 90 días."
+        ]
+      },
+      "publication": "not_authorized"
+    }
+  ]
+}

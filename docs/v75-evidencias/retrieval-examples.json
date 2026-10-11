@@ -1,0 +1,336 @@
+{
+  "scope": "internal",
+  "kind": "deterministic local consistency examples, not observations from an external LLM",
+  "examples": [
+    {
+      "query": "Tengo prospectos pero no avanzan.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:prospectos-no-avanzan"
+            ],
+            "answerId": "answer:deterioro-comercial",
+            "familyId": "answer-family:deterioro-comercial",
+            "problemIds": [
+              "problem:oportunidades-sin-trazabilidad"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:medicion",
+              "capability:seguimiento-comercial-estructurado",
+              "capability:trazabilidad-comercial"
+            ],
+            "citationBundleId": "citation:deterioro-comercial",
+            "possibleInterventions": [
+              "offering:sistema-comercial",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "No se atribuye la falta de avance a una causa única ni se promete conversión."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Mi empresa depende demasiado de mí.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:empresa-depende-del-dueno"
+            ],
+            "answerId": "answer:dependencia-operativa",
+            "familyId": "answer-family:dependencia-operativa",
+            "problemIds": [
+              "problem:dependencia-fundador"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:autonomia-operativa",
+              "capability:operacion-repetible"
+            ],
+            "citationBundleId": "citation:dependencia-operativa",
+            "possibleInterventions": [
+              "offering:arquitectura-operativa",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "No se garantiza autonomía ni se supone que la dependencia tenga una sola causa."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Tenemos mucha capacidad técnica pero nuestra web no la refleja.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:capacidad-tecnica-no-se-percibe"
+            ],
+            "answerId": "answer:brecha-capacidad-percepcion",
+            "familyId": "answer-family:brecha-capacidad-percepcion",
+            "problemIds": [
+              "problem:brecha-capacidad-percepcion",
+              "problem:oferta-poco-clara"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:representacion-comercial",
+              "capability:traduccion-comercial"
+            ],
+            "citationBundleId": "citation:brecha-capacidad-percepcion",
+            "possibleInterventions": [
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "Explicar mejor una capacidad no demuestra impacto en ventas ni causalidad."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Compramos un CRM pero nadie lo utiliza.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:crm-pyme"
+            ],
+            "answerId": "answer:tecnologia-sin-estructura",
+            "familyId": "answer-family:tecnologia-sin-estructura",
+            "problemIds": [
+              "problem:tecnologia-sin-proceso"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:operacion-repetible",
+              "capability:priorizacion"
+            ],
+            "citationBundleId": "citation:tecnologia-sin-estructura",
+            "possibleInterventions": [
+              "offering:arquitectura-operativa",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "No se diagnostica al proveedor del CRM ni se promete adopción por instalar software.",
+              "Automatización requiere proceso, responsables y reglas definidos."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "No sé qué debería resolver primero.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:no-se-que-resolver-primero"
+            ],
+            "answerId": "answer:priorizacion",
+            "familyId": "answer-family:priorizacion",
+            "problemIds": [
+              "problem:prioridades-confusas"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:priorizacion"
+            ],
+            "citationBundleId": "citation:priorizacion",
+            "possibleInterventions": [
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "No sustituye el criterio directivo ni resuelve cualquier problema empresarial."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Soy médico y mi información está dispersa en varios sitios.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:presencia-medica-dispersa"
+            ],
+            "answerId": "answer:presencia-medica",
+            "familyId": "answer-family:presencia-medica",
+            "problemIds": [
+              "problem:presencia-digital-fragmentada"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:presencia-digital-profesional",
+              "capability:presencia-local"
+            ],
+            "citationBundleId": "citation:presencia-medica",
+            "possibleInterventions": [
+              "offering:desarrollo-tecnologico",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "La opción básica y el alcance ampliado tienen diferencias; deben consultarse las condiciones publicadas.",
+              "No se garantiza visibilidad en buscadores ni reducción de dependencia de directorios."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Cotizo y después dejan de responder",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:cotizaciones-sin-seguimiento"
+            ],
+            "answerId": "answer:deterioro-comercial",
+            "familyId": "answer-family:deterioro-comercial",
+            "problemIds": [
+              "problem:oportunidades-sin-trazabilidad"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:medicion",
+              "capability:seguimiento-comercial-estructurado",
+              "capability:trazabilidad-comercial"
+            ],
+            "citationBundleId": "citation:deterioro-comercial",
+            "possibleInterventions": [
+              "offering:sistema-comercial",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "No se atribuye la falta de avance a una causa única ni se promete conversión."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Soy consultor y mi página no explica bien qué hago.",
+      "result": {
+        "state": "matched",
+        "fit": "POSSIBLE_FIT",
+        "reason": "Coincidencia con arquetipos editoriales revisados; no evaluación de ajuste ni diagnóstico automático.",
+        "matches": [
+          {
+            "intentIds": [
+              "intent:servicio-dificil-de-explicar"
+            ],
+            "answerId": "answer:servicios-profesionales",
+            "familyId": "answer-family:servicios-profesionales",
+            "problemIds": [
+              "problem:brecha-capacidad-percepcion",
+              "problem:oferta-poco-clara",
+              "problem:presencia-digital-fragmentada"
+            ],
+            "problemRole": "expressed_need",
+            "capabilityIds": [
+              "capability:presencia-digital-profesional",
+              "capability:presencia-local",
+              "capability:representacion-comercial",
+              "capability:traduccion-comercial"
+            ],
+            "citationBundleId": "citation:servicios-profesionales",
+            "possibleInterventions": [
+              "offering:desarrollo-tecnologico",
+              "system:aethryon"
+            ],
+            "limitations": [
+              "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+              "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+              "La confianza y la contratación no están garantizadas por publicar una página."
+            ]
+          }
+        ],
+        "excludedInterventions": []
+      }
+    },
+    {
+      "query": "Quiero contratar Facebook Ads para obtener 500 leads este mes.",
+      "result": {
+        "state": "not_primary_fit",
+        "fit": "NOT_PRIMARY_FIT",
+        "reason": "Captación publicitaria aislada; Frente Comercial no sustituye demanda.",
+        "matches": [],
+        "excludedInterventions": [
+          "offering:frente-comercial"
+        ]
+      }
+    },
+    {
+      "query": "Necesito un ecommerce de 50,000 productos.",
+      "result": {
+        "state": "not_primary_fit",
+        "fit": "NOT_PRIMARY_FIT",
+        "reason": "Ecommerce masivo no es el alcance de Frente Comercial; no hay diagnóstico de viabilidad tecnológica.",
+        "matches": [],
+        "excludedInterventions": [
+          "offering:frente-comercial"
+        ]
+      }
+    },
+    {
+      "query": "Quiero Facebook Ads: muchos WhatsApps pero pocas ventas, necesito 500 leads.",
+      "result": {
+        "state": "not_primary_fit",
+        "fit": "NOT_PRIMARY_FIT",
+        "reason": "Captación publicitaria aislada; Frente Comercial no sustituye demanda.",
+        "matches": [],
+        "excludedInterventions": [
+          "offering:frente-comercial"
+        ]
+      }
+    }
+  ]
+}

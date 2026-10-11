@@ -1,0 +1,4411 @@
+[
+  {
+    "version": "V72 baseline",
+    "form": "desktop",
+    "route": "/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0.00034952392578125,
+      "lcp": {
+        "start": 3052,
+        "size": 372233,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 836
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 836
+        }
+      ],
+      "navigation": {
+        "ttfb": 200,
+        "dom": 2482.300000011921,
+        "load": 3001.399999976158
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35000/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 281.69999998807907,
+          "duration": 2143.899999976158,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 282.0999999642372,
+          "duration": 364.5,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 282.19999998807907,
+          "duration": 205,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/compass-G6gkJGGZ.js",
+          "initiator": "other",
+          "start": 282.19999998807907,
+          "duration": 238.19999998807907,
+          "transfer": 497,
+          "encoded": 197
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 282.19999998807907,
+          "duration": 256.89999997615814,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 282.19999998807907,
+          "duration": 343.39999997615814,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 282.19999998807907,
+          "duration": 461.60000002384186,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/zap-BFVANNNn.js",
+          "initiator": "other",
+          "start": 282.30000001192093,
+          "duration": 385.7999999523163,
+          "transfer": 638,
+          "encoded": 338
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 282.30000001192093,
+          "duration": 408.19999998807907,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 282.30000001192093,
+          "duration": 622,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/HomePage-BkyBKUP2.js",
+          "initiator": "other",
+          "start": 282.30000001192093,
+          "duration": 642.5,
+          "transfer": 5187,
+          "encoded": 4887
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 282.30000001192093,
+          "duration": 738.5999999642372,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 282.30000001192093,
+          "duration": 1272.7999999523163,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg",
+          "initiator": "img",
+          "start": 282.30000001192093,
+          "duration": 2694.5,
+          "transfer": 187328,
+          "encoded": 187028
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/01-oportunidades.svg",
+          "initiator": "img",
+          "start": 806.1999999880791,
+          "duration": 248.60000002384186,
+          "transfer": 659,
+          "encoded": 359
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/02-dependencia.svg",
+          "initiator": "img",
+          "start": 806.8000000119209,
+          "duration": 270.39999997615814,
+          "transfer": 636,
+          "encoded": 336
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/03-oferta.svg",
+          "initiator": "img",
+          "start": 806.8000000119209,
+          "duration": 356.69999998807907,
+          "transfer": 671,
+          "encoded": 371
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/04-capacidad.svg",
+          "initiator": "img",
+          "start": 806.8000000119209,
+          "duration": 398.0999999642372,
+          "transfer": 668,
+          "encoded": 368
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/rauvia-methodology-interactive.svg",
+          "initiator": "img",
+          "start": 806.8000000119209,
+          "duration": 463.5,
+          "transfer": 3055,
+          "encoded": 2755
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2519.800000011921,
+          "duration": 237.19999998807907,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2519.800000011921,
+          "duration": 248.29999995231628,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35000/api/events",
+          "initiator": "beacon",
+          "start": 2542.699999988079,
+          "duration": 15.600000023841858,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2544.300000011921,
+          "duration": 165.89999997615814,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35000/favicon.svg",
+          "initiator": "other",
+          "start": 3005.199999988079,
+          "duration": 117.39999997615814,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35000/favicon.ico",
+          "initiator": "other",
+          "start": 3126.5,
+          "duration": 127.09999996423721,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 5001.800000011921,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35000/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg",
+          "complete": true,
+          "width": 198
+        },
+        {
+          "src": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 2716,
+        "size": 372233,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 668
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 668
+        }
+      ],
+      "navigation": {
+        "ttfb": 116.5,
+        "dom": 2252.099999964237,
+        "load": 2664.399999976158
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35000/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 126.79999995231628,
+          "duration": 2098.7000000476837,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 126.89999997615814,
+          "duration": 161.80000001192093,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/compass-G6gkJGGZ.js",
+          "initiator": "other",
+          "start": 126.89999997615814,
+          "duration": 194.39999997615814,
+          "transfer": 497,
+          "encoded": 197
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 126.89999997615814,
+          "duration": 289.19999998807907,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 126.89999997615814,
+          "duration": 343.19999998807907,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 126.89999997615814,
+          "duration": 477.30000001192093,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 127,
+          "duration": 204.79999995231628,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/zap-BFVANNNn.js",
+          "initiator": "other",
+          "start": 127,
+          "duration": 300,
+          "transfer": 638,
+          "encoded": 338
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 127,
+          "duration": 434.2999999523163,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 127,
+          "duration": 726.0999999642372,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/HomePage-BkyBKUP2.js",
+          "initiator": "other",
+          "start": 127.09999996423721,
+          "duration": 407.30000001192093,
+          "transfer": 5187,
+          "encoded": 4887
+        },
+        {
+          "name": "http://127.0.0.1:35000/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 127.09999996423721,
+          "duration": 1226.4000000357628,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 154.0999999642372,
+          "duration": 558,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg",
+          "initiator": "img",
+          "start": 154.19999998807907,
+          "duration": 2495.699999988079,
+          "transfer": 187328,
+          "encoded": 187028
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/01-oportunidades.svg",
+          "initiator": "img",
+          "start": 617.7999999523163,
+          "duration": 149.9000000357628,
+          "transfer": 659,
+          "encoded": 359
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/02-dependencia.svg",
+          "initiator": "img",
+          "start": 617.8999999761581,
+          "duration": 247.10000002384186,
+          "transfer": 636,
+          "encoded": 336
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/03-oferta.svg",
+          "initiator": "img",
+          "start": 617.8999999761581,
+          "duration": 290.80000001192093,
+          "transfer": 671,
+          "encoded": 371
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/04-capacidad.svg",
+          "initiator": "img",
+          "start": 617.8999999761581,
+          "duration": 377.39999997615814,
+          "transfer": 668,
+          "encoded": 368
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/rauvia-methodology-interactive.svg",
+          "initiator": "img",
+          "start": 617.8999999761581,
+          "duration": 443.39999997615814,
+          "transfer": 3055,
+          "encoded": 2755
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2273.199999988079,
+          "duration": 125.09999996423721,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2273.399999976158,
+          "duration": 136,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35000/api/events",
+          "initiator": "beacon",
+          "start": 2287.199999988079,
+          "duration": 3.199999988079071,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35000/favicon.svg",
+          "initiator": "other",
+          "start": 2666.199999988079,
+          "duration": 127,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35000/favicon.ico",
+          "initiator": "other",
+          "start": 2795.399999976158,
+          "duration": 125.89999997615814,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4665.699999988079,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35000/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35000/media/aethryon-convergence-animated-optimized.svg",
+          "complete": true,
+          "width": 198
+        },
+        {
+          "src": "http://127.0.0.1:35000/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V72 baseline",
+    "form": "desktop",
+    "route": "/soluciones/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0.00034952392578125,
+      "lcp": {
+        "start": 2700,
+        "size": 331776,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 636
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 636
+        }
+      ],
+      "navigation": {
+        "ttfb": 117,
+        "dom": 2273.900000035763,
+        "load": 2645.300000011921
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35001/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 127.90000003576279,
+          "duration": 2097,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 128,
+          "duration": 304.19999998807907,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/chevron-down-DdB1ntC_.js",
+          "initiator": "other",
+          "start": 128.10000002384186,
+          "duration": 176.39999997615814,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/circle-check-B614z74l.js",
+          "initiator": "other",
+          "start": 128.10000002384186,
+          "duration": 187,
+          "transfer": 460,
+          "encoded": 160
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 128.10000002384186,
+          "duration": 219,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 128.10000002384186,
+          "duration": 314.5,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 128.10000002384186,
+          "duration": 430.80000001192093,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 128.19999998807907,
+          "duration": 335.60000002384186,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 128.19999998807907,
+          "duration": 650.5,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 128.19999998807907,
+          "duration": 1247.800000011921,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/SolucionesPage-BiPXkvdq.js",
+          "initiator": "other",
+          "start": 128.30000001192093,
+          "duration": 737.8000000119209,
+          "transfer": 10837,
+          "encoded": 10537
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 152.30000001192093,
+          "duration": 572.5,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg",
+          "initiator": "img",
+          "start": 152.30000001192093,
+          "duration": 2486.199999988079,
+          "transfer": 186511,
+          "encoded": 186211
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 568.9000000357628,
+          "duration": 308.7999999523163,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 568.9000000357628,
+          "duration": 351.2999999523163,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 569,
+          "duration": 435.4000000357628,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 569.1000000238419,
+          "duration": 458.19999998807907,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 569.1000000238419,
+          "duration": 501.89999997615814,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2317.699999988079,
+          "duration": 121.70000004768372,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2317.699999988079,
+          "duration": 132.80000001192093,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35001/api/events",
+          "initiator": "beacon",
+          "start": 2343.5,
+          "duration": 3,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35001/api/events",
+          "initiator": "beacon",
+          "start": 2344,
+          "duration": 2.5,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2344.699999988079,
+          "duration": 116.20000004768372,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35001/favicon.svg",
+          "initiator": "other",
+          "start": 2647.800000011921,
+          "duration": 115.39999997615814,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35001/favicon.ico",
+          "initiator": "other",
+          "start": 2765.300000011921,
+          "duration": 124.60000002384186,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4646.400000035763,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35001/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg",
+          "complete": true,
+          "width": 217
+        },
+        {
+          "src": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 2704,
+        "size": 331776,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 640
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 640
+        }
+      ],
+      "navigation": {
+        "ttfb": 116.60000002384186,
+        "dom": 2252.600000023842,
+        "load": 2648.699999988079
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35001/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 126.89999997615814,
+          "duration": 2107.800000011921,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 127.10000002384186,
+          "duration": 339.0999999642372,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 127.10000002384186,
+          "duration": 448.19999998807907,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/chevron-down-DdB1ntC_.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 165.10000002384186,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 175.80000001192093,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/circle-check-B614z74l.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 221.4000000357628,
+          "transfer": 460,
+          "encoded": 160
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 307.30000001192093,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 328.69999998807907,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 668.6000000238419,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/SolucionesPage-BiPXkvdq.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 753.6999999880791,
+          "transfer": 10837,
+          "encoded": 10537
+        },
+        {
+          "name": "http://127.0.0.1:35001/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 127.19999998807907,
+          "duration": 1253.9000000357628,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 149.30000001192093,
+          "duration": 591.8999999761581,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg",
+          "initiator": "img",
+          "start": 149.30000001192093,
+          "duration": 2493.300000011921,
+          "transfer": 186511,
+          "encoded": 186211
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 580,
+          "duration": 312.19999998807907,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 580.1000000238419,
+          "duration": 354.39999997615814,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 580.1999999880791,
+          "duration": 441,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 580.1999999880791,
+          "duration": 462,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 580.3999999761581,
+          "duration": 505.2000000476837,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2271.5,
+          "duration": 165.80000001192093,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2271.699999988079,
+          "duration": 193.4000000357628,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35001/api/events",
+          "initiator": "beacon",
+          "start": 2293.300000011921,
+          "duration": 41.30000001192093,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35001/api/events",
+          "initiator": "beacon",
+          "start": 2293.600000023842,
+          "duration": 61.59999996423721,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35001/favicon.svg",
+          "initiator": "other",
+          "start": 2650.5,
+          "duration": 115.80000001192093,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35001/favicon.ico",
+          "initiator": "other",
+          "start": 2768.399999976158,
+          "duration": 124.80000001192093,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4649.5,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35001/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35001/media/rauvia-solutions-hero-support-aethryon.svg",
+          "complete": true,
+          "width": 217
+        },
+        {
+          "src": "http://127.0.0.1:35001/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V72 baseline",
+    "form": "desktop",
+    "route": "/nosotros/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 5080,
+        "size": 301056,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 932
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 932
+        }
+      ],
+      "navigation": {
+        "ttfb": 161.29999995231628,
+        "dom": 3512.300000011921,
+        "load": 3516.099999964237
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35202/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 219.19999998807907,
+          "duration": 3246.600000023842,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 219.30000001192093,
+          "duration": 198.89999997615814,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 219.30000001192093,
+          "duration": 459.39999997615814,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 219.30000001192093,
+          "duration": 643.0999999642372,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/NosotrosPage-BZRUK1dT.js",
+          "initiator": "other",
+          "start": 219.39999997615814,
+          "duration": 436.4000000357628,
+          "transfer": 4230,
+          "encoded": 3930
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 219.39999997615814,
+          "duration": 560.3000000119209,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 219.39999997615814,
+          "duration": 597.5,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 219.39999997615814,
+          "duration": 1096,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 893.8000000119209,
+          "duration": 4089.099999964237,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg",
+          "initiator": "img",
+          "start": 893.8000000119209,
+          "duration": 4113.099999964237,
+          "transfer": 187524,
+          "encoded": 187224
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 893.8000000119209,
+          "duration": 4123.699999988079,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3554,
+          "duration": 142.5,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3554.099999964237,
+          "duration": 152.4000000357628,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35202/favicon.svg",
+          "initiator": "other",
+          "start": 3554.199999988079,
+          "duration": 163.80000001192093,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35202/api/events",
+          "initiator": "beacon",
+          "start": 3569.800000011921,
+          "duration": 135.0999999642372,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 3572.099999964237,
+          "duration": 140.5,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35202/favicon.ico",
+          "initiator": "other",
+          "start": 3721.399999976158,
+          "duration": 190.69999998807907,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 6918.399999976158,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35202/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 5028,
+        "size": 301056,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 876
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 876
+        }
+      ],
+      "navigation": {
+        "ttfb": 147.19999998807907,
+        "dom": 3491.400000035763,
+        "load": 4979
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35202/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 212.80000001192093,
+          "duration": 3251.5,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 213.19999998807907,
+          "duration": 210.5,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/NosotrosPage-BZRUK1dT.js",
+          "initiator": "other",
+          "start": 213.19999998807907,
+          "duration": 255.9000000357628,
+          "transfer": 4230,
+          "encoded": 3930
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 213.19999998807907,
+          "duration": 360,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 213.19999998807907,
+          "duration": 418.80000001192093,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 213.19999998807907,
+          "duration": 536.5,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 213.19999998807907,
+          "duration": 582.8000000119209,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35202/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 213.19999998807907,
+          "duration": 1233,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg",
+          "initiator": "img",
+          "start": 810.5,
+          "duration": 4122.5,
+          "transfer": 187524,
+          "encoded": 187224
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 810.6000000238419,
+          "duration": 4112.800000011921,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 810.6000000238419,
+          "duration": 4145.5,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3510,
+          "duration": 174.69999998807907,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3510.300000011921,
+          "duration": 151.39999997615814,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35202/api/events",
+          "initiator": "beacon",
+          "start": 3536.5,
+          "duration": 6.900000035762787,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35202/favicon.svg",
+          "initiator": "other",
+          "start": 4982.900000035763,
+          "duration": 123.5,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35202/favicon.ico",
+          "initiator": "other",
+          "start": 5109.100000023842,
+          "duration": 129.30000001192093,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 6978.900000035763,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35202/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35202/media/rauvia-nosotros-hero-structure.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35202/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "desktop",
+    "route": "/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0.00034952392578125,
+      "lcp": {
+        "start": 2732,
+        "size": 372233,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 26199.5,
+          "duration": 216
+        },
+        {
+          "start": 26507,
+          "duration": 785
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 868
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 868
+        }
+      ],
+      "navigation": {
+        "ttfb": 164.5,
+        "dom": 2548.199999988079,
+        "load": 2720.599999964237
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35300/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 243.19999998807907,
+          "duration": 2255.199999988079,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 243.80000001192093,
+          "duration": 406.89999997615814,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 243.80000001192093,
+          "duration": 523.6999999880791,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 222.4000000357628,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 233.80000001192093,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/compass-Bv_NXlHq.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 246.4000000357628,
+          "transfer": 498,
+          "encoded": 198
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 363.10000002384186,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/zap-Bb1P404a.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 385.19999998807907,
+          "transfer": 641,
+          "encoded": 341
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 243.89999997615814,
+          "duration": 418.4000000357628,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/HomePage-S-1f-OX3.js",
+          "initiator": "other",
+          "start": 244,
+          "duration": 687.5,
+          "transfer": 5222,
+          "encoded": 4922
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 244,
+          "duration": 698.3000000119209,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 244,
+          "duration": 826.8000000119209,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 244,
+          "duration": 1383.800000011921,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg",
+          "initiator": "img",
+          "start": 244,
+          "duration": 2426.899999976158,
+          "transfer": 144111,
+          "encoded": 143811
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/01-oportunidades.svg",
+          "initiator": "img",
+          "start": 829.0999999642372,
+          "duration": 265.80000001192093,
+          "transfer": 659,
+          "encoded": 359
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/02-dependencia.svg",
+          "initiator": "img",
+          "start": 829.1999999880791,
+          "duration": 288.5,
+          "transfer": 636,
+          "encoded": 336
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/03-oferta.svg",
+          "initiator": "img",
+          "start": 829.1999999880791,
+          "duration": 390.80000001192093,
+          "transfer": 671,
+          "encoded": 371
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/04-capacidad.svg",
+          "initiator": "img",
+          "start": 829.1999999880791,
+          "duration": 425.30000001192093,
+          "transfer": 668,
+          "encoded": 368
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/rauvia-methodology-interactive.svg",
+          "initiator": "img",
+          "start": 829.1999999880791,
+          "duration": 491.5,
+          "transfer": 3055,
+          "encoded": 2755
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2587,
+          "duration": 118.59999996423721,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2587,
+          "duration": 130.69999998807907,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35300/api/events",
+          "initiator": "beacon",
+          "start": 2675,
+          "duration": 6.099999964237213,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2679.300000011921,
+          "duration": 164,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35300/favicon.svg",
+          "initiator": "other",
+          "start": 2730.399999976158,
+          "duration": 119.30000001192093,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35300/favicon.ico",
+          "initiator": "other",
+          "start": 2852.899999976158,
+          "duration": 127.19999998807907,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4720.699999988079,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35300/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg",
+          "complete": true,
+          "width": 198
+        },
+        {
+          "src": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 2804,
+        "size": 372233,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1004
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1004
+        }
+      ],
+      "navigation": {
+        "ttfb": 204.69999998807907,
+        "dom": 2639.800000011921,
+        "load": 2841.900000035763
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35300/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 282.9000000357628,
+          "duration": 2316.899999976158,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 283,
+          "duration": 274.69999998807907,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 283,
+          "duration": 387.30000001192093,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 283,
+          "duration": 605.3000000119209,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 237.0999999642372,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/zap-Bb1P404a.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 252.0999999642372,
+          "transfer": 641,
+          "encoded": 341
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/compass-Bv_NXlHq.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 397.5,
+          "transfer": 498,
+          "encoded": 198
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 408.80000001192093,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 442.19999998807907,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 868.0999999642372,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 283.10000002384186,
+          "duration": 1433.199999988079,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35300/assets/HomePage-S-1f-OX3.js",
+          "initiator": "other",
+          "start": 283.19999998807907,
+          "duration": 627.3000000119209,
+          "transfer": 5222,
+          "encoded": 4922
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 283.19999998807907,
+          "duration": 796,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg",
+          "initiator": "img",
+          "start": 283.19999998807907,
+          "duration": 2463.300000011921,
+          "transfer": 144111,
+          "encoded": 143811
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/01-oportunidades.svg",
+          "initiator": "img",
+          "start": 912.4000000357628,
+          "duration": 169.69999998807907,
+          "transfer": 659,
+          "encoded": 359
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/02-dependencia.svg",
+          "initiator": "img",
+          "start": 912.5,
+          "duration": 306.9000000357628,
+          "transfer": 636,
+          "encoded": 336
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/03-oferta.svg",
+          "initiator": "img",
+          "start": 912.5,
+          "duration": 318.5,
+          "transfer": 671,
+          "encoded": 371
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/04-capacidad.svg",
+          "initiator": "img",
+          "start": 912.5,
+          "duration": 391,
+          "transfer": 668,
+          "encoded": 368
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/rauvia-methodology-interactive.svg",
+          "initiator": "img",
+          "start": 912.5,
+          "duration": 508.19999998807907,
+          "transfer": 3055,
+          "encoded": 2755
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2676.5,
+          "duration": 164.10000002384186,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2677.100000023842,
+          "duration": 152.89999997615814,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35300/api/events",
+          "initiator": "beacon",
+          "start": 2740.5,
+          "duration": 7.199999988079071,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35300/favicon.svg",
+          "initiator": "other",
+          "start": 2844.199999988079,
+          "duration": 119.5,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35300/favicon.ico",
+          "initiator": "other",
+          "start": 2967.300000011921,
+          "duration": 135.60000002384186,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4644.100000023842,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35300/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35300/media/aethryon-convergence-animated-optimized-v73.svg",
+          "complete": true,
+          "width": 198
+        },
+        {
+          "src": "http://127.0.0.1:35300/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "desktop",
+    "route": "/soluciones/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0.0003498645923755787,
+      "lcp": {
+        "start": 2568,
+        "size": 331776,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 900
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 900
+        }
+      ],
+      "navigation": {
+        "ttfb": 160.69999998807907,
+        "dom": 2419.400000035763,
+        "load": 2584.5
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35301/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 227.80000001192093,
+          "duration": 2144.600000023842,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/chevron-down-EcHb-ju5.js",
+          "initiator": "other",
+          "start": 227.9000000357628,
+          "duration": 159.5999999642372,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/circle-check-sx-k-u4K.js",
+          "initiator": "other",
+          "start": 227.9000000357628,
+          "duration": 203.39999997615814,
+          "transfer": 461,
+          "encoded": 161
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 227.9000000357628,
+          "duration": 355.5999999642372,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 227.9000000357628,
+          "duration": 517.6999999880791,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 228.5,
+          "duration": 213.30000001192093,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 228.5,
+          "duration": 302.5,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 228.5,
+          "duration": 344.4000000357628,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 228.5,
+          "duration": 648.4000000357628,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 228.5,
+          "duration": 1255,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 228.60000002384186,
+          "duration": 680.6999999880791,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/SolucionesPage-DKjm2Gex.js",
+          "initiator": "other",
+          "start": 228.60000002384186,
+          "duration": 767.3000000119209,
+          "transfer": 10848,
+          "encoded": 10548
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+          "initiator": "img",
+          "start": 228.60000002384186,
+          "duration": 2282.399999976158,
+          "transfer": 143295,
+          "encoded": 142995
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 764.6000000238419,
+          "duration": 264,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 764.6000000238419,
+          "duration": 296.5,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 764.6999999880791,
+          "duration": 370.5,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 764.6999999880791,
+          "duration": 413.10000002384186,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 764.6999999880791,
+          "duration": 446.10000002384186,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2454.199999988079,
+          "duration": 115,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2454.199999988079,
+          "duration": 128.5,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35301/api/events",
+          "initiator": "beacon",
+          "start": 2463.199999988079,
+          "duration": 2.900000035762787,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35301/api/events",
+          "initiator": "beacon",
+          "start": 2464.100000023842,
+          "duration": 2.300000011920929,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2468.600000023842,
+          "duration": 114,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35301/favicon.svg",
+          "initiator": "other",
+          "start": 2587.300000011921,
+          "duration": 114.60000002384186,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35301/favicon.ico",
+          "initiator": "other",
+          "start": 2704.400000035763,
+          "duration": 125.39999997615814,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4386.100000023842,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35301/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+          "complete": true,
+          "width": 217
+        },
+        {
+          "src": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 3040,
+        "size": 229248,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 2826.600000023842,
+          "duration": 88
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1224
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1224
+        }
+      ],
+      "navigation": {
+        "ttfb": 225,
+        "dom": 2770.300000011921,
+        "load": 3100.2000000476837
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35301/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 396.4000000357628,
+          "duration": 2317.5,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/circle-check-sx-k-u4K.js",
+          "initiator": "other",
+          "start": 396.7000000476837,
+          "duration": 253.79999995231628,
+          "transfer": 461,
+          "encoded": 161
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 396.7000000476837,
+          "duration": 424.0999999642372,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 396.7000000476837,
+          "duration": 430.19999998807907,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/chevron-down-EcHb-ju5.js",
+          "initiator": "other",
+          "start": 396.7000000476837,
+          "duration": 429.5,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 396.7000000476837,
+          "duration": 590.8999999761581,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 396.80000001192093,
+          "duration": 437.30000001192093,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 396.80000001192093,
+          "duration": 616.4000000357628,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 396.80000001192093,
+          "duration": 902.3000000119209,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 396.9000000357628,
+          "duration": 838.3999999761581,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/SolucionesPage-DKjm2Gex.js",
+          "initiator": "other",
+          "start": 396.9000000357628,
+          "duration": 1017.5999999642372,
+          "transfer": 10848,
+          "encoded": 10548
+        },
+        {
+          "name": "http://127.0.0.1:35301/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 396.9000000357628,
+          "duration": 1451,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+          "initiator": "img",
+          "start": 396.9000000357628,
+          "duration": 2473.800000011921,
+          "transfer": 143295,
+          "encoded": 142995
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 1041.6000000238419,
+          "duration": 351.60000002384186,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 1042,
+          "duration": 418.4000000357628,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 1042.1000000238419,
+          "duration": 491.19999998807907,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 1042.2000000476837,
+          "duration": 523.2999999523163,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 1042.300000011921,
+          "duration": 567.1000000238419,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2892.7000000476837,
+          "duration": 202.39999997615814,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2892.900000035763,
+          "duration": 200.30000001192093,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35301/api/events",
+          "initiator": "beacon",
+          "start": 2970.400000035763,
+          "duration": 45.5,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35301/api/events",
+          "initiator": "beacon",
+          "start": 2972.2000000476837,
+          "duration": 120.69999998807907,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35301/favicon.svg",
+          "initiator": "other",
+          "start": 3111.2000000476837,
+          "duration": 300.69999998807907,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35301/favicon.ico",
+          "initiator": "other",
+          "start": 3486.300000011921,
+          "duration": 149.5,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4902.400000035763,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35301/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35301/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+          "complete": true,
+          "width": 217
+        },
+        {
+          "src": "http://127.0.0.1:35301/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "desktop",
+    "route": "/nosotros/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0.0003498645923755787,
+      "lcp": {
+        "start": 3904,
+        "size": 301056,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1024
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1024
+        }
+      ],
+      "navigation": {
+        "ttfb": 141.80000001192093,
+        "dom": 3429.5,
+        "load": 4514.199999988079
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35302/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 209.10000002384186,
+          "duration": 3177.5,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 209.5,
+          "duration": 449,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 209.60000002384186,
+          "duration": 231.79999995231628,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 209.60000002384186,
+          "duration": 649.5999999642372,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/NosotrosPage-CfR7raAJ.js",
+          "initiator": "other",
+          "start": 209.69999998807907,
+          "duration": 520,
+          "transfer": 4301,
+          "encoded": 4001
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 209.69999998807907,
+          "duration": 573.6999999880791,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 209.69999998807907,
+          "duration": 671.5,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 209.69999998807907,
+          "duration": 1156.5,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg",
+          "initiator": "link",
+          "start": 209.69999998807907,
+          "duration": 3613.600000023842,
+          "transfer": 144295,
+          "encoded": 143995
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 971.3000000119209,
+          "duration": 3509.699999988079,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 971.3000000119209,
+          "duration": 3531.899999976158,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3466.100000023842,
+          "duration": 137.5999999642372,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3466.100000023842,
+          "duration": 148.69999998807907,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35302/api/events",
+          "initiator": "beacon",
+          "start": 3486.100000023842,
+          "duration": 3.899999976158142,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 3488.100000023842,
+          "duration": 106.09999996423721,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35302/favicon.svg",
+          "initiator": "other",
+          "start": 4523.100000023842,
+          "duration": 116.79999995231628,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35302/favicon.ico",
+          "initiator": "other",
+          "start": 4642.5,
+          "duration": 125.39999997615814,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 6315.699999988079,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35302/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    },
+    "warm": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 4032,
+        "size": 301056,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg"
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 3845.699999988079,
+          "duration": 105
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1132
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1132
+        }
+      ],
+      "navigation": {
+        "ttfb": 216.60000002384186,
+        "dom": 3649.199999988079,
+        "load": 4646.600000023842
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35302/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 313.89999997615814,
+          "duration": 3288.100000023842,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 314.19999998807907,
+          "duration": 478.5,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 314.30000001192093,
+          "duration": 220.30000001192093,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 314.30000001192093,
+          "duration": 661.6999999880791,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 314.30000001192093,
+          "duration": 738.3000000119209,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/NosotrosPage-CfR7raAJ.js",
+          "initiator": "other",
+          "start": 314.30000001192093,
+          "duration": 761.1999999880791,
+          "transfer": 4301,
+          "encoded": 4001
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 314.30000001192093,
+          "duration": 805.3000000119209,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35302/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 314.30000001192093,
+          "duration": 1239.300000011921,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg",
+          "initiator": "link",
+          "start": 314.30000001192093,
+          "duration": 3522.199999988079,
+          "transfer": 144295,
+          "encoded": 143995
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 991.8999999761581,
+          "duration": 3617.100000023842,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 991.8999999761581,
+          "duration": 3639.100000023842,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3669.300000011921,
+          "duration": 663.3000000119209,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3669.600000023842,
+          "duration": 663.1999999880791,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35302/api/events",
+          "initiator": "beacon",
+          "start": 3704,
+          "duration": 10.800000011920929,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35302/favicon.svg",
+          "initiator": "other",
+          "start": 4654.800000011921,
+          "duration": 126.30000001192093,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35302/favicon.ico",
+          "initiator": "other",
+          "start": 4788,
+          "duration": 130.5,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 6448.100000023842,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35302/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35302/media/rauvia-nosotros-hero-structure-v73.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35302/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V72 baseline",
+    "form": "phone",
+    "route": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 1400,
+        "size": 51345,
+        "tag": "H1",
+        "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+        "url": ""
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 2468.900000035763,
+          "duration": 131
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1400
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1400
+        }
+      ],
+      "navigation": {
+        "ttfb": 209,
+        "dom": 2599.600000023842,
+        "load": 2620.800000011921
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35403/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 383,
+          "duration": 2062,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/compass-G6gkJGGZ.js",
+          "initiator": "other",
+          "start": 383.5,
+          "duration": 465.30000001192093,
+          "transfer": 497,
+          "encoded": 197
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 383.5,
+          "duration": 470,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 383.5,
+          "duration": 480.2000000476837,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 383.5,
+          "duration": 629,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 383.5,
+          "duration": 724.6000000238419,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 609.1999999880791,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/zap-BFVANNNn.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 619.1999999880791,
+          "transfer": 638,
+          "encoded": 338
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 640,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/HomePage-BkyBKUP2.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 874.3999999761581,
+          "transfer": 5187,
+          "encoded": 4887
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 1026.6000000238419,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35403/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 383.60000002384186,
+          "duration": 1484.6000000238419,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35403/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 383.7000000476837,
+          "duration": 886.7999999523163,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35403/media/aethryon-convergence-mobile-640.webp",
+          "initiator": "img",
+          "start": 383.7000000476837,
+          "duration": 1778.5,
+          "transfer": 65236,
+          "encoded": 64936
+        },
+        {
+          "name": "http://127.0.0.1:35403/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2695.400000035763,
+          "duration": 536,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35403/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2695.5,
+          "duration": 526.2000000476837,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35403/favicon.svg",
+          "initiator": "other",
+          "start": 2695.5,
+          "duration": 594.9000000357628,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35403/api/events",
+          "initiator": "beacon",
+          "start": 2739.300000011921,
+          "duration": 199,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2743.600000023842,
+          "duration": 144,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35403/favicon.ico",
+          "initiator": "other",
+          "start": 3307.300000011921,
+          "duration": 170.5,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4422.200000047684,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35403/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35403/media/aethryon-convergence-mobile-640.webp",
+          "complete": true,
+          "width": 358
+        },
+        {
+          "src": "http://127.0.0.1:35403/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V72 baseline",
+    "form": "phone",
+    "route": "/soluciones/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 2212,
+        "size": 74106,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35404/media/rauvia-solutions-hero-mobile-640.webp"
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 2240.899999976158,
+          "duration": 89
+        },
+        {
+          "start": 2375.199999988079,
+          "duration": 67
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 2212
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 2212
+        }
+      ],
+      "navigation": {
+        "ttfb": 305.39999997615814,
+        "dom": 2326,
+        "load": 2341.599999964237
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35404/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 470.0999999642372,
+          "duration": 1754.7000000476837,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 470.80000001192093,
+          "duration": 558.5999999642372,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 470.89999997615814,
+          "duration": 688.3000000119209,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/chevron-down-DdB1ntC_.js",
+          "initiator": "other",
+          "start": 471.0999999642372,
+          "duration": 358.30000001192093,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/circle-check-B614z74l.js",
+          "initiator": "other",
+          "start": 471.0999999642372,
+          "duration": 390.7000000476837,
+          "transfer": 460,
+          "encoded": 160
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/layers-nUgZK352.js",
+          "initiator": "other",
+          "start": 471.19999998807907,
+          "duration": 403.10000002384186,
+          "transfer": 530,
+          "encoded": 230
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/network-BiiadtAo.js",
+          "initiator": "other",
+          "start": 471.19999998807907,
+          "duration": 509.5,
+          "transfer": 528,
+          "encoded": 228
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/target-BjOMlpnn.js",
+          "initiator": "other",
+          "start": 471.19999998807907,
+          "duration": 548.1999999880791,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 471.19999998807907,
+          "duration": 849.3999999761581,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 471.30000001192093,
+          "duration": 864.5,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/SolucionesPage-BiPXkvdq.js",
+          "initiator": "other",
+          "start": 471.30000001192093,
+          "duration": 961.7999999523163,
+          "transfer": 10837,
+          "encoded": 10537
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/rauvia-solutions-hero-mobile-640.webp",
+          "initiator": "img",
+          "start": 471.30000001192093,
+          "duration": 993.1999999880791,
+          "transfer": 11706,
+          "encoded": 11406
+        },
+        {
+          "name": "http://127.0.0.1:35404/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 471.30000001192093,
+          "duration": 1328.5999999642372,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 1177.8999999761581,
+          "duration": 296.60000002384186,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 1178,
+          "duration": 317.69999998807907,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 1178,
+          "duration": 392.5999999642372,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 1178,
+          "duration": 439.5999999642372,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 1178,
+          "duration": 441.19999998807907,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2442,
+          "duration": 228.39999997615814,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35404/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2442,
+          "duration": 228.5,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35404/api/events",
+          "initiator": "beacon",
+          "start": 2478.099999964237,
+          "duration": 23.600000023841858,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35404/api/events",
+          "initiator": "beacon",
+          "start": 2479.5,
+          "duration": 30.30000001192093,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2483.599999964237,
+          "duration": 191.80000001192093,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35404/favicon.svg",
+          "initiator": "other",
+          "start": 2491.099999964237,
+          "duration": 184.4000000357628,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35404/favicon.ico",
+          "initiator": "other",
+          "start": 2722.300000011921,
+          "duration": 671.1999999880791,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 4143.300000011921,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35404/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35404/media/rauvia-solutions-hero-mobile-640.webp",
+          "complete": true,
+          "width": 358
+        },
+        {
+          "src": "http://127.0.0.1:35404/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V72 baseline",
+    "form": "phone",
+    "route": "/nosotros/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 1048,
+        "size": 61897,
+        "tag": "H1",
+        "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+        "url": ""
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 3550.100000023842,
+          "duration": 98
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 1048
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 1048
+        }
+      ],
+      "navigation": {
+        "ttfb": 160,
+        "dom": 3648.100000023842,
+        "load": 3669
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35405/assets/index-rb_tmNA1.js",
+          "initiator": "script",
+          "start": 287.5,
+          "duration": 3171.199999988079,
+          "transfer": 133363,
+          "encoded": 133063
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 287.60000002384186,
+          "duration": 511.5,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/index-CeyyfQxH.css",
+          "initiator": "link",
+          "start": 287.60000002384186,
+          "duration": 683.8999999761581,
+          "transfer": 17116,
+          "encoded": 16816
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/circle-play-oy1ek3ny.js",
+          "initiator": "other",
+          "start": 287.69999998807907,
+          "duration": 296.19999998807907,
+          "transfer": 499,
+          "encoded": 199
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/PageMetadata-SmnwwXrc.js",
+          "initiator": "other",
+          "start": 287.69999998807907,
+          "duration": 650.1000000238419,
+          "transfer": 13818,
+          "encoded": 13518
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/FadeInUp-Clxqmt28.js",
+          "initiator": "other",
+          "start": 287.89999997615814,
+          "duration": 1135.800000011921,
+          "transfer": 39325,
+          "encoded": 39025
+        },
+        {
+          "name": "http://127.0.0.1:35405/assets/NosotrosPage-BZRUK1dT.js",
+          "initiator": "other",
+          "start": 288.10000002384186,
+          "duration": 521.0999999642372,
+          "transfer": 4230,
+          "encoded": 3930
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 288.10000002384186,
+          "duration": 661.3999999761581,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/rauvia-nosotros-hero-structure.svg",
+          "initiator": "img",
+          "start": 1001.6000000238419,
+          "duration": 3907.5,
+          "transfer": 187524,
+          "encoded": 187224
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 1001.6000000238419,
+          "duration": 3925.199999988079,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 1001.6000000238419,
+          "duration": 4007.5,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3751.5,
+          "duration": 156.5,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35405/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3751.5,
+          "duration": 183.80000001192093,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35405/api/events",
+          "initiator": "beacon",
+          "start": 3775,
+          "duration": 16.69999998807907,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 3778.399999976158,
+          "duration": 129.5,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35405/favicon.svg",
+          "initiator": "other",
+          "start": 3778.699999988079,
+          "duration": 181.60000002384186,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35405/favicon.ico",
+          "initiator": "other",
+          "start": 3964.199999988079,
+          "duration": 189.30000001192093,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 5469.5,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35405/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35405/media/rauvia-nosotros-hero-structure.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35405/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "phone",
+    "route": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 800,
+        "size": 51345,
+        "tag": "H1",
+        "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+        "url": ""
+      },
+      "interactions": [],
+      "longTasks": [
+        {
+          "start": 2046.199999988079,
+          "duration": 72
+        }
+      ],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 800
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 800
+        }
+      ],
+      "navigation": {
+        "ttfb": 190.60000002384186,
+        "dom": 2118.399999976158,
+        "load": 2139.699999988079
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35503/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 265.69999998807907,
+          "duration": 1772.6000000238419,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 265.80000001192093,
+          "duration": 332.2999999523163,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 265.80000001192093,
+          "duration": 440.0999999642372,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 265.89999997615814,
+          "duration": 172.80000001192093,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/compass-Bv_NXlHq.js",
+          "initiator": "other",
+          "start": 265.89999997615814,
+          "duration": 193.4000000357628,
+          "transfer": 498,
+          "encoded": 198
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 265.89999997615814,
+          "duration": 203.9000000357628,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 265.89999997615814,
+          "duration": 322.19999998807907,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/zap-Bb1P404a.js",
+          "initiator": "other",
+          "start": 266,
+          "duration": 342.5999999642372,
+          "transfer": 641,
+          "encoded": 341
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 266,
+          "duration": 364.5,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/HomePage-S-1f-OX3.js",
+          "initiator": "other",
+          "start": 266,
+          "duration": 591.3000000119209,
+          "transfer": 5222,
+          "encoded": 4922
+        },
+        {
+          "name": "http://127.0.0.1:35503/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 266,
+          "duration": 602.8000000119209,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 266,
+          "duration": 743.5,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35503/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 266,
+          "duration": 1198.300000011921,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35503/media/aethryon-convergence-mobile-640.webp",
+          "initiator": "img",
+          "start": 266.0999999642372,
+          "duration": 1501.800000011921,
+          "transfer": 65236,
+          "encoded": 64936
+        },
+        {
+          "name": "http://127.0.0.1:35503/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 2191.300000011921,
+          "duration": 178.89999997615814,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35503/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 2191.399999976158,
+          "duration": 169.4000000357628,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35503/favicon.svg",
+          "initiator": "other",
+          "start": 2191.699999988079,
+          "duration": 204.39999997615814,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35503/api/events",
+          "initiator": "beacon",
+          "start": 2221.399999976158,
+          "duration": 12.100000023841858,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 2225.199999988079,
+          "duration": 121.69999998807907,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35503/favicon.ico",
+          "initiator": "other",
+          "start": 2401.5,
+          "duration": 126.5,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 3941.699999988079,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35503/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35503/media/aethryon-convergence-mobile-640.webp",
+          "complete": true,
+          "width": 358
+        },
+        {
+          "src": "http://127.0.0.1:35503/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "phone",
+    "route": "/soluciones/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 1040,
+        "size": 74106,
+        "tag": "IMG",
+        "text": "",
+        "url": "http://127.0.0.1:35504/media/rauvia-solutions-hero-mobile-640.webp"
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 840
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 840
+        }
+      ],
+      "navigation": {
+        "ttfb": 148,
+        "dom": 1803.5,
+        "load": 1812.5999999642372
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35504/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 195.0999999642372,
+          "duration": 1570.2000000476837,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 195.19999998807907,
+          "duration": 302.19999998807907,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 195.19999998807907,
+          "duration": 482.39999997615814,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/chevron-down-EcHb-ju5.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 197.29999995231628,
+          "transfer": 431,
+          "encoded": 131
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/circle-check-sx-k-u4K.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 208.19999998807907,
+          "transfer": 461,
+          "encoded": 161
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/layers-CnLZTG-P.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 219.29999995231628,
+          "transfer": 533,
+          "encoded": 233
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/network-w_vlfFv8.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 334.7999999523163,
+          "transfer": 527,
+          "encoded": 227
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/target-BmHjClyp.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 344.69999998807907,
+          "transfer": 454,
+          "encoded": 154
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 659.3999999761581,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 195.30000001192093,
+          "duration": 1117.3999999761581,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 195.39999997615814,
+          "duration": 670.1999999880791,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35504/assets/SolucionesPage-DKjm2Gex.js",
+          "initiator": "other",
+          "start": 195.39999997615814,
+          "duration": 765.6999999880791,
+          "transfer": 10848,
+          "encoded": 10548
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/rauvia-solutions-hero-mobile-640.webp",
+          "initiator": "img",
+          "start": 195.39999997615814,
+          "duration": 787.4000000357628,
+          "transfer": 11706,
+          "encoded": 11406
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/iconos-enfoques-rauvia/01-organizar.svg",
+          "initiator": "image",
+          "start": 696.0999999642372,
+          "duration": 309.60000002384186,
+          "transfer": 628,
+          "encoded": 328
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+          "initiator": "image",
+          "start": 696.1999999880791,
+          "duration": 329.69999998807907,
+          "transfer": 629,
+          "encoded": 329
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+          "initiator": "image",
+          "start": 696.1999999880791,
+          "duration": 392.60000002384186,
+          "transfer": 625,
+          "encoded": 325
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/iconos-enfoques-rauvia/04-automatizar.svg",
+          "initiator": "image",
+          "start": 696.1999999880791,
+          "duration": 422.10000002384186,
+          "transfer": 597,
+          "encoded": 297
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/iconos-enfoques-rauvia/05-aethryon.svg",
+          "initiator": "image",
+          "start": 696.3000000119209,
+          "duration": 455,
+          "transfer": 847,
+          "encoded": 547
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 1869.5999999642372,
+          "duration": 122.70000004768372,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35504/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 1869.5999999642372,
+          "duration": 134.10000002384186,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35504/favicon.svg",
+          "initiator": "other",
+          "start": 1869.699999988079,
+          "duration": 145.39999997615814,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35504/api/events",
+          "initiator": "beacon",
+          "start": 1893.8999999761581,
+          "duration": 7.300000011920929,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "http://127.0.0.1:35504/api/events",
+          "initiator": "beacon",
+          "start": 1896.8999999761581,
+          "duration": 4.699999988079071,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 1898.699999988079,
+          "duration": 113.39999997615814,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35504/favicon.ico",
+          "initiator": "other",
+          "start": 2030.300000011921,
+          "duration": 124,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 3614.599999964237,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35504/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35504/media/rauvia-solutions-hero-mobile-640.webp",
+          "complete": true,
+          "width": 358
+        },
+        {
+          "src": "http://127.0.0.1:35504/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  },
+  {
+    "version": "V73",
+    "form": "phone",
+    "route": "/nosotros/",
+    "viewport": [
+      390,
+      844
+    ],
+    "cold": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+      "supported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "cls": 0,
+      "lcp": {
+        "start": 796,
+        "size": 61897,
+        "tag": "H1",
+        "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+        "url": ""
+      },
+      "interactions": [],
+      "longTasks": [],
+      "paint": [
+        {
+          "name": "first-paint",
+          "start": 796
+        },
+        {
+          "name": "first-contentful-paint",
+          "start": 796
+        }
+      ],
+      "navigation": {
+        "ttfb": 122.40000003576279,
+        "dom": 3254.699999988079,
+        "load": 3257.899999976158
+      },
+      "resources": [
+        {
+          "name": "http://127.0.0.1:35505/assets/index-DhjgVptJ.js",
+          "initiator": "script",
+          "start": 144.39999997615814,
+          "duration": 3052.100000023842,
+          "transfer": 133483,
+          "encoded": 133183
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/circle-play-CbqKajNn.js",
+          "initiator": "other",
+          "start": 144.5999999642372,
+          "duration": 185,
+          "transfer": 501,
+          "encoded": 201
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/jsx-runtime-DQUdydyj.js",
+          "initiator": "other",
+          "start": 144.5999999642372,
+          "duration": 325.5,
+          "transfer": 9705,
+          "encoded": 9405
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/NosotrosPage-CfR7raAJ.js",
+          "initiator": "other",
+          "start": 144.5999999642372,
+          "duration": 454.80000001192093,
+          "transfer": 4301,
+          "encoded": 4001
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/PageMetadata-DFpLeOD7.js",
+          "initiator": "other",
+          "start": 144.5999999642372,
+          "duration": 530.6000000238419,
+          "transfer": 13825,
+          "encoded": 13525
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/index-_Gvy_Xiz.css",
+          "initiator": "link",
+          "start": 144.5999999642372,
+          "duration": 594.5,
+          "transfer": 17170,
+          "encoded": 16870
+        },
+        {
+          "name": "http://127.0.0.1:35505/assets/FadeInUp-CKvg6VrW.js",
+          "initiator": "other",
+          "start": 144.5999999642372,
+          "duration": 1019.7000000476837,
+          "transfer": 39326,
+          "encoded": 39026
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/RAUVIA_CONSULTING_LOGO.svg",
+          "initiator": "link",
+          "start": 144.69999998807907,
+          "duration": 486.69999998807907,
+          "transfer": 1555,
+          "encoded": 1255
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/rauvia-nosotros-hero-structure-v73.svg",
+          "initiator": "img",
+          "start": 762.5,
+          "duration": 3262.800000011921,
+          "transfer": 144295,
+          "encoded": 143995
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/rauvia-structure-problem-aethryon.svg",
+          "initiator": "img",
+          "start": 762.5999999642372,
+          "duration": 3763.2000000476837,
+          "transfer": 187704,
+          "encoded": 187404
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/aethryon-process-v5.svg",
+          "initiator": "img",
+          "start": 762.5999999642372,
+          "duration": 3785,
+          "transfer": 189087,
+          "encoded": 188787
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "initiator": "img",
+          "start": 3283.5,
+          "duration": 241.5,
+          "transfer": 576,
+          "encoded": 276
+        },
+        {
+          "name": "http://127.0.0.1:35505/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+          "initiator": "img",
+          "start": 3283.599999964237,
+          "duration": 252.30000001192093,
+          "transfer": 573,
+          "encoded": 273
+        },
+        {
+          "name": "http://127.0.0.1:35505/api/events",
+          "initiator": "beacon",
+          "start": 3308.199999988079,
+          "duration": 6.100000023841858,
+          "transfer": 302,
+          "encoded": 2
+        },
+        {
+          "name": "https://ipapi.co/json/",
+          "initiator": "fetch",
+          "start": 3309.199999988079,
+          "duration": 168.69999998807907,
+          "transfer": 0,
+          "encoded": 0
+        },
+        {
+          "name": "http://127.0.0.1:35505/favicon.svg",
+          "initiator": "other",
+          "start": 3309.5,
+          "duration": 243.69999998807907,
+          "transfer": 755,
+          "encoded": 455
+        },
+        {
+          "name": "http://127.0.0.1:35505/favicon.ico",
+          "initiator": "other",
+          "start": 3560.300000011921,
+          "duration": 194.19999998807907,
+          "transfer": 2917,
+          "encoded": 2617
+        }
+      ],
+      "observationEnd": 5059,
+      "visibleImages": [
+        {
+          "src": "http://127.0.0.1:35505/media/RAUVIA_CONSULTING_LOGO.svg",
+          "complete": true,
+          "width": 851
+        },
+        {
+          "src": "http://127.0.0.1:35505/media/rauvia-nosotros-hero-structure-v73.svg",
+          "complete": true,
+          "width": 960
+        },
+        {
+          "src": "http://127.0.0.1:35505/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+          "complete": true,
+          "width": 32
+        }
+      ]
+    }
+  }
+]

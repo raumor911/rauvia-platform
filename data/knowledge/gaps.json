@@ -1,0 +1,2119 @@
+[
+  {
+    "id": "gap:asset-gap:intent-catering-corporativo",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:catering-corporativo"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-comunicar-certificaciones-capacidad",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:comunicar-certificaciones-capacidad"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-menu-digital",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:menu-digital"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-pagina-web-restaurante",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:pagina-web-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-presencia-local-restaurante",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:presencia-local-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-presentar-capacidad-exportadora",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:presentar-capacidad-exportadora"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-reservas-restaurante",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:reservas-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-restaurante-depende-redes",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:restaurante-depende-redes"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial",
+      "asset:soluciones"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:intent-sitio-b2b-exportacion",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:sitio-b2b-exportacion"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:aethryon",
+      "asset:frente-comercial"
+    ],
+    "missing": "Página de explicación aprobada",
+    "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
+  },
+  {
+    "id": "gap:asset-gap:offering-arquitectura-operativa",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:automatizar-o-estructurar",
+      "intent:como-ordenar-operacion-pyme",
+      "intent:como-reducir-dependencia-dueno",
+      "intent:consultoria-escalar-operaciones",
+      "intent:crecimiento-genera-desorden",
+      "intent:crm-pyme",
+      "intent:empresa-dejo-de-avanzar",
+      "intent:empresa-depende-del-dueno",
+      "intent:procesos-dependen-personas",
+      "intent:que-es-arquitectura-operativa",
+      "intent:que-necesito-antes-crm",
+      "intent:software-o-proceso"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Página específica de explicación",
+    "rationale": "Oferta existente explicada en Soluciones; registrar gap no crea producto ni página."
+  },
+  {
+    "id": "gap:asset-gap:offering-automatizacion",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:automatizar-o-estructurar",
+      "intent:como-ordenar-operacion-pyme",
+      "intent:como-reducir-dependencia-dueno",
+      "intent:consultoria-escalar-operaciones",
+      "intent:crecimiento-genera-desorden",
+      "intent:crm-pyme",
+      "intent:empresa-dejo-de-avanzar",
+      "intent:empresa-depende-del-dueno",
+      "intent:procesos-dependen-personas",
+      "intent:que-es-arquitectura-operativa",
+      "intent:que-necesito-antes-crm",
+      "intent:software-o-proceso"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Página específica de explicación",
+    "rationale": "Oferta existente explicada en Soluciones; registrar gap no crea producto ni página."
+  },
+  {
+    "id": "gap:asset-gap:offering-desarrollo-tecnologico",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:agenda-whatsapp-medicos",
+      "intent:catering-corporativo",
+      "intent:depender-directorios-medicos",
+      "intent:depender-redes-medico",
+      "intent:explicar-especialidad",
+      "intent:facilitar-primer-contacto",
+      "intent:menu-digital",
+      "intent:mostrar-trayectoria-medica",
+      "intent:mostrar-ubicacion-consultorio",
+      "intent:pagina-web-consultorio-medico",
+      "intent:pagina-web-gratis-medicos",
+      "intent:pagina-web-medicos",
+      "intent:pagina-web-medicos-especialistas",
+      "intent:pagina-web-restaurante",
+      "intent:presencia-local-restaurante",
+      "intent:presencia-medica-dispersa",
+      "intent:reservas-restaurante",
+      "intent:restaurante-depende-redes",
+      "intent:seo-local-medicos",
+      "intent:ser-encontrado-localmente",
+      "intent:solicitar-cita-online",
+      "intent:solo-tengo-redes-sociales",
+      "intent:varias-especialidades-consultorio",
+      "intent:varias-ubicaciones-medicas",
+      "intent:varios-medicos-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:presencia-digital-profesional"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Página específica de explicación",
+    "rationale": "Oferta existente explicada en Soluciones; registrar gap no crea producto ni página."
+  },
+  {
+    "id": "gap:asset-gap:offering-sistema-comercial",
+    "type": "ASSET_GAP",
+    "intents": [
+      "intent:clientes-interesados-se-pierden",
+      "intent:como-dar-seguimiento-cotizaciones",
+      "intent:cotizaciones-sin-seguimiento",
+      "intent:infraestructura-temporal-b2b",
+      "intent:no-se-que-pasa-oportunidades",
+      "intent:organizar-seguimiento-comercial",
+      "intent:prospectos-no-avanzan",
+      "intent:sistema-comercial-pyme",
+      "intent:whatsapp-carga-proceso-comercial"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Página específica de explicación",
+    "rationale": "Oferta existente explicada en Soluciones; registrar gap no crea producto ni página."
+  },
+  {
+    "id": "gap:content-gap:intent-agenda-whatsapp-medicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:agenda-whatsapp-medicos"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-catering-corporativo",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:catering-corporativo"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-clientes-no-entienden-oferta-tecnica",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:clientes-no-entienden-oferta-tecnica"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-como-explicar-capacidad-industrial",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:como-explicar-capacidad-industrial"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-como-ordenar-operacion-pyme",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:como-ordenar-operacion-pyme"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-como-presentar-servicios-tecnicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:como-presentar-servicios-tecnicos"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-comunicar-certificaciones-capacidad",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:comunicar-certificaciones-capacidad"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-consultoria-escalar-operaciones",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:consultoria-escalar-operaciones"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-demasiadas-prioridades",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:demasiadas-prioridades"
+    ],
+    "capabilities": [
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-depender-directorios-medicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:depender-directorios-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-depender-redes-medico",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:depender-redes-medico"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-empresa-dejo-de-avanzar",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:empresa-dejo-de-avanzar"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-explicar-especialidad",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:explicar-especialidad"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-facilitar-primer-contacto",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:facilitar-primer-contacto"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-infraestructura-temporal-b2b",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:infraestructura-temporal-b2b"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:case-infraestructura-temporal-b2b"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-menu-digital",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:menu-digital"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-mostrar-trayectoria-medica",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:mostrar-trayectoria-medica"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-mostrar-ubicacion-consultorio",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:mostrar-ubicacion-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-no-se-que-resolver-primero",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:no-se-que-resolver-primero"
+    ],
+    "capabilities": [
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-consultorio-medico",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-consultorio-medico"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-gratis-medicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-gratis-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-gratis-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-medicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-medicos-especialistas",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-medicos-especialistas"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-restaurante",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-pagina-web-servicios-profesionales",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:pagina-web-servicios-profesionales"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-presencia-local-restaurante",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:presencia-local-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-presencia-medica-dispersa",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:presencia-medica-dispersa"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-presentar-capacidad-exportadora",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:presentar-capacidad-exportadora"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-es-aethryon",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-aethryon"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:aethryon"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-es-arquitectura-operativa",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-arquitectura-operativa"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-es-rauvia",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-rauvia"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:nosotros"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-es-ruta90",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-ruta90"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:ruta90"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-reservas-restaurante",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:reservas-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-restaurante-depende-redes",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:restaurante-depende-redes"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-seo-local-medicos",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:seo-local-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-ser-encontrado-localmente",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:ser-encontrado-localmente"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-sitio-b2b-exportacion",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:sitio-b2b-exportacion"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-sitio-web-consultoria",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:sitio-web-consultoria"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-sitio-web-empresa-b2b",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:sitio-web-empresa-b2b"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-sitio-web-servicios-especializados",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:sitio-web-servicios-especializados"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-solicitar-cita-online",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:solicitar-cita-online"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-solo-tengo-redes-sociales",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:solo-tengo-redes-sociales"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-varias-especialidades-consultorio",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:varias-especialidades-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-varias-ubicaciones-medicas",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:varias-ubicaciones-medicas"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-varios-medicos-consultorio",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:varios-medicos-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-web-para-consultor",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:web-para-consultor"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:evidence-gap:intent-agenda-whatsapp-medicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:agenda-whatsapp-medicos"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-automatizar-o-estructurar",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:automatizar-o-estructurar"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-capacidad-tecnica-no-se-percibe",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:capacidad-tecnica-no-se-percibe"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-catering-corporativo",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:catering-corporativo"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-clientes-interesados-se-pierden",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:clientes-interesados-se-pierden"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-clientes-no-entienden-mi-oferta",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:clientes-no-entienden-mi-oferta"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-clientes-no-entienden-oferta-tecnica",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:clientes-no-entienden-oferta-tecnica"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-dar-seguimiento-cotizaciones",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-dar-seguimiento-cotizaciones"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-explicar-capacidad-industrial",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-explicar-capacidad-industrial"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-explicar-servicio-profesional",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-explicar-servicio-profesional"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-generar-confianza-online",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-generar-confianza-online"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-ordenar-operacion-pyme",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-ordenar-operacion-pyme"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-presentar-servicios-tecnicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-presentar-servicios-tecnicos"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-como-reducir-dependencia-dueno",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:como-reducir-dependencia-dueno"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-comunicar-certificaciones-capacidad",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:comunicar-certificaciones-capacidad"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-consultoria-escalar-operaciones",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:consultoria-escalar-operaciones"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-cotizaciones-sin-seguimiento",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:cotizaciones-sin-seguimiento"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-crecimiento-genera-desorden",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:crecimiento-genera-desorden"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-crm-pyme",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:crm-pyme"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-demasiadas-prioridades",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:demasiadas-prioridades"
+    ],
+    "capabilities": [
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-depender-directorios-medicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:depender-directorios-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-depender-redes-medico",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:depender-redes-medico"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-empresa-b2b-no-comunica-valor",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:empresa-b2b-no-comunica-valor"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-empresa-dejo-de-avanzar",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:empresa-dejo-de-avanzar"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-empresa-depende-del-dueno",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:empresa-depende-del-dueno"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-explicar-especialidad",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:explicar-especialidad"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-facilitar-primer-contacto",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:facilitar-primer-contacto"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-infraestructura-temporal-b2b",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:infraestructura-temporal-b2b"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:case-infraestructura-temporal-b2b"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-menu-digital",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:menu-digital"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-mi-experiencia-no-se-entiende",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:mi-experiencia-no-se-entiende"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-mi-web-no-representa-mi-negocio",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:mi-web-no-representa-mi-negocio"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-mostrar-trayectoria-medica",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:mostrar-trayectoria-medica"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-mostrar-ubicacion-consultorio",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:mostrar-ubicacion-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-no-se-que-pasa-oportunidades",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:no-se-que-pasa-oportunidades"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-no-se-que-resolver-primero",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:no-se-que-resolver-primero"
+    ],
+    "capabilities": [
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-organizar-seguimiento-comercial",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:organizar-seguimiento-comercial"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-comercial-servicios-profesionales",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-comercial-servicios-profesionales"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-consultorio-medico",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-consultorio-medico"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-gratis-medicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-gratis-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-gratis-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-medicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-medicos-especialistas",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-medicos-especialistas"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos-especialistas"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-restaurante",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-pagina-web-servicios-profesionales",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:pagina-web-servicios-profesionales"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-presencia-local-restaurante",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:presencia-local-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-presencia-medica-dispersa",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:presencia-medica-dispersa"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-presentar-capacidad-exportadora",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:presentar-capacidad-exportadora"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-procesos-dependen-personas",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:procesos-dependen-personas"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-prospectos-no-avanzan",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:prospectos-no-avanzan"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-que-es-arquitectura-operativa",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:que-es-arquitectura-operativa"
+    ],
+    "capabilities": [
+      "capability:autonomia-operativa",
+      "capability:operacion-repetible"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-que-necesito-antes-crm",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:que-necesito-antes-crm"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-reservas-restaurante",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:reservas-restaurante"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-restaurante-depende-redes",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:restaurante-depende-redes"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-seo-local-medicos",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:seo-local-medicos"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-ser-encontrado-localmente",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:ser-encontrado-localmente"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:seo-local-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-servicio-dificil-de-explicar",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:servicio-dificil-de-explicar"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-servicios-especializados-dificiles-explicar",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:servicios-especializados-dificiles-explicar"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sistema-comercial-pyme",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sistema-comercial-pyme"
+    ],
+    "capabilities": [
+      "capability:medicion",
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sitio-b2b-exportacion",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sitio-b2b-exportacion"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sitio-no-refleja-capacidad",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sitio-no-refleja-capacidad"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sitio-web-consultoria",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sitio-web-consultoria"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sitio-web-empresa-b2b",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sitio-web-empresa-b2b"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-sitio-web-servicios-especializados",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:sitio-web-servicios-especializados"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:sitio-web-servicios-especializados"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-software-o-proceso",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:software-o-proceso"
+    ],
+    "capabilities": [
+      "capability:operacion-repetible",
+      "capability:priorizacion"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-solicitar-cita-online",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:solicitar-cita-online"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:agenda-whatsapp-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-solo-tengo-redes-sociales",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:solo-tengo-redes-sociales"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-varias-especialidades-consultorio",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:varias-especialidades-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-varias-ubicaciones-medicas",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:varias-ubicaciones-medicas"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-varios-medicos-consultorio",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:varios-medicos-consultorio"
+    ],
+    "capabilities": [
+      "capability:contacto-claro",
+      "capability:informacion-especialidad",
+      "capability:representacion-comercial",
+      "capability:ubicacion-clara"
+    ],
+    "existingCoverage": [
+      "asset:pagina-web-consultorio-medico"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-web-para-consultor",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:web-para-consultor"
+    ],
+    "capabilities": [
+      "capability:representacion-comercial",
+      "capability:traduccion-comercial"
+    ],
+    "existingCoverage": [
+      "asset:pagina-comercial-servicios-profesionales"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-whatsapp-carga-proceso-comercial",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:whatsapp-carga-proceso-comercial"
+    ],
+    "capabilities": [
+      "capability:seguimiento-comercial-estructurado",
+      "capability:trazabilidad-comercial"
+    ],
+    "existingCoverage": [
+      "asset:soluciones"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  }
+]

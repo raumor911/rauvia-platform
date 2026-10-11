@@ -1,0 +1,210 @@
+[
+  {
+    "route": "/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "REVISAR MI CASO",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/recursos/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  },
+  {
+    "route": "/casos/",
+    "open": {
+      "body": "hidden",
+      "focus": "Cerrar menú",
+      "rect": {
+        "bottom": 844,
+        "height": 844,
+        "left": 46.8046875,
+        "right": 390,
+        "top": 0,
+        "width": 343.1953125,
+        "x": 46.8046875,
+        "y": 0
+      },
+      "inert": true
+    },
+    "wrapLast": "HABLAR CON RAUVIA",
+    "wrapFirst": "Cerrar menú",
+    "closed": {
+      "body": "",
+      "dialogCount": 0,
+      "focus": "Abrir menú",
+      "inert": false
+    }
+  }
+]
