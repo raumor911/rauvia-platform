@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import './CommercialLandings.css';
 
-const waLink = "https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20revisar%20si%20mi%20sitio%20explica%20bien%20lo%20que%20vende%20mi%20empresa.";
+const waLink = "https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20cotizar%20un%20sitio%20web%20para%20mi%20empresa%20de%20servicios%20especializados.%20Me%20gustar%C3%ADa%20definir%20el%20alcance%20seg%C3%BAn%20mis%20servicios%2C%20zona%20de%20atenci%C3%B3n%20y%20sitio%20actual.";
 
 export default function SitioWebServiciosEspecializadosPage() {
 
@@ -27,7 +27,7 @@ export default function SitioWebServiciosEspecializadosPage() {
                   Sitio web para empresas de servicios especializados que necesitan explicar mejor su valor
                 </h1>
                 <p className="text-xl text-rauvia-gray mb-6 leading-relaxed font-medium">
-                  Hay empresas que no venden algo simple.
+                  RAUVIA construye sitios web para empresas de servicios técnicos y especializados: oferta, alcance, evidencia y contacto por WhatsApp para facilitar solicitudes de cotización.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
@@ -36,16 +36,17 @@ export default function SitioWebServiciosEspecializadosPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-light text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-colors"
                   >
-                    Quiero revisar mi sitio actual
+                    Cotizar mi sitio web
                     <ArrowRight aria-hidden="true" className="w-4 h-4" />
                   </a>
                   <Link 
                     to="/frente-comercial/"
                     className="inline-flex items-center justify-center gap-2 border-2 border-rauvia-border hover:border-rauvia-gray text-rauvia-navy px-8 py-4 rounded text-sm font-bold tracking-wider transition-colors"
                   >
-                    Ver qué es un Frente Comercial
+                    Ver paquetes de Frente Comercial
                   </Link>
                 </div>
+                <p className="text-slate-600 mt-6 leading-relaxed">Para definir el alcance, comparte qué servicios vendes, en qué zona atiendes y si ya tienes sitio. Si vendes principalmente tu experiencia personal, revisa la <Link className="underline" to="/pagina-comercial-servicios-profesionales/">página comercial para profesionistas</Link>.</p>
               </div>
             </div>
             <div className="lg:pl-8">
@@ -726,7 +727,7 @@ export default function SitioWebServiciosEspecializadosPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-light text-white px-8 py-4 rounded text-sm font-bold tracking-wider transition-colors"
               >
-                Quiero revisar mi sitio actual
+                Cotizar mi sitio web
                 <ArrowRight aria-hidden="true" className="w-4 h-4" />
               </a>
               <Link 

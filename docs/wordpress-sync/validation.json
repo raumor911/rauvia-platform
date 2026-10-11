@@ -1,5 +1,5 @@
 {
-  "version": "76.0.1",
+  "version": "77.0.0",
   "baseCommit": "bd9d596c01a083b80597e9601572daef78d60797",
   "checkedAt": "2026-10-11T03:12:36.326480+00:00",
   "checks": {
@@ -29,5 +29,6 @@
   "restLiveRead": "blocked; public metadata recovered from native WordPress WXR export instead",
   "productionDeployment": false,
   "productionPostsModified": false,
-  "publicCDNVerification": false
+  "publicCDNVerification": false,
+  "note": "Validation applies to the correction source in PR #2; V77 changes release metadata only."
 }

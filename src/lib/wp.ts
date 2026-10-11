@@ -69,3 +69,15 @@ export async function getPostBySlug(slug: string): Promise<WPPost | null> {
   }
   throw new Error('WordPress temporalmente no disponible');
 }
+
+// A stale but valid resource list is useful immediately. Do not bypass the
+// server cache with a second, unbounded WordPress request during an outage.
+export async function getResources(signal?: AbortSignal): Promise<{posts:WPPost[];stale:boolean}> {
+  const budget=AbortSignal.timeout(2200);
+  const combined=signal ? AbortSignal.any([signal,budget]) : budget;
+  const response=await fetch('/api/wp/posts?view=resources',{signal:combined,cache:'no-store'});
+  if(!response.ok)throw new Error('WordPress temporalmente no disponible');
+  const data=await response.json();
+  if(!Array.isArray(data) || !data.every(p=>p && typeof p.slug==='string' && typeof p.date==='string' && typeof p.title?.rendered==='string' && typeof p.excerpt?.rendered==='string'))throw new Error('Invalid resource list');
+  return {posts:sortPublishedPosts(data),stale:!!response.headers.get('Warning')?.startsWith('110')};
+}

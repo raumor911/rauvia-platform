@@ -5,7 +5,7 @@ import { ArrowRight, Check, Compass, MessageCircle, ShieldCheck, Layers, Route, 
 import './PaginaComercialServiciosProfesionalesPage.css';
 
 const url = 'https://rauvia.com.mx/pagina-comercial-servicios-profesionales/';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20revisar%20mi%20p%C3%A1gina%20comercial%20para%20servicios%20profesionales.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20comercial%20para%20mis%20servicios%20profesionales.%20Me%20gustar%C3%ADa%20definir%20el%20alcance%20seg%C3%BAn%20mis%20servicios%2C%20mis%20clientes%20y%20mi%20sitio%20actual.';
 const symptoms = [
   'Tu página dice qué haces, pero no explica bien por qué elegirte.',
   'Tu servicio depende mucho de confianza, pero la página no la construye.',
@@ -47,7 +47,7 @@ const articles = [
 ];
 
 function ContactLink() {
-  return <a className="pcsp-button pcsp-button-primary" href={whatsapp}>Quiero revisar mi página comercial <ArrowRight size={18} aria-hidden="true" /></a>;
+  return <a className="pcsp-button pcsp-button-primary" href={whatsapp}>Cotizar mi página comercial <ArrowRight size={18} aria-hidden="true" /></a>;
 }
 function SectionHeading({ label, children, id }: { label: string; children: React.ReactNode; id: string }) {
   return <div className="pcsp-heading"><p className="pcsp-eyebrow">{label}</p><h2 id={id}>{children}</h2></div>;
@@ -63,8 +63,9 @@ export default function PaginaComercialServiciosProfesionalesPage() {
         <div className="pcsp-hero-grid">
           <div>
             <h1 id="pcsp-title">Página comercial para servicios profesionales <span>que necesitan explicar mejor su valor</span></h1>
-            <p className="pcsp-lead">Cuando vendes un servicio profesional, el cliente no sólo compra una tarea. Compra confianza, criterio, experiencia y claridad.</p>
+            <p className="pcsp-lead">RAUVIA construye páginas comerciales para consultores, despachos y profesionistas independientes: servicios claros, experiencia verificable y contacto por WhatsApp para solicitar información o una cotización.</p>
             <div className="pcsp-actions"><ContactLink /><Link className="pcsp-text-link" to="/frente-comercial/">Ver qué es un Frente Comercial <ArrowRight size={17} aria-hidden="true" /></Link></div>
+            <p className="pcsp-note">Para definir el alcance, cuéntanos qué servicios ofreces, a quién atiendes y si ya tienes sitio. Si necesitas comparar opciones, revisa los <Link className="pcsp-text-link" to="/frente-comercial/">paquetes de Frente Comercial</Link>.</p>
           </div>
           <aside className="pcsp-flow" aria-label="De la experiencia al cliente potencial">
             <p className="pcsp-eyebrow">Cómo se construye la confianza</p>

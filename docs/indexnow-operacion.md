@@ -1,3 +1,5 @@
+> V78: mejoras de rendimiento del listado; véase [informe V78](v78/README.md). Las secciones anteriores de versiones previas se conservan como historia.
+
 # IndexNow en RAUVIA — operación v76
 
 > Actualización 76.0.1 en revisión: [sincronización WordPress](wordpress-sync/README.md). Requiere build completo antes de desplegar. Las referencias a despliegue/pruebas de v76 abajo son históricas; la activación posterior está documentada en activacion-v76.md.

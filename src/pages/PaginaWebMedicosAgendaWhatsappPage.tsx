@@ -9,7 +9,7 @@ import './PaginaWebMedicosAgendaWhatsappPage.css';
 
 const canonical = 'https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/';
 const ogDescription = 'Integra página médica, solicitud de cita, horarios, ubicación y contacto en una experiencia clara y mobile-first.';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20informaci%C3%B3n%20para%20crear%20una%20p%C3%A1gina%20m%C3%A9dica%20con%20agenda%20y%20WhatsApp.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20informaci%C3%B3n%20para%20crear%20una%20p%C3%A1gina%20m%C3%A9dica%20con%20agenda%20y%20WhatsApp.';
 const parentPath = '/pagina-web-para-medicos/';
 const consultorioPath = '/pagina-web-para-consultorio-medico/';
 const images = {

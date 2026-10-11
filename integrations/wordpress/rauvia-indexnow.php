@@ -2,7 +2,7 @@
 /**
  * Plugin Name: RAUVIA IndexNow Bridge
  * Description: Sincroniza contenido y notifica cambios de posts publicados al backend headless de RAUVIA.
- * Version: 76.0.1
+ * Version: 78.0.0
  */
 if (!defined('ABSPATH')) { exit; }
 

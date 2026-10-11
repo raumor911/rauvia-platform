@@ -6,7 +6,7 @@ import './PaginaWebGratisMedicosPage.css';
 import './PaginaWebMedicosEspecialistasPage.css';
 
 const url = 'https://rauvia.com.mx/pagina-web-para-medicos-especialistas/';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20especialidad%20m%C3%A9dica.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20especialidad%20m%C3%A9dica.';
 const freePath = '/pagina-web-gratis-para-medicos/';
 const imagePath = (name: string) => `/images/medicos-especialistas/mockup-${name}.webp`;
 // SEO local landing is implemented and registered in public routes.

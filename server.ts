@@ -17,6 +17,7 @@ import { getSafeUrlMeta } from './server/observability/redaction.js';
 import { withRequestContext } from './server/observability/context.js';
 
 import {wordpressCache} from './server/wordpress/cache';
+import {resourceCards} from './server/wordpress/resources';
 import {canonicalPath} from './src/seo/buildMetaTags';
 import {legacyRouteMiddleware, sendGone} from './server/seo/legacyRoutes';
 import {createIndexNow, authorized, sitemapSnapshot, validateUrl} from './server/indexnow/service.js';
@@ -206,9 +207,10 @@ async function startServer() {
         if(result.stale)res.set('Warning','110 - "Stale WordPress content"');
         res.json(result.post ? [result.post] : []);
       } else {
-        const {posts,stale}=await wordpressCache.getPostsSnapshot();
+        const summaries=req.query.view==='resources';
+        const {posts,stale}=await (summaries ? wordpressCache.getResourcesSnapshot() : wordpressCache.getPostsSnapshot());
         if(stale)res.set('Warning','110 - "Stale WordPress content"');
-        res.json(posts);
+        res.json(summaries ? resourceCards(posts) : posts);
       }
     }
     catch (err) { error = err; throw err; }
@@ -550,13 +552,27 @@ async function startServer() {
     const {renderResourcesHtml} = await import('./server/seo/resourcesHtml');
     const distPath = path.join(process.cwd(), 'dist');
     const shell = await fs.promises.readFile(path.join(distPath,'shell.html'),'utf8');
+    // One startup refresh, shared with incoming readers; no extra interval.
+    const warmup=beginTrackedTask('wordpress_resources_warmup','internal_task');
+    void wordpressCache.getPostsSnapshot().then(({posts,stale})=>warmup.complete({posts:posts.length,stale}))
+      .catch(error=>warmup.fail({error:serializeError(error)}));
+    let resourceHtml: {posts:unknown;stale:boolean;html:Promise<string>} | undefined;
     app.get('/recursos/',async (_req,res,next)=>{
       const request=beginTrackedTask('wordpress_resources_html','internal_task');
       try {
-        const {posts,stale}=await wordpressCache.getPostsSnapshot();
+        const started=Date.now();
+        const {posts,stale}=await wordpressCache.getResourcesSnapshot();
+        const wordpressMs=Date.now()-started;
         res.set('Cache-Control','no-store');
         if(stale)res.set('Warning','110 - "Stale WordPress content"');
-        res.type('html').send(await renderResourcesHtml(shell,posts,stale));request.complete({posts:posts.length,stale});
+        if(!resourceHtml || resourceHtml.posts!==posts || resourceHtml.stale!==stale) {
+          const html=renderResourcesHtml(shell,resourceCards(posts),stale);
+          resourceHtml={posts,stale,html};
+          void html.catch(()=>{if(resourceHtml?.html===html)resourceHtml=undefined;});
+        }
+        const html=await resourceHtml.html;
+        res.set('Server-Timing',`wordpress;dur=${wordpressMs}, resources;dur=${Date.now()-started}`);
+        res.type('html').send(html);request.complete({posts:posts.length,stale,durationMs:Date.now()-started});
       } catch(error){request.fail({error:serializeError(error)});next(error);}
     });
     // Resolve published articles before static files, so old snapshots cannot

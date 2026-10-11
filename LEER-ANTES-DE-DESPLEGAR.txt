@@ -1,0 +1,9 @@
+RAUVIA V78 (78.0.0) CON DIO v1.0.0
+
+Candidato completo validado localmente. No desplegado.
+Incluye las correcciones WordPress V77, rendimiento V78 y DIO.
+WhatsApp comercial único: +52 55 8649 4076.
+Frontend y servidor compilados incluidos; postinstall existente puede reconstruirlos.
+Consultar docs/dio-v1-report.md antes de desplegar.
+Conservar variables, secretos, datos privados persistentes y WordPress.
+Los informes V71-V78 anteriores son históricos; la validación actual está en docs/dio-v1-evidence/v78-validation.json.

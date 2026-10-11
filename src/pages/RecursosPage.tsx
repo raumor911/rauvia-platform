@@ -13,18 +13,24 @@ export default function RecursosPage({initialPosts,initialStale}: {initialPosts?
 
   const [unavailable,setUnavailable] = useState(()=>initialStale ?? (initialContent()?.path==='/recursos/' && !!initialContent()?.stale));
   useEffect(() => {
-    let mounted=true, sequence=0, controller:AbortController | undefined;
+    let mounted=true, sequence=0, retries=0, controller:AbortController | undefined;
+    let retryTimer:ReturnType<typeof setTimeout> | undefined;
     const refresh=async()=>{
+      if(retryTimer)clearTimeout(retryTimer);
       const current=++sequence; controller?.abort(); const active=new AbortController();controller=active;
       try {
-        const {getPosts}=await import('../lib/wp'); const data=await getPosts(active.signal);
-        if(mounted && current===sequence){setPosts(data);setUnavailable(false);}
+        const {getResources}=await import('../lib/wp'); const data=await getResources(active.signal);
+        if(mounted && current===sequence){
+          setPosts(data.posts);setUnavailable(data.stale);
+          if(data.stale && retries<3)retryTimer=setTimeout(()=>{if(mounted && document.visibilityState==='visible')void refresh();},[1500,3000,6000][retries++]);
+          if(!data.stale)retries=0;
+        }
       } catch {if(mounted && current===sequence)setUnavailable(true);}
       finally {if(mounted && current===sequence)setLoading(false);}
     };
-    const visible=()=>{if(document.visibilityState==='visible')void refresh();};
+    const visible=()=>{if(document.visibilityState==='visible'){retries=0;void refresh();}};
     void refresh(); window.addEventListener('focus',visible);document.addEventListener('visibilitychange',visible);
-    return ()=>{mounted=false;sequence++;controller?.abort();window.removeEventListener('focus',visible);document.removeEventListener('visibilitychange',visible);};
+    return ()=>{mounted=false;sequence++;controller?.abort();if(retryTimer)clearTimeout(retryTimer);window.removeEventListener('focus',visible);document.removeEventListener('visibilitychange',visible);};
   }, []);
 
   return (

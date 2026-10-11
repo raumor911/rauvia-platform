@@ -1,3 +1,5 @@
+> V78: mejoras de rendimiento del listado; véase [informe V78](../v78/README.md). Las secciones anteriores de versiones previas se conservan como historia.
+
 # RAUVIA 76.0.1 — sincronización WordPress
 
 ## Evidencia y causa raíz
