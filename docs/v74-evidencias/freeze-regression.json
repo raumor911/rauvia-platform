@@ -1,0 +1,19 @@
+{
+  "baselineFiles": 555,
+  "changedExistingBaselineFiles": [
+    "package.json",
+    "dist/llms.txt",
+    "dist/llms-full.txt",
+    "dist/llmo/index.json",
+    "public/llms.txt",
+    "public/llms-full.txt",
+    "public/llmo/index.json"
+  ],
+  "prerenderHtmlByteIdentical": 22,
+  "clientJsCssByteIdentical": 63,
+  "addedClientJsBytes": 0,
+  "serverBundleByteIdentical": true,
+  "identitySeoRoutesFrontendStylesImagesAndRoutingUnchanged": true,
+  "dependenciesAndLockUnchanged": true,
+  "liveDeployment": false
+}

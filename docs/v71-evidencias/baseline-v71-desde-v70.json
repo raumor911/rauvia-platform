@@ -1,0 +1,133 @@
+{
+  "version": "V70",
+  "htmlBytes": 49998,
+  "title": "RAUVIA Consulting | AETHRYON",
+  "meta": [
+    "<meta charset=\"UTF-8\" />",
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+    "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta name=\"robots\" content=\"index, follow\">",
+    "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">",
+    "<meta property=\"og:type\" content=\"website\">",
+    "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+    "<meta property=\"og:locale\" content=\"es_MX\">",
+    "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+    "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+    "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
+  ],
+  "canonical": [
+    "<link rel=\"canonical\" href=\"https://rauvia.com.mx/aethryon/\">"
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://rauvia.com.mx/aethryon/#webpage",
+      "name": "AETHRYON - RAUVIA",
+      "url": "https://rauvia.com.mx/aethryon",
+      "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+      "publisher": {
+        "@id": "https://rauvia.com.mx/#organization"
+      },
+      "mainEntity": {
+        "@type": "Thing",
+        "@id": "https://rauvia.com.mx/aethryon/#entity",
+        "name": "AETHRYON",
+        "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones."
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://rauvia.com.mx/#organization",
+      "name": "RAUVIA",
+      "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+      "url": "https://rauvia.com.mx",
+      "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+      "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+      "sameAs": [
+        "https://www.facebook.com/rauviaconsulting/",
+        "https://www.instagram.com/rauviaconsulting/",
+        "https://www.linkedin.com/company/rauvia/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://rauvia.com.mx/#website",
+      "name": "RAUVIA",
+      "url": "https://rauvia.com.mx",
+      "publisher": {
+        "@id": "https://rauvia.com.mx/#organization"
+      }
+    }
+  ],
+  "h1": [
+    "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
+  ],
+  "h2": [
+    "QUIERES HACER CRECER TU EMPRESA, PERO NO SABES QUÉ RESOLVER PRIMERO.",
+    "NO SIEMPRE FALTA UNA SOLUCIÓN. FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO.",
+    "CONVIERTE INFORMACIÓN DISPERSA EN UNA DECISIÓN EJECUTABLE.",
+    "CÓMO FUNCIONA AETHRYON",
+    "AETHRYON OBSERVA CINCO CONDICIONES.",
+    "NO RECIBES SOLO UN DIAGNÓSTICO. RECIBES UNA DECISIÓN ESTRUCTURADA.",
+    "UNA EMPRESA QUIERE CRECER, PERO TIENE TRES OPCIONES.",
+    "AETHRYON ES ÚTIL CUANDO...",
+    "AETHRYON IDENTIFICA LA PRIORIDAD. RAUVIA CONSTRUYE LA SOLUCIÓN.",
+    "NO NECESITAS TENER TODAS LAS RESPUESTAS. NECESITAS SABER CUÁL ES LA SIGUIENTE DECISIÓN CORRECTA."
+  ],
+  "internalLinks": [
+    "/",
+    "/soluciones",
+    "/aethryon",
+    "/casos",
+    "/nosotros",
+    "/ruta-90/",
+    "/soluciones",
+    "/aethryon",
+    "/recursos",
+    "/casos",
+    "/aviso-de-privacidad",
+    "/terminos"
+  ],
+  "images": [
+    "<img src=\"/media/RAUVIA_CONSULTING_LOGO.svg\" alt=\"RAUVIA Consulting\" class=\"h-9 md:h-11 w-auto object-contain\"/>",
+    "<img src=\"/media/aethryon-hero-orbital-v2-clean.svg\" alt=\"AETHRYON\" class=\"w-full object-contain\"/>",
+    "<img src=\"/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg\" alt=\"Oportunidades sin avance\" class=\"w-6 h-6\"/>",
+    "<img src=\"/media/iconos-situacion-rauvia/02-friccion-operativa.svg\" alt=\"Fricción operativa\" class=\"w-6 h-6\"/>",
+    "<img src=\"/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg\" alt=\"Decisiones abiertas\" class=\"w-6 h-6\"/>",
+    "<img src=\"/media/aethryon-end-screen-blueprint.svg\" alt=\"AETHRYON Blueprint\" class=\"w-full h-full object-cover object-center absolute inset-0 scale-[2] md:scale-100 group-hover:scale-[2.02] md:group-hover:scale-[1.01] transition-transform opacity-40 md:opacity-100\"/>",
+    "<img src=\"/media/RAUVIA_CONSULTING_LOGO.svg\" alt=\"RAUVIA Consulting\" class=\"h-8 md:h-9 w-auto object-contain brightness-0 invert\"/>"
+  ],
+  "semanticInventory": {
+    "AETHRYON": true,
+    "crecimiento": true,
+    "prioridad": true,
+    "problema": true,
+    "restricciones": true,
+    "oportunidades": true,
+    "operación": true,
+    "capacidad de ejecución": true,
+    "ruta de acción": true,
+    "responsables": true,
+    "indicadores": true,
+    "soluciones": true,
+    "Ruta 90": true
+  },
+  "bundleAssets": [
+    {
+      "file": "dist/assets/index-Bj261abD.css",
+      "bytes": 207521
+    },
+    {
+      "file": "dist/assets/index-CI6g4Gyc.js",
+      "bytes": 1290930
+    }
+  ],
+  "sitemapSha256": "762e9d3e79f5186d2948b8e2de518890f219366089792218b6ef4245cf3f2686"
+}

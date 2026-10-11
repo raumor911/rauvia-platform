@@ -1,0 +1,54 @@
+[
+  {
+    "event_name": "cta_click",
+    "page_path": "/",
+    "properties": {
+      "viewport_width": 390,
+      "viewport_height": 844,
+      "orientation": "portrait",
+      "viewport_class": "phone",
+      "source_page": "/",
+      "destination": "/soluciones/",
+      "context": "product_discovery"
+    }
+  },
+  {
+    "event_name": "cta_click",
+    "page_path": "/",
+    "properties": {
+      "viewport_width": 850,
+      "viewport_height": 1000,
+      "orientation": "portrait",
+      "viewport_class": "medium",
+      "source_page": "/",
+      "destination": "/soluciones/",
+      "context": "product_discovery"
+    }
+  },
+  {
+    "event_name": "cta_click",
+    "page_path": "/",
+    "properties": {
+      "viewport_width": 1440,
+      "viewport_height": 1000,
+      "orientation": "landscape",
+      "viewport_class": "desktop",
+      "source_page": "/",
+      "destination": "/soluciones/",
+      "context": "product_discovery"
+    }
+  },
+  {
+    "event_name": "cta_click",
+    "page_path": "/",
+    "properties": {
+      "viewport_width": 390,
+      "viewport_height": 844,
+      "orientation": "portrait",
+      "viewport_class": "phone",
+      "source_page": "/",
+      "destination": "/soluciones/",
+      "context": "product_discovery"
+    }
+  }
+]

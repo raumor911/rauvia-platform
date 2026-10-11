@@ -1,0 +1,44 @@
+[
+  {
+    "source": "aethryon-convergence-animated-optimized.svg",
+    "target": "aethryon-convergence-animated-optimized-v73.svg",
+    "beforeRaw": 253759,
+    "afterRaw": 196348,
+    "beforeGzip": 187028,
+    "afterGzip": 143811,
+    "embeddedPng": 183192,
+    "embeddedWebp": 140132,
+    "visibleBitmapPixelsIdentical": true,
+    "hiddenTransparentRGBDifferences": 154535,
+    "libraryRenderAt640Identical": false,
+    "svgOutsideBitmapUnchanged": true
+  },
+  {
+    "source": "rauvia-solutions-hero-support-aethryon.svg",
+    "target": "rauvia-solutions-hero-support-aethryon-v73.svg",
+    "beforeRaw": 249388,
+    "afterRaw": 191977,
+    "beforeGzip": 186211,
+    "afterGzip": 142995,
+    "embeddedPng": 183192,
+    "embeddedWebp": 140132,
+    "visibleBitmapPixelsIdentical": true,
+    "hiddenTransparentRGBDifferences": 154535,
+    "libraryRenderAt640Identical": false,
+    "svgOutsideBitmapUnchanged": true
+  },
+  {
+    "source": "rauvia-nosotros-hero-structure.svg",
+    "target": "rauvia-nosotros-hero-structure-v73.svg",
+    "beforeRaw": 252799,
+    "afterRaw": 195388,
+    "beforeGzip": 187224,
+    "afterGzip": 143995,
+    "embeddedPng": 183192,
+    "embeddedWebp": 140132,
+    "visibleBitmapPixelsIdentical": true,
+    "hiddenTransparentRGBDifferences": 154535,
+    "libraryRenderAt640Identical": false,
+    "svgOutsideBitmapUnchanged": true
+  }
+]

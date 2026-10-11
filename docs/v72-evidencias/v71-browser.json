@@ -1,0 +1,2496 @@
+[
+  {
+    "route": "/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "CONOCER NUESTROS PRODUCTOS",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 617.70654296875
+      },
+      {
+        "h": 52,
+        "href": "/aethryon",
+        "text": "CÓMO TRABAJAMOS",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 685.70654296875
+      },
+      {
+        "h": 300,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 785.70654296875
+      },
+      {
+        "h": 52,
+        "href": "/frente-comercial",
+        "text": "Conocer Frente Comercial",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 1857.95654296875
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 6460.84375
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 7048.34375
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 7197.34375
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 7197.34375
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 7197.34375
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 7197.34375
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 7353.34375
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 7353.34375
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 7353.34375
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "35.2px",
+      "h": 193.59373474121097,
+      "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+      "w": 358,
+      "x": 16,
+      "y": 176.11277770996094
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 300,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-convergence-animated.svg",
+        "w": 358
+      },
+      {
+        "h": 40,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/01-oportunidades.svg",
+        "w": 40
+      },
+      {
+        "h": 40,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/02-dependencia.svg",
+        "w": 40
+      },
+      {
+        "h": 40,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/03-oferta.svg",
+        "w": 40
+      },
+      {
+        "h": 40,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/04-capacidad.svg",
+        "w": 40
+      },
+      {
+        "h": 70,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/rauvia-methodology-interactive.svg",
+        "w": 300
+      },
+      {
+        "h": 54,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/rauvia-capabilities-section.svg",
+        "w": 300
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/soluciones/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 52,
+        "href": "#catalogo",
+        "text": "EXPLORAR ACTIVOS",
+        "visible": true,
+        "w": 225.4609375,
+        "x": 16,
+        "y": 550.375
+      },
+      {
+        "h": 358,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 682.375
+      },
+      {
+        "h": 78,
+        "href": null,
+        "text": "ENFOQUE 01ORGANIZARPresentación, información y seguimiento básico.",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 1936.625
+      },
+      {
+        "h": 78,
+        "href": null,
+        "text": "ENFOQUE 02SISTEMATIZARProcesos y sistemas comerciales replicables.",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2022.625
+      },
+      {
+        "h": 78,
+        "href": null,
+        "text": "ENFOQUE 03TECNOLOGIZARConvertir procesos definidos en capacidades digi",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2108.625
+      },
+      {
+        "h": 78,
+        "href": null,
+        "text": "ENFOQUE 04AUTOMATIZARReducir trabajo repetitivo y fricción.",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2194.625
+      },
+      {
+        "h": 78,
+        "href": null,
+        "text": "ENFOQUE 05ADAPTARAnalizar señales, restricciones y prioridades mediant",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2280.625
+      },
+      {
+        "h": 212,
+        "href": null,
+        "text": "FRENTE COMERCIAL ESENCIALv1.2.0Organiza y traduce la oferta de una emp",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 3049.625
+      },
+      {
+        "h": 14,
+        "href": "/ruta-90/",
+        "text": "Ruta 90",
+        "visible": true,
+        "w": 43.9296875,
+        "x": 41,
+        "y": 4315.375
+      },
+      {
+        "h": 36,
+        "href": "/frente-comercial",
+        "text": "CONOCER FRENTE COMERCIAL",
+        "visible": true,
+        "w": 275.5,
+        "x": 73.5,
+        "y": 4387.375
+      },
+      {
+        "h": 101.875,
+        "href": "/aethryon",
+        "text": "Mapa de Capacidades - RAUVIA & AETHRYONMapa interactivo de capacidades",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 4782.375
+      },
+      {
+        "h": 20,
+        "href": "/ruta-90/",
+        "text": "Ruta 90",
+        "visible": true,
+        "w": 54.25,
+        "x": 291.9921875,
+        "y": 5453.25
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 6745.25
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 7332.75
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 7481.75
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 7481.75
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 7481.75
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 7481.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 7637.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 7637.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 7637.75
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "36px",
+      "h": 158.375,
+      "text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+      "w": 358,
+      "x": 16,
+      "y": 176
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 358,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/rauvia-solutions-hero-support-aethryon.svg",
+        "w": 358
+      },
+      {
+        "h": 48,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/iconos-enfoques-rauvia/05-aethryon.svg",
+        "w": 48
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/aethryon/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "ANALIZAR MI SITUACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 505.90625
+      },
+      {
+        "h": 52,
+        "href": "#como-funciona",
+        "text": "VER CÓMO FUNCIONA",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 569.90625
+      },
+      {
+        "h": 88,
+        "href": null,
+        "text": "Ampliar el contexto de estas situaciones",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 1985.40625
+      },
+      {
+        "h": 64,
+        "href": null,
+        "text": "Ver los seis resultados del análisis",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 4081.40625
+      },
+      {
+        "h": 44,
+        "href": "/frente-comercial/",
+        "text": "Explorar Frente Comercial",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 4614.90625
+      },
+      {
+        "h": 44,
+        "href": "/soluciones/",
+        "text": "Explorar soluciones comerciales",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 4834.40625
+      },
+      {
+        "h": 44,
+        "href": "/soluciones/",
+        "text": "Explorar arquitectura operativa",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 5053.90625
+      },
+      {
+        "h": 44,
+        "href": "/soluciones/",
+        "text": "Explorar desarrollo tecnológico",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 5273.40625
+      },
+      {
+        "h": 44,
+        "href": "/soluciones/",
+        "text": "Explorar automatización",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 5492.90625
+      },
+      {
+        "h": 44,
+        "href": "/ruta-90/",
+        "text": "Explorar Ruta 90",
+        "visible": true,
+        "w": 308,
+        "x": 41,
+        "y": 5712.40625
+      },
+      {
+        "h": 52,
+        "href": "/soluciones/",
+        "text": "EXPLORAR SOLUCIONES",
+        "visible": true,
+        "w": 243.8984375,
+        "x": 16,
+        "y": 5813.40625
+      },
+      {
+        "h": 88,
+        "href": null,
+        "text": "Profundizar: por qué priorizar y cómo se organiza la información",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 7442.40625
+      },
+      {
+        "h": 100,
+        "href": null,
+        "text": "01CLARIDAD",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 7760.40625
+      },
+      {
+        "h": 100,
+        "href": null,
+        "text": "02DIFICULTADES",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 7951.40625
+      },
+      {
+        "h": 100,
+        "href": null,
+        "text": "03ALINEACIÓN",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 8069.40625
+      },
+      {
+        "h": 100,
+        "href": null,
+        "text": "04OPORTUNIDAD",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 8187.40625
+      },
+      {
+        "h": 100,
+        "href": null,
+        "text": "05CAPACIDAD DE EJECUCIÓN",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 8305.40625
+      },
+      {
+        "h": 44,
+        "href": "/ruta-90/",
+        "text": "Conocer Ruta 90 →",
+        "visible": true,
+        "w": 156.6796875,
+        "x": 203.3125,
+        "y": 10187.40625
+      },
+      {
+        "h": 52,
+        "href": "/soluciones/",
+        "text": "CONOCER LAS SOLUCIONES",
+        "visible": true,
+        "w": 287.3359375,
+        "x": 51.328125,
+        "y": 10844.40625
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "ANALIZAR MI SITUACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 11290.40625
+      },
+      {
+        "h": 54,
+        "href": "/soluciones/",
+        "text": "EXPLORAR SOLUCIONES",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 11358.40625
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 11460.40625
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 12047.90625
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 12196.90625
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 12196.90625
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 12196.90625
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 12196.90625
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 12352.90625
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 12352.90625
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 12352.90625
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "32px",
+      "h": 145.90625,
+      "text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+      "w": 358,
+      "x": 16,
+      "y": 168
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 640,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-hero-orbital-v2-clean.svg",
+        "w": 980
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+        "w": 28
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+        "w": 28
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+        "w": 28
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/ruta-90/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 25.1953125,
+        "href": "/",
+        "text": "Inicio",
+        "visible": true,
+        "w": 34.0390625,
+        "x": 20,
+        "y": 125
+      },
+      {
+        "h": 25.1953125,
+        "href": "/soluciones/",
+        "text": "Soluciones",
+        "visible": true,
+        "w": 70.4609375,
+        "x": 82.15625,
+        "y": 125
+      },
+      {
+        "h": 58.796875,
+        "href": "#principio",
+        "text": "Entender cómo funciona ↓",
+        "visible": true,
+        "w": 249.265625,
+        "x": 20,
+        "y": 547.1640625
+      },
+      {
+        "h": 30.59375,
+        "href": "#paso-siguiente",
+        "text": "Evaluar mi situación →",
+        "visible": true,
+        "w": 169.953125,
+        "x": 20,
+        "y": 627.9609375
+      },
+      {
+        "h": 33,
+        "href": null,
+        "text": "01 · Principio02 · Sistema03 · Prioridad04 · Componentes05 · Ciclo06 ·",
+        "visible": true,
+        "w": 152.5,
+        "x": 217.5,
+        "y": 817.3515625
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp",
+        "text": "Ampliar lámina 1: Principio (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 1275.5390625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp",
+        "text": "Ampliar lámina 1 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 1516.9140625
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-02-sistema-ejecucion.webp",
+        "text": "Ampliar lámina 2: Sistema (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 2757.90625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-02-sistema-ejecucion.webp",
+        "text": "Ampliar lámina 2 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 3018.78125
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-03-aethryon-ruta90.webp",
+        "text": "Ampliar lámina 3: Prioridad (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 5127.96875
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-03-aethryon-ruta90.webp",
+        "text": "Ampliar lámina 3 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 5388.84375
+      },
+      {
+        "h": 20,
+        "href": "/aethryon/",
+        "text": "Conocer AETHRYON →",
+        "visible": true,
+        "w": 177.109375,
+        "x": 20,
+        "y": 5962.28125
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-04-componentes.webp",
+        "text": "Ampliar lámina 4: Componentes (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 6577.5625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-04-componentes.webp",
+        "text": "Ampliar lámina 4 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 6818.9375
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-05-ciclo-90-dias.webp",
+        "text": "Ampliar lámina 5: Ciclo (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 8769.84375
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-05-ciclo-90-dias.webp",
+        "text": "Ampliar lámina 5 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 9030.71875
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-06-revision-semanal.webp",
+        "text": "Ampliar lámina 6: Revisión (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 11533.0625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-06-revision-semanal.webp",
+        "text": "Ampliar lámina 6 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 11793.9375
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-07-vs-plan-anual.webp",
+        "text": "Ampliar lámina 7: Planificación (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 14447.7890625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-07-vs-plan-anual.webp",
+        "text": "Ampliar lámina 7 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 14689.1640625
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-08-modalidades.webp",
+        "text": "Ampliar lámina 8: Modalidad (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 16037.0859375
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-08-modalidades.webp",
+        "text": "Ampliar lámina 8 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 16278.4609375
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-09-medicion.webp",
+        "text": "Ampliar lámina 9: Medición (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 17809.3671875
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-09-medicion.webp",
+        "text": "Ampliar lámina 9 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 18070.2421875
+      },
+      {
+        "h": 196.875,
+        "href": "/images/ruta-90/ruta90-slide-10-paso-siguiente.webp",
+        "text": "Ampliar lámina 10: Siguiente paso (abre en otra pestaña)",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 21069.1015625
+      },
+      {
+        "h": 19.5,
+        "href": "/images/ruta-90/ruta90-slide-10-paso-siguiente.webp",
+        "text": "Ampliar lámina 10 (abre en otra pestaña)↗",
+        "visible": true,
+        "w": 350,
+        "x": 20,
+        "y": 21310.4765625
+      },
+      {
+        "h": 60.796875,
+        "href": "https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20agendar%20una%20conversaci%C3%B3n%20de%2030%20minutos%20para%20evaluar%20mi%20situaci%C3%B3n%20y%20el%20posible%20alcance%20de%20una%20Ruta%2090.",
+        "text": "Agendar una conversación →",
+        "visible": true,
+        "w": 310,
+        "x": 40,
+        "y": 22522.4453125
+      },
+      {
+        "h": 20,
+        "href": "/aethryon/",
+        "text": "Conocer AETHRYON →",
+        "visible": true,
+        "w": 177.109375,
+        "x": 20,
+        "y": 22774.0234375
+      },
+      {
+        "h": 28.796875,
+        "href": "/soluciones/",
+        "text": "Soluciones",
+        "visible": true,
+        "w": 79.1171875,
+        "x": 20,
+        "y": 22915.3984375
+      },
+      {
+        "h": 28.796875,
+        "href": "/recursos/",
+        "text": "Recursos",
+        "visible": true,
+        "w": 67.2890625,
+        "x": 124.1171875,
+        "y": 22915.3984375
+      },
+      {
+        "h": 28.796875,
+        "href": "/casos/",
+        "text": "Casos documentados",
+        "visible": true,
+        "w": 157.625,
+        "x": 20,
+        "y": 22969.1953125
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 23097.9921875
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 23685.4921875
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 23834.4921875
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 23834.4921875
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 23834.4921875
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 23834.4921875
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 23990.4921875
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 23990.4921875
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 23990.4921875
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "38px",
+      "h": 136.78125,
+      "text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+      "w": 350,
+      "x": 20,
+      "y": 233.7890625
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 195,
+        "loading": "eager",
+        "priority": "high",
+        "src": "/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-02-sistema-ejecucion.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-03-aethryon-ruta90.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-04-componentes.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-05-ciclo-90-dias.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-06-revision-semanal.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-07-vs-plan-anual.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-08-modalidades.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-09-medicion.webp",
+        "w": 348
+      },
+      {
+        "h": 195,
+        "loading": "lazy",
+        "priority": "auto",
+        "src": "/images/ruta-90/ruta90-slide-10-paso-siguiente.webp",
+        "w": 348
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/frente-comercial/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 56,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20revisar%20mi%20frente%20comercial.",
+        "text": "Revisar mi frente comercial",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 600.75
+      },
+      {
+        "h": 56,
+        "href": "#niveles",
+        "text": "Ver qué incluye",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 672.75
+      },
+      {
+        "h": 56,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20revisar%20el%20Frente%20Comercial%20Esencial.",
+        "text": "QUIERO REVISAR EL ESENCIAL",
+        "visible": true,
+        "w": 292,
+        "x": 49,
+        "y": 4997.25
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20revisar%20si%20necesito%20el%20Frente%20Comercial%20Pro.",
+        "text": "REVISAR SI NECESITO PRO",
+        "visible": true,
+        "w": 292,
+        "x": 49,
+        "y": 5576.25
+      },
+      {
+        "h": 56,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20revisar%20el%20Frente%20Comercial%20Portafolio.",
+        "text": "REVISAR MI PORTAFOLIO",
+        "visible": true,
+        "w": 292,
+        "x": 49,
+        "y": 6187.25
+      },
+      {
+        "h": 56,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20somos%20una%20empresa%20B2B%20t%C3%A9cnica%20y%20queremos%20revisar%20nuestro%20caso.",
+        "text": "REVISAR MI CASO",
+        "visible": true,
+        "w": 245.109375,
+        "x": 72.4453125,
+        "y": 6841.75
+      },
+      {
+        "h": 96,
+        "href": null,
+        "text": "¿Necesito cambiar toda mi página web?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9494
+      },
+      {
+        "h": 72,
+        "href": null,
+        "text": "¿Tengo que pagar mensualidad?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9608
+      },
+      {
+        "h": 72,
+        "href": null,
+        "text": "¿Puedo utilizar mi dominio actual?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9698
+      },
+      {
+        "h": 72,
+        "href": null,
+        "text": "¿Qué debo entregar?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9788
+      },
+      {
+        "h": 96,
+        "href": null,
+        "text": "¿RAUVIA crea todo el contenido desde cero?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9878
+      },
+      {
+        "h": 72,
+        "href": null,
+        "text": "¿Cuánto tarda?",
+        "visible": true,
+        "w": 356,
+        "x": 17,
+        "y": 9992
+      },
+      {
+        "h": 56,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20me%20gustar%C3%ADa%20revisar%20mi%20caso%20para%20el%20Frente%20Comercial.",
+        "text": "Revisar mi caso",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 10578.25
+      },
+      {
+        "h": 60,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20hacer%20una%20consulta%20r%C3%A1pida%20por%20WhatsApp.",
+        "text": "Contarlo por WhatsApp",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 10650.25
+      },
+      {
+        "h": 44,
+        "href": "https://wa.me/525586494076?text=Hola%2C%20quiero%20revisar%20mi%20frente%20comercial.",
+        "text": "Revisar mi frente comercial",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 784
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 10790.25
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 11377.75
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 11526.75
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 11526.75
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 11526.75
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 11526.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 11682.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 11682.75
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 11682.75
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "36px",
+      "h": 180,
+      "text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+      "w": 358,
+      "x": 16,
+      "y": 144
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/nosotros/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "HABLAR CON RAUVIA",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 621.5625
+      },
+      {
+        "h": 52,
+        "href": "/aethryon",
+        "text": "CONOCER CÓMO TRABAJAMOS",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 689.5625
+      },
+      {
+        "h": 20,
+        "href": "/aethryon",
+        "text": "CONOCER AETHRYON",
+        "visible": true,
+        "w": 188.046875,
+        "x": 16,
+        "y": 3649.1796875
+      },
+      {
+        "h": 271.0546875,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 3734.1796875
+      },
+      {
+        "h": 20,
+        "href": "https://www.linkedin.com/in/raumor/",
+        "text": "Perfil profesional",
+        "visible": true,
+        "w": 145.34375,
+        "x": 16,
+        "y": 4648.734375
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 6407.984375
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 6995.484375
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 7144.484375
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 7144.484375
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 7144.484375
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 7144.484375
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 7300.484375
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 7300.484375
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 7300.484375
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "36px",
+      "h": 237.5625,
+      "text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+      "w": 358,
+      "x": 16,
+      "y": 176
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 239,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/rauvia-nosotros-hero-structure.svg",
+        "w": 358
+      },
+      {
+        "h": 170,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/rauvia-structure-problem-aethryon.svg",
+        "w": 358
+      },
+      {
+        "h": 195,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-process-v5.svg",
+        "w": 358
+      },
+      {
+        "h": 271,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-convergence-animated.svg",
+        "w": 358
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/recursos/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 483.25,
+        "href": "/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2",
+        "text": "Llegan prospectos, pero no avanzan: cómo distinguir un problema de dem",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 350.99395751953125
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/que-es-frente-comercial-no-es-pagina-web",
+        "text": "Qué es un frente comercial y por qué no es una simple página webUna pá",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 889.25
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/cuando-experiencia-se-comunica-como-catalogo",
+        "text": "Cuando la experiencia se comunica como catálogoUna firma puede acumula",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 1348.5
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/brecha-capacidad-real-percepcion-mercado",
+        "text": "La brecha entre capacidad real y percepción de mercadoUna empresa técn",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 1807.75
+      },
+      {
+        "h": 483.25,
+        "href": "/recursos/prospectos-no-avanzan-demanda-seguimiento-decision",
+        "text": "Llegan prospectos, pero no avanzan: cómo distinguir un problema de dem",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2267
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial",
+        "text": "Cuando WhatsApp carga con todo el proceso comercialWhatsApp facilita e",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 2782.25
+      },
+      {
+        "h": 455.25,
+        "href": "/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados",
+        "text": "Por qué una PyME pierde oportunidades aunque tenga clientes interesado",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 3241.5
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/la-ilusion-del-crecimiento-sin-capacidad",
+        "text": "La ilusión del crecimiento sin capacidad.Crecer no siempre fortalece u",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 3728.75
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/la-diferencia-entre-informacion-y-comprension",
+        "text": "La diferencia entre información y comprensión.Tener más información no",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 4188
+      },
+      {
+        "h": 427.25,
+        "href": "/recursos/que-debe-existir-antes-de-un-crm",
+        "text": "¿Qué debe existir antes de implementar un CRM?Antes de implementar un ",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 4647.25
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 5120.5
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 5708
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 5857
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 5857
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 5857
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 5857
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 6013
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 6013
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 6013
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "36px",
+      "h": 40,
+      "text": "Recursos",
+      "w": 358,
+      "x": 16,
+      "y": 154.99395751953125
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Prospectos-que-no-avanzan-demanda-seguimiento-y-decision.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/hero-prospectos-no-avanzan-octubre-2026.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Cuando-la-experiencia-se-comunica-como-catalogo.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/La-brecha-entre-capacidad-real-y-percepcion-de-mercado.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/hero-prospectos-no-avanzan-octubre-2026.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Cuando-un-solo-canal-carga-con-todo-el-proceso-comercial.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Oportunidades_que_se_pierden_por_falta_de_continuidad_comercial.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/08/la-ilusion-del-crecimiento-sin-capacidad-hero.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/08/la-diferencia-entre-informacion-y-comprension-hero.png",
+        "w": 356
+      },
+      {
+        "h": 200,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "https://blog.rauvia.com.mx/wp-content/uploads/2026/08/que-debe-existir-antes-de-un-crm-hero.png",
+        "w": 356
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  },
+  {
+    "route": "/casos/",
+    "controls": [
+      {
+        "h": 44,
+        "href": "/",
+        "text": "",
+        "visible": true,
+        "w": 88.5390625,
+        "x": 17,
+        "y": 11
+      },
+      {
+        "h": 44,
+        "href": null,
+        "text": "Abrir menú",
+        "visible": true,
+        "w": 44,
+        "x": 329,
+        "y": 11
+      },
+      {
+        "h": 24,
+        "href": "/casos/infraestructura-temporal-b2b/",
+        "text": "Ver intervención",
+        "visible": true,
+        "w": 292,
+        "x": 49,
+        "y": 1200.9024658203125
+      },
+      {
+        "h": 964.5,
+        "href": "/aethryon",
+        "text": "",
+        "visible": true,
+        "w": 390,
+        "x": 0,
+        "y": 1319.5
+      },
+      {
+        "h": 52,
+        "href": "https://wa.me/525586494076",
+        "text": "INICIAR CONVERSACIÓN",
+        "visible": true,
+        "w": 358,
+        "x": 16,
+        "y": 1907
+      },
+      {
+        "h": 44,
+        "href": "/recursos",
+        "text": "Blog",
+        "visible": true,
+        "w": 34.96875,
+        "x": 16,
+        "y": 2056
+      },
+      {
+        "h": 44,
+        "href": "/casos",
+        "text": "Casos",
+        "visible": true,
+        "w": 43.9921875,
+        "x": 74.96875,
+        "y": 2056
+      },
+      {
+        "h": 44,
+        "href": "/aviso-de-privacidad",
+        "text": "Aviso de Privacidad",
+        "visible": true,
+        "w": 140.1328125,
+        "x": 142.9609375,
+        "y": 2056
+      },
+      {
+        "h": 44,
+        "href": "/terminos",
+        "text": "Términos",
+        "visible": true,
+        "w": 66.90625,
+        "x": 307.09375,
+        "y": 2056
+      },
+      {
+        "h": 36,
+        "href": "https://www.facebook.com/rauviaconsulting/",
+        "text": "Facebook",
+        "visible": true,
+        "w": 36,
+        "x": 133,
+        "y": 2212
+      },
+      {
+        "h": 36,
+        "href": "https://www.instagram.com/rauviaconsulting/",
+        "text": "Instagram",
+        "visible": true,
+        "w": 36,
+        "x": 177,
+        "y": 2212
+      },
+      {
+        "h": 36,
+        "href": "https://www.linkedin.com/company/rauvia/",
+        "text": "LinkedIn",
+        "visible": true,
+        "w": 36,
+        "x": 221,
+        "y": 2212
+      },
+      {
+        "h": 56,
+        "href": null,
+        "text": "",
+        "visible": true,
+        "w": 56,
+        "x": 310,
+        "y": 764
+      }
+    ],
+    "h1": {
+      "font": "36px",
+      "h": 40,
+      "text": "Casos y evidencia",
+      "w": 358,
+      "x": 16,
+      "y": 162.4024658203125
+    },
+    "images": [
+      {
+        "h": 36,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 89
+      },
+      {
+        "h": 965,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/aethryon-end-screen-blueprint.svg",
+        "w": 390
+      },
+      {
+        "h": 32,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/RAUVIA_CONSULTING_LOGO.svg",
+        "w": 79
+      },
+      {
+        "h": 28,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 28
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+        "w": 20
+      },
+      {
+        "h": 20,
+        "loading": "auto",
+        "priority": "auto",
+        "src": "/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+        "w": 20
+      }
+    ],
+    "overflow": 0,
+    "preloads": [],
+    "width": 390
+  }
+]

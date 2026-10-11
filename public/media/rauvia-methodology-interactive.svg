@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 2048 480"
+  role="img"
+  aria-labelledby="title desc">
+  <title id="title">Metodología RAUVIA interactiva</title>
+  <desc id="desc">Cinco etapas interactivas: Claridad, Estructura, Sistema, Medición y Escalamiento.</desc>
+
+  <defs>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#2563EB" flood-opacity=".22"/>
+    </filter>
+    <filter id="goldGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#F4B942" flood-opacity=".45"/>
+    </filter>
+
+    <style><![CDATA[
+      .font { font-family: Inter, Arial, sans-serif; }
+      .eyebrow { font-size:18px; font-weight:800; letter-spacing:.08em; fill:#2563EB; }
+      .headline { font-size:42px; font-weight:500; fill:#0F172A; }
+      .headline-accent { font-size:42px; font-weight:650; fill:#2563EB; }
+      .num { font-size:20px; font-weight:800; fill:#0F172A; }
+      .step-title { font-size:20px; font-weight:800; fill:#0F172A; }
+      .step-body { font-size:18px; fill:#334155; }
+      .line { fill:none; stroke:#CBD5E1; stroke-width:2; }
+      .line-active { fill:none; stroke:#2563EB; stroke-width:2.5; stroke-dasharray:8 10; opacity:0; }
+      .hex { fill:none; stroke:#2563EB; stroke-width:2.3; stroke-linejoin:round; }
+      .guide { fill:none; stroke:#CBD5E1; stroke-width:1.25; opacity:.72; }
+      .icon { fill:none; stroke:#2563EB; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+      .node { fill:#0B3A53; }
+      .gold { fill:#F4B942; stroke:#D99612; stroke-width:1.4; }
+
+      .step {
+        cursor:pointer;
+        outline:none;
+      }
+      .step .icon-wrap {
+        transform-box:fill-box;
+        transform-origin:center;
+        transition:transform .28s ease, filter .28s ease;
+      }
+      .step .step-title,
+      .step .step-body,
+      .step .num {
+        transition:fill .28s ease, transform .28s ease;
+      }
+      .step:hover .icon-wrap,
+      .step:focus .icon-wrap,
+      .step:focus-visible .icon-wrap {
+        transform:translateY(-8px) scale(1.06);
+        filter:url(#softGlow);
+      }
+      .step:hover .step-title,
+      .step:focus .step-title,
+      .step:focus-visible .step-title {
+        fill:#2563EB;
+      }
+      .step:hover .num,
+      .step:focus .num,
+      .step:focus-visible .num {
+        fill:#F4B942;
+      }
+      .step:hover .step-body,
+      .step:focus .step-body,
+      .step:focus-visible .step-body {
+        fill:#0F172A;
+      }
+      .step:hover .interaction-ring,
+      .step:focus .interaction-ring,
+      .step:focus-visible .interaction-ring {
+        opacity:1;
+        transform:scale(1);
+      }
+      .interaction-ring {
+        fill:none;
+        stroke:#F4B942;
+        stroke-width:2;
+        opacity:0;
+        transform-box:fill-box;
+        transform-origin:center;
+        transform:scale(.82);
+        transition:opacity .28s ease, transform .28s ease;
+      }
+      .step:hover .anim-rotate,
+      .step:focus .anim-rotate,
+      .step:focus-visible .anim-rotate {
+        animation:rotateIcon 2.8s linear infinite;
+        transform-box:fill-box;
+        transform-origin:center;
+      }
+      .step:hover .anim-pulse,
+      .step:focus .anim-pulse,
+      .step:focus-visible .anim-pulse {
+        animation:pulseIcon 1.5s ease-in-out infinite;
+        transform-box:fill-box;
+        transform-origin:center;
+      }
+      .step:hover .anim-stack,
+      .step:focus .anim-stack,
+      .step:focus-visible .anim-stack {
+        animation:stackLift 1.8s ease-in-out infinite;
+      }
+      .step:hover .anim-node,
+      .step:focus .anim-node,
+      .step:focus-visible .anim-node {
+        animation:nodePulse 1.5s ease-in-out infinite;
+        transform-box:fill-box;
+        transform-origin:center;
+      }
+      .step:hover .anim-chart,
+      .step:focus .anim-chart,
+      .step:focus-visible .anim-chart {
+        animation:chartRise 1.6s ease-in-out infinite alternate;
+        transform-box:fill-box;
+        transform-origin:bottom;
+      }
+      .step:hover .line-active,
+      .step:focus .line-active,
+      .step:focus-visible .line-active {
+        opacity:1;
+        animation:dashFlow 4s linear infinite;
+      }
+      .gold-dot {
+        transition:transform .25s ease, filter .25s ease;
+        transform-box:fill-box;
+        transform-origin:center;
+      }
+      .step:hover .gold-dot,
+      .step:focus .gold-dot,
+      .step:focus-visible .gold-dot {
+        transform:scale(1.25);
+        filter:url(#goldGlow);
+      }
+
+      @keyframes rotateIcon { to { transform:rotate(360deg); } }
+      @keyframes pulseIcon {
+        0%,100% { transform:scale(1); opacity:.85; }
+        50% { transform:scale(1.12); opacity:1; }
+      }
+      @keyframes stackLift {
+        0%,100% { transform:translateY(0); }
+        50% { transform:translateY(-5px); }
+      }
+      @keyframes nodePulse {
+        0%,100% { transform:scale(1); }
+        50% { transform:scale(1.18); }
+      }
+      @keyframes chartRise {
+        from { transform:scaleY(.88); }
+        to { transform:scaleY(1.05); }
+      }
+      @keyframes dashFlow { to { stroke-dashoffset:-180; } }
+
+      @media (prefers-reduced-motion:reduce) {
+        * { animation:none !important; transition:none !important; }
+      }
+    ]]></style>
+  </defs>
+
+  <rect width="2048" height="480" fill="#F8FAFC"/>
+
+
+  <!-- Intro -->
+  <g class="font" transform="translate(80 62)">
+    <text class="eyebrow">NUESTRA METODOLOGÍA</text>
+    <rect x="0" y="25" width="38" height="4" rx="2" fill="#F4B942"/>
+    <text x="0" y="120" class="headline">Convertimos capacidades</text>
+    <text x="0" y="174" class="headline">en sistemas que generan</text>
+    <text x="0" y="228" class="headline-accent">crecimiento.</text>
+  </g>
+
+  <!-- Main line -->
+  <path d="M690 226H1960" class="line"/>
+  <path d="M690 226H1960" class="line-active"/>
+
+  <!-- STEP 1 -->
+  <g class="step" tabindex="0" role="button" aria-label="Etapa 1: Claridad">
+    <g transform="translate(590 72)">
+      <text x="78" y="-12" class="num font" text-anchor="middle">01</text>
+      <g class="icon-wrap">
+        <circle cx="78" cy="82" r="66" class="interaction-ring"/>
+        <polygon points="78,10 132,41 132,103 78,134 24,103 24,41" class="hex"/>
+        <g class="guide">
+          <line x1="78" y1="10" x2="78" y2="134"/>
+          <line x1="24" y1="41" x2="132" y2="103"/>
+          <line x1="132" y1="41" x2="24" y2="103"/>
+        </g>
+        <g class="anim-rotate">
+          <circle cx="78" cy="72" r="32" class="icon"/>
+          <circle cx="78" cy="72" r="8" class="icon"/>
+          <path d="M78 72L111 39M105 39H111V45" class="icon"/>
+        </g>
+        <circle cx="78" cy="72" r="4" class="gold gold-dot"/>
+      </g>
+      <text x="78" y="186" class="step-title font" text-anchor="middle">CLARIDAD</text>
+      <text x="78" y="224" class="step-body font" text-anchor="middle">Entendemos tu negocio,</text>
+      <text x="78" y="254" class="step-body font" text-anchor="middle">tus objetivos y tus</text>
+      <text x="78" y="284" class="step-body font" text-anchor="middle">oportunidades.</text>
+    </g>
+    <circle cx="820" cy="226" r="8" class="gold gold-dot"/>
+  </g>
+
+  <!-- STEP 2 -->
+  <g class="step" tabindex="0" role="button" aria-label="Etapa 2: Estructura">
+    <g transform="translate(900 72)">
+      <text x="78" y="-12" class="num font" text-anchor="middle">02</text>
+      <g class="icon-wrap">
+        <circle cx="78" cy="82" r="66" class="interaction-ring"/>
+        <polygon points="78,10 132,41 132,103 78,134 24,103 24,41" class="hex"/>
+        <g class="guide">
+          <line x1="78" y1="10" x2="78" y2="134"/>
+          <line x1="24" y1="41" x2="132" y2="103"/>
+          <line x1="132" y1="41" x2="24" y2="103"/>
+        </g>
+        <g class="anim-pulse">
+          <polygon points="78,40 104,55 104,85 78,100 52,85 52,55" class="icon"/>
+          <line x1="78" y1="40" x2="78" y2="100" class="icon"/>
+          <line x1="52" y1="55" x2="104" y2="85" class="icon"/>
+          <line x1="104" y1="55" x2="52" y2="85" class="icon"/>
+        </g>
+      </g>
+      <text x="78" y="186" class="step-title font" text-anchor="middle">ESTRUCTURA</text>
+      <text x="78" y="224" class="step-body font" text-anchor="middle">Diseñamos la arquitectura</text>
+      <text x="78" y="254" class="step-body font" text-anchor="middle">correcta para generar</text>
+      <text x="78" y="284" class="step-body font" text-anchor="middle">valor.</text>
+    </g>
+    <circle cx="1130" cy="226" r="8" class="gold gold-dot"/>
+  </g>
+
+  <!-- STEP 3 -->
+  <g class="step" tabindex="0" role="button" aria-label="Etapa 3: Sistema">
+    <g transform="translate(1200 72)">
+      <text x="78" y="-12" class="num font" text-anchor="middle">03</text>
+      <g class="icon-wrap">
+        <circle cx="78" cy="82" r="66" class="interaction-ring"/>
+        <g class="anim-stack">
+          <polygon points="78,20 132,50 78,80 24,50" class="icon"/>
+          <polygon points="78,54 132,84 78,114 24,84" class="icon"/>
+          <polygon points="78,88 132,118 78,148 24,118" class="icon"/>
+        </g>
+        <line x1="78" y1="16" x2="78" y2="152" class="guide"/>
+      </g>
+      <text x="78" y="186" class="step-title font" text-anchor="middle">SISTEMA</text>
+      <text x="78" y="224" class="step-body font" text-anchor="middle">Construimos activos</text>
+      <text x="78" y="254" class="step-body font" text-anchor="middle">digitales y procesos</text>
+      <text x="78" y="284" class="step-body font" text-anchor="middle">que funcionan.</text>
+    </g>
+    <circle cx="1430" cy="226" r="8" class="gold gold-dot"/>
+  </g>
+
+  <!-- STEP 4 -->
+  <g class="step" tabindex="0" role="button" aria-label="Etapa 4: Medición">
+    <g transform="translate(1500 72)">
+      <text x="78" y="-12" class="num font" text-anchor="middle">04</text>
+      <g class="icon-wrap">
+        <circle cx="78" cy="82" r="66" class="interaction-ring"/>
+        <g class="guide">
+          <polygon points="78,10 132,41 132,103 78,134 24,103 24,41"/>
+        </g>
+        <g class="icon">
+          <line x1="78" y1="72" x2="46" y2="36"/>
+          <line x1="78" y1="72" x2="116" y2="72"/>
+          <line x1="78" y1="72" x2="48" y2="108"/>
+        </g>
+        <g class="anim-node">
+          <circle cx="78" cy="72" r="15" fill="#F8FAFC" stroke="#2563EB" stroke-width="2.4"/>
+          <circle cx="46" cy="36" r="11" fill="#F8FAFC" stroke="#2563EB" stroke-width="2.4"/>
+          <circle cx="116" cy="72" r="11" fill="#F8FAFC" stroke="#2563EB" stroke-width="2.4"/>
+          <circle cx="48" cy="108" r="11" fill="#F8FAFC" stroke="#2563EB" stroke-width="2.4"/>
+          <circle cx="116" cy="72" r="4" class="gold gold-dot"/>
+        </g>
+      </g>
+      <text x="78" y="186" class="step-title font" text-anchor="middle">MEDICIÓN</text>
+      <text x="78" y="224" class="step-body font" text-anchor="middle">Implementamos métricas</text>
+      <text x="78" y="254" class="step-body font" text-anchor="middle">para tomar mejores</text>
+      <text x="78" y="284" class="step-body font" text-anchor="middle">decisiones.</text>
+    </g>
+    <circle cx="1730" cy="226" r="8" class="gold gold-dot"/>
+  </g>
+
+  <!-- STEP 5 -->
+  <g class="step" tabindex="0" role="button" aria-label="Etapa 5: Escalamiento">
+    <g transform="translate(1800 72)">
+      <text x="78" y="-12" class="num font" text-anchor="middle">05</text>
+      <g class="icon-wrap">
+        <circle cx="78" cy="82" r="66" class="interaction-ring"/>
+        <g class="guide">
+          <polygon points="78,10 132,41 132,103 78,134 24,103 24,41"/>
+        </g>
+        <g class="anim-chart">
+          <line x1="36" y1="112" x2="120" y2="112" class="icon"/>
+          <rect x="42" y="84" width="12" height="28" fill="none" stroke="#2563EB" stroke-width="2.4"/>
+          <rect x="66" y="68" width="12" height="44" fill="none" stroke="#2563EB" stroke-width="2.4"/>
+          <rect x="90" y="50" width="12" height="62" fill="none" stroke="#2563EB" stroke-width="2.4"/>
+          <polyline points="38,76 60,54 80,64 104,34 120,20" class="icon"/>
+          <polyline points="110,20 120,20 120,30" class="icon"/>
+        </g>
+      </g>
+      <text x="78" y="186" class="step-title font" text-anchor="middle">ESCALAMIENTO</text>
+      <text x="78" y="224" class="step-body font" text-anchor="middle">Optimización continua</text>
+      <text x="78" y="254" class="step-body font" text-anchor="middle">para crecer sin límites.</text>
+    </g>
+  </g>
+
+  <!-- Ending arrow -->
+  <path d="M1960 226H2010M1992 210L2010 226L1992 242" class="icon"/>
+</svg>

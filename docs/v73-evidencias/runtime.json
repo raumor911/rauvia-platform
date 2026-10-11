@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "node",
+    "dist/server.cjs"
+  ],
+  "nodeEnv": "production",
+  "measurementScope": "Local compiled production process; probes were outside source and are excluded from release."
+}

@@ -1,0 +1,987 @@
+[
+  {
+    "file": "public/apple-touch-icon.png",
+    "equal": true,
+    "sha256": "5a00e6c55c7d7eafaeb3ffe795dc1305a7732e19f84e6b98b218bb36a7df7929"
+  },
+  {
+    "file": "public/favicon-48x48.png",
+    "equal": true,
+    "sha256": "270453af73e95c97a3f6e9004bb6bee94daec4401085456b8e2b00bafaef371f"
+  },
+  {
+    "file": "public/favicon-96x96.png",
+    "equal": true,
+    "sha256": "86a078f95e2e210eecb46fcae83fdc3787c5a139aff52c48dabb283c6dd67c4f"
+  },
+  {
+    "file": "public/favicon.ico",
+    "equal": true,
+    "sha256": "02f182f5d51ded0cfa383a6c6a4d2b49034424e3c19fd6b87c9d91ea45ae5403"
+  },
+  {
+    "file": "public/favicon.svg",
+    "equal": true,
+    "sha256": "fd7631297ca86afec3a5f42d9ba7925ce0981fb108ff3d8bc72babdb520fcfec"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-consultorio-medico-small.webp",
+    "equal": true,
+    "sha256": "fd44105cfe1a95c5d810b21ec9594e020a36693c2187d283c2b3968401513bef"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-consultorio-medico.webp",
+    "equal": true,
+    "sha256": "805e52993fa94f4b84469dbc788ab3a6e9ce2d5bb51c1b08ff7d69adef4cd4d4"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-contacto-medico-small.webp",
+    "equal": true,
+    "sha256": "129d7278f4abf82150274ec21c2fb97d27c7600eac3c83821127b8306fad4548"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-contacto-medico.webp",
+    "equal": true,
+    "sha256": "9d538a25913048b93ce7ec4a228fa6a63658e194d377298f52a44f1d05a47ea4"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-medica-mobile-small.webp",
+    "equal": true,
+    "sha256": "c7d4b13b57b7f87640f1003e7d40b35f98d7bbc6e168df17c68b223055cf7165"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-medica-mobile.webp",
+    "equal": true,
+    "sha256": "7c5f8125c782d0e4f903d0b88516dccfb61ed784963ee5af32f75b4d6e8979d3"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-vs-mensaje-medico-small.webp",
+    "equal": true,
+    "sha256": "65342fe984d9b1ea934d14e952c3c5a5b1851b369fc0db1a7fa79452f4cdb5d8"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-vs-mensaje-medico.webp",
+    "equal": true,
+    "sha256": "aeb9f65a91b1a8d12cd6518aab6e0eab2b7cfb00d7fece5ced43fcb94d2f87e8"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-whatsapp-medico-small.webp",
+    "equal": true,
+    "sha256": "b47da749d5f645b175c226e4c92e369dcd9175b8ab5dfe80e1e7a07c6c1fbb92"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-agenda-whatsapp-medico.webp",
+    "equal": true,
+    "sha256": "7ecebe4f8cbc4dc91cb604cf43258c416bfdf2b0fdc7737d1a492932e8ff8c5c"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-flujo-solicitud-cita-medica-small.webp",
+    "equal": true,
+    "sha256": "2176abe6076cc88ea3b929f1ff36ad9f833465bee0c94417f0100b2c0da305e3"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-flujo-solicitud-cita-medica.webp",
+    "equal": true,
+    "sha256": "a1412c2e5e4b42877f351daff07a86ac154aedc04d5e3abc64d8b7877db9246d"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-formulario-cita-datos-minimos-small.webp",
+    "equal": true,
+    "sha256": "014661344880cf4c19525ab421838142d12aa33606502fcf98d3ebf614a62684"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-formulario-cita-datos-minimos.webp",
+    "equal": true,
+    "sha256": "578d45b138e6840594141de41a6155b0fb4234a8fd755f2870453f91e2339fbf"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-frente-comercial-medico-agenda-small.webp",
+    "equal": true,
+    "sha256": "33e9e049c38ba3b22c84fe227099cec29b15d995a7d4623ac2d41c5b5fe178d8"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-frente-comercial-medico-agenda.webp",
+    "equal": true,
+    "sha256": "a19b69c58b1cb7725a4b6e3feff34d2bfdfaee8b9566104234327e655c5ed5d4"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-pagina-informativa-vs-contacto-small.webp",
+    "equal": true,
+    "sha256": "e427fd6dcefa46ad150de5695d8b23f4ee71c258452c9d8c246b27062647291a"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-pagina-informativa-vs-contacto.webp",
+    "equal": true,
+    "sha256": "59ecfc187aa0f15ac9cd5fdaea13243b3ac580dc9a30b86f447ed9aa09492247"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-seo-geo-agenda-medica-small.webp",
+    "equal": true,
+    "sha256": "ab7df272ca380c1ec2ae4450a0eb6a25048f69e6f51a4c57fba78dde9287c820"
+  },
+  {
+    "file": "public/images/agenda-whatsapp-medicos/mockup-seo-geo-agenda-medica.webp",
+    "equal": true,
+    "sha256": "7b95188b9a9754a4472cbd6b0cc1fcdfdf3be9c77c7f5a7bc810b55a7c836747"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-agenda-contacto-consultorio-small.webp",
+    "equal": true,
+    "sha256": "5bca85dd4f941e3cc1bb50456703167bd4463c972222690beac5076d0134eff0"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-agenda-contacto-consultorio.webp",
+    "equal": true,
+    "sha256": "fb82746129bd28698833ba7319bb3ccf9b4e5722e81a38bc9c3448bcc41ec384"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-basico-vs-profesional-small.webp",
+    "equal": true,
+    "sha256": "81651a013b2fcc9d429c0983d8c923f4acd4c3558cc2516129a2c9838d199ade"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-basico-vs-profesional.webp",
+    "equal": true,
+    "sha256": "02a0012881431d67f2f8a8ea9c3caae146c34d42cf951b7e8a15a13be0dd134e"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-desktop-mobile-small.webp",
+    "equal": true,
+    "sha256": "7a6153d4c1bd86e832d33c80e0e42ff291da5e9b4a575d4c2f3e4e47d737b70e"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-desktop-mobile.webp",
+    "equal": true,
+    "sha256": "994b4dbfe1335fcbde16ca17a4bdaf2417daaf98ce7b9bc33c6ff06012e9f83f"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-medicos-especialidades-small.webp",
+    "equal": true,
+    "sha256": "8b82dd4085b4ed647381a5b3b644b5394e5170503f840db21bdfe2a75a41a289"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-consultorio-medicos-especialidades.webp",
+    "equal": true,
+    "sha256": "893537f7dcce5d35b755079aa8c784afe8eac291036d97f7cb5d82cb1d714d2d"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-frente-comercial-consultorio-small.webp",
+    "equal": true,
+    "sha256": "b2a35b8fa7c8f90b8be762ed7aea16cc8390c699721e374b7eb27c7d7270c490"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-frente-comercial-consultorio.webp",
+    "equal": true,
+    "sha256": "adafa0f45fac5a997151a30027049a3d984d4c72a57630ae93e90a9037a0e8c8"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-multiples-medicos-consultorio-small.webp",
+    "equal": true,
+    "sha256": "051bf1790288e9a1df60cc22bdd2dc1678f19064253f1941bbec2130a3678881"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-multiples-medicos-consultorio.webp",
+    "equal": true,
+    "sha256": "8046538e8639f82ac42376560a04034f28eabe59457aad4f24558365e702b3ed"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-multiples-ubicaciones-medicas-small.webp",
+    "equal": true,
+    "sha256": "8fd85484e4289a070173800a27d17bdf4767c73cee2f247adc9772bb11fb7966"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-multiples-ubicaciones-medicas.webp",
+    "equal": true,
+    "sha256": "ad10491eeac2d0ed596774abb68d8d7d7b504bf6a6820880222186e8a54be6bb"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-pagina-consultorio-medico-small.webp",
+    "equal": true,
+    "sha256": "a7a47ec4f81aab27e6c3d7d958f97c6f974df5082207e670aa17bdfdac6dfe27"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-pagina-consultorio-medico.webp",
+    "equal": true,
+    "sha256": "002677ee6a846d6352ecb6fa069d71e1012148af8e2266aee3eb905830cb63be"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-seo-geo-consultorio-medico-small.webp",
+    "equal": true,
+    "sha256": "79541abd5d0c973b666d3d7c40b13d0708abf6bc8a96b15c8e0667f1e9a67fee"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-seo-geo-consultorio-medico.webp",
+    "equal": true,
+    "sha256": "c7428cbde22e09f506335a3dd0a8cdc935b0ff09ac792418f454e7ea05fe09d8"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-ubicacion-consultorio-medico-small.webp",
+    "equal": true,
+    "sha256": "e74b19a41e69f0dbb4207d30bb9193389a2b7e46348ecd4eea951ea122138aff"
+  },
+  {
+    "file": "public/images/consultorio-medico/mockup-ubicacion-consultorio-medico.webp",
+    "equal": true,
+    "sha256": "2233396955916557ef8362b4ed2e582af9909d721252dd8cfea8798fc7ef3a5f"
+  },
+  {
+    "file": "public/images/landing-medicos/agenda.webp",
+    "equal": true,
+    "sha256": "e0a6654851ac90d97d027061a061093f159d43cda4d3bd1d4fad62c60b1b65c0"
+  },
+  {
+    "file": "public/images/landing-medicos/formacion.webp",
+    "equal": true,
+    "sha256": "66d2c01db7fb87f29325b87f0f96a20d3d0cd4edf7da6b92028b332202475758"
+  },
+  {
+    "file": "public/images/landing-medicos/hero.webp",
+    "equal": true,
+    "sha256": "cb704de3bc7160573eab053a2df01da98d4d0e4ec23085aa4e293c6c9105f83d"
+  },
+  {
+    "file": "public/images/landing-medicos/motivos.webp",
+    "equal": true,
+    "sha256": "f8da08e9b7c2537451a093a9fa1c330cf04ab7e3b75abd8e651c3262535021d1"
+  },
+  {
+    "file": "public/images/landing-medicos/ubicaciones.webp",
+    "equal": true,
+    "sha256": "cce7759980b8d1536b6c8bb855bae5e3968be19ea2f23c60ff658e5ff14a0ad6"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-collage-especialista-small.webp",
+    "equal": true,
+    "sha256": "024bbccc1f2ffdbc4f1b277454bb4c303fd0e446ef089aba24b52f31a872955c"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-collage-especialista.webp",
+    "equal": true,
+    "sha256": "a907b5d7eba77dd6f6e35d9fab7877b08e103cec4b7686eb25249f731eaaff06"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-comparativo-generica-vs-especialista-small.webp",
+    "equal": true,
+    "sha256": "10b663a80cc40ab8ff78e79c616b516cc7f89939229473689ad83b28006bb450"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-comparativo-generica-vs-especialista.webp",
+    "equal": true,
+    "sha256": "7a64449678473792f850ac6841ebf66d89238dd54b5c5a6e862b01e24a344e6d"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-contacto-agenda-small.webp",
+    "equal": true,
+    "sha256": "2f24f4e641307365f90c2a600fd98bbc4653bd006d5fb7a6a24c8c813efaf6f8"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-contacto-agenda.webp",
+    "equal": true,
+    "sha256": "df0be24706425cdd304546cd0422612f09ba225a3ba8ee5621bb5dc5c3a97280"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-formacion-trayectoria-small.webp",
+    "equal": true,
+    "sha256": "6efabba758922e35dfa6be710febcfbfd95156334368b99bf6055ee9f63f7fd2"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-formacion-trayectoria.webp",
+    "equal": true,
+    "sha256": "cf10cabdd4fad0bb146b31337059bc1d0140647bfde3f8fc24fcd12a76ebb248"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-frente-comercial-medico-small.webp",
+    "equal": true,
+    "sha256": "a0ce0cbd669fc3852f9ed3dcb1345a43d9ef5086e042f68d104b6a47b4526475"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-frente-comercial-medico.webp",
+    "equal": true,
+    "sha256": "0ce8189b7a3bc37bb5e37ab0e7a8dd68f58184d5173868f825fe614c4546e937"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-hero-especialista-small.webp",
+    "equal": true,
+    "sha256": "3dc2affb7d66ba285f2ef6da3bf3f830ef30604f79249effa1102505176e2dcd"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-hero-especialista.webp",
+    "equal": true,
+    "sha256": "f1329ad51fb212549ecfea1e34840a9147e04cc63f26a787a38accb787cf589f"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-mobile-traumatologia-small.webp",
+    "equal": true,
+    "sha256": "18f1a2057d4df6e66b7e94d0242060c24002e45cc6726cd3759006873c85411f"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-mobile-traumatologia.webp",
+    "equal": true,
+    "sha256": "0e66737b3b1ae52e4a024b2091444edc1168aa23a8ccb12f8067987f7e7dddb2"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-motivos-consulta-small.webp",
+    "equal": true,
+    "sha256": "2beecdd87f31ef0708a5599ed01afd3724bfebefa42c3ded334217167ddb462b"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-motivos-consulta.webp",
+    "equal": true,
+    "sha256": "b2bf9a036f081e8366e93122fb01c146d03383d5cd6950e3d3b3d5924a4780a8"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-seo-local-medico-small.webp",
+    "equal": true,
+    "sha256": "9409cade5a8e769aa8508e4cf765e144e668ed6d69be8e425b78497514538244"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-seo-local-medico.webp",
+    "equal": true,
+    "sha256": "5b1d550788f53c822f57a9ea00bb116e1f5d27c8cd8b041dd7c89ce2b555820a"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-ubicacion-consultorio-small.webp",
+    "equal": true,
+    "sha256": "0efb6a199f1ee7f7bd835688d8b91916329b1e43e07583d4bcb0b036d90ab2b3"
+  },
+  {
+    "file": "public/images/medicos-especialistas/mockup-ubicacion-consultorio.webp",
+    "equal": true,
+    "sha256": "9367f2dff003e9e91a1cf49d6fcb18cf3f4a54b1a4d2408559e1498cd01e01e8"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-ecosistema-pagina-medica-small.webp",
+    "equal": true,
+    "sha256": "f55b5018e34c121b9d85b469da21b8af64afd3b3ee42e73414d4a37687a98d69"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-ecosistema-pagina-medica.webp",
+    "equal": true,
+    "sha256": "0a19f7bbcaab4c83a1ccd1a18cbaf282b03ca729854210dd135d1f475edaaf98"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-especialidad-ubicacion-contacto-small.webp",
+    "equal": true,
+    "sha256": "b7ef26100bb2d9dd174d7817e8c7118ba832ad48ddeb201dca1a1fb352c8d318"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-especialidad-ubicacion-contacto.webp",
+    "equal": true,
+    "sha256": "1eb4b8f69dfe543f9c65cc888c3e882a18c18e9e0cdbdd48a7120ba923251a49"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-frente-comercial-medico-small.webp",
+    "equal": true,
+    "sha256": "8a065358ba15ba3e214d11353f9f6b38cdbbf0622212482be93e1b2736c5595a"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-frente-comercial-medico.webp",
+    "equal": true,
+    "sha256": "2eafb9e19ce8ab73305e022e81426bc017762306b5572da086722d774889c537"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-opciones-pagina-web-medicos-small.webp",
+    "equal": true,
+    "sha256": "ec283e9754a97a60ba1cfc85c57ef2c765e0502509250aad7e641fda24840b59"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-opciones-pagina-web-medicos.webp",
+    "equal": true,
+    "sha256": "a20bbc12c6415c4534db0e77843902db2d7190bf6cf6a04eac040f831a7e15ec"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-basica-vs-profesional-small.webp",
+    "equal": true,
+    "sha256": "4b12238f3b1b578cadd7a75449862c0c2d2eed04c34b4aa3b8e1d0a32c35cd13"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-basica-vs-profesional.webp",
+    "equal": true,
+    "sha256": "65516d380acd825f095c7034bf10a2bd330c48ff2764012ae76c79276d53e571"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-medica-desktop-mobile-small.webp",
+    "equal": true,
+    "sha256": "ab6640aeaa56936bdba6e6bc677bd7959d0d2abe5ade6b5427a08ffb4b44d13e"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-medica-desktop-mobile.webp",
+    "equal": true,
+    "sha256": "82789d4e58a2471dba14269046305d8be14e439bd476f62c0c7b40d1a21782cd"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-medica-mobile-small.webp",
+    "equal": true,
+    "sha256": "55a474908601e5a883b3c8cdf3dea1983d2f01397dec99067efe9a15e70a1121"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-medica-mobile.webp",
+    "equal": true,
+    "sha256": "91c04a60a15683a56f9d87354f21df24daa81fa68c7f712dbd83fda74980cb54"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-web-medico-small.webp",
+    "equal": true,
+    "sha256": "63877848077a45230ad790f6e3bfb96d5fbcc6893d725faec9902ebaab011900"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-pagina-web-medico.webp",
+    "equal": true,
+    "sha256": "e25f154ade871ab4bf32b90f99bce5df701ae4e8949f3726ef56f7616a2c9ff8"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-perfil-medico-profesional-small.webp",
+    "equal": true,
+    "sha256": "a0886a814510fe753a330001f14e07a77499bcc674c4bda3299c10b4781ddbd4"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-perfil-medico-profesional.webp",
+    "equal": true,
+    "sha256": "f76d1c1140b752e2465982a87f5a3ae1059dc3a1d241b0b4dea83bc7fc274a7e"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-seo-geo-medico-small.webp",
+    "equal": true,
+    "sha256": "4ef41e4133bc41bd2cd0799b3b6fc60ea0cc0dda935df6e84163e452d6291bb0"
+  },
+  {
+    "file": "public/images/pagina-web-medicos/mockup-seo-geo-medico.webp",
+    "equal": true,
+    "sha256": "b1762f5e67835b8fb5305d92bbc6c9a02d0907932589d34eca104e495e06941a"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-01-prioridad-capacidad-small.webp",
+    "equal": true,
+    "sha256": "e33ff2e5b0a226c969cdd52286fc0d23bd54e7c5fc85c916b6453083a5dae0bf"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp",
+    "equal": true,
+    "sha256": "c41b99bbdfb448c5799c38f68a25a996e78ab011b4a62ef2341d94f33a8511be"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-02-sistema-ejecucion-small.webp",
+    "equal": true,
+    "sha256": "3bc093502ada4c991ff1b2c5faf01ede5bc8aaa9cb4829a4785a130ee2f9716a"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-02-sistema-ejecucion.webp",
+    "equal": true,
+    "sha256": "f9450f4eba9c853316c75c4b81ce4e54f89d26d3f579838991ee018007b1c58a"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-03-aethryon-ruta90-small.webp",
+    "equal": true,
+    "sha256": "7bfb5b504b9072f97b3492a862f502e82bab2f6ccfd5ff3fc1275cd5148932e4"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-03-aethryon-ruta90.webp",
+    "equal": true,
+    "sha256": "9c3881acd57e6b58adeaced66cadf2df83e009eafff8d815062bec2fbe43aba0"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-04-componentes-small.webp",
+    "equal": true,
+    "sha256": "e161c5bc549be70412444a83b7f64680d485577afed308c21737f7246f1760ae"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-04-componentes.webp",
+    "equal": true,
+    "sha256": "e547ac085a9300c6b02f168b287231845ba96ba72f150ba551538575017e075f"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-05-ciclo-90-dias-small.webp",
+    "equal": true,
+    "sha256": "ce089c732e7b4cd35f9081434ca61dda98a54c91a7f0355fd16e0606a05b1c17"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-05-ciclo-90-dias.webp",
+    "equal": true,
+    "sha256": "800e4dc73b3dc6e8cf958bf1670756b76ea446dc295061e252ee3fcf0273929d"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-06-revision-semanal-small.webp",
+    "equal": true,
+    "sha256": "0372299b35b89d1d6b4bd79212af83f7efab968ce08559ea6790fc04d7d17764"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-06-revision-semanal.webp",
+    "equal": true,
+    "sha256": "8c762ccf2d13e0396ca7e3795c9df7a86e3149bc421dcae89c74bf14933d470e"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-07-vs-plan-anual-small.webp",
+    "equal": true,
+    "sha256": "b6da15695271f002adc462153d99b9bf755282425e03e2d4fe0ec78a39abefce"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-07-vs-plan-anual.webp",
+    "equal": true,
+    "sha256": "bfeda2b1aa9bba1117b462eabccb3c8a073017801c4ed11dadb2d4b14194e524"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-08-modalidades-small.webp",
+    "equal": true,
+    "sha256": "eed8d1827e9ef57dff6a6180f12bcfd517c487446d6bea674b73770f5bef172e"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-08-modalidades.webp",
+    "equal": true,
+    "sha256": "8c6433ced7b06361eb87e9d99b9026a4768978ba0a2a9e2d6208f4b7a5ab6d00"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-09-medicion-small.webp",
+    "equal": true,
+    "sha256": "7581b65756c628c2ebf72de138430dfd8bf473a770184491d5a217e8dbe40ca7"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-09-medicion.webp",
+    "equal": true,
+    "sha256": "18cb141f8828025cba9df536e78f1eaf67a738ac0f668d4b4c3105991be314e1"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-10-paso-siguiente-small.webp",
+    "equal": true,
+    "sha256": "9b5b2cc71b522c9f63083b77bc8f8011c8838c4aa689b0f971e558fb6b4513fd"
+  },
+  {
+    "file": "public/images/ruta-90/ruta90-slide-10-paso-siguiente.webp",
+    "equal": true,
+    "sha256": "86cca409f9bf66d87d94ec93e5fde492be43db14b879f030721c6f3ec54f1bad"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-auditoria-presencia-local-small.webp",
+    "equal": true,
+    "sha256": "d75232032432d018e340f873c48c72e9d9975503f121413b87c8cd5fb5aac3e3"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-auditoria-presencia-local.webp",
+    "equal": true,
+    "sha256": "d7980ddc2bee2fa005c146384a0559cb2b64431ae34b4649b7305f113194bb95"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-comparativo-generica-vs-especialista-small.webp",
+    "equal": true,
+    "sha256": "602b084df2dfad9b7bb7899c15515a9df722585eae94fda59bf591b1ff2b6baf"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-comparativo-generica-vs-especialista.webp",
+    "equal": true,
+    "sha256": "8583b321a96199d4aba7a2d32bbedc66b0d0da28aba4e0a17706c0e3a975dc20"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-comprension-seo-geo-small.webp",
+    "equal": true,
+    "sha256": "2c8b8e02bd4e548e22709bffc7388541f8a130c7a4e9bd3806ca15213172b952"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-comprension-seo-geo.webp",
+    "equal": true,
+    "sha256": "bc5b805d19f3bf8b8163f312c3756d2b00dd6e22c33469eaef86915ab461b722"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-contacto-agenda-small.webp",
+    "equal": true,
+    "sha256": "489055d222f617cb0b4df92570237b561f90ce85f22351db6fa1e72dc2ff8668"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-contacto-agenda.webp",
+    "equal": true,
+    "sha256": "557159bd98e2208df61258f4c0c68a3992b30114dbde71fad9726a1492ce0c00"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-frente-comercial-medico-small.webp",
+    "equal": true,
+    "sha256": "aa4b8e9ad6a9b6c2da940c54bca882dab325fa85aa28819d88e2d26c19b29d9f"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-frente-comercial-medico.webp",
+    "equal": true,
+    "sha256": "fe1ea5d0de5bfb15c0b75aa787b7aaf64fab6504fe8304a8b30af73b6bb5c1d8"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-mobile-traumatologia-small.webp",
+    "equal": true,
+    "sha256": "3ddb70f79c338abfb6b762e614dcfe391b3c100d1afddb3208669fffb4426529"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-mobile-traumatologia.webp",
+    "equal": true,
+    "sha256": "ee6a34bcb2b7c167869dc2e764d30436f1b528c2044e46fb021f06d9f66de3ab"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-seo-local-medico-small.webp",
+    "equal": true,
+    "sha256": "e1242ebdb9873d76ab6fd07ab0f6b82d435040c7df54253c1b591df07bb2f69b"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-seo-local-medico.webp",
+    "equal": true,
+    "sha256": "ed45be0282f4f05e4c2e27fc0bc2bf5bc7157337e9fd35ada0771aad2e87ce80"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-ubicacion-consultorio-small.webp",
+    "equal": true,
+    "sha256": "0efb6a199f1ee7f7bd835688d8b91916329b1e43e07583d4bcb0b036d90ab2b3"
+  },
+  {
+    "file": "public/images/seo-local-medicos/mockup-ubicacion-consultorio.webp",
+    "equal": true,
+    "sha256": "9367f2dff003e9e91a1cf49d6fcb18cf3f4a54b1a4d2408559e1498cd01e01e8"
+  },
+  {
+    "file": "public/llmo/aethryon.md",
+    "equal": true,
+    "sha256": "184fa8465719f9053c5a130b7f63f345ca67c8911054bcb442c5b106233ede89"
+  },
+  {
+    "file": "public/llmo/evidencia.md",
+    "equal": true,
+    "sha256": "b3cd5b554e9e0c2edabfe87c64e3686a877cc88b2df7c5a005d1a2c86ca687a4"
+  },
+  {
+    "file": "public/llmo/index.json",
+    "equal": true,
+    "sha256": "7f3061617b60cc4dee6bf6bf7996bf48ae568dc47a5b0bcdb94ab92996200368"
+  },
+  {
+    "file": "public/llmo/organization.json",
+    "equal": true,
+    "sha256": "d557ebaa79a379e887beaf654660206f210911d4aeacaa89b1502235d278c041"
+  },
+  {
+    "file": "public/llmo/rauvia.md",
+    "equal": true,
+    "sha256": "f553833b6ac28b2299c0044dd03ff7900429dd95b79e606ef4996a58c1f2baaa"
+  },
+  {
+    "file": "public/llms-full.txt",
+    "equal": true,
+    "sha256": "ff6712e77716e998fa2b9796e132756cba6d4337b6fa9c70560c5fbbbb0b39ba"
+  },
+  {
+    "file": "public/llms.txt",
+    "equal": true,
+    "sha256": "2b30b7032faf3518e508fa8cafb4e13a9aaedafa7b5b5a7d977d3337f62549a6"
+  },
+  {
+    "file": "public/media/01-oportunidades.svg",
+    "equal": true,
+    "sha256": "4a8bfad54fa34355a60e166693db80349689aea8ba44370c62e7b2ee21cee3e4"
+  },
+  {
+    "file": "public/media/02-dependencia.svg",
+    "equal": true,
+    "sha256": "1c7e14c5d942e23185d49fd86b7d8f903a18940f41ca96c4567c770a4f762914"
+  },
+  {
+    "file": "public/media/03-oferta.svg",
+    "equal": true,
+    "sha256": "25a519f4897cfe0df14a562c383d8ca9f3f8d6e7e11e48cf5432ef74aaed273d"
+  },
+  {
+    "file": "public/media/04-capacidad.svg",
+    "equal": true,
+    "sha256": "2c98d3625dade99e07b509a30ee0047f636ff5712d650e67a7d214c87dad3d03"
+  },
+  {
+    "file": "public/media/INSTRUCCIONES.txt",
+    "equal": true,
+    "sha256": "4ebca31f7c251ed2da44d728be0fe474e6d57a61cd17ba1a02bd3c8e46a5661e"
+  },
+  {
+    "file": "public/media/RAUVIA_CONSULTING_LOGO.png",
+    "equal": true,
+    "sha256": "a136b4990d8717bf41ab964cb7fa12ed0b5187db3680500a14f7a40a6664d476"
+  },
+  {
+    "file": "public/media/RAUVIA_CONSULTING_LOGO.svg",
+    "equal": true,
+    "sha256": "5e41ea38f976e134aaea09dae6e544b6a236759f9a9c0418c0b6d371c543db9e"
+  },
+  {
+    "file": "public/media/aethryon-convergence-animated.svg",
+    "equal": true,
+    "sha256": "cbfb785b7f38ef4187eebef5eacb32a6f4b5292292a6f85f7f257d2d1903e986"
+  },
+  {
+    "file": "public/media/aethryon-end-screen-blueprint.svg",
+    "equal": true,
+    "sha256": "bb4f8285d383184223382e9aaa0281e512315935563490b8d195f102139f39a9"
+  },
+  {
+    "file": "public/media/aethryon-hero-orbital-v2-clean.svg",
+    "equal": true,
+    "sha256": "1c1e776f5034a2a5a5f0ca0db61e33b84683c6446f90fb15f20e29f6ad6cd6ec"
+  },
+  {
+    "file": "public/media/aethryon-process-v5.svg",
+    "equal": true,
+    "sha256": "cc1d0c3cf34c6d7df7176c0a012c544f1972864e724c4836d95dcf210663e11b"
+  },
+  {
+    "file": "public/media/icon-aethryon-structure.svg",
+    "equal": true,
+    "sha256": "5a68abdb96fd6e3145a391c6f74243492225405ce7d85c9f0a001de8033516df"
+  },
+  {
+    "file": "public/media/icono-asistente-rauvia-v2/asistente-rauvia-v2.svg",
+    "equal": true,
+    "sha256": "a04fe3683a89fbab43d893e5f9dafa4c7192f4bd3778ec60c3f6fe7dd6471f2d"
+  },
+  {
+    "file": "public/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+    "equal": true,
+    "sha256": "ef0805cfb3b3b857c978035b02cb8f3003586ebfc8c253f4127ba88049090644"
+  },
+  {
+    "file": "public/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+    "equal": true,
+    "sha256": "1c714cad921ac64c515244ca37fc0bba69680bb020b83107a40a6d7be7a14ba6"
+  },
+  {
+    "file": "public/media/icono-asistente-rauvia-v2/vista-previa.png",
+    "equal": true,
+    "sha256": "e64aed031d8e8c822dea3fec71b9d90a38984e47ee19dee624ad3778b952b12a"
+  },
+  {
+    "file": "public/media/icono-asistente-rauvia-v2/vista-previa.svg",
+    "equal": true,
+    "sha256": "9d604df8a6cff30e4e937c5fac848169ed5fa6124e20738e277f0111516f9c22"
+  },
+  {
+    "file": "public/media/iconos-enfoques-rauvia/01-organizar.svg",
+    "equal": true,
+    "sha256": "336941fc020ba150a4c6646d8da1e5da9d6cc50c107631c57fb0ec4982597a68"
+  },
+  {
+    "file": "public/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+    "equal": true,
+    "sha256": "69a6eb62ee3cdd4f8bc8dcd6b861e11f9d55995e3cce8aaea2222574c526c1f0"
+  },
+  {
+    "file": "public/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+    "equal": true,
+    "sha256": "03f80e2b95bbb9cfea386bcde64158d4d816f898ab27d73fdc016877ea2084c8"
+  },
+  {
+    "file": "public/media/iconos-enfoques-rauvia/04-automatizar.svg",
+    "equal": true,
+    "sha256": "796dcf5358c3052cedd9ff2dcb351bfc5d2c1fd2a1dc4011c5a3606c97d2ba7a"
+  },
+  {
+    "file": "public/media/iconos-enfoques-rauvia/05-aethryon.svg",
+    "equal": true,
+    "sha256": "3589fc27d101196e00f5d5e5c00a69fcc4cb1e6640dea7c8d2eb68ef923783a8"
+  },
+  {
+    "file": "public/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+    "equal": true,
+    "sha256": "36e8ed65af9bec4d0e93e3690bc15c286293089de7f6cca7c86fd375219c4128"
+  },
+  {
+    "file": "public/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+    "equal": true,
+    "sha256": "8dc790615c73e0cb9863d6cc0393609b6dd1711e75bdfbe65bd5a6661bc28c8d"
+  },
+  {
+    "file": "public/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+    "equal": true,
+    "sha256": "d6f274d4b7c2618bfa786421e621bb781e7405507a02a313d1dcdb616014f04c"
+  },
+  {
+    "file": "public/media/rauvia-capabilities-section.svg",
+    "equal": true,
+    "sha256": "8f30dbead9fdbb8fcac4bc2812d4a1bc664f66b227ae8d29b629d8c2300db8f0"
+  },
+  {
+    "file": "public/media/rauvia-growth-structural-map-fixed.svg",
+    "equal": true,
+    "sha256": "9b4712f9c664ac1fd6ab087ad544b4495ec57e98480e21521b1466691f833da8"
+  },
+  {
+    "file": "public/media/rauvia-impact-section.svg",
+    "equal": true,
+    "sha256": "7d200c254475f71a26d3fc1ba6976ce71265f4dc1527dba4f69d89275dab579f"
+  },
+  {
+    "file": "public/media/rauvia-methodology-interactive.svg",
+    "equal": true,
+    "sha256": "779ffe2ead036d84b1637ca356b75b9f1f0ef28e9dd07a739dae3bc9f479977f"
+  },
+  {
+    "file": "public/media/rauvia-nosotros-hero-structure.svg",
+    "equal": true,
+    "sha256": "9d43a28c352442631201195c8bf1688f19815d9af724e5d209898e18316aea39"
+  },
+  {
+    "file": "public/media/rauvia-solutions-hero-support-aethryon.svg",
+    "equal": true,
+    "sha256": "a97311612548edc8ef9bb6968148c017fc3f2cc8aef7c688ebcf9f18d9400fc8"
+  },
+  {
+    "file": "public/media/rauvia-structure-problem-aethryon.svg",
+    "equal": true,
+    "sha256": "b0f63e064a112df4a31407468bfbaaaca0c81e0aaec47de4ef0a386e5747bf2d"
+  },
+  {
+    "file": "public/robots.txt",
+    "equal": true,
+    "sha256": "6fec4dcdb12ce47344effb9bc885beeac3da834f1edb6f8f88c4a7817753fb59"
+  },
+  {
+    "file": "server/analytics/crawlerMiddleware.ts",
+    "equal": true,
+    "sha256": "dee547f7828c4098a9d58664a4742c789f0ebf8d752d1b42d27f41ff5a027114"
+  },
+  {
+    "file": "server/analytics/crawlerRegistry.ts",
+    "equal": true,
+    "sha256": "9f0e54852a802e18e8da195ee025a2e310a621c626a9bf5bd938ae3e36d98eff"
+  },
+  {
+    "file": "server/analytics/events.ts",
+    "equal": true,
+    "sha256": "cfe9342e86826158391da3d7936c2d310ab1184c6fff786be3260231f7fa2eba"
+  },
+  {
+    "file": "server/analytics/validation.ts",
+    "equal": true,
+    "sha256": "8085dc1ca3e9f7745fc33a4479fdb850832510fefee2f317bbaff3a9ac8f02c3"
+  },
+  {
+    "file": "server/db.ts",
+    "equal": true,
+    "sha256": "47169723f5267028ae9d6c6369e26f34fe8c56caf94806a6b0cb23f0ab06c2a0"
+  },
+  {
+    "file": "server/geo/providers/mockProvider.ts",
+    "equal": true,
+    "sha256": "7baae611301f393f8e8f7e8241618903b20cb6f7d86ffaf1f56a60f20ad16352"
+  },
+  {
+    "file": "server/geo/providers/providerAdapter.ts",
+    "equal": true,
+    "sha256": "4720db107a70fbf063376f381818333677f2e320e87e9d218a373b729e8b8bfd"
+  },
+  {
+    "file": "server/geo/queryRepository.ts",
+    "equal": true,
+    "sha256": "0cb3a31e9a96ef74b821b97c38c6c4538dff04e6b3d24bafa7e7310ebd28a5c9"
+  },
+  {
+    "file": "server/geo/types.ts",
+    "equal": true,
+    "sha256": "0135a19f825ef0505424fb611ee02733f3e2fe567111fae7018e41e4b6d2d0ee"
+  },
+  {
+    "file": "server/geo/visibilityAnalyzer.ts",
+    "equal": true,
+    "sha256": "18362ecd9679b9b6c2d03adc971492acc4f89c6e8aa28a377a422dd70d11ae23"
+  },
+  {
+    "file": "server/geo/visibilityRepository.ts",
+    "equal": true,
+    "sha256": "2597f9ff302803c4baec14d97866530cc65201fd9315a641c03891904ee4b072"
+  },
+  {
+    "file": "server/geo/visibilityRunner.ts",
+    "equal": true,
+    "sha256": "a9f078e11f8bd56087ea5c55f553a555302628b841f3277129b859ee7a97bf4e"
+  },
+  {
+    "file": "server/logger.ts",
+    "equal": true,
+    "sha256": "ee24b319b3cd118df1f1573bf6e53b5c1404f66ffb3dc30fbb196fa695b0de3f"
+  },
+  {
+    "file": "server/observability/config.ts",
+    "equal": true,
+    "sha256": "d744e0b213fe29d3232f08b812c1d55701cc65d551e81d60277d78cf1004bd16"
+  },
+  {
+    "file": "server/observability/context.ts",
+    "equal": true,
+    "sha256": "d53958c0dd1e7db9b7d675e7a2a7b31a40bbdbfc9be12272d80e053a83f77e60"
+  },
+  {
+    "file": "server/observability/index.ts",
+    "equal": true,
+    "sha256": "e17f1e0166fcece8e75614c674f6453c2d5466b2384333a6c62989866a36a415"
+  },
+  {
+    "file": "server/observability/redaction.ts",
+    "equal": true,
+    "sha256": "7ff57311df5618720a87a82f6e6baaf57732b17b527598b7e8f193ab54a0a99c"
+  },
+  {
+    "file": "server/observability/runtime.ts",
+    "equal": true,
+    "sha256": "d7cc49d1197e7d85ff33dbeed680590205a6ad62677b7c3a90e28f3c9ca1205a"
+  },
+  {
+    "file": "server/observability/types.ts",
+    "equal": true,
+    "sha256": "84c23f40c9494ea9037f55bcb93d371fbddeff9c3616dc8a750277be11fe6aba"
+  },
+  {
+    "file": "server/prompts/assistant.ts",
+    "equal": true,
+    "sha256": "a86463c36c21b91f8af6dbc49ddde5ce6dfe4ba6476c4d8814842fb9e950637f"
+  },
+  {
+    "file": "server/seo/articleHtml.tsx",
+    "equal": true,
+    "sha256": "3228346b9a10fc6be760cc658d47b9ea10f7bf67c3c66e9ef50e6be9bce8d4c0"
+  },
+  {
+    "file": "server/seo/renderHtml.ts",
+    "equal": true,
+    "sha256": "26e6c8dff18ebba92361e263bffdf17d4fa37f8f91e99afeaa0dd631027db3d9"
+  },
+  {
+    "file": "server/wordpress/cache.ts",
+    "equal": true,
+    "sha256": "57260fa13f8e0eecdfd05ea1cba6dc58b0b77a612673b667eda3c96e7c61f093"
+  },
+  {
+    "file": "src/config/entity.ts",
+    "equal": true,
+    "sha256": "b4a7e14e486f8e7335c241ff3d144800a548b776ac643d993efe0762e39b4b39"
+  },
+  {
+    "file": "src/config/wordpress.ts",
+    "equal": true,
+    "sha256": "a7eb0f11c092794442eb6fa98b15f518787083c66a5429c2045de8b516b53361"
+  },
+  {
+    "file": "src/data/fallbackPosts.ts",
+    "equal": true,
+    "sha256": "082073b0f4eac7cdbe918ed1b0e2d0594db45b393c6e868a6e12b5b91e4d30c6"
+  },
+  {
+    "file": "src/data/ruta90.js",
+    "equal": true,
+    "sha256": "a450a7aa895b58a92bc7c83b66d1b676c1c3f979025ab03e183d64d36fad2379"
+  },
+  {
+    "file": "src/seo/PageMetadata.tsx",
+    "equal": true,
+    "sha256": "57605b240f045f59ba03957e60d8ec29e0b15e95cb8327c2537ebe5a5b720872"
+  },
+  {
+    "file": "src/seo/articleSeo.ts",
+    "equal": true,
+    "sha256": "ca224fc90264b354b46f66dc6fe85bd6c2d162609542ff4a1986f225c9a83626"
+  },
+  {
+    "file": "src/seo/buildMetaTags.ts",
+    "equal": true,
+    "sha256": "7c57b03518707397582b63c03a7730f6a85fe4beb253cc729fe35f18df792b9f"
+  },
+  {
+    "file": "src/seo/routeSeo.js",
+    "equal": true,
+    "sha256": "29b37f6b0acdd16ab6dc616c10feec3d01381f11b3f2098e79b490c0c0ff26d8"
+  }
+]

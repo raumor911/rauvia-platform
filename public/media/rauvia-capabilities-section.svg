@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 370" role="img" aria-labelledby="title desc">
+<title id="title">Nuestras capacidades — RAUVIA</title>
+<desc id="desc">Seis capacidades representadas con iconografía técnica hexagonal en estilo blueprint.</desc>
+<defs>
+  <style><![CDATA[
+    .f{font-family:Inter,Arial,sans-serif}
+    .ey{font-size:18px;font-weight:800;letter-spacing:.08em;fill:#2563EB}
+    .t{font-size:20px;font-weight:800;fill:#0F172A}
+    .b{font-size:18px;fill:#334155}
+    .hex{fill:none;stroke:#2563EB;stroke-width:2.2;stroke-linejoin:round}
+    .thin{fill:none;stroke:#CBD5E1;stroke-width:1.2}
+    .tech{fill:none;stroke:#2563EB;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+    .node{fill:#0B3A53}
+    .gold{fill:#F4B942;stroke:#D99612;stroke-width:1.2}
+  ]]></style>
+  <linearGradient id="blueFill" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2A7F9E"/>
+    <stop offset="1" stop-color="#0B3A53"/>
+  </linearGradient>
+</defs>
+
+<rect width="2048" height="370" fill="#F8FAFC"/>
+
+
+<g class="f">
+  <text x="68" y="28" class="ey">NUESTRAS CAPACIDADES</text>
+  <rect x="68" y="48" width="34" height="3" rx="1.5" fill="#CBD5E1"/>
+</g>
+
+<!-- separators -->
+<g stroke="#CBD5E1" stroke-width="1.2" opacity=".6">
+  <line x1="358" y1="44" x2="358" y2="338"/>
+  <line x1="690" y1="44" x2="690" y2="338"/>
+  <line x1="1025" y1="44" x2="1025" y2="338"/>
+  <line x1="1370" y1="44" x2="1370" y2="338"/>
+  <line x1="1710" y1="44" x2="1710" y2="338"/>
+</g>
+
+
+<!-- 1 Strategy -->
+<g transform="translate(105 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <line x1="74" y1="14" x2="74" y2="106" class="tech"/>
+  <line x1="22" y1="60" x2="126" y2="60" class="thin"/>
+  <circle cx="74" cy="60" r="7" class="gold"/>
+  <rect x="70" y="36" width="8" height="48" rx="4" fill="#0B3A53"/>
+  <g class="node">
+    <circle cx="74" cy="0" r="4"/><circle cx="22" cy="30" r="3.5"/><circle cx="126" cy="30" r="3.5"/>
+    <circle cx="22" cy="90" r="3.5"/><circle cx="126" cy="90" r="3.5"/>
+  </g>
+  <text x="74" y="170" class="t f" text-anchor="middle">ESTRATEGIA</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Definimos dirección,</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">propuesta de valor y</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">modelos de crecimiento.</text>
+</g>
+
+<!-- 2 Commercial systems -->
+<g transform="translate(450 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <polygon points="74,24 100,39 100,69 74,84 48,69 48,39" class="tech"/>
+  <line x1="74" y1="24" x2="74" y2="84" class="tech"/>
+  <line x1="48" y1="39" x2="100" y2="69" class="tech"/>
+  <line x1="100" y1="39" x2="48" y2="69" class="tech"/>
+  <g class="node">
+    <circle cx="74" cy="0" r="5"/><circle cx="22" cy="30" r="3.5"/><circle cx="126" cy="30" r="3.5"/>
+    <circle cx="22" cy="90" r="3.5"/><circle cx="126" cy="90" r="3.5"/><circle cx="74" cy="120" r="5"/>
+  </g>
+  <text x="74" y="170" class="t f" text-anchor="middle">SISTEMAS COMERCIALES</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Diseñamos métodos,</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">procesos y experiencias</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">que convierten.</text>
+</g>
+
+<!-- 3 Technology -->
+<g transform="translate(784 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <line x1="74" y1="0" x2="74" y2="120" class="thin"/>
+  <line x1="22" y1="30" x2="126" y2="90" class="thin"/>
+  <line x1="126" y1="30" x2="22" y2="90" class="thin"/>
+  <polygon points="74,46 88,54 88,70 74,78 60,70 60,54" fill="url(#blueFill)" stroke="#155E75" stroke-width="1.8"/>
+  <text x="74" y="170" class="t f" text-anchor="middle">TECNOLOGÍA</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Desarrollamos plataformas,</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">integraciones y soluciones</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">a la medida.</text>
+</g>
+
+<!-- 4 Automation -->
+<g transform="translate(1124 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <g class="tech">
+    <circle cx="74" cy="60" r="22"/>
+    <circle cx="74" cy="60" r="7"/>
+    <path d="M74 28V18M74 102V92M42 60H32M116 60H106M51 37L44 30M97 83L104 90M97 37L104 30M51 83L44 90"/>
+    <path d="M63 31L66 24L82 24L85 31M103 49L110 52L110 68L103 71M85 89L82 96L66 96L63 89M45 71L38 68L38 52L45 49"/>
+  </g>
+  <text x="74" y="170" class="t f" text-anchor="middle">AUTOMATIZACIÓN</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Optimizamos operaciones</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">para aumentar eficiencia</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">y reducir fricción.</text>
+</g>
+
+<!-- 5 Data & analytics -->
+<g transform="translate(1466 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <line x1="38" y1="88" x2="110" y2="88" class="thin"/>
+  <rect x="44" y="70" width="9" height="18" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <rect x="60" y="60" width="9" height="28" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <rect x="76" y="48" width="9" height="40" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <rect x="92" y="34" width="9" height="54" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <polyline points="39,71 57,57 72,63 90,42 107,28" class="tech"/>
+  <polyline points="98,28 107,28 107,37" class="tech"/>
+  <circle cx="126" cy="48" r="5" class="gold"/>
+  <line x1="126" y1="22" x2="126" y2="48" class="gold"/>
+  <text x="74" y="170" class="t f" text-anchor="middle">DATOS &amp; ANALYTICS</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Medimos, analizamos y</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">convertimos datos en</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">decisiones.</text>
+</g>
+
+<!-- 6 Guidance -->
+<g transform="translate(1805 56)">
+  <polygon points="74,0 126,30 126,90 74,120 22,90 22,30" class="hex"/>
+  <circle cx="74" cy="42" r="16" class="tech"/>
+  <path d="M45 90C48 72 59 62 74 62C89 62 100 72 103 90" class="tech"/>
+  <path d="M45 90H35M103 90H113" class="thin"/>
+  <g class="node">
+    <circle cx="22" cy="30" r="3.5"/><circle cx="126" cy="30" r="3.5"/>
+    <circle cx="22" cy="90" r="3.5"/><circle cx="126" cy="90" r="3.5"/>
+  </g>
+  <text x="74" y="170" class="t f" text-anchor="middle">ACOMPAÑAMIENTO</text>
+  <text x="74" y="208" class="b f" text-anchor="middle">Trabajamos contigo como</text>
+  <text x="74" y="238" class="b f" text-anchor="middle">socio estratégico en cada</text>
+  <text x="74" y="268" class="b f" text-anchor="middle">etapa del crecimiento.</text>
+</g>
+</svg>

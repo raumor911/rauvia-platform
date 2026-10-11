@@ -1,0 +1,11 @@
+{
+  "originalBytes": 498057,
+  "optimizedBytes": 253759,
+  "originalGzip": 370954,
+  "optimizedGzip": 187024,
+  "pixelIdenticalAt640": true,
+  "pixelSha256": "8c79cdabf4c8bdc0213d04e5cdf7a0126b150954e828cd90ad9118c4b46202e5",
+  "embeddedPngIdentical": true,
+  "animationCssIdentical": true,
+  "change": "Remove only duplicate xlink:href data URI; keep href and original raster bytes"
+}

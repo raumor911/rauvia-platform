@@ -1,0 +1,816 @@
+--- V71/scripts/prerender.js
++++ V72/scripts/prerender.js
+@@ -14,9 +14,25 @@
+   await build({entryPoints:[path.join(root,'scripts/render-static.tsx')],outfile:bundle,bundle:true,
+     platform:'node',format:'esm',packages:'external',loader:{'.css':'empty'},
+     define:{'import.meta.env':'{}'},logLevel:'warning'});
++  const manifest=JSON.parse(await fs.readFile(path.join(dist,'.vite/manifest.json'),'utf8'));
++  const registry=await fs.readFile(path.join(root,'src/lib/routeLoader.ts'),'utf8');
++  const routeEntries=Object.fromEntries([...registry.matchAll(/'([^']+)': \(\) => import\('\.\.\/pages\/([^']+)'\)/g)].map(m=>[m[1], 'src/pages/'+m[2]+'.tsx']));
+   const {renderStaticPage}=await import(pathToFileURL(bundle).href);
+   for (const route of [...publicRoutes,'/404']) {
+-    const html=await renderStaticPage(shell,route);
++    const key=route === '/404' ? '*' : route;
++    const seen=new Set(); const hints=[];
++    function visit(id) {
++      if(seen.has(id))return;seen.add(id);const item=manifest[id];if(!item)return;
++      for(const child of item.imports||[])visit(child);
++      for(const css of item.css||[])if(!hints.includes(`<link rel="stylesheet" href="/${css}"/>`))hints.push(`<link rel="stylesheet" href="/${css}"/>`);
++      if(item.file.endsWith('.js'))hints.push(`<link rel="modulepreload" href="/${item.file}"/>`);
++    }
++    visit(routeEntries[key]);
++    const existingHrefs=new Set([...shell.matchAll(/<link[^>]+href="([^"]+)"/g)].map(m=>m[1]));
++    const uniqueHints=hints.filter(h=>!existingHrefs.has(h.match(/href="([^"]+)"/)[1]));
++    let routeShell=shell.replace('</head>',uniqueHints.join('\n')+'\n</head>');
++    if(routeEntries[key]) routeShell=routeShell.replace('initial-scale=1.0', ['/', '/soluciones', '/aethryon', '/ruta-90', '/frente-comercial', '/nosotros', '/recursos', '/casos'].includes(route) ? 'initial-scale=1, viewport-fit=cover' : 'initial-scale=1.0');
++    const html=await renderStaticPage(routeShell,route);
+     const expected='https://rauvia.com.mx'+(route==='/' ? '/' : route+'/');
+     const canonicalOk = route === '/404' ? !html.includes('rel="canonical"') : html.includes(`href="${expected}"`);
+     if (!canonicalOk || !/<h1\b/.test(html)) throw new Error(`Incomplete prerender: ${route}`);
+--- V71/scripts/render-static.tsx
++++ V72/scripts/render-static.tsx
+@@ -1,14 +1,16 @@
+ import React from 'react';
+ import {renderToStaticMarkup} from 'react-dom/server';
+ import {StaticRouter} from 'react-router-dom';
++import {preloadRoute} from '../src/lib/routeLoader';
+ import {AppLayout} from '../src/App';
+ import {wordpressCache} from '../server/wordpress/cache';
+ import {routeSeo} from '../src/seo/routeSeo.js';
+ import {renderHtml} from '../server/seo/renderHtml';
+ 
+ export async function renderStaticPage(shell: string, route: string) {
++  await preloadRoute(route);
+   const seo=routeSeo[route]; if (!seo) throw new Error(`SEO registration missing: ${route}`);
+   const posts=route==='/recursos' ? await wordpressCache.getPosts() : undefined;
+-  const body=renderToStaticMarkup(<StaticRouter location={route}><AppLayout posts={posts} /></StaticRouter>);
++  const body=renderToStaticMarkup(<StaticRouter location={route}><AppLayout posts={posts} staticRender /></StaticRouter>);
+   return renderHtml(shell,body,seo,posts ? {path:'/recursos/',status:200,posts} : undefined);
+ }
+--- V71/src/App.tsx
++++ V72/src/App.tsx
+@@ -1,95 +1,54 @@
+-import React from 'react';
++import React, {Suspense} from 'react';
++import {routeLoaders, routeComponent, isMainRoute} from './lib/routeLoader';
++import './styles/mobileExperience.css';
+ import { HelmetProvider } from 'react-helmet-async';
+ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+ import Navbar from './components/Navbar';
+ import Footer from './components/Footer';
+-import HomePage from './pages/HomePage';
+-import PaginaWebConsultorioMedicoPage from './pages/PaginaWebConsultorioMedicoPage';
+-import PaginaWebMedicosAgendaWhatsappPage from './pages/PaginaWebMedicosAgendaWhatsappPage';
+-import PaginaWebMedicosPage from './pages/PaginaWebMedicosPage';
+-import SeoLocalMedicosPage from './pages/SeoLocalMedicosPage';
+-import PaginaWebMedicosEspecialistasPage from './pages/PaginaWebMedicosEspecialistasPage';
+-import PaginaWebGratisMedicosPage from './pages/PaginaWebGratisMedicosPage';
+-import NosotrosPage from './pages/NosotrosPage';
+-import SolucionesPage from './pages/SolucionesPage';
+-import Ruta90Page from './pages/Ruta90Page';
+-import AethryonPage from './pages/AethryonPage';
+-import RecursosPage from './pages/RecursosPage';
+-import PostPage from './pages/PostPage';
+-import NotFoundPage from './pages/NotFoundPage';
+-import AvisoPrivacidadPage from './pages/AvisoPrivacidadPage';
+-import TerminosPage from './pages/TerminosPage';
+-import FrenteComercialPage from './pages/FrenteComercialPage';
+-import SitioWebComercialPymesPage from './pages/SitioWebComercialPymesPage';
+-import SitioWebServiciosEspecializadosPage from './pages/SitioWebServiciosEspecializadosPage';
+-import PaginaComercialServiciosProfesionalesPage from './pages/PaginaComercialServiciosProfesionalesPage';
+-import CasosIndexPage from './pages/CasosIndexPage';
+-import CasoInfraestructuraB2BPage from './pages/CasoInfraestructuraB2BPage';
+ import { GeoProvider } from './context/GeoContext';
+ import GeoBanner from './components/GeoBanner';
+ import TrackingRouteObserver from './components/TrackingRouteObserver';
+ import AIAssistantWidget from './components/AIAssistantWidget';
+ 
+-// Component to scroll to top on route change
++// Runs after route content commits, including an asynchronously loaded route.
+ function ScrollToTop() {
+-  const { pathname, hash } = useLocation();
+-
++  const {pathname, hash} = useLocation();
+   React.useEffect(() => {
+-    if (hash) {
+-      setTimeout(() => {
+-        const id = hash.replace('#', '');
+-        const element = document.getElementById(id);
+-        if (element) {
+-          element.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+-        }
+-      }, 100);
+-    } else {
++    if (!hash) {
+       window.scrollTo(0, 0);
++      if(window.matchMedia('(vertical-viewport-segments:2)').matches) document.querySelector('.rv-main-site')?.scrollTo(0,0);
++      return;
+     }
++    let id = hash.slice(1);
++    try {id = decodeURIComponent(id);} catch { /* A malformed fragment does not interrupt reading. */ }
++    const element = document.getElementById(id);
++    element?.scrollIntoView({behavior:'auto'});
+   }, [pathname, hash]);
+-
+   return null;
+ }
+ 
+-export function AppLayout({posts}: {posts?: import('./lib/wp').WPPost[]} = {}) {
++export function AppLayout({posts, staticRender=false}: {posts?: import('./lib/wp').WPPost[]; staticRender?: boolean} = {}) {
++  const location = useLocation();
++  const mobile = isMainRoute(location.pathname);
++  React.useEffect(()=>{document.querySelector('meta[name=viewport]')?.setAttribute('content',mobile ? 'width=device-width, initial-scale=1, viewport-fit=cover' : 'width=device-width, initial-scale=1.0');},[mobile]);
++  const routeContent = <><Routes>{Object.keys(routeLoaders).map(path => {
++    const Page = routeComponent(path as keyof typeof routeLoaders);
++    return <Route key={path} path={path} element={<Page {...(path === '/recursos' ? {initialPosts: posts} : {})} />} />;
++  })}</Routes><ScrollToTop /></>;
+   return (
+     <GeoProvider>
+       <HelmetProvider>
+         <>
+           <TrackingRouteObserver />
+-          <ScrollToTop />
+-          <div className="min-h-screen bg-rauvia-bg">
+-            <header><Navbar /></header>
++          <div className={mobile ? "rv-main-site min-h-screen bg-rauvia-bg" : "min-h-screen bg-rauvia-bg"} data-main-route={mobile ? (location.pathname.replace(/\/+$/, '') || 'home') : undefined}>
++            <header><Navbar mobileLayer={mobile} /></header>
+             
+             <main>
+-              <Routes>
+-                <Route path="/" element={<HomePage />} />
+-                <Route path="/pagina-web-para-consultorio-medico" element={<PaginaWebConsultorioMedicoPage />} />
+-                <Route path="/pagina-web-medicos-agenda-whatsapp" element={<PaginaWebMedicosAgendaWhatsappPage />} />
+-                <Route path="/pagina-web-para-medicos" element={<PaginaWebMedicosPage />} />
+-                <Route path="/seo-local-para-medicos" element={<SeoLocalMedicosPage />} />
+-                <Route path="/pagina-web-para-medicos-especialistas" element={<PaginaWebMedicosEspecialistasPage />} />
+-                <Route path="/pagina-web-gratis-para-medicos" element={<PaginaWebGratisMedicosPage />} />
+-                <Route path="/nosotros" element={<NosotrosPage />} />
+-                <Route path="/soluciones" element={<SolucionesPage />} />
+-                <Route path="/ruta-90" element={<Ruta90Page />} />
+-                <Route path="/aethryon" element={<AethryonPage />} />
+-                <Route path="/recursos" element={<RecursosPage initialPosts={posts} />} />
+-                <Route path="/recursos/:slug" element={<PostPage />} />
+-                <Route path="/aviso-de-privacidad" element={<AvisoPrivacidadPage />} />
+-                <Route path="/terminos" element={<TerminosPage />} />
+-                <Route path="/frente-comercial" element={<FrenteComercialPage />} />
+-                <Route path="/sitio-web-comercial-para-pymes" element={<SitioWebComercialPymesPage />} />
+-                <Route path="/sitio-web-servicios-especializados" element={<SitioWebServiciosEspecializadosPage />} />
+-                <Route path="/pagina-comercial-servicios-profesionales" element={<PaginaComercialServiciosProfesionalesPage />} />
+-                <Route path="/casos" element={<CasosIndexPage />} />
+-                <Route path="/casos/infraestructura-temporal-b2b" element={<CasoInfraestructuraB2BPage />} />
+-                <Route path="*" element={<NotFoundPage />} />
+-              </Routes>
++              {staticRender ? routeContent : <Suspense fallback={<p role="status" className="px-5 pt-28 pb-12 text-rauvia-navy">Cargando página…</p>}>{routeContent}</Suspense>}
+             </main>
+-            <Footer />
++            <Footer mobileLayer={mobile} />
+           </div>
+-          <AIAssistantWidget />
++          <AIAssistantWidget mobileLayer={mobile} />
+           <GeoBanner />
+         </>
+       </HelmetProvider>
+--- V71/src/components/AIAssistantWidget.tsx
++++ V72/src/components/AIAssistantWidget.tsx
+@@ -9,8 +9,23 @@
+   content: string;
+ };
+ 
+-export default function AIAssistantWidget() {
++export default function AIAssistantWidget({mobileLayer=false}: {mobileLayer?:boolean}) {
+   const [isOpen, setIsOpen] = useState(false);
++  const toggleRef = useRef<HTMLButtonElement>(null);
++  const closeRef = useRef<HTMLButtonElement>(null);
++  useEffect(() => {
++    if (!mobileLayer || !isOpen) return;
++    closeRef.current?.focus({preventScroll: true});
++    return () => toggleRef.current?.focus({preventScroll: true});
++  }, [isOpen, mobileLayer]);
++  const [keyboardViewport,setKeyboardViewport]=useState<{bottom:number;height:number}|null>(null);
++  useEffect(()=>{
++    if(!mobileLayer||!isOpen||!window.visualViewport){setKeyboardViewport(null);return;}
++    const viewport=window.visualViewport;
++    const resize=()=>setKeyboardViewport({bottom:Math.max(24,window.innerHeight-viewport.height-viewport.offsetTop+24),height:Math.min(600,Math.max(180,viewport.height-112))});
++    resize();viewport.addEventListener('resize',resize);
++    return ()=>viewport.removeEventListener('resize',resize);
++  },[isOpen,mobileLayer]);
+   const [hasStarted, setHasStarted] = useState(false);
+   const [messages, setMessages] = useState<Message[]>([
+     { 
+@@ -23,7 +38,7 @@
+   const messagesEndRef = useRef<HTMLDivElement>(null);
+ 
+   const scrollToBottom = () => {
+-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
++    messagesEndRef.current?.scrollIntoView({ behavior: mobileLayer && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+   };
+ 
+   useEffect(() => {
+@@ -83,9 +98,12 @@
+   if (typeof window === 'undefined') return null;
+ 
+   return (
+-    <div className="fixed bottom-6 right-6 z-50">
++    <div style={keyboardViewport ? {bottom:keyboardViewport.bottom} : undefined} className={mobileLayer ? "rv-assistant fixed bottom-6 right-6 z-50" : "fixed bottom-6 right-6 z-50"}>
+       {/* Floating Button */}
+       <button
++        ref={toggleRef}
++        hidden={mobileLayer && isOpen}
++        aria-label={mobileLayer ? "Abrir asistente RAUVIA" : undefined}
+         onClick={handleOpenToggle}
+         className={cn(
+           "w-14 h-14 rounded-full bg-rauvia-navy text-white flex items-center justify-center shadow-xl hover:bg-rauvia-navy-light transition-all",
+@@ -97,11 +115,15 @@
+ 
+       {/* Chat Window */}
+       <div 
++        onKeyDown={mobileLayer ? e => {if (e.key === 'Escape') {e.preventDefault();setIsOpen(false);}} : undefined}
++        hidden={mobileLayer && !isOpen}
++        role={mobileLayer ? "dialog" : undefined}
++        aria-label={mobileLayer ? "Asistente RAUVIA" : undefined}
+         className={cn(
+           "absolute bottom-0 right-0 w-[90vw] sm:w-[450px] bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col transition-all origin-bottom-right duration-300 border border-slate-200",
+           isOpen ? "scale-100 opacity-100" : "scale-0 opacity-0 pointer-events-none"
+         )}
+-        style={{ height: '600px', maxHeight: '85vh' }}
++        style={{ height: keyboardViewport?.height || '600px', maxHeight: mobileLayer ? 'calc(100dvh - 112px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px))' : '85vh' }}
+       >
+         {/* Header */}
+         <div className="bg-rauvia-navy text-white px-4 py-3 flex items-center justify-between">
+@@ -111,7 +133,7 @@
+             </div>
+             <span className="font-bold">Asistente RAUVIA</span>
+           </div>
+-          <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white transition-colors">
++          <button ref={closeRef} aria-label={mobileLayer ? "Cerrar asistente" : undefined} onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white transition-colors">
+             <X size={20} />
+           </button>
+         </div>
+@@ -162,14 +184,16 @@
+         <form onSubmit={handleSubmit} className="p-3 bg-white border-t border-slate-200 flex gap-2">
+           <input
+             type="text"
++            aria-label={mobileLayer ? "Describe tu situación" : undefined}
+             value={input}
+             onChange={(e) => setInput(e.target.value)}
+             placeholder="Describe tu situación..."
+-            className="flex-1 px-4 py-2.5 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-rauvia-blue/50 border border-transparent focus:border-rauvia-blue text-sm transition-all"
++            className="min-w-0 flex-1 px-4 py-2.5 bg-slate-100 rounded-lg outline-none focus:ring-2 focus:ring-rauvia-blue/50 border border-transparent focus:border-rauvia-blue text-sm transition-all"
+             disabled={isLoading}
+           />
+           <button 
+             type="submit" 
++            aria-label={mobileLayer ? "Enviar mensaje" : undefined}
+             disabled={!input.trim() || isLoading}
+             className="w-11 h-11 rounded-lg bg-rauvia-navy text-white flex items-center justify-center hover:bg-rauvia-navy-light disabled:opacity-50 disabled:hover:bg-rauvia-navy transition-colors shadow-sm"
+           >
+--- V71/src/components/AethryonCore.tsx
++++ V72/src/components/AethryonCore.tsx
+@@ -11,13 +11,18 @@
+ 
+   return (
+     <div className="w-full flex flex-col items-center">
+-      {/* Container slightly shifted left on desktop to balance the right-labels in SVG. On mobile, we use a negative margin to center it since we hid the right labels in SVG. */}
++      {/* Preserve the desktop vector animation; remove duplicated raster data in its delivery copy. */}
+       <Link to="/aethryon" className="w-full h-[300px] sm:h-[400px] lg:h-[550px] xl:h-[700px] relative flex items-center justify-center lg:justify-start xl:justify-center overflow-x-hidden group cursor-pointer" title="Conocer más sobre AETHRYON">
+-        <img 
+-           src="/media/aethryon-convergence-animated.svg" 
++        <picture className="contents">
++          <source media="(max-width: 1023px)" type="image/webp"
++            srcSet="/media/aethryon-convergence-mobile-640.webp 640w, /media/aethryon-convergence-mobile-960.webp 960w"
++            sizes="(max-width: 767px) calc(100vw - 32px), 700px" />
++          <img width="1400" height="1060"
++           loading="eager" fetchPriority="high" decoding="async" src="/media/aethryon-convergence-animated-optimized.svg"
+            alt="Aethryon Core" 
+            className="w-full min-w-[320px] max-w-full lg:max-w-none h-full object-contain object-center lg:object-center group-hover:scale-[1.01] transition-transform"
+-        />
++          />
++        </picture>
+       </Link>
+ 
+       {/* Mobile Vertical List */}
+--- V71/src/components/CapabilitiesSection.tsx
++++ V72/src/components/CapabilitiesSection.tsx
+@@ -38,7 +38,7 @@
+     <section className="bg-white border-t border-slate-100 relative overflow-hidden w-full" id="capacidades">
+       {/* Desktop SVG */}
+       <div className="hidden lg:flex w-full justify-center">
+-         <img src="/media/rauvia-capabilities-section.svg" alt="Capacidades Graphic" className="w-full h-auto object-cover" />
++         <img width="2048" height="370" loading="lazy" src="/media/rauvia-capabilities-section.svg" alt="Capacidades Graphic" className="w-full h-auto object-cover" />
+       </div>
+ 
+       {/* Mobile HTML Version */}
+--- V71/src/components/FadeInUp.tsx
++++ V72/src/components/FadeInUp.tsx
+@@ -1,7 +1,11 @@
+ import React from 'react';
++import {useLocation} from 'react-router-dom';
++import {isMainRoute} from '../lib/routeLoader';
+ import { motion } from 'motion/react';
+ 
+ export default function FadeInUp({ children, ...props }: { children: React.ReactNode; [key: string]: any }) {
++  const location = useLocation();
++  if (isMainRoute(location.pathname)) return <div {...props}>{children}</div>;
+   return (
+     <motion.div
+       initial={typeof window === 'undefined' ? false : { opacity: 0, y: 50 }}
+--- V71/src/components/Footer.tsx
++++ V72/src/components/Footer.tsx
+@@ -3,15 +3,16 @@
+ import { ArrowRight, Facebook, Instagram, Linkedin } from "lucide-react";
+ import WhatsAppCTA from "./WhatsAppCTA";
+ 
+-export default function Footer() {
++export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
+   return (
+-    <footer className="bg-rauvia-navy-dark text-white relative overflow-hidden flex flex-col min-h-[550px] md:min-h-[100svh] justify-between">
++    <footer className={(mobileLayer ? "rv-footer " : "") + "bg-rauvia-navy-dark text-white relative overflow-hidden flex flex-col min-h-[550px] md:min-h-[100svh] justify-between"}>
+       
+       {/* Background Tech Pattern */}
+       <div className="absolute inset-0 overflow-hidden">
+          <Link to="/aethryon" className="absolute inset-0 block group cursor-pointer" title="Conocer más sobre AETHRYON">
+            <img 
+-               src="/media/aethryon-end-screen-blueprint.svg" 
++               src="/media/aethryon-end-screen-blueprint.svg"
++               loading={mobileLayer ? "lazy" : undefined} 
+                alt="AETHRYON Blueprint" 
+                className="w-full h-full object-cover object-center absolute inset-0 scale-[2] md:scale-100 group-hover:scale-[2.02] md:group-hover:scale-[1.01] transition-transform opacity-40 md:opacity-100"
+            />
+--- V71/src/components/HeroSection.tsx
++++ V72/src/components/HeroSection.tsx
+@@ -5,7 +5,7 @@
+ 
+ export default function HeroSection() {
+   return (
+-    <section className="pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden relative">
++    <section className="rv-home-hero pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden relative">
+       {/* Background decoration lines (simplified) */}
+       <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
+         <div className="w-[800px] h-[800px] border border-slate-300 rounded-full"></div>
+--- V71/src/components/MethodologySection.tsx
++++ V72/src/components/MethodologySection.tsx
+@@ -41,7 +41,7 @@
+     <section className="bg-rauvia-bg border-t border-slate-100 relative overflow-hidden w-full" id="metodologia">
+       {/* Desktop SVG */}
+       <div className="hidden lg:flex w-full justify-center">
+-         <img src="/media/rauvia-methodology-interactive.svg" alt="Metodología Graphic" className="w-full h-auto object-cover" />
++         <img width="2048" height="480" loading="lazy" src="/media/rauvia-methodology-interactive.svg" alt="Metodología Graphic" className="w-full h-auto object-cover" />
+       </div>
+ 
+       {/* Mobile HTML Version */}
+--- V71/src/components/Navbar.tsx
++++ V72/src/components/Navbar.tsx
+@@ -5,7 +5,13 @@
+ import Logo from "./Logo";
+ import WhatsAppCTA from "./WhatsAppCTA";
+ 
+-export default function Navbar() {
++import MainNavbar from "./MainNavbar";
++
++export default function Navbar({mobileLayer=false}: {mobileLayer?:boolean}) {
++  return mobileLayer ? <MainNavbar /> : <LegacyNavbar />;
++}
++
++function LegacyNavbar() {
+   const [isOpen, setIsOpen] = useState(false);
+   const panelRef = useRef<HTMLDivElement>(null);
+   const location = useLocation();
+--- V71/src/components/ProblemSection.tsx
++++ V72/src/components/ProblemSection.tsx
+@@ -5,22 +5,22 @@
+     {
+       title: "OPORTUNIDADES QUE SE ENFRÍAN",
+       description: "Hay consultas o cotizaciones, pero cuesta saber qué ocurrió y cómo avanzar.",
+-      icon: <img src="/media/01-oportunidades.svg" alt="Oportunidades" className="w-10 h-10" />
++      icon: <img loading="lazy" src="/media/01-oportunidades.svg" alt="Oportunidades" className="w-10 h-10" />
+     },
+     {
+       title: "CRECIMIENTO QUE AUMENTA DEPENDENCIA",
+       description: "El dueño o ciertas personas siguen concentrando decisiones, información o seguimiento.",
+-      icon: <img src="/media/02-dependencia.svg" alt="Dependencia" className="w-10 h-10" />
++      icon: <img loading="lazy" src="/media/02-dependencia.svg" alt="Dependencia" className="w-10 h-10" />
+     },
+     {
+       title: "LA OFERTA NO SE ENTIENDE",
+       description: "El conocimiento está ahí, pero cuesta convertirlo en una propuesta fácil de comprender y comprar.",
+-      icon: <img src="/media/03-oferta.svg" alt="Oferta" className="w-10 h-10" />
++      icon: <img loading="lazy" src="/media/03-oferta.svg" alt="Oferta" className="w-10 h-10" />
+     },
+     {
+       title: "CAPACIDAD MAYOR A LO PROYECTADO",
+       description: "La operación, clientes y experiencia están por encima de su comunicación externa.",
+-      icon: <img src="/media/04-capacidad.svg" alt="Capacidad" className="w-10 h-10" />
++      icon: <img loading="lazy" src="/media/04-capacidad.svg" alt="Capacidad" className="w-10 h-10" />
+     }
+   ];
+ 
+--- V71/src/lib/analytics.ts
++++ V72/src/lib/analytics.ts
+@@ -1,3 +1,4 @@
++import {isMainRoute} from './routeLoader';
+ import { getVisitorId, getSessionId, updateSessionActivity } from './analyticsIdentity';
+ 
+ export type EventName =
+@@ -27,6 +28,23 @@
+ 
+ const API_ENDPOINT = '/api/events';
+ 
++// Geometry enriches existing events; ordinary widths do not imply a folding device.
++function viewportProperties(): Record<string, number | string> {
++  if (!isMainRoute(window.location.pathname)) return {};
++  const width = window.innerWidth, height = window.innerHeight;
++  const segmented = typeof window.matchMedia === 'function' &&
++    (window.matchMedia('(horizontal-viewport-segments:2)').matches ||
++     window.matchMedia('(vertical-viewport-segments:2)').matches);
++  return {
++    ...(segmented ? {viewport_segments: 2} : {}),
++    viewport_width: width,
++    viewport_height: height,
++    orientation: width > height ? 'landscape' : 'portrait',
++    viewport_class: width < 375 ? 'compact' : width < 431 ? 'phone' :
++      width < 600 ? 'wide_phone' : width < 900 ? 'medium' : width < 1200 ? 'tablet' : 'desktop',
++  };
++}
++
+ export function trackEvent(
+   eventName: EventName,
+   properties?: Record<string, any>
+@@ -46,7 +64,7 @@
+       page_path: /^\/ruta-90\/?$/.test(window.location.pathname) ? '/ruta-90/' + window.location.search : window.location.pathname + window.location.search,
+       referrer: document.referrer || '',
+       device_type: deviceType,
+-      properties: properties || {},
++      properties: {...viewportProperties(), ...properties},
+     };
+ 
+     // Update last activity since we're tracking a valid event
+--- V71/src/main.tsx
++++ V72/src/main.tsx
+@@ -3,7 +3,10 @@
+ import App from './App.tsx';
+ import {initialContent} from './lib/initialContent';
+ import './index.css';
++import {preloadRoute} from './lib/routeLoader';
+ 
++async function bootstrap() {
++await preloadRoute(window.location.pathname);
+ const container = document.getElementById('root')!;
+ // Prerender exports browser HTML, not React server hydration markup.
+ // Keep createRoot, but release static SEO tags before React 19 recreates them.
+@@ -17,3 +20,6 @@
+ }
+ 
+ createRoot(container).render(<StrictMode><App /></StrictMode>);
++
++}
++bootstrap().catch(() => { /* Preserve the complete static document if a chunk fails. */ });
+--- V71/src/pages/AethryonPage.tsx
++++ V72/src/pages/AethryonPage.tsx
+@@ -76,7 +76,7 @@
+             </div>
+ 
+             <div className="lg:col-span-6 xl:col-span-7 hidden lg:flex justify-center relative z-0 mt-12 lg:mt-0">
+-               <img 
++               <img width="980" height="640" loading="lazy" 
+                  src="/media/aethryon-hero-orbital-v2-clean.svg" 
+                  alt="AETHRYON" 
+                  className="w-full object-contain" 
+@@ -108,7 +108,7 @@
+               ['01-oportunidades-sin-avance', 'Hay oportunidades, pero no avanzan', 'Hay clientes, proyectos o ideas, pero no está claro cuál atender primero.'],
+               ['02-friccion-operativa', 'La operación genera fricción', 'Crecer aumenta el retrabajo, el desorden y la presión sobre el equipo.'],
+               ['03-decisiones-abiertas', 'Hay demasiadas decisiones abiertas', 'Tiempo, dinero y atención se reparten sin una prioridad clara.']
+-            ].map(([icon, title, text]) => <div key={icon} className="bg-white border border-slate-200 p-6 rounded-xl"><img src={'/media/iconos-situacion-rauvia/' + icon + '.svg'} alt="" width="28" height="28" className="mb-4" /><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
++            ].map(([icon, title, text]) => <div key={icon} className="bg-white border border-slate-200 p-6 rounded-xl"><img loading="lazy" src={'/media/iconos-situacion-rauvia/' + icon + '.svg'} alt="" width="28" height="28" className="mb-4" /><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
+           </div>
+           <details className="aethryon-disclosure mt-6 bg-white border border-slate-200 rounded-xl">
+             <summary className="p-5 font-semibold text-rauvia-navy">Ampliar el contexto de estas situaciones</summary>
+--- V71/src/pages/FrenteComercialPage.tsx
++++ V72/src/pages/FrenteComercialPage.tsx
+@@ -71,7 +71,7 @@
+       
+ 
+       {/* HERO */}
+-      <section className="pt-16 md:pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
++      <section className="rv-frente-hero pt-16 md:pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-rauvia-navy leading-tight mb-8">
+           Haz más fácil entender, confiar <br className="hidden md:block"/>y avanzar con tu empresa.
+         </h1>
+@@ -208,7 +208,7 @@
+             </p>
+           </div>
+ 
+-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
++          <div className="rv-packages grid grid-cols-1 md:grid-cols-3 gap-8">
+             {/* Esencial */}
+             <div className="flex flex-col bg-slate-50 rounded-2xl border border-slate-200 p-8">
+               <h3 className="text-xl font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Esencial</h3>
+--- V71/src/pages/NosotrosPage.tsx
++++ V72/src/pages/NosotrosPage.tsx
+@@ -14,7 +14,7 @@
+       
+ 
+       {/* SECCIÓN 1 — HERO */}
+-      <section className="pt-32 pb-20 overflow-hidden relative">
++      <section className="rv-nosotros-hero pt-32 pb-20 overflow-hidden relative">
+         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
+           <div className="w-[800px] h-[800px] border border-slate-300 rounded-full"></div>
+           <div className="absolute w-[600px] h-[600px] border border-slate-300 rounded-full"></div>
+@@ -61,7 +61,7 @@
+             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
+                {/* Hero Graphic */}
+                <div className="relative w-full max-w-2xl">
+-                 <img src="/media/rauvia-nosotros-hero-structure.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
++                 <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
+                </div>
+             </div>
+ 
+@@ -77,7 +77,7 @@
+             <div className="flex justify-center">
+               {/* Visual Origen */}
+               <div className="relative w-full">
+-                <img src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
++                <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
+               </div>
+             </div>
+           </div>
+@@ -91,7 +91,7 @@
+         <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
+           <div className="flex justify-center">
+             <div className="relative w-full max-w-[1600px]">
+-              <img src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
++              <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
+             </div>
+           </div>
+         </div>
+@@ -148,7 +148,7 @@
+             </div>
+             <div className="flex justify-center relative">
+                <Link to="/aethryon" className="w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
+-                 <img src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain group-hover:scale-[1.01] transition-transform" />
++                 <img width="1400" height="1060" loading="lazy" src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain group-hover:scale-[1.01] transition-transform" />
+                </Link>
+             </div>
+           </div>
+--- V71/src/pages/RecursosPage.tsx
++++ V72/src/pages/RecursosPage.tsx
+@@ -1,7 +1,7 @@
+ import RouteSEO from '../seo/PageMetadata';
+ import React, { useEffect, useState } from 'react';
+ import { Link } from 'react-router-dom';
+-import { getPosts, WPPost } from '../lib/wp';
++import type {WPPost} from '../lib/wp';
+ import {initialContent} from '../lib/initialContent';
+ import {sanitizeTitleHtml} from '../lib/editorial';
+ import FadeInUp from '../components/FadeInUp';
+@@ -12,10 +12,13 @@
+ 
+   useEffect(() => {
+     if (initialContent()?.posts) return;
+-    getPosts().then(data => {
++    let mounted=true;
++    import('../lib/wp').then(({getPosts})=>getPosts()).then(data => {
++      if (!mounted) return;
+       setPosts(data);
+       setLoading(false);
+-    });
++    }).catch(()=>{if(mounted)setLoading(false);});
++    return ()=>{mounted=false;};
+   }, []);
+ 
+   return (
+@@ -59,15 +62,15 @@
+                       {featuredMedia && (
+                         <div className="aspect-video w-full overflow-hidden bg-rauvia-bg">
+                           <img 
+-                            src={featuredMedia} 
+-                            alt={post.title.rendered} 
++                            loading="lazy" decoding="async" src={featuredMedia} 
++                            alt={post.title.rendered.replace(/<[^>]+>/g, "")} 
+                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                           />
+                         </div>
+                       )}
+                       <div className="p-6 flex flex-col flex-grow">
+                         <h2 className="text-xl font-display text-rauvia-text mb-3 group-hover:text-rauvia-accent transition-colors" dangerouslySetInnerHTML={{ __html: sanitizeTitleHtml(post.title.rendered) }} />
+-                        <div className="text-rauvia-gray mb-4 text-sm flex-grow line-clamp-3" dangerouslySetInnerHTML={{ __html: sanitizeTitleHtml(post.excerpt.rendered) }} />
++                        <div className="text-rauvia-gray mb-4 text-sm flex-grow" dangerouslySetInnerHTML={{ __html: sanitizeTitleHtml(post.excerpt.rendered) }} />
+                         <div className="flex justify-between items-center text-xs text-rauvia-gray mt-auto pt-4 border-t border-rauvia-border/50">
+                           <span>{new Date(post.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                         </div>
+--- V71/src/pages/Ruta90Page.tsx
++++ V72/src/pages/Ruta90Page.tsx
+@@ -26,7 +26,7 @@
+     case 'ciclo': return <><div className="r90-phases">{ruta90.phases.map(([name,days,actions,question],i)=><section key={String(name)}><span className="r90-number">0{i+1} · DÍAS {String(days)}</span><h3>{String(name)}</h3><ul>{(actions as string[]).map(action=><li key={action}>{action}</li>)}</ul><p className="r90-question">{String(question)}</p></section>)}</div><p>Las etapas orientan la revisión del ciclo; no convierten los 90 días en una garantía de terminación. Una capacidad puede necesitar otro ciclo, según el alcance, las restricciones y la evidencia de avance.</p></>;
+     case 'revision': return <><p>La revisión semanal organiza decisiones y ajustes, además de registrar el estado. Debe producir acciones con responsable, fecha y evidencia.</p><ol className="r90-cycle">{ruta90.reviewCycle.map(([name,q])=><li key={name}><h3>{name}</h3><p>{q}</p></li>)}</ol><h3>Registro de revisión</h3><table><caption>Información que conecta observación, decisión y acción.</caption><thead><tr><th scope="col">Elemento</th><th scope="col">Pregunta de control</th></tr></thead><tbody>{[
+       ['Resultado esperado','¿Qué buscamos alcanzar?'],['Estado actual','¿Dónde estamos?'],['Entregable','¿Qué se está construyendo?'],['Avance','¿Qué se completó?'],['Bloqueo','¿Qué lo está limitando?'],['Decisión requerida','¿Qué se debe decidir?'],['Responsable','¿Quién lo hará?'],['Siguiente acción','¿Qué sigue y para cuándo?'],['Evidencia','¿Cómo lo comprobamos?']].map(([name,q])=><tr key={name}><th scope="row">{name}</th><td>{q}</td></tr>)}</tbody></table><blockquote>La revisión no pregunta sólo qué hicimos. Pregunta si seguimos construyendo la capacidad esperada.</blockquote></>;
+-    case 'plan-anual': return <><table><caption>Dos capas complementarias de planificación y ejecución.</caption><thead><tr><th scope="col">Aspecto</th><th scope="col">Plan anual</th><th scope="col">Ruta 90</th></tr></thead><tbody>{[['Horizonte','12 meses','90 días'],['Foco','Múltiples objetivos','Prioridad dominante'],['Función','Orientación general','Ejecución detallada'],['Seguimiento','Mensual / trimestral','Semanal']].map(row=><tr key={row[0]}><th scope="row">{row[0]}</th><td>{row[1]}</td><td>{row[2]}</td></tr>)}</tbody></table><p>El plan anual puede responder: ¿hacia dónde queremos mover la empresa? Ruta 90 responde: ¿qué prioridad necesitamos convertir ahora en ejecución concreta?</p><p>Son capas diferentes. El ciclo toma una prioridad de esa dirección y la lleva a resultados esperados, entregables y revisiones concretas.</p></>;
++    case 'plan-anual': return <><div className="rv-table-scroll" role="region" aria-labelledby="r90-plan-caption" tabIndex={0}><table><caption id="r90-plan-caption">Dos capas complementarias de planificación y ejecución.</caption><thead><tr><th scope="col">Aspecto</th><th scope="col">Plan anual</th><th scope="col">Ruta 90</th></tr></thead><tbody>{[['Horizonte','12 meses','90 días'],['Foco','Múltiples objetivos','Prioridad dominante'],['Función','Orientación general','Ejecución detallada'],['Seguimiento','Mensual / trimestral','Semanal']].map(row=><tr key={row[0]}><th scope="row">{row[0]}</th><td>{row[1]}</td><td>{row[2]}</td></tr>)}</tbody></table></div><p>El plan anual puede responder: ¿hacia dónde queremos mover la empresa? Ruta 90 responde: ¿qué prioridad necesitamos convertir ahora en ejecución concreta?</p><p>Son capas diferentes. El ciclo toma una prioridad de esa dirección y la lleva a resultados esperados, entregables y revisiones concretas.</p></>;
+     case 'modalidades': return <><section className="r90-mode"><h3>Ruta 90 autogestionada</h3><p>El equipo aplica el marco, define responsables, ejecuta, ajusta y genera evidencia. Es adecuada cuando existe claridad suficiente, disciplina interna y capacidad de ejecución.</p></section><section className="r90-mode"><h3>Ruta 90 acompañada</h3><p>RAUVIA puede apoyar en delimitar la prioridad, diseñar el ciclo, identificar restricciones, acompañar decisiones y cerrar y transferir capacidad. El alcance se define según la situación.</p></section><blockquote>Ruta 90 puede utilizarse como marco interno aunque RAUVIA no participe en la ejecución.</blockquote></>;
+     case 'medicion': return <><ol className="r90-model">{ruta90.measurementModel.map(([name,english,definition,examples],i)=><li key={String(name)}><span className="r90-number">0{i+1} · {String(english)}</span><h3>{String(name)}</h3><p>{String(definition)}</p><ul>{(examples as string[]).map(example=><li key={example}>{example}</li>)}</ul></li>)}</ol><p className="r90-formula">INPUT → PROCESS → OUTPUT → OUTCOME</p><h3>Output ≠ Outcome</h3><p>Un sistema configurado o un manual terminado es una salida. Que la organización opere mejor es un resultado que debe observarse por separado. Una capacidad instalada puede existir antes de que aparezca un impacto económico observable.</p><p>Más ingresos, conversiones u oportunidades son resultados posibles a medir según el caso, no efectos automáticos ni garantizados de Ruta 90. Los ejemplos de la lámina requieren evidencia específica antes de atribuir una mejora.</p><ol className="r90-flow"><li>Métricas de esfuerzo <span>Recursos y actividad.</span></li><li>Métricas de producción <span>Lo que queda construido.</span></li><li>Métricas de resultado / capacidad <span>Cambios observables y ejecución repetible.</span></li></ol></>;
+     case 'paso-siguiente': return <><ol className="r90-next">{[['Conversemos','Entender la situación, el objetivo y la capacidad actual.'],['Analizamos','Identificar brechas, restricciones y alcance posible.'],['Diseñamos','Definir resultado, responsables, entregables, indicadores y cadencia.'],['Ejecutamos','Poner en marcha el ciclo y acompañar la consolidación de capacidad cuando la modalidad elegida lo requiera.']].map(([name,text],i)=><li key={name}><span className="r90-number">0{i+1}</span><h3>{name}</h3><p>{text}</p></li>)}</ol><div className="r90-contact"><h3>Agenda una conversación</h3><p>30 minutos · Sin compromiso<br/>En línea o presencial · Enfoque en tu negocio</p><a className="r90-button" href={whatsapp} onClick={()=>trackEvent('ruta90_cta_click',{cta_location:'final',cta_action:'agendar_conversacion',framework_version:ruta90.frameworkVersion})}>Agendar una conversación →</a></div><p>No todas las empresas necesitan una Ruta 90.</p><p>Si todavía no está claro qué debe cambiar, <AethryonLink location="final" />. Si la prioridad está identificada pero falta convertirla en ejecución, Ruta 90 permite definir el ciclo y evaluar su alcance.</p><nav className="r90-related" aria-label="Continuar explorando"><Link to="/soluciones/">Soluciones</Link><Link to="/recursos/">Recursos</Link><Link to="/casos/">Casos documentados</Link></nav></>;
+--- V71/src/pages/SolucionesPage.tsx
++++ V72/src/pages/SolucionesPage.tsx
+@@ -301,7 +301,7 @@
+       
+ 
+       {/* SECCIÓN 1 — HERO */}
+-      <section className="pt-32 pb-20 overflow-hidden relative">
++      <section className="rv-soluciones-hero pt-32 pb-20 overflow-hidden relative">
+         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
+           <div className="w-[1000px] h-[1000px] border border-slate-300 rounded-full animate-spin-slow"></div>
+           <div className="absolute w-[800px] h-[800px] border border-slate-300 rounded-full animate-spin-reverse-slow"></div>
+@@ -340,7 +340,12 @@
+             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
+                {/* Hero Graphic: AETHRYON deploying assets */}
+                <Link to="/aethryon" className="relative w-full max-w-xl aspect-square flex items-center justify-center group cursor-pointer" title="Conocer más sobre AETHRYON">
+-                  <img src="/media/rauvia-solutions-hero-support-aethryon.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
++                  <picture className="contents">
++                    <source media="(max-width: 1023px)" type="image/webp"
++                      srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
++                      sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
++                    <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
++                  </picture>
+                </Link>
+             </div>
+ 
+@@ -381,14 +386,15 @@
+             <p className="text-slate-600 mt-2">Organizado por el tipo de capacidad que la empresa necesita construir.</p>
+           </div>
+ 
+-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
++          <div className="rv-catalog-layout grid grid-cols-1 lg:grid-cols-12 gap-12">
+             
+             {/* Sidebar Navigation */}
+             <div className="lg:col-span-3">
+-              <div className="sticky top-32 space-y-2">
++              <div className="rv-category-nav sticky top-32 space-y-2">
+                 {stages.map((stage) => (
+                   <button
+                     key={stage.id}
++                    aria-pressed={activeStage === stage.id}
+                     onClick={() => {
+                        setActiveStage(stage.id);
+                        setOpenProduct(assetsData[stage.id as keyof typeof assetsData]?.[0]?.id || '');
+@@ -424,7 +430,7 @@
+                 {activeStage === '01' && (
+                   <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm mb-8 flex flex-col items-center justify-center text-center">
+                     <h3 className="text-lg font-bold text-rauvia-navy mb-6">FLUJO DE VALOR: FRENTE COMERCIAL</h3>
+-                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 w-full max-w-2xl mx-auto">
++                    <div className="rv-solution-flow flex flex-col sm:flex-row items-center gap-4 sm:gap-8 w-full max-w-2xl mx-auto">
+                       <div className="flex-1 bg-slate-50 border border-slate-200 p-4 rounded-lg">
+                         <span className="text-xs font-bold text-slate-500 block mb-2">Situación Actual</span>
+                         <span className="text-sm font-medium">Oferta difícil de entender o presentar</span>
+@@ -446,6 +452,8 @@
+                 {currentProducts.map((product) => (
+                   <div key={product.id} className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-300">
+                     <button 
++                      aria-expanded={openProduct === product.id}
++                      aria-controls={"product-"+product.id}
+                       onClick={() => toggleProduct(product.id)}
+                       className="w-full text-left p-6 lg:p-8 flex items-center justify-between hover:bg-slate-50 focus:outline-none"
+                     >
+@@ -462,7 +470,7 @@
+                     </button>
+                     
+                     {/* Technical Sheet Detail */}
+-                    <div className={`border-t border-slate-100 transition-all duration-500 overflow-hidden ${openProduct === product.id ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
++                    <div id={"product-"+product.id} hidden={openProduct !== product.id} className={`border-t border-slate-100 transition-all duration-500 overflow-hidden ${openProduct === product.id ? 'opacity-100' : 'max-h-0 opacity-0'}`}>
+                       <div className="p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 bg-slate-50/50">
+                         
+                         {/* Left Column */}
+@@ -587,18 +595,18 @@
+       <FadeInUp>
+       <section className="py-10 md:py-20 bg-rauvia-bg">
+         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+-          <h2 className="text-3xl font-extrabold text-rauvia-navy mb-12 text-center">¿QUÉ ACTIVO NECESITA TU EMPRESA?</h2>
++          <h2 id="soluciones-comparacion" className="text-3xl font-extrabold text-rauvia-navy mb-12 text-center">¿QUÉ ACTIVO NECESITA TU EMPRESA?</h2>
+           
+           <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+             <div className="overflow-x-auto">
+-              <table className="w-full text-left border-collapse">
+-                <thead>
+-                  <tr className="bg-slate-50 border-b border-slate-200">
+-                    <th className="p-4 lg:p-6 text-xs font-bold tracking-widest text-slate-500 uppercase w-1/2">Si hoy te ocurre esto...</th>
+-                    <th className="p-4 lg:p-6 text-xs font-bold tracking-widest text-slate-500 uppercase w-1/2 border-l border-slate-200">Punto de entrada Probable</th>
++              <table role="table" className="rv-solutions-table w-full text-left border-collapse" aria-labelledby="soluciones-comparacion">
++                <thead role="rowgroup">
++                  <tr role="row" className="bg-slate-50 border-b border-slate-200">
++                    <th scope="col" role="columnheader" className="p-4 lg:p-6 text-xs font-bold tracking-widest text-slate-500 uppercase w-1/2">Si hoy te ocurre esto...</th>
++                    <th scope="col" role="columnheader" className="p-4 lg:p-6 text-xs font-bold tracking-widest text-slate-500 uppercase w-1/2 border-l border-slate-200">Punto de entrada Probable</th>
+                   </tr>
+                 </thead>
+-                <tbody className="divide-y divide-slate-100">
++                <tbody role="rowgroup" className="divide-y divide-slate-100">
+                   {[
+                     { req: 'Tu empresa tiene valor, pero cuesta explicarlo o presentarlo con claridad.', res: 'Frente Comercial' },
+                     { req: 'Llegan oportunidades, pero no sabes qué pasó con cada una o quién debe dar seguimiento.', res: 'Sistema Comercial / CRM' },
+@@ -608,9 +616,9 @@
+                     { req: 'Hay tareas repetitivas y reglas claras que consumen demasiado tiempo.', res: 'Automatización' },
+                     { req: 'Tienes varios problemas y no está claro cuál resolver primero.', res: 'AETHRYON' }
+                   ].map((row, i) => (
+-                    <tr key={i} className="hover:bg-slate-50/50 transition-colors">
+-                      <td className="p-4 lg:p-6 text-sm text-slate-700 font-medium">{row.req}</td>
+-                      <td className="p-4 lg:p-6 text-sm font-bold text-rauvia-blue border-l border-slate-100 flex items-center gap-2">
++                    <tr role="row" key={i} className="hover:bg-slate-50/50 transition-colors">
++                      <td role="cell" data-label="Si hoy te ocurre esto…" className="p-4 lg:p-6 text-sm text-slate-700 font-medium">{row.req}</td>
++                      <td role="cell" data-label="Punto de entrada probable" className="p-4 lg:p-6 text-sm font-bold text-rauvia-blue border-l border-slate-100 flex items-center gap-2">
+                         <ArrowRight className="w-4 h-4 text-slate-300 hidden sm:block" /> {row.res==='Procesos / Ruta 90' ? <>Procesos / <Link to="/ruta-90/" className="underline" onClick={()=>trackEvent('cta_click',{destination:'/ruta-90/',source_page:'/soluciones/',context:'process_solution'})}>Ruta 90</Link></> : row.res}
+                       </td>
+                     </tr>
+@@ -646,7 +654,7 @@
+              </div>
+              <ArrowRight className="w-6 h-6 text-rauvia-gold rotate-90 md:rotate-0 flex-shrink-0" />
+              <div className="bg-rauvia-navy-dark border border-rauvia-blue p-6 rounded-xl flex-1 text-center shadow-[0_0_30px_rgba(37,99,235,0.2)] w-full">
+-               <img src="/media/iconos-enfoques-rauvia/05-aethryon.svg" alt="Aethryon" className="w-12 h-12 mx-auto mb-2" />
++               <img width="64" height="64" loading="lazy" src="/media/iconos-enfoques-rauvia/05-aethryon.svg" alt="Aethryon" className="w-12 h-12 mx-auto mb-2" />
+                <span className="text-xs text-rauvia-blue font-bold uppercase tracking-wider block mb-1">Análisis</span>
+                <span className="text-lg font-bold text-white">AETHRYON</span>
+              </div>
+--- V71/tests/aethryon-ux.test.mjs
++++ V72/tests/aethryon-ux.test.mjs
+@@ -10,7 +10,7 @@
+ test('AETHRYON preserves metadata, JSON-LD and the unique H1 from V70',()=>{
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);assert.equal(h1,old.h1[0]);
+  assert.equal(html.match(/<title>(.*?)<\/title>/)[1],old.title);
+- assert.deepEqual([...html.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]),old.meta);
++ assert.deepEqual([...html.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]).filter(m=>!m.includes('name="viewport"')),old.meta.filter(m=>!m.includes('name="viewport"')));
+  assert.deepEqual([...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)].map(m=>m[0]),old.canonical);
+  assert.deepEqual([...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])),old.jsonld);
+ });
+@@ -36,11 +36,14 @@
+  const final=main.slice(main.indexOf('id="aethryon-accion"'));assert.ok(final.includes('href="https://wa.me/525586494076"'));assert.ok(final.includes('href="/soluciones/"'));assert.match(final,/ANALIZAR MI SITUACIÓN/);assert.match(final,/EXPLORAR SOLUCIONES/);assert.doesNotMatch(final,/HABLAR CON RAUVIA/);
+  assert.equal((main.match(/data-aethryon-section=/g)||[]).length,9);
+ });
+-test('Seven control routes keep identical V70 HTML after normalizing build asset hashes',()=>{
+- const controls=JSON.parse(fs.readFileSync('tests/fixtures/v70-control-html.json','utf8'));
+- for(const [route,hash] of Object.entries(controls)){
+-  const path='dist/'+(route==='/'?'':route.slice(1))+'index.html';const body=fs.readFileSync(path,'utf8').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET');
+-  assert.equal(createHash('sha256').update(body).digest('hex'),hash,route);
++test('Main route metadata stays equal to the V71 baseline during V72 adaptation',()=>{
++ const baseline=JSON.parse(fs.readFileSync('tests/fixtures/v72-route-baseline.json','utf8'));
++ for(const [route,old] of Object.entries(baseline)){
++  const h=fs.readFileSync('dist/'+(route==='/'?'':route.slice(1))+'index.html','utf8');
++  assert.deepEqual([...h.matchAll(/<title>(.*?)<\/title>/g)].map(m=>m[1]),old.title);
++  assert.deepEqual([...h.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]).filter(m=>!m.includes('name="viewport"')),old.meta);
++  assert.deepEqual([...h.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)].map(m=>m[0]),old.canonical);
++  assert.deepEqual([...h.matchAll(/<script type="application\/ld\+json"[^>]*>(.*?)<\/script>/g)].map(m=>JSON.parse(m[1])),old.jsonld);
+  }
+ });
+ test('Compiled production returns AETHRYON content and live internal destinations', {skip:!process.env.TEST_BASE_URL},async()=>{
+--- V71/tests/ruta90-events.test.ts
++++ V72/tests/ruta90-events.test.ts
+@@ -13,11 +13,20 @@
+  const location={pathname:'/ruta-90',search:'?utm_source=qa'};
+  try {
+   Object.defineProperty(globalThis,'localStorage',{configurable:true,value:{getItem:(k:string)=>map.get(k)||null,setItem:(k:string,v:string)=>map.set(k,v)}});
+-  Object.defineProperty(globalThis,'window',{configurable:true,value:{location}});
++  Object.defineProperty(globalThis,'window',{configurable:true,value:{location,innerWidth:390,innerHeight:844}});
+   Object.defineProperty(globalThis,'document',{configurable:true,value:{referrer:''}});
+   Object.defineProperty(globalThis,'navigator',{configurable:true,value:{userAgent:'QA Desktop',sendBeacon:(_url:string,blob:Blob)=>{bodies.push(blob);return true;}}});
+   trackEvent('ruta90_view',{framework_version:'1.0'});location.pathname='/ruta-90/';trackEvent('ruta90_chapter_view',{chapter:'componentes',slide:4,framework_version:'1.0'});
+   location.pathname='/soluciones/';location.search='';trackEvent('cta_click',{destination:'/ruta-90/',source_page:'/soluciones/',context:'related_solution'});
+   const events=await Promise.all(bodies.map(async b=>JSON.parse(await b.text())));assert.equal(events.length,3);assert.equal(events[0].page_path,'/ruta-90/?utm_source=qa');assert.equal(events[1].page_path,events[0].page_path);assert.equal(events[0].session_id,events[1].session_id);assert.equal(events[2].properties.destination,'/ruta-90/');assert.equal(validateEventPayload(events[2]),null);
++  assert.equal(events[0].properties.viewport_width,390);assert.equal(events[0].properties.orientation,'portrait');
++  assert.equal(events[0].properties.viewport_class,'phone');assert.equal(events[0].properties.viewport_segments,undefined);
++  (globalThis.window as any).innerWidth=850;(globalThis.window as any).innerHeight=1000;
++  (globalThis.window as any).matchMedia=()=>({matches:false});trackEvent('ruta90_view');
++  const ordinary=JSON.parse(await bodies[3].text());assert.equal(ordinary.properties.viewport_segments,undefined);
++  (globalThis.window as any).matchMedia=(q:string)=>({matches:q.includes('horizontal-viewport')});trackEvent('ruta90_view');
++  const segmented=JSON.parse(await bodies[4].text());assert.equal(segmented.properties.viewport_segments,2);
++  location.pathname='/pagina-web-para-medicos/';trackEvent('page_view');
++  const excluded=JSON.parse(await bodies[5].text());assert.equal(excluded.properties.viewport_width,undefined);
+  } finally {for(const [key,descriptor] of originals) {if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete (globalThis as any)[key];}}
+ });
+--- V71/tests/ruta90.test.mjs
++++ V72/tests/ruta90.test.mjs
+@@ -4,7 +4,8 @@
+ import {ruta90,ruta90Seo} from '../src/data/ruta90.js';
+ import {recordOnce} from '../src/lib/ruta90Session.js';
+ const html=fs.readFileSync('dist/ruta-90/index.html','utf8');
+-const article=html.slice(html.indexOf('<article class="ruta90"'));
++const start=html.indexOf('<article class="ruta90"');
++const article=html.slice(start,html.indexOf('</article>',start)+10);
+ test('Ruta 90: initial HTML supplies the complete ten-chapter narrative',()=>{
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  assert.equal((article.match(/<figure\b/g)||[]).length,10);
+--- V71/vite.config.ts
++++ V72/vite.config.ts
+@@ -2,10 +2,17 @@
+ import react from '@vitejs/plugin-react';
+ import path from 'path';
+ import {defineConfig} from 'vite';
++import fs from 'node:fs';
++import {gzipSync} from 'node:zlib';
+ 
+ export default defineConfig(() => {
+   return {
+-    plugins: [react(), tailwindcss()],
++    plugins: [react(), tailwindcss(), {name:'rauvia-build-evidence', generateBundle(_,bundle) {
++      const graph = Object.values(bundle).filter(c => c.type === 'chunk').map(c => ({file:c.fileName, entry:c.isEntry, raw:Buffer.byteLength(c.code), gzip:gzipSync(c.code).length, imports:c.imports, dynamicImports:c.dynamicImports, modules:Object.entries(c.modules).map(([id,m]) => ({id:path.relative(process.cwd(),id), renderedLength:m.renderedLength, imports:this.getModuleInfo(id)?.importedIds.map(x=>path.relative(process.cwd(),x))}))}));
++      fs.mkdirSync('docs/v72-evidencias',{recursive:true});
++      fs.writeFileSync('docs/v72-evidencias/bundle-graph.json',JSON.stringify(graph,null,2));
++    }}],
++    build: {manifest:true},
+     resolve: {
+       alias: {
+         '@': path.resolve(__dirname, '.'),

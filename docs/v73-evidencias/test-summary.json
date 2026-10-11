@@ -1,0 +1,54 @@
+{
+  "selectedFinalRuns": [
+    {
+      "log": "v73-test-seo.log",
+      "tests": 48,
+      "pass": 48,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v73-test-aethryon.log",
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v73-test-ruta90.log",
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v73-test-regression.log",
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v73-test-dev-urls.log",
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "log": "v73-test-final.log",
+      "tests": 50,
+      "pass": 50,
+      "fail": 0,
+      "skipped": 0
+    }
+  ],
+  "executed": 147,
+  "unique": 141,
+  "duplicateReason": "Six Ruta90 event unit tests run in both test:seo and test:ruta90-integration.",
+  "fail": 0,
+  "skipped": 0,
+  "browserEvidence": "CUA observations plus source fingerprints; snapshot assertions do not relaunch the browser.",
+  "browserCombinations": 56,
+  "labObservations": 18
+}

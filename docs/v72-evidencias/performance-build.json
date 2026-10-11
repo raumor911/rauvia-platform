@@ -1,0 +1,341 @@
+[
+  {
+    "route": "/",
+    "js": {
+      "raw": 661814,
+      "gzip": 200624
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/FadeInUp-xciIiOYA.js",
+      "assets/HomePage-DlU_Twps.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/circle-play-CDaeUzTJ.js",
+      "assets/compass-DNnPxlAx.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js",
+      "assets/layers-AUriyI-3.js",
+      "assets/network-sY_faNsI.js",
+      "assets/target-BqUECqQa.js",
+      "assets/zap-IlkKKUSr.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 37987,
+      "gzip": 7185
+    },
+    "html_v72": {
+      "raw": 37339,
+      "gzip": 7451
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-convergence-animated.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/01-oportunidades.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/02-dependencia.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/03-oferta.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/04-capacidad.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/rauvia-methodology-interactive.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/rauvia-capabilities-section.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "js": {
+      "raw": 683617,
+      "gzip": 205804
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/FadeInUp-xciIiOYA.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/SolucionesPage-ifZYfmc-.js",
+      "assets/chevron-down-Cq9jcokk.js",
+      "assets/circle-check-BvA5Naq9.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js",
+      "assets/layers-AUriyI-3.js",
+      "assets/network-sY_faNsI.js",
+      "assets/target-BqUECqQa.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 46416,
+      "gzip": 8906
+    },
+    "html_v72": {
+      "raw": 47203,
+      "gzip": 9350
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/rauvia-solutions-hero-support-aethryon.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/iconos-enfoques-rauvia/05-aethryon.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "js": {
+      "raw": 564160,
+      "gzip": 164716
+    },
+    "css": {
+      "raw": 106505,
+      "gzip": 17100
+    },
+    "js_files": [
+      "assets/AethryonPage-BmWOTaBu.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/chevron-down-Cq9jcokk.js",
+      "assets/circle-check-BvA5Naq9.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js",
+      "assets/ruta90Session-DEPGvLjf.js"
+    ],
+    "css_files": [
+      "assets/AethryonPage-BJH03QuE.css",
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 59307,
+      "gzip": 10745
+    },
+    "html_v72": {
+      "raw": 58224,
+      "gzip": 10842
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-hero-orbital-v2-clean.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/iconos-situacion-rauvia/02-friccion-operativa.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "js": {
+      "raw": 537958,
+      "gzip": 160822
+    },
+    "css": {
+      "raw": 111545,
+      "gzip": 18566
+    },
+    "js_files": [
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/Ruta90Page-5QxZUzRs.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js",
+      "assets/ruta90Session-DEPGvLjf.js"
+    ],
+    "css_files": [
+      "assets/Ruta90Page-I7svEGAc.css",
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 43556,
+      "gzip": 10336
+    },
+    "html_v72": {
+      "raw": 42722,
+      "gzip": 10371
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" imageSrcSet=\"/images/ruta-90/ruta90-slide-01-prioridad-capacidad-small.webp 836w, /images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp 1672w\" imageSizes=\"(max-width: 1280px) calc(100vw - 40px), 1240px\" fetchPriority=\"high\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" imageSrcSet=\"/images/ruta-90/ruta90-slide-01-prioridad-capacidad-small.webp 836w, /images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp 1672w\" imageSizes=\"(max-width: 1280px) calc(100vw - 40px), 1240px\" fetchPriority=\"high\"/>"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "js": {
+      "raw": 549694,
+      "gzip": 163010
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/FrenteComercialPage--VTfdHWn.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/check-DIWmdwjr.js",
+      "assets/chevron-down-Cq9jcokk.js",
+      "assets/circle-check-BvA5Naq9.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js",
+      "assets/panels-top-left-DqGxQsJW.js",
+      "assets/search-iAFB1wvx.js",
+      "assets/shield-BxpOkEK4.js",
+      "assets/zap-IlkKKUSr.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 51137,
+      "gzip": 8908
+    },
+    "html_v72": {
+      "raw": 52815,
+      "gzip": 9333
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "js": {
+      "raw": 657298,
+      "gzip": 198545
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/FadeInUp-xciIiOYA.js",
+      "assets/NosotrosPage-BB58TN7h.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/circle-play-CDaeUzTJ.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 28121,
+      "gzip": 6176
+    },
+    "html_v72": {
+      "raw": 27055,
+      "gzip": 6261
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/rauvia-nosotros-hero-structure.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/rauvia-structure-problem-aethryon.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-process-v5.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-convergence-animated.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "js": {
+      "raw": 801557,
+      "gzip": 251361
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/FadeInUp-xciIiOYA.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/RecursosPage-Vrv_CVS5.js",
+      "assets/editorial-D_b8tV8n.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 357907,
+      "gzip": 65994
+    },
+    "html_v72": {
+      "raw": 355834,
+      "gzip": 65976
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Prospectos-que-no-avanzan-demanda-seguimiento-y-decision.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/hero-prospectos-no-avanzan-octubre-2026.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Cuando-la-experiencia-se-comunica-como-catalogo.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/La-brecha-entre-capacidad-real-y-percepcion-de-mercado.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Cuando-un-solo-canal-carga-con-todo-el-proceso-comercial.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/09/Oportunidades_que_se_pierden_por_falta_de_continuidad_comercial.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/08/la-ilusion-del-crecimiento-sin-capacidad-hero.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/08/la-diferencia-entre-informacion-y-comprension-hero.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"https://blog.rauvia.com.mx/wp-content/uploads/2026/08/que-debe-existir-antes-de-un-crm-hero.png\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "js": {
+      "raw": 647116,
+      "gzip": 195806
+    },
+    "css": {
+      "raw": 105224,
+      "gzip": 16595
+    },
+    "js_files": [
+      "assets/CasosIndexPage-Clv09rG8.js",
+      "assets/FadeInUp-xciIiOYA.js",
+      "assets/PageMetadata-SmnwwXrc.js",
+      "assets/index-Kv9IefrJ.js",
+      "assets/jsx-runtime-DQUdydyj.js"
+    ],
+    "css_files": [
+      "assets/index-Bp_G60Qy.css"
+    ],
+    "html_v71": {
+      "raw": 15269,
+      "gzip": 4017
+    },
+    "html_v72": {
+      "raw": 14269,
+      "gzip": 4041
+    },
+    "preloads_v71": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>",
+      "<link rel=\"preload\" as=\"image\" href=\"/media/aethryon-end-screen-blueprint.svg\"/>"
+    ],
+    "preloads_v72": [
+      "<link rel=\"preload\" as=\"image\" href=\"/media/RAUVIA_CONSULTING_LOGO.svg\"/>"
+    ]
+  }
+]

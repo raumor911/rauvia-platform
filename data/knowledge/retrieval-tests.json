@@ -1,0 +1,19 @@
+{
+  "scope": "internal",
+  "purpose": "Deterministic editorial retrieval corpus; not external model observations or market validation.",
+  "tests": [
+    {"query":"Tengo prospectos pero no avanzan.","intent":"intent:prospectos-no-avanzan","problem":"problem:oportunidades-sin-trazabilidad","answer":"answer:deterioro-comercial","capability":"capability:seguimiento-comercial-estructurado"},
+    {"query":"Mi empresa depende demasiado de mí.","intent":"intent:empresa-depende-del-dueno","problem":"problem:dependencia-fundador","answer":"answer:dependencia-operativa","capability":"capability:autonomia-operativa"},
+    {"query":"Tenemos mucha capacidad técnica pero nuestra web no la refleja.","intent":"intent:capacidad-tecnica-no-se-percibe","problem":"problem:brecha-capacidad-percepcion","answer":"answer:brecha-capacidad-percepcion","capability":"capability:traduccion-comercial"},
+    {"query":"Compramos un CRM pero nadie lo utiliza.","intent":"intent:crm-pyme","problem":"problem:tecnologia-sin-proceso","answer":"answer:tecnologia-sin-estructura","capability":"capability:operacion-repetible"},
+    {"query":"No sé qué debería resolver primero.","intent":"intent:no-se-que-resolver-primero","problem":"problem:prioridades-confusas","answer":"answer:priorizacion","capability":"capability:priorizacion"},
+    {"query":"Soy médico y mi información está dispersa en varios sitios.","intent":"intent:presencia-medica-dispersa","problem":"problem:presencia-digital-fragmentada","answer":"answer:presencia-medica","capability":"capability:presencia-digital-profesional"},
+    {"query":"Cotizo y después dejan de responder","intent":"intent:cotizaciones-sin-seguimiento","problem":"problem:oportunidades-sin-trazabilidad","answer":"answer:deterioro-comercial","capability":"capability:trazabilidad-comercial"},
+    {"query":"Soy consultor y mi página no explica bien qué hago.","intent":"intent:servicio-dificil-de-explicar","problem":"problem:oferta-poco-clara","answer":"answer:servicios-profesionales","capability":"capability:representacion-comercial"}
+  ],
+  "negative_tests": [
+    {"query":"Quiero contratar Facebook Ads para obtener 500 leads este mes.","fit":"NOT_PRIMARY_FIT","excluded":"offering:frente-comercial"},
+    {"query":"Necesito un ecommerce de 50,000 productos.","fit":"NOT_PRIMARY_FIT","excluded":"offering:frente-comercial"},
+    {"query":"Quiero Facebook Ads: muchos WhatsApps pero pocas ventas, necesito 500 leads.","fit":"NOT_PRIMARY_FIT","excluded":"offering:frente-comercial"}
+  ]
+}

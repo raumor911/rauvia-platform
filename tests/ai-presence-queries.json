@@ -1,0 +1,26 @@
+[
+  {
+    "id": "aiq1",
+    "pregunta": "¿Qué es RAUVIA?",
+    "categoria": "Marca",
+    "respuesta_esperada": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico."
+  },
+  {
+    "id": "aiq2",
+    "pregunta": "¿Quién fundó RAUVIA?",
+    "categoria": "Marca",
+    "respuesta_esperada": "Raúl Morales."
+  },
+  {
+    "id": "aiq3",
+    "pregunta": "¿Qué es AETHRYON y qué relación tiene con RAUVIA?",
+    "categoria": "AETHRYON",
+    "respuesta_esperada": "AETHRYON es un sistema de análisis y convergencia desarrollado por RAUVIA."
+  },
+  {
+    "id": "aiq4",
+    "pregunta": "¿Cómo reducir la dependencia del fundador?",
+    "categoria": "Problemas",
+    "respuesta_esperada": "Implementando arquitectura operativa y sistemas comerciales."
+  }
+]

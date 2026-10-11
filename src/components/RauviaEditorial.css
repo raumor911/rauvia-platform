@@ -1,0 +1,90 @@
+/* Plain CSS: no @apply, no dependency on the Tailwind typography plugin.
+   New namespace intentionally avoids the previous editorial rules. */
+.rauvia-post-page { background:#f8fafc; color:#0a2540; padding:128px 20px 80px; }
+.rauvia-post-page .rauvia-post-shell { max-width:1160px; margin:0 auto; }
+.rauvia-post-page .rauvia-post-header { max-width:800px; margin:0 auto 40px; }
+.rauvia-post-page .rauvia-post-cover { margin:0 auto 44px; max-width:100%; }
+.rauvia-post-page .rauvia-post-cover img { display:block; width:100%; height:auto; max-height:600px; object-fit:contain; border-radius:10px; }
+.rauvia-post-page .rauvia-post-meta { display:flex; flex-wrap:wrap; gap:10px 16px; }
+.rauvia-editorial-v2 { --re-navy:#0a2540; --re-blue:#1e4a74; --re-gold:#e6a300; --re-border:#dce5ed; --re-muted:#475569; color:var(--re-muted); font-family:inherit; font-size:18px; line-height:1.8; overflow-wrap:break-word; container-type:inline-size; }
+.rauvia-editorial-v2 *, .rauvia-editorial-v2 *::before, .rauvia-editorial-v2 *::after { box-sizing:border-box; }
+.rauvia-editorial-v2 > :not(.re-wrap) { max-width:76ch; margin-left:auto; margin-right:auto; }
+.rauvia-editorial-v2 p { margin:0 0 1.25em; }
+.rauvia-editorial-v2 h2,.rauvia-editorial-v2 h3,.rauvia-editorial-v2 h4,.rauvia-editorial-v2 h5,.rauvia-editorial-v2 h6 { color:var(--re-navy); font-family:inherit; font-weight:700; letter-spacing:-.025em; line-height:1.3; margin:1.8em 0 .7em; scroll-margin-top:110px; }
+.rauvia-editorial-v2 h2 { font-size:clamp(25px,2.7vw,32px); }
+.rauvia-editorial-v2 h3 { font-size:24px; }
+.rauvia-editorial-v2 h4 { font-size:20px; }
+.rauvia-editorial-v2 h5,.rauvia-editorial-v2 h6 { font-size:18px; }
+.rauvia-editorial-v2 strong,.rauvia-editorial-v2 b { font-weight:700; color:var(--re-navy); }
+.rauvia-editorial-v2 a { color:var(--re-blue); text-decoration:underline; text-underline-offset:4px; overflow-wrap:anywhere; }
+.rauvia-editorial-v2 a:hover { text-decoration-thickness:2px; }
+.rauvia-editorial-v2 :focus-visible { outline:3px solid var(--re-gold); outline-offset:4px; }
+.rauvia-editorial-v2 ul,.rauvia-editorial-v2 ol { margin:0 0 1.5em; padding-left:1.4em; list-style-position:outside; }
+.rauvia-editorial-v2 ul { list-style-type:disc; }
+.rauvia-editorial-v2 ol { list-style-type:decimal; }
+.rauvia-editorial-v2 li { padding-left:.15em; margin:.4em 0; }
+.rauvia-editorial-v2 li::marker { color:var(--re-blue); }
+.rauvia-editorial-v2 li > ul,.rauvia-editorial-v2 li > ol { margin:.5em 0; }
+.rauvia-editorial-v2 img { display:block; max-width:100%; height:auto; margin:28px auto; border-radius:6px; }
+.rauvia-editorial-v2 figure { margin:32px 0; max-width:100%; }
+.rauvia-editorial-v2 figure img { margin:0 auto; }
+.rauvia-editorial-v2 figcaption { margin-top:10px; color:#52657a; font-size:14px; line-height:1.5; text-align:center; }
+.rauvia-editorial-v2 .re-table-scroll { width:100%; overflow-x:auto; margin:30px 0; border:1px solid var(--re-border); border-radius:5px; }
+.rauvia-editorial-v2 table { width:100%; border-collapse:collapse; font-size:15px; line-height:1.6; text-align:left; }
+.rauvia-editorial-v2 th,.rauvia-editorial-v2 td { min-width:135px; padding:14px 16px; border-bottom:1px solid var(--re-border); vertical-align:top; }
+.rauvia-editorial-v2 th { color:var(--re-navy); background:#eff4f8; font-weight:700; }
+.rauvia-editorial-v2 caption { padding:12px; text-align:left; font-weight:700; }
+.rauvia-editorial-v2 blockquote,.rauvia-editorial-v2 .re-insight,.rauvia-editorial-v2 .re-warning,.rauvia-editorial-v2 .re-key-point { margin:28px 0; padding:20px 24px; border-left:3px solid var(--re-gold); background:#f1f6fa; color:var(--re-navy); font-style:normal; }
+.rauvia-editorial-v2 .re-warning { background:#fff9eb; }
+.rauvia-editorial-v2 .re-key-point { font-weight:700; font-size:21px; }
+.rauvia-editorial-v2 blockquote > :last-child,.rauvia-editorial-v2 .re-insight > :last-child { margin-bottom:0; }
+.rauvia-editorial-v2 .re-wrap { width:100%; margin:0; padding:0; }
+.rauvia-editorial-v2 .re-intro { max-width:800px; margin:0 auto 38px; padding:0 0 26px; border-bottom:1px solid var(--re-border); }
+.rauvia-editorial-v2 .re-intro h2:first-child { margin-top:0; }
+.rauvia-editorial-v2 .re-lead { font-size:clamp(19px,2vw,22px); line-height:1.65; color:var(--re-muted); }
+.rauvia-editorial-v2 .re-kicker { display:block; color:var(--re-blue); font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; margin:0 0 16px; }
+.rauvia-editorial-v2 .re-meta { color:#52657a; font-size:14px; margin:0 auto 20px; max-width:800px; }
+.rauvia-editorial-v2 .re-dot { display:none; }
+.rauvia-editorial-v2 .re-accent { color:var(--re-blue); }
+.rauvia-editorial-v2 .re-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(240px,290px); gap:48px; align-items:start; }
+.rauvia-editorial-v2 .re-layout > * { min-width:0; }
+.rauvia-editorial-v2 .re-body { background:white; padding:32px; border:1px solid var(--re-border); border-radius:8px; min-width:0; }
+.rauvia-editorial-v2 .re-body > :first-child { margin-top:0; }
+.rauvia-editorial-v2 .re-side { min-width:0; font-size:15px; line-height:1.7; }
+.rauvia-editorial-v2 .re-card { padding:22px; border-top:1px solid var(--re-border); margin-bottom:22px; background:#fff; }
+.rauvia-editorial-v2 .re-side h2,.rauvia-editorial-v2 .re-side h3 { font-size:19px; margin:0 0 14px; }
+.rauvia-editorial-v2 .re-side p:last-child { margin-bottom:0; }
+.rauvia-editorial-v2 .re-cta { padding:24px; background:var(--re-navy); color:#fff; border-radius:8px; margin:24px 0; }
+.rauvia-editorial-v2 .re-cta h2,.rauvia-editorial-v2 .re-cta h3,.rauvia-editorial-v2 .re-cta strong { color:#fff; margin-top:0; }
+.rauvia-editorial-v2 .re-cta a { color:white; }
+.rauvia-editorial-v2 a.re-button { display:inline-block; padding:12px 16px; border:1px solid currentColor; border-radius:4px; font-weight:700; line-height:1.4; text-decoration:none; }
+.rauvia-editorial-v2 .re-signature { border-top:1px solid var(--re-border); margin-top:36px; padding-top:22px; font-size:15px; }
+.rauvia-editorial-v2 .re-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:28px 0; }
+.rauvia-editorial-v2 .re-panel { padding:20px; background:#f1f6fa; min-width:0; }
+.rauvia-editorial-v2 .re-panel h3 { margin-top:0; font-size:20px; }
+.rauvia-editorial-v2 .re-step { padding:18px 0; border-bottom:1px solid var(--re-border); }
+.rauvia-editorial-v2 .re-step h3 { margin-top:8px; }
+.rauvia-editorial-v2 .re-number { color:var(--re-blue); font-weight:700; }
+.rauvia-editorial-v2 .re-checklist { display:grid; gap:10px; margin:24px 0; padding:20px; background:#f1f6fa; }
+.rauvia-editorial-v2 .re-check { position:relative; padding-left:25px; }
+.rauvia-editorial-v2 .re-check::before { content:'✓'; position:absolute; left:0; color:var(--re-blue); font-weight:700; }
+.rauvia-editorial-v2 .re-checklist ul { margin-bottom:0; }
+.rauvia-editorial-v2 pre { overflow-x:auto; padding:18px; background:#edf2f7; font-size:14px; }
+.rauvia-editorial-v2 code { overflow-wrap:anywhere; }
+.rauvia-editorial-v2 details { padding:16px 0; border-bottom:1px solid var(--re-border); }
+.rauvia-editorial-v2 summary { cursor:pointer; color:var(--re-navy); font-weight:700; }
+@container (max-width:960px) {
+  .rauvia-editorial-v2 .re-layout { grid-template-columns:1fr; gap:28px; }
+  .rauvia-editorial-v2 .re-side { border-top:1px solid var(--re-border); padding-top:24px; }
+}
+@media(max-width:1000px) {
+  .rauvia-editorial-v2 .re-layout { grid-template-columns:1fr; gap:28px; }
+}
+@media(max-width:600px) {
+  .rauvia-post-page { padding:108px 16px 48px; }
+  .rauvia-editorial-v2 { font-size:17px; line-height:1.75; }
+  .rauvia-editorial-v2 .re-body { padding:22px 18px; }
+  .rauvia-editorial-v2 .re-compare { grid-template-columns:1fr; }
+  .rauvia-editorial-v2 blockquote,.rauvia-editorial-v2 .re-insight,.rauvia-editorial-v2 .re-warning { padding:18px; }
+  .rauvia-editorial-v2 .re-lead { font-size:19px; }
+}

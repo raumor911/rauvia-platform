@@ -1,0 +1,4682 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 342.3828125,
+      "height": 182.3828125,
+      "left": 16,
+      "right": 304,
+      "top": 160,
+      "width": 288,
+      "x": 16,
+      "y": 160
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 326.3828125,
+      "height": 182.3828125,
+      "left": 16,
+      "right": 304,
+      "top": 144,
+      "width": 288,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 304,
+      "top": 168,
+      "width": 288,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 327.0234375,
+      "height": 109.4296875,
+      "left": 20,
+      "right": 300,
+      "top": 217.59375,
+      "width": 280,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 253.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 304,
+      "top": 108,
+      "width": 288,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 354.859375,
+      "height": 218.859375,
+      "left": 16,
+      "right": 304,
+      "top": 136,
+      "width": 288,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 132.4765625,
+      "height": 36.4765625,
+      "left": 16,
+      "right": 304,
+      "top": 96,
+      "width": 288,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 320,
+    "height": 568,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 132.4765625,
+      "height": 36.4765625,
+      "left": 16,
+      "right": 304,
+      "top": 96,
+      "width": 288,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 281.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 344,
+      "top": 136,
+      "width": 328,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 289.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 344,
+      "top": 144,
+      "width": 328,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 344,
+      "top": 168,
+      "width": 328,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 327.0234375,
+      "height": 109.4296875,
+      "left": 20,
+      "right": 340,
+      "top": 217.59375,
+      "width": 320,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 253.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 344,
+      "top": 108,
+      "width": 328,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 318.3828125,
+      "height": 182.3828125,
+      "left": 16,
+      "right": 344,
+      "top": 136,
+      "width": 328,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 132.4765625,
+      "height": 36.4765625,
+      "left": 16,
+      "right": 344,
+      "top": 96,
+      "width": 328,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 360,
+    "height": 800,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 132.4765625,
+      "height": 36.4765625,
+      "left": 16,
+      "right": 344,
+      "top": 96,
+      "width": 328,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 286.46875,
+      "height": 150.46875,
+      "left": 16,
+      "right": 359,
+      "top": 136,
+      "width": 343,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.46875,
+      "height": 150.46875,
+      "left": 16,
+      "right": 359,
+      "top": 144,
+      "width": 343,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 359,
+      "top": 168,
+      "width": 343,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 330.4453125,
+      "height": 112.8515625,
+      "left": 20,
+      "right": 355,
+      "top": 217.59375,
+      "width": 335,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 258.46875,
+      "height": 150.46875,
+      "left": 16,
+      "right": 359,
+      "top": 108,
+      "width": 343,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 324.0859375,
+      "height": 188.0859375,
+      "left": 16,
+      "right": 359,
+      "top": 136,
+      "width": 343,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 133.6171875,
+      "height": 37.6171875,
+      "left": 16,
+      "right": 359,
+      "top": 96,
+      "width": 343,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 375,
+    "height": 812,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 133.6171875,
+      "height": 37.6171875,
+      "left": 16,
+      "right": 359,
+      "top": 96,
+      "width": 343,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "33px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 292.5,
+      "height": 156.5,
+      "left": 16,
+      "right": 374,
+      "top": 136,
+      "width": 358,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 300.5,
+      "height": 156.5,
+      "left": 16,
+      "right": 374,
+      "top": 144,
+      "width": 358,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 374,
+      "top": 168,
+      "width": 358,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 334.96875,
+      "height": 117.375,
+      "left": 20,
+      "right": 370,
+      "top": 217.59375,
+      "width": 350,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 264.5,
+      "height": 156.5,
+      "left": 16,
+      "right": 374,
+      "top": 108,
+      "width": 358,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 331.625,
+      "height": 195.625,
+      "left": 16,
+      "right": 374,
+      "top": 136,
+      "width": 358,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 135.125,
+      "height": 39.125,
+      "left": 16,
+      "right": 374,
+      "top": 96,
+      "width": 358,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 390,
+    "height": 844,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 135.125,
+      "height": 39.125,
+      "left": 16,
+      "right": 374,
+      "top": 96,
+      "width": 358,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 293.6875,
+      "height": 157.6875,
+      "left": 16,
+      "right": 377,
+      "top": 136,
+      "width": 361,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 301.6875,
+      "height": 157.6875,
+      "left": 16,
+      "right": 377,
+      "top": 144,
+      "width": 361,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 377,
+      "top": 168,
+      "width": 361,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 335.859375,
+      "height": 118.265625,
+      "left": 20,
+      "right": 373,
+      "top": 217.59375,
+      "width": 353,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 265.6875,
+      "height": 157.6875,
+      "left": 16,
+      "right": 377,
+      "top": 108,
+      "width": 361,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 333.109375,
+      "height": 197.109375,
+      "left": 16,
+      "right": 377,
+      "top": 136,
+      "width": 361,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 135.421875,
+      "height": 39.421875,
+      "left": 16,
+      "right": 377,
+      "top": 96,
+      "width": 361,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 393,
+    "height": 852,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 135.421875,
+      "height": 39.421875,
+      "left": 16,
+      "right": 377,
+      "top": 96,
+      "width": 361,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "34.584px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 308.5625,
+      "height": 172.5625,
+      "left": 16,
+      "right": 414,
+      "top": 136,
+      "width": 398,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 316.5625,
+      "height": 172.5625,
+      "left": 16,
+      "right": 414,
+      "top": 144,
+      "width": 398,
+      "x": 16,
+      "y": 144
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 313.90625,
+      "height": 145.90625,
+      "left": 16,
+      "right": 414,
+      "top": 168,
+      "width": 398,
+      "x": 16,
+      "y": 168
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "32px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 347.015625,
+      "height": 129.421875,
+      "left": 20,
+      "right": 410,
+      "top": 217.59375,
+      "width": 390,
+      "x": 20,
+      "y": 217.59375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 280.5625,
+      "height": 172.5625,
+      "left": 16,
+      "right": 414,
+      "top": 108,
+      "width": 398,
+      "x": 16,
+      "y": 108
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 351.703125,
+      "height": 215.703125,
+      "left": 16,
+      "right": 414,
+      "top": 136,
+      "width": 398,
+      "x": 16,
+      "y": 136
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 139.140625,
+      "height": 43.140625,
+      "left": 16,
+      "right": 414,
+      "top": 96,
+      "width": 398,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 430,
+    "height": 932,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 139.140625,
+      "height": 43.140625,
+      "left": 16,
+      "right": 414,
+      "top": 96,
+      "width": 398,
+      "x": 16,
+      "y": 96
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "37.84px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 545.609375,
+      "height": 369.609375,
+      "left": 24,
+      "right": 820,
+      "top": 176,
+      "width": 796,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 820,
+      "top": 176,
+      "width": 796,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 820,
+      "top": 176,
+      "width": 796,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 365.5859375,
+      "height": 91.1875,
+      "left": 32,
+      "right": 812,
+      "top": 274.3984375,
+      "width": 780,
+      "x": 32,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "38px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "36.3px"
+        },
+        {
+          "font": "13px",
+          "line": "21.45px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 296,
+      "height": 120,
+      "left": 24,
+      "right": 820,
+      "top": 176,
+      "width": 796,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.78125,
+      "height": 118.78125,
+      "left": 24,
+      "right": 820,
+      "top": 176,
+      "width": 796,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 16,
+      "right": 828,
+      "top": 128,
+      "width": 812,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 844,
+    "height": 390,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 24,
+      "right": 792,
+      "top": 128,
+      "width": 768,
+      "x": 24,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39.6px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 545.609375,
+      "height": 369.609375,
+      "left": 24,
+      "right": 908,
+      "top": 176,
+      "width": 884,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 908,
+      "top": 176,
+      "width": 884,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 908,
+      "top": 176,
+      "width": 884,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 366.1015625,
+      "height": 91.703125,
+      "left": 76,
+      "right": 856,
+      "top": 274.3984375,
+      "width": 780,
+      "x": 76,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "38.212px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "36.3px"
+        },
+        {
+          "font": "13px",
+          "line": "21.45px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 296,
+      "height": 120,
+      "left": 24,
+      "right": 908,
+      "top": 176,
+      "width": 884,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.78125,
+      "height": 118.78125,
+      "left": 24,
+      "right": 908,
+      "top": 176,
+      "width": 884,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 16,
+      "right": 916,
+      "top": 128,
+      "width": 900,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 932,
+    "height": 430,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 24,
+      "right": 792,
+      "top": 128,
+      "width": 768,
+      "x": 24,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39.6px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 506.484375,
+      "height": 346.484375,
+      "left": 24,
+      "right": 676,
+      "top": 160,
+      "width": 652,
+      "x": 24,
+      "y": 160
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "63px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 676,
+      "top": 176,
+      "width": 652,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 223.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 676,
+      "top": 144,
+      "width": 652,
+      "x": 24,
+      "y": 144
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 365.5859375,
+      "height": 91.1875,
+      "left": 24,
+      "right": 676,
+      "top": 274.3984375,
+      "width": 652,
+      "x": 24,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "38px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "36.3px"
+        },
+        {
+          "font": "13px",
+          "line": "21.45px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 234,
+      "height": 90,
+      "left": 24,
+      "right": 676,
+      "top": 144,
+      "width": 652,
+      "x": 24,
+      "y": 144
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.78125,
+      "height": 118.78125,
+      "left": 24,
+      "right": 676,
+      "top": 176,
+      "width": 652,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 168,
+      "height": 40,
+      "left": 16,
+      "right": 684,
+      "top": 128,
+      "width": 668,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 700,
+    "height": 900,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 168,
+      "height": 40,
+      "left": 24,
+      "right": 676,
+      "top": 128,
+      "width": 652,
+      "x": 24,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 545.609375,
+      "height": 369.609375,
+      "left": 24,
+      "right": 826,
+      "top": 176,
+      "width": 802,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 826,
+      "top": 176,
+      "width": 802,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 826,
+      "top": 176,
+      "width": 802,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 365.5859375,
+      "height": 91.1875,
+      "left": 35,
+      "right": 815,
+      "top": 274.3984375,
+      "width": 780,
+      "x": 35,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "38px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "36.3px"
+        },
+        {
+          "font": "13px",
+          "line": "21.45px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 296,
+      "height": 120,
+      "left": 24,
+      "right": 826,
+      "top": 176,
+      "width": 802,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.78125,
+      "height": 118.78125,
+      "left": 24,
+      "right": 826,
+      "top": 176,
+      "width": 802,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 16,
+      "right": 834,
+      "top": 128,
+      "width": 818,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 850,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 24,
+      "right": 792,
+      "top": 128,
+      "width": 768,
+      "x": 24,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39.6px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 545.609375,
+      "height": 369.609375,
+      "left": 24,
+      "right": 744,
+      "top": 176,
+      "width": 720,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 744,
+      "top": 176,
+      "width": 720,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 255.1875,
+      "height": 79.1875,
+      "left": 24,
+      "right": 744,
+      "top": 176,
+      "width": 720,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 365.5859375,
+      "height": 91.1875,
+      "left": 24,
+      "right": 744,
+      "top": 274.3984375,
+      "width": 720,
+      "x": 24,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "38px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "36.3px"
+        },
+        {
+          "font": "13px",
+          "line": "21.45px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "21px",
+          "line": "34.65px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 296,
+      "height": 120,
+      "left": 24,
+      "right": 744,
+      "top": 176,
+      "width": 720,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 294.78125,
+      "height": 118.78125,
+      "left": 24,
+      "right": 744,
+      "top": 176,
+      "width": 720,
+      "x": 24,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "36px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "26.4px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        },
+        {
+          "font": "14px",
+          "line": "23.1px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 16,
+      "right": 752,
+      "top": 128,
+      "width": 736,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "33px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 768,
+    "height": 1024,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 24,
+      "right": 744,
+      "top": 128,
+      "width": 720,
+      "x": 24,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39.6px"
+        },
+        {
+          "font": "18px",
+          "line": "29.7px"
+        },
+        {
+          "font": "16px",
+          "line": "26.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 767.375,
+      "height": 591.375,
+      "left": 32,
+      "right": 413.328125,
+      "top": 176,
+      "width": 381.328125,
+      "x": 32,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 439.984375,
+      "height": 263.984375,
+      "left": 32,
+      "right": 488,
+      "top": 176,
+      "width": 456,
+      "x": 32,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 439.984375,
+      "height": 263.984375,
+      "left": 32,
+      "right": 488,
+      "top": 176,
+      "width": 456,
+      "x": 32,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 375.1484375,
+      "height": 100.75,
+      "left": 122,
+      "right": 902,
+      "top": 274.3984375,
+      "width": 780,
+      "x": 122,
+      "y": 274.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "41.984px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "35.2px"
+        },
+        {
+          "font": "13px",
+          "line": "23.4px"
+        },
+        {
+          "font": "21px",
+          "line": "33.6px"
+        },
+        {
+          "font": "21px",
+          "line": "37.8px"
+        },
+        {
+          "font": "18px",
+          "line": "32.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 326,
+      "height": 150,
+      "left": 32,
+      "right": 992,
+      "top": 176,
+      "width": 960,
+      "x": 32,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "60px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "32.5px"
+        },
+        {
+          "font": "14px",
+          "line": "20px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 492.78125,
+      "height": 316.78125,
+      "left": 32,
+      "right": 488,
+      "top": 176,
+      "width": 456,
+      "x": 32,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "16px",
+          "line": "24px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 16,
+      "right": 1008,
+      "top": 128,
+      "width": 992,
+      "x": 16,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "28px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 1024,
+    "height": 768,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 32,
+      "right": 800,
+      "top": 128,
+      "width": 768,
+      "x": 32,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 767.375,
+      "height": 591.375,
+      "left": 48,
+      "right": 464,
+      "top": 176,
+      "width": 416,
+      "x": 48,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+    "titleCount": 1,
+    "type": {
+      "h1": "67.2px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/soluciones/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 506,
+      "height": 330,
+      "left": 48,
+      "right": 580,
+      "top": 176,
+      "width": 532,
+      "x": 48,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "titleCount": 1,
+    "type": {
+      "h1": "60px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/aethryon/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 506,
+      "height": 330,
+      "left": 48,
+      "right": 580,
+      "top": 176,
+      "width": 532,
+      "x": 48,
+      "y": 176
+    },
+    "h1Text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | AETHRYON",
+    "titleCount": 1,
+    "type": {
+      "h1": "60px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/ruta-90/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 506.9296875,
+      "height": 212.53125,
+      "left": 330,
+      "right": 1110,
+      "top": 294.3984375,
+      "width": 780,
+      "x": 330,
+      "y": 294.3984375
+    },
+    "h1Text": "Ruta 90: convierte una prioridad en capacidad instalada.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "59.04px",
+      "paragraphs": [
+        {
+          "font": "22px",
+          "line": "35.2px"
+        },
+        {
+          "font": "13px",
+          "line": "23.4px"
+        },
+        {
+          "font": "21px",
+          "line": "33.6px"
+        },
+        {
+          "font": "21px",
+          "line": "37.8px"
+        },
+        {
+          "font": "18px",
+          "line": "32.4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/frente-comercial/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 326,
+      "height": 150,
+      "left": 240,
+      "right": 1200,
+      "top": 176,
+      "width": 960,
+      "x": 240,
+      "y": 176
+    },
+    "h1Text": "Haz más fácil entender, confiar y avanzar con tu empresa.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "60px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "32.5px"
+        },
+        {
+          "font": "14px",
+          "line": "20px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/nosotros/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 572,
+      "height": 396,
+      "left": 48,
+      "right": 580,
+      "top": 176,
+      "width": 532,
+      "x": 48,
+      "y": 176
+    },
+    "h1Text": "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD.",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "RAUVIA Consulting | Nosotros",
+    "titleCount": 1,
+    "type": {
+      "h1": "60px",
+      "paragraphs": [
+        {
+          "font": "18px",
+          "line": "28px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        },
+        {
+          "font": "14px",
+          "line": "22.75px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/recursos/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 80,
+      "right": 1360,
+      "top": 128,
+      "width": 1280,
+      "x": 80,
+      "y": 128
+    },
+    "h1Text": "Recursos",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Recursos y Blog | RAUVIA",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "20px",
+          "line": "28px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "/casos/",
+    "width": 1440,
+    "height": 1000,
+    "h1Count": 1,
+    "h1Rect": {
+      "bottom": 176,
+      "height": 48,
+      "left": 112,
+      "right": 880,
+      "top": 128,
+      "width": 768,
+      "x": 112,
+      "y": 128
+    },
+    "h1Text": "Casos y evidencia",
+    "mainClass": "rv-main-site min-h-screen bg-rauvia-bg",
+    "outsideControls": [],
+    "overflow": 0,
+    "smallControls": [],
+    "title": "Casos y evidencia | RAUVIA Consulting",
+    "titleCount": 1,
+    "type": {
+      "h1": "48px",
+      "paragraphs": [
+        {
+          "font": "24px",
+          "line": "39px"
+        },
+        {
+          "font": "18px",
+          "line": "29.25px"
+        },
+        {
+          "font": "16px",
+          "line": "26px"
+        }
+      ]
+    }
+  }
+]

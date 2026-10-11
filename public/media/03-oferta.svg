@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" role="img" aria-labelledby="title">
+ <title id="title">Una oferta que necesita claridad</title>
+ <path d="M34 12H53C55 12 56 13 56 15V42C56 44 55 45 53 45H46L39 52V45H34" stroke="#00335B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+ <rect x="8" y="13" width="10" height="10" rx="1.5" fill="#246783"/>
+ <rect x="22" y="9" width="8" height="8" rx="1" fill="#00335B"/>
+ <rect x="12" y="30" width="10" height="10" rx="1.5" fill="#00335B"/>
+ <rect x="24" y="23" width="8" height="8" rx="1" fill="#E9B949"/>
+ <path d="M39 23H48M39 30H45M39 37H48" stroke="#246783" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

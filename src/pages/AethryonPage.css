@@ -1,0 +1,30 @@
+/* Human UX adjustments are confined to this page; shared tokens remain unchanged. */
+.aethryon-ux { --aethryon-focus: #1e4a74; }
+.aethryon-ux .aethryon-dark { --aethryon-focus: #ffd766; }
+.aethryon-ux :is(a, button, summary):focus-visible {
+  outline: 3px solid var(--aethryon-focus);
+  outline-offset: 4px;
+}
+.aethryon-ux :is(section, h2) { scroll-margin-top: 104px; }
+.aethryon-ux .aethryon-reading { max-width: 70ch; }
+.aethryon-ux .aethryon-disclosure summary { cursor: pointer; min-height: 52px; }
+.aethryon-ux .aethryon-disclosure summary::marker { color: #1e4a74; }
+.aethryon-ux :where(section:not(.aethryon-dark)) .text-slate-400 { color: #475569; }
+.aethryon-ux :where(section:not(.aethryon-dark)) .text-rauvia-gold { color: #8a5b00; }
+.aethryon-ux .aethryon-dark .text-slate-400 { color: #cbd5e1; }
+.aethryon-ux .aethryon-dark .text-rauvia-gold { color: #e6a300; }
+.aethryon-ux .aethryon-hero h1 { text-wrap: balance; }
+@media (max-width: 639px) {
+  .aethryon-ux .aethryon-hero { padding-top: 104px; padding-bottom: 40px; }
+  .aethryon-ux .aethryon-hero .space-y-6 > :not(:last-child) { margin-block-end: 16px; }
+  .aethryon-ux .aethryon-hero h1 { font-size: 2rem; line-height: 1.14; }
+  .aethryon-ux .aethryon-hero .space-y-4 { row-gap: 12px; }
+  .aethryon-ux .aethryon-hero .pt-4 { padding-top: 0; gap: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aethryon-ux *, .aethryon-ux *::before, .aethryon-ux *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

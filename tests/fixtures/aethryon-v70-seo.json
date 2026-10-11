@@ -1,0 +1,70 @@
+{
+  "title": "RAUVIA Consulting | AETHRYON",
+  "meta": [
+    "<meta charset=\"UTF-8\" />",
+    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+    "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta name=\"robots\" content=\"index, follow\">",
+    "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">",
+    "<meta property=\"og:type\" content=\"website\">",
+    "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+    "<meta property=\"og:locale\" content=\"es_MX\">",
+    "<meta name=\"twitter:card\" content=\"summary_large_image\">",
+    "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
+    "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
+    "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
+  ],
+  "canonical": [
+    "<link rel=\"canonical\" href=\"https://rauvia.com.mx/aethryon/\">"
+  ],
+  "jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://rauvia.com.mx/aethryon/#webpage",
+      "name": "AETHRYON - RAUVIA",
+      "url": "https://rauvia.com.mx/aethryon",
+      "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+      "publisher": {
+        "@id": "https://rauvia.com.mx/#organization"
+      },
+      "mainEntity": {
+        "@type": "Thing",
+        "@id": "https://rauvia.com.mx/aethryon/#entity",
+        "name": "AETHRYON",
+        "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones."
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://rauvia.com.mx/#organization",
+      "name": "RAUVIA",
+      "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
+      "url": "https://rauvia.com.mx",
+      "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+      "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+      "sameAs": [
+        "https://www.facebook.com/rauviaconsulting/",
+        "https://www.instagram.com/rauviaconsulting/",
+        "https://www.linkedin.com/company/rauvia/"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://rauvia.com.mx/#website",
+      "name": "RAUVIA",
+      "url": "https://rauvia.com.mx",
+      "publisher": {
+        "@id": "https://rauvia.com.mx/#organization"
+      }
+    }
+  ],
+  "h1": [
+    "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
+  ]
+}

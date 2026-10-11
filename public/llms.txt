@@ -1,0 +1,90 @@
+# RAUVIA
+
+> Firma mexicana de consultoría estratégica y desarrollo tecnológico para PyMES y empresas B2B. Ayuda a identificar dónde se pierden oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.
+
+Sitio oficial: https://rauvia.com.mx/ · Idioma: es-MX.
+RAUVIA es la organización; AETHRYON es su sistema de análisis y convergencia. Las capacidades no constituyen una ruta obligatoria ni una garantía de resultados.
+
+## DOMAIN ARCHITECTURE
+
+Official domain:
+https://rauvia.com.mx/
+
+Associated RAUVIA domains:
+https://rauvia.consulting/
+https://rauvia.tech/
+
+rauvia.com.mx is the canonical public web presence of RAUVIA.
+Associated domains belong to RAUVIA and may redirect users to the canonical domain.
+
+## ENTITY RELATIONSHIP
+
+ORGANIZATION
+
+RAUVIA
+
+Primary institutional and commercial domain:
+https://rauvia.com.mx/
+
+Commercial branding domain:
+https://rauvia.consulting/
+
+Technology and deployment domain:
+https://rauvia.tech/
+
+Official social profiles:
+Facebook: https://www.facebook.com/rauviaconsulting/
+Instagram: https://www.instagram.com/rauviaconsulting/
+LinkedIn: https://www.linkedin.com/company/rauvia/
+
+FOUNDER
+
+Raúl Antonio Morales Domínguez
+
+Professional properties:
+https://raulmorales.com.mx/
+https://raulmorales.pro/
+https://www.linkedin.com/in/raumor/
+
+Role:
+Founder and strategic director of RAUVIA.
+
+Relationship:
+Raúl Morales leads the strategic and methodological evolution of RAUVIA.
+RAUVIA is the organization through which this work is structured, implemented, and delivered.
+
+## Referencias públicas para modelos y agentes
+
+- [RAUVIA y sus capacidades](https://rauvia.com.mx/llmo/rauvia.md): Identidad y enfoques de intervención.
+- [AETHRYON](https://rauvia.com.mx/llmo/aethryon.md): Relación con RAUVIA y alcance público.
+- [Casos y límites de evidencia](https://rauvia.com.mx/llmo/evidencia.md): Cómo interpretar casos y resultados.
+- [Entidad estructurada](https://rauvia.com.mx/llmo/organization.json): Identificadores coherentes con el sitio.
+- [Índice legible por máquinas](https://rauvia.com.mx/llmo/index.json): Directorio de estos recursos públicos.
+
+## Páginas originales
+
+- [Nosotros](https://rauvia.com.mx/nosotros): Firma y fundador.
+- [Soluciones](https://rauvia.com.mx/soluciones): Capacidades de intervención.
+- [AETHRYON](https://rauvia.com.mx/aethryon): Sistema de análisis y decisión.
+- [Frente comercial](https://rauvia.com.mx/frente-comercial): Información comercial.
+- [Casos](https://rauvia.com.mx/casos/): Evidencia publicada.
+- [Infraestructura temporal B2B](https://rauvia.com.mx/casos/infraestructura-temporal-b2b/): Caso de intervención.
+- [Recursos](https://rauvia.com.mx/recursos): Artículos publicados desde WordPress y presentados en este sitio.
+
+## Optional
+
+- [Referencia consolidada](https://rauvia.com.mx/llms-full.txt): Resumen editorial ampliado, no copia de todo el sitio.
+- [Sitemap](https://rauvia.com.mx/sitemap.xml): URLs públicas y artículos publicados.
+- [Privacidad](https://rauvia.com.mx/aviso-de-privacidad): Aviso vigente.
+- [Términos](https://rauvia.com.mx/terminos): Condiciones del sitio.
+
+Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
+Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
+
+## Respuestas y fuentes V75
+
+Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
+
+- [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 18 familias con condiciones y límites.
+- [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.

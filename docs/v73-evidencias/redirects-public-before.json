@@ -1,0 +1,306 @@
+[
+  {
+    "source": "/errores-planeacion-estrategica-90-dias/",
+    "expected": "/ruta-90/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/errores-planeacion-estrategica-90-dias/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/ruta-90/"
+      },
+      {
+        "url": "https://rauvia.com.mx/ruta-90/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/categoria-producto/estrategia-y-planificacion/",
+    "expected": "/aethryon/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/categoria-producto/estrategia-y-planificacion/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/aethryon/"
+      },
+      {
+        "url": "https://rauvia.com.mx/aethryon/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/privacidad/",
+    "expected": "/aviso-de-privacidad/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/privacidad/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/aviso-de-privacidad/"
+      },
+      {
+        "url": "https://rauvia.com.mx/aviso-de-privacidad/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/brand/rauvia-consulting/",
+    "expected": "/nosotros/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/brand/rauvia-consulting/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/nosotros/"
+      },
+      {
+        "url": "https://rauvia.com.mx/nosotros/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/categoria-producto/servicios-de-consultoria/",
+    "expected": "/soluciones/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/categoria-producto/servicios-de-consultoria/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/soluciones/"
+      },
+      {
+        "url": "https://rauvia.com.mx/soluciones/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/errores-de-negocio/",
+    "expected": "/recursos/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/errores-de-negocio/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/etiqueta-producto/consultoria-estrategica/",
+    "expected": "/soluciones/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/etiqueta-producto/consultoria-estrategica/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/aethryon/"
+      },
+      {
+        "url": "https://rauvia.com.mx/aethryon/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/transformacion-digital/",
+    "expected": "/recursos/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/transformacion-digital/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/innovacion/",
+    "expected": "/recursos/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/innovacion/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/sistemas-de-negocio/",
+    "expected": "/soluciones/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/sistemas-de-negocio/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/consultoria-cdmx/",
+    "expected": "/soluciones/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/consultoria-cdmx/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/soluciones/"
+      },
+      {
+        "url": "https://rauvia.com.mx/soluciones/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/gestion-de-equipos/",
+    "expected": "/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/gestion-de-equipos/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/clients/",
+    "expected": "/casos/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/clients/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/casos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/casos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/ruta-90-dias-rauvia-para-quien-es/",
+    "expected": "/ruta-90/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/ruta-90-dias-rauvia-para-quien-es/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/ruta-90/"
+      },
+      {
+        "url": "https://rauvia.com.mx/ruta-90/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/category/automatizacion-empresarial/",
+    "expected": "/soluciones/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/category/automatizacion-empresarial/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/tag/crecimiento-de-negocio/",
+    "expected": "/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/tag/crecimiento-de-negocio/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/guia-definitiva-como-usar-el-seo-basico-para-superar-a-tu-competencia-en-marketplaces/",
+    "expected": "/recursos/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/guia-definitiva-como-usar-el-seo-basico-para-superar-a-tu-competencia-en-marketplaces/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/",
+    "expected": "/recursos/brecha-capacidad-real-percepcion-mercado/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  },
+  {
+    "source": "/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/feed/",
+    "expected": "/recursos/brecha-capacidad-real-percepcion-mercado/",
+    "chain": [
+      {
+        "url": "https://rauvia.com.mx/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/feed/",
+        "status": 301,
+        "location": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/"
+      },
+      {
+        "url": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+        "status": 200,
+        "location": null
+      }
+    ]
+  }
+]

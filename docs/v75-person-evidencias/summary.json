@@ -1,0 +1,476 @@
+{
+  "release": "V75 Person Knowledge",
+  "scope": "backend_only",
+  "graph": {
+    "internalNodes": 229,
+    "publicNodes": 215,
+    "intents": 73
+  },
+  "identity": {
+    "id": "person:raul-morales",
+    "type": "Person",
+    "label": "Raúl Antonio Morales Domínguez",
+    "description": "Fundador y Director Estratégico",
+    "rationale": "Fundador y Director Estratégico",
+    "status": "canonical",
+    "evidenceState": "editorial",
+    "visibility": "public",
+    "sources": [
+      "source:nosotros",
+      "source:raul-personal-site"
+    ],
+    "assetRefs": [
+      "asset:nosotros"
+    ],
+    "schemaId": "https://rauvia.com.mx/#raul-morales",
+    "name": "Raúl Antonio Morales Domínguez",
+    "url": "https://raulmorales.com.mx/",
+    "jobTitle": "Fundador y Director Estratégico",
+    "sameAs": [
+      "https://raulmorales.com.mx/",
+      "https://www.linkedin.com/in/raumor/"
+    ],
+    "credentialRefs": [
+      "credential:raul-maestria-direccion-organizaciones",
+      "credential:raul-ingenieria-quimica-metalurgica"
+    ],
+    "organizationRefs": [
+      "org:rauvia"
+    ],
+    "publicAuthorRefs": [
+      "content:wp-15",
+      "content:wp-18",
+      "content:wp-22",
+      "content:wp-25",
+      "content:wp-28",
+      "content:wp-31",
+      "content:wp-34",
+      "content:wp-39",
+      "content:wp-42",
+      "content:wp-45"
+    ],
+    "sourceRefs": [
+      "source:nosotros",
+      "source:raul-personal-site",
+      "source:wp-author-raul"
+    ]
+  },
+  "credentials": [
+    {
+      "id": "credential:raul-doctor-administracion-negocios",
+      "name": "Doctor en Administración de Negocios",
+      "evidenceState": "editorial",
+      "visibility": "internal",
+      "sourceRefs": [
+        "source:raul-editorial-declaration"
+      ]
+    },
+    {
+      "id": "credential:raul-ingenieria-quimica-metalurgica",
+      "name": "Ingeniería Química Metalúrgica",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sourceRefs": [
+        "source:raul-public-cv"
+      ]
+    },
+    {
+      "id": "credential:raul-maestria-direccion-organizaciones",
+      "name": "Maestría en Dirección de Organizaciones",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sourceRefs": [
+        "source:raul-public-cv"
+      ]
+    }
+  ],
+  "authoredBy": [
+    {
+      "from": "content:wp-15",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-18",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-22",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-25",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-28",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-31",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-34",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-39",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-42",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    },
+    {
+      "from": "content:wp-45",
+      "relation": "authoredBy",
+      "to": "person:raul-morales"
+    }
+  ],
+  "offlineRetrieval": [
+    {
+      "query": "¿Quién es Raúl Morales de RAUVIA?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      }
+    },
+    {
+      "query": "¿Quién fundó RAUVIA?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      }
+    },
+    {
+      "query": "¿Quién dirige estratégicamente RAUVIA?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "identity",
+        "name": "Raúl Antonio Morales Domínguez",
+        "jobTitle": "Fundador y Director Estratégico",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "url": "https://raulmorales.com.mx/",
+        "organizationRefs": [
+          "org:rauvia"
+        ],
+        "sourceRefs": [
+          "source:nosotros",
+          "source:raul-personal-site",
+          "source:wp-author-raul"
+        ]
+      }
+    },
+    {
+      "query": "¿Cuál es el sitio de Raúl Morales?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "personal_website",
+        "url": "https://raulmorales.com.mx/",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "sourceRefs": [
+          "source:raul-personal-site"
+        ]
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "personal_website",
+        "url": "https://raulmorales.com.mx/",
+        "schemaId": "https://rauvia.com.mx/#raul-morales",
+        "sourceRefs": [
+          "source:raul-personal-site"
+        ]
+      }
+    },
+    {
+      "query": "¿Qué formación académica tiene Raúl Morales?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "academic_credentials",
+        "credentials": [
+          {
+            "id": "credential:raul-doctor-administracion-negocios",
+            "name": "Doctor en Administración de Negocios",
+            "credentialCategory": "Doctorado",
+            "evidenceState": "editorial",
+            "visibility": "internal",
+            "sourceRefs": [
+              "source:raul-editorial-declaration"
+            ],
+            "attributionLimit": "Credencial declarada mediante una fuente biográfica de primera parte; no constituye verificación independiente por parte de la institución educativa."
+          },
+          {
+            "id": "credential:raul-ingenieria-quimica-metalurgica",
+            "name": "Ingeniería Química Metalúrgica",
+            "credentialCategory": "Título profesional / Ingeniería",
+            "evidenceState": "editorial",
+            "visibility": "public",
+            "sourceRefs": [
+              "source:raul-public-cv"
+            ],
+            "attributionLimit": "Credencial declarada mediante una fuente biográfica de primera parte; no constituye verificación independiente por parte de la institución educativa."
+          },
+          {
+            "id": "credential:raul-maestria-direccion-organizaciones",
+            "name": "Maestría en Dirección de Organizaciones",
+            "credentialCategory": "Maestría",
+            "evidenceState": "editorial",
+            "visibility": "public",
+            "sourceRefs": [
+              "source:raul-public-cv"
+            ],
+            "attributionLimit": "Credencial declarada mediante una fuente biográfica de primera parte; no constituye verificación independiente por parte de la institución educativa."
+          }
+        ],
+        "qualification": "Formación declarada; no acredita expertise ni corroboración institucional. Los registros internos pendientes no son afirmaciones públicas."
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "academic_credentials",
+        "credentials": [
+          {
+            "id": "credential:raul-ingenieria-quimica-metalurgica",
+            "name": "Ingeniería Química Metalúrgica",
+            "credentialCategory": "Título profesional / Ingeniería",
+            "evidenceState": "editorial",
+            "visibility": "public",
+            "sourceRefs": [
+              "source:raul-public-cv"
+            ],
+            "attributionLimit": "Credencial declarada mediante una fuente biográfica de primera parte; no constituye verificación independiente por parte de la institución educativa."
+          },
+          {
+            "id": "credential:raul-maestria-direccion-organizaciones",
+            "name": "Maestría en Dirección de Organizaciones",
+            "credentialCategory": "Maestría",
+            "evidenceState": "editorial",
+            "visibility": "public",
+            "sourceRefs": [
+              "source:raul-public-cv"
+            ],
+            "attributionLimit": "Credencial declarada mediante una fuente biográfica de primera parte; no constituye verificación independiente por parte de la institución educativa."
+          }
+        ],
+        "qualification": "Formación declarada; no acredita expertise ni corroboración institucional. Los registros internos pendientes no son afirmaciones públicas."
+      }
+    },
+    {
+      "query": "¿Raúl Morales creó Ruta 90?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "method_authorship",
+        "methodId": "method:ruta90",
+        "authored": false,
+        "answer": "No se atribuye creación de Ruta 90 a Raúl Morales; es un método adoptado y utilizado por RAUVIA.",
+        "sourceRefs": [
+          "source:ruta90"
+        ]
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "method_authorship",
+        "methodId": "method:ruta90",
+        "authored": false,
+        "answer": "No se atribuye creación de Ruta 90 a Raúl Morales; es un método adoptado y utilizado por RAUVIA.",
+        "sourceRefs": [
+          "source:ruta90"
+        ]
+      }
+    },
+    {
+      "query": "¿Qué contenido de RAUVIA está escrito por Raúl Morales?",
+      "internal": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "internal",
+        "state": "matched",
+        "kind": "authored_content",
+        "contentRefs": [
+          "content:wp-15",
+          "content:wp-18",
+          "content:wp-22",
+          "content:wp-25",
+          "content:wp-28",
+          "content:wp-31",
+          "content:wp-34",
+          "content:wp-39",
+          "content:wp-42",
+          "content:wp-45"
+        ],
+        "qualification": "Sólo metadata editorial conservada del catálogo; no atribuye todo el inventario de RAUVIA."
+      },
+      "public": {
+        "entityIds": [
+          "person:raul-morales",
+          "org:rauvia"
+        ],
+        "scope": "public",
+        "state": "matched",
+        "kind": "authored_content",
+        "contentRefs": [
+          "content:wp-15",
+          "content:wp-18",
+          "content:wp-22",
+          "content:wp-25",
+          "content:wp-28",
+          "content:wp-31",
+          "content:wp-34",
+          "content:wp-39",
+          "content:wp-42",
+          "content:wp-45"
+        ],
+        "qualification": "Sólo metadata editorial conservada del catálogo; no atribuye todo el inventario de RAUVIA."
+      }
+    }
+  ],
+  "limits": [
+    "Academic statements are first-party/editorial, not institutionally verified.",
+    "Doctorate retained internally pending a public source.",
+    "Authorship is an editorial metadata snapshot of ten existing catalog entries.",
+    "No attribution of creation of Ruta90.",
+    "Local data/resource checks only; not deployed."
+  ]
+}

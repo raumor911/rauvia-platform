@@ -1,0 +1,7 @@
+.rauvia-editorial-content {
+  font-family: inherit !important;
+  color: var(--color-rauvia-text) !important;
+}
+.rauvia-editorial-content p {
+  margin-bottom: 1.5rem !important;
+}

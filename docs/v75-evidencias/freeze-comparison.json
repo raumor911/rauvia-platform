@@ -1,0 +1,250 @@
+{
+  "baseline": "rauvia-platform-v74.zip",
+  "baselineSha256": "81abcd8b9b2782b80e7945758a57a6c36a31b57df7e9072365d31c36b262e0a1",
+  "existingImplementationFilesChecked": 115,
+  "authorizedImplementationChanges": [
+    "src/knowledge/evidence.ts",
+    "src/pages/AethryonPage.tsx",
+    "src/pages/CasosIndexPage.tsx",
+    "src/pages/FrenteComercialPage.tsx",
+    "src/pages/NosotrosPage.tsx",
+    "src/pages/SolucionesPage.tsx"
+  ],
+  "serverAndMiddlewareSourcesUnchanged": true,
+  "telemetrySourcesUnchanged": true,
+  "protectedLandingSourcesUnchanged": true,
+  "stylesSourcesUnchanged": true,
+  "cssFiles": [
+    {
+      "file": "dist/assets/AethryonPage-BJH03QuE.css",
+      "sha256": "d8db6aac0c7c3bca874951960607811d1c23b0d5164db58a4f7cd84a8678520c",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/CasoInfraestructuraB2BPage-CQVqQqSk.css",
+      "sha256": "5bfd406829b36797c2271cd0504d0552dedbfbab5e5ffd278fee29190ba6b618",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/CommercialLandings-NuJyFWUN.css",
+      "sha256": "e4a433bf7d77b8fc4024f68ec0f4cac74775d6f25daf87041c2021a74b712382",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaComercialServiciosProfesionalesPage-D3wPUSfF.css",
+      "sha256": "4e53cd9e607b8e914556f5bab79b1b344b2c0bed6d3d806c5f1c6118e61e1aa0",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaWebConsultorioMedicoPage-DGX5UAqS.css",
+      "sha256": "6bb695a6a32795781ab83e56b0efd1e7a607a3af717c670027de909206356d9d",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaWebGratisMedicosPage-Dy8cnxe0.css",
+      "sha256": "0301f0f912db5e44ef75a63cb9e30f3a6ef012d37e568e69e054d76f335e2ee6",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaWebMedicosAgendaWhatsappPage-HUiz8nhg.css",
+      "sha256": "0898b414dba24ede7a942824dc372201cc18b39ed4f9cd66618bca9a7bca0dd4",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaWebMedicosEspecialistasPage-CxJNiREW.css",
+      "sha256": "0caea64234ba9d2ff86ecbdf7d39e0b65f2403795d30e1b55692bde45ace8843",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PaginaWebMedicosPage-DNadEZio.css",
+      "sha256": "1ff1122895b52ab320544197a354075c5ab87574a34664eafb40ddc02a25b056",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/PostPage-CtqXSwfO.css",
+      "sha256": "95efe127c629194d4661d4bd9852472d6b03587c5ee20820e1a055274796a14c",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/Ruta90Page-I7svEGAc.css",
+      "sha256": "238c42824942580a20e9a4fce51bd02352601cb10e60a5bcb423375f25ac4283",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/SeoLocalMedicosPage-C3CaNUgJ.css",
+      "sha256": "e0f50e4e1527803a34264dc673a65aade51d31bd793893666cdbb85a0d9ca567",
+      "identical": true
+    },
+    {
+      "file": "dist/assets/index-_Gvy_Xiz.css",
+      "sha256": "4f66dda6ff982c61847137cc61bfc1671df99a37e18439a85e0d25b08b7aa09e",
+      "identical": true
+    }
+  ],
+  "html": [
+    {
+      "file": "dist/404.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/aethryon/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": false,
+      "authorizedCopyChange": true
+    },
+    {
+      "file": "dist/aviso-de-privacidad/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/casos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": false,
+      "authorizedCopyChange": true
+    },
+    {
+      "file": "dist/casos/infraestructura-temporal-b2b/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/frente-comercial/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": false,
+      "authorizedCopyChange": true
+    },
+    {
+      "file": "dist/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/nosotros/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": false,
+      "authorizedCopyChange": true
+    },
+    {
+      "file": "dist/pagina-comercial-servicios-profesionales/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/pagina-web-gratis-para-medicos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/pagina-web-medicos-agenda-whatsapp/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/pagina-web-para-consultorio-medico/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/pagina-web-para-medicos-especialistas/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/pagina-web-para-medicos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/recursos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/ruta-90/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/seo-local-para-medicos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/shell.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/sitio-web-comercial-para-pymes/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/sitio-web-servicios-especializados/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    },
+    {
+      "file": "dist/soluciones/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": false,
+      "authorizedCopyChange": true
+    },
+    {
+      "file": "dist/terminos/index.html",
+      "headEqual": true,
+      "normalizedHtmlEqual": true,
+      "authorizedCopyChange": false
+    }
+  ],
+  "normalization": "Only hashed asset filenames normalized; SEO head and body otherwise compared verbatim",
+  "clientChunks": 51,
+  "clientModules": 617,
+  "clientModuleSetUnchanged": true,
+  "clientLogicAddedBytes": 0,
+  "clientSizes": {
+    "raw": {
+      "before": 1313501,
+      "after": 1314806,
+      "delta": 1305,
+      "deltaPercent": 0.0994
+    },
+    "gzip": {
+      "before": 404141,
+      "after": 404594,
+      "delta": 453,
+      "deltaPercent": 0.1121
+    }
+  },
+  "runtimeServerCompiled": {
+    "beforeBytes": 954792,
+    "afterBytes": 955410,
+    "changedBy": "Authorized SSR visible copy; esbuild dependencies external; source-map emitted"
+  },
+  "v74ExistingPublicNodesUnchanged": true,
+  "v74IntentCoverageUnchanged": true,
+  "wpMetadataUnchanged": true,
+  "wordpressClientBundleUnchanged": true,
+  "historicalBrowserEvidenceUnchanged": true,
+  "physicalDeviceCertification": false,
+  "published": false,
+  "validationDate": "2026-10-07"
+}

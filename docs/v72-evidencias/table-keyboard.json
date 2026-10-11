@@ -1,0 +1,25 @@
+{
+  "before": {
+    "chapter": "plan-anual",
+    "focus": "region",
+    "overflow": 0,
+    "rect": {
+      "bottom": 602.234375,
+      "height": 360.3671875,
+      "left": 20,
+      "right": 370,
+      "top": 241.8671875,
+      "width": 350,
+      "x": 20,
+      "y": 241.8671875
+    },
+    "scrollLeft": 0,
+    "scrollWidth": 560,
+    "width": 350
+  },
+  "after": {
+    "focused": "rv-table-scroll",
+    "left": 40,
+    "overflow": 0
+  }
+}

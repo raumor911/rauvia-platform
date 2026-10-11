@@ -1,0 +1,269 @@
+[
+  {
+    "file": "scripts/prerender.js",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "scripts/render-static.tsx",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/App.tsx",
+    "status": "modified",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "PERFORMANCE",
+      "FOLD ENHANCEMENT"
+    ]
+  },
+  {
+    "file": "src/components/AIAssistantWidget.tsx",
+    "status": "modified",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/components/AethryonCore.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/components/CapabilitiesSection.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/components/FadeInUp.tsx",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/components/Footer.tsx",
+    "status": "modified",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "PERFORMANCE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/components/HeroSection.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/components/MethodologySection.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/components/Navbar.tsx",
+    "status": "modified",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/components/ProblemSection.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/lib/analytics.ts",
+    "status": "modified",
+    "classifications": [
+      "ANALYTICS"
+    ]
+  },
+  {
+    "file": "src/main.tsx",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/pages/AethryonPage.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/pages/FrenteComercialPage.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE"
+    ]
+  },
+  {
+    "file": "src/pages/NosotrosPage.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/pages/RecursosPage.tsx",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/pages/Ruta90Page.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/pages/SolucionesPage.tsx",
+    "status": "modified",
+    "classifications": [
+      "PAGE-SPECIFIC RESPONSIVE",
+      "PERFORMANCE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "tests/aethryon-ux.test.mjs",
+    "status": "modified",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  },
+  {
+    "file": "tests/ruta90-events.test.ts",
+    "status": "modified",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  },
+  {
+    "file": "tests/ruta90.test.mjs",
+    "status": "modified",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  },
+  {
+    "file": "vite.config.ts",
+    "status": "modified",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "public/media/aethryon-convergence-animated-optimized.svg",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "public/media/aethryon-convergence-mobile-640.webp",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "public/media/aethryon-convergence-mobile-960.webp",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "public/media/rauvia-solutions-hero-mobile-640.webp",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "public/media/rauvia-solutions-hero-mobile-960.webp",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/components/MainNavbar.tsx",
+    "status": "added",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "ACCESSIBILITY"
+    ]
+  },
+  {
+    "file": "src/lib/routeLoader.ts",
+    "status": "added",
+    "classifications": [
+      "PERFORMANCE"
+    ]
+  },
+  {
+    "file": "src/styles/mobileExperience.css",
+    "status": "added",
+    "classifications": [
+      "GLOBAL MOBILE INFRASTRUCTURE",
+      "PAGE-SPECIFIC RESPONSIVE",
+      "ACCESSIBILITY",
+      "FOLD ENHANCEMENT"
+    ]
+  },
+  {
+    "file": "tests/fixtures/v72-excluded-html.json",
+    "status": "added",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  },
+  {
+    "file": "tests/fixtures/v72-route-baseline.json",
+    "status": "added",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  },
+  {
+    "file": "tests/mobile-experience.test.mjs",
+    "status": "added",
+    "classifications": [
+      "TEST ONLY"
+    ]
+  }
+]

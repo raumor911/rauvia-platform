@@ -1,0 +1,88 @@
+{
+  "environment": "native Safari on macOS, WebKit; no iOS or physical mobile",
+  "limitedRenderConfirmed": 6,
+  "incomplete": 2,
+  "fullMatrixVerified": false,
+  "routes": [
+    {
+      "route": "/",
+      "status": "limited-render-and-menu-confirmed",
+      "checks": [
+        "home visible",
+        "menu opens",
+        "Escape closes"
+      ],
+      "evidence": [
+        "v72-safari-home.png",
+        "v72-safari-menu.png"
+      ]
+    },
+    {
+      "route": "/soluciones/",
+      "status": "limited-render-confirmed",
+      "checks": [
+        "owned HTML URL",
+        "H1 and catalog DOM"
+      ],
+      "evidence": [
+        "v72-safari-soluciones.png"
+      ]
+    },
+    {
+      "route": "/aethryon/",
+      "status": "limited-render-confirmed",
+      "checks": [
+        "screenshot hero and summary visually inspected"
+      ],
+      "evidence": [
+        "v72-safari-aethryon.png"
+      ]
+    },
+    {
+      "route": "/ruta-90/#componentes",
+      "status": "limited-render-confirmed",
+      "checks": [
+        "screenshot heading and selected chapter 4 visually inspected"
+      ],
+      "evidence": [
+        "v72-safari-ruta-90.png"
+      ]
+    },
+    {
+      "route": "/frente-comercial/",
+      "status": "incomplete",
+      "checks": [],
+      "evidence": [],
+      "reason": "native capture remained on previous route; not accepted as route proof"
+    },
+    {
+      "route": "/nosotros/",
+      "status": "limited-render-confirmed",
+      "checks": [
+        "owned HTML URL",
+        "H1"
+      ],
+      "evidence": [
+        "v72-safari-nosotros.png"
+      ]
+    },
+    {
+      "route": "/recursos/",
+      "status": "limited-render-confirmed",
+      "checks": [
+        "owned HTML URL",
+        "H1"
+      ],
+      "evidence": [
+        "v72-safari-recursos.png"
+      ]
+    },
+    {
+      "route": "/casos/",
+      "status": "incomplete",
+      "checks": [],
+      "evidence": [],
+      "reason": "native capture remained on previous route; not accepted as route proof"
+    }
+  ]
+}

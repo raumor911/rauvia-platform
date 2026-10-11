@@ -1,0 +1,7 @@
+.rauvia-editorial-content .wp-block-columns {
+  display: block !important;
+}
+.rauvia-editorial-content .wp-block-column {
+  width: 100% !important;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,55 @@
+{
+  "exposureCount": 9,
+  "sections": {
+    "aethryon_quick_summary": 1,
+    "aethryon_recognition": 1,
+    "aethryon_final_cta": 1,
+    "aethryon_solution_paths": 1,
+    "aethryon_criteria": 1,
+    "aethryon_use_case": 1,
+    "aethryon_outcomes": 1,
+    "aethryon_how_it_works": 1,
+    "aethryon_execution": 1
+  },
+  "maximumPerSectionSession": 1,
+  "sessions": 1,
+  "navigation": [
+    {
+      "event_name": "cta_click",
+      "properties": {
+        "source_page": "/aethryon/",
+        "destination": "/frente-comercial/",
+        "context": "solution_pathways",
+        "ux_version": "V71"
+      }
+    },
+    {
+      "event_name": "cta_click",
+      "properties": {
+        "source_page": "/aethryon/",
+        "destination": "/ruta-90/",
+        "context": "solution_pathways",
+        "ux_version": "V71"
+      }
+    },
+    {
+      "event_name": "cta_click",
+      "properties": {
+        "source_page": "/aethryon/",
+        "destination": "/soluciones/",
+        "context": "solution_pathways",
+        "ux_version": "V71"
+      }
+    },
+    {
+      "event_name": "cta_click",
+      "properties": {
+        "source_page": "/aethryon/",
+        "destination": "/soluciones/",
+        "context": "final_cta",
+        "ux_version": "V71"
+      }
+    }
+  ],
+  "limit": "Local capture of existing endpoint payloads. Production database persistence and lead completion were not tested."
+}

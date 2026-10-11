@@ -1,0 +1,201 @@
+{
+  "method": "Fresh CUA DOM observations on local compiled production with WordPress snapshot fixtures.",
+  "rows": [
+    {
+      "route": "/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": [],
+      "primary": "/soluciones/"
+    },
+    {
+      "route": "/soluciones/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/aethryon/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/ruta-90/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/frente-comercial/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/nosotros/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/recursos/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/casos/",
+      "viewport": [
+        390,
+        844
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 390,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/soluciones/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/aethryon/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/ruta-90/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/frente-comercial/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/nosotros/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/recursos/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    },
+    {
+      "route": "/casos/",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "h1": 1,
+      "main": true,
+      "scrollWidth": 1440,
+      "visibleBrokenImages": []
+    }
+  ],
+  "primaryCTA": {
+    "text": "CONOCER NUESTROS PRODUCTOS",
+    "href": "/soluciones/",
+    "target": null,
+    "height": 52,
+    "afterClick": "/soluciones/",
+    "tab": "5"
+  },
+  "secondaryCTA": {
+    "afterClick": "/aethryon",
+    "tab": "5"
+  },
+  "keyboardMenu": {
+    "expandedAfterEscape": "false",
+    "focusAfterEscape": "Abrir menú",
+    "bodyOverflowAfterEscape": ""
+  },
+  "physicalDeviceCertification": false,
+  "newPerformanceMeasurement": false
+}

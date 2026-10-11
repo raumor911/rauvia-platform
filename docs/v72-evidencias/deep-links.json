@@ -1,0 +1,140 @@
+[
+  {
+    "anchor": {
+      "bottom": 2109.7734375,
+      "height": 2025.6015625,
+      "left": 0,
+      "right": 390,
+      "top": 84.171875,
+      "width": 390,
+      "x": 0,
+      "y": 84.171875
+    },
+    "chapterNav": {
+      "bottom": 126,
+      "height": 62,
+      "left": 0,
+      "right": 390,
+      "top": 64,
+      "width": 390,
+      "x": 0,
+      "y": 64
+    },
+    "header": {
+      "bottom": 66,
+      "height": 66,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "heading": {
+      "bottom": 285.765625,
+      "height": 70,
+      "left": 20,
+      "right": 370,
+      "top": 215.765625,
+      "width": 350,
+      "x": 20,
+      "y": 215.765625
+    },
+    "overflow": 0,
+    "select": "componentes",
+    "url": "http://127.0.0.1:3164/ruta-90/#componentes",
+    "width": 390
+  },
+  {
+    "anchor": {
+      "bottom": 2164.6328125,
+      "height": 2080.796875,
+      "left": 0,
+      "right": 844,
+      "top": 83.8359375,
+      "width": 844,
+      "x": 0,
+      "y": 83.8359375
+    },
+    "chapterNav": {
+      "bottom": 134,
+      "height": 70,
+      "left": 0,
+      "right": 844,
+      "top": 64,
+      "width": 844,
+      "x": 0,
+      "y": 64
+    },
+    "header": {
+      "bottom": 66,
+      "height": 66,
+      "left": 0,
+      "right": 844,
+      "top": 0,
+      "width": 844,
+      "x": 0,
+      "y": 0
+    },
+    "heading": {
+      "bottom": 268.234375,
+      "height": 36,
+      "left": 32,
+      "right": 812,
+      "top": 232.234375,
+      "width": 780,
+      "x": 32,
+      "y": 232.234375
+    },
+    "overflow": 0,
+    "select": "componentes",
+    "url": "http://127.0.0.1:3164/ruta-90/#componentes",
+    "width": 844
+  },
+  {
+    "anchor": {
+      "bottom": 2168.1328125,
+      "height": 2084.171875,
+      "left": 0,
+      "right": 850,
+      "top": 83.9609375,
+      "width": 850,
+      "x": 0,
+      "y": 83.9609375
+    },
+    "chapterNav": {
+      "bottom": 134,
+      "height": 70,
+      "left": 0,
+      "right": 850,
+      "top": 64,
+      "width": 850,
+      "x": 0,
+      "y": 64
+    },
+    "header": {
+      "bottom": 66,
+      "height": 66,
+      "left": 0,
+      "right": 850,
+      "top": 0,
+      "width": 850,
+      "x": 0,
+      "y": 0
+    },
+    "heading": {
+      "bottom": 268.359375,
+      "height": 36,
+      "left": 35,
+      "right": 815,
+      "top": 232.359375,
+      "width": 780,
+      "x": 35,
+      "y": 232.359375
+    },
+    "overflow": 0,
+    "select": "componentes",
+    "url": "http://127.0.0.1:3164/ruta-90/#componentes",
+    "width": 850
+  }
+]

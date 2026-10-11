@@ -1,0 +1,63 @@
+{
+  "version": "0.0.0",
+  "name": "react-example",
+  "dependencies": {
+    "@tailwindcss/typography": {
+      "version": "0.5.20",
+      "resolved": "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.20.tgz",
+      "overridden": false,
+      "dependencies": {
+        "postcss-selector-parser": {
+          "version": "7.1.6",
+          "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+          "overridden": true
+        }
+      }
+    },
+    "@tailwindcss/vite": {
+      "version": "4.3.3",
+      "overridden": false,
+      "dependencies": {
+        "@tailwindcss/node": {
+          "version": "4.3.3",
+          "overridden": false,
+          "dependencies": {
+            "source-map-js": {
+              "version": "1.2.2",
+              "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+              "overridden": false
+            }
+          }
+        }
+      }
+    },
+    "autoprefixer": {
+      "version": "10.5.4",
+      "overridden": false,
+      "dependencies": {
+        "postcss": {
+          "version": "8.5.28",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz",
+          "overridden": false,
+          "dependencies": {
+            "source-map-js": {
+              "version": "1.2.2"
+            }
+          }
+        }
+      }
+    },
+    "express": {
+      "version": "5.2.1",
+      "resolved": "https://registry.npmjs.org/express/-/express-5.2.1.tgz",
+      "overridden": false,
+      "dependencies": {
+        "proxy-addr": {
+          "version": "2.0.8",
+          "resolved": "https://registry.npmjs.org/proxy-addr/-/proxy-addr-2.0.8.tgz",
+          "overridden": false
+        }
+      }
+    }
+  }
+}

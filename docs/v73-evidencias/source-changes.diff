@@ -1,0 +1,370 @@
+--- V72/docs/founder-entity-policy.md
++++ V73/docs/founder-entity-policy.md
+@@ -1,6 +1,18 @@
+-# Política de Entidad del Fundador
++# Política de entidad del fundador
+ 
+-- **Nombre:** Raúl Morales
+-- **Rol:** Fundador / Consultor Estratégico
+-- **Relación con RAUVIA:** `founder`, `worksFor`
+-- **Ubicación principal de la entidad:** `/nosotros` (No necesita página propia aislada de momento).
++Fuente canónica: `src/config/entity.ts`.
++
++- Nombre público canónico: Raúl Antonio Morales Domínguez.
++- ID estable: `https://rauvia.com.mx/#raul-morales`.
++- Rol: Fundador y Director Estratégico.
++- Relación con RAUVIA: `Organization.founder` y `Person.worksFor`.
++- Ubicación principal: `/nosotros/`; no se añade una página propia.
++
++`llms.txt` usa la marca pública RAUVIA, el nombre del fundador y enlaces a las
++referencias estructuradas. No es un duplicado de la ficha corporativa. La razón
++social existente se verifica contra la fuente canónica en
++`public/llmo/organization.json` y en el JSON-LD prerenderizado. No se añaden datos
++corporativos sólo para satisfacer el auditor.
++
++Ruta 90 es un método adoptado/usado por RAUVIA. La entidad del fundador o de la
++organización no acredita creación ni desarrollo de ese método.
+--- V72/docs/phase-0-root-htaccess.md
++++ V73/docs/phase-0-root-htaccess.md
+@@ -1,3 +1,5 @@
++> Archivo histórico de Fase 0. No instalar estas reglas en V73: redirigen contenidos retirados a Home y contienen fallback de SPA. La política vigente vive en `server/seo/legacyRoutes.ts` y en `docs/v73-stabilization-report.md`; el servicio Node de Hostinger no requiere copiar este ejemplo a Apache.
++
+ # .htaccess de la Raíz
+ 
+ ```apache
+--- V72/package.json
++++ V73/package.json
+@@ -12,7 +12,7 @@
+     "lint": "tsc --noEmit",
+     "geo:check": "tsx scripts/run-geo-checks.ts",
+     "audit:seo": "node scripts/seo-audit.js",
+-    "audit:entities": "node scripts/entity-audit.js",
++    "audit:entities": "node --import tsx scripts/entity-audit.js",
+     "audit:content": "node scripts/content-audit.js",
+     "audit:authority": "node scripts/authority-audit.js",
+     "audit:llmo": "node scripts/llmo-audit.js",
+@@ -20,7 +20,8 @@
+     "test:seo": "node --import tsx --test tests/wordpress-cache.test.ts tests/ruta90-events.test.ts && node --test tests/seo-html.test.mjs tests/ruta90.test.mjs",
+     "test:favicon": "node --test tests/favicon.test.mjs",
+     "test:ruta90-integration": "node --import tsx --test tests/ruta90-events.test.ts && node --test tests/ruta90-integration.test.mjs",
+-    "test:aethryon": "node --import tsx --test tests/aethryon-events.test.ts && node --test tests/aethryon-ux.test.mjs"
++    "test:aethryon": "node --import tsx --test tests/aethryon-events.test.ts && node --test tests/aethryon-ux.test.mjs",
++    "test:v73": "node --test tests/v73-stabilization.test.mjs tests/v73-browser-evidence.test.mjs"
+   },
+   "dependencies": {
+     "@google/genai": "^2.21.0",
+--- V72/scripts/entity-audit.js
++++ V73/scripts/entity-audit.js
+@@ -1,56 +1,30 @@
+-import fs from 'fs';
+-import path from 'path';
+-import { fileURLToPath } from 'url';
++import fs from 'node:fs';
++import path from 'node:path';
++import {fileURLToPath} from 'node:url';
++import {ENTITIES} from '../src/config/entity.ts';
+ 
+-const __filename = fileURLToPath(import.meta.url);
+-const __dirname = path.dirname(__filename);
+-const srcPath = path.resolve(__dirname, '../src');
+-
+-let errors = 0;
+-
+-function assert(condition, message) {
+-  if (!condition) {
+-    console.error(`❌ FAILED: ${message}`);
+-    errors++;
+-  } else {
+-    console.log(`✅ PASSED: ${message}`);
+-  }
+-}
+-
+-console.log("Iniciando Auditoría de Entidades (Fase 2)...");
+-
+-// 1. Verificación de Data de Entidad Centralizada
+-const entityConfigPath = path.join(srcPath, 'config/entity.ts');
+-assert(fs.existsSync(entityConfigPath), "Debe existir src/config/entity.ts");
+-
+-if (fs.existsSync(entityConfigPath)) {
+-  const content = fs.readFileSync(entityConfigPath, 'utf8');
+-  assert(content.includes('RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO'), "Debe incluir la razón social oficial");
+-  assert(content.includes('Raúl Morales'), "Debe incluir al fundador");
+-  assert(content.includes('AETHRYON'), "Debe incluir la entidad AETHRYON");
+-  assert(content.includes('https://rauvia.com.mx/#organization'), "Debe definir ID para Organization");
+-}
+-
+-// 2. Verificación de JsonLd.tsx
+-const jsonLdPath = path.join(srcPath, 'components/JsonLd.tsx');
+-assert(fs.existsSync(jsonLdPath), "Debe existir src/components/JsonLd.tsx");
+-if (fs.existsSync(jsonLdPath)) {
+-  const content = fs.readFileSync(jsonLdPath, 'utf8');
+-  assert(content.includes('Organization') || content.includes('ENTITIES.organization'), "JsonLd debe incluir Organization");
+-}
+-
+-// 3. Verificación del llms.txt actualizado
+-const llmsPath = path.join(__dirname, '../public/llms.txt');
+-if (fs.existsSync(llmsPath)) {
+-  const content = fs.readFileSync(llmsPath, 'utf8');
+-  assert(content.includes('RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO'), "llms.txt debe tener la razón social");
+-  assert(!content.includes('agencia de marketing'), "llms.txt no debe identificarla erróneamente como agencia de marketing");
+-}
+-
+-if (errors > 0) {
+-  console.error(`\n🚨 Auditoría fallida con ${errors} errores.`);
+-  process.exit(1);
+-} else {
+-  console.log(`\n🎉 Auditoría de entidades completada con éxito.`);
+-  process.exit(0);
+-}
++const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
++let errors=0;
++function check(condition,message){console[condition?'log':'error'](`${condition?'PASS':'FAIL'}: ${message}`);if(!condition)errors++;}
++function jsonFile(rel){try{return JSON.parse(fs.readFileSync(path.join(root,rel),'utf8'));}catch{check(false,`${rel}: JSON existente y válido`);return {};}}
++const {organization,founder,system}=ENTITIES;
++check(Boolean(organization.legalName), 'Razón social definida en la fuente canónica');
++check(founder.name==='Raúl Antonio Morales Domínguez', 'Nombre completo del fundador en fuente canónica');
++check(founder['@id']==='https://rauvia.com.mx/#raul-morales', 'ID estable del fundador');
++check(organization['@id']==='https://rauvia.com.mx/#organization','ID estable de la organización');
++check(system.name==='AETHRYON', 'Entidad AETHRYON conservada');
++const publicOrg=jsonFile('public/llmo/organization.json');
++check(publicOrg.legalName===organization.legalName,'Razón social estructurada coherente con la fuente canónica');
++check(publicOrg['@id']===organization['@id']&&publicOrg.founder?.['@id']===founder['@id']&&publicOrg.founder?.name===founder.name,'Referencia pública conecta organización y fundador canónicos');
++let llms='';try{llms=fs.readFileSync(path.join(root,'public/llms.txt'),'utf8');}catch{check(false,'llms.txt existente');}
++check(llms.includes(organization.name)&&llms.includes(founder.name),'llms.txt identifica marca y fundador canónicos');
++check(llms.includes('/llmo/organization.json'),'llms.txt enlaza la ficha corporativa estructurada');
++check(!llms.includes('agencia de marketing'),'llms.txt mantiene el posicionamiento vigente');
++// Verify relationships in rendered data, not a substring in the React source.
++let html='';try{html=fs.readFileSync(path.join(root,'dist/nosotros/index.html'),'utf8');}catch{check(false,'Prerender Nosotros disponible; ejecutar build antes del audit');}
++const schemas=[...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
++const org=schemas.find(s=>s['@type']==='Organization'),person=schemas.find(s=>s['@type']==='Person');
++check(org?.['@id']===organization['@id']&&org?.legalName===organization.legalName&&org?.founder?.['@id']===founder['@id'],'Organization prerenderizada enlaza al fundador');
++check(person?.['@id']===founder['@id']&&person?.name===founder.name&&person?.worksFor?.['@id']===organization['@id'],'Person prerenderizada enlaza a RAUVIA');
++console.log(`Auditoría de entidades: ${errors} errores.`);
++process.exitCode=errors?1:0;
+--- V72/server.ts
++++ V73/server.ts
+@@ -17,12 +17,16 @@
+ import { withRequestContext } from './server/observability/context.js';
+ 
+ import {wordpressCache} from './server/wordpress/cache';
+-import {renderArticleHtml} from './server/seo/articleHtml';
+ import {canonicalPath} from './src/seo/buildMetaTags';
++import {legacyRouteMiddleware, sendGone} from './server/seo/legacyRoutes';
+ const {fetchWPPosts}=wordpressCache;
+ 
+ async function startServer() {
+   const app = express();
++
++  // Observe the final HTTP status naturally; no extra crawler event or table.
++  app.use(aiCrawlerMiddleware);
++  app.use(legacyRouteMiddleware);
+ 
+   // === REDIRECCIONES SEO 301 PERMANENTES ===
+   app.use((req, res, next) => {
+@@ -37,11 +41,11 @@
+     }
+     
+     // Rutas antiguas hacia nuevas ubicaciones (conservando Link Equity)
+-    if (normalizedPath === '/blog' || normalizedPath.startsWith('/blog/')) {
++    if (normalizedPath === '/blog') {
+       return res.redirect(301, '/recursos/');
+     }
+     
+-    if (normalizedPath === '/servicios' || normalizedPath.startsWith('/servicios/')) {
++    if (normalizedPath === '/servicios') {
+       return res.redirect(301, '/soluciones/');
+     }
+ 
+@@ -126,9 +130,6 @@
+     
+     next();
+   });
+-
+-  // AI Crawler Analytics Middleware
+-  app.use(aiCrawlerMiddleware);
+ 
+   // After crawler observation, before legacy Gone/static/fallback. Both forms
+   // redirect directly to the canonical destination in one server response.
+@@ -169,16 +170,6 @@
+     '/acerca-de',
+   ]);
+ 
+-  // Regex patterns for other historical URLs to mark as Gone
+-  const LEGACY_GONE_PATTERNS = [
+-    /^\/ruta-90\//,
+-    /^\/diagnostico-/,
+-    /^\/growth-partner\//,
+-    /^\/blueprint-/,
+-    /^\/frente-comercial-esencial\//,
+-    /^\/servicios\//
+-  ];
+-
+   // Historical legacy 301 redirects to valid equivalents
+   const LEGACY_REDIRECT_PATHS = new Map([
+     ['/blog', '/recursos']
+@@ -190,9 +181,9 @@
+       pathName = pathName.slice(0, -1);
+     }
+ 
+-    // 1. Mark as 410 Gone if it's in the exact list or matches a pattern
+-    if (LEGACY_GONE_PATHS.has(pathName) || LEGACY_GONE_PATTERNS.some(regex => regex.test(pathName))) {
+-      return res.status(410).type('text/html').send('<!DOCTYPE html><html><head><title>Página no disponible (410) | RAUVIA</title></head><body><h1>410 - Contenido retirado</h1><p>El contenido que buscas ya no forma parte de la oferta o metodología actual de RAUVIA.</p><a href="/">Volver al inicio</a></body></html>');
++    // 1. Only known retired URLs may return Gone.
++    if (LEGACY_GONE_PATHS.has(pathName)) {
++      return sendGone(res);
+     }
+ 
+     // 2. Redirect 301 for known equivalents
+@@ -478,6 +469,8 @@
+     });
+     app.use(vite.middlewares);
+   } else {
++    // The production-only renderer imports CSS; Vite owns styles in development.
++    const {renderArticleHtml} = await import('./server/seo/articleHtml');
+     const distPath = path.join(process.cwd(), 'dist');
+     const shell = await fs.promises.readFile(path.join(distPath,'shell.html'),'utf8');
+     // Resolve published articles before static files, so old snapshots cannot
+--- V72/src/components/AethryonCore.tsx
++++ V73/src/components/AethryonCore.tsx
+@@ -18,7 +18,7 @@
+             srcSet="/media/aethryon-convergence-mobile-640.webp 640w, /media/aethryon-convergence-mobile-960.webp 960w"
+             sizes="(max-width: 767px) calc(100vw - 32px), 700px" />
+           <img width="1400" height="1060"
+-           loading="eager" fetchPriority="high" decoding="async" src="/media/aethryon-convergence-animated-optimized.svg"
++           loading="eager" fetchPriority="high" decoding="async" src="/media/aethryon-convergence-animated-optimized-v73.svg"
+            alt="Aethryon Core" 
+            className="w-full min-w-[320px] max-w-full lg:max-w-none h-full object-contain object-center lg:object-center group-hover:scale-[1.01] transition-transform"
+           />
+--- V72/src/components/Footer.tsx
++++ V73/src/components/Footer.tsx
+@@ -79,6 +79,10 @@
+             </a>
+           </div>
+         </div>
++        <p className="max-w-[1600px] mx-auto mt-4 text-center text-xs text-slate-400">
++          Experiencia digital desarrollada por{' '}
++          <a href="https://rauvia.com.mx/" className="inline-flex items-center min-h-[44px] underline underline-offset-4 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">RAUVIA Consulting</a>
++        </p>
+       </div>
+     </footer>
+   );
+--- V72/src/components/HeroSection.tsx
++++ V73/src/components/HeroSection.tsx
+@@ -1,7 +1,7 @@
+ import { Link } from "react-router-dom";
+ import { ArrowRight, PlayCircle } from "lucide-react";
+ import AethryonCore from "./AethryonCore";
+-import WhatsAppCTA from "./WhatsAppCTA";
++import { trackEvent } from "../lib/analytics";
+ 
+ export default function HeroSection() {
+   return (
+@@ -42,13 +42,14 @@
+             </div>
+ 
+             <div className="flex flex-col sm:flex-row gap-4 pt-4">
+-              <WhatsAppCTA 
+-                href="https://wa.me/525586494076" 
++              <Link 
++                to="/soluciones/"
++                onClick={() => trackEvent("cta_click", {source_page: "/", destination: "/soluciones/", context: "product_discovery"})} 
+                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]"
+               >
+                 CONOCER NUESTROS PRODUCTOS
+                 <ArrowRight className="w-4 h-4" />
+-              </WhatsAppCTA>
++              </Link>
+               <Link 
+                 to="/aethryon"
+                 className="w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]"
+--- V72/src/pages/NosotrosPage.tsx
++++ V73/src/pages/NosotrosPage.tsx
+@@ -10,6 +10,7 @@
+   return (
+     <>
+       <RouteSEO path="/nosotros" />
++      <link rel="preload" as="image" media="(min-width: 1024px)" href="/media/rauvia-nosotros-hero-structure-v73.svg" fetchPriority="high" />
+       
+       
+ 
+@@ -61,7 +62,7 @@
+             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
+                {/* Hero Graphic */}
+                <div className="relative w-full max-w-2xl">
+-                 <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
++                 <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure-v73.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
+                </div>
+             </div>
+ 
+--- V72/src/pages/SolucionesPage.tsx
++++ V73/src/pages/SolucionesPage.tsx
+@@ -344,7 +344,7 @@
+                     <source media="(max-width: 1023px)" type="image/webp"
+                       srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
+                       sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
+-                    <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
++                    <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon-v73.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
+                   </picture>
+                </Link>
+             </div>
+--- V72/src/seo/buildMetaTags.ts
++++ V73/src/seo/buildMetaTags.ts
+@@ -14,7 +14,7 @@
+   return JSON.stringify(value).replace(/[<>&\u2028\u2029]/g, char => '\\u'+char.charCodeAt(0).toString(16).padStart(4,'0'));
+ }
+ export function baseEntities() {
+-  return [{ '@context':'https://schema.org', '@type':'Organization', ...ENTITIES.organization },
++  return [{ '@context':'https://schema.org', '@type':'Organization', ...ENTITIES.organization, founder:{'@id':ENTITIES.founder['@id']} },
+     {'@context':'https://schema.org', '@type':'WebSite', ...ENTITIES.website, publisher:{'@id':ENTITIES.organization['@id']}}];
+ }
+ export function schemasFor(seo: PageSeo) {
+--- V72/tests/aethryon-ux.test.mjs
++++ V73/tests/aethryon-ux.test.mjs
+@@ -5,14 +5,16 @@
+ const html=fs.readFileSync('dist/aethryon/index.html','utf8');
+ const text=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+ const h1=text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)[1]);
++// V73 deliberately adds the existing founder reference; all other SEO stays exact.
++const withFounder=schemas=>schemas.map(s=>s['@type']==='Organization'&&!s.founder?{...s,founder:{'@id':'https://rauvia.com.mx/#raul-morales'}}:s);
+ const old=JSON.parse(fs.readFileSync('tests/fixtures/aethryon-v70-seo.json','utf8'));
+ const main=html.match(/<main>([\s\S]*?)<\/main>/)[1];
+-test('AETHRYON preserves metadata, JSON-LD and the unique H1 from V70',()=>{
++test('AETHRYON preserves V70 metadata and H1, with the documented V73 founder reference',()=>{
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);assert.equal(h1,old.h1[0]);
+  assert.equal(html.match(/<title>(.*?)<\/title>/)[1],old.title);
+  assert.deepEqual([...html.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]).filter(m=>!m.includes('name="viewport"')),old.meta.filter(m=>!m.includes('name="viewport"')));
+  assert.deepEqual([...html.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)].map(m=>m[0]),old.canonical);
+- assert.deepEqual([...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])),old.jsonld);
++ assert.deepEqual([...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])),withFounder(old.jsonld));
+ });
+ test('Human reading path reaches example, outcomes and possible routes before methodology',()=>{
+  const ids=['aethryon-hero','aethryon-resumen','aethryon-situaciones','aethryon-ejemplo','aethryon-resultados','aethryon-caminos','como-funciona','aethryon-criterios','aethryon-aplicacion','aethryon-ejecucion','aethryon-accion'];
+@@ -36,14 +38,14 @@
+  const final=main.slice(main.indexOf('id="aethryon-accion"'));assert.ok(final.includes('href="https://wa.me/525586494076"'));assert.ok(final.includes('href="/soluciones/"'));assert.match(final,/ANALIZAR MI SITUACIÓN/);assert.match(final,/EXPLORAR SOLUCIONES/);assert.doesNotMatch(final,/HABLAR CON RAUVIA/);
+  assert.equal((main.match(/data-aethryon-section=/g)||[]).length,9);
+ });
+-test('Main route metadata stays equal to the V71 baseline during V72 adaptation',()=>{
++test('Main route metadata preserves V71 apart from the V73 founder reference',()=>{
+  const baseline=JSON.parse(fs.readFileSync('tests/fixtures/v72-route-baseline.json','utf8'));
+  for(const [route,old] of Object.entries(baseline)){
+   const h=fs.readFileSync('dist/'+(route==='/'?'':route.slice(1))+'index.html','utf8');
+   assert.deepEqual([...h.matchAll(/<title>(.*?)<\/title>/g)].map(m=>m[1]),old.title);
+   assert.deepEqual([...h.matchAll(/<meta\b[^>]*>/g)].map(m=>m[0]).filter(m=>!m.includes('name="viewport"')),old.meta);
+   assert.deepEqual([...h.matchAll(/<link\b[^>]*rel="canonical"[^>]*>/g)].map(m=>m[0]),old.canonical);
+-  assert.deepEqual([...h.matchAll(/<script type="application\/ld\+json"[^>]*>(.*?)<\/script>/g)].map(m=>JSON.parse(m[1])),old.jsonld);
++  assert.deepEqual([...h.matchAll(/<script type="application\/ld\+json"[^>]*>(.*?)<\/script>/g)].map(m=>JSON.parse(m[1])),withFounder(old.jsonld));
+  }
+ });
+ test('Compiled production returns AETHRYON content and live internal destinations', {skip:!process.env.TEST_BASE_URL},async()=>{
+--- V72/tests/mobile-experience.test.mjs
++++ V73/tests/mobile-experience.test.mjs
+@@ -3,7 +3,8 @@
+ const manifest=JSON.parse(fs.readFileSync('dist/.vite/manifest.json','utf8'));
+ const pageKeys=['HomePage','SolucionesPage','AethryonPage','Ruta90Page','FrenteComercialPage','NosotrosPage','RecursosPage','CasosIndexPage'];
+ const text=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+-function normalize(h){return h.replace(/<link\b(?=[^>]*rel="(?:stylesheet|modulepreload)")[^>]*>/g,'').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET').replace(/_R_[A-Za-z0-9]+_/g,'_R_ID_').replace(/\s+/g,' ').trim();}
++// Strip only the two explicitly authorized V73 changes before the frozen V72 hash check.
++function normalize(h){return h.replace(',"founder":{"@id":"https://rauvia.com.mx/#raul-morales"}', '').replace(/<p\b[^>]*>Experiencia digital desarrollada por[\s\S]*?<\/p>/g,'').replace(/<link\b(?=[^>]*rel="(?:stylesheet|modulepreload)")[^>]*>/g,'').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET').replace(/_R_[A-Za-z0-9]+_/g,'_R_ID_').replace(/\s+/g,' ').trim();}
+ function closure(key){const seen=new Set();function walk(k){if(seen.has(k))return;seen.add(k);for(const child of manifest[k].imports||[])walk(child);}walk('index.html');walk(key);return [...seen].map(k=>manifest[k].file);}
+ test('All eight entries retain their unique H1 and complete static route content',()=>{
+  for(const [route,old] of Object.entries(baseline)){const h=fs.readFileSync('dist/'+(route==='/'?'':route.slice(1))+'index.html','utf8');const headings=[...h.matchAll(/<h1\b[^>]*>(.*?)<\/h1>/g)].map(m=>text(m[1]));assert.deepEqual(headings,old.h1.map(text),route);assert.ok(h.includes('rv-main-site'),route);assert.match(h,/viewport-fit=cover/);assert.equal((h.match(/name="viewport"/g)||[]).length,1);}

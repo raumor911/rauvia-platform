@@ -1,0 +1,38 @@
+@import "./styles/editorial.css";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme {
+  --color-rauvia-bg: #f8fafc;
+  --color-rauvia-blue: #1E4A74;
+  --color-rauvia-blue-dark: #0A2540;
+  --color-rauvia-navy: #0A2540;
+  --color-rauvia-navy-dark: #051320;
+  --color-rauvia-gold: #E6A300;
+  --color-rauvia-gold-light: #FFD766;
+  
+  --color-rauvia-card: #ffffff;
+  --color-rauvia-border: #e2e8f0;
+  --color-rauvia-text: #0f172a;
+  --color-rauvia-gray: #475569;
+  --color-rauvia-accent: #1E4A74;
+  
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-spin-reverse-slow: spin-reverse 12s linear infinite;
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@layer base {
+  body {
+    @apply bg-rauvia-bg text-slate-800 antialiased font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/40 shadow-sm;
+}
+
+

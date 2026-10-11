@@ -1,0 +1,2658 @@
+{
+  "schema_version": "1.0.0",
+  "graph_version": "1.0.0",
+  "locale": "es-MX",
+  "scope": "public",
+  "basis": "Editorial catalog snapshot; not market demand, efficacy, or the full live WordPress inventory.",
+  "limitations": [
+    "Coverage ≠ market demand.",
+    "Crawler hit ≠ human demand.",
+    "Case ≠ guarantee.",
+    "Correlation ≠ causality.",
+    "Internal benchmark ≠ sales result.",
+    "Capability in construction ≠ completed outcome.",
+    "Possible interventions require context and diagnosis.",
+    "/llmo/ is a RAUVIA convention, not a conversation API or mandatory protocol; no indexing or citation guarantee."
+  ],
+  "intents": [
+    {
+      "intent": "intent:agenda-whatsapp-medicos",
+      "label": "Agenda y WhatsApp para médicos",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:friccion-contacto",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:agenda-whatsapp-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:automatizar-o-estructurar",
+      "label": "Diferencia entre automatización y estructuración",
+      "family": "COMPARISON",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:tecnologia-sin-proceso"
+      ],
+      "restrictions": [
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:capacidad-tecnica-no-se-percibe",
+      "label": "Tenemos mucha capacidad técnica pero nuestra web no la refleja.",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:clientes-interesados-se-pierden",
+      "label": "Los clientes interesados se pierden",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:clientes-no-entienden-mi-oferta",
+      "label": "Los clientes no entienden mi oferta",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:clientes-no-entienden-oferta-tecnica",
+      "label": "Los clientes no entienden la oferta técnica",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:como-dar-seguimiento-cotizaciones",
+      "label": "Cómo dar seguimiento a cotizaciones",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:como-explicar-capacidad-industrial",
+      "label": "Cómo explicar capacidad industrial",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:como-explicar-servicio-profesional",
+      "label": "Cómo explicar un servicio profesional",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:como-generar-confianza-online",
+      "label": "Cómo generar confianza online",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:como-ordenar-operacion-pyme",
+      "label": "Cómo ordenar la operación de una PyME",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:procesos-fragmentados"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:como-presentar-servicios-tecnicos",
+      "label": "Cómo presentar servicios técnicos",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:como-reducir-dependencia-dueno",
+      "label": "Cómo reducir la dependencia del dueño en una empresa",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:dependencia-fundador"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:consultoria-escalar-operaciones",
+      "label": "Consultoría para escalar operaciones",
+      "family": "PROVIDER",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:procesos-fragmentados"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:cotizaciones-sin-seguimiento",
+      "label": "Tengo prospectos pero después de cotizar no sé qué ocurrió.",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:crecimiento-genera-desorden",
+      "label": "El crecimiento genera desorden",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:procesos-fragmentados"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:crm-pyme",
+      "label": "CRM para una PyME",
+      "family": "CATEGORY",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:tecnologia-sin-proceso"
+      ],
+      "restrictions": [
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:demasiadas-prioridades",
+      "label": "Tengo demasiadas prioridades",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:prioridades-confusas"
+      ],
+      "restrictions": [
+        "restriction:falta-priorizacion"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-priorizacion"
+      ],
+      "capabilities": [
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:depender-directorios-medicos",
+      "label": "Dependo de directorios médicos",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:depender-redes-medico",
+      "label": "Como médico dependo de redes sociales",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:empresa-b2b-no-comunica-valor",
+      "label": "La empresa B2B no comunica su valor",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:empresa-dejo-de-avanzar",
+      "label": "La empresa dejó de avanzar",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:ejecucion-sin-continuidad"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:falta-priorizacion"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:claridad-priorizacion"
+      ],
+      "capabilities": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:empresa-depende-del-dueno",
+      "label": "Mi empresa depende demasiado de mí.",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:dependencia-fundador"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:explicar-especialidad",
+      "label": "Quiero explicar mi especialidad médica",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos-especialistas",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:facilitar-primer-contacto",
+      "label": "Quiero facilitar el primer contacto médico",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:friccion-contacto",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:agenda-whatsapp-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:infraestructura-temporal-b2b",
+      "label": "Seguimiento comercial en infraestructura temporal B2B",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [
+        "vertical:temporary-infrastructure"
+      ],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:case-infraestructura-temporal-b2b",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:mi-experiencia-no-se-entiende",
+      "label": "Mi experiencia no se entiende",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:mi-web-no-representa-mi-negocio",
+      "label": "Mi web no representa mi negocio",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:mostrar-trayectoria-medica",
+      "label": "Quiero mostrar mi trayectoria médica",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos-especialistas",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:mostrar-ubicacion-consultorio",
+      "label": "Quiero mostrar la ubicación del consultorio",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:friccion-contacto",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:seo-local-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:no-se-que-pasa-oportunidades",
+      "label": "No sé qué pasa con las oportunidades",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:no-se-que-resolver-primero",
+      "label": "No sé qué resolver primero",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:prioridades-confusas"
+      ],
+      "restrictions": [
+        "restriction:falta-priorizacion"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-priorizacion"
+      ],
+      "capabilities": [
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:organizar-seguimiento-comercial",
+      "label": "Quiero organizar el seguimiento comercial",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:pagina-comercial-servicios-profesionales",
+      "label": "Página comercial para servicios profesionales",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:pagina-web-consultorio-medico",
+      "label": "Página web para consultorio médico",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-consultorio-medico",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:pagina-web-gratis-medicos",
+      "label": "Página web gratis para médicos",
+      "family": "COMPARISON",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-gratis-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:pagina-web-medicos",
+      "label": "Página web para médicos",
+      "family": "CATEGORY",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:pagina-web-medicos-especialistas",
+      "label": "Soy médico especialista y quiero que entiendan qué atiendo, dónde consulto y cómo contactarme.",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos-especialistas",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:seo-local-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:pagina-web-servicios-profesionales",
+      "label": "Página web para servicios profesionales",
+      "family": "CATEGORY",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:presencia-medica-dispersa",
+      "label": "Mi presencia médica está dispersa",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:procesos-dependen-personas",
+      "label": "Los procesos dependen de personas",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:procesos-fragmentados"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:prospectos-no-avanzan",
+      "label": "Tengo prospectos pero no avanzan",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-es-aethryon",
+      "label": "¿Qué es inteligencia estructural y AETHRYON?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:aethryon",
+      "supportingAssets": [],
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-es-arquitectura-operativa",
+      "label": "¿Qué es arquitectura operativa?",
+      "family": "ENTITY",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:procesos-fragmentados"
+      ],
+      "restrictions": [
+        "restriction:centralizacion-operativa",
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:autonomia-operativa",
+        "capability:operacion-repetible"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-es-rauvia",
+      "label": "¿Qué es RAUVIA?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:nosotros",
+      "supportingAssets": [],
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-es-ruta90",
+      "label": "¿Qué es Ruta 90?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:ruta90",
+      "supportingAssets": [],
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-necesito-antes-crm",
+      "label": "¿Qué debe existir antes de un CRM?",
+      "family": "COMPARISON",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:tecnologia-sin-proceso"
+      ],
+      "restrictions": [
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:seo-local-medicos",
+      "label": "SEO local para médicos",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:seo-local-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:ser-encontrado-localmente",
+      "label": "Quiero ser encontrado localmente como médico",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:seo-local-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:servicio-dificil-de-explicar",
+      "label": "Soy consultor y mi página no explica bien qué hago.",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:servicios-especializados-dificiles-explicar",
+      "label": "Los servicios especializados son difíciles de explicar",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:sistema-comercial-pyme",
+      "label": "Sistema comercial para PyME",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:oportunidades-sin-trazabilidad"
+      ],
+      "restrictions": [
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:medicion",
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:sitio-no-refleja-capacidad",
+      "label": "El sitio no refleja nuestra capacidad",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:sitio-web-consultoria",
+      "label": "Sitio web para consultoría",
+      "family": "CATEGORY",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:sitio-web-empresa-b2b",
+      "label": "Sitio web para una empresa B2B",
+      "family": "CATEGORY",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:sitio-web-servicios-especializados",
+      "label": "Sitio web para servicios especializados",
+      "family": "SOLUTION",
+      "icps": [
+        "icp:brecha-capacidad-percepcion"
+      ],
+      "verticals": [
+        "vertical:technical-b2b"
+      ],
+      "problems": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:sitio-web-servicios-especializados",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:software-o-proceso",
+      "label": "¿Necesito software o un proceso?",
+      "family": "COMPARISON",
+      "icps": [
+        "icp:pyme-dependencia-operativa"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:tecnologia-sin-proceso"
+      ],
+      "restrictions": [
+        "restriction:conocimiento-concentrado"
+      ],
+      "capabilityGaps": [
+        "capability-gap:autonomia-operativa",
+        "capability-gap:operacion-repetible"
+      ],
+      "capabilities": [
+        "capability:operacion-repetible",
+        "capability:priorizacion"
+      ],
+      "possibleInterventions": [
+        "method:ruta90",
+        "offering:arquitectura-operativa",
+        "offering:automatizacion",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [
+        {
+          "id": "method:ruta90",
+          "condition": "Sólo si se ha identificado una prioridad y existe capacidad de ejecución y revisión; requiere diagnóstico de pertinencia."
+        },
+        {
+          "id": "offering:automatizacion",
+          "condition": "Sólo con proceso, responsables y reglas definidos; no sustituye la estructuración de la operación."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Ante una prioridad o restricción que requiera análisis; no constituye un diagnóstico automático."
+        }
+      ],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:ruta90"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:solicitar-cita-online",
+      "label": "Quiero solicitar una cita online",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:friccion-contacto",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:agenda-whatsapp-medicos",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:solo-tengo-redes-sociales",
+      "label": "Sólo tengo redes sociales",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:varias-especialidades-consultorio",
+      "label": "Varias especialidades en el consultorio",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-consultorio-medico",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:varias-ubicaciones-medicas",
+      "label": "Varias ubicaciones médicas",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:ruta-contacto-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:friccion-contacto",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-consultorio-medico",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:varios-medicos-consultorio",
+      "label": "Varios médicos en un consultorio",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:profesional-medico-presencia-digital"
+      ],
+      "verticals": [
+        "vertical:medical"
+      ],
+      "problems": [
+        "problem:informacion-medica-dispersa"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial",
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:contacto-claro",
+        "capability:informacion-especialidad",
+        "capability:representacion-comercial",
+        "capability:ubicacion-clara"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-web-consultorio-medico",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:pagina-web-medicos",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:web-para-consultor",
+      "label": "Web para consultor",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:oferta-poco-clara"
+      ],
+      "restrictions": [
+        "restriction:traduccion-comercial-insuficiente"
+      ],
+      "capabilityGaps": [
+        "capability-gap:claridad-comercial"
+      ],
+      "capabilities": [
+        "capability:representacion-comercial",
+        "capability:traduccion-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
+      "intent": "intent:whatsapp-carga-proceso-comercial",
+      "label": "WhatsApp carga todo el proceso comercial",
+      "family": "PROBLEM",
+      "icps": [
+        "icp:pyme-deterioro-comercial"
+      ],
+      "verticals": [],
+      "problems": [
+        "problem:seguimiento-comercial-fragmentado"
+      ],
+      "restrictions": [
+        "restriction:informacion-dispersa",
+        "restriction:seguimiento-comercial-informal"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:ruta-contacto",
+        "capability-gap:trazabilidad-comercial"
+      ],
+      "capabilities": [
+        "capability:seguimiento-comercial-estructurado",
+        "capability:trazabilidad-comercial"
+      ],
+      "possibleInterventions": [
+        "offering:sistema-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [
+        "asset:aethryon"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    }
+  ]
+}

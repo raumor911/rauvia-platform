@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-10",
+  "evidence": "Hostinger build metadata and original v75.1 source files; not a live crawl",
+  "architecture": {
+    "frontend": "React + Vite, prerendered HTML",
+    "backend": "Express",
+    "node": 24,
+    "entry": "dist/server.cjs",
+    "cms": "WordPress headless at blog.rauvia.com.mx"
+  },
+  "publicPageRoutes": [
+    "/ruta-90/",
+    "/",
+    "/nosotros/",
+    "/soluciones/",
+    "/aethryon/",
+    "/recursos/",
+    "/frente-comercial/",
+    "/sitio-web-comercial-para-pymes/",
+    "/sitio-web-servicios-especializados/",
+    "/casos/",
+    "/casos/infraestructura-temporal-b2b/",
+    "/pagina-comercial-servicios-profesionales/",
+    "/pagina-web-gratis-para-medicos/",
+    "/pagina-web-para-medicos-especialistas/",
+    "/seo-local-para-medicos/",
+    "/pagina-web-para-medicos/",
+    "/pagina-web-para-consultorio-medico/",
+    "/pagina-web-medicos-agenda-whatsapp/",
+    "/aviso-de-privacidad/",
+    "/terminos/"
+  ],
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/llmo"
+    },
+    {
+      "method": "GET",
+      "path": "/api/wp/posts"
+    },
+    {
+      "method": "POST",
+      "path": "/api/events"
+    },
+    {
+      "method": "POST",
+      "path": "/api/llm"
+    },
+    {
+      "method": "GET",
+      "path": "/api/db/health"
+    },
+    {
+      "method": "POST",
+      "path": "/internal/indexnow"
+    },
+    {
+      "method": "POST",
+      "path": "/internal/revalidate-sitemap"
+    },
+    {
+      "method": "GET",
+      "path": "/healthz"
+    },
+    {
+      "method": "GET",
+      "path": "/internal/runtime-status"
+    },
+    {
+      "method": "GET",
+      "path": "/sitemap.xml"
+    },
+    {
+      "method": "GET",
+      "path": "/shell.html"
+    },
+    {
+      "method": "GET/HEAD",
+      "path": "/1109c92c84549878ea17f221eaba40bc.txt"
+    },
+    {
+      "method": "GET/HEAD",
+      "path": "/recursos/{slug}/"
+    }
+  ],
+  "sitemap": {
+    "path": "/sitemap.xml",
+    "source": "scripts/public-routes.js + complete paginated published WP posts",
+    "cachedUrls": [
+      "https://rauvia.com.mx/ruta-90/",
+      "https://rauvia.com.mx/",
+      "https://rauvia.com.mx/nosotros/",
+      "https://rauvia.com.mx/soluciones/",
+      "https://rauvia.com.mx/aethryon/",
+      "https://rauvia.com.mx/recursos/",
+      "https://rauvia.com.mx/frente-comercial/",
+      "https://rauvia.com.mx/sitio-web-comercial-para-pymes/",
+      "https://rauvia.com.mx/sitio-web-servicios-especializados/",
+      "https://rauvia.com.mx/casos/",
+      "https://rauvia.com.mx/casos/infraestructura-temporal-b2b/",
+      "https://rauvia.com.mx/pagina-comercial-servicios-profesionales/",
+      "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
+      "https://rauvia.com.mx/pagina-web-para-medicos-especialistas/",
+      "https://rauvia.com.mx/seo-local-para-medicos/",
+      "https://rauvia.com.mx/pagina-web-para-medicos/",
+      "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
+      "https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/",
+      "https://rauvia.com.mx/aviso-de-privacidad/",
+      "https://rauvia.com.mx/terminos/",
+      "https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/",
+      "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/",
+      "https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/",
+      "https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/",
+      "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+      "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/",
+      "https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/",
+      "https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/",
+      "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+      "https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/"
+    ],
+    "defaultRefreshMs": 21600000,
+    "productionEnvironmentValue": "not readable: Hostinger masks values"
+  },
+  "publication": {
+    "institutional": "source deployment",
+    "wordpress": "publish in CMS; optional new bridge included, not installed",
+    "existingRevalidation": "POST /internal/revalidate-sitemap",
+    "newHook": "POST /internal/indexnow"
+  }
+}

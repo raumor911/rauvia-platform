@@ -1,0 +1,807 @@
+{
+  "eventsRecordedLocally": 386,
+  "examples": [
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 390,
+        "viewport_height": 844,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 320,
+        "viewport_height": 568,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 360,
+        "viewport_height": 800,
+        "orientation": "portrait",
+        "viewport_class": "compact"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 375,
+        "viewport_height": 812,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 393,
+        "viewport_height": 852,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 430,
+        "viewport_height": 932,
+        "orientation": "portrait",
+        "viewport_class": "phone"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 844,
+        "viewport_height": 390,
+        "orientation": "landscape",
+        "viewport_class": "medium"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "solution_view",
+      "page_path": "/soluciones/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "aethryon_view",
+      "page_path": "/aethryon/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/ruta-90/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/frente-comercial/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/nosotros/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/recursos/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    },
+    {
+      "event_name": "page_view",
+      "page_path": "/casos/",
+      "properties": {
+        "viewport_width": 932,
+        "viewport_height": 430,
+        "orientation": "landscape",
+        "viewport_class": "tablet"
+      }
+    }
+  ],
+  "noDatabaseWrite": true,
+  "realSegmentValidation": "unit mocks only; no hardware"
+}

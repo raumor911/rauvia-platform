@@ -1,0 +1,42 @@
+[
+  {
+    "id": "c1",
+    "pregunta": "¿Qué es arquitectura operativa?",
+    "intencion": "Definición",
+    "entidad": "Arquitectura Operativa",
+    "respuesta_esperada": "Es la interrelación entre procesos, negocio y tecnología para generar control y ejecución.",
+    "estado": "PENDING_CONTENT"
+  },
+  {
+    "id": "c2",
+    "pregunta": "¿Qué es un sistema comercial?",
+    "intencion": "Definición",
+    "entidad": "Sistemas Comerciales",
+    "respuesta_esperada": "Estructurar la adquisición y retención de clientes más allá de herramientas (CRM).",
+    "estado": "PENDING_CONTENT"
+  },
+  {
+    "id": "c3",
+    "pregunta": "¿Qué debe existir antes de un CRM?",
+    "intencion": "Diagnóstico/Procedimiento",
+    "entidad": "Sistemas Comerciales",
+    "respuesta_esperada": "Procesos comerciales definidos.",
+    "estado": "PENDING_CONTENT"
+  },
+  {
+    "id": "c4",
+    "pregunta": "¿Qué es crecimiento estructural?",
+    "intencion": "Definición",
+    "entidad": "Crecimiento Estructural",
+    "respuesta_esperada": "Escalar operaciones sin depender exclusivamente del fundador.",
+    "estado": "PENDING_CONTENT"
+  },
+  {
+    "id": "c5",
+    "pregunta": "¿Qué es inteligencia estructural?",
+    "intencion": "Definición",
+    "entidad": "Inteligencia Estructural",
+    "respuesta_esperada": "Método para separar señal de ruido en la toma de decisiones, usando evidencia.",
+    "estado": "PENDING_CONTENT"
+  }
+]

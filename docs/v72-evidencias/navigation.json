@@ -1,0 +1,48 @@
+[
+  {
+    "scroll": 83.984375,
+    "step": "before-menu"
+  },
+  {
+    "anchor": 83.984375,
+    "dialog": false,
+    "focus": "Abrir menú",
+    "lock": "",
+    "step": "outside-close"
+  },
+  {
+    "dialog": false,
+    "h1": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "path": "/aethryon",
+    "step": "link"
+  },
+  {
+    "anchor": 83.984375,
+    "hash": "#catalogo",
+    "path": "/soluciones/",
+    "step": "back"
+  },
+  {
+    "h1": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA.",
+    "path": "/aethryon",
+    "step": "forward"
+  },
+  {
+    "panel": {
+      "bottom": 390,
+      "height": 390,
+      "left": 460,
+      "right": 844,
+      "top": 0,
+      "width": 384,
+      "x": 460,
+      "y": 0
+    },
+    "step": "landscape-open"
+  },
+  {
+    "dialog": false,
+    "lock": "",
+    "step": "desktop-resize"
+  }
+]

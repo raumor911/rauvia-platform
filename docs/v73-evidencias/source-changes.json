@@ -1,0 +1,29 @@
+{
+  "baselineZip": "rauvia-platform-v72.zip",
+  "baselineSha256": "22926ee3568cd065237dd2ac6a9202a662ee935c90a2f3e58f32e2945ede310e",
+  "changed": [
+    "docs/founder-entity-policy.md",
+    "docs/phase-0-root-htaccess.md",
+    "package.json",
+    "scripts/entity-audit.js",
+    "server.ts",
+    "src/components/AethryonCore.tsx",
+    "src/components/Footer.tsx",
+    "src/components/HeroSection.tsx",
+    "src/pages/NosotrosPage.tsx",
+    "src/pages/SolucionesPage.tsx",
+    "src/seo/buildMetaTags.ts",
+    "tests/aethryon-ux.test.mjs",
+    "tests/mobile-experience.test.mjs"
+  ],
+  "added": [
+    "public/media/aethryon-convergence-animated-optimized-v73.svg",
+    "public/media/rauvia-nosotros-hero-structure-v73.svg",
+    "public/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+    "server/seo/legacyRoutes.ts",
+    "tests/fixtures/wp-growth-post.json",
+    "tests/v73-browser-evidence.test.mjs",
+    "tests/v73-stabilization.test.mjs"
+  ],
+  "removedSourceFiles": []
+}

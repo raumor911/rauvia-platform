@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72">
+ <title>RAUVIA</title>
+ <defs><rect id="tile" width="10" height="10"/></defs>
+ <g transform="translate(1 1)">
+ <g><use href="#tile" fill="#276c8b"/><use href="#tile" x="12" fill="#1f6383"/><use href="#tile" x="24" fill="#175a7d"/><use href="#tile" x="36" fill="#0f5074"/><use href="#tile" x="48" fill="#064467"/><use href="#tile" x="60" fill="#ffc64e"/></g>
+ <g transform="translate(0 12)"><use href="#tile" fill="#2a708f"/><use href="#tile" x="12" fill="#236887"/><use href="#tile" x="24" fill="#1a5e7f"/><use href="#tile" x="36" fill="#125578"/><use href="#tile" x="48" fill="#094a6d"/><use href="#tile" x="60" fill="#003c61"/></g>
+ <g transform="translate(0 24)"><use href="#tile" fill="#327a98"/><use href="#tile" x="12" fill="#28718f"/><use href="#tile" x="24" fill="#1d6685"/><use href="#tile" x="36" fill="#135a7b"/><use href="#tile" x="48" fill="#094c70"/><use href="#tile" x="60" fill="#003d63"/></g>
+ <g transform="translate(0 36)"><use href="#tile" fill="#347d9a"/><use href="#tile" x="12" fill="#075074"/><use href="#tile" x="24" fill="#0a5275"/><use href="#tile" x="36" fill="#084d70"/><use href="#tile" x="48" fill="#034568"/><use href="#tile" x="60" fill="#003b60"/></g>
+ <g transform="translate(0 48)"><use href="#tile" fill="#ffc64e"/><use href="#tile" x="12" fill="#064b6e"/><use href="#tile" x="24" fill="#064a6d"/><use href="#tile" x="36" fill="#044668"/><use href="#tile" x="48" fill="#014063"/><use href="#tile" x="60" fill="#00395d"/></g>
+ <g transform="translate(0 60)"><use href="#tile" fill="#064d70"/><use href="#tile" x="12" fill="#064a6d"/><use href="#tile" x="24" fill="#044669"/><use href="#tile" x="36" fill="#024265"/><use href="#tile" x="48" fill="#003d61"/><use href="#tile" x="60" fill="#00375a"/></g>
+ </g>
+</svg>

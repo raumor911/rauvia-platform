@@ -1,0 +1,10 @@
+{
+  "release": "V75",
+  "capturedAt": "2026-10-07T16:29:56.278Z",
+  "environment": "local production",
+  "combinations": 56,
+  "css": "same bytes as V74",
+  "wordpressClient": "same bytes as V74; production endpoint",
+  "console": [],
+  "physicalDeviceCertification": false
+}

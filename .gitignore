@@ -1,0 +1,20 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+data/indexnow-state.json*
+
+# Local state, credentials and packaging
+*.zip
+*.tmp
+*.temp
+*.pid
+*.pem
+*.key
+.prerender-build.mjs
+.private/
+private/

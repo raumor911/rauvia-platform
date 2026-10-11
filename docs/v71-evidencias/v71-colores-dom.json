@@ -1,0 +1,3773 @@
+[
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.97 0.014 254.604)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "RAUVIA · AETHRYON · SISTEMA DE ANÁLISIS Y DECISIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "60px",
+    "fontWeight": "800",
+    "text": "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "60px",
+    "fontWeight": "800",
+    "text": "FRENANDO EL CRECIMIENTO"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(138, 91, 0)",
+    "fontSize": "60px",
+    "fontWeight": "800",
+    "text": "."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Quieres hacer crecer tu empresa, pero quizá no está claro qué problema debes resolver prim"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "600",
+    "text": "AETHRYON organiza esa situación y la convierte en una ruta de acción."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "ANALIZAR MI SITUACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "VER CÓMO FUNCIONA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "AETHRYON en 30 segundos"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Úsalo cuando"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Tienes varios problemas, oportunidades o iniciativas y no está claro qué conviene resolver"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Recibes"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Una prioridad justificada y una ruta de acción."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "No es"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Una sustitución del criterio del dueño o del equipo directivo, ni una garantía automática "
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "¿Te ocurre algo de esto?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Hay oportunidades, pero no avanzan"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Hay clientes, proyectos o ideas, pero no está claro cuál atender primero."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "La operación genera fricción"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Crecer aumenta el retrabajo, el desorden y la presión sobre el equipo."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Hay demasiadas decisiones abiertas"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Tiempo, dinero y atención se reparten sin una prioridad clara."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "600",
+    "text": "Ampliar el contexto de estas situaciones"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Puede haber oportunidades comerciales, problemas operativos, tecnología sin integrar, proc"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "El problema no siempre es la falta de capacidad. Con frecuencia es no saber dónde interven"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "Oportunidades sin avance"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Existen clientes, proyectos o ideas, pero no está claro cuál merece atención inmediata ni "
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "Fricción operativa"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Los procesos dependen de personas, existe retrabajo o cada intento de crecer aumenta el de"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "Decisiones abiertas"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Se distribuyen tiempo, dinero y atención entre distintas iniciativas sin saber cuál puede "
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(230, 163, 0)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "CASO DE USO · EJEMPLO CONCEPTUAL"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "Una empresa quiere crecer, pero tiene tres opciones."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.869 0.022 252.894)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Ejemplo para explicar una decisión; no representa un caso de éxito documentado."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "01Situación"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "01"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.929 0.013 255.508)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "La empresa quiere crecer."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "02Opciones"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "02"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.929 0.013 255.508)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Invertir en marketing, contratar personal o automatizar su operación."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "03Análisis AETHRYON"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "03"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.929 0.013 255.508)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "El análisis muestra que la empresa ya recibe demanda suficiente, pero su operación depende"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.208 0.042 265.755)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "04Prioridad"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.208 0.042 265.755)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "04"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.208 0.042 265.755)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.929 0.013 255.508)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Estructurar y automatizar el proceso operativo antes de aumentar la captación."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "05Por qué"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 215, 102)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "05"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.929 0.013 255.508)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Esta prioridad busca evitar invertir en crecimiento antes de contar con la capacidad neces"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "RESULTADO"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "Qué recibes"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "600",
+    "text": "No recibes solo un diagnóstico. Recibes una decisión estructurada."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "El valor del análisis no está en describir el problema, sino en convertirlo en una decisió"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Prioridad justificada"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué conviene resolver primero y por qué."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Ruta de acción"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Acciones, orden y responsables."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Riesgos y dependencias"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué puede bloquear el avance y qué condiciones vigilar."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Indicadores de seguimiento"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Cómo observar si la decisión comienza a producir avance."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "600",
+    "text": "Ver los seis resultados del análisis"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "01"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Definición del Problema"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué está ocurriendo y por qué necesita atención."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "02"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Mapa de Señales y Restricciones"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué información respalda la situación y qué puede bloquearla."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.98 0.00449496 0.0153556 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(138, 91, 0)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "03"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.98 0.00449496 0.0153556 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Prioridad Recomendada"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.98 0.00449496 0.0153556 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué conviene resolver primero y con qué justificación."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "04"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Escenarios y Riesgos"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué puede ocurrir y qué condiciones deben vigilarse."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.97 -0.00371685 -0.0134976 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "05"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.97 -0.00371685 -0.0134976 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Ruta de Acción"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.97 -0.00371685 -0.0134976 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Qué debe hacerse, en qué orden y con qué responsables."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "06"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Indicadores de Seguimiento"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Cómo saber si la decisión comienza a producir avance."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "Posibles rutas después del análisis"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Según la prioridad identificada, la intervención puede requerir distintas capacidades. Est"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Frente Comercial"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Una presencia digital que explique tu valor y facilite el contacto."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar Frente Comercial"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Sistema Comercial / CRM"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Organizar oportunidades, seguimiento y responsabilidades comerciales."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar soluciones comerciales"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Arquitectura Operativa"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Definir procesos, roles y reglas para una operación más consistente."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar arquitectura operativa"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Desarrollo Tecnológico"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Construir la capacidad digital que necesita un proceso definido."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar desarrollo tecnológico"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Automatización"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Ejecutar tareas repetitivas con reglas claras e integración entre sistemas."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar automatización"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Ruta 90"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Organizar una prioridad clara cuando requiere un ciclo estructurado de ejecución."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Explorar Ruta 90"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "EXPLORAR SOLUCIONES"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "PROCESO"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "CÓMO FUNCIONA AETHRYON"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "El análisis se desarrolla en cuatro pasos. Cada uno reduce una parte de la incertidumbre h"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "ENTENDER LA SITUACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Reunimos el contexto, el objetivo, las señales disponibles y las restricciones reales de l"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "Resultado"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Una definición clara del problema."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "EVALUAR LAS CONDICIONES"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Analizamos si existe una necesidad real, qué obstáculos pueden presentarse y qué tan prepa"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "Resultado"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "text": "Una lectura objetiva de viabilidad y riesgo."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "ENCONTRAR LA PRIORIDAD"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Comparamos problemas, oportunidades y dependencias para identificar qué intervención puede"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "oklch(0.98 0.016 73.684)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(138, 91, 0)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "Resultado"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "oklch(0.98 0.016 73.684)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Una prioridad justificada."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "text": "DISEÑAR LA RUTA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Convertimos la prioridad en una secuencia de acciones, responsables, dependencias e indica"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "oklch(0.97 0.014 254.604)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "10px",
+    "fontWeight": "700",
+    "text": "Resultado"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "oklch(0.97 0.014 254.604)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Una ruta ejecutable."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "16px",
+    "fontWeight": "600",
+    "text": "Profundizar: por qué priorizar y cómo se organiza la información"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "LA CAUSA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "NO SIEMPRE FALTA UNA SOLUCIÓN.FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "FALTA SABER QUÉ DEBE RESOLVERSE PRIMERO."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Una empresa puede tener talento, conocimiento, tecnología, clientes y oportunidades y, aun"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Cuando las señales están dispersas, las prioridades compiten y las dependencias no son vis"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Antes de construir una solución, es necesario identificar la intervención correcta."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "Información"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "text": "Dispersa"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "Decisiones"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "text": "Abiertas"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(230, 163, 0)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "Prioridad"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "Visible"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(230, 163, 0)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "AETHRYON"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "48px",
+    "fontWeight": "800",
+    "text": "CONVIERTE INFORMACIÓN DISPERSAEN UNA DECISIÓN EJECUTABLE."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "text": "AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimi"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.279 -0.00709772 -0.040381 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.869 0.022 252.894)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "No sustituye la experiencia del dueño o del equipo directivo. La organiza, la contrasta y "
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "ORDENA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(203, 213, 225)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Reúne señales, problemas, restricciones y oportunidades."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "EVALÚA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(203, 213, 225)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Analiza las condiciones reales para avanzar y los obstáculos que podrían impedirlo."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(230, 163, 0)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "PRIORIZA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(203, 213, 225)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Distingue qué debe atenderse ahora, después o descartarse."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.901 0.058 230.902)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "CONVIERTE"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.208 -0.00310889 -0.0418848 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(203, 213, 225)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Transforma la prioridad en acciones, responsables, dependencias e indicadores."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "CRITERIOS DE ANÁLISIS"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "AETHRYON OBSERVACINCO CONDICIONES."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.279 0.041 260.031)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "01CLARIDAD"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "CLARIDAD"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "¿El problema y el resultado esperado están definidos con suficiente precisión?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.279 0.041 260.031)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "02DIFICULTADES"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "DIFICULTADES"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "¿Qué obstáculos internos o externos pueden impedir que la iniciativa avance?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.279 0.041 260.031)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "03ALINEACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "ALINEACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "¿Las condiciones, actores y recursos necesarios comienzan a coincidir?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.279 0.041 260.031)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "04OPORTUNIDAD"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "OPORTUNIDAD"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "¿Existe un momento favorable para actuar o conviene esperar?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.279 0.041 260.031)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "05CAPACIDAD DE EJECUCIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "CAPACIDAD DE EJECUCIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "¿La empresa cuenta con responsables, recursos y condiciones para implementar la decisión?"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "oklab(0.968 -0.00263402 -0.00648552 / 0.5)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "text": "Nota: Dentro del sistema, estas condiciones se modelan mediante indicadores."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "APLICACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "30px",
+    "fontWeight": "800",
+    "text": "AETHRYON ES ÚTIL CUANDO..."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Además de reconocer un síntoma, estas condiciones ayudan a valorar si necesitas analizar u"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Quieres hacer crecer tu empresa, pero no sabes qué resolver primero."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Tienes varias iniciativas compitiendo por tiempo y recursos."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Detectaste una oportunidad, pero no sabes si el momento es adecuado."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "La empresa crece, pero también aumenta la complejidad."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Necesitas justificar una decisión antes de invertir."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Quieres convertir un problema ambiguo en una ruta clara."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Necesitas distinguir entre una señal real y una percepción interna."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.372 0.044 257.287)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "Existen distintas opiniones y no hay un criterio común para decidir."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "DE LA DECISIÓN A LA EJECUCIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "AETHRYON IDENTIFICA LA PRIORIDAD.RAUVIA CONSTRUYE LA SOLUCIÓN."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "36px",
+    "fontWeight": "800",
+    "text": "RAUVIA CONSTRUYE LA SOLUCIÓN."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "El análisis define qué necesita atención y qué resultado debe buscarse. A partir de esa pr"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Cuando una prioridad requiere un ciclo estructurado de ejecución, Ruta 90 permite organiza"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "text": "Conocer Ruta 90 →"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.446 0.043 257.281)",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "text": "No todas las prioridades identificadas por AETHRYON requieren una Ruta 90; el tipo de inte"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(230, 163, 0)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "AETHRYON"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(10, 37, 64)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Análisis y prioridad"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(30, 74, 116)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "SOLUCIÓN RAUVIA"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "oklch(0.984 0.003 247.858)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Activo, sistema o estructura"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(71, 85, 105)",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "text": "IMPLEMENTACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "text": "Ejecución, medición y mejora"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(255, 255, 255)"
+    ],
+    "color": "rgb(10, 37, 64)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "CONOCER LAS SOLUCIONES"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(5, 19, 32)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "48px",
+    "fontWeight": "800",
+    "text": "NO NECESITAS TENERTODAS LAS RESPUESTAS.NECESITAS SABERCUÁL ES LA SIGUIENTEDECISIÓN CORRECT"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(5, 19, 32)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "oklch(0.901 0.058 230.902)",
+    "fontSize": "48px",
+    "fontWeight": "800",
+    "text": "NECESITAS SABERCUÁL ES LA SIGUIENTEDECISIÓN CORRECTA."
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(5, 19, 32)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(30, 74, 116)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "ANALIZAR MI SITUACIÓN"
+  },
+  {
+    "backgrounds": [
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(248, 250, 252)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgb(5, 19, 32)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "color": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "text": "EXPLORAR SOLUCIONES"
+  }
+]

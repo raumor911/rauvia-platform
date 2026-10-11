@@ -1,0 +1,34 @@
+@layer components {
+  /* ==================================================
+     NEUTRALIZACIÓN AGRESIVA DE LAYOUTS DE WORDPRESS
+     ================================================== */
+  
+  /* Destruir el sistema de columnas de Gutenberg */
+  .rauvia-editorial-content .wp-block-columns {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .rauvia-editorial-content .wp-block-column {
+    width: 100% !important;
+    flex-basis: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Destruir anchos forzados y alineaciones globales de WP */
+  .rauvia-editorial-content .alignwide,
+  .rauvia-editorial-content .alignfull {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Forzar que cualquier elemento mantenga el ancho de lectura (prose) */
+  .rauvia-editorial-content > * {
+    max-width: 100% !important;
+  }
+}

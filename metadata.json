@@ -1,0 +1,6 @@
+{
+  "name": "RAUVIA Consulting",
+  "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

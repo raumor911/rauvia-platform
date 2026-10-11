@@ -1,0 +1,49 @@
+{
+  "landscapeMenu72": {
+    "active": "HABLAR CON RAUVIA",
+    "activeRect": {
+      "bottom": 370,
+      "height": 44,
+      "left": 480,
+      "right": 824,
+      "top": 326,
+      "width": 344,
+      "x": 480,
+      "y": 326
+    },
+    "panel": {
+      "bottom": 390,
+      "height": 390,
+      "left": 460,
+      "right": 844,
+      "top": 0,
+      "width": 384,
+      "x": 460,
+      "y": 0
+    },
+    "scrollTop": 66
+  },
+  "desktopClosed72": {
+    "bodyOverflow": "",
+    "closed": true,
+    "rootInert": false
+  },
+  "criterionAfterFirstEnter": {
+    "open": false,
+    "outline": "solid",
+    "rect": {
+      "bottom": 471.7734375,
+      "height": 100,
+      "left": 17,
+      "right": 373,
+      "top": 371.7734375,
+      "width": 356,
+      "x": 17,
+      "y": 371.7734375
+    }
+  },
+  "criterionAfterSecondEnter": {
+    "open": true
+  },
+  "explanation": "CLARIDAD starts open. First Enter closes it; second Enter reopens it."
+}

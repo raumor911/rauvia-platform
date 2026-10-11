@@ -1,0 +1,1 @@
+observation_id,query_id,model,date,status,spontaneous_mention,entity_retrieved,source_cited,approximate_position,cited_page,associated_problem,associated_capability,associated_solution,reproduced_claims,unsupported_inferences,competitors,correct_intent,correct_capability,response_hash,anomalies
