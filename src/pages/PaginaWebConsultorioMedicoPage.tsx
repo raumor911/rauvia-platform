@@ -9,7 +9,7 @@ import './PaginaWebConsultorioMedicoPage.css';
 
 const canonical = 'https://rauvia.com.mx/pagina-web-para-consultorio-medico/';
 const ogDescription = 'Organiza la presencia digital de tu consultorio con información clara sobre ubicación, especialistas, horarios y formas de contacto.';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20informaci%C3%B3n%20para%20crear%20una%20p%C3%A1gina%20web%20para%20mi%20consultorio%20m%C3%A9dico.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20consultorio.%20Me%20gustar%C3%ADa%20definir%20el%20alcance%20seg%C3%BAn%20profesionales%2C%20sedes%20y%20forma%20de%20recibir%20solicitudes%20de%20cita.';
 const parentPath = '/pagina-web-para-medicos/';
 const images = {
   'pagina-consultorio-medico': ['Ejemplo conceptual de página web para consultorio médico con especialidades, profesionales, ubicación, horarios y solicitud de cita.', 1600, 900],
@@ -58,7 +58,7 @@ const solutions = [
   { icon: Building2, heading: 'Quiero empezar con una página gratuita', text: 'Conoce el alcance de la opción básica para médicos bajo dominio RAUVIA.', cta: 'Ver página web gratis', href: '/pagina-web-gratis-para-medicos/' },
   { icon: Compass, heading: 'Quiero mejorar mi presencia local', text: 'Ordenar la relación entre especialidad, ubicación, sitio y contacto.', cta: 'Conocer SEO local para médicos', href: '/seo-local-para-medicos/' },
 ] as const;
-function CTA({ children = 'Quiero una página para mi consultorio', href = whatsapp, secondary = false }: { children?: React.ReactNode; href?: string; secondary?: boolean }) {
+function CTA({ children = 'Cotizar la página de mi consultorio', href = whatsapp, secondary = false }: { children?: React.ReactNode; href?: string; secondary?: boolean }) {
   const className = `med-button${secondary ? ' med-button-secondary' : ''}`;
   const content = <>{children}<ArrowRight size={17} aria-hidden="true" /></>;
   return href.startsWith('/') ? <Link className={className} to={href}>{content}</Link> : <a className={className} href={href}>{content}</a>;
@@ -83,10 +83,11 @@ export default function PaginaWebConsultorioMedicoPage() {
     </div>
     <section className="hub-hero"><div className="med-container hub-hero-grid">
       <div className="hub-hero-copy"><span className="med-eyebrow">Una presencia propia para tu consultorio</span><h1>Página web para consultorio médico que <span>organiza tu práctica en un solo lugar</span></h1>
-        <p className="hub-lead">Presenta quién atiende, qué especialidades ofrece tu consultorio, dónde se encuentra, cuáles son sus horarios y cómo solicitar una cita.</p>
+        <p className="hub-lead">RAUVIA crea páginas web para consultorios médicos que reúnen profesionales, especialidades, ubicaciones, horarios y contacto. Las solicitudes de cita y las integraciones se acuerdan según la operación del consultorio.</p>
         <ul className="cons-hero-benefits"><li><Check size={15} aria-hidden="true" />Equipo y áreas de atención con contexto.</li><li><Check size={15} aria-hidden="true" />Información práctica fácil de consultar.</li><li><Check size={15} aria-hidden="true" />Un siguiente paso claro para contactar.</li></ul>
         <div className="med-actions"><CTA /><Link className="med-text-link" to={parentPath}>Ver página web para médicos <ArrowRight size={16} aria-hidden="true" /></Link></div>
-        <p className="hub-micro">Una presencia digital clara para que encontrar información sobre tu consultorio sea más sencillo.</p>
+        <p className="hub-micro">Para cotizar, cuéntanos cuántos profesionales y sedes necesitas presentar y cómo reciben las solicitudes de cita.</p>
+        <Link className="med-text-link" to="/pagina-web-medicos-agenda-whatsapp/">Comparar solicitud de citas y agenda con WhatsApp <ArrowRight size={16} aria-hidden="true" /></Link>
       </div>
       <div className="hub-hero-visual"><div className="hub-visual-label"><span>Un consultorio. Una presencia organizada.</span><span>Ejemplo conceptual</span></div><Mockup name="pagina-consultorio-medico" hero /><div className="hub-visual-footer"><span><UsersRound size={15} aria-hidden="true" />Profesionales</span><span><MapPin size={15} aria-hidden="true" />Ubicación</span><span><CalendarDays size={15} aria-hidden="true" />Agenda</span></div><p className="hub-image-note">Consultorio Áurea, personas, datos y horarios ficticios.</p></div>
     </div><div className="med-container hub-signals">Ubicación <span>·</span> Especialidades <span>·</span> Médicos <span>·</span> Horarios <span>·</span> Agenda</div></section>

@@ -1,7 +1,7 @@
 {
   "name": "react-example",
   "private": true,
-  "version": "76.0.0",
+  "version": "78.0.0",
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
@@ -34,7 +34,10 @@
     "audit:retrieval-backend": "node --import tsx scripts/retrieval-backend-audit.js",
     "typecheck:knowledge": "tsc -p tsconfig.knowledge.json",
     "test:indexnow": "node --test tests/indexnow.test.mjs tests/indexnow-app.test.mjs",
-    "build:server": "esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs"
+    "build:server": "esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs",
+    "test:wordpress-sync": "node --import tsx --test tests/wordpress-sync.test.ts tests/wordpress-sync-app.test.mjs",
+    "postinstall": "node scripts/prepare-hostinger.cjs",
+    "test:resources-performance": "node --import tsx --test tests/resources-performance.test.ts tests/resources-performance-app.test.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.21.0",

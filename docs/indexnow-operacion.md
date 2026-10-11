@@ -1,4 +1,8 @@
+> V78: mejoras de rendimiento del listado; véase [informe V78](v78/README.md). Las secciones anteriores de versiones previas se conservan como historia.
+
 # IndexNow en RAUVIA — operación v76
+
+> Actualización 76.0.1 en revisión: [sincronización WordPress](wordpress-sync/README.md). Requiere build completo antes de desplegar. Las referencias a despliegue/pruebas de v76 abajo son históricas; la activación posterior está documentada en activacion-v76.md.
 
 ## Arquitectura comprobada y procedencia
 
@@ -31,7 +35,7 @@ El código original no tenía un CMS de páginas institucionales ni hooks de pub
 
 Eventos admitidos: `published`, `updated`, `deleted`, `submit`. Máximo 1000 URL por evento y 60 solicitudes autenticadas por minuto y proceso. Cada URL debe ser HTTPS, del host exacto rauvia.com.mx, con slash final, sin query, fragmento, usuario, puerto explícito ni rutas internas. Un lote con cualquier URL inválida se rechaza completo. La lista debe contener solo páginas públicas reales; la validación de dominio no garantiza que una página exista. Al cambiar el slug se notifican la URL nueva y la anterior. Una baja debe poder notificarse aunque ya no figure en el sitemap y responda 404/410; no exigir 200 a las eliminaciones.
 
-El 202 del endpoint interno significa **evento persistido**, no envío confirmado a IndexNow ni indexación. A continuación se intenta la revalidación del sitemap y el envío. Si WordPress falla, el evento persistido igualmente se envía. El endpoint anterior `/internal/revalidate-sitemap` conserva su autenticación y límite de 10 segundos; cuando regenera el sitemap también produce detección de cambios.
+En 76.0.1 el evento primero invalida la caché y verifica los datos actuales de WordPress. Si la verificación falla, devuelve 503 con Retry-After para que WP-Cron reintente. El 202 significa que la sincronización de datos se verificó y la notificación IndexNow se persistió cuando los envíos están habilitados; no significa envío confirmado ni indexación. Si INDEXNOW_ENABLED=false, se sincroniza contenido y se devuelve enabled=false sin persistir una notificación de IndexNow. A continuación se intenta la revalidación del sitemap y el envío. El endpoint anterior `/internal/revalidate-sitemap` conserva su autenticación y límite de 10 segundos; cuando regenera el sitemap también produce detección de cambios.
 
 ## Puente WordPress headless opcional
 
@@ -41,7 +45,7 @@ Copiar `integrations/wordpress/rauvia-indexnow.php` a `wp-content/mu-plugins/rau
 define('RAUVIA_INDEXNOW_WEBHOOK_TOKEN', 'VALOR_REAL_DEL_MISMO_SECRETO');
 ```
 
-Se atienden publicaciones, actualizaciones, cambios de slug, paso de publicado a borrador/privado/papelera y eliminación definitiva. Revisiones, autosaves no publicados y otros tipos de contenido no producen envíos. El puente usa WP-Cron para un evento puntual a los cinco segundos y hasta tres reintentos posteriores ante errores de transporte, 429 y 5xx. Depende de que WP-Cron ya funcione y tenga ejecución regular. No se instala ningún servicio persistente. El puente debe instalarse y probarse en WordPress antes de considerar habilitados los hooks inmediatos. Se suministra como integración opcional; no se instaló ni se verificó contra el CMS real durante este trabajo. La caché original de artículos de Express sigue conservando su TTL de diez minutos.
+Se atienden publicaciones, actualizaciones, cambios de slug, paso de publicado a borrador/privado/papelera y eliminación definitiva. Revisiones, autosaves no publicados y otros tipos de contenido no producen envíos. El puente usa WP-Cron para un evento puntual a los cinco segundos y hasta tres reintentos posteriores ante errores de transporte, 429 y 5xx. Depende de que WP-Cron ya funcione y tenga ejecución regular. No se instala ningún servicio persistente. El puente debe instalarse y probarse en WordPress antes de considerar habilitados los hooks inmediatos. Se suministra como integración opcional; no se instaló ni se verificó contra el CMS real durante este trabajo. La caché de WordPress conserva su TTL de diez minutos y ahora se invalida por los eventos autenticados, incluidas consultas negativas y solicitudes en vuelo.
 
 ## Reintentos, observabilidad y recuperación
 

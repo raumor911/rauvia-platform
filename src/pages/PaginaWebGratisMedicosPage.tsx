@@ -5,9 +5,9 @@ import { ArrowRight, Check, CalendarDays, MapPin, MessageCircle, Search, UserRou
 import './PaginaWebGratisMedicosPage.css';
 
 const url = 'https://rauvia.com.mx/pagina-web-gratis-para-medicos/';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20mi%20sitio%20web%20m%C3%A9dico%20gratuito.';
-const personalized = 'https://wa.me/525518519173?text=' + encodeURIComponent('Hola RAUVIA, quiero una web médica personalizada.');
-const commercial = 'https://wa.me/525518519173?text=' + encodeURIComponent('Hola RAUVIA, quiero conocer el Frente Comercial Médico.');
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20mi%20sitio%20web%20m%C3%A9dico%20gratuito.';
+const personalized = 'https://wa.me/525586494076?text=' + encodeURIComponent('Hola RAUVIA, quiero una web médica personalizada.');
+const commercial = 'https://wa.me/525586494076?text=' + encodeURIComponent('Hola RAUVIA, quiero conocer el Frente Comercial Médico.');
 const asset = (name: string) => `/images/landing-medicos/${name}.webp`;
 const features = [
   { icon: UserRound, title: 'Perfil profesional', text: 'Tu nombre, especialidad, semblanza e información profesional en un lugar fácil de consultar.' },

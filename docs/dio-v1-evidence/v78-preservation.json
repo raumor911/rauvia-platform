@@ -1,0 +1,47 @@
+[
+  {
+    "file": "server.ts",
+    "sha256": "a26de778ebe3ebdc0265879dcf42190459f91f2f96cbf4b37b8b4f7e7d1ff6c8",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "server/wordpress/cache.ts",
+    "sha256": "e17d1b24e9d2c2aa53f7635510f3464998ef6a8cac33d76f3b7a9251bc93e9a3",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "server/wordpress/resources.ts",
+    "sha256": "0f9604c3ec9dcd3db83b76d38a2e0204fc81244058ab55135d202a43de5675eb",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "src/lib/wp.ts",
+    "sha256": "98167c1858edd582ee1e1ab1a3cbc5d3cc7e01fce8b2372ab00e421e73485e90",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "src/pages/RecursosPage.tsx",
+    "sha256": "b89e80a2ba66c36a3a5d6f3b81c1cf70824a478709c16133e6236ba8c228e256",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "scripts/render-static.tsx",
+    "sha256": "0f57793624984c0fe7dc03e76aeafa2d47d53e4d78586549be882d69cfefae8e",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "integrations/wordpress/rauvia-indexnow.php",
+    "sha256": "8fbc64d39f1ee2ad553aea862f0c2988d0da8fbddb1d79cfe86ae609e3695438",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "package.json",
+    "sha256": "dd45d53534c1010241760907bbe2e84833017ae49585ddb5e945cc5191f46a36",
+    "unchangedFromV78": true
+  },
+  {
+    "file": "package-lock.json",
+    "sha256": "d2987a6a77bf8b814803e39853dbfb96a089237e04e8655605a0482fae2300ec",
+    "unchangedFromV78": true
+  }
+]

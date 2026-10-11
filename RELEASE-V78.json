@@ -1,0 +1,25 @@
+{
+  "version": "78.0.0",
+  "previousVersion": "77.0.0",
+  "changes": [
+    "Resources stale-while-revalidate and bounded cold wait",
+    "Atomic persistent successful WordPress snapshot",
+    "Compact resource cards and memoized HTML",
+    "Bounded browser refresh with stale data and finite retries",
+    "Strict content hooks and original complete API preserved",
+    "DIO v1.0 on four existing commercial pages",
+    "Single commercial WhatsApp number +52 55 8649 4076 across nine corrected pages",
+    "Three documented Index Maps reconstructed from existing coverage"
+  ],
+  "dependenciesUpdated": false,
+  "sourceBase": "Complete local V78 source plus DIO patch derived from GitHub main bd9d596c01a083b80597e9601572daef78d60797",
+  "githubVersionPublished": false,
+  "compiledServerIncluded": true,
+  "compiledFrontendIncluded": true,
+  "frontendBuildStrategy": "npm install -> project postinstall -> npm run build on Hostinger",
+  "productionDeployment": false,
+  "productionPageLoadUnder3sVerified": false,
+  "totalUniquePassingTests": 161,
+  "testScope": "Current V78+DIO validation; original V78 historical 230-test result remains in docs/v78/validation.json",
+  "dioVersion": "1.0.0"
+}

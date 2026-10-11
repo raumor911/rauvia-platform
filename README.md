@@ -1,20 +1,16 @@
-# RAUVIA — desarrollo V76 (76.0.0)
+# RAUVIA V78 — 78.0.0 con DIO v1.0
 
-Este repositorio contiene el código completo de RAUVIA recuperado del paquete fuente original de Hostinger V75.1 y actualizado a V76 con IndexNow. Frontend React + Vite, backend Express y WordPress headless en blog.rauvia.com.mx. No se reconstruyó código a partir del sitio público.
+Incluye las correcciones de sincronización WordPress V77, rendimiento de Recursos V78 y Demand Interception Optimization sobre cuatro páginas comerciales existentes. WhatsApp comercial único: **+52 55 8649 4076**.
 
-La sincronización con GitHub conserva la versión 76.0.0 ya entregada. No despliega en Hostinger, modifica variables productivas, reinicia servicios ni configura despliegues automáticos. El ZIP V52 existente permanece como archivo histórico.
+[Informe DIO y validación V78](docs/dio-v1-report.md) · [Index Map 1](docs/index-map-1-profesionistas.md) · [Index Map 2](docs/index-map-2-medicos-consultorios.md) · [Index Map 3](docs/index-map-3-empresas-servicios.md) · [Sincronización GitHub](docs/github-sync-v78.md)
 
-- [Sincronización, pruebas y limitaciones de esta revisión](docs/github-sync-v76.md)
-- [Implementación V76](README-V76.md)
-- [Operación de IndexNow y puente WordPress](docs/indexnow-operacion.md)
-- [Verificación posterior de activación](docs/activacion-v76.md)
+Build completo de frontend y servidor, TypeScript y 161 pruebas aprobados. Se comprobaron 20 rutas HTML y 16 vistas responsive. Las mediciones de Recursos son locales con WordPress controlado; no acreditan carga total en producción ni aumento de contactos.
 
-Para una instalación nueva: `npm ci`, `npm run lint`, `npm run build`, `npm run test:indexnow`. El build genera `dist/`; `npm start` ejecuta exclusivamente el servidor productivo compilado. Nunca usar `npm run dev` como proceso de producción. Las variables se documentan en `.env.example`; los valores secretos deben permanecer fuera de Git.
+El repositorio versiona fuentes; dist y node_modules se generan localmente. El postinstall existente ejecuta el build durante npm install. Hostinger: Express, Node 24.x, entrada dist/server.cjs. Conservar las variables, secretos y almacenamiento privado persistente existentes.
 
-Los manifiestos MANIFIESTO-V75.1.json y MANIFIESTO-V76.json describen sus ZIP originales, que incluyen dist y evidencias históricas. No describen el árbol de Git: dist, node_modules, logs y ZIP nuevos se excluyen del código versionado. Los informes originales conservan su fecha y alcance; para el estado posterior de activación ver docs/activacion-v76.md.
+Esta sincronización publica la fuente en la rama del PR #2. No fusiona main, no despliega y no modifica WordPress. Los manifiestos y RELEASE-V78.json conservan el estado de la entrega ZIP anterior a esta publicación; docs/github-sync-v78.md registra el estado de sincronización.
 
 ---
-
 # RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO
 **Dominio Oficial:** [https://rauvia.com.mx](https://rauvia.com.mx)
 
