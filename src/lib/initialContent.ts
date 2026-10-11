@@ -1,5 +1,5 @@
 import type {WPPost} from './wp';
-export type InitialContent = {path: string; status: number; post?: WPPost; posts?: WPPost[]};
+export type InitialContent = {path: string; status: number; post?: WPPost; posts?: WPPost[]; stale?: boolean};
 let cached: InitialContent | null | undefined;
 export function initialContent(): InitialContent | null {
   if (typeof document === 'undefined') return null;

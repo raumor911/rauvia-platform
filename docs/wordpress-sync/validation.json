@@ -1,0 +1,33 @@
+{
+  "version": "76.0.1",
+  "baseCommit": "bd9d596c01a083b80597e9601572daef78d60797",
+  "checkedAt": "2026-10-11T03:12:36.326480+00:00",
+  "checks": {
+    "wordpressSync": {
+      "pass": 10,
+      "fail": 0
+    },
+    "indexNow": {
+      "pass": 54,
+      "fail": 0
+    },
+    "backendRegression": {
+      "pass": 155,
+      "fail": 0
+    }
+  },
+  "totalUniquePassingTests": 219,
+  "typescript": "passed",
+  "backendBuild": "passed",
+  "tools": {
+    "node": "24.12.0",
+    "esbuild": "0.25.12 (cached native tool; original declared dependency unchanged)",
+    "typescript": "5.8.3"
+  },
+  "fullBuild": "attempted, blocked by absent darwin-arm64 Rolldown native binding; knowledge/retrieval passed",
+  "php": "no local interpreter; not linted or executed",
+  "restLiveRead": "blocked; public metadata recovered from native WordPress WXR export instead",
+  "productionDeployment": false,
+  "productionPostsModified": false,
+  "publicCDNVerification": false
+}

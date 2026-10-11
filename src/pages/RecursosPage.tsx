@@ -4,21 +4,27 @@ import { Link } from 'react-router-dom';
 import type {WPPost} from '../lib/wp';
 import {initialContent} from '../lib/initialContent';
 import {sanitizeTitleHtml} from '../lib/editorial';
+import {publicationLabel,sortPublishedPosts} from '../lib/postDates';
 import FadeInUp from '../components/FadeInUp';
 
-export default function RecursosPage({initialPosts}: {initialPosts?: WPPost[]} = {}) {
-  const [posts, setPosts] = useState<WPPost[]>(() => initialPosts || initialContent()?.posts || []);
-  const [loading, setLoading] = useState(() => !(initialPosts || initialContent()?.posts));
+export default function RecursosPage({initialPosts,initialStale}: {initialPosts?: WPPost[];initialStale?:boolean} = {}) {
+  const [posts, setPosts] = useState<WPPost[]>(() => sortPublishedPosts(initialPosts || (initialContent()?.path === '/recursos/' ? initialContent()?.posts : undefined) || []));
+  const [loading, setLoading] = useState(() => !(initialPosts || (initialContent()?.path==='/recursos/' ? initialContent()?.posts : undefined)));
 
+  const [unavailable,setUnavailable] = useState(()=>initialStale ?? (initialContent()?.path==='/recursos/' && !!initialContent()?.stale));
   useEffect(() => {
-    if (initialContent()?.posts) return;
-    let mounted=true;
-    import('../lib/wp').then(({getPosts})=>getPosts()).then(data => {
-      if (!mounted) return;
-      setPosts(data);
-      setLoading(false);
-    }).catch(()=>{if(mounted)setLoading(false);});
-    return ()=>{mounted=false;};
+    let mounted=true, sequence=0, controller:AbortController | undefined;
+    const refresh=async()=>{
+      const current=++sequence; controller?.abort(); const active=new AbortController();controller=active;
+      try {
+        const {getPosts}=await import('../lib/wp'); const data=await getPosts(active.signal);
+        if(mounted && current===sequence){setPosts(data);setUnavailable(false);}
+      } catch {if(mounted && current===sequence)setUnavailable(true);}
+      finally {if(mounted && current===sequence)setLoading(false);}
+    };
+    const visible=()=>{if(document.visibilityState==='visible')void refresh();};
+    void refresh(); window.addEventListener('focus',visible);document.addEventListener('visibilitychange',visible);
+    return ()=>{mounted=false;sequence++;controller?.abort();window.removeEventListener('focus',visible);document.removeEventListener('visibilitychange',visible);};
   }, []);
 
   return (
@@ -37,6 +43,7 @@ export default function RecursosPage({initialPosts}: {initialPosts?: WPPost[]} =
             </p>
           </FadeInUp>
 
+          {unavailable && <p role="status" className="text-rauvia-gray mb-6">No pudimos actualizar los recursos. Conservamos la última información disponible; volveremos a intentarlo al regresar a esta página.</p>}
           {loading ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[1, 2, 3].map(i => (
@@ -58,7 +65,7 @@ export default function RecursosPage({initialPosts}: {initialPosts?: WPPost[]} =
                 const featuredMedia = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
                 return (
                   <FadeInUp key={post.id} delay={index * 0.1}>
-                    <Link to={`/recursos/${post.slug}`} className="group flex flex-col h-full bg-rauvia-card border border-rauvia-border rounded-lg overflow-hidden transition-all hover:border-rauvia-accent/50 hover:shadow-lg">
+                    <Link to={`/recursos/${post.slug}/`} className="group flex flex-col h-full bg-rauvia-card border border-rauvia-border rounded-lg overflow-hidden transition-all hover:border-rauvia-accent/50 hover:shadow-lg">
                       {featuredMedia && (
                         <div className="aspect-video w-full overflow-hidden bg-rauvia-bg">
                           <img 
@@ -72,7 +79,7 @@ export default function RecursosPage({initialPosts}: {initialPosts?: WPPost[]} =
                         <h2 className="text-xl font-display text-rauvia-text mb-3 group-hover:text-rauvia-accent transition-colors" dangerouslySetInnerHTML={{ __html: sanitizeTitleHtml(post.title.rendered) }} />
                         <div className="text-rauvia-gray mb-4 text-sm flex-grow" dangerouslySetInnerHTML={{ __html: sanitizeTitleHtml(post.excerpt.rendered) }} />
                         <div className="flex justify-between items-center text-xs text-rauvia-gray mt-auto pt-4 border-t border-rauvia-border/50">
-                          <span>{new Date(post.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                          <time dateTime={post.date}>{publicationLabel(post.date)}</time>
                         </div>
                       </div>
                     </Link>

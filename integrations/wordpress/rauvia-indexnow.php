@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: RAUVIA IndexNow Bridge
- * Description: Notifica cambios de posts publicados al backend headless de RAUVIA.
- * Version: 76.0.0
+ * Description: Sincroniza contenido y notifica cambios de posts publicados al backend headless de RAUVIA.
+ * Version: 76.0.1
  */
 if (!defined('ABSPATH')) { exit; }
 
@@ -44,4 +44,14 @@ add_action('rauvia_indexnow_deliver', function($urls, $event, $attempt) {
         wp_schedule_single_event(time() + 60 * pow(2, $attempt), 'rauvia_indexnow_deliver', array($urls, $event, $attempt + 1));
     }
     error_log('RAUVIA IndexNow bridge delivery status=' . $status . ' attempt=' . $attempt);
+}, 10, 3);
+
+// Published headless content must not be frozen by REST page/CDN caches.
+add_filter('rest_post_dispatch', function($response, $server, $request) {
+    if (preg_match('#^/wp/v2/posts(?:/|$)#', $request->get_route())) {
+        $response = rest_ensure_response($response);
+        $response->header('Cache-Control', 'no-store, max-age=0');
+        do_action('litespeed_control_set_nocache', 'RAUVIA headless content');
+    }
+    return $response;
 }, 10, 3);

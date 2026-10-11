@@ -20,7 +20,6 @@ import {wordpressCache} from './server/wordpress/cache';
 import {canonicalPath} from './src/seo/buildMetaTags';
 import {legacyRouteMiddleware, sendGone} from './server/seo/legacyRoutes';
 import {createIndexNow, authorized, sitemapSnapshot, validateUrl} from './server/indexnow/service.js';
-const {fetchWPPosts}=wordpressCache;
 
 async function startServer() {
   const app = express();
@@ -197,14 +196,20 @@ async function startServer() {
 
   // WP Posts Proxy Route
   app.get('/api/wp/posts', async (req, res) => {
+    res.set('Cache-Control','no-store');
     const request = createHttpTask(req, res, 'api_wp_posts_request'); let error: unknown = null;
     try {
       const slug = typeof req.query.slug === 'string' ? req.query.slug : undefined;
       if (slug) {
         const result = await wordpressCache.getPost(slug);
         if (result.status === 503) res.status(503).set('Retry-After', '60');
+        if(result.stale)res.set('Warning','110 - "Stale WordPress content"');
         res.json(result.post ? [result.post] : []);
-      } else res.json(await fetchWPPosts());
+      } else {
+        const {posts,stale}=await wordpressCache.getPostsSnapshot();
+        if(stale)res.set('Warning','110 - "Stale WordPress content"');
+        res.json(posts);
+      }
     }
     catch (err) { error = err; throw err; }
     finally { request.finish(error); }
@@ -320,6 +325,7 @@ async function startServer() {
     logEvent('error', 'indexnow_flush_failed', {error:serializeError(error)});
   });
   let cachedSitemapXml: string | null = null;
+  let sitemapRevision = -1;
   let refreshInProgress: Promise<string> | null = null;
   let sitemapIntervalId: NodeJS.Timeout | null = null;
   
@@ -337,31 +343,32 @@ async function startServer() {
   }
 
   async function refreshSitemap() {
-    if (refreshInProgress) return refreshInProgress;
+    if (refreshInProgress) return refreshInProgress.then(xml=>sitemapRevision===wordpressCache.revision()?xml:refreshSitemap());
 
     refreshInProgress = (async () => {
       const refreshTask = beginTrackedTask('refresh_sitemap', 'internal_task', { resource: 'background_job' });
       const startTime = Date.now();
       logEvent('info', 'sitemap_background_refresh_started');
       try {
-        const posts = await fetchPosts();
+        let posts, revision;
+        do {revision=wordpressCache.revision();posts=await fetchPosts();}
+        while(revision!==wordpressCache.revision());
         const xml = renderSitemap(posts);
         
-        cachedSitemapXml = xml;
+        cachedSitemapXml = xml; sitemapRevision=revision;
         // Only a complete successful WP fetch can update the snapshot. Reuse this
         // existing job; failures in IndexNow never fail sitemap generation.
         observeIndexNow(xml);
         void flushIndexNow();
         
-        // Try to save to disk asynchronously using atomic write
-        fs.promises.mkdir(path.dirname(SITEMAP_CACHE_PATH), { recursive: true })
-          .then(async () => {
-            const tmpPath = `${SITEMAP_CACHE_PATH}.tmp`;
-            await fs.promises.writeFile(tmpPath, xml, 'utf-8');
-            await fs.promises.rename(tmpPath, SITEMAP_CACHE_PATH);
-          })
-          .catch(err => console.warn('[Sitemap] Failed to write disk cache:', err));
-        
+        // Complete the atomic write within this single-flight refresh.
+        try {
+          await fs.promises.mkdir(path.dirname(SITEMAP_CACHE_PATH),{recursive:true});
+          const tmpPath=`${SITEMAP_CACHE_PATH}.tmp`;
+          await fs.promises.writeFile(tmpPath,xml,'utf-8');
+          await fs.promises.rename(tmpPath,SITEMAP_CACHE_PATH);
+        } catch(err){console.warn('[Sitemap] Failed to write disk cache:',err);}
+
         const institutionalCount = publicRoutes.length;
         const wpCount = posts.length;
         const durationMs = Date.now() - startTime;
@@ -404,7 +411,6 @@ async function startServer() {
       if (!authorized(req.headers.authorization, process.env.INDEXNOW_WEBHOOK_TOKEN)) {
         return res.status(401).json({error:'Unauthorized'});
       }
-      if (!indexNow.enabled) return res.status(503).json({error:'IndexNow disabled'});
       const now = Date.now();
       if (now-indexNowWindow.startedAt >= 60000) indexNowWindow = {startedAt:now,count:0};
       if (++indexNowWindow.count > 60) return res.status(429).set('Retry-After','60').json({error:'Too many requests'});
@@ -415,8 +421,25 @@ async function startServer() {
       let urls: string[];
       try {urls = [...new Set(urlList.map(validateUrl))] as string[];}
       catch {return res.status(400).json({error:'Invalid canonical RAUVIA URL'});}
-      // Persist the event before attempting any external requests. Deleted/old
-      // slugs must be notified even when they are absent from the new sitemap.
+      // Refresh and verify content before persisting its IndexNow notification.
+      // On failure WP-Cron receives 503 and retries; old slugs may resolve 404.
+      wordpressCache.invalidate();
+      const snapshot=await wordpressCache.getPostsSnapshot();
+      if(snapshot.stale) return res.status(503).set('Retry-After','60').json({error:'WordPress unavailable; cache invalidated, retry content event'});
+      // Resolve changed articles before notifying. A confirmed missing slug is
+      // valid for deletions and slug changes; an upstream failure requires retry.
+      let changedArticles=0, publishedArticles=0;
+      for(const url of urls) {
+        const match=new URL(url).pathname.match(/^\/recursos\/([^/]+)\/$/);
+        if(match) {
+          changedArticles++;
+          const verified=await wordpressCache.getPost(decodeURIComponent(match[1]));
+          if(verified.status===200)publishedArticles++;
+          if(verified.status===503 || verified.stale || (event==='published' && verified.status!==200) || (event==='deleted' && verified.status!==404))
+            return res.status(503).set('Retry-After','60').json({error:'Unable to verify changed article'});
+        }
+      }
+      if(event==='updated' && changedArticles && !publishedArticles) return res.status(503).set('Retry-After','60').json({error:'Updated article not yet visible'});
       const result = indexNow.enqueue(urls);
       logEvent('info','indexnow_content_event',{event,count:urls.length});
       res.status(202).json({...result, message:'Stored for submission; indexing is not guaranteed'});
@@ -505,7 +528,7 @@ async function startServer() {
       }
 
       res.header('Content-Type', 'application/xml; charset=utf-8');
-      res.header('Cache-Control', 'public, max-age=3600, stale-while-revalidate=86400');
+      res.header('Cache-Control', 'no-store');
       res.send(cachedSitemapXml);
       logEvent('info', 'sitemap_served_from_memory', { durationMs: Date.now() - startTime, userAgent: req.headers['user-agent'] || 'unknown' });
     } catch (err) { error = err; throw err; }
@@ -524,8 +547,18 @@ async function startServer() {
   } else {
     // The production-only renderer imports CSS; Vite owns styles in development.
     const {renderArticleHtml} = await import('./server/seo/articleHtml');
+    const {renderResourcesHtml} = await import('./server/seo/resourcesHtml');
     const distPath = path.join(process.cwd(), 'dist');
     const shell = await fs.promises.readFile(path.join(distPath,'shell.html'),'utf8');
+    app.get('/recursos/',async (_req,res,next)=>{
+      const request=beginTrackedTask('wordpress_resources_html','internal_task');
+      try {
+        const {posts,stale}=await wordpressCache.getPostsSnapshot();
+        res.set('Cache-Control','no-store');
+        if(stale)res.set('Warning','110 - "Stale WordPress content"');
+        res.type('html').send(await renderResourcesHtml(shell,posts,stale));request.complete({posts:posts.length,stale});
+      } catch(error){request.fail({error:serializeError(error)});next(error);}
+    });
     // Resolve published articles before static files, so old snapshots cannot
     // override fresh WordPress metadata, content or a confirmed missing slug.
     app.get(/^\/recursos\/([^/]+)\/$/, async (req,res,next) => {
@@ -534,7 +567,7 @@ async function startServer() {
         const result=await wordpressCache.getPost(slug);
         const html=renderArticleHtml(shell,canonicalPath(`/recursos/${encodeURIComponent(slug)}`),result);
         res.status(result.status).type('html');
-        res.set('Cache-Control',result.status===200 && !result.stale ? 'public, max-age=60' : 'no-store');
+        res.set('Cache-Control','no-store');
         if (result.status===503) res.set('Retry-After','60');
         if (result.stale) res.set('Warning','110 - "Stale WordPress content"');
         return res.send(html);

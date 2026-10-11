@@ -1,3 +1,5 @@
+> Corrección en revisión **76.0.1**: sincronización de WordPress y listado dinámico de recursos. Véase [diagnóstico y validación](docs/wordpress-sync/README.md). No desplegada; el build completo de frontend sigue pendiente en un entorno compatible.
+
 # RAUVIA — desarrollo V76 (76.0.0)
 
 Este repositorio contiene el código completo de RAUVIA recuperado del paquete fuente original de Hostinger V75.1 y actualizado a V76 con IndexNow. Frontend React + Vite, backend Express y WordPress headless en blog.rauvia.com.mx. No se reconstruyó código a partir del sitio público.
