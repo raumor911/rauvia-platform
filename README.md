@@ -1,17 +1,16 @@
-# RAUVIA — desarrollo V76 (76.0.0)
+# RAUVIA V78 — 78.0.0
 
-Este repositorio contiene el código completo de RAUVIA recuperado del paquete fuente original de Hostinger V75.1 y actualizado a V76 con IndexNow. Frontend React + Vite, backend Express y WordPress headless en blog.rauvia.com.mx. No se reconstruyó código a partir del sitio público.
+Optimización del listado /recursos/: respuesta sin esperar consultas lentas de WordPress cuando existe una copia válida, espera inicial limitada, recuperación desde disco y datos más ligeros. Mantiene IndexNow y la sincronización automática de publicaciones.
 
-La sincronización con GitHub conserva la versión 76.0.0 ya entregada. No despliega en Hostinger, modifica variables productivas, reinicia servicios ni configura despliegues automáticos. El ZIP V52 existente permanece como archivo histórico.
+[Diagnóstico, cambios, pruebas y despliegue](docs/v78/README.md) · [Resultados medidos](docs/v78/validation.json)
 
-- [Sincronización, pruebas y limitaciones de esta revisión](docs/github-sync-v76.md)
-- [Implementación V76](README-V76.md)
-- [Operación de IndexNow y puente WordPress](docs/indexnow-operacion.md)
-- [Verificación posterior de activación](docs/activacion-v76.md)
+Este paquete incluye el servidor compilado y el código fuente completo. El frontend se genera durante npm install mediante el postinstall del proyecto, como en V77. No incluye frontend precompilado; no se han mezclado archivos de versiones anteriores. En pruebas locales, el servidor respondió en aproximadamente 1,05 s con WordPress pendiente; falta medir la carga completa en producción.
 
-Para una instalación nueva: `npm ci`, `npm run lint`, `npm run build`, `npm run test:indexnow`. El build genera `dist/`; `npm start` ejecuta exclusivamente el servidor productivo compilado. Nunca usar `npm run dev` como proceso de producción. Las variables se documentan en `.env.example`; los valores secretos deben permanecer fuera de Git.
+Hostinger: Express, Node 24.x, npm, raíz rauvia-platform-v78, entrada dist/server.cjs. Mantener las variables existentes. No se ha ejecutado un despliegue de V78 ni cambiado variables productivas.
 
-Los manifiestos MANIFIESTO-V75.1.json y MANIFIESTO-V76.json describen sus ZIP originales, que incluyen dist y evidencias históricas. No describen el árbol de Git: dist, node_modules, logs y ZIP nuevos se excluyen del código versionado. Los informes originales conservan su fecha y alcance; para el estado posterior de activación ver docs/activacion-v76.md.
+Comprobaciones: npm run lint, npm run build, npm run test:resources-performance, npm run test:indexnow y npm run test:wordpress-sync. npm start ejecuta únicamente el servidor compilado. No usar npm run dev en producción.
+
+Los informes de V76/V77 y sus manifiestos se conservan como historia; MANIFIESTO-V78.json describe este ZIP. Los secretos deben quedar fuera del paquete y del repositorio. La clave IndexNow de verificación es pública.
 
 ---
 

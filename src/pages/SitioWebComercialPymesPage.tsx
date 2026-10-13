@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import './CommercialLandings.css';
 
-const waLink = "https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20revisar%20si%20mi%20sitio%20web%20est%C3%A1%20ayudando%20a%20vender.";
+const waLink = "https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20revisar%20si%20mi%20sitio%20web%20est%C3%A1%20ayudando%20a%20vender.";
 
 export default function SitioWebComercialPymesPage() {
 

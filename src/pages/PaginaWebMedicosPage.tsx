@@ -13,7 +13,7 @@ import './PaginaWebMedicosPage.css';
 
 const canonical = 'https://rauvia.com.mx/pagina-web-para-medicos/';
 const ogDescription = 'Construye una presencia médica profesional que explique quién eres, qué atiendes, dónde te encuentras y cómo pueden contactarte.';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20informaci%C3%B3n%20para%20crear%20mi%20p%C3%A1gina%20web%20m%C3%A9dica.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20cotizar%20mi%20p%C3%A1gina%20web%20m%C3%A9dica.%20Me%20gustar%C3%ADa%20definir%20el%20alcance%20seg%C3%BAn%20mi%20especialidad%2C%20ciudad%20y%20necesidades%20de%20citas%20o%20agenda.';
 const freePath = '/pagina-web-gratis-para-medicos/';
 const images = {
   'pagina-web-medico': ['Ejemplo conceptual de página web para médicos con perfil profesional, especialidad, ubicación y solicitud de cita.', 1600, 900],
@@ -66,7 +66,7 @@ const solutions = [
   { icon: Compass, title: 'Quiero mejorar mi presencia local', text: 'Si ya tienes presencia digital pero necesitas ordenar cómo se relacionan tu especialidad, ubicación, sitio y contacto.', cta: 'Ver SEO local para médicos', href: '/seo-local-para-medicos/', label: 'Especialidad, zona y contacto' },
   { icon: Layers3, title: 'Necesito una presencia comercial más completa', text: 'Si necesitas integrar sitio, contacto, agenda, contenido, medición y estructura comercial en un mismo sistema.', cta: 'Conocer Frente Comercial Médico', href: '/frente-comercial/', label: 'Un sistema más integrado' },
 ] as const;
-function CTA({ children = 'Quiero mi página web médica', href = whatsapp, secondary = false }: { children?: React.ReactNode; href?: string; secondary?: boolean }) {
+function CTA({ children = 'Cotizar mi página web médica', href = whatsapp, secondary = false }: { children?: React.ReactNode; href?: string; secondary?: boolean }) {
   const className = `med-button${secondary ? ' med-button-secondary' : ''}`;
   const content = <>{children}<ArrowRight size={17} aria-hidden="true" /></>;
   return href.startsWith('/') ? <Link className={className} to={href}>{content}</Link> : <a className={className} href={href}>{content}</a>;
@@ -93,9 +93,10 @@ export default function PaginaWebMedicosPage() {
       <div className="med-container hub-hero-grid">
         <div className="hub-hero-copy"><span className="med-eyebrow">Presencia digital para tu práctica</span>
           <h1>Página web para médicos que necesitan una presencia <span>profesional, clara y fácil de encontrar</span></h1>
-          <p className="hub-lead">Tu sitio puede reunir en un solo lugar tu perfil profesional, especialidad, ubicación, formas de contacto, agenda e información útil antes de una consulta.</p>
+          <p className="hub-lead">RAUVIA crea páginas web para médicos con perfil profesional, especialidad, ubicación y contacto por WhatsApp. La solicitud de citas y las integraciones de agenda se definen según el alcance de tu práctica.</p>
           <div className="med-actions"><CTA /><Link className="med-text-link" to={freePath}>Empezar con una página gratuita <ArrowRight size={16} aria-hidden="true" /></Link></div>
-          <p className="hub-micro">Si todavía no sabes qué necesitas, podemos ayudarte a identificarlo.</p>
+          <p className="hub-micro">Para cotizar, indícanos tu especialidad, ciudad y si necesitas solicitud de citas o integración de agenda.</p>
+          <Link className="med-text-link" to="/pagina-web-para-consultorio-medico/">¿Necesitas presentar un equipo? Ver página para consultorio <ArrowRight size={16} aria-hidden="true" /></Link>
         </div>
         <div className="hub-hero-visual"><div className="hub-visual-label"><span>Tu práctica, explicada con claridad.</span><span>Ejemplo conceptual</span></div><Mockup name="pagina-web-medico" hero sizes="(max-width: 900px) calc(100vw - 36px), (max-width: 1300px) 48vw, 620px" /><div className="hub-visual-footer"><span><Stethoscope size={15} aria-hidden="true" />Especialidad</span><span><MapPin size={15} aria-hidden="true" />Ubicación</span><span><MessageCircle size={15} aria-hidden="true" />Contacto</span></div><p className="hub-image-note">Personas, datos y sitios ficticios. Representación de un posible alcance.</p></div>
       </div>

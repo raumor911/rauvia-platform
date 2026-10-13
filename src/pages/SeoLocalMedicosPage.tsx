@@ -7,7 +7,7 @@ import './PaginaWebMedicosEspecialistasPage.css';
 import './SeoLocalMedicosPage.css';
 
 const url = 'https://rauvia.com.mx/seo-local-para-medicos/';
-const whatsapp = 'https://wa.me/525518519173?text=Hola%20RAUVIA,%20quiero%20revisar%20mi%20presencia%20local%20como%20m%C3%A9dico.';
+const whatsapp = 'https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20revisar%20mi%20presencia%20local%20como%20m%C3%A9dico.';
 const freePath = '/pagina-web-gratis-para-medicos/';
 const imagePath = (name: string) => `/images/seo-local-medicos/mockup-${name}.webp`;
 const images = {

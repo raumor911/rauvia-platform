@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://rauvia.com.mx/ruta-90/</loc></url>
+  <url><loc>https://rauvia.com.mx/</loc></url>
+  <url><loc>https://rauvia.com.mx/nosotros/</loc></url>
+  <url><loc>https://rauvia.com.mx/soluciones/</loc></url>
+  <url><loc>https://rauvia.com.mx/aethryon/</loc></url>
+  <url><loc>https://rauvia.com.mx/recursos/</loc></url>
+  <url><loc>https://rauvia.com.mx/frente-comercial/</loc></url>
+  <url><loc>https://rauvia.com.mx/sitio-web-comercial-para-pymes/</loc></url>
+  <url><loc>https://rauvia.com.mx/sitio-web-servicios-especializados/</loc></url>
+  <url><loc>https://rauvia.com.mx/casos/</loc></url>
+  <url><loc>https://rauvia.com.mx/casos/infraestructura-temporal-b2b/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-comercial-servicios-profesionales/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-web-gratis-para-medicos/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-web-para-medicos-especialistas/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-local-para-medicos/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-web-para-medicos/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-web-para-consultorio-medico/</loc></url>
+  <url><loc>https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/</loc></url>
+  <url><loc>https://rauvia.com.mx/aviso-de-privacidad/</loc></url>
+  <url><loc>https://rauvia.com.mx/terminos/</loc></url>
+  <url><loc>https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/</loc><lastmod>2026-09-13T00:18:50+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/</loc><lastmod>2026-09-13T18:56:32+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/</loc><lastmod>2026-09-11T23:54:55+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/</loc><lastmod>2026-09-02T05:41:25+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/</loc><lastmod>2026-09-02T05:30:55+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/</loc><lastmod>2026-09-13T19:31:46+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/</loc><lastmod>2026-09-02T05:22:59+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/</loc><lastmod>2026-09-02T05:11:02+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/</loc><lastmod>2026-08-07T01:46:21+00:00</lastmod></url>
+  <url><loc>https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/</loc><lastmod>2026-08-07T01:34:54+00:00</lastmod></url>
+</urlset>

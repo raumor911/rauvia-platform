@@ -1,0 +1,8 @@
+{
+  "command": "node --test tests/indexnow.test.mjs tests/indexnow-app.test.mjs tests/seo-html.test.mjs",
+  "tests": 83,
+  "pass": 83,
+  "fail": 0,
+  "duration_ms": 1688.070542,
+  "scope": "Original V78 compiled application, SEO HTML and IndexNow; no rebuild performed."
+}

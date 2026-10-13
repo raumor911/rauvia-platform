@@ -48,7 +48,7 @@ export async function productionApp(env, fetcher) {
     res.end=function(chunk,...args){if(chunk)chunks.push(Buffer.from(chunk));return end.call(this,undefined,...args);};
     const done=new Promise((resolve,reject)=>{res.on('finish',resolve);res.on('error',reject);});
     app.handle(req,res);
-    if(payload)req.push(payload);req.push(null);
+    if(payload)req.push(payload);req.complete=true;req.push(null);
     await done;
     const text=Buffer.concat(chunks).toString();
     socket.destroy();

@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {ArrowLeft} from 'lucide-react';
 import type {WPPost} from '../lib/wp';
+import {publicationLabel} from '../lib/postDates';
 import FadeInUp from './FadeInUp';
 import RauviaEditorial, {sanitizeTitleHtml} from './RauviaEditorial';
 import {articleSeo} from '../seo/articleSeo';
@@ -28,7 +29,7 @@ export default function PostArticle({post}: {post: WPPost}) {
                 <span className="font-medium">{authorName}</span>
                 <span>•</span>
                 <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  {publicationLabel(post.date)}
                 </time>
               </div>
             </header>

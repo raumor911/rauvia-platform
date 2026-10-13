@@ -1,0 +1,152 @@
+[
+  {
+    "path": "/sitio-web-comercial-para-pymes/",
+    "status": "200",
+    "title": [
+      "Sitio web comercial para PyMES | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/sitio-web-comercial-para-pymes/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/pagina-web-gratis-para-medicos/",
+    "status": "200",
+    "title": [
+      "Página web gratis para médicos | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/pagina-web-gratis-para-medicos/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/pagina-web-para-medicos-especialistas/",
+    "status": "200",
+    "title": [
+      "Página web para médicos especialistas | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/pagina-web-para-medicos-especialistas/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/seo-local-para-medicos/",
+    "status": "200",
+    "title": [
+      "SEO local para médicos | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/seo-local-para-medicos/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/pagina-web-medicos-agenda-whatsapp/",
+    "status": "200",
+    "title": [
+      "Página web para médicos con agenda y WhatsApp | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/1109c92c84549878ea17f221eaba40bc.txt",
+    "status": "200",
+    "title": [],
+    "canonical": [],
+    "exactIndexNowKey": true,
+    "error": null
+  },
+  {
+    "path": "/api/wp/posts?per_page=1",
+    "status": "200",
+    "title": [
+      "Cotizar no es ayudar a decidir: qué revisar cuando el cliente recibe el precio y no avanza | RAUVIA",
+      "Qué debería existir antes de implementar un CRM | RAUVIA",
+      "Llegan prospectos, pero no avanzan: qué revisar antes de invertir más | RAUVIA",
+      "Qué es un frente comercial y por qué no es una simple página web | RAUVIA",
+      "Cuando la experiencia se comunica como catálogo | RAUVIA",
+      "La brecha entre capacidad real y percepción de mercado | RAUVIA",
+      "Llegan prospectos, pero no avanzan: qué revisar antes de invertir más | RAUVIA",
+      "Cuando WhatsApp carga con todo el proceso comercial | RAUVIA",
+      "Por qué una PyME pierde oportunidades aunque tenga clientes interesados | RAUVIA",
+      "La ilusión del crecimiento sin capacidad | RAUVIA",
+      "La diferencia entre información y comprensión | RAUVIA",
+      "¿Qué debe existir antes de implementar un CRM? | RAUVIA",
+      "Cuando una empresa deja de avanzar | RAUVIA"
+    ],
+    "canonical": [],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/recursos/la-diferencia-entre-informacion-y-comprension/",
+    "status": "200",
+    "title": [
+      "La diferencia entre información y comprensión. | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/recursos/brecha-capacidad-real-percepcion-mercado/",
+    "status": "200",
+    "title": [
+      "La brecha entre capacidad real y percepción de mercado | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/",
+    "status": "200",
+    "title": [
+      "Por qué una PyME pierde oportunidades aunque tenga clientes interesados | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/recursos/que-debe-existir-antes-de-un-crm/",
+    "status": "200",
+    "title": [
+      "¿Qué debe existir antes de implementar un CRM? | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  },
+  {
+    "path": "/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/",
+    "status": "200",
+    "title": [
+      "Cuando WhatsApp carga con todo el proceso comercial | RAUVIA"
+    ],
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/\">"
+    ],
+    "exactIndexNowKey": null,
+    "error": null
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "version": "77.0.0",
+  "previousReleasedVersion": "76.0.0",
+  "basedOnReviewVersion": "76.0.1",
+  "sourceCommit": "c204f6a79df8f600627c15921b661656fa07011c",
+  "pullRequest": "https://github.com/raumor911/rauvia-platform/pull/2",
+  "contents": "complete source plus compiled V77 backend dist/server.cjs and source map; compiled frontend absent",
+  "requiresFullBuild": true,
+  "deployed": false,
+  "dependenciesUpdated": false,
+  "changes": [
+    "Listado de recursos dinámico y ordenado por publicación WordPress",
+    "Invalidación de caché mediante webhook y protección contra respuestas antiguas",
+    "Recuperación ante fallos y conservación de contenido válido",
+    "Integración de eventos con IndexNow y sitemap",
+    "Fechas de publicación y editoriales conservadas por separado"
+  ],
+  "validation": "219 tests passed on correction source; TypeScript and backend build passed; frontend full build and PHP execution pending",
+  "deploymentReady": false,
+  "latestValidation": {
+    "backendCompilation": "passed",
+    "backendSyntax": "passed",
+    "indexNowServiceTests": "24 passed",
+    "compiledAppIntegration": "failed: missing dist/shell.html from frontend build",
+    "typescript": "passed",
+    "installerSimulation": "3 cases passed: complete output, missing output, build failure",
+    "remoteDeployment": "not executed"
+  },
+  "buildStrategy": "npm install runs project postinstall -> npm run build; frontend artifacts generated on Hostinger, not included"
+}

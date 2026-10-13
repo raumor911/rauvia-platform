@@ -1,0 +1,35 @@
+{
+  "version": "78.0.0",
+  "dioVersion": "1.0.0",
+  "checkedAt": "2026-10-11T06:23:34.516620+00:00",
+  "regressionTests": {
+    "pass": 161,
+    "fail": 0
+  },
+  "fullFrontendBuild": "passed",
+  "serverBuild": "passed",
+  "typescript": "passed",
+  "publicHtmlRoutes": 20,
+  "responsiveViews": 16,
+  "publishedPricesUnchanged": true,
+  "v78BackendPreserved": true,
+  "performanceMeasurements": [
+    {
+      "scenario": "cold-upstream-pending",
+      "localServerResponseMs": 1051,
+      "productionBrowserMeasurement": false
+    },
+    {
+      "scenario": "warm-and-invalidated",
+      "warmP95Ms": 0.33,
+      "staleResponseMs": 7.67,
+      "bootstrapBytes": 7735,
+      "originalPostsBytes": 191538,
+      "calls": 2,
+      "productionBrowserMeasurement": false
+    }
+  ],
+  "performanceScope": "Compiled Express in process with controlled WordPress; not production browser page load",
+  "productionDeployment": false,
+  "commercialImpactMeasured": false
+}

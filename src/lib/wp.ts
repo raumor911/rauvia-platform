@@ -1,10 +1,13 @@
 import { WP_CONFIG } from '../config/wordpress';
-import { FALLBACK_POSTS } from '../data/fallbackPosts';
+import {sortPublishedPosts} from './postDates';
 
 export interface WPPost {
   id: number;
   date: string;
   modified: string;
+  date_gmt?: string;
+  modified_gmt?: string;
+  status?: string;
   slug: string;
   title: {
     rendered: string;
@@ -33,35 +36,20 @@ export interface WPPost {
   };
 }
 
-export async function getPosts(): Promise<WPPost[]> {
-  // Intentar primero directamente desde el cliente para evitar bloqueos de red interna del servidor (Hostinger)
-  try {
-    const cacheBuster = `_cb=${Date.now()}`;
-    const response = await fetch(`${WP_CONFIG.endpoints.posts}?_embed&status=publish&${cacheBuster}`);
-    if (response.ok) {
-      const data = await response.json();
-      if (Array.isArray(data) && data.length > 0) {
-        return data;
-      }
-    }
-  } catch (error) {
-    console.warn('Fallo el fetch directo a WP, intentando proxy...', error);
+export async function getPosts(signal?: AbortSignal): Promise<WPPost[]> {
+  const direct=new URL(WP_CONFIG.endpoints.posts);
+  direct.searchParams.set('_embed',''); direct.searchParams.set('status','publish');
+  direct.searchParams.set('per_page','100'); direct.searchParams.set('orderby','date'); direct.searchParams.set('order','desc');
+  direct.searchParams.set('_cb',String(Date.now()));
+  for(const url of ['/api/wp/posts',direct.toString()]) {
+    try {
+      const response=await fetch(url,{signal,cache:'no-store'});
+      if(!response.ok || response.headers.get('Warning')?.startsWith('110')) continue;
+      const data=await response.json();
+      if(Array.isArray(data) && data.every(p=>p && typeof p.slug==='string' && typeof p.date==='string' && p.title?.rendered !== undefined && p.excerpt?.rendered !== undefined)) return sortPublishedPosts(data);
+    } catch(error) {if(signal?.aborted) throw error;}
   }
-
-  // Fallback al proxy del servidor
-  try {
-    const proxyRes = await fetch('/api/wp/posts');
-    if (proxyRes.ok) {
-      const data = await proxyRes.json();
-      if (Array.isArray(data) && data.length > 0) {
-        return data;
-      }
-    }
-  } catch (e) {
-    // Proxy fetch failed
-  }
-
-  return FALLBACK_POSTS;
+  throw new Error('WordPress temporalmente no disponible');
 }
 
 export async function getPostBySlug(slug: string): Promise<WPPost | null> {
@@ -80,4 +68,16 @@ export async function getPostBySlug(slug: string): Promise<WPPost | null> {
     } catch { /* The direct endpoint remains available if the proxy fails. */ }
   }
   throw new Error('WordPress temporalmente no disponible');
+}
+
+// A stale but valid resource list is useful immediately. Do not bypass the
+// server cache with a second, unbounded WordPress request during an outage.
+export async function getResources(signal?: AbortSignal): Promise<{posts:WPPost[];stale:boolean}> {
+  const budget=AbortSignal.timeout(2200);
+  const combined=signal ? AbortSignal.any([signal,budget]) : budget;
+  const response=await fetch('/api/wp/posts?view=resources',{signal:combined,cache:'no-store'});
+  if(!response.ok)throw new Error('WordPress temporalmente no disponible');
+  const data=await response.json();
+  if(!Array.isArray(data) || !data.every(p=>p && typeof p.slug==='string' && typeof p.date==='string' && typeof p.title?.rendered==='string' && typeof p.excerpt?.rendered==='string'))throw new Error('Invalid resource list');
+  return {posts:sortPublishedPosts(data),stale:!!response.headers.get('Warning')?.startsWith('110')};
 }

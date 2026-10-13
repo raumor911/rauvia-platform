@@ -1,0 +1,63 @@
+[
+  {
+    "arguments": [
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "PHP 8.5.10 (cli) (built: Aug 27 2026 22:08:13) (NTS)\nCopyright (c) The PHP Group\nZend Engine v4.5.10, Copyright (c) Zend Technologies\n    with Zend OPcache v8.5.10, Copyright (c), by Zend Technologies\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "-l",
+      "work/source/integrations/wordpress/rauvia-seo-headless.php"
+    ],
+    "exit_code": 0,
+    "stdout": "No syntax errors detected in work/source/integrations/wordpress/rauvia-seo-headless.php\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "work/source/tests/headless-seo.test.php"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS: published article redirects to fixed canonical\nPASS: bounded HTTP without redirect following\nPASS: positive cache TTL\nPASS: cached availability avoids repeated HTTP\nPASS: HEAD supported\nPASS: POST unchanged\nPASS: PUT unchanged\nPASS: DELETE unchanged\nPASS: OPTIONS unchanged\nPASS: admin unchanged without network\nPASS: ajax unchanged without network\nPASS: cron unchanged without network\nPASS: preview unchanged without network\nPASS: embed unchanged without network\nPASS: attachment unchanged without network\nPASS: feed unchanged without network\nPASS: draft never redirects\nPASS: private never redirects\nPASS: future never redirects\nPASS: trash never redirects\nPASS: protected article unchanged\nPASS: pages unchanged\nPASS: encoded slug is not double encoded\nPASS: slug stays in one path segment\nPASS: 404 fails open with short negative cache\nPASS: 500 fails open with short negative cache\nPASS: 301 fails open with short negative cache\nPASS: 302 fails open with short negative cache\nPASS: network timeout fails open\nPASS: unavailable article retains CMS response with noindex\nPASS: generic/mismatched/duplicate canonical rejected\nPASS: generic/mismatched/duplicate canonical rejected\nPASS: generic/mismatched/duplicate canonical rejected\nPASS: noindex header destination rejected\nPASS: noindex meta destination rejected\nPASS: archive robots are consistent\nPASS: archive header survives coming-soon template\nPASS: front robots are consistent\nPASS: front header survives coming-soon template\nPASS: home_page robots are consistent\nPASS: home_page header survives coming-soon template\nPASS: search robots are consistent\nPASS: search header survives coming-soon template\nPASS: feed has noindex header\nPASS: preview headers unchanged\nPASS: CMS sitemap disabled\nPASS: other sites unchanged\nPASS: redirect and header precede Hostinger priority 10\nTOTAL: 48 passed\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "work/source/tests/headless-seo.test.php",
+      "REST_REQUEST"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS: REST_REQUEST excluded without network\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "work/source/tests/headless-seo.test.php",
+      "XMLRPC_REQUEST"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS: XMLRPC_REQUEST excluded without network\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "work/source/tests/headless-seo.test.php",
+      "RAUVIA_HEADLESS_SEO_DISABLED"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS: RAUVIA_HEADLESS_SEO_DISABLED excluded without network\n",
+    "stderr": ""
+  },
+  {
+    "arguments": [
+      "work/source/tests/headless-seo.test.php",
+      "redirect"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"location\":\"https:\\/\\/rauvia.com.mx\\/recursos\\/articulo\\/\",\"status\":301,\"by\":\"RAUVIA Headless SEO\"}",
+    "stderr": ""
+  }
+]

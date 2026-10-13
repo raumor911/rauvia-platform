@@ -1,0 +1,54 @@
+﻿URL,Método,HTTP auditoría,Título,Location,Canónica,Error inicial,HTTP revisión puntual,Acción
+https://rauvia.com.mx/recursos/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/,GET,200,"La empresa tiene procesos, pero sigue dependiendo del dueño | RAUVIA",,https://rauvia.com.mx/recursos/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/,,,Conservar
+https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/,GET,,,,,The read operation timed out,200,Conservar
+https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/,GET,,,,,The read operation timed out,200,Conservar
+https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/,GET,,,,,The read operation timed out,200,Conservar
+https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/,GET,,,,,The read operation timed out,200,Conservar
+https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/,GET,200,Cuando la experiencia se comunica como catálogo | RAUVIA,,https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/,,,Conservar
+https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/,GET,200,La brecha entre capacidad real y percepción de mercado | RAUVIA,,https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/,,,Conservar
+https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/,GET,200,"Llegan prospectos, pero no avanzan: cómo distinguir un problema de demanda, seguimiento o decisión | RAUVIA",,https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/,,,Conservar
+https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/,GET,200,Cuando WhatsApp carga con todo el proceso comercial | RAUVIA,,https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/,,,Conservar
+https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/,GET,200,Por qué una PyME pierde oportunidades aunque tenga clientes interesados | RAUVIA,,https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/,,,Conservar
+https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/,GET,200,La ilusión del crecimiento sin capacidad. | RAUVIA,,https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/,,,Conservar
+https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/,GET,200,La diferencia entre información y comprensión. | RAUVIA,,https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/,,,Conservar
+https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/,GET,200,¿Qué debe existir antes de implementar un CRM? | RAUVIA,,https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/,,,Conservar
+https://rauvia.com.mx/recursos/cuando-una-empresa-deja-de-avanzar/,GET,200,"Cuando una empresa deja de avanzar, trabajar más no siempre resuelve el problema. | RAUVIA",,https://rauvia.com.mx/recursos/cuando-una-empresa-deja-de-avanzar/,,,Conservar
+https://blog.rauvia.com.mx/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cotizacion-cliente-no-avanza-que-revisar/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cotizacion-cliente-no-avanza-que-revisar/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-revisar-antes-implementar-crm/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-revisar-antes-implementar-crm/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision-2/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision-2/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-es-frente-comercial-no-es-pagina-web/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-es-frente-comercial-no-es-pagina-web/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-experiencia-se-comunica-como-catalogo/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-experiencia-se-comunica-como-catalogo/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/brecha-capacidad-real-percepcion-mercado/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/brecha-capacidad-real-percepcion-mercado/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-whatsapp-carga-con-todo-el-proceso-comercial/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-whatsapp-carga-con-todo-el-proceso-comercial/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/por-que-pyme-pierde-oportunidades-clientes-interesados/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/por-que-pyme-pierde-oportunidades-clientes-interesados/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/la-ilusion-del-crecimiento-sin-capacidad/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/la-ilusion-del-crecimiento-sin-capacidad/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/la-diferencia-entre-informacion-y-comprension/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/la-diferencia-entre-informacion-y-comprension/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-debe-existir-antes-de-un-crm/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/que-debe-existir-antes-de-un-crm/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-una-empresa-deja-de-avanzar/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/cuando-una-empresa-deja-de-avanzar/,HEAD,200,,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://shop.rauvia.com.mx/b/starter-microempresas,GET,301,,https://rauvia.com.mx/,,,,Conservar
+https://shop.rauvia.com.mx/b/starter-microempresas?utm_source=audit,HEAD,301,,https://rauvia.com.mx/,,,,Conservar
+https://blog.rauvia.com.mx/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/feed/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/category/arquitectura-de-decisiones/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/tag/activos-digitales/,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://blog.rauvia.com.mx/wp-sitemap.xml,GET,200,Próximamente,,,,,301 selectivo si es artículo publicado; noindex si es archivo/feed/inicio
+https://rauvia.com.mx/sitemap.xml,GET,200,,,,,,Conservar
+https://blog.rauvia.com.mx/wp-json/wp/v2/media?per_page=1,GET,200,,,,,,Conservar
+https://blog.rauvia.com.mx/wp-login.php,GET,200,Acceder ‹ RAUVIA Consulting — WordPress,,,,,Conservar
+https://blog.rauvia.com.mx/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/?preview=true,GET,200,Próximamente,,,,,Conservar

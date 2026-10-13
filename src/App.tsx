@@ -27,13 +27,13 @@ function ScrollToTop() {
   return null;
 }
 
-export function AppLayout({posts, staticRender=false}: {posts?: import('./lib/wp').WPPost[]; staticRender?: boolean} = {}) {
+export function AppLayout({posts, stalePosts, staticRender=false}: {stalePosts?: boolean;posts?: import('./lib/wp').WPPost[]; staticRender?: boolean} = {}) {
   const location = useLocation();
   const mobile = isMainRoute(location.pathname);
   React.useEffect(()=>{document.querySelector('meta[name=viewport]')?.setAttribute('content',mobile ? 'width=device-width, initial-scale=1, viewport-fit=cover' : 'width=device-width, initial-scale=1.0');},[mobile]);
   const routeContent = <><Routes>{Object.keys(routeLoaders).map(path => {
     const Page = routeComponent(path as keyof typeof routeLoaders);
-    return <Route key={path} path={path} element={<Page {...(path === '/recursos' ? {initialPosts: posts} : {})} />} />;
+    return <Route key={path} path={path} element={<Page {...(path === '/recursos' ? {initialPosts: posts, initialStale:stalePosts} : {})} />} />;
   })}</Routes><ScrollToTop /></>;
   return (
     <GeoProvider>

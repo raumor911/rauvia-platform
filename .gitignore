@@ -18,3 +18,5 @@ data/indexnow-state.json*
 .prerender-build.mjs
 .private/
 private/
+
+data/wordpress-posts-cache.json*
