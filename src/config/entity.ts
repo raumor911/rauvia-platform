@@ -29,7 +29,7 @@ export const ENTITIES = {
     "@id": "https://rauvia.com.mx/aethryon/#entity",
     name: "AETHRYON",
     description: "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
-    url: "https://rauvia.com.mx/aethryon"
+    url: "https://rauvia.com.mx/aethryon/"
   }
 };
 
