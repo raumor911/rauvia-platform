@@ -19,58 +19,21 @@ import { withRequestContext } from './server/observability/context.js';
 import {wordpressCache} from './server/wordpress/cache';
 import {resourceCards} from './server/wordpress/resources';
 import {canonicalPath} from './src/seo/buildMetaTags';
-import {legacyRouteMiddleware, sendGone} from './server/seo/legacyRoutes';
+import {createCanonicalRedirectMiddleware} from './server/seo/legacyRoutes';
 import {createIndexNow, authorized, sitemapSnapshot, validateUrl} from './server/indexnow/service.js';
 
 async function startServer() {
   const app = express();
 
-  // Observe the final HTTP status naturally; no extra crawler event or table.
+  // Canonicalize once before static, WordPress and fallback responses.
   app.use(aiCrawlerMiddleware);
-  app.use(legacyRouteMiddleware);
-
-  // === REDIRECCIONES SEO 301 PERMANENTES ===
-  app.use((req, res, next) => {
-    // Limpieza de trailing slash para normalizar la comparación de rutas
-    const normalizedPath = req.path.endsWith('/') && req.path.length > 1 
-      ? req.path.slice(0, -1) 
-      : req.path;
-
-    // Redirección de subdominio (Si el DNS/Hostinger enruta 'shop' hacia esta instancia Node)
-    if (req.hostname === 'shop.rauvia.com.mx') {
-      return res.redirect(301, 'https://rauvia.com.mx/');
-    }
-    
-    // Rutas antiguas hacia nuevas ubicaciones (conservando Link Equity)
-    if (normalizedPath === '/blog') {
-      return res.redirect(301, '/recursos/');
-    }
-    
-    if (normalizedPath === '/servicios') {
-      return res.redirect(301, '/soluciones/');
-    }
-
-
-    // Redirecciones de artículos antiguos hacia /recursos/
-    const oldArticles = [
-      '/delegacion-hueca-caos-a-sistema-90-dias',
-      '/analisis-estrategico-mensual-startup'
-    ];
-    
-    if (oldArticles.includes(normalizedPath)) {
-      return res.redirect(301, '/recursos/');
-    }
-    
-    next();
-  });
-  // =========================================
+  app.use(createCanonicalRedirectMiddleware(publicRoutes));
 
   // Serve public machine-readable references before the SPA fallback, in both modes.
   const isProd = process.env.NODE_ENV === 'production';
   const discoveryRoot = path.join(process.cwd(), isProd ? 'dist' : 'public');
-  app.get('/llmo', (_req, res) => res.redirect(302, '/llmo/index.json'));
   app.use('/llmo', express.static(path.join(discoveryRoot, 'llmo'), {
-    index: false,
+    index: false, redirect: false,
     setHeaders: (res, filePath) => {
       if (filePath.endsWith('.md')) res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
       res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -99,101 +62,6 @@ async function startServer() {
       else task.complete({ statusCode: res.statusCode, ...meta });
     }};
   };
-
-  // ==========================================
-  // DOMAIN CANONICALIZATION & REDIRECTS
-  // ==========================================
-  const canonicalPagePaths = new Set(publicRoutes);
-  app.use((req, res, next) => {
-    const host = req.hostname || '';
-    
-    // Check if the request is coming from a non-canonical domain
-    const isNonCanonical = 
-      host === 'www.rauvia.com.mx' ||
-      host === 'rauvia.consulting' ||
-      host === 'www.rauvia.consulting';
-
-    if (isNonCanonical) {
-      // Reconstruct the URL with the canonical domain, preserving path and query string (UTMs)
-      const canonicalUrl = `https://rauvia.com.mx${req.originalUrl}`;
-      return res.redirect(301, canonicalUrl);
-    }
-
-    // Normalize public page URLs only. Vite endpoints such as /@react-refresh
-    // and /@vite/client are extensionless modules, not pages.
-    const isPublicPage = canonicalPagePaths.has(req.path) ||
-      /^\/(recursos|casos)\/[^/]+$/.test(req.path);
-    if ((req.method === 'GET' || req.method === 'HEAD') &&
-        isPublicPage && !req.path.endsWith('/') && !path.extname(req.path)) {
-      const query = req.url.slice(req.path.length);
-      return res.redirect(301, `${req.path}/${query}`);
-    }
-    
-    next();
-  });
-
-  // After crawler observation, before legacy Gone/static/fallback. Both forms
-  // redirect directly to the canonical destination in one server response.
-  app.use((req, res, next) => {
-    if (['/componentes-ruta-90-dias-pymes','/componentes-ruta-90-dias-pymes/'].includes(req.path)) {
-      return res.redirect(301, 'https://rauvia.com.mx/ruta-90/#componentes');
-    }
-    next();
-  });
-
-  // Legacy URLs that should return 410 Gone (no equivalent content yet)
-  const LEGACY_GONE_PATHS = new Set([
-    '/analisis-estrategico-mensual-startup',
-    '/metricas-de-rentabilidad-para-agencias-en-cdmx',
-    '/test-madurez-sistemica',
-    '/wp-content/uploads/2025/11/RAUVIA_PRESENTACION_GUIA_2025.pdf',
-    // Otras URLs que no tienen reemplazo
-    '/sobre-rauvia',
-    '/servicios',
-    '/contacto',
-    '/nuestro-metodo',
-    '/consultoria_gratis',
-    '/test-madurez-sistemica',
-    '/blog',
-    '/blindaje-operativo-2026',
-    '/delegacion-hueca-caos-a-sistema-90-dias',
-    '/metricas-de-rentabilidad-para-agencias-en-cdmx',
-    '/guia-gobernanza-rauvia',
-    '/claridad-operativa-el-regalo-que-si-negocio-necesita',
-    '/ruta-90-dias-agencias',
-    '/diagnostico-de-fuga-de-capital-mejora-la-eficiencia-en-tu-agencia',
-    '/ejecucion-ruta-90-solo-vs-acompanamiento',
-    '/que-hace-rauvia-ruta-90-dias',
-    '/ia-estrategia-contenido-agencias',
-    '/wp-content/uploads/2025/11/RAUVIA_PRESENTACION_GUIA_2025.pdf',
-    '/contacto-anterior',
-    '/servicios-antiguos',
-    '/acerca-de',
-  ]);
-
-  // Historical legacy 301 redirects to valid equivalents
-  const LEGACY_REDIRECT_PATHS = new Map([
-    ['/blog', '/recursos']
-  ]);
-
-  app.use((req, res, next) => {
-    let pathName = req.path;
-    if (pathName.length > 1 && pathName.endsWith('/')) {
-      pathName = pathName.slice(0, -1);
-    }
-
-    // 1. Only known retired URLs may return Gone.
-    if (LEGACY_GONE_PATHS.has(pathName)) {
-      return sendGone(res);
-    }
-
-    // 2. Redirect 301 for known equivalents
-    if (LEGACY_REDIRECT_PATHS.has(pathName)) {
-      return res.redirect(301, LEGACY_REDIRECT_PATHS.get(pathName)!);
-    }
-
-    next();
-  });
 
   // WP Posts Proxy Route
   app.get('/api/wp/posts', async (req, res) => {
@@ -591,7 +459,7 @@ async function startServer() {
     });
     // The clean shell is an implementation template, never a public URL.
     app.get('/shell.html', (_req,res) => {res.status(404).type('text').send('Not found');});
-    app.use(express.static(distPath, {extensions:['html'],index:false}));
+    app.use(express.static(distPath, {extensions:['html'],index:false,redirect:false}));
     const knownRoutes = new Set(publicRoutes);
     app.use(async (req,res,next) => {
       if (!['GET','HEAD'].includes(req.method)) return next();
