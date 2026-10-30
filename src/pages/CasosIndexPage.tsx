@@ -30,7 +30,7 @@ export default function CasosIndexPage() {
                 Problemas reales. Intervenciones concretas. Cambios observables.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                Cada caso distingue contexto, problema observado, intervención, cambio reportado, evidencia y límites. El caso publicado es un reporte propio en evolución: su benchmark es interno, las conversaciones no equivalen a ventas y la trazabilidad sigue en construcción. No demuestra causalidad ni garantiza resultados en otra empresa.
+                Cada caso distingue contexto, problema observado, intervención, cambio reportado, evidencia y límites. Los casos distinguen lo observado de las hipótesis y las métricas pendientes. El benchmark de infraestructura es interno, las conversaciones no equivalen a ventas y el caso profesional explica una intervención sin atribuir resultados comerciales no medidos.
               </p>
             </div>
           </FadeInUp>
