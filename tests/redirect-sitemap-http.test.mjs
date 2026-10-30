@@ -66,8 +66,11 @@ test('all URLs from freshly generated sitemap return direct 200 without redirect
     assert.equal(retired.status,410);
     assert.equal(retired.headers.get('location'),null);
   }finally{
-    child.kill('SIGTERM');
-    await new Promise(resolve=>child.once('exit',resolve));
+    if(child.exitCode===null && child.signalCode===null){
+      const exited=new Promise(resolve=>child.once('exit',resolve));
+      child.kill('SIGTERM');
+      await exited;
+    }
     fixture.closeAllConnections();
     await new Promise(resolve=>fixture.close(resolve));
     await log.close();
