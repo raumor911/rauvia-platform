@@ -14,7 +14,7 @@ export default function PostArticle({post}: {post: WPPost}) {
       <article className="rauvia-post-page min-h-screen">
         <div className="rauvia-post-shell">
           <FadeInUp>
-            <Link to="/recursos" className="inline-flex items-center gap-2 text-rauvia-gray hover:text-rauvia-accent transition-colors mb-8 text-sm">
+            <Link to="/recursos/" className="inline-flex items-center gap-2 text-rauvia-gray hover:text-rauvia-accent transition-colors mb-8 text-sm">
               <ArrowLeft className="w-4 h-4" />
               <span>Todos los recursos</span>
             </Link>
@@ -63,7 +63,7 @@ export default function PostArticle({post}: {post: WPPost}) {
                 <p className="text-base md:text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
                   AETHRYON es nuestro sistema de análisis que identifica restricciones operativas y diseña rutas de ejecución.
                 </p>
-                <Link to="/aethryon" className="block w-full sm:w-auto px-8 bg-rauvia-navy text-white text-center py-4 rounded-lg text-sm md:text-base font-bold hover:bg-rauvia-blue transition-colors">
+                <Link to="/aethryon/" className="block w-full sm:w-auto px-8 bg-rauvia-navy text-white text-center py-4 rounded-lg text-sm md:text-base font-bold hover:bg-rauvia-blue transition-colors">
                   Conocer AETHRYON
                 </Link>
               </div>
