@@ -474,7 +474,7 @@ export default function CasoInfraestructuraB2BPage() {
                   Revisar mi caso
                 </WhatsAppCTA>
                 <Link 
-                  to="/aethryon"
+                  to="/aethryon/"
                   className="inline-flex justify-center items-center px-8 py-4 bg-white text-rauvia-navy border border-slate-200 font-bold rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors"
                   onClick={() => trackCtaClick('case_aethryon_click')}
                 >
