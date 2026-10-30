@@ -26,7 +26,7 @@ export default function NotFoundPage() {
                 VOLVER AL INICIO
               </Link>
               <Link 
-                to="/soluciones" 
+                to="/soluciones/" 
                 className="inline-flex items-center justify-center gap-2 bg-white border border-slate-200 hover:bg-slate-50 text-rauvia-navy px-8 py-3 rounded text-sm font-bold tracking-wider transition-colors min-w-[200px]"
               >
                 VER SOLUCIONES
