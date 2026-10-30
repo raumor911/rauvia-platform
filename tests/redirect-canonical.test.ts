@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {routeSeo} from '../src/seo/routeSeo.js';
 import {createCanonicalRedirectMiddleware, REDIRECT_PATHS, RETIRED_PATHS} from '../server/seo/legacyRoutes';
 import {publicRoutes} from '../scripts/public-routes.js';
 
@@ -77,4 +79,17 @@ test('unsupported methods and unrelated paths pass through; shop never falls bac
   assert.deepEqual(request('/shop/cart',{host:'shop.rauvia.com.mx'}).calls,[{status:404}]);
   assert.deepEqual(request('/llmo/',{query:'?utm_source=llmo'}).calls,
     [{status:301,location:'https://rauvia.com.mx/llmo/index.json?utm_source=llmo'}]);
+});
+
+test('SEO metadata and machine-readable sources use direct canonical page URLs',()=>{
+  const read=(path:string)=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
+  const sources=['public/llms.txt','public/llms-full.txt',
+    'public/llmo/rauvia.md','public/llmo/aethryon.md',
+    'public/llmo/evidencia.md','public/llmo/knowledge-graph.json'];
+  const matches=(text:string)=>[...text.matchAll(/https:\/\/rauvia\.com\.mx\/(?:nosotros|soluciones|aethryon|recursos|frente-comercial|casos|trayectoria|rauviaweb)(?=["'\s,)}]|$)/g)];
+  for(const path of sources)assert.equal(matches(read(path)).length,0,path);
+  for(const route of publicRoutes) {
+    const seo=routeSeo[route];
+    assert.equal(seo.canonical,'https://rauvia.com.mx'+(route==='/'?'/':route+'/'));
+  }
 });
