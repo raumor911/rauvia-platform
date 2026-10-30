@@ -1497,6 +1497,87 @@ export const routeSeo = {
     "twitterCard": "summary_large_image",
     "schema": []
   },
+  "/trayectoria": {
+    "title": "RAUVIA Trayectoria | Evolución de presencia digital",
+    "description": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+    "canonical": "https://rauvia.com.mx/trayectoria/",
+    "ogTitle": "RAUVIA Trayectoria | Evolución de presencia digital",
+    "ogDescription": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://rauvia.com.mx/trayectoria/#webpage",
+        "url": "https://rauvia.com.mx/trayectoria/",
+        "name": "RAUVIA Trayectoria | Evolución de presencia digital",
+        "description": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+        "isPartOf": {
+          "@id": "https://rauvia.com.mx/#website"
+        },
+        "publisher": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      }
+    ]
+  },
+  "/rauviaweb": {
+    "title": "RAUVIAWEB | Presencia digital para profesionistas",
+    "description": "Construye una presentación profesional clara: perfil, servicios, información verificable y contacto. Conoce el enfoque RAUVIAWEB y sus modalidades.",
+    "canonical": "https://rauvia.com.mx/rauviaweb/",
+    "ogTitle": "RAUVIAWEB | Presencia digital para profesionistas",
+    "ogDescription": "Construye una presentación profesional clara: perfil, servicios, información verificable y contacto. Conoce el enfoque RAUVIAWEB y sus modalidades.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://rauvia.com.mx/rauviaweb/#webpage",
+        "url": "https://rauvia.com.mx/rauviaweb/",
+        "name": "RAUVIAWEB | Presencia digital para profesionistas",
+        "description": "Construye una presentación profesional clara: perfil, servicios, información verificable y contacto. Conoce el enfoque RAUVIAWEB y sus modalidades.",
+        "isPartOf": {
+          "@id": "https://rauvia.com.mx/#website"
+        },
+        "publisher": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      }
+    ]
+  },
+  "/casos/presencia-posicionamiento-profesional": {
+    "title": "Caso de presencia profesional | RAUVIA Consulting",
+    "description": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
+    "canonical": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+    "ogTitle": "Caso de presencia profesional | RAUVIA Consulting",
+    "ogDescription": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/#webpage",
+        "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+        "name": "Caso de presencia profesional | RAUVIA Consulting",
+        "description": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
+        "isPartOf": {
+          "@id": "https://rauvia.com.mx/#website"
+        },
+        "publisher": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      }
+    ]
+  },
   "/404": {
     "title": "Página no encontrada | RAUVIA Consulting",
     "description": "La página que buscas no existe o ha sido movida.",
