@@ -50,6 +50,29 @@ test('one absolute HTTPS hop combines domain, slash and legacy with query',()=>{
   }
 });
 
+test('nuestro-metodo redirects once to AETHRYON, preserving host normalization and query',()=>{
+  const destination='https://rauvia.com.mx/aethryon/';
+  for(const [url,host] of [
+    ['/nuestro-metodo','rauvia.com.mx'],
+    ['/nuestro-metodo/','rauvia.com.mx'],
+    ['/nuestro-metodo/','www.rauvia.com.mx']
+  ] as const){
+    for(const method of ['GET','HEAD']){
+      const result=request(url,{host,method});
+      assert.deepEqual(result.calls,[{status:301,location:destination}],url+' '+host+' '+method);
+      assert.equal(result.next,false);
+    }
+  }
+  const tracked=request('/nuestro-metodo/',{host:'www.rauvia.com.mx',query:'?utm_source=qa'});
+  assert.deepEqual(tracked.calls,[{status:301,location:destination+'?utm_source=qa'}]);
+  assert.equal(RETIRED_PATHS.has('/nuestro-metodo'),false);
+  assert.equal(REDIRECT_PATHS.get('/nuestro-metodo'),'/aethryon/');
+  const canonical=request('/aethryon/',{query:'?utm_source=qa'});
+  assert.equal(canonical.next,true);
+  assert.deepEqual(canonical.calls,[]);
+  // The production HTTP suite checks every sitemap route, including AETHRYON, returns 200 without Location.
+});
+
 test('canonical pages never redirect; unslashed and aliases normalize once',()=>{
   for (const route of publicRoutes) {
     const path=route==='/'?'/':route+'/';

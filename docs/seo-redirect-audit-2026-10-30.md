@@ -57,7 +57,7 @@ Orden previo: **1)** V73 410/301; **2)** shop/blog/servicios/artículos; **3)** 
 | `/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla` | 301 → /recursos/brecha-capacidad-real-percepcion-mercado/ | server/seo/legacyRoutes.ts:82 | 410 | server/seo/legacyRoutes.ts:36 |
 | `/marketing-deficiente-la-razon-silenciosa-que-mata-al-90-de-las-startups-y-como-evitarla/feed` | 301 → /recursos/brecha-capacidad-real-percepcion-mercado/ | server/seo/legacyRoutes.ts:86 | 410 | server/seo/legacyRoutes.ts:37 |
 | `/metricas-de-rentabilidad-para-agencias-en-cdmx` | 410 | server.ts:147 | 410 | server/seo/legacyRoutes.ts:39 |
-| `/nuestro-metodo` | 410 | server.ts:154 | 410 | server/seo/legacyRoutes.ts:44 |
+| `/nuestro-metodo` | 410 | server.ts:154 | 301 → https://rauvia.com.mx/aethryon/ | server/seo/legacyRoutes.ts:15 |
 | `/privacidad` | 301 → /aviso-de-privacidad/ | server/seo/legacyRoutes.ts:22 | 301 → https://rauvia.com.mx/aviso-de-privacidad/ | server/seo/legacyRoutes.ts:15 |
 | `/que-hace-rauvia-ruta-90-dias` | 410 | server.ts:166 | 410 | server/seo/legacyRoutes.ts:53 |
 | `/ruta-90-dias-agencias` | 410 | server.ts:163 | 410 | server/seo/legacyRoutes.ts:50 |
@@ -76,6 +76,8 @@ Orden previo: **1)** V73 410/301; **2)** shop/blog/servicios/artículos; **3)** 
 | `/tag/transformacion-digital` | 301 → /recursos/ | server/seo/legacyRoutes.ts:42 | 410 | server/seo/legacyRoutes.ts:28 |
 | `/test-madurez-sistemica` | 410 | server.ts:148 | 410 | server/seo/legacyRoutes.ts:40 |
 | `/wp-content/uploads/2025/11/RAUVIA_PRESENTACION_GUIA_2025.pdf` | 410 | server.ts:149 | 410 | server/seo/legacyRoutes.ts:41 |
+
+> Decisión editorial: la página retirada se redirige a AETHRYON por equivalencia temática.
 
 **Reglas por patrón (no enumerables):**
 
