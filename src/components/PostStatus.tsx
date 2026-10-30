@@ -17,7 +17,7 @@ export default function PostStatus({status}: {status: 404 | 503}) {
     <div className="max-w-3xl mx-auto text-center">
       <h1 className="text-3xl font-display text-rauvia-text mb-6">{status === 404 ? 'Artículo no encontrado' : 'No pudimos cargar el artículo'}</h1>
       <p className="text-rauvia-gray mb-8">{articleStatusSeo('/', status).description}</p>
-      <Link to="/recursos" className="inline-flex items-center gap-2 text-rauvia-accent hover:text-rauvia-accent/80 transition-colors">
+      <Link to="/recursos/" className="inline-flex items-center gap-2 text-rauvia-accent hover:text-rauvia-accent/80 transition-colors">
         <ArrowLeft className="w-4 h-4" /><span>Volver a recursos</span>
       </Link>
     </div>
