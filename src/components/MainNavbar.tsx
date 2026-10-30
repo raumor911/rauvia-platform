@@ -5,7 +5,7 @@ import {ArrowRight, Menu, X} from 'lucide-react';
 import Logo from './Logo';
 import WhatsAppCTA from './WhatsAppCTA';
 
-const items=[['SOLUCIONES','/soluciones'],['AETHRYON','/aethryon'],['CASOS','/casos'],['NOSOTROS','/nosotros'],['RECURSOS','/recursos']];
+const items=[['SOLUCIONES','/soluciones/'],['AETHRYON','/aethryon/'],['CASOS','/casos/'],['NOSOTROS','/nosotros/'],['RECURSOS','/recursos/']];
 export default function MainNavbar() {
   const [open,setOpen]=useState(false);
   const panel=useRef<HTMLDivElement>(null), toggle=useRef<HTMLButtonElement>(null);
@@ -38,7 +38,7 @@ export default function MainNavbar() {
   return <nav className="rv-navbar fixed top-0 left-0 right-0 z-50 glass-card border-white/20" aria-label="Navegación principal">
     <div className="rv-nav-inner max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <Link to="/" className="flex items-center min-h-[44px] py-1"><Logo /></Link>
-      <div className="rv-desktop-nav">{items.map(([label,href])=><Link key={href} to={href} aria-current={location.pathname.replace(/\/$/,'')===href?'page':undefined}>{label}</Link>)}</div>
+      <div className="rv-desktop-nav">{items.map(([label,href])=><Link key={href} to={href} aria-current={location.pathname.replace(/\/$/,'')===href.replace(/\/$/,'')?'page':undefined}>{label}</Link>)}</div>
       <WhatsAppCTA href={wa} className="rv-nav-action bg-rauvia-navy text-white rounded px-5 py-3 text-xs font-semibold tracking-wide">{action}<ArrowRight size={16}/></WhatsAppCTA>
       <button ref={toggle} id="menu-toggle-btn" className="rv-menu-toggle" aria-controls="rv-mobile-menu" aria-expanded={open} aria-label="Abrir menú" onClick={()=>setOpen(true)}><Menu size={24}/></button>
     </div>
