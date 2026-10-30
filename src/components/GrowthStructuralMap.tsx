@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function GrowthStructuralMap() {
   return (
     <Link 
-      to="/aethryon" 
+      to="/aethryon/" 
       className="block group cursor-pointer w-full max-w-6xl mx-auto px-4"
       title="Conocer más sobre AETHRYON"
     >
