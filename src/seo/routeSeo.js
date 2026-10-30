@@ -1564,7 +1564,7 @@ export const routeSeo = {
     "schema": [
       {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "WebPage",
         "@id": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/#webpage",
         "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
         "name": "Caso de presencia profesional | RAUVIA Consulting",
