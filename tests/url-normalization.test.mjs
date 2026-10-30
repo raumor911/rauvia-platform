@@ -9,7 +9,7 @@ for (const route of ['/nosotros', '/sitio-web-servicios-especializados', '/recur
     test(`${method} page preserves query and adds one slash: ${route}`, async () => {
       const res = await fetch(`${base}${route}?utm_source=regression`, { method, redirect: 'manual' });
       assert.equal(res.status, 301);
-      assert.equal(res.headers.get('location'), `${route}/?utm_source=regression`);
+      assert.equal(res.headers.get('location'), `https://rauvia.com.mx${route}/?utm_source=regression`);
     });
   }
 }
