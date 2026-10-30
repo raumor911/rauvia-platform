@@ -1,0 +1,125 @@
+
+> react-example@78.0.0 build
+> node --import tsx scripts/build-knowledge-graph.js && node --import tsx scripts/build-retrieval.js && vite build && node scripts/prerender.js && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs
+
+Knowledge build PASS: 241 internal / 230 public nodes; 73 intents; 129 catalog gaps. Static/offline.
+Retrieval build PASS: 18 families; 64 archetypes; 18 citation bundles. Static/offline.
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - `__dirname` (vite.config.ts:18:27). Use `import.meta.dirname` instead
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 2380 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                       0.90 kB │ gzip:   0.42 kB
+dist/.vite/manifest.json                                             17.83 kB │ gzip:   2.12 kB
+dist/assets/AethryonPage-BJH03QuE.css                                 1.28 kB │ gzip:   0.50 kB
+dist/assets/PaginaWebConsultorioMedicoPage-DGX5UAqS.css               5.47 kB │ gzip:   1.36 kB
+dist/assets/SeoLocalMedicosPage-C3CaNUgJ.css                          5.88 kB │ gzip:   1.63 kB
+dist/assets/Ruta90Page-I7svEGAc.css                                   6.32 kB │ gzip:   1.97 kB
+dist/assets/PostPage-CtqXSwfO.css                                     7.19 kB │ gzip:   1.77 kB
+dist/assets/CommercialLandings-NuJyFWUN.css                           9.23 kB │ gzip:   2.63 kB
+dist/assets/PaginaComercialServiciosProfesionalesPage-D3wPUSfF.css    9.98 kB │ gzip:   2.65 kB
+dist/assets/PaginaWebMedicosAgendaWhatsappPage-HUiz8nhg.css          11.08 kB │ gzip:   2.46 kB
+dist/assets/PaginaWebMedicosEspecialistasPage-CxJNiREW.css           11.86 kB │ gzip:   2.90 kB
+dist/assets/PaginaWebMedicosPage-DNadEZio.css                        14.57 kB │ gzip:   3.39 kB
+dist/assets/PaginaWebGratisMedicosPage-Dy8cnxe0.css                  14.73 kB │ gzip:   3.57 kB
+dist/assets/CasoInfraestructuraB2BPage-CQVqQqSk.css                  17.43 kB │ gzip:   3.10 kB
+dist/assets/index-_Gvy_Xiz.css                                      105.73 kB │ gzip:  16.92 kB
+dist/assets/check-DSKXPV2u.js                                         0.11 kB │ gzip:   0.13 kB
+dist/assets/chevron-down-BrYStSN6.js                                  0.11 kB │ gzip:   0.13 kB
+dist/assets/arrow-up-right-B6vCy9Fk.js                                0.15 kB │ gzip:   0.15 kB
+dist/assets/search-JenNWio7.js                                        0.16 kB │ gzip:   0.16 kB
+dist/assets/circle-check-CrwTj19T.js                                  0.16 kB │ gzip:   0.16 kB
+dist/assets/ruta90Session-DEPGvLjf.js                                 0.19 kB │ gzip:   0.16 kB
+dist/assets/target-CHZ4GINC.js                                        0.21 kB │ gzip:   0.15 kB
+dist/assets/message-circle-feGMXxK1.js                                0.23 kB │ gzip:   0.20 kB
+dist/assets/CommercialLandings-ylsvvyeS.js                            0.23 kB │ gzip:   0.20 kB
+dist/assets/compass-CCk1YTEo.js                                       0.24 kB │ gzip:   0.19 kB
+dist/assets/users-round-Crqj2o55.js                                   0.24 kB │ gzip:   0.21 kB
+dist/assets/circle-play-DTihqFgc.js                                   0.24 kB │ gzip:   0.20 kB
+dist/assets/shield-fDozjhse.js                                        0.26 kB │ gzip:   0.21 kB
+dist/assets/file-text-P-u51T6V.js                                     0.32 kB │ gzip:   0.21 kB
+dist/assets/chart-no-axes-combined-KdC6461v.js                        0.36 kB │ gzip:   0.24 kB
+dist/assets/panels-top-left-i8f1xt2n.js                               0.37 kB │ gzip:   0.26 kB
+dist/assets/network-BQMA8KJt.js                                       0.37 kB │ gzip:   0.23 kB
+dist/assets/shield-check-D68boYig.js                                  0.40 kB │ gzip:   0.28 kB
+dist/assets/layers-5TdMCTIP.js                                        0.41 kB │ gzip:   0.23 kB
+dist/assets/zap-9f4AO1vl.js                                           0.68 kB │ gzip:   0.34 kB
+dist/assets/PaginaWebMedicosPage-CUWtk9iq.js                          0.70 kB │ gzip:   0.38 kB
+dist/assets/PaginaWebGratisMedicosPage-C7mth__r.js                    0.80 kB │ gzip:   0.41 kB
+dist/assets/wp-COafyDKu.js                                            1.15 kB │ gzip:   0.64 kB
+dist/assets/NotFoundPage-BDbaQY3O.js                                  1.57 kB │ gzip:   0.71 kB
+dist/assets/CasosIndexPage-CMM9tNSk.js                                3.63 kB │ gzip:   1.49 kB
+dist/assets/RecursosPage-cTC0V2-B.js                                  4.13 kB │ gzip:   1.74 kB
+dist/assets/NosotrosPage-B6D7KqxW.js                                 13.69 kB │ gzip:   4.09 kB
+dist/assets/TerminosPage-Dcru2vnD.js                                 15.06 kB │ gzip:   4.05 kB
+dist/assets/Ruta90Page-DQhxoJIu.js                                   15.28 kB │ gzip:   5.10 kB
+dist/assets/HomePage-nnCxxeX2.js                                     16.05 kB │ gzip:   4.92 kB
+dist/assets/AvisoPrivacidadPage-6Uy71voU.js                          17.27 kB │ gzip:   4.47 kB
+dist/assets/PaginaComercialServiciosProfesionalesPage-BCpQkDmv.js    19.55 kB │ gzip:   5.45 kB
+dist/assets/CasoInfraestructuraB2BPage-CfIqzJQy.js                   20.95 kB │ gzip:   5.89 kB
+dist/assets/PaginaWebGratisMedicosPage-DuLuzcOT.js                   21.73 kB │ gzip:   6.45 kB
+dist/assets/PaginaWebMedicosEspecialistasPage-BtGwyZd7.js            24.22 kB │ gzip:   6.72 kB
+dist/assets/FrenteComercialPage-CmSbb_GR.js                          25.35 kB │ gzip:   6.04 kB
+dist/assets/jsx-runtime-DQUdydyj.js                                  26.68 kB │ gzip:   9.47 kB
+dist/assets/SeoLocalMedicosPage-BqZuUSov.js                          27.07 kB │ gzip:   7.62 kB
+dist/assets/SitioWebComercialPymesPage-P8skUzim.js                   28.14 kB │ gzip:   6.47 kB
+dist/assets/PaginaWebMedicosPage-BflaRHQ1.js                         28.14 kB │ gzip:   7.81 kB
+dist/assets/PaginaWebConsultorioMedicoPage-fxyZZEeB.js               30.86 kB │ gzip:   8.06 kB
+dist/assets/SitioWebServiciosEspecializadosPage-CXB14QFE.js          33.56 kB │ gzip:   7.81 kB
+dist/assets/PaginaWebMedicosAgendaWhatsappPage-C5wKotLb.js           34.96 kB │ gzip:   9.02 kB
+dist/assets/SolucionesPage-CDgEzIok.js                               38.87 kB │ gzip:  10.65 kB
+dist/assets/AethryonPage-DSQTBI9S.js                                 41.19 kB │ gzip:   8.73 kB
+dist/assets/PostPage-BE8_ih-l.js                                     44.72 kB │ gzip:  25.21 kB
+dist/assets/PageMetadata-CPt1xZB1.js                                 67.60 kB │ gzip:  14.11 kB
+dist/assets/FadeInUp-t9XcbkLu.js                                    121.19 kB │ gzip:  39.33 kB
+dist/assets/editorial-zKd9TS-G.js                                   155.10 kB │ gzip:  56.43 kB
+dist/assets/index-Cy48IBQC.js                                       430.21 kB │ gzip: 134.48 kB
+
+✓ built in 531ms
+Prerendered /ruta-90
+Prerendered /
+Prerendered /nosotros
+Prerendered /soluciones
+Prerendered /aethryon
+Prerendered /recursos
+Prerendered /frente-comercial
+Prerendered /sitio-web-comercial-para-pymes
+Prerendered /sitio-web-servicios-especializados
+Prerendered /casos
+Prerendered /casos/infraestructura-temporal-b2b
+Prerendered /pagina-comercial-servicios-profesionales
+Prerendered /pagina-web-gratis-para-medicos
+Prerendered /pagina-web-para-medicos-especialistas
+Prerendered /seo-local-para-medicos
+Prerendered /pagina-web-para-medicos
+Prerendered /pagina-web-para-consultorio-medico
+Prerendered /pagina-web-medicos-agenda-whatsapp
+Prerendered /aviso-de-privacidad
+Prerendered /terminos
+Prerendered /404
+Prerender complete: route-specific HTML from the React source.
+▲ [WARNING] "import.meta" is not available with the "cjs" output format and will be empty [empty-import-meta]
+
+    src/config/wordpress.ts:6:21:
+      6 │ const WP_BASE_URL = (import.meta as any).env?.VITE_WORDPRESS_PUBLIC...
+        ╵                      ~~~~~~~~~~~
+
+  You need to set the output format to "esm" for "import.meta" to work correctly.
+
+▲ [WARNING] "import.meta" is not available with the "cjs" output format and will be empty [empty-import-meta]
+
+    src/config/wordpress.ts:7:21:
+      7 │ const WP_API_BASE = (import.meta as any).env?.VITE_WORDPRESS_API_UR...
+        ╵                      ~~~~~~~~~~~
+
+  You need to set the output format to "esm" for "import.meta" to work correctly.
+
+2 warnings
+
+  dist/server.cjs      979.4kb
+  dist/server.cjs.map    1.1mb
+
+⚡ Done in 18ms
