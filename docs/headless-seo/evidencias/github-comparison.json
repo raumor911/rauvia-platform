@@ -1,0 +1,3221 @@
+{
+  "remote_commit": "bd9d596c01a083b80597e9601572daef78d60797",
+  "remote_truncated": false,
+  "scope": "Source; excludes local node_modules, dist, tmp, data, logs. GitHub used for comparison only.",
+  "counts": {
+    "different": 26,
+    "same": 708,
+    "only_local": 44,
+    "only_remote": 24
+  },
+  "files": [
+    {
+      "path": ".env.example",
+      "status": "different"
+    },
+    {
+      "path": ".gitignore",
+      "status": "different"
+    },
+    {
+      "path": "ACTUALIZACION-SITEMAP-LLMO.md",
+      "status": "same"
+    },
+    {
+      "path": "CITATION.cff",
+      "status": "same"
+    },
+    {
+      "path": "DESPLIEGUE-HOSTINGER-V77.md",
+      "status": "only_local"
+    },
+    {
+      "path": "INFORME-V71-AETHRYON-HUMAN-UX.md",
+      "status": "same"
+    },
+    {
+      "path": "INFORME-V72-MOBILE-FOLDABLE.md",
+      "status": "same"
+    },
+    {
+      "path": "LEER-ANTES-DE-DESPLEGAR.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "MANIFIESTO-V75.1.json",
+      "status": "same"
+    },
+    {
+      "path": "MANIFIESTO-V76.json",
+      "status": "same"
+    },
+    {
+      "path": "MANIFIESTO-V77.json",
+      "status": "only_local"
+    },
+    {
+      "path": "MANIFIESTO-V78.json",
+      "status": "only_local"
+    },
+    {
+      "path": "NOTAS-V71.md",
+      "status": "same"
+    },
+    {
+      "path": "NOTAS-V72.md",
+      "status": "same"
+    },
+    {
+      "path": "README-V75.1.md",
+      "status": "same"
+    },
+    {
+      "path": "README-V76.md",
+      "status": "same"
+    },
+    {
+      "path": "README.md",
+      "status": "different"
+    },
+    {
+      "path": "RELEASE-V75.1.json",
+      "status": "same"
+    },
+    {
+      "path": "RELEASE-V76.json",
+      "status": "same"
+    },
+    {
+      "path": "RELEASE-V77.json",
+      "status": "only_local"
+    },
+    {
+      "path": "RELEASE-V78.json",
+      "status": "only_local"
+    },
+    {
+      "path": "assets/.aistudio/.gitignore",
+      "status": "same"
+    },
+    {
+      "path": "current_assets.js",
+      "status": "same"
+    },
+    {
+      "path": "data/entity-errors.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/authority-gaps.csv",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/content-realignment.csv",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/editorial-gaps.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/gaps.csv",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/gaps.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/intent-coverage.csv",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/intent-coverage.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/master-graph.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/person-profiles.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/person-schema.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/person-source-observations.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/post-v75-benchmark.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/post-v75-observations.csv",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/query-archetypes.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/retrieval-tests.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/wp-authorship-snapshot.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/knowledge/wp-metadata-snapshot.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/llmo-change-log.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/llmo-citations.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/llmo-experiments.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/llmo-opportunities.json",
+      "status": "only_remote"
+    },
+    {
+      "path": "data/sitemap-cache.xml",
+      "status": "only_remote"
+    },
+    {
+      "path": "docs/activacion-v76.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/aethryon-llmo-operations.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/aethryon-publication-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/aethryon-semantic-definition.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/ai-answer-evaluation-rubric.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/ai-attribution-model.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/ai-presence-observability.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/ai-referral-tracking.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/authority-measurement-framework.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/authority-roadmap-90-days.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/authority-surface-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/basic-schema-implementation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/bing-webmaster-setup.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/brand-monitoring-framework.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/business-problem-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/canonical-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/case-study-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/citable-assets-roadmap.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/citation-asset-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/citation-register-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/cited-page-maintenance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/community-participation-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-cannibalization-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-cluster-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-distribution-strategy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-lifecycle-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-refresh-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-repurposing-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/content-retrieval-playbook.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/controlled-vocabulary.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/crawler-access.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/digital-pr-opportunity-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/dio-v1-evidence/html-regression.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/mapping-http.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/mobile.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/pagina-comercial-servicios-profesionales-mobile.png",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/pagina-web-para-consultorio-medico-mobile.png",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/pagina-web-para-medicos-mobile.png",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-audit.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-frente-comercial.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-pagina-comercial-servicios-profesionales.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-pagina-web-para-consultorio-medico.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-pagina-web-para-medicos.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-recursos.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-robots.txt.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-sitemap.xml.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/public-sitio-web-servicios-especializados.txt",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/sitio-web-servicios-especializados-mobile.png",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/v78-preservation.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-evidence/v78-validation.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/dio-v1-report.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/direct-answer-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-authorship-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-governance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-linking-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-platform-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-prioritization.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-roadmap-12-weeks.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-schema.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-taxonomy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-template.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/editorial-versioning-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/entity-data-source.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/entity-error-management.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/entity-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/entity-url-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/entity-validation-playbook.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/evidence-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/external-assets-inventory.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/external-correction-protocol.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/external-entity-consistency.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/external-messaging-library.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/feed-distribution-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/founder-authority-strategy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/founder-entity-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/github-sync-v76.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/glossary-implementation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/glossary-recommendation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/google-search-console-setup.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/http-headers-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/index-map-1-profesionistas.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/index-map-2-medicos-consultorios.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/index-map-3-empresas-servicios.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/indexnow-operacion.md",
+      "status": "different"
+    },
+    {
+      "path": "docs/indexnow.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/intent-graph.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/internal-linking-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-evidence-model.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-graph-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-graph-ontology.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-maintenance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-matrices.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/knowledge-publication-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/legacy-url-redirects.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/link-mention-governance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-alert-thresholds.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-baseline.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-change-governance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-ci-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-commercial-attribution.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-content-measurement-framework.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-contribution-model.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-dashboard-implementation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-experiment-catalog.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-experiment-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-experiment-prioritization.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-hypothesis-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-manual-operations.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-measurement-framework.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-monthly-operating-cycle.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-observability-dashboard-spec.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-opportunity-management.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-1-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-1-foundation-validation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-1-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-1-technical-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-2-foundation-validation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-2-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-2-semantic-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-3-content-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-3-foundation-validation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-3-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-4-external-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-4-foundation-validation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-4-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-5-foundation-validation.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-5-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-phase-5-observability-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-presence-maturity-model.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llmo-quarterly-review.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/llms-file-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/machine-readable-content.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/manual-external-actions.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/non-retrieved-pages-analysis.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/organization-classification.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/original-research-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/performance-baseline.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-backup-and-restore.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-blog-migration-plan.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-blog-rendering-decision.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-cache-purge-plan.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-current-state-audit.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-database-url-migration.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-deployment-playbook.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-handoff.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-post-deployment-monitoring.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-redirect-map.csv",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-rollback-playbook.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-root-htaccess.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-sitemap-transition.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/phase-0-url-inventory.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/pillar-page-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/post-v75-benchmark-protocol.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/profile-consistency-matrix.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/public-repository-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/query-observation-method.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/question-answer-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/rauvia-aethryon-relationship.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/rauvia-semantic-identity.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/rauviaweb-attribution-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/react-rendering-indexability.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/redirect-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/retrieval-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/retrieval-matrices.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/robots-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/sameas-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/schema-entity-graph.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/schema-graph.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/search-intent-map.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/semantic-identity.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/seo-ci-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/sitemap-architecture.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/source-management-policy.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/technical-monitoring.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/topic-territories.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/utm-governance.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/baseline-v71-desde-v70.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/observabilidad-aethryon-v71.sql",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-alcance.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-cambios.diff",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-colores-dom.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-contraste.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-desktop-caminos.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-desktop-caso.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-desktop-hero.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-desktop-resumen-reconocimiento.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-headings-dom.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-mobile-cta-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-mobile-hero.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-mobile-primer-viewport.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-mobile-reconocimiento.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-mobile-resumen.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-performance.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-responsive.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-runtime.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-seo-diff.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v71-evidencias/v71-telemetria.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/analytics-redacted.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/assistant-reduced-viewport.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/baseline-build-weights.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/build-weights.csv",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/bundle-graph-v71-rebuilt.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/bundle-graph.json",
+      "status": "different"
+    },
+    {
+      "path": "docs/v72-evidencias/change-classification-files.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/change-classification.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/console-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/deep-links.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/dependency-graph.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/http-production.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/interaction-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/keyboard-and-orientation-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/lab-network-stable.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/lab-results.csv",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/matrix-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/menu-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/navigation.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/original-assets-and-protected-source.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/performance-build.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/protected-files.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/route-ownership.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/runtime.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/safari-smoke-reviewed.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/seo-prerender-diff.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/soluciones-states-final.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/source-changes.diff",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/source-changes.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/svg-optimization.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/table-keyboard.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-aethryon-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-browser.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-casos-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-frente-comercial-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-home-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-nosotros-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-recursos-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-ruta-90-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v71-soluciones-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-aethryon-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-aethryon-cta-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-aethryon-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-aethryon-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-aethryon-resumen-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-asistente-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-asistente-viewport-reducido.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-casos-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-casos-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-casos-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-frente-comercial-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-frente-comercial-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-frente-comercial-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-frente-paquetes-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-home-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-home-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-home-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-menu-landscape-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-nosotros-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-nosotros-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-nosotros-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-recursos-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-recursos-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-recursos-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta-90-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta-90-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta-90-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-componentes-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-componentes-844.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-componentes-850.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-cta-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-cta-boton-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-ruta90-tabla-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-aethryon.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-home.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-menu.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-nosotros.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-recursos.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-ruta-90.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-safari-soluciones.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-desktop-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-fold-open-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-selector-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-selector-850-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v72-evidencias/v72-soluciones-tabla-390-final.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/bitmap-browser.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/bundle.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/cta-analytics.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/cta-validation.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/footer-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/home-cta-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/http-before-local.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/http-before-public.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/http-final-local.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/keyboard-menu.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/mobile-matrix.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/performance.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/protection.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/redirects-public-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/runtime.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/seo-diff.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/sitemap-diff.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/source-changes.diff",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/source-changes.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/svg-optimization.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-evidencias/test-summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v73-stabilization-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/baseline-hashes.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/browser-smoke.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/bundle-graph-current.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/freeze-regression.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/knowledge-summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/source-changes.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-evidencias/test-summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v74-knowledge-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/browser-session.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/bundle-graph.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/cta-validation.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/freeze-comparison.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/mobile-matrix.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/release-checks.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/retrieval-examples.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/screenshots/frente-comercial-1440.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/screenshots/nosotros-1440.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/screenshots/nosotros-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/screenshots/soluciones-1440.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/screenshots/soluciones-390.png",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/audit-after.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/audit-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/lock-diff-fields.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/lock-diff.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/node-version.txt",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/npm-version.txt",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/package-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/package-lock-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/parser-after.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/parser-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/parser-changelog.txt",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/parser-corpus.json.gz",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/tree-after.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/security/tree-before.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/seo/article.html",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-evidencias/seo/routes.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-evidencias/graph-delta.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-evidencias/initial-implementation-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-evidencias/summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-knowledge-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-practice-evidencias/summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-person-practice-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v75-retrieval-report.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/v76-evidencias/inventario.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v76-evidencias/preservation.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v76-evidencias/test-summary.json",
+      "status": "same"
+    },
+    {
+      "path": "docs/v78/README.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/v78/validation.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/versions/README-V77.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/wordpress-dependencies.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/wordpress-editorial-integration.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/wordpress-entity-alignment.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/wordpress-realignment-plan.md",
+      "status": "same"
+    },
+    {
+      "path": "docs/wordpress-sync/README.md",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/wordpress-sync/published-latest-10.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/wordpress-sync/validation.json",
+      "status": "only_local"
+    },
+    {
+      "path": "docs/wp-config-blog-example.php.txt",
+      "status": "same"
+    },
+    {
+      "path": "fix-pages.js",
+      "status": "same"
+    },
+    {
+      "path": "fix_postpage.js",
+      "status": "same"
+    },
+    {
+      "path": "fix_svg.sh",
+      "status": "same"
+    },
+    {
+      "path": "fix_svg2.sh",
+      "status": "same"
+    },
+    {
+      "path": "fix_svg_line.sh",
+      "status": "same"
+    },
+    {
+      "path": "fix_typography.css",
+      "status": "same"
+    },
+    {
+      "path": "generate-phase0-docs.sh",
+      "status": "same"
+    },
+    {
+      "path": "generate-phase3-docs.sh",
+      "status": "same"
+    },
+    {
+      "path": "generate-phase4-docs.sh",
+      "status": "same"
+    },
+    {
+      "path": "generate-phase5-docs.sh",
+      "status": "same"
+    },
+    {
+      "path": "index.html",
+      "status": "same"
+    },
+    {
+      "path": "integrations/wordpress/rauvia-indexnow.php",
+      "status": "different"
+    },
+    {
+      "path": "metadata.json",
+      "status": "same"
+    },
+    {
+      "path": "neutralize_wp.css",
+      "status": "same"
+    },
+    {
+      "path": "package-lock.json",
+      "status": "different"
+    },
+    {
+      "path": "package.json",
+      "status": "different"
+    },
+    {
+      "path": "public/1109c92c84549878ea17f221eaba40bc.txt",
+      "status": "same"
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "status": "same"
+    },
+    {
+      "path": "public/favicon-48x48.png",
+      "status": "same"
+    },
+    {
+      "path": "public/favicon-96x96.png",
+      "status": "same"
+    },
+    {
+      "path": "public/favicon.ico",
+      "status": "same"
+    },
+    {
+      "path": "public/favicon.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-consultorio-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-consultorio-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-contacto-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-contacto-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-medica-mobile-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-medica-mobile.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-vs-mensaje-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-vs-mensaje-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-whatsapp-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-agenda-whatsapp-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-flujo-solicitud-cita-medica-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-flujo-solicitud-cita-medica.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-formulario-cita-datos-minimos-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-formulario-cita-datos-minimos.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-frente-comercial-medico-agenda-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-frente-comercial-medico-agenda.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-pagina-informativa-vs-contacto-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-pagina-informativa-vs-contacto.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-seo-geo-agenda-medica-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/agenda-whatsapp-medicos/mockup-seo-geo-agenda-medica.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-agenda-contacto-consultorio-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-agenda-contacto-consultorio.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-basico-vs-profesional-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-basico-vs-profesional.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-desktop-mobile-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-desktop-mobile.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-medicos-especialidades-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-consultorio-medicos-especialidades.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-frente-comercial-consultorio-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-frente-comercial-consultorio.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-multiples-medicos-consultorio-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-multiples-medicos-consultorio.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-multiples-ubicaciones-medicas-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-multiples-ubicaciones-medicas.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-pagina-consultorio-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-pagina-consultorio-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-seo-geo-consultorio-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-seo-geo-consultorio-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-ubicacion-consultorio-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/consultorio-medico/mockup-ubicacion-consultorio-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/landing-medicos/agenda.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/landing-medicos/formacion.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/landing-medicos/hero.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/landing-medicos/motivos.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/landing-medicos/ubicaciones.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-collage-especialista-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-collage-especialista.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-comparativo-generica-vs-especialista-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-comparativo-generica-vs-especialista.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-contacto-agenda-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-contacto-agenda.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-formacion-trayectoria-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-formacion-trayectoria.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-frente-comercial-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-frente-comercial-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-hero-especialista-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-hero-especialista.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-mobile-traumatologia-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-mobile-traumatologia.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-motivos-consulta-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-motivos-consulta.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-seo-local-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-seo-local-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-ubicacion-consultorio-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/medicos-especialistas/mockup-ubicacion-consultorio.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-ecosistema-pagina-medica-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-ecosistema-pagina-medica.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-especialidad-ubicacion-contacto-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-especialidad-ubicacion-contacto.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-frente-comercial-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-frente-comercial-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-opciones-pagina-web-medicos-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-opciones-pagina-web-medicos.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-basica-vs-profesional-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-basica-vs-profesional.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-medica-desktop-mobile-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-medica-desktop-mobile.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-medica-mobile-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-medica-mobile.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-web-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-pagina-web-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-perfil-medico-profesional-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-perfil-medico-profesional.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-seo-geo-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/pagina-web-medicos/mockup-seo-geo-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-01-prioridad-capacidad-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-01-prioridad-capacidad.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-02-sistema-ejecucion-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-02-sistema-ejecucion.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-03-aethryon-ruta90-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-03-aethryon-ruta90.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-04-componentes-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-04-componentes.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-05-ciclo-90-dias-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-05-ciclo-90-dias.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-06-revision-semanal-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-06-revision-semanal.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-07-vs-plan-anual-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-07-vs-plan-anual.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-08-modalidades-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-08-modalidades.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-09-medicion-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-09-medicion.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-10-paso-siguiente-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/ruta-90/ruta90-slide-10-paso-siguiente.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-auditoria-presencia-local-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-auditoria-presencia-local.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-comparativo-generica-vs-especialista-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-comparativo-generica-vs-especialista.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-comprension-seo-geo-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-comprension-seo-geo.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-contacto-agenda-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-contacto-agenda.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-frente-comercial-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-frente-comercial-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-mobile-traumatologia-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-mobile-traumatologia.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-seo-local-medico-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-seo-local-medico.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-ubicacion-consultorio-small.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/images/seo-local-medicos/mockup-ubicacion-consultorio.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/aethryon.md",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/canonical-answers.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/citation-bundles.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/evidencia.md",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/index.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/intent-coverage.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/knowledge-graph.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/organization.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/rauvia.md",
+      "status": "same"
+    },
+    {
+      "path": "public/llmo/retrieval-map.json",
+      "status": "same"
+    },
+    {
+      "path": "public/llms-full.txt",
+      "status": "same"
+    },
+    {
+      "path": "public/llms.txt",
+      "status": "same"
+    },
+    {
+      "path": "public/media/01-oportunidades.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/02-dependencia.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/03-oferta.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/04-capacidad.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/INSTRUCCIONES.txt",
+      "status": "same"
+    },
+    {
+      "path": "public/media/RAUVIA_CONSULTING_LOGO.png",
+      "status": "same"
+    },
+    {
+      "path": "public/media/RAUVIA_CONSULTING_LOGO.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-convergence-animated-optimized-v73.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-convergence-animated-optimized.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-convergence-animated.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-convergence-mobile-640.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-convergence-mobile-960.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-end-screen-blueprint.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-hero-orbital-v2-clean.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/aethryon-process-v5.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icon-aethryon-structure.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icono-asistente-rauvia-v2/asistente-rauvia-v2.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icono-asistente-rauvia-v2/simbolo-claro.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icono-asistente-rauvia-v2/simbolo-oscuro.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icono-asistente-rauvia-v2/vista-previa.png",
+      "status": "same"
+    },
+    {
+      "path": "public/media/icono-asistente-rauvia-v2/vista-previa.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-enfoques-rauvia/01-organizar.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-enfoques-rauvia/02-sistematizar.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-enfoques-rauvia/03-tecnologizar.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-enfoques-rauvia/04-automatizar.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-enfoques-rauvia/05-aethryon.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-situacion-rauvia/01-oportunidades-sin-avance.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-situacion-rauvia/02-friccion-operativa.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/iconos-situacion-rauvia/03-decisiones-abiertas.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-capabilities-section.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-growth-structural-map-fixed.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-impact-section.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-methodology-interactive.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-nosotros-hero-structure-v73.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-nosotros-hero-structure.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-solutions-hero-mobile-640.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-solutions-hero-mobile-960.webp",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-solutions-hero-support-aethryon-v73.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-solutions-hero-support-aethryon.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/media/rauvia-structure-problem-aethryon.svg",
+      "status": "same"
+    },
+    {
+      "path": "public/robots.txt",
+      "status": "same"
+    },
+    {
+      "path": "rauvia-platform-v52.zip",
+      "status": "only_remote"
+    },
+    {
+      "path": "scripts/authority-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/build-knowledge-graph.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/build-retrieval.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/check-discovery-http.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/content-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/discovery.test.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/entity-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/generate-favicons.cjs",
+      "status": "same"
+    },
+    {
+      "path": "scripts/generate-sitemap.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/knowledge-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/llmo-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/phase-0-migration-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/prepare-hostinger.cjs",
+      "status": "only_local"
+    },
+    {
+      "path": "scripts/prerender.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/public-routes.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/render-static.tsx",
+      "status": "different"
+    },
+    {
+      "path": "scripts/retrieval-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/retrieval-backend-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/run-geo-checks.ts",
+      "status": "same"
+    },
+    {
+      "path": "scripts/seo-audit.js",
+      "status": "same"
+    },
+    {
+      "path": "scripts/verify-dio-html.mjs",
+      "status": "only_local"
+    },
+    {
+      "path": "server.ts",
+      "status": "different"
+    },
+    {
+      "path": "server/analytics/crawlerMiddleware.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/analytics/crawlerRegistry.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/analytics/events.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/analytics/validation.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/db.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/providers/mockProvider.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/providers/providerAdapter.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/queryRepository.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/types.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/visibilityAnalyzer.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/visibilityRepository.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/geo/visibilityRunner.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/indexnow/service.js",
+      "status": "same"
+    },
+    {
+      "path": "server/logger.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/config.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/context.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/index.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/redaction.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/runtime.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/observability/types.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/prompts/assistant.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/seo/articleHtml.tsx",
+      "status": "same"
+    },
+    {
+      "path": "server/seo/legacyRoutes.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/seo/renderHtml.ts",
+      "status": "same"
+    },
+    {
+      "path": "server/seo/resourcesHtml.tsx",
+      "status": "only_local"
+    },
+    {
+      "path": "server/wordpress/cache.ts",
+      "status": "different"
+    },
+    {
+      "path": "server/wordpress/resources.ts",
+      "status": "only_local"
+    },
+    {
+      "path": "src/App.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/components/AIAssistantWidget.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/AethryonCore.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/CapabilitiesSection.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/FadeInUp.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/GeoBanner.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/GrowthStructuralMap.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/HeroSection.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/JsonLd.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/Logo.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/MainNavbar.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/MethodologySection.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/PostArticle.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/components/PostStatus.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/ProblemSection.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/RauviaEditorial.css",
+      "status": "same"
+    },
+    {
+      "path": "src/components/RauviaEditorial.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/SEO.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/TrackingRouteObserver.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/components/WhatsAppCTA.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/config/entity.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/config/personKnowledge.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/config/wordpress.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/context/GeoContext.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/data/fallbackPosts.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/data/ruta90.js",
+      "status": "same"
+    },
+    {
+      "path": "src/index.css",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/assets.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/catalog.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/compiler.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/coverage.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/evidence.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/graph.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/intents.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/person.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/personDiscovery.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/personProfiles.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/personRetrieval.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/practice.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/publication.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/relations.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/retrieval.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/types.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/knowledge/validate.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/analytics.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/analyticsIdentity.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/editorial.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/initialContent.ts",
+      "status": "different"
+    },
+    {
+      "path": "src/lib/postDates.ts",
+      "status": "only_local"
+    },
+    {
+      "path": "src/lib/routeLoader.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/ruta90Session.js",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/lib/wp.ts",
+      "status": "different"
+    },
+    {
+      "path": "src/main.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/AethryonPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/AethryonPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/AvisoPrivacidadPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/CasoInfraestructuraB2BPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/CasoInfraestructuraB2BPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/CasosIndexPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/CommercialLandings.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/FrenteComercialPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/HomePage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/NosotrosPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/NotFoundPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaComercialServiciosProfesionalesPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaComercialServiciosProfesionalesPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PaginaWebConsultorioMedicoPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaWebConsultorioMedicoPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PaginaWebGratisMedicosPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaWebGratisMedicosPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosAgendaWhatsappPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosAgendaWhatsappPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosEspecialistasPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosEspecialistasPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/PaginaWebMedicosPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/PostPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/RecursosPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/Ruta90Page.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/Ruta90Page.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/SeoLocalMedicosPage.css",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/SeoLocalMedicosPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/SitioWebComercialPymesPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/SitioWebServiciosEspecializadosPage.tsx",
+      "status": "different"
+    },
+    {
+      "path": "src/pages/SolucionesPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/pages/TerminosPage.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/retrieval/catalog.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/retrieval/compiler.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/retrieval/retrieve.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/retrieval/types.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/retrieval/validate.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/seo/PageMetadata.tsx",
+      "status": "same"
+    },
+    {
+      "path": "src/seo/articleSeo.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/seo/buildMetaTags.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/seo/personSchema.ts",
+      "status": "same"
+    },
+    {
+      "path": "src/seo/routeSeo.js",
+      "status": "same"
+    },
+    {
+      "path": "src/styles/editorial.css",
+      "status": "same"
+    },
+    {
+      "path": "src/styles/mobileExperience.css",
+      "status": "same"
+    },
+    {
+      "path": "summary-phase5.md",
+      "status": "same"
+    },
+    {
+      "path": "summary.md",
+      "status": "same"
+    },
+    {
+      "path": "test-compile.sh",
+      "status": "same"
+    },
+    {
+      "path": "test-fetch.js",
+      "status": "same"
+    },
+    {
+      "path": "test_fetch.js",
+      "status": "same"
+    },
+    {
+      "path": "test_wp.css",
+      "status": "same"
+    },
+    {
+      "path": "tests/aethryon-events.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/aethryon-ux.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/ai-presence-queries.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/content-retrieval-questions.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/entity-questions.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/favicon.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/aethryon-v70-seo.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/v70-control-html.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/v72-excluded-html.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/v72-route-baseline.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/wp-growth-post.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/wp-post.json",
+      "status": "same"
+    },
+    {
+      "path": "tests/fixtures/wp-published-current.json",
+      "status": "only_local"
+    },
+    {
+      "path": "tests/helpers/production-app.mjs",
+      "status": "different"
+    },
+    {
+      "path": "tests/indexnow-app.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/indexnow.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/knowledge-http.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/knowledge.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/landing-profesionales.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/mobile-experience.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/person-knowledge-http.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/person-knowledge.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/person-practice.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/resources-performance-app.test.mjs",
+      "status": "only_local"
+    },
+    {
+      "path": "tests/resources-performance.test.ts",
+      "status": "only_local"
+    },
+    {
+      "path": "tests/retrieval.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/ruta90-events.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/ruta90-integration.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/ruta90.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/seo-html.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/url-normalization.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/v73-browser-evidence.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/v73-stabilization.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/v75-http.test.mjs",
+      "status": "same"
+    },
+    {
+      "path": "tests/v75-security.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/wordpress-cache.test.ts",
+      "status": "same"
+    },
+    {
+      "path": "tests/wordpress-sync-app.test.mjs",
+      "status": "only_local"
+    },
+    {
+      "path": "tests/wordpress-sync.test.ts",
+      "status": "only_local"
+    },
+    {
+      "path": "tsconfig.json",
+      "status": "same"
+    },
+    {
+      "path": "tsconfig.knowledge.json",
+      "status": "same"
+    },
+    {
+      "path": "vite.config.ts",
+      "status": "same"
+    }
+  ]
+}

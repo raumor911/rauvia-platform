@@ -30,7 +30,7 @@ export default function CasosIndexPage() {
                 Problemas reales. Intervenciones concretas. Cambios observables.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-                Cada caso distingue contexto, problema observado, intervención, cambio reportado, evidencia y límites. El caso publicado es un reporte propio en evolución: su benchmark es interno, las conversaciones no equivalen a ventas y la trazabilidad sigue en construcción. No demuestra causalidad ni garantiza resultados en otra empresa.
+                Cada caso distingue contexto, problema observado, intervención, cambio reportado, evidencia y límites. Los casos distinguen lo observado de las hipótesis y las métricas pendientes. El benchmark de infraestructura es interno, las conversaciones no equivalen a ventas y el caso profesional explica una intervención sin atribuir resultados comerciales no medidos.
               </p>
             </div>
           </FadeInUp>
@@ -84,6 +84,18 @@ export default function CasosIndexPage() {
                 </div>
               </div>
 
+              <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col transition-all hover:shadow-xl group">
+                <div className="p-8 md:p-10 flex-grow flex flex-col">
+                  <span className="text-xs font-bold tracking-widest text-rauvia-blue uppercase mb-6">PRESENCIA DIGITAL · PROFESIONISTAS</span>
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-rauvia-navy mb-4 tracking-tight">De información profesional dispersa a una presentación digital coherente</h2>
+                  <p className="text-slate-600 leading-relaxed mb-10 flex-grow">
+                    Cómo organiza RAUVIA la experiencia, los servicios y los canales de contacto en un activo digital profesional. Se explica el enfoque de implementación sin atribuir resultados comerciales no medidos.
+                  </p>
+                  <Link to="/casos/presencia-posicionamiento-profesional/" className="inline-flex items-center text-rauvia-blue font-bold group-hover:text-rauvia-navy transition-colors mt-auto">
+                    Conocer el enfoque <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </div>
+              </div>
             </div>
           </FadeInUp>
         </div>

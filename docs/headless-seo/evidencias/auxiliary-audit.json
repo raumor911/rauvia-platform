@@ -1,0 +1,502 @@
+[
+  {
+    "url": "https://blog.rauvia.com.mx/category/sin-categoria/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://blog.rauvia.com.mx/tag/crm/",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "title": [
+      "Próximamente"
+    ],
+    "body": "<!DOCTYPE html>\n<html lang=\"es\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n        <title>Próximamente</title>\n        <style>\n            html *:not(body):not(.hsr-coming-soon-body > *) {\n                display: none;\n"
+  },
+  {
+    "url": "https://blog.rauvia.com.mx/wp-json/wp/v2/categories?per_page=100",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "items": [
+      {
+        "slug": "arquitectura-de-decisiones",
+        "link": "https://blog.rauvia.com.mx/category/arquitectura-de-decisiones/"
+      },
+      {
+        "slug": "blog",
+        "link": "https://blog.rauvia.com.mx/category/blog/"
+      },
+      {
+        "slug": "capacidad-empresarial",
+        "link": "https://blog.rauvia.com.mx/category/capacidad-empresarial/"
+      },
+      {
+        "slug": "casos-y-aprendizajes",
+        "link": "https://blog.rauvia.com.mx/category/casos-y-aprendizajes/"
+      },
+      {
+        "slug": "frente-comercial",
+        "link": "https://blog.rauvia.com.mx/category/sistemas-comerciales/frente-comercial/"
+      },
+      {
+        "slug": "liderazgo-y-direccion",
+        "link": "https://blog.rauvia.com.mx/category/liderazgo-y-direccion/"
+      },
+      {
+        "slug": "operaciones-y-procesos",
+        "link": "https://blog.rauvia.com.mx/category/operaciones-y-procesos/"
+      },
+      {
+        "slug": "perspectivas-rauvia",
+        "link": "https://blog.rauvia.com.mx/category/arquitectura-de-decisiones/perspectivas-rauvia/"
+      },
+      {
+        "slug": "sistemas-comerciales",
+        "link": "https://blog.rauvia.com.mx/category/sistemas-comerciales/"
+      },
+      {
+        "slug": "tecnologia-aplicada",
+        "link": "https://blog.rauvia.com.mx/category/tecnologia-aplicada/"
+      },
+      {
+        "slug": "transformacion-organizacional",
+        "link": "https://blog.rauvia.com.mx/category/transformacion-organizacional/"
+      }
+    ]
+  },
+  {
+    "url": "https://blog.rauvia.com.mx/wp-json/wp/v2/tags?per_page=100",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "items": [
+      {
+        "slug": "activos-digitales",
+        "link": "https://blog.rauvia.com.mx/tag/activos-digitales/"
+      },
+      {
+        "slug": "aethryon",
+        "link": "https://blog.rauvia.com.mx/tag/aethryon/"
+      },
+      {
+        "slug": "agenda-medica",
+        "link": "https://blog.rauvia.com.mx/tag/agenda-medica/"
+      },
+      {
+        "slug": "alcance-de-consultoria",
+        "link": "https://blog.rauvia.com.mx/tag/alcance-de-consultoria/"
+      },
+      {
+        "slug": "alcance-de-servicios",
+        "link": "https://blog.rauvia.com.mx/tag/alcance-de-servicios/"
+      },
+      {
+        "slug": "analisis-empresarial",
+        "link": "https://blog.rauvia.com.mx/tag/analisis-empresarial/"
+      },
+      {
+        "slug": "arquitectura-de-decisiones",
+        "link": "https://blog.rauvia.com.mx/tag/arquitectura-de-decisiones/"
+      },
+      {
+        "slug": "arquitectura-de-informacion",
+        "link": "https://blog.rauvia.com.mx/tag/arquitectura-de-informacion/"
+      },
+      {
+        "slug": "arquitectura-operativa",
+        "link": "https://blog.rauvia.com.mx/tag/arquitectura-operativa/"
+      },
+      {
+        "slug": "automatizacion",
+        "link": "https://blog.rauvia.com.mx/tag/automatizacion/"
+      },
+      {
+        "slug": "automatizacion-de-procesos",
+        "link": "https://blog.rauvia.com.mx/tag/automatizacion-de-procesos/"
+      },
+      {
+        "slug": "autonomia-del-equipo",
+        "link": "https://blog.rauvia.com.mx/tag/autonomia-del-equipo/"
+      },
+      {
+        "slug": "autoridad-profesional",
+        "link": "https://blog.rauvia.com.mx/tag/autoridad-profesional/"
+      },
+      {
+        "slug": "brecha-capacidad-mercado",
+        "link": "https://blog.rauvia.com.mx/tag/brecha-capacidad-mercado/"
+      },
+      {
+        "slug": "calificacion-de-prospectos",
+        "link": "https://blog.rauvia.com.mx/tag/calificacion-de-prospectos/"
+      },
+      {
+        "slug": "capacidad-de-ejecucion",
+        "link": "https://blog.rauvia.com.mx/tag/capacidad-de-ejecucion/"
+      },
+      {
+        "slug": "capacidad-empresarial",
+        "link": "https://blog.rauvia.com.mx/tag/capacidad-empresarial/"
+      },
+      {
+        "slug": "capacidad-operativa",
+        "link": "https://blog.rauvia.com.mx/tag/capacidad-operativa/"
+      },
+      {
+        "slug": "capacidad-tecnica",
+        "link": "https://blog.rauvia.com.mx/tag/capacidad-tecnica/"
+      },
+      {
+        "slug": "captacion-de-prospectos",
+        "link": "https://blog.rauvia.com.mx/tag/captacion-de-prospectos/"
+      },
+      {
+        "slug": "casos-de-clientes",
+        "link": "https://blog.rauvia.com.mx/tag/casos-de-clientes/"
+      },
+      {
+        "slug": "catalogo-de-servicios",
+        "link": "https://blog.rauvia.com.mx/tag/catalogo-de-servicios/"
+      },
+      {
+        "slug": "claridad-de-oferta",
+        "link": "https://blog.rauvia.com.mx/tag/claridad-de-oferta/"
+      },
+      {
+        "slug": "comparacion-por-precio",
+        "link": "https://blog.rauvia.com.mx/tag/comparacion-por-precio/"
+      },
+      {
+        "slug": "comprension",
+        "link": "https://blog.rauvia.com.mx/tag/comprension/"
+      },
+      {
+        "slug": "comunicacion-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/comunicacion-b2b/"
+      },
+      {
+        "slug": "comunicacion-externa",
+        "link": "https://blog.rauvia.com.mx/tag/comunicacion-externa/"
+      },
+      {
+        "slug": "comunicacion-medica",
+        "link": "https://blog.rauvia.com.mx/tag/comunicacion-medica/"
+      },
+      {
+        "slug": "comunicacion-tecnica-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/comunicacion-tecnica-b2b/"
+      },
+      {
+        "slug": "condiciones-de-entrega",
+        "link": "https://blog.rauvia.com.mx/tag/condiciones-de-entrega/"
+      },
+      {
+        "slug": "confianza-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/confianza-comercial/"
+      },
+      {
+        "slug": "confianza-informativa",
+        "link": "https://blog.rauvia.com.mx/tag/confianza-informativa/"
+      },
+      {
+        "slug": "confirmacion-de-cita",
+        "link": "https://blog.rauvia.com.mx/tag/confirmacion-de-cita/"
+      },
+      {
+        "slug": "consideracion-de-compra",
+        "link": "https://blog.rauvia.com.mx/tag/consideracion-de-compra/"
+      },
+      {
+        "slug": "consultores-tecnicos",
+        "link": "https://blog.rauvia.com.mx/tag/consultores-tecnicos/"
+      },
+      {
+        "slug": "consultoria-empresarial-en-mexico",
+        "link": "https://blog.rauvia.com.mx/tag/consultoria-empresarial-en-mexico/"
+      },
+      {
+        "slug": "consultoria-profesional",
+        "link": "https://blog.rauvia.com.mx/tag/consultoria-profesional/"
+      },
+      {
+        "slug": "consultorias-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/consultorias-b2b/"
+      },
+      {
+        "slug": "contacto-medico",
+        "link": "https://blog.rauvia.com.mx/tag/contacto-medico/"
+      },
+      {
+        "slug": "contacto-por-sede",
+        "link": "https://blog.rauvia.com.mx/tag/contacto-por-sede/"
+      },
+      {
+        "slug": "continuidad-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/continuidad-comercial/"
+      },
+      {
+        "slug": "continuidad-del-contacto",
+        "link": "https://blog.rauvia.com.mx/tag/continuidad-del-contacto/"
+      },
+      {
+        "slug": "convergencia-comunicacional",
+        "link": "https://blog.rauvia.com.mx/tag/convergencia-comunicacional/"
+      },
+      {
+        "slug": "coordinacion-entre-areas",
+        "link": "https://blog.rauvia.com.mx/tag/coordinacion-entre-areas/"
+      },
+      {
+        "slug": "cotizaciones",
+        "link": "https://blog.rauvia.com.mx/tag/cotizaciones/"
+      },
+      {
+        "slug": "cotizaciones-comerciales",
+        "link": "https://blog.rauvia.com.mx/tag/cotizaciones-comerciales/"
+      },
+      {
+        "slug": "crecimiento-empresarial",
+        "link": "https://blog.rauvia.com.mx/tag/crecimiento-empresarial/"
+      },
+      {
+        "slug": "crecimiento-sostenible",
+        "link": "https://blog.rauvia.com.mx/tag/crecimiento-sostenible/"
+      },
+      {
+        "slug": "credenciales-verificables",
+        "link": "https://blog.rauvia.com.mx/tag/credenciales-verificables/"
+      },
+      {
+        "slug": "criterio-profesional",
+        "link": "https://blog.rauvia.com.mx/tag/criterio-profesional/"
+      },
+      {
+        "slug": "criterios-de-decision",
+        "link": "https://blog.rauvia.com.mx/tag/criterios-de-decision/"
+      },
+      {
+        "slug": "crm",
+        "link": "https://blog.rauvia.com.mx/tag/crm/"
+      },
+      {
+        "slug": "cuellos-de-botella",
+        "link": "https://blog.rauvia.com.mx/tag/cuellos-de-botella/"
+      },
+      {
+        "slug": "datos-estructurados",
+        "link": "https://blog.rauvia.com.mx/tag/datos-estructurados/"
+      },
+      {
+        "slug": "decision-de-compra",
+        "link": "https://blog.rauvia.com.mx/tag/decision-de-compra/"
+      },
+      {
+        "slug": "decisiones-con-evidencia",
+        "link": "https://blog.rauvia.com.mx/tag/decisiones-con-evidencia/"
+      },
+      {
+        "slug": "decisiones-empresariales",
+        "link": "https://blog.rauvia.com.mx/tag/decisiones-empresariales/"
+      },
+      {
+        "slug": "decisiones-operativas",
+        "link": "https://blog.rauvia.com.mx/tag/decisiones-operativas/"
+      },
+      {
+        "slug": "delegacion-de-decisiones",
+        "link": "https://blog.rauvia.com.mx/tag/delegacion-de-decisiones/"
+      },
+      {
+        "slug": "demanda-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/demanda-comercial/"
+      },
+      {
+        "slug": "dependencia-del-dueno",
+        "link": "https://blog.rauvia.com.mx/tag/dependencia-del-dueno/"
+      },
+      {
+        "slug": "dependencias-operativas",
+        "link": "https://blog.rauvia.com.mx/tag/dependencias-operativas/"
+      },
+      {
+        "slug": "diagnostico-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/diagnostico-comercial/"
+      },
+      {
+        "slug": "diagnostico-empresarial",
+        "link": "https://blog.rauvia.com.mx/tag/diagnostico-empresarial/"
+      },
+      {
+        "slug": "diferenciacion-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/diferenciacion-comercial/"
+      },
+      {
+        "slug": "directorios-medicos",
+        "link": "https://blog.rauvia.com.mx/tag/directorios-medicos/"
+      },
+      {
+        "slug": "eficiencia-operativa",
+        "link": "https://blog.rauvia.com.mx/tag/eficiencia-operativa/"
+      },
+      {
+        "slug": "empresas-tecnicas-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/empresas-tecnicas-b2b/"
+      },
+      {
+        "slug": "enlaces-internos",
+        "link": "https://blog.rauvia.com.mx/tag/enlaces-internos/"
+      },
+      {
+        "slug": "entregables-de-consultoria",
+        "link": "https://blog.rauvia.com.mx/tag/entregables-de-consultoria/"
+      },
+      {
+        "slug": "escalabilidad",
+        "link": "https://blog.rauvia.com.mx/tag/escalabilidad/"
+      },
+      {
+        "slug": "especialidad-medica",
+        "link": "https://blog.rauvia.com.mx/tag/especialidad-medica/"
+      },
+      {
+        "slug": "especialidad-y-ubicacion",
+        "link": "https://blog.rauvia.com.mx/tag/especialidad-y-ubicacion/"
+      },
+      {
+        "slug": "especialidades-medicas",
+        "link": "https://blog.rauvia.com.mx/tag/especialidades-medicas/"
+      },
+      {
+        "slug": "estrategia-empresarial",
+        "link": "https://blog.rauvia.com.mx/tag/estrategia-empresarial/"
+      },
+      {
+        "slug": "estructura-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/estructura-comercial/"
+      },
+      {
+        "slug": "evaluacion-de-proveedores",
+        "link": "https://blog.rauvia.com.mx/tag/evaluacion-de-proveedores/"
+      },
+      {
+        "slug": "evidencia-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/evidencia-comercial/"
+      },
+      {
+        "slug": "excepciones-operativas",
+        "link": "https://blog.rauvia.com.mx/tag/excepciones-operativas/"
+      },
+      {
+        "slug": "experiencia-de-compra-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/experiencia-de-compra-b2b/"
+      },
+      {
+        "slug": "experiencia-profesional",
+        "link": "https://blog.rauvia.com.mx/tag/experiencia-profesional/"
+      },
+      {
+        "slug": "explicacion-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/explicacion-comercial/"
+      },
+      {
+        "slug": "firmas-b2b",
+        "link": "https://blog.rauvia.com.mx/tag/firmas-b2b/"
+      },
+      {
+        "slug": "firmas-boutique",
+        "link": "https://blog.rauvia.com.mx/tag/firmas-boutique/"
+      },
+      {
+        "slug": "firmas-profesionales",
+        "link": "https://blog.rauvia.com.mx/tag/firmas-profesionales/"
+      },
+      {
+        "slug": "flujo-de-informacion",
+        "link": "https://blog.rauvia.com.mx/tag/flujo-de-informacion/"
+      },
+      {
+        "slug": "frente-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/frente-comercial/"
+      },
+      {
+        "slug": "fuga-de-valor",
+        "link": "https://blog.rauvia.com.mx/tag/fuga-de-valor/"
+      },
+      {
+        "slug": "gestion-comercial",
+        "link": "https://blog.rauvia.com.mx/tag/gestion-comercial/"
+      },
+      {
+        "slug": "gestion-de-excepciones",
+        "link": "https://blog.rauvia.com.mx/tag/gestion-de-excepciones/"
+      },
+      {
+        "slug": "gestion-de-oportunidades",
+        "link": "https://blog.rauvia.com.mx/tag/gestion-de-oportunidades/"
+      },
+      {
+        "slug": "gestion-de-prospectos",
+        "link": "https://blog.rauvia.com.mx/tag/gestion-de-prospectos/"
+      },
+      {
+        "slug": "gestion-de-recursos",
+        "link": "https://blog.rauvia.com.mx/tag/gestion-de-recursos/"
+      },
+      {
+        "slug": "google-business-profile",
+        "link": "https://blog.rauvia.com.mx/tag/google-business-profile/"
+      },
+      {
+        "slug": "homologacion-de-proveedores",
+        "link": "https://blog.rauvia.com.mx/tag/homologacion-de-proveedores/"
+      },
+      {
+        "slug": "horarios-del-consultorio",
+        "link": "https://blog.rauvia.com.mx/tag/horarios-del-consultorio/"
+      },
+      {
+        "slug": "horarios-por-profesional",
+        "link": "https://blog.rauvia.com.mx/tag/horarios-por-profesional/"
+      },
+      {
+        "slug": "implementacion-de-crm",
+        "link": "https://blog.rauvia.com.mx/tag/implementacion-de-crm/"
+      },
+      {
+        "slug": "incertidumbre",
+        "link": "https://blog.rauvia.com.mx/tag/incertidumbre/"
+      },
+      {
+        "slug": "informacion",
+        "link": "https://blog.rauvia.com.mx/tag/informacion/"
+      }
+    ]
+  },
+  {
+    "url": "https://blog.rauvia.com.mx/wp-json/wp/v2/media?per_page=1",
+    "status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "items": []
+  },
+  {
+    "url": "https://rauvia.com.mx/robots.txt",
+    "status": 200,
+    "content_type": "text/plain",
+    "title": [],
+    "body": "# robots.txt for RAUVIA Consulting\n# https://rauvia.com.mx\n\nUser-agent: *\nAllow: /\nAllow: /blog/\nDisallow: /blog/wp-admin/\nAllow: /blog/wp-admin/admin-ajax.php\nDisallow: /blog/wp-login.php\nDisallow: /blog/wp-includes/\nDisallow: /*?s=\nDisallow: /preview/\nDisallow: /drafts/\n\n# Ensure all AI and LLM bots can access the substantive content\nUser-agent: Googlebot\nAllow: /\nUser-agent: Bingbot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\n\nSitemap: https://rauvia.com.mx/sitemap.xml\n"
+  },
+  {
+    "url": "https://rauvia.com.mx/sitemap.xml",
+    "status": 200,
+    "content_type": "application/xml; charset=utf-8",
+    "title": [],
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n  <url><loc>https://rauvia.com.mx/ruta-90/</loc></url>\n  <url><loc>https://rauvia.com.mx/</loc></url>\n  <url><loc>https://rauvia.com.mx/nosotros/</loc></url>\n  <url><loc>https://rauvia.com.mx/soluciones/</loc></url>\n  <url><loc>https://rauvia.com.mx/aethryon/</loc></url>\n  <url><loc>https://rauvia.com.mx/recursos/</loc></url>\n  <url><loc>https://rauvia.com.mx/frente-comercial/</loc></url>\n  <url><loc>https://rauvia.com.mx/sitio-web-comercial-para-pymes/</loc></url>\n  <url><loc>https://rauvia.com.mx/sitio-web-servicios-especializados/</loc></url>\n  <url><loc>https://rauvia.com.mx/casos/</loc></url>\n  <url><loc>https://rauvia.com.mx/casos/infraestructura-temporal-b2b/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-comercial-servicios-profesionales/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-web-gratis-para-medicos/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-web-para-medicos-especialistas/</loc></url>\n  <url><loc>https://rauvia.com.mx/seo-local-para-medicos/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-web-para-medicos/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-web-para-consultorio-medico/</loc></url>\n  <url><loc>https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/</loc></url>\n  <url><loc>https://rauvia.com.mx/aviso-de-privacidad/</loc></url>\n  <url><loc>https://rauvia.com.mx/terminos/</loc></url>\n  <url><loc>https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/</loc><lastmod>2026-09-13T19:31:46+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/</loc><lastmod>2026-09-13T19:21:17+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/</loc><lastmod>2026-09-13T18:56:32+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/</loc><lastmod>2026-09-13T18:54:42+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/</loc><lastmod>2026-09-13T00:18:50+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/</loc><lastmod>2026-09-11T23:54:55+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/</loc><lastmod>2026-09-02T05:41:25+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/</loc><lastmod>2026-09-02T05:30:55+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/</loc><lastmod>2026-09-02T05:22:59+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/</loc><lastmod>2026-09-02T05:11:02+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/</loc><lastmod>2026-08-07T01:46:21+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/</loc><lastmod>2026-08-07T01:34:54+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/</loc><lastmod>2026-08-07T01:23:25+00:00</lastmod></url>\n  <url><loc>https://rauvia.com.mx/recursos/cuando-una-empresa-deja-de-avanzar/</loc><lastmod>2026-08-07T00:02:59+00:00</lastmod></url>\n</urlset>\n"
+  },
+  {
+    "url": "https://blog.rauvia.com.mx/wp-sitemap.xml",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "title": [
+      "Próximamente"
+    ],
+    "body": "<!DOCTYPE html>\n<html lang=\"es\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n        <title>Próximamente</title>\n        <style>\n            html *:not(body):not(.hsr-coming-soon-body > *) {\n                display: none;\n            }\n\n            .hsr-coming-soon-body {\n                display: flex !important;\n            }\n        </style>\n    </head>\n    <body class=\"hostinger\">\n        <div class=\"hsr-coming-soon-body\">\n            <img alt=\"logo\" class=\"hsr-logo\"\n                src=\"https://blog.rauvia.com.mx/wp-content/plugins/hostinger/assets/images/logo-black.svg\">\n            <img alt=\"illustration\" class=\"hsr-coming-soon-illustration\"\n                src=\"https://blog.rauvia.com.mx/wp-content/plugins/hostinger/assets/images/illustration.png\">\n            <h3>\n                Próximamente            </h3>\n            <p>\n                Se está creando el nuevo sitio WordPress y se publicará en breve            </p>\n        </div>\n\n        <script type=\"speculationrules\">\n{\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/hostinger-ai-theme/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"conservative\"}]}\n</script>\n\n<link rel='stylesheet' id='hostinger_main_styles-css' href='https://blog.rauvia.com.mx/wp-content/plugins/hostinger/assets//css/coming-soon.min.css?ver=3.0.74' media='all' />\n    </body>\n</html>\n\n\n<!-- Page cached by LiteSpeed Cache 7.9.1 on 2026-10-13 18:08:48 -->"
+  }
+]

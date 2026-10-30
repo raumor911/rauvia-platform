@@ -1,0 +1,126 @@
+[
+  {
+    "url": "https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Tue, 13 Oct 2026 18:12:05 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "Express",
+      "x-request-id": "a84999d6-b349-4eda-b875-c24d78023667",
+      "cache-control": "no-store",
+      "etag": "W/\"c5fd-ECpu6rh1bprUTNH0qnxzLmnmcZY\"",
+      "platform": "hostinger",
+      "panel": "hpanel",
+      "content-security-policy": "upgrade-insecure-requests",
+      "server": "hcdn",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-hcdn-request-id": "e7943af95c7572496f8dd641c236ab25-imm-edge5",
+      "x-hcdn-cache-status": "DYNAMIC",
+      "x-hcdn-upstream-rt": "2.640"
+    },
+    "canonical": [
+      "https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "title": "Cotizar no es ayudar a decidir: qu\u00e9 revisar cuando el cliente recibe el precio y no avanza | RAUVIA"
+  },
+  {
+    "url": "https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Tue, 13 Oct 2026 18:12:06 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "Express",
+      "x-request-id": "07e4fa6d-de8e-4ff8-b89a-bd6327de56e0",
+      "cache-control": "no-store",
+      "etag": "W/\"c367-Uv3QQgz5gqTkSsO2QIruplCuegc\"",
+      "platform": "hostinger",
+      "panel": "hpanel",
+      "content-security-policy": "upgrade-insecure-requests",
+      "server": "hcdn",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-hcdn-request-id": "8983a10295fa7a7274e76b0af70d6225-imm-edge6",
+      "x-hcdn-cache-status": "DYNAMIC",
+      "x-hcdn-upstream-rt": "0.458"
+    },
+    "canonical": [
+      "https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "title": "Qu\u00e9 deber\u00eda existir antes de implementar un CRM | RAUVIA"
+  },
+  {
+    "url": "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Tue, 13 Oct 2026 18:12:07 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "Express",
+      "x-request-id": "078d0cbe-f7e7-4860-8e6a-5122c8c4c5ba",
+      "cache-control": "no-store",
+      "etag": "W/\"12224-XdPnMRchtgW2skj7pTYOHP9Wcoc\"",
+      "platform": "hostinger",
+      "panel": "hpanel",
+      "content-security-policy": "upgrade-insecure-requests",
+      "server": "hcdn",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-hcdn-request-id": "736545d0f2559fd2b03ff97624371040-imm-edge4",
+      "x-hcdn-cache-status": "DYNAMIC",
+      "x-hcdn-upstream-rt": "0.229"
+    },
+    "canonical": [
+      "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "title": "Llegan prospectos, pero no avanzan: c\u00f3mo distinguir un problema de demanda, seguimiento o decisi\u00f3n | RAUVIA"
+  },
+  {
+    "url": "https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/",
+    "method": "GET",
+    "status": 200,
+    "headers": {
+      "date": "Tue, 13 Oct 2026 18:12:07 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "vary": "Accept-Encoding",
+      "x-powered-by": "Express",
+      "x-request-id": "c88af590-0a36-4b5c-b68f-eae479114230",
+      "cache-control": "no-store",
+      "etag": "W/\"f006-kUqOXHrp7uxjmbiwN/2hoD8EQDk\"",
+      "platform": "hostinger",
+      "panel": "hpanel",
+      "content-security-policy": "upgrade-insecure-requests",
+      "server": "hcdn",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "x-hcdn-request-id": "8c576d824d5a5bbfe787d0b2eb6d534b-imm-edge4",
+      "x-hcdn-cache-status": "DYNAMIC",
+      "x-hcdn-upstream-rt": "0.150"
+    },
+    "canonical": [
+      "https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "title": "Qu\u00e9 es un frente comercial y por qu\u00e9 no es una simple p\u00e1gina web | RAUVIA"
+  }
+]

@@ -24,6 +24,9 @@ export const routeLoaders = {
   '/pagina-comercial-servicios-profesionales': () => import('../pages/PaginaComercialServiciosProfesionalesPage'),
   '/casos': () => import('../pages/CasosIndexPage'),
   '/casos/infraestructura-temporal-b2b': () => import('../pages/CasoInfraestructuraB2BPage'),
+  '/casos/presencia-posicionamiento-profesional': () => import('../pages/CasoPresenciaProfesionalPage'),
+  '/trayectoria': () => import('../pages/TrayectoriaPage'),
+  '/rauviaweb': () => import('../pages/RauviaWebPage'),
   '*': () => import('../pages/NotFoundPage'),
 };
 type RouteKey = keyof typeof routeLoaders;

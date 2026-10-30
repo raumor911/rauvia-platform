@@ -1,0 +1,411 @@
+{
+  "checked_at": "2026-10-13T18:04:04.007392+00:00",
+  "rows": [
+    {
+      "url": "https://blog.rauvia.com.mx/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/cotizacion-cliente-no-avanza-que-revisar/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/que-revisar-antes-implementar-crm/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision-2/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/que-es-frente-comercial-no-es-pagina-web/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/cuando-experiencia-se-comunica-como-catalogo/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/brecha-capacidad-real-percepcion-mercado/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/prospectos-no-avanzan-demanda-seguimiento-decision/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/cuando-whatsapp-carga-con-todo-el-proceso-comercial/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/por-que-pyme-pierde-oportunidades-clientes-interesados/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/la-ilusion-del-crecimiento-sin-capacidad/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/la-diferencia-entre-informacion-y-comprension/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/que-debe-existir-antes-de-un-crm/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/cuando-una-empresa-deja-de-avanzar/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/la-empresa-tiene-procesos-pero-sigue-dependiendo-del-dueno/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/cotizacion-cliente-no-avanza-que-revisar/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/que-revisar-antes-implementar-crm/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision-2/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/que-es-frente-comercial-no-es-pagina-web/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/cuando-experiencia-se-comunica-como-catalogo/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/brecha-capacidad-real-percepcion-mercado/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/prospectos-no-avanzan-demanda-seguimiento-decision/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/cuando-whatsapp-carga-con-todo-el-proceso-comercial/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/por-que-pyme-pierde-oportunidades-clientes-interesados/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/la-ilusion-del-crecimiento-sin-capacidad/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/la-diferencia-entre-informacion-y-comprension/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/que-debe-existir-antes-de-un-crm/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/recursos/cuando-una-empresa-deja-de-avanzar/",
+      "status": 200,
+      "location": null,
+      "canonical": [
+        "<link rel=\"canonical\" href=\"https://rauvia.com.mx/recursos/cuando-una-empresa-deja-de-avanzar/\">"
+      ],
+      "robots": [
+        "<meta name=\"robots\" content=\"index, follow\">"
+      ],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://shop.rauvia.com.mx/b/starter-microempresas",
+      "status": 301,
+      "location": "https://rauvia.com.mx/",
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "LiteSpeed",
+      "body_sample": null
+    },
+    {
+      "url": "https://shop.rauvia.com.mx/b/starter-microempresas?utm_source=test",
+      "status": 301,
+      "location": "https://rauvia.com.mx/",
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "LiteSpeed",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/feed/",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/wp-sitemap.xml",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://rauvia.com.mx/sitemap.xml",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": null
+    },
+    {
+      "url": "https://blog.rauvia.com.mx/robots.txt",
+      "status": 200,
+      "location": null,
+      "canonical": [],
+      "robots": [],
+      "x_robots_tag": null,
+      "server": "hcdn",
+      "body_sample": "<!DOCTYPE html>\n<html lang=\"es\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n        <title>Próximamente</title>\n        <style>\n            html *:not(body):not(.hsr-coming-soon-body > *) {\n                display: none;\n"
+    }
+  ]
+}
