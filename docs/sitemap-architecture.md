@@ -16,7 +16,7 @@
 ## Reconciliación editorial: 30 de octubre de 2026
 - WordPress (captura entregada por el propietario): **20 publicaciones**, **12 programadas**, **1 borrador**.
 - Sitemap XML facilitado por el propietario: **43 URLs únicas**, compuestas por 23 institucionales y 20 `/recursos/`. La copia versionada se sincroniza con este XML como respaldo.
-- **Compuerta pendiente antes de desplegar o integrar:** las URLs `/trayectoria/`, `/rauviaweb/` y `/casos/presencia-posicionamiento-profesional/` aparecen en el XML proporcionado, pero no están registradas en `src/seo/routeSeo.js` ni en `src/lib/routeLoader.ts` del `main` examinado. Verificar HTTP 200, canonical, contenido indexable y origen de despliegue. Si son páginas vigentes, integrarlas al registro y al enrutador; de lo contrario excluirlas del sitemap. El generador dinámico actual no las conservaría tras refrescar.
+- **Adecuación en este PR:** `/trayectoria/`, `/rauviaweb/` y `/casos/presencia-posicionamiento-profesional/` se incorporan tanto al registro SEO como al enrutador, con páginas de contenido específico, enlaces internos y prerender a través del registro existente. De esta forma el generador dinámico conservará las tres rutas en cada refresco. Falta verificar HTTP 200, canonical y contenido del despliegue productivo; **la rama no constituye despliegue**.
 - El snapshot mantiene exactamente los slugs de WordPress proporcionados, incluso los que parecen errores tipográficos; cualquier corrección se hace en WordPress con redirección 301, no modificando solamente el sitemap.
 
 ## QA antes de promover a producción
