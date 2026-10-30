@@ -3,7 +3,6 @@
 
 User-agent: *
 Allow: /
-Allow: /blog/
 Disallow: /blog/wp-admin/
 Allow: /blog/wp-admin/admin-ajax.php
 Disallow: /blog/wp-login.php
