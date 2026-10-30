@@ -26,7 +26,7 @@ export const routeSeo = {
           "@id": "https://rauvia.com.mx/#raul-morales",
           "name": "Raúl Antonio Morales Domínguez",
           "jobTitle": "Fundador y Director Estratégico",
-          "url": "https://rauvia.com.mx/nosotros",
+          "url": "https://rauvia.com.mx/nosotros/",
           "sameAs": [
             "https://www.linkedin.com/in/raumor/"
           ]
@@ -64,7 +64,7 @@ export const routeSeo = {
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "@id": "https://rauvia.com.mx/nosotros/#webpage",
-        "url": "https://rauvia.com.mx/nosotros",
+        "url": "https://rauvia.com.mx/nosotros/",
         "name": "Nosotros - RAUVIA",
         "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
         "publisher": {
@@ -80,7 +80,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/#raul-morales",
         "name": "Raúl Antonio Morales Domínguez",
         "jobTitle": "Fundador y Director Estratégico",
-        "url": "https://rauvia.com.mx/nosotros",
+        "url": "https://rauvia.com.mx/nosotros/",
         "sameAs": [
           "https://www.linkedin.com/in/raumor/"
         ],
@@ -105,7 +105,7 @@ export const routeSeo = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
-        "url": "https://rauvia.com.mx/soluciones",
+        "url": "https://rauvia.com.mx/soluciones/",
         "name": "Portafolio de Soluciones - RAUVIA",
         "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
         "publisher": {
@@ -130,7 +130,7 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/aethryon/#webpage",
         "name": "AETHRYON - RAUVIA",
-        "url": "https://rauvia.com.mx/aethryon",
+        "url": "https://rauvia.com.mx/aethryon/",
         "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
@@ -159,7 +159,7 @@ export const routeSeo = {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/recursos/#webpage",
-        "url": "https://rauvia.com.mx/recursos",
+        "url": "https://rauvia.com.mx/recursos/",
         "name": "Recursos y Blog | RAUVIA",
         "description": "Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.",
         "publisher": {
