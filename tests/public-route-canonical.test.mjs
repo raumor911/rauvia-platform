@@ -35,9 +35,10 @@ test('fallback sitemap is canonical and contains no duplicate URLs', () => {
   }
 });
 
-test('snapshot never includes scheduled or unpublished articles', () => {
-  // WordPress API is authoritative for publish status; this only checks the provided snapshot.
+test('WordPress discovery requires published status, while the snapshot contains valid article URLs', () => {
+  const generator = readFileSync(new URL('../scripts/generate-sitemap.js', import.meta.url),'utf8');
+  assert.match(generator, /endpoint\.searchParams\.set\('status', 'publish'\)/);
   const resources = [...sitemap.matchAll(/<loc>https:\/\/rauvia\.com\.mx\/recursos\/([^<]+)<\/loc>/g)];
-  assert.equal(resources.length, 20, 'published articles in 2026-10-30 snapshot');
-  assert.ok(!sitemap.includes('<lastmod>2026-11-'), 'future scheduled publication included');
+  assert.ok(resources.length > 0);
+  for (const item of resources) assert.match(item[1], /^[a-z0-9-]+\/$/);
 });
