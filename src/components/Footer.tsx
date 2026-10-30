@@ -9,7 +9,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
       
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-         <Link to="/aethryon" className="absolute inset-0 block group cursor-pointer" title="Conocer más sobre AETHRYON">
+         <Link to="/aethryon/" className="absolute inset-0 block group cursor-pointer" title="Conocer más sobre AETHRYON">
            <img 
                src="/media/aethryon-end-screen-blueprint.svg"
                loading={mobileLayer ? "lazy" : undefined} 
@@ -62,10 +62,10 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 order-1 md:order-2">
-            <Link to="/recursos" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Blog</Link>
-            <Link to="/casos" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Casos</Link>
-            <Link to="/aviso-de-privacidad" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Aviso de Privacidad</Link>
-            <Link to="/terminos" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Términos</Link>
+            <Link to="/recursos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Blog</Link>
+            <Link to="/casos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Casos</Link>
+            <Link to="/aviso-de-privacidad/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Aviso de Privacidad</Link>
+            <Link to="/terminos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Términos</Link>
           </div>
           <div className="flex justify-center md:justify-end gap-2 order-3 md:order-3 min-h-[44px] items-center">
             <a href="https://www.facebook.com/rauviaconsulting/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-slate-300 transition-colors p-2 flex items-center justify-center" aria-label="Facebook">
