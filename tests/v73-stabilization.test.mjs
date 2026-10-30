@@ -37,7 +37,7 @@ try{
  await test('Home CTA is a crawlable internal link and secondary CTA is intact',async()=>{
   const html=await(await direct('/')).text();const a=[...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)];const primary=a.find(x=>x[2].includes('CONOCER NUESTROS PRODUCTOS')),secondary=a.find(x=>x[2].includes('CÓMO TRABAJAMOS'));
   assert.ok(primary);assert.equal(primary[2].replace(/<[^>]*>/g,'').trim(),'CONOCER NUESTROS PRODUCTOS');assert.match(primary[1],/href="\/soluciones\/"/);assert.doesNotMatch(primary[1],/wa\.me|whatsapp|target="_blank"/i);assert.match(primary[2],/lucide-arrow-right/);
-  assert.match(secondary[1],/href="\/aethryon"/);assert.match(secondary[2],/lucide-circle-play/);
+  assert.match(secondary[1],/href="\/aethryon\/"/);assert.match(secondary[2],/lucide-circle-play/);
   const r=await direct('/soluciones/');assert.equal(r.status,200);assert.equal(r.headers.get('location'),null);
  });
  await test('Footer signature is secondary, only brand is linked, no technical navigation',async()=>{
