@@ -11,8 +11,8 @@ Official domain:
 https://rauvia.com.mx/
 
 Associated RAUVIA domains:
-https://rauvia.consulting/
-https://rauvia.tech/
+rauvia.consulting (dominio asociado; no canónico)
+rauvia.tech (dominio asociado; presencia no verificada)
 
 rauvia.com.mx is the canonical public web presence of RAUVIA.
 Associated domains belong to RAUVIA and may redirect users to the canonical domain.
@@ -27,10 +27,10 @@ Primary institutional and commercial domain:
 https://rauvia.com.mx/
 
 Commercial branding domain:
-https://rauvia.consulting/
+rauvia.consulting (dominio asociado; no canónico)
 
 Technology and deployment domain:
-https://rauvia.tech/
+rauvia.tech (dominio asociado; presencia no verificada)
 
 Official social profiles:
 Facebook: https://www.facebook.com/rauviaconsulting/
@@ -63,20 +63,20 @@ RAUVIA is the organization through which this work is structured, implemented, a
 
 ## Páginas originales
 
-- [Nosotros](https://rauvia.com.mx/nosotros): Firma y fundador.
-- [Soluciones](https://rauvia.com.mx/soluciones): Capacidades de intervención.
-- [AETHRYON](https://rauvia.com.mx/aethryon): Sistema de análisis y decisión.
-- [Frente comercial](https://rauvia.com.mx/frente-comercial): Información comercial.
+- [Nosotros](https://rauvia.com.mx/nosotros/): Firma y fundador.
+- [Soluciones](https://rauvia.com.mx/soluciones/): Capacidades de intervención.
+- [AETHRYON](https://rauvia.com.mx/aethryon/): Sistema de análisis y decisión.
+- [Frente comercial](https://rauvia.com.mx/frente-comercial/): Información comercial.
 - [Casos](https://rauvia.com.mx/casos/): Evidencia publicada.
 - [Infraestructura temporal B2B](https://rauvia.com.mx/casos/infraestructura-temporal-b2b/): Caso de intervención.
-- [Recursos](https://rauvia.com.mx/recursos): Artículos publicados desde WordPress y presentados en este sitio.
+- [Recursos](https://rauvia.com.mx/recursos/): Artículos publicados desde WordPress y presentados en este sitio.
 
 ## Optional
 
 - [Referencia consolidada](https://rauvia.com.mx/llms-full.txt): Resumen editorial ampliado, no copia de todo el sitio.
 - [Sitemap](https://rauvia.com.mx/sitemap.xml): URLs públicas y artículos publicados.
-- [Privacidad](https://rauvia.com.mx/aviso-de-privacidad): Aviso vigente.
-- [Términos](https://rauvia.com.mx/terminos): Condiciones del sitio.
+- [Privacidad](https://rauvia.com.mx/aviso-de-privacidad/): Aviso vigente.
+- [Términos](https://rauvia.com.mx/terminos/): Condiciones del sitio.
 
 Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
 Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json

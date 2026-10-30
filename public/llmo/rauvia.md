@@ -14,4 +14,4 @@
 
 No forman una ruta obligatoria. La intervención depende del problema y las condiciones reales de la empresa. RAUVIA construye capacidades, no solo conecta herramientas.
 
-Fuentes: [Nosotros](https://rauvia.com.mx/nosotros), [Soluciones](https://rauvia.com.mx/soluciones).
+Fuentes: [Nosotros](https://rauvia.com.mx/nosotros/), [Soluciones](https://rauvia.com.mx/soluciones/).

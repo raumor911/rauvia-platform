@@ -6376,7 +6376,7 @@
       ],
       "schemaId": "https://rauvia.com.mx/aethryon/#entity",
       "name": "AETHRYON",
-      "url": "https://rauvia.com.mx/aethryon",
+      "url": "https://rauvia.com.mx/aethryon/",
       "attribution": "developed_by_rauvia",
       "representedBy": [
         "asset:aethryon"

@@ -51,7 +51,7 @@ export default function HeroSection() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link 
-                to="/aethryon"
+                to="/aethryon/"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-4 sm:py-3 rounded text-sm sm:text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]"
               >
                 <PlayCircle className="w-5 h-5 text-rauvia-blue" />
@@ -84,7 +84,7 @@ export default function HeroSection() {
                   </span>
                 </div>
                 <Link 
-                  to="/frente-comercial" 
+                  to="/frente-comercial/" 
                   className="w-full py-4 text-sm font-bold bg-rauvia-navy text-white rounded hover:bg-rauvia-navy-dark transition-colors flex items-center justify-center gap-2"
                 >
                   Conocer Frente Comercial

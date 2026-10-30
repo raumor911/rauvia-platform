@@ -50,7 +50,7 @@ export default function NosotrosPage() {
                   <ArrowRight className="w-4 h-4" />
                 </WhatsAppCTA>
                 <Link 
-                  to="/aethryon"
+                  to="/aethryon/"
                   className="flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-3 rounded text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]"
                 >
                   <PlayCircle className="w-5 h-5 text-rauvia-blue" />
@@ -143,12 +143,12 @@ export default function NosotrosPage() {
                 <p>No sustituye la experiencia directiva ni representa una solución universal para cualquier problema empresarial.</p>
                 <p>La organiza, la contrasta y la convierte en una arquitectura de acción.</p>
               </div>
-              <Link to="/aethryon" className="inline-flex items-center gap-2 text-rauvia-navy hover:text-rauvia-blue font-bold tracking-wider text-sm transition-colors uppercase">
+              <Link to="/aethryon/" className="inline-flex items-center gap-2 text-rauvia-navy hover:text-rauvia-blue font-bold tracking-wider text-sm transition-colors uppercase">
                 CONOCER AETHRYON <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
             <div className="flex justify-center relative">
-               <Link to="/aethryon" className="w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
+               <Link to="/aethryon/" className="w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
                  <img width="1400" height="1060" loading="lazy" src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain group-hover:scale-[1.01] transition-transform" />
                </Link>
             </div>

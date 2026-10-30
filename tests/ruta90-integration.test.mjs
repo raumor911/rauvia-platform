@@ -12,5 +12,5 @@ test('Historical aliases redirect directly to canonical fragment; destination is
  for(const p of ['/componentes-ruta-90-dias-pymes','/componentes-ruta-90-dias-pymes/']){const r=await fetch(process.env.TEST_BASE_URL+p,{redirect:'manual'});assert.equal(r.status,301);assert.equal(r.headers.get('location'),'https://rauvia.com.mx/ruta-90/#componentes');const target=new URL(r.headers.get('location'));const end=await fetch(process.env.TEST_BASE_URL+target.pathname,{redirect:'manual'});assert.equal(end.status,200);assert.equal(end.headers.get('location'),null);}
 });
 test('Crawler middleware observes historical redirect before response',()=>{
- const server=fs.readFileSync('server.ts','utf8');assert.ok(server.indexOf('app.use(aiCrawlerMiddleware)')<server.indexOf("return res.redirect(301, 'https://rauvia.com.mx/ruta-90/#componentes')"));
+ const server=fs.readFileSync('server.ts','utf8');assert.ok(server.indexOf('app.use(aiCrawlerMiddleware)')<server.indexOf('app.use(createCanonicalRedirectMiddleware(publicRoutes))'));
 });

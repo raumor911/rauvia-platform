@@ -339,7 +339,7 @@ export default function SolucionesPage() {
 
             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
                {/* Hero Graphic: AETHRYON deploying assets */}
-               <Link to="/aethryon" className="relative w-full max-w-xl aspect-square flex items-center justify-center group cursor-pointer" title="Conocer más sobre AETHRYON">
+               <Link to="/aethryon/" className="relative w-full max-w-xl aspect-square flex items-center justify-center group cursor-pointer" title="Conocer más sobre AETHRYON">
                   <picture className="contents">
                     <source media="(max-width: 1023px)" type="image/webp"
                       srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"

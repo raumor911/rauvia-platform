@@ -37,7 +37,8 @@
     "build:server": "esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs",
     "test:wordpress-sync": "node --import tsx --test tests/wordpress-sync.test.ts tests/wordpress-sync-app.test.mjs",
     "postinstall": "node scripts/prepare-hostinger.cjs",
-    "test:resources-performance": "node --import tsx --test tests/resources-performance.test.ts tests/resources-performance-app.test.mjs"
+    "test:resources-performance": "node --import tsx --test tests/resources-performance.test.ts tests/resources-performance-app.test.mjs",
+    "test:redirects": "node --import tsx --test tests/redirect-canonical.test.ts && node --test tests/redirect-sitemap-http.test.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.21.0",

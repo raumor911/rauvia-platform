@@ -47,7 +47,7 @@ test('compiled production app: key, authenticated hooks, SEO and legacy routes',
     assert.equal((r.text.match(/<h1\b/g)||[]).length,1);assert(r.text.includes(`href="${routeSeo[route].canonical}"`));
   });
   await t.test('legacy redirects, trailing slash, Gone and protected files retain behavior',async()=>{
-    for(const [url,target] of [['/blog','/recursos/'],['/servicios','/soluciones/'],['/soluciones?utm_source=qa','/soluciones/?utm_source=qa'],['/componentes-ruta-90-dias-pymes','https://rauvia.com.mx/ruta-90/#componentes']]){
+    for(const [url,target] of [['/blog','https://rauvia.com.mx/recursos/'],['/servicios','https://rauvia.com.mx/soluciones/'],['/soluciones?utm_source=qa','https://rauvia.com.mx/soluciones/?utm_source=qa'],['/componentes-ruta-90-dias-pymes','https://rauvia.com.mx/ruta-90/#componentes']]){
       const r=await app.request(url);assert.equal(r.status,301,url);assert.equal(r.headers.location,target,url);
     }
     assert.equal((await app.request('/contacto-anterior/')).status,410);

@@ -7,4 +7,4 @@ Consultar [Casos RAUVIA](https://rauvia.com.mx/casos/) y el [caso de infraestruc
 - Una capacidad en construcción no equivale a un resultado concluido.
 - No atribuir clientes, métricas, certificaciones o resultados que no estén documentados en la fuente.
 
-Los [artículos](https://rauvia.com.mx/recursos) ofrecen perspectivas editoriales. Sus URLs se enumeran en el [sitemap](https://rauvia.com.mx/sitemap.xml).
+Los [artículos](https://rauvia.com.mx/recursos/) ofrecen perspectivas editoriales. Sus URLs se enumeran en el [sitemap](https://rauvia.com.mx/sitemap.xml).

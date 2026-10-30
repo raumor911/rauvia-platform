@@ -61,12 +61,12 @@ try {
   const data=html.match(/<script id="rauvia-initial-content" type="application\/json">([\s\S]*?)<\/script>/)[1];assert.doesNotMatch(data,/<\/script/);assert.equal(JSON.parse(data).post.slug,'cms-seguridad');
  });
  await test('trailing slash preserves query on articles and case studies; missing cases do not fall back to Home',async()=>{
-  for(const path of ['/recursos/'+real.slug,'/casos/infraestructura-temporal-b2b']){const res=await fetch(base+path+'?utm_source=qa',{redirect:'manual'});assert.equal(res.status,301);assert.equal(res.headers.get('location'),path+'/?utm_source=qa');}
+  for(const path of ['/recursos/'+real.slug,'/casos/infraestructura-temporal-b2b']){const res=await fetch(base+path+'?utm_source=qa',{redirect:'manual'});assert.equal(res.status,301);assert.equal(res.headers.get('location'),'https://rauvia.com.mx'+path+'/?utm_source=qa');}
   assert.equal((await fetch(base+'/casos/inexistente/')).status,404);assert.equal((await fetch(base+'/shell.html')).status,404);
  });
  await test('production does not expose Vite dev modules',async()=>{for(const path of ['/@vite/client','/@react-refresh'])assert.equal((await fetch(base+path)).status,404);});
  await test('Ruta 90 canonical slash, recovered historic intent and sitemap',async()=>{
-  const slash=await fetch(base+'/ruta-90?utm_source=qa',{redirect:'manual'});assert.equal(slash.status,301);assert.equal(slash.headers.get('location'),'/ruta-90/?utm_source=qa');
+  const slash=await fetch(base+'/ruta-90?utm_source=qa',{redirect:'manual'});assert.equal(slash.status,301);assert.equal(slash.headers.get('location'),'https://rauvia.com.mx/ruta-90/?utm_source=qa');
   for(const path of ['/componentes-ruta-90-dias-pymes','/componentes-ruta-90-dias-pymes/']){const response=await fetch(base+path,{redirect:'manual'});assert.equal(response.status,301);assert.equal(response.headers.get('location'),'https://rauvia.com.mx/ruta-90/#componentes');}
   const sitemap=await fetch(base+'/sitemap.xml');assert.equal(sitemap.status,200);assert.ok((await sitemap.text()).includes('https://rauvia.com.mx/ruta-90/'));
  });

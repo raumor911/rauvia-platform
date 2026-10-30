@@ -12,7 +12,7 @@ export default function AethryonCore() {
   return (
     <div className="w-full flex flex-col items-center">
       {/* Preserve the desktop vector animation; remove duplicated raster data in its delivery copy. */}
-      <Link to="/aethryon" className="w-full h-[300px] sm:h-[400px] lg:h-[550px] xl:h-[700px] relative flex items-center justify-center lg:justify-start xl:justify-center overflow-x-hidden group cursor-pointer" title="Conocer más sobre AETHRYON">
+      <Link to="/aethryon/" className="w-full h-[300px] sm:h-[400px] lg:h-[550px] xl:h-[700px] relative flex items-center justify-center lg:justify-start xl:justify-center overflow-x-hidden group cursor-pointer" title="Conocer más sobre AETHRYON">
         <picture className="contents">
           <source media="(max-width: 1023px)" type="image/webp"
             srcSet="/media/aethryon-convergence-mobile-640.webp 640w, /media/aethryon-convergence-mobile-960.webp 960w"
