@@ -12,6 +12,7 @@ export const V73_RETIRED_PATHS = new Set([
 export const V73_REPLACED_PATHS = new Map<string, string>([
   ['/errores-planeacion-estrategica-90-dias', '/ruta-90/'],
   ['/categoria-producto/estrategia-y-planificacion', '/aethryon/'],
+  ['/nuestro-metodo', '/aethryon/'],
   ['/privacidad', '/aviso-de-privacidad/'],
   ['/brand/rauvia-consulting', '/nosotros/'],
   ['/categoria-producto/servicios-de-consultoria', '/soluciones/'],
@@ -41,7 +42,6 @@ export const RETIRED_PATHS = new Set<string>([
   '/wp-content/uploads/2025/11/RAUVIA_PRESENTACION_GUIA_2025.pdf',
   '/sobre-rauvia',
   '/contacto',
-  '/nuestro-metodo',
   '/consultoria_gratis',
   '/blindaje-operativo-2026',
   '/delegacion-hueca-caos-a-sistema-90-dias',
