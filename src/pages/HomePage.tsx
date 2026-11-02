@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import ProblemSection from '../components/ProblemSection';
 import MethodologySection from '../components/MethodologySection';
 import CapabilitiesSection from '../components/CapabilitiesSection';
+import '../styles/homeMotion.css';
 
 
 export default function HomePage() {
@@ -29,13 +30,13 @@ export default function HomePage() {
       <FadeInUp>
         <HeroSection />
       </FadeInUp>
-      <FadeInUp>
+      <FadeInUp className="rv-home-reveal rv-home-problems">
         <ProblemSection />
       </FadeInUp>
-      <FadeInUp>
+      <FadeInUp className="rv-home-reveal">
         <MethodologySection />
       </FadeInUp>
-      <FadeInUp>
+      <FadeInUp className="rv-home-reveal">
         <CapabilitiesSection />
       </FadeInUp>
       
