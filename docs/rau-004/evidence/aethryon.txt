@@ -1,0 +1,101 @@
+
+> react-example@78.0.0 test:aethryon
+> node --import tsx --test tests/aethryon-events.test.ts && node --test tests/aethryon-ux.test.mjs
+
+✔ Repeated observer callbacks and remounts send one observation per section/session (1.368166ms)
+✔ Namespace extension preserves Ruta 90 storage keys and failure fallback isolation (0.127125ms)
+✔ Existing endpoint taxonomy accepts section exposure and navigation without new events (0.118041ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.854333
+✖ AETHRYON preserves V70 metadata and H1, with the documented V73 founder reference (1.554083ms)
+✔ Human reading path reaches example, outcomes and possible routes before methodology (0.226708ms)
+✔ Optional depth retains six original outcomes, four operations, four steps and five criteria in initial HTML (0.319292ms)
+✔ Existing execution semantics and links remain; final actions have distinct destinations (0.52575ms)
+✖ Main route metadata preserves V71 apart from the V73 founder reference (0.620292ms)
+﹣ Compiled production returns AETHRYON content and live internal destinations (0.051125ms) # SKIP
+ℹ tests 6
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 51.61525
+
+✖ failing tests:
+
+test at ../../../Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/tests/aethryon-ux.test.mjs:12:1
+✖ AETHRYON preserves V70 metadata and H1, with the documented V73 founder reference (1.554083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      {
+        '@context': 'https://schema.org',
+        '@id': 'https://rauvia.com.mx/aethryon/#webpage',
+        '@type': 'WebPage',
+  ...
+        },
+  +     url: 'https://rauvia.com.mx/aethryon/'
+  -     url: 'https://rauvia.com.mx/aethryon'
+      },
+      {
+        '@context': 'https://schema.org',
+        '@id': 'https://rauvia.com.mx/#organization',
+        '@type': 'Organization',
+  
+      at TestContext.<anonymous> (file:///Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/tests/aethryon-ux.test.mjs:17:9)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.start (node:internal/test_runner/test:1003:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { '@context': 'https://schema.org', '@type': 'WebPage', '@id': 'https://rauvia.com.mx/aethryon/#webpage', name: 'AETHRYON - RAUVIA', url: 'https://rauvia.com.mx/aethryon/', description: 'Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.', publisher: [Object], mainEntity: [Object] }, { '@context': 'https://schema.org', '@type': 'Organization', '@id': 'https://rauvia.com.mx/#organization', name: 'RAUVIA', legalName: 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO', url: 'https://rauvia.com.mx', logo: 'https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png', description: 'RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.', sameAs: [Array], founder: [Object] }, { '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://rauvia.com.mx/#website', name: 'RAUVIA', url: 'https://rauvia.com.mx', publisher: [Object] } ],
+    expected: [ { '@context': 'https://schema.org', '@type': 'WebPage', '@id': 'https://rauvia.com.mx/aethryon/#webpage', name: 'AETHRYON - RAUVIA', url: 'https://rauvia.com.mx/aethryon', description: 'Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.', publisher: [Object], mainEntity: [Object] }, { '@context': 'https://schema.org', '@type': 'Organization', '@id': 'https://rauvia.com.mx/#organization', name: 'RAUVIA', legalName: 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO', url: 'https://rauvia.com.mx', logo: 'https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png', description: 'RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.', sameAs: [Array], founder: [Object] }, { '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://rauvia.com.mx/#website', name: 'RAUVIA', url: 'https://rauvia.com.mx', publisher: [Object] } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at ../../../Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/tests/aethryon-ux.test.mjs:41:1
+✖ Main route metadata preserves V71 apart from the V73 founder reference (0.620292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      {
+        '@context': 'https://schema.org',
+        '@id': 'https://rauvia.com.mx/#organization',
+        '@type': 'Organization',
+  ...
+          ],
+  +       url: 'https://rauvia.com.mx/nosotros/'
+  -       url: 'https://rauvia.com.mx/nosotros'
+        },
+        logo: 'https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png',
+        name: 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO',
+        sameAs: [
+          'https://www.facebook.com/rauviaconsulting/',
+  
+      at TestContext.<anonymous> (file:///Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/tests/aethryon-ux.test.mjs:48:10)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { '@context': 'https://schema.org', '@type': 'Organization', '@id': 'https://rauvia.com.mx/#organization', name: 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO', alternateName: 'RAUVIA', url: 'https://rauvia.com.mx', logo: 'https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png', description: 'RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.', founder: [Object], sameAs: [Array] }, { '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://rauvia.com.mx/#website', name: 'RAUVIA', url: 'https://rauvia.com.mx', publisher: [Object] } ],
+    expected: [ { '@context': 'https://schema.org', '@type': 'Organization', '@id': 'https://rauvia.com.mx/#organization', name: 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO', alternateName: 'RAUVIA', url: 'https://rauvia.com.mx', logo: 'https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png', description: 'RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.', founder: [Object], sameAs: [Array] }, { '@context': 'https://schema.org', '@type': 'WebSite', '@id': 'https://rauvia.com.mx/#website', name: 'RAUVIA', url: 'https://rauvia.com.mx', publisher: [Object] } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

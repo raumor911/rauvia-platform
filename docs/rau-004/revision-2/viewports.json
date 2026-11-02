@@ -1,0 +1,1502 @@
+[
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 800,
+    "heroBottom": 1721.3359375,
+    "links": [
+      {
+        "box": {
+          "bottom": 472.171875,
+          "height": 48,
+          "left": 16,
+          "right": 344,
+          "top": 424.171875,
+          "width": 328,
+          "x": 16,
+          "y": 424.171875
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 532.171875,
+          "height": 48,
+          "left": 16,
+          "right": 344,
+          "top": 484.171875,
+          "width": 328,
+          "x": 16,
+          "y": 484.171875
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 802.2734375,
+          "height": 242.1015625,
+          "left": 65,
+          "right": 295,
+          "top": 560.171875,
+          "width": 230,
+          "x": 65,
+          "y": 560.171875
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 1401.3359375,
+          "height": 48,
+          "left": 39,
+          "right": 321,
+          "top": 1353.3359375,
+          "width": 282,
+          "x": 39,
+          "y": 1353.3359375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 1644.3359375,
+          "height": 44,
+          "left": 37,
+          "right": 323,
+          "top": 1600.3359375,
+          "width": 286,
+          "x": 37,
+          "y": 1600.3359375
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 1721.3359375,
+          "height": 44,
+          "left": 158,
+          "right": 202,
+          "top": 1677.3359375,
+          "width": 44,
+          "x": 158,
+          "y": 1677.3359375
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 532.171875,
+          "height": 395.375,
+          "left": 16,
+          "right": 344,
+          "top": 136.796875,
+          "width": 328,
+          "x": 16,
+          "y": 136.796875
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 1038.3359375,
+          "height": 478.1640625,
+          "left": 16,
+          "right": 344,
+          "top": 560.171875,
+          "width": 328,
+          "x": 16,
+          "y": 560.171875
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 1424.3359375,
+          "height": 358,
+          "left": 16,
+          "right": 344,
+          "top": 1066.3359375,
+          "width": 328,
+          "x": 16,
+          "y": 1066.3359375
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 1665.3359375,
+          "height": 205,
+          "left": 16,
+          "right": 344,
+          "top": 1460.3359375,
+          "width": 328,
+          "x": 16,
+          "y": 1460.3359375
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 360
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 844,
+    "heroBottom": 1699.3046875,
+    "links": [
+      {
+        "box": {
+          "bottom": 459.140625,
+          "height": 48,
+          "left": 16,
+          "right": 374,
+          "top": 411.140625,
+          "width": 358,
+          "x": 16,
+          "y": 411.140625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 519.140625,
+          "height": 48,
+          "left": 16,
+          "right": 374,
+          "top": 471.140625,
+          "width": 358,
+          "x": 16,
+          "y": 471.140625
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 789.2421875,
+          "height": 242.1015625,
+          "left": 80,
+          "right": 310,
+          "top": 547.140625,
+          "width": 230,
+          "x": 80,
+          "y": 547.140625
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 1388.3046875,
+          "height": 48,
+          "left": 39,
+          "right": 351,
+          "top": 1340.3046875,
+          "width": 312,
+          "x": 39,
+          "y": 1340.3046875
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 1622.3046875,
+          "height": 44,
+          "left": 37,
+          "right": 353,
+          "top": 1578.3046875,
+          "width": 316,
+          "x": 37,
+          "y": 1578.3046875
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 1699.3046875,
+          "height": 44,
+          "left": 173,
+          "right": 217,
+          "top": 1655.3046875,
+          "width": 44,
+          "x": 173,
+          "y": 1655.3046875
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 519.140625,
+          "height": 382.34375,
+          "left": 16,
+          "right": 374,
+          "top": 136.796875,
+          "width": 358,
+          "x": 16,
+          "y": 136.796875
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 1025.3046875,
+          "height": 478.1640625,
+          "left": 16,
+          "right": 374,
+          "top": 547.140625,
+          "width": 358,
+          "x": 16,
+          "y": 547.140625
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 1411.3046875,
+          "height": 358,
+          "left": 16,
+          "right": 374,
+          "top": 1053.3046875,
+          "width": 358,
+          "x": 16,
+          "y": 1053.3046875
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 1643.3046875,
+          "height": 196,
+          "left": 16,
+          "right": 374,
+          "top": 1447.3046875,
+          "width": 358,
+          "x": 16,
+          "y": 1447.3046875
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 390
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 1024,
+    "heroBottom": 1008.4140625,
+    "links": [
+      {
+        "box": {
+          "bottom": 366.828125,
+          "height": 61.796875,
+          "left": 38.3984375,
+          "right": 287.546875,
+          "top": 305.03125,
+          "width": 249.1484375,
+          "x": 38.3984375,
+          "y": 305.03125
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 359.9296875,
+          "height": 48,
+          "left": 299.546875,
+          "right": 548.6953125,
+          "top": 311.9296875,
+          "width": 249.1484375,
+          "x": 299.546875,
+          "y": 311.9296875
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 597.3515625,
+          "height": 210.5234375,
+          "left": 106.1953125,
+          "right": 306.1953125,
+          "top": 386.828125,
+          "width": 200,
+          "x": 106.1953125,
+          "y": 386.828125
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 790.1171875,
+          "height": 48,
+          "left": 418.9921875,
+          "right": 704.59375,
+          "top": 742.1171875,
+          "width": 285.6015625,
+          "x": 418.9921875,
+          "y": 742.1171875
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 910.4140625,
+          "height": 44,
+          "left": 531.1640625,
+          "right": 712.59375,
+          "top": 866.4140625,
+          "width": 181.4296875,
+          "x": 531.1640625,
+          "y": 866.4140625
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 1008.4140625,
+          "height": 44,
+          "left": 361.9921875,
+          "right": 405.9921875,
+          "top": 964.4140625,
+          "width": 44,
+          "x": 361.9921875,
+          "y": 964.4140625
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 366.828125,
+          "height": 230.03125,
+          "left": 38.3984375,
+          "right": 729.59375,
+          "top": 136.796875,
+          "width": 691.1953125,
+          "x": 38.3984375,
+          "y": 136.796875
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 825.4140625,
+          "height": 438.5859375,
+          "left": 38.3984375,
+          "right": 373.9921875,
+          "top": 386.828125,
+          "width": 335.59375,
+          "x": 38.3984375,
+          "y": 386.828125
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 815.1171875,
+          "height": 418,
+          "left": 393.9921875,
+          "right": 729.59375,
+          "top": 397.1171875,
+          "width": 335.6015625,
+          "x": 393.9921875,
+          "y": 397.1171875
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 956.4140625,
+          "height": 107,
+          "left": 38.3984375,
+          "right": 729.59375,
+          "top": 849.4140625,
+          "width": 691.1953125,
+          "x": 38.3984375,
+          "y": 849.4140625
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 768
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 768,
+    "heroBottom": 671.734375,
+    "links": [
+      {
+        "box": {
+          "bottom": 454.1796875,
+          "height": 44,
+          "left": 56.3203125,
+          "right": 355.0078125,
+          "top": 410.1796875,
+          "width": 298.6875,
+          "x": 56.3203125,
+          "y": 410.1796875
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 502.1796875,
+          "height": 44,
+          "left": 56.3203125,
+          "right": 355.0078125,
+          "top": 458.1796875,
+          "width": 298.6875,
+          "x": 56.3203125,
+          "y": 458.1796875
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 440.640625,
+          "height": 219.953125,
+          "left": 375.484375,
+          "right": 584.4453125,
+          "top": 220.6875,
+          "width": 208.9609375,
+          "x": 375.484375,
+          "y": 220.6875
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 502.734375,
+          "height": 56.390625,
+          "left": 753.3203125,
+          "right": 948.6796875,
+          "top": 446.34375,
+          "width": 195.359375,
+          "x": 753.3203125,
+          "y": 446.34375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 606.734375,
+          "height": 44,
+          "left": 793.25,
+          "right": 942.6796875,
+          "top": 562.734375,
+          "width": 149.4296875,
+          "x": 793.25,
+          "y": 562.734375
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 671.734375,
+          "height": 44,
+          "left": 490,
+          "right": 534,
+          "top": 627.734375,
+          "width": 44,
+          "x": 490,
+          "y": 627.734375
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 502.1796875,
+          "height": 343.03125,
+          "left": 56.3203125,
+          "right": 355.0078125,
+          "top": 159.1484375,
+          "width": 298.6875,
+          "x": 56.3203125,
+          "y": 159.1484375
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 501.25,
+          "height": 341.171875,
+          "left": 375.484375,
+          "right": 713.84375,
+          "top": 160.078125,
+          "width": 338.359375,
+          "x": 375.484375,
+          "y": 160.078125
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 521.734375,
+          "height": 382.140625,
+          "left": 734.3203125,
+          "right": 967.6796875,
+          "top": 139.59375,
+          "width": 233.359375,
+          "x": 734.3203125,
+          "y": 139.59375
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 619.734375,
+          "height": 70,
+          "left": 56.3203125,
+          "right": 967.6796875,
+          "top": 549.734375,
+          "width": 911.359375,
+          "x": 56.3203125,
+          "y": 549.734375
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 900,
+    "heroBottom": 831.4140625,
+    "links": [
+      {
+        "box": {
+          "bottom": 591.4765625,
+          "height": 60.921875,
+          "left": 79.203125,
+          "right": 341.6875,
+          "top": 530.5546875,
+          "width": 262.484375,
+          "x": 79.203125,
+          "y": 530.5546875
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 585.015625,
+          "height": 48,
+          "left": 357.6875,
+          "right": 499.234375,
+          "top": 537.015625,
+          "width": 141.546875,
+          "x": 357.6875,
+          "y": 537.015625
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 544.2421875,
+          "height": 309.3046875,
+          "left": 528.03125,
+          "right": 821.875,
+          "top": 234.9375,
+          "width": 293.84375,
+          "x": 528.03125,
+          "y": 234.9375
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 573.375,
+          "height": 58,
+          "left": 1056.6796875,
+          "right": 1336.7578125,
+          "top": 515.375,
+          "width": 280.078125,
+          "x": 1056.6796875,
+          "y": 515.375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 734.4140625,
+          "height": 44,
+          "left": 1142.3671875,
+          "right": 1323.796875,
+          "top": 690.4140625,
+          "width": 181.4296875,
+          "x": 1142.3671875,
+          "y": 690.4140625
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 831.4140625,
+          "height": 44,
+          "left": 698,
+          "right": 742,
+          "top": 787.4140625,
+          "width": 44,
+          "x": 698,
+          "y": 787.4140625
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 591.4765625,
+          "height": 387.703125,
+          "left": 79.203125,
+          "right": 499.234375,
+          "top": 203.7734375,
+          "width": 420.03125,
+          "x": 79.203125,
+          "y": 203.7734375
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 555.4140625,
+          "height": 351.640625,
+          "left": 528.03125,
+          "right": 1003.84375,
+          "top": 203.7734375,
+          "width": 475.8125,
+          "x": 528.03125,
+          "y": 203.7734375
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 597.4140625,
+          "height": 393.640625,
+          "left": 1032.640625,
+          "right": 1360.796875,
+          "top": 203.7734375,
+          "width": 328.15625,
+          "x": 1032.640625,
+          "y": 203.7734375
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 751.4140625,
+          "height": 78,
+          "left": 79.203125,
+          "right": 1360.796875,
+          "top": 673.4140625,
+          "width": 1281.59375,
+          "x": 79.203125,
+          "y": 673.4140625
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 945,
+    "heroBottom": 882.8359375,
+    "links": [
+      {
+        "box": {
+          "bottom": 648.8359375,
+          "height": 66.671875,
+          "left": 91.5234375,
+          "right": 394.2109375,
+          "top": 582.1640625,
+          "width": 302.6875,
+          "x": 91.5234375,
+          "y": 582.1640625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 639.5,
+          "height": 48,
+          "left": 410.2109375,
+          "right": 576.890625,
+          "top": 591.5,
+          "width": 166.6796875,
+          "x": 410.2109375,
+          "y": 591.5
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 606.0625,
+          "height": 357.4296875,
+          "left": 610.1640625,
+          "right": 949.7265625,
+          "top": 248.6328125,
+          "width": 339.5625,
+          "x": 610.1640625,
+          "y": 248.6328125
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 593.8359375,
+          "height": 58,
+          "left": 1220.890625,
+          "right": 1544.859375,
+          "top": 535.8359375,
+          "width": 323.96875,
+          "x": 1220.890625,
+          "y": 535.8359375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 785.8359375,
+          "height": 44,
+          "left": 1354.046875,
+          "right": 1535.4765625,
+          "top": 741.8359375,
+          "width": 181.4296875,
+          "x": 1354.046875,
+          "y": 741.8359375
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 882.8359375,
+          "height": 44,
+          "left": 810,
+          "right": 854,
+          "top": 838.8359375,
+          "width": 44,
+          "x": 810,
+          "y": 838.8359375
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 648.8359375,
+          "height": 433.0859375,
+          "left": 91.5234375,
+          "right": 576.890625,
+          "top": 215.75,
+          "width": 485.3671875,
+          "x": 91.5234375,
+          "y": 215.75
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 618.9453125,
+          "height": 403.1953125,
+          "left": 610.1640625,
+          "right": 1160,
+          "top": 215.75,
+          "width": 549.8359375,
+          "x": 610.1640625,
+          "y": 215.75
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 621.453125,
+          "height": 405.703125,
+          "left": 1193.2734375,
+          "right": 1572.4765625,
+          "top": 215.75,
+          "width": 379.203125,
+          "x": 1193.2734375,
+          "y": 215.75
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 802.8359375,
+          "height": 78,
+          "left": 91.5234375,
+          "right": 1572.4765625,
+          "top": 724.8359375,
+          "width": 1480.953125,
+          "x": 91.5234375,
+          "y": 724.8359375
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1664
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 1080,
+    "heroBottom": 909.5390625,
+    "links": [
+      {
+        "box": {
+          "bottom": 675.5390625,
+          "height": 58,
+          "left": 105.6015625,
+          "right": 455.2578125,
+          "top": 617.5390625,
+          "width": 349.65625,
+          "x": 105.6015625,
+          "y": 617.5390625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 670.5390625,
+          "height": 48,
+          "left": 471.2578125,
+          "right": 667.2890625,
+          "top": 622.5390625,
+          "width": 196.03125,
+          "x": 471.2578125,
+          "y": 622.5390625
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 655.515625,
+          "height": 414.3203125,
+          "left": 703.2890625,
+          "right": 1096.8984375,
+          "top": 241.1953125,
+          "width": 393.609375,
+          "x": 703.2890625,
+          "y": 241.1953125
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 614.5859375,
+          "height": 58,
+          "left": 1406.578125,
+          "right": 1783.3984375,
+          "top": 556.5859375,
+          "width": 376.8203125,
+          "x": 1406.578125,
+          "y": 556.5859375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 812.5390625,
+          "height": 44,
+          "left": 1595.96875,
+          "right": 1777.3984375,
+          "top": 768.5390625,
+          "width": 181.4296875,
+          "x": 1595.96875,
+          "y": 768.5390625
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 909.5390625,
+          "height": 44,
+          "left": 938,
+          "right": 982,
+          "top": 865.5390625,
+          "width": 44,
+          "x": 938,
+          "y": 865.5390625
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 675.5390625,
+          "height": 454.34375,
+          "left": 105.6015625,
+          "right": 667.2890625,
+          "top": 221.1953125,
+          "width": 561.6875,
+          "x": 105.6015625,
+          "y": 221.1953125
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 655.515625,
+          "height": 434.3203125,
+          "left": 703.2890625,
+          "right": 1339.578125,
+          "top": 221.1953125,
+          "width": 636.2890625,
+          "x": 703.2890625,
+          "y": 221.1953125
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 645.5859375,
+          "height": 424.390625,
+          "left": 1375.578125,
+          "right": 1814.3984375,
+          "top": 221.1953125,
+          "width": 438.8203125,
+          "x": 1375.578125,
+          "y": 221.1953125
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 829.5390625,
+          "height": 78,
+          "left": 105.6015625,
+          "right": 1814.3984375,
+          "top": 751.5390625,
+          "width": 1708.796875,
+          "x": 105.6015625,
+          "y": 751.5390625
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1920
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 768,
+    "heroBottom": 632.9453125,
+    "links": [
+      {
+        "box": {
+          "bottom": 470.1875,
+          "height": 59.03125,
+          "left": 75.1328125,
+          "right": 324.328125,
+          "top": 411.15625,
+          "width": 249.1953125,
+          "x": 75.1328125,
+          "y": 411.15625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 464.671875,
+          "height": 48,
+          "left": 340.328125,
+          "right": 473.578125,
+          "top": 416.671875,
+          "width": 133.25,
+          "x": 340.328125,
+          "y": 416.671875
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 457.96875,
+          "height": 293.40625,
+          "left": 500.890625,
+          "right": 779.6328125,
+          "top": 164.5625,
+          "width": 278.7421875,
+          "x": 500.890625,
+          "y": 164.5625
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 463.9453125,
+          "height": 48,
+          "left": 998.5703125,
+          "right": 1271.859375,
+          "top": 415.9453125,
+          "width": 273.2890625,
+          "x": 998.5703125,
+          "y": 415.9453125
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 567.9453125,
+          "height": 44,
+          "left": 1084.4375,
+          "right": 1265.8671875,
+          "top": 523.9453125,
+          "width": 181.4296875,
+          "x": 1084.4375,
+          "y": 523.9453125
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 632.9453125,
+          "height": 44,
+          "left": 661,
+          "right": 705,
+          "top": 588.9453125,
+          "width": 44,
+          "x": 661,
+          "y": 588.9453125
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 470.1875,
+          "height": 317.84375,
+          "left": 75.1328125,
+          "right": 473.578125,
+          "top": 152.34375,
+          "width": 398.4453125,
+          "x": 75.1328125,
+          "y": 152.34375
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 462.2734375,
+          "height": 302.0078125,
+          "left": 500.890625,
+          "right": 952.2578125,
+          "top": 160.265625,
+          "width": 451.3671875,
+          "x": 500.890625,
+          "y": 160.265625
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 482.9453125,
+          "height": 343.3515625,
+          "left": 979.5703125,
+          "right": 1290.859375,
+          "top": 139.59375,
+          "width": 311.2890625,
+          "x": 979.5703125,
+          "y": 139.59375
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 580.9453125,
+          "height": 70,
+          "left": 75.1328125,
+          "right": 1290.8671875,
+          "top": 510.9453125,
+          "width": 1215.734375,
+          "x": 75.1328125,
+          "y": 510.9453125
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1366
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 768,
+    "heroBottom": 621.078125,
+    "links": [
+      {
+        "box": {
+          "bottom": 471.078125,
+          "height": 60.921875,
+          "left": 79.203125,
+          "right": 341.6875,
+          "top": 410.15625,
+          "width": 262.484375,
+          "x": 79.203125,
+          "y": 410.15625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 464.6171875,
+          "height": 48,
+          "left": 357.6875,
+          "right": 499.234375,
+          "top": 416.6171875,
+          "width": 141.546875,
+          "x": 357.6875,
+          "y": 416.6171875
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 459.984375,
+          "height": 309.3046875,
+          "left": 528.03125,
+          "right": 821.875,
+          "top": 150.6796875,
+          "width": 293.84375,
+          "x": 528.03125,
+          "y": 150.6796875
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 450.65625,
+          "height": 48,
+          "left": 1051.640625,
+          "right": 1341.796875,
+          "top": 402.65625,
+          "width": 290.15625,
+          "x": 1051.640625,
+          "y": 402.65625
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 556.078125,
+          "height": 44,
+          "left": 1154.3671875,
+          "right": 1335.796875,
+          "top": 512.078125,
+          "width": 181.4296875,
+          "x": 1154.3671875,
+          "y": 512.078125
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 621.078125,
+          "height": 44,
+          "left": 698,
+          "right": 742,
+          "top": 577.078125,
+          "width": 44,
+          "x": 698,
+          "y": 577.078125
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 471.078125,
+          "height": 331.484375,
+          "left": 79.203125,
+          "right": 499.234375,
+          "top": 139.59375,
+          "width": 420.03125,
+          "x": 79.203125,
+          "y": 139.59375
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 462.84375,
+          "height": 315.015625,
+          "left": 528.03125,
+          "right": 1003.84375,
+          "top": 147.828125,
+          "width": 475.8125,
+          "x": 528.03125,
+          "y": 147.828125
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 469.65625,
+          "height": 328.640625,
+          "left": 1032.640625,
+          "right": 1360.796875,
+          "top": 141.015625,
+          "width": 328.15625,
+          "x": 1032.640625,
+          "y": 141.015625
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 569.078125,
+          "height": 70,
+          "left": 79.203125,
+          "right": 1360.796875,
+          "top": 499.078125,
+          "width": 1281.59375,
+          "x": 79.203125,
+          "y": 499.078125
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "dpr": 1,
+    "graphic": "/media/aethryon-convergence-animated-optimized-v73.svg",
+    "h1": 1,
+    "height": 900,
+    "heroBottom": 821.5390625,
+    "links": [
+      {
+        "box": {
+          "bottom": 635.5390625,
+          "height": 58,
+          "left": 105.6015625,
+          "right": 455.2578125,
+          "top": 577.5390625,
+          "width": 349.65625,
+          "x": 105.6015625,
+          "y": 577.5390625
+        },
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "box": {
+          "bottom": 630.5390625,
+          "height": 48,
+          "left": 471.2578125,
+          "right": 667.2890625,
+          "top": 582.5390625,
+          "width": 196.03125,
+          "x": 471.2578125,
+          "y": 582.5390625
+        },
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "box": {
+          "bottom": 615.515625,
+          "height": 414.3203125,
+          "left": 703.2890625,
+          "right": 1096.8984375,
+          "top": 201.1953125,
+          "width": 393.609375,
+          "x": 703.2890625,
+          "y": 201.1953125
+        },
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "box": {
+          "bottom": 574.5859375,
+          "height": 58,
+          "left": 1406.578125,
+          "right": 1783.3984375,
+          "top": 516.5859375,
+          "width": 376.8203125,
+          "x": 1406.578125,
+          "y": 516.5859375
+        },
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "box": {
+          "bottom": 736.5390625,
+          "height": 44,
+          "left": 1595.96875,
+          "right": 1777.3984375,
+          "top": 692.5390625,
+          "width": 181.4296875,
+          "x": 1595.96875,
+          "y": 692.5390625
+        },
+        "href": "/recursos/",
+        "name": "Ir a Recursos"
+      },
+      {
+        "box": {
+          "bottom": 821.5390625,
+          "height": 44,
+          "left": 938,
+          "right": 982,
+          "top": 777.5390625,
+          "width": 44,
+          "x": 938,
+          "y": 777.5390625
+        },
+        "href": "#problema",
+        "name": "Explorar los retos que resolvemos"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "regions": [
+      {
+        "box": {
+          "bottom": 635.5390625,
+          "height": 454.34375,
+          "left": 105.6015625,
+          "right": 667.2890625,
+          "top": 181.1953125,
+          "width": 561.6875,
+          "x": 105.6015625,
+          "y": 181.1953125
+        },
+        "selector": ".rv-hero-copy"
+      },
+      {
+        "box": {
+          "bottom": 615.515625,
+          "height": 434.3203125,
+          "left": 703.2890625,
+          "right": 1339.578125,
+          "top": 181.1953125,
+          "width": 636.2890625,
+          "x": 703.2890625,
+          "y": 181.1953125
+        },
+        "selector": ".rv-hero-core"
+      },
+      {
+        "box": {
+          "bottom": 605.5859375,
+          "height": 424.390625,
+          "left": 1375.578125,
+          "right": 1814.3984375,
+          "top": 181.1953125,
+          "width": 438.8203125,
+          "x": 1375.578125,
+          "y": 181.1953125
+        },
+        "selector": ".rv-hero-offer"
+      },
+      {
+        "box": {
+          "bottom": 753.5390625,
+          "height": 78,
+          "left": 105.6015625,
+          "right": 1814.3984375,
+          "top": 675.5390625,
+          "width": 1708.796875,
+          "x": 105.6015625,
+          "y": 675.5390625
+        },
+        "selector": ".rv-hero-knowledge"
+      }
+    ],
+    "width": 1920
+  }
+]

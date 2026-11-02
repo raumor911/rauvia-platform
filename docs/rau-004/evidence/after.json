@@ -1,0 +1,242 @@
+[
+  {
+    "columns": "328px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 800,
+    "heroBottom": 1653.4296875,
+    "image": "http://localhost:3135/media/aethryon-convergence-mobile-640.webp",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 44,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 44,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 248.3359375,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 76,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 360
+  },
+  {
+    "columns": "358px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 844,
+    "heroBottom": 1626.5625,
+    "image": "http://localhost:3135/media/aethryon-convergence-mobile-640.webp",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 44,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 44,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 271.0546875,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 76,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 390
+  },
+  {
+    "columns": "348.961px 348.961px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 1024,
+    "heroBottom": 1001.0859375,
+    "image": "http://localhost:3135/media/aethryon-convergence-mobile-640.webp",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 60.390625,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 60.390625,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 264.2109375,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 76,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 768
+  },
+  {
+    "columns": "321.828px 336.461px 263.312px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 768,
+    "heroBottom": 678.8046875,
+    "image": "http://localhost:3135/media/aethryon-convergence-mobile-640.webp",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 44,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 44,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 254.7421875,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 72,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 1024
+  },
+  {
+    "columns": "452.57px 473.148px 370.297px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 900,
+    "heroBottom": 635.1875,
+    "image": "http://localhost:3135/media/aethryon-convergence-animated-optimized-v73.svg",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 60.390625,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 60.390625,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 358.234375,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 72,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 1440
+  },
+  {
+    "columns": "502.852px 525.719px 411.422px",
+    "dpr": 1,
+    "font": "-apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", \"Noto Sans\", Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": 1,
+    "height": 1080,
+    "heroBottom": 644.9296875,
+    "image": "http://localhost:3135/media/aethryon-convergence-animated-optimized-v73.svg",
+    "imageLoaded": true,
+    "links": [
+      {
+        "height": 60.390625,
+        "href": "/soluciones/",
+        "name": "CONOCER NUESTROS PRODUCTOS"
+      },
+      {
+        "height": 60.390625,
+        "href": "/aethryon/",
+        "name": "CÓMO TRABAJAMOS"
+      },
+      {
+        "height": 398.0390625,
+        "href": "/aethryon/",
+        "name": "Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados"
+      },
+      {
+        "height": 44,
+        "href": "/frente-comercial/",
+        "name": "Conocer Frente Comercial"
+      },
+      {
+        "height": 72,
+        "href": "/recursos/",
+        "name": "Explora nuestro conocimiento"
+      }
+    ],
+    "overflow": false,
+    "price": true,
+    "width": 1920
+  }
+]

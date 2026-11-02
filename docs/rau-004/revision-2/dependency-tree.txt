@@ -1,0 +1,17 @@
+react-example@78.0.0 /Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004
+├─┬ @tailwindcss/vite@4.3.3
+│ └── vite@8.3.5 deduped
+├─┬ @vitejs/plugin-react@6.1.1
+│ └── vite@8.3.5 deduped
+├─┬ express@5.2.1
+│ ├─┬ body-parser@2.4.0 overridden
+│ │ └── qs@6.16.1 deduped
+│ └── qs@6.16.1 overridden
+├─┬ glob@14.0.3
+│ └── minimatch@11.0.1 overridden
+├─┬ puppeteer@25.16.0
+│ └─┬ chromium-bidi@157.0.8090-0
+│   └── zod@4.6.6 overridden
+├── sanitize-html@2.18.1
+└── vite@8.3.5
+

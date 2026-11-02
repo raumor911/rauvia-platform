@@ -1,0 +1,11 @@
+{
+  "width": 340,
+  "height": 357,
+  "changedPixelsOver30RGB": 10746,
+  "totalPixels": 121380,
+  "meanAbsoluteRGBDifference": 4.2058329214038555,
+  "sha256": [
+    "c49f65db1e7db4fe1f828fa56a1d4fd168d7ae15f5895e39f38fcf64255ddbd1",
+    "d80dbb52d2dc6161629a14382e093c023bb85c0b6fa67143b2905a67d1a2176a"
+  ]
+}

@@ -1,0 +1,334 @@
+[
+  {
+    "target": "body-parser/2.4.0",
+    "status": 200,
+    "name": "body-parser",
+    "version": "2.4.0",
+    "engines": {
+      "node": ">=18"
+    },
+    "dependencies": {
+      "qs": "^6.16.1",
+      "bytes": "^3.1.2",
+      "debug": "^4.4.3",
+      "type-is": "^2.1.0",
+      "raw-body": "^3.0.2",
+      "iconv-lite": "^0.7.3",
+      "http-errors": "^2.0.1",
+      "on-finished": "^2.4.1",
+      "content-type": "^2.1.0"
+    },
+    "repository": {
+      "url": "git+https://github.com/expressjs/body-parser.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "337a76249270f83e450ad385a9606ca3b4a75c06",
+      "tarball": "https://registry.npmjs.org/body-parser/-/body-parser-2.4.0.tgz",
+      "fileCount": 10,
+      "integrity": "sha512-Ifk1KcLrxaGt1occQagQNFNNOqRt1LFuehEnHHzB8Z6cRgIxRU1TBaiIsUiCdA+gy5PL7Y1IX31DNKkRmxtXjQ==",
+      "signatures": [
+        {
+          "sig": "MEQCIA6c8Cf9d+zIJjrfrtDvepcZpRef95rxB4wRaHNB+gz5AiAshUr7gdLnSh7G+bU/wJ00pwfeWcQN7Oe42AeS7May9Q==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/body-parser@2.4.0",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 42899
+    }
+  },
+  {
+    "target": "vite/8.3.3",
+    "status": 200,
+    "name": "vite",
+    "version": "8.3.3",
+    "engines": {
+      "node": "^20.19.0 || >=22.12.0"
+    },
+    "dependencies": {
+      "postcss": "^8.5.28",
+      "rolldown": "~1.2.11",
+      "picomatch": "^4.0.7",
+      "tinyglobby": "^0.2.17",
+      "lightningcss": "^1.33.0"
+    },
+    "repository": {
+      "url": "git+https://github.com/vitejs/vite.git",
+      "type": "git",
+      "directory": "packages/vite"
+    },
+    "dist": {
+      "shasum": "12651726ab1cca0a9e1e649e3cb4dca5b6b006a9",
+      "tarball": "https://registry.npmjs.org/vite/-/vite-8.3.3.tgz",
+      "fileCount": 37,
+      "integrity": "sha512-cTAldKPImjg6c+gk48U19POPn3GCBzZwpdsN8ZMEEcbpes+6/wvfqUd0C2y3qYY4wsj8PwgFwrZ/1jBPVttMSg==",
+      "signatures": [
+        {
+          "sig": "MEUCIQCoJsvIakHn0hDToU0LxVCxnYmwG8Ws06U2UL6PQmG1zgIgAml/hlBzxRAqrh9k/79IS3jQPhLi9RSpEjGh4sMM7x8=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIQCiS+ZuRm9tlZPzPGhCqBb7jl5FZ/BOBf2vH2JDf2GgIgIgKgdKWqncxzwU3LTs1PKS9fVUvOAWMnsmSqty+p+7jH0=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/vite@8.3.3",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 2374102
+    }
+  },
+  {
+    "target": "zod/4.6.6",
+    "status": 200,
+    "name": "zod",
+    "version": "4.6.6",
+    "repository": {
+      "url": "git+https://github.com/colinhacks/zod.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "0bb0cf57b87011a71ec28ed2e1b51f6455563f9a",
+      "tarball": "https://registry.npmjs.org/zod/-/zod-4.6.6.tgz",
+      "fileCount": 840,
+      "integrity": "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==",
+      "signatures": [
+        {
+          "sig": "MEUCIHpoPrWDI7F55Qk5Ui/NLGa7dhfGOYnnEir/bs+C2ndqAiEA/mTm+3HqkrfYFIO5EdqgobnYvOMuO8mZJ/Y4h54tbdw=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/zod@4.6.6",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 6148944
+    }
+  },
+  {
+    "target": "minimatch/11.0.1",
+    "status": 200,
+    "name": "minimatch",
+    "version": "11.0.1",
+    "engines": {
+      "node": "18 || 20 || >=22"
+    },
+    "dependencies": {
+      "brace-expansion": "^5.0.12",
+      "@isaacs/nonrecursive-glob-match": "^1.0.1"
+    },
+    "repository": {
+      "url": "git+ssh://git@github.com/isaacs/minimatch.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "6958bb689808489c3b4320428537fda7ae2a881c",
+      "tarball": "https://registry.npmjs.org/minimatch/-/minimatch-11.0.1.tgz",
+      "fileCount": 37,
+      "integrity": "sha512-t+Vn6DX4wPCxS23y03C0uhF7S1jpi1GfqPrnlEipCJaA2ykiNbMkVlDutZtmvLfRcUN6R8AYVlzTsQrT4RZoLQ==",
+      "signatures": [
+        {
+          "sig": "MEUCIQDB2uFESkha1qIPEvIJ3mxzmJ0gIzHBinxGHk+V0Px6rwIgFdwkf9cO6QFCCcbHyuXFDXIJ/pE3d7SnkJimJ47mLys=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEQCIDj9WO5QU7lR2BoI/oOe8ggF/52doLDzBXQSf2a1bym3AiBLmQZLM/Yw8k3UhjuSUYIApi3Wup2h+jzSBs/SVrE+QQ==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 420517
+    }
+  },
+  {
+    "target": "glob/14.0.2",
+    "status": 200,
+    "name": "glob",
+    "version": "14.0.2",
+    "engines": {
+      "node": "18 || 20 || >=22"
+    },
+    "dependencies": {
+      "minipass": "^7.1.3",
+      "minimatch": "^11.0.0",
+      "path-scurry": "^3.0.0"
+    },
+    "repository": {
+      "url": "git+ssh://git@github.com/isaacs/node-glob.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "17a9838fb6502b6a32d2125fe55bff6a0960e2b7",
+      "tarball": "https://registry.npmjs.org/glob/-/glob-14.0.2.tgz",
+      "fileCount": 72,
+      "integrity": "sha512-vfMgTR2djMHPUchsJMLpZlYQvtjVL+mHpEr5wPpoCbQs2vr/FBNK+3Gnl9Ara1DSs4Aeg4eG9HiADb5/rkY/ZA==",
+      "signatures": [
+        {
+          "sig": "MEYCIQDksChlwwh5A07/ugBRLXgo9xSFmjpcDOnpAB1LY7KRagIhAP/uTra6bzRGoIgjv8wIi7fFpe2gErs+teUt9t1dxmZJ",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIEBleELGILK3aQuBS+IZ1skTubJbwu0b5VJok6V7k1syAiEAtru9nwiNndfEHBh581U+sUvkN+uqFVqFEl8tG3FRgb0=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 1866718
+    }
+  },
+  {
+    "target": "qs/6.16.1",
+    "status": 200,
+    "name": "qs",
+    "version": "6.16.1",
+    "engines": {
+      "node": ">=0.6"
+    },
+    "dependencies": {
+      "side-channel": "^1.1.1",
+      "es-define-property": "^1.0.1"
+    },
+    "repository": {
+      "url": "git+https://github.com/ljharb/qs.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "0643e17993e551759c85078e1f0bc4b9fe908020",
+      "tarball": "https://registry.npmjs.org/qs/-/qs-6.16.1.tgz",
+      "fileCount": 20,
+      "integrity": "sha512-5Px6J7rfHBAGUhNQ3es4YzcOdBBw0SDcVtThJml4RdnKw4tKs2epA0kPZ+K8X+WiHktT93RHVcQ/3ym5aTCgtg==",
+      "signatures": [
+        {
+          "sig": "MEQCIBD/HODTxSGXW4MI271pfIsMMMbbwHj3MeVovqvY+x3YAiBMpQnp/2uQ85UdZMgXXA6A3QTEwSE//1ueytFwpAC3Zw==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 418793
+    }
+  },
+  {
+    "target": "sanitize-html/latest",
+    "status": 200,
+    "name": "sanitize-html",
+    "version": "2.18.1",
+    "engines": {
+      "node": ">=22.12.0"
+    },
+    "dependencies": {
+      "launder": "^1.7.2",
+      "postcss": "^8.5.27",
+      "htmlparser2": "^12.0.0",
+      "parse-srcset": "^1.0.2",
+      "is-plain-object": "^5.1.0",
+      "escape-string-regexp": "^4.0.0"
+    },
+    "repository": {
+      "url": "git+https://github.com/apostrophecms/apostrophe.git",
+      "type": "git",
+      "directory": "packages/sanitize-html"
+    },
+    "dist": {
+      "shasum": "a2b5447020db598fb65f6865bdf37e25e8cff09d",
+      "tarball": "https://registry.npmjs.org/sanitize-html/-/sanitize-html-2.18.1.tgz",
+      "fileCount": 4,
+      "integrity": "sha512-2X5lC8fYla8YaT8g73Nj+HcLWXan5dLyCWLgVvaOmfw7JI78IRsyNtIDytTHdn7hBQbIkCah7Zbmd5jabzeDig==",
+      "signatures": [
+        {
+          "sig": "MEQCICy6FubZ2Mt8KZHgkMV/Tc6T9fX9tc0cxFBero36cj0bAiBSoHqOCem2aMdHU9iyBFEPPIicYORLba//lICL4r0vFw==",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIQCxK1JW6FvyDXbn9lyVjh6LmtjeuDk/7Ltu4sXmwoSj8wIgFgLE4YoFQ4YphOIos5Mlei/kWrW38HkhfXALYD4XOb8=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 84753
+    }
+  },
+  {
+    "target": "chromium-bidi/157.0.8090-0",
+    "status": 200,
+    "name": "chromium-bidi",
+    "version": "157.0.8090-0",
+    "engines": {
+      "node": ">=20.19.0 <22.0.0 || >=22.12.0"
+    },
+    "dependencies": {
+      "zod": "^4.6.5",
+      "mitt": "^3.0.1"
+    },
+    "repository": {
+      "url": "git+https://github.com/GoogleChromeLabs/chromium-bidi.git",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "268391b6003612221d899a71ab896ddb0a9dd432",
+      "tarball": "https://registry.npmjs.org/chromium-bidi/-/chromium-bidi-157.0.8090-0.tgz",
+      "fileCount": 310,
+      "integrity": "sha512-KJw7IQgqXwxpJgJlEIPg5mr2ZoqA+jkTRtc5EABI7sUJ3bu3cpI7NuEBoj4Gn1AsF78CaT9So5WQWspK3/wYag==",
+      "signatures": [
+        {
+          "sig": "MEUCIF/34SIQkulCxDwpsKo7ybgtEhZV2sIUUh81PYYcl61uAiEApoufIlb4oZA2gg9/usVZltqq5KlUXbxsp1Vh1IpmVS4=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCIQDFKNij2b+eIiuOGGokf/3cnmnkhbvTime5lkrZV6lKZAIgJuO39xqw8o6TMSqYGPgN24lTd7vwe7Ucyjka4bShm0M=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "unpackedSize": 9414844
+    }
+  },
+  {
+    "target": "puppeteer/25.16.0",
+    "status": 200,
+    "name": "puppeteer",
+    "version": "25.16.0",
+    "engines": {
+      "node": ">=22.12.0"
+    },
+    "dependencies": {
+      "lilconfig": "^3.1.3",
+      "chromium-bidi": "157.0.8090-0",
+      "puppeteer-core": "25.16.0",
+      "devtools-protocol": "0.0.1704951",
+      "@puppeteer/browsers": "3.2.6",
+      "typed-query-selector": "^2.12.3"
+    },
+    "repository": {
+      "url": "git+https://github.com/puppeteer/puppeteer.git#main",
+      "type": "git"
+    },
+    "dist": {
+      "shasum": "d38156e72b5cb590420a25650b607dd0ce65877d",
+      "tarball": "https://registry.npmjs.org/puppeteer/-/puppeteer-25.16.0.tgz",
+      "fileCount": 24,
+      "integrity": "sha512-LOr3reYnxAYYfQkpopz1fQnL0LdvqhpR5U2Fu+QnwzTX2gpVTHsn91UETo5NNC1md2/oC54Zu1ChBXgZDNSP1A==",
+      "signatures": [
+        {
+          "sig": "MEUCIAZmMdZog78pHnryHJj50XNb6IHkO/wiiYPMKtkLZQcbAiEAzM/CIBXitCz+zHNbRbQOjADwtrMd9RBYJJuDLcsj3m0=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        },
+        {
+          "sig": "MEUCICUxP8GEvzWn9uiNWaQ4ElMEmdE9/kATnq8q+PGh+cChAiEAxUqqhFS3j7EOFPLL4arDGG0VUfp/76crCpahGcUpETg=",
+          "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+        }
+      ],
+      "attestations": {
+        "url": "https://registry.npmjs.org/-/npm/v1/attestations/puppeteer@25.16.0",
+        "provenance": {
+          "predicateType": "https://slsa.dev/provenance/v1"
+        }
+      },
+      "unpackedSize": 43220
+    }
+  }
+]

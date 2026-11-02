@@ -1,0 +1,72 @@
+[
+  {
+    "viewport": "360x800",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": false
+  },
+  {
+    "viewport": "390x844",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": false
+  },
+  {
+    "viewport": "768x1024",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1024x768",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1440x900",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1664x945",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1920x1080",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1366x768",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1440x768",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  },
+  {
+    "viewport": "1920x900",
+    "overflow": false,
+    "blockOverlap": false,
+    "minLinkHeight": 44,
+    "compositionFits": true
+  }
+]

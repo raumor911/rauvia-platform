@@ -1,0 +1,44 @@
+[
+  {
+    "dpr": 1,
+    "height": 800,
+    "heroBottom": 1996.6796875,
+    "overflow": false,
+    "width": 360
+  },
+  {
+    "dpr": 1,
+    "height": 844,
+    "heroBottom": 1931.7578125,
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "dpr": 1,
+    "height": 1024,
+    "heroBottom": 2198.921875,
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "dpr": 1,
+    "height": 768,
+    "heroBottom": 1534.875,
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "dpr": 1,
+    "height": 900,
+    "heroBottom": 1184.75,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "dpr": 1,
+    "height": 1080,
+    "heroBottom": 1113.453125,
+    "overflow": false,
+    "width": 1920
+  }
+]
