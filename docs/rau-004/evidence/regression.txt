@@ -1,0 +1,32 @@
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /ruta-90 (2.5945ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: / (0.537125ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /nosotros (0.318583ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /soluciones (0.518875ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /aethryon (1.253666ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /recursos (0.5035ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /frente-comercial (0.9835ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /sitio-web-comercial-para-pymes (1.330125ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /sitio-web-servicios-especializados (1.306083ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos (0.414167ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos/infraestructura-temporal-b2b (0.420291ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-comercial-servicios-profesionales (0.769958ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-gratis-para-medicos (0.740459ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-medicos-especialistas (0.682584ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /seo-local-para-medicos (1.473417ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-medicos (0.808125ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-consultorio-medico (1.329792ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-medicos-agenda-whatsapp (0.930875ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /aviso-de-privacidad (0.327792ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /terminos (0.335875ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /trayectoria (0.216542ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /rauviaweb (0.208625ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos/presencia-posicionamiento-profesional (0.33625ms)
+✔ RAU-004 retains official media bytes and the real commercial offer (0.699375ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.368208

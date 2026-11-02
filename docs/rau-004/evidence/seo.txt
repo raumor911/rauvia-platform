@@ -1,0 +1,71 @@
+
+> react-example@78.0.0 test:seo
+> node --import tsx --test tests/wordpress-cache.test.ts tests/ruta90-events.test.ts && node --test tests/seo-html.test.mjs tests/ruta90.test.mjs
+
+✔ existing event endpoint accepts ruta90_view (0.576084ms)
+✔ existing event endpoint accepts ruta90_chapter_view (0.061792ms)
+✔ existing event endpoint accepts ruta90_cta_click (0.049125ms)
+✔ existing event endpoint accepts ruta90_aethryon_click (0.0455ms)
+✔ event endpoint still rejects unknown events (0.058791ms)
+✔ analytics normalizes Ruta 90 paths and preserves navigation properties (21.700583ms)
+✔ article HTML and proxy share positive cache; concurrent requests deduplicate; cache expires at ten minutes (35.058833ms)
+✔ fresh list is reused by article resolver (0.295583ms)
+✔ confirmed deleted post is never resurrected from fallback or cached list, including after negative TTL (502.137458ms)
+✔ unknown article upstream outage is 503, never false 404 (502.440375ms)
+✔ previously fetched article remains available as stale during outage (505.388291ms)
+✔ successful missing result is cached briefly and does not use hardcoded posts (0.715333ms)
+✔ unsafe WordPress markup is removed and duplicate article H1 is eliminated (5.286583ms)
+✔ article metadata decodes entities, escapes injection, retains author/date/image when provided (1.198417ms)
+✔ null/undefined canonical is absent from generated head, including OG URL (0.58925ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1751.189042
+✔ Ruta 90: initial HTML supplies the complete ten-chapter narrative (0.987875ms)
+✔ Ruta 90 metadata and entities match the visible document (0.215ms)
+✔ Ruta 90 analytics: replay, remount and new analytics sessions (0.1595ms)
+✔ Ruta 90 optimized assets have explicit dimensions and preserved source hashes (5.40025ms)
+✔ initial HTML: /ruta-90 (4.136541ms)
+✔ initial HTML: / (2.007458ms)
+✔ initial HTML: /nosotros (1.87875ms)
+✔ initial HTML: /soluciones (1.638958ms)
+✔ initial HTML: /aethryon (1.669292ms)
+✔ initial HTML: /recursos (9.805ms)
+✔ initial HTML: /frente-comercial (1.346291ms)
+✔ initial HTML: /sitio-web-comercial-para-pymes (1.785708ms)
+✔ initial HTML: /sitio-web-servicios-especializados (1.459333ms)
+✔ initial HTML: /casos (0.980333ms)
+✔ initial HTML: /casos/infraestructura-temporal-b2b (0.959ms)
+✔ initial HTML: /pagina-comercial-servicios-profesionales (1.083125ms)
+✔ initial HTML: /pagina-web-gratis-para-medicos (1.081792ms)
+✔ initial HTML: /pagina-web-para-medicos-especialistas (1.099709ms)
+✔ initial HTML: /seo-local-para-medicos (1.108625ms)
+✔ initial HTML: /pagina-web-para-medicos (1.178459ms)
+✔ initial HTML: /pagina-web-para-consultorio-medico (1.127458ms)
+✔ initial HTML: /pagina-web-medicos-agenda-whatsapp (1.172833ms)
+✔ initial HTML: /aviso-de-privacidad (0.987208ms)
+✔ initial HTML: /terminos (0.743458ms)
+✔ initial HTML: /trayectoria (0.856458ms)
+✔ initial HTML: /rauviaweb (1.196375ms)
+✔ initial HTML: /casos/presencia-posicionamiento-profesional (0.904708ms)
+✔ article uses WordPress data in head and main; repeated HTML and proxy share cache (46.703958ms)
+✔ missing article HEAD and GET are real 404 with specific HTML (4.926ms)
+✔ upstream outage is 503, including API; never Home or false 404 (1020.397583ms)
+✔ missing case shares no-canonical error policy and global entities only (6.655375ms)
+✔ sitemap still responds and preserves valid article/case/public URLs (2.228208ms)
+✔ CMS script and dangerous attributes cannot execute in initial HTML; bootstrap is escaped (8.748291ms)
+✔ trailing slash preserves query on articles and case studies; missing cases do not fall back to Home (4.794542ms)
+✔ production does not expose Vite dev modules (2.545291ms)
+✔ Ruta 90 canonical slash, recovered historic intent and sitemap (2.294875ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1646.378208

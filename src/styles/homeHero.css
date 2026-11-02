@@ -1,0 +1,54 @@
+/* RAU-004: scoped to the home Hero; inherited RAUVIA font and color tokens. */
+.rv-main-site main .rv-home-hero{background:#fff;padding:calc(var(--rv-header-height) + 28px) 0 0;color:var(--color-rauvia-navy)}
+.rv-hero-container{width:min(100%,1600px);margin-inline:auto;padding-inline:clamp(16px,3vw,48px)}
+.rv-hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center;padding-bottom:28px}
+.rv-hero-grid>*{min-width:0}
+.rv-hero-copy{display:flex;flex-direction:column;gap:18px}
+.rv-main-site .rv-home-hero h1{font-size:clamp(2rem,6vw,2.75rem)!important;line-height:1.08;letter-spacing:-.025em;font-weight:800;text-wrap:balance;margin:0}
+.rv-hero-description{display:grid;gap:12px;color:var(--color-rauvia-gray)}
+.rv-main-site .rv-home-hero p{font-size:1rem;line-height:1.55;margin:0}
+.rv-hero-actions{display:flex;flex-wrap:wrap;gap:8px}
+.rv-hero-primary,.rv-hero-secondary{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 16px;border-radius:4px;font-size:.8125rem;font-weight:650;line-height:1.4;text-align:center}
+.rv-hero-primary{background:var(--color-rauvia-navy);color:#fff}
+.rv-hero-primary:hover{background:var(--color-rauvia-navy-dark)}
+.rv-hero-secondary{color:var(--color-rauvia-navy)}
+.rv-hero-secondary:hover{background:#f1f5f9}
+.rv-hero-actions>a{flex:1 1 180px}
+.rv-hero-primary svg,.rv-hero-secondary svg{flex-shrink:0}
+.rv-aethryon-core{width:100%}
+.rv-aethryon-graphic{display:flex;align-items:center;justify-content:center;width:100%;aspect-ratio:1400/1060}
+.rv-aethryon-graphic picture{display:block;width:100%}
+.rv-aethryon-graphic img{width:100%;height:auto;display:block}
+.rv-aethryon-features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 0;padding:0;list-style:none}
+.rv-aethryon-features li{display:flex;gap:8px;align-items:flex-start;font-size:.8125rem;line-height:1.5}
+.rv-aethryon-number{color:var(--color-rauvia-blue);font-weight:800}
+.rv-aethryon-features li>div{display:flex;flex-direction:column;color:var(--color-rauvia-gray)}
+.rv-aethryon-feature-title{color:var(--color-rauvia-navy);font-weight:700;font-size:.75rem}
+.rv-hero-card{background:#fff;border:1px solid #e2e8f0;border-top:3px solid var(--color-rauvia-blue);border-radius:12px;padding:24px;box-shadow:0 8px 28px #0a25400a}
+.rv-hero-card-content{display:flex;flex-direction:column;gap:16px}
+.rv-main-site .rv-home-hero .rv-hero-card-title{font-size:1.375rem;font-weight:700;line-height:1.3;margin:0}
+.rv-hero-card-description{color:var(--color-rauvia-gray)}
+.rv-hero-price>span{max-width:100%;letter-spacing:0}
+.rv-hero-knowledge{background:#f8fafc;border-block:1px solid #e2e8f0}
+.rv-home-hero .rv-hero-knowledge-link{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;color:var(--color-rauvia-navy);font-size:1.125rem;font-weight:650}
+.rv-hero-knowledge-link:hover{color:var(--color-rauvia-blue)}
+@media(min-width:768px) and (max-width:1023px){
+ .rv-hero-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .rv-hero-copy{grid-column:1/-1}
+ .rv-main-site .rv-home-hero h1{max-width:720px;font-size:2.25rem!important}
+ .rv-main-site .rv-home-hero p{font-size:.9375rem;line-height:1.5}
+ .rv-hero-description{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .rv-hero-actions{align-self:flex-start}
+}
+@media(min-width:1024px){
+ .rv-main-site main .rv-home-hero{padding-top:calc(var(--rv-header-height) + 24px)}
+ .rv-hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1.15fr) minmax(0,.9fr);gap:clamp(16px,2vw,32px);padding-bottom:24px}
+ .rv-main-site .rv-home-hero h1{font-size:clamp(1.75rem,2.55vw,2.75rem)!important}
+ .rv-hero-copy{gap:16px}
+ .rv-main-site .rv-home-hero p{font-size:.875rem;line-height:1.55}
+ .rv-hero-card{padding:clamp(18px,1.7vw,28px)}
+ .rv-main-site .rv-home-hero .rv-hero-card-title{font-size:clamp(1.125rem,1.5vw,1.5rem)}
+ /* SVG contains the desktop labels; keep the equivalent HTML in the accessibility tree. */
+ .rv-aethryon-features{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .rv-home-hero .rv-hero-knowledge-link{min-height:72px}
+}

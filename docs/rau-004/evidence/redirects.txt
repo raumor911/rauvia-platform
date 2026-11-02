@@ -1,0 +1,28 @@
+
+> react-example@78.0.0 test:redirects
+> node --import tsx --test tests/redirect-canonical.test.ts && node --test tests/redirect-sitemap-http.test.mjs
+
+✔ redirect policies and 410 policies are mutually exclusive (0.468542ms)
+✔ one absolute HTTPS hop combines domain, slash and legacy with query (0.611459ms)
+✔ nuestro-metodo redirects once to AETHRYON, preserving host normalization and query (0.440791ms)
+✔ canonical pages never redirect; unslashed and aliases normalize once (0.178541ms)
+✔ retired sources return 410 directly and do not redirect via aliases (0.125ms)
+✔ unsupported methods and unrelated paths pass through; shop never falls back to homepage (0.073459ms)
+✔ SEO metadata and machine-readable sources use direct canonical page URLs (1.680541ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.7815
+✔ all URLs from freshly generated sitemap return direct 200 without redirect (387.067875ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 459.621
