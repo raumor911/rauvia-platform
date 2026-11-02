@@ -1,0 +1,38 @@
+✔ All eight entries retain their unique H1 and complete static route content (7.03725ms)
+✔ Initial route transfer is reduced without pulling in exclusive unrelated routes (92.410875ms)
+✔ Every route preload and stylesheet exists, and head links are not duplicated (1.144167ms)
+✖ Excluded landing, legal and individual case HTML is preserved apart from build hints and generated IDs (3.505292ms)
+✔ Soluciones comparison and Ruta 90 chapters keep their semantic relationships (0.323417ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 173.994166
+
+✖ failing tests:
+
+test at tests/mobile-experience.test.mjs:19:1
+✖ Excluded landing, legal and individual case HTML is preserved apart from build hints and generated IDs (3.505292ms)
+  AssertionError [ERR_ASSERTION]: /sitio-web-comercial-para-pymes/index.html
+  + actual - expected
+  
+  + '84ab8f7f099583b0f1aeab48fb26c1e3ccde0ebb124f073ae5d400ebee55dc5e'
+  - 'a28f20eeb344c383b956389c0a1ac89d7f35d099e3e939ba8da21138360fe8ba'
+  
+      at TestContext.<anonymous> (file:///Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/tests/mobile-experience.test.mjs:20:195)
+      at Test.runInAsyncScope (node:async_hooks:214:14)
+      at Test.run (node:internal/test_runner/test:1106:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:788:18)
+      at Test.postRun (node:internal/test_runner/test:1235:19)
+      at Test.run (node:internal/test_runner/test:1163:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '84ab8f7f099583b0f1aeab48fb26c1e3ccde0ebb124f073ae5d400ebee55dc5e',
+    expected: 'a28f20eeb344c383b956389c0a1ac89d7f35d099e3e939ba8da21138360fe8ba',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

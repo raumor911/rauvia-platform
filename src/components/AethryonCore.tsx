@@ -1,26 +1,23 @@
 import { Link } from 'react-router-dom';
 
-export default function AethryonCore() {
-  const coreFeatures = [
-    { num: "01", title: "ESTRATEGIA", desc: "Claridad, foco y dirección" },
-    { num: "02", title: "PROCESOS", desc: "Estructura clara y escalable" },
-    { num: "03", title: "TECNOLOGÍA", desc: "Plataformas que funcionan" },
-    { num: "04", title: "OPERACIÓN", desc: "Eficiencia diaria" },
-    { num: "05", title: "RESULTADOS", desc: "Crecimiento medible" },
-  ];
+const coreFeatures = [
+  { num: '01', title: 'ESTRATEGIA', desc: 'Claridad, foco y dirección' },
+  { num: '02', title: 'PROCESOS', desc: 'Estructura clara y repetible' },
+  { num: '03', title: 'TECNOLOGÍA', desc: 'Plataformas, datos e integraciones' },
+  { num: '04', title: 'OPERACIÓN', desc: 'Ejecución eficiente y automatizada' },
+  { num: '05', title: 'RESULTADOS', desc: 'Impacto medible y escalable' },
+];
 
+export default function AethryonCore() {
   return (
     <div className="rv-aethryon-core">
-      <Link to="/aethryon/" className="rv-aethryon-graphic" aria-label="Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados">
-        <picture>
-          <source media="(prefers-reduced-motion: reduce)" srcSet="/media/aethryon-convergence-mobile-960.webp" type="image/webp" />
-          <source media="(max-width: 1023px)" type="image/webp"
-            srcSet="/media/aethryon-convergence-mobile-640.webp 640w, /media/aethryon-convergence-mobile-960.webp 960w"
-            sizes="(max-width: 767px) calc(100vw - 32px), calc(50vw - 36px)" />
-          <img width="1400" height="1060" loading="eager" fetchPriority="high" decoding="async"
-            src="/media/aethryon-convergence-animated-optimized-v73.svg" alt=""
-          />
-        </picture>
+      <link rel="preload" as="image" href="/media/aethryon-convergence-animated-optimized-v73.svg" fetchPriority="high" />
+      <Link to="/aethryon/" className="rv-aethryon-graphic flex" aria-label="Conocer AETHRYON: estrategia, procesos, tecnología, operación y resultados">
+        {/* Frame the original animated SVG without altering its art or animations.
+            Its baked-in labels sit outside this viewport; equivalent HTML follows. */}
+        <svg viewBox="240 150 760 800" width="760" height="800" aria-hidden="true" focusable="false">
+          <image href="/media/aethryon-convergence-animated-optimized-v73.svg" width="1400" height="1060" />
+        </svg>
       </Link>
       <ul className="rv-aethryon-features" aria-label="Capacidades AETHRYON">
         {coreFeatures.map(item => (

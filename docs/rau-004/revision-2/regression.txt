@@ -1,0 +1,40 @@
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /ruta-90 (1.985709ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: / (0.481916ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /nosotros (0.260833ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /soluciones (0.483584ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /aethryon (0.935042ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /recursos (0.407791ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /frente-comercial (0.456417ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /sitio-web-comercial-para-pymes (0.934833ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /sitio-web-servicios-especializados (0.667416ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos (0.205625ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos/infraestructura-temporal-b2b (0.283166ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-comercial-servicios-profesionales (0.548958ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-gratis-para-medicos (0.408583ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-medicos-especialistas (0.455875ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /seo-local-para-medicos (0.887542ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-medicos (0.5485ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-para-consultorio-medico (0.682875ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /pagina-web-medicos-agenda-whatsapp (0.771833ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /aviso-de-privacidad (0.226417ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /terminos (0.207625ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /trayectoria (0.141625ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /rauviaweb (0.137791ms)
+✔ RAU-004 preserves current main SEO, H1 and non-Hero content: /casos/presencia-posicionamiento-profesional (0.131791ms)
+✔ RAU-004 retains official media bytes and the real commercial offer (0.488791ms)
+✔ compressed JSON with trailing garbage does not crash the parser or prevent subsequent requests (20.533125ms)
+✔ comma serialization accepts object elements with non-callable toString (0.648583ms)
+✔ sanitization blocks refresh URLs and untrusted SVG animation attributes (1.172334ms)
+✔ nested discarded iframes remain bounded and do not cause stack overflow (2.161375ms)
+✔ oversized constrained Zod collections fail before element transforms run (1.574541ms)
+✔ glob still resolves supported patterns and a pre-aborted walk performs no directory reads (5.642375ms)
+✔ minimatch handles repeated globparts and ordinary path matching (1.22925ms)
+✔ Puppeteer BiDi protocol consumer validates with its compatible Zod 4 dependency (13.098ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.883417

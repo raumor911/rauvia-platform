@@ -10,7 +10,7 @@ export function snapshot(html,route){
  const head=html.match(/<head>([\s\S]*?)<\/head>/)[1];
  const semantics=[...head.matchAll(/<title>.*?<\/title>|<meta\b[^>]*>|<link\b[^>]*rel="canonical"[^>]*>|<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/g)].map(m=>m[0]).join('');
  let main=html.match(/<main>([\s\S]*?)<\/main>/)[1];
- if(route==='/')main=main.replace(/<section class="rv-home-hero\b[\s\S]*?<\/section>/,'');
+ if(route==='/'){assert.equal((main.match(/Primero identificamos dónde está la restricción\./g)||[]).length,1,'Original diagnosis paragraph remains visible once');main=main.replace(/<section class="rv-home-hero\b[\s\S]*?<\/section>/,'').replace(/<div class="rv-hero-context rv-hero-container">[\s\S]*?<\/div>/,'');}
  return {head:hash(semantics),h1:[...html.matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/g)].map(m=>m[1].replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim()),outsideHero:hash(normalize(main))};
 }
 for(const route of publicRoutes)test(`RAU-004 preserves current main SEO, H1 and non-Hero content: ${route}`,()=>{

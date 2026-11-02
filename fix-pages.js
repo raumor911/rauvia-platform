@@ -1,7 +1,7 @@
 import fs from 'fs';
-import glob from 'glob';
+import { globSync } from 'glob';
 
-const pages = glob.sync('src/pages/**/*.tsx');
+const pages = globSync('src/pages/**/*.tsx');
 
 pages.forEach(page => {
   let code = fs.readFileSync(page, 'utf8');

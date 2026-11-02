@@ -1,0 +1,23 @@
+
+> react-example@78.0.0 test:wordpress-sync
+> node --import tsx --test tests/wordpress-sync.test.ts tests/wordpress-sync-app.test.mjs
+
+Mon, 02 Nov 2026 22:53:02 GMT router deprecated handlers that are Promise-like are deprecated, use a native Promise instead at ../../../Users/raumor/.codex/.chatgpt-projects/g-p-68fe558984848191b70bcbc28ae54239/work/rauvia-rau004/node_modules/router/lib/route.js:157:13
+✔ compiled Express: dynamic resource HTML, webhook publication/edit/deletion, outage recovery, SEO and sitemap (1218.04375ms)
+✔ compiled Express: old sitemap response is discarded after a content event (31.147791ms)
+✔ compiled Express: content events invalidate cache even when IndexNow sending is disabled (12.738583ms)
+✔ current WordPress export: article 49 is published October 7, ordered first, independently of modified/editorial dates (11.470084ms)
+✔ explicit upstream publication ordering and authoritative empty list (11.963208ms)
+✔ invalidated in-flight list cannot overwrite or return an earlier publication snapshot (3.42575ms)
+✔ invalidated in-flight article cannot overwrite an edit (0.773708ms)
+✔ invalidation expires negative lookups and refreshes newly published content (0.471375ms)
+✔ outage preserves last known good list and marks it stale; next request recovers without restart (505.683042ms)
+✔ client prefers proxy, uses no-store, accepts successful empty list and falls back to REST on error (2.229ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1365.807583

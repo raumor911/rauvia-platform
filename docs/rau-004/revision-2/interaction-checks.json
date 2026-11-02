@@ -1,0 +1,13 @@
+{
+  "keyboardFocus": {
+    "name": "CONOCER NUESTROS PRODUCTOS",
+    "outline": "rgb(30, 74, 116) solid 3px"
+  },
+  "resourcesKeyboardDestination": "http://localhost:3135/recursos/",
+  "mobileMenu": {
+    "enterOpens": true,
+    "escapeCloses": true,
+    "focusRestored": "Abrir men\u00fa"
+  },
+  "consoleErrorsAndWarnings": []
+}
