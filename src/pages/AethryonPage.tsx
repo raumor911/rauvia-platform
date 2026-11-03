@@ -6,6 +6,8 @@ import RouteSEO from '../seo/PageMetadata';
 import {Link} from 'react-router-dom';
 import {ArrowRight, CheckCircle2, ChevronDown, MonitorPlay} from 'lucide-react';
 import WhatsAppCTA from '../components/WhatsAppCTA';
+import useScrollReveal from '../hooks/useScrollReveal';
+import '../styles/scrollReveal.css';
 import './AethryonPage.css';
 
 function trackAethryonClick(destination: string, context: string) {
@@ -14,6 +16,7 @@ function trackAethryonClick(destination: string, context: string) {
 
 export default function AethryonPage() {
   const root = useRef<HTMLDivElement>(null);
+  useScrollReveal(root, ':scope > section:not(#aethryon-hero) > div:not(.absolute), :scope > section:not(#aethryon-hero) .grid > div');
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return;
     // Exposure means half of a section heading is visible below the fixed header.
