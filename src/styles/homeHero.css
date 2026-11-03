@@ -86,13 +86,8 @@
  .rv-aethryon-features li{font-size:clamp(.6875rem,.83vw,.9375rem);gap:clamp(8px,1vw,16px)}
  .rv-aethryon-feature-title{font-size:clamp(.6875rem,.83vw,.9375rem)}
  .rv-aethryon-number{font-size:clamp(.875rem,1vw,1.125rem)}
- .rv-main-site[data-main-route="home"] .rv-nav-inner{max-width:1728px;width:90%;padding-inline:0}
- .rv-main-site[data-main-route="home"] .rv-desktop-nav a{font-size:clamp(.75rem,.9vw,.9375rem)}
 }
 @media(min-width:1440px){
- .rv-main-site[data-main-route="home"]{--rv-header-height:96px}
- .rv-main-site[data-main-route="home"] .rv-nav-inner{min-height:96px}
- .rv-main-site[data-main-route="home"] .rv-nav-inner>a img{height:64px;border:2px solid var(--color-rauvia-blue);padding:6px}
  .rv-home-hero .rv-hero-eyebrow{margin-bottom:28px;font-size:1.125rem}
  .rv-home-hero .rv-hero-primary{min-height:58px}
  .rv-hero-knowledge{min-height:76px}
@@ -116,7 +111,7 @@
 /* Match the supplied 1664×945 composition while allowing content to reflow. */
 .rv-main-site main .rv-home-hero .rv-hero-eyebrow{font-size:clamp(.75rem,1.1vw,1.125rem);margin:0 0 28px;line-height:1.4;color:var(--color-rauvia-blue)}
 @media(min-width:1024px){
- .rv-hero-container,.rv-main-site[data-main-route="home"] .rv-nav-inner{width:min(89%,1728px)}
+ .rv-hero-container{width:min(89%,1728px)}
  .rv-main-site .rv-home-hero h1{font-size:clamp(1.75rem,2.8vw,3.25rem)!important}
  .rv-hero-card{gap:14px}
  .rv-main-site .rv-home-hero .rv-hero-card-title{font-size:clamp(1.125rem,1.68vw,1.875rem);line-height:1.2}
@@ -135,8 +130,6 @@
  .rv-hero-card{gap:16px}
 }
 @media(min-width:1440px){
- .rv-main-site[data-main-route="home"] .rv-nav-inner>a img{width:148px;height:78px}
- .rv-main-site[data-main-route="home"] .rv-nav-action{font-size:1rem;min-height:54px;padding:14px 24px}
  .rv-hero-knowledge{padding-inline:36px}
  .rv-hero-knowledge-heading{gap:32px}
  .rv-main-site .rv-home-hero .rv-hero-knowledge-heading h2{font-size:1.5rem}
@@ -161,10 +154,6 @@
 }
 /* Short laptop windows retain the whole composition without browser zoom. */
 @media(min-width:1024px) and (max-height:850px){
- .rv-main-site[data-main-route="home"]{--rv-header-height:80px}
- .rv-main-site[data-main-route="home"] .rv-nav-inner{min-height:80px}
- .rv-main-site[data-main-route="home"] .rv-nav-inner>a img{width:134px;height:64px}
- .rv-main-site[data-main-route="home"] .rv-nav-action{min-height:48px;padding-block:12px}
  .rv-main-site main .rv-home-hero{padding-top:calc(var(--rv-header-height) + 24px)}
  .rv-main-site main .rv-home-hero .rv-hero-eyebrow{font-size:.875rem;margin-bottom:16px}
  .rv-hero-grid{align-items:center;margin-bottom:28px}
