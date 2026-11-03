@@ -28,21 +28,3 @@
     scroll-behavior: auto !important;
   }
 }
-
-/* Subtle, scroll-linked entrance; content remains visible without support. */
-@keyframes aethryon-reveal {
-  from { opacity: .8; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .aethryon-ux > section:not(#aethryon-hero) > div {
-      animation: aethryon-reveal linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 30%;
-    }
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .aethryon-ux > section:not(#aethryon-hero) > div { animation: none; transform: none; opacity: 1; }
-}
