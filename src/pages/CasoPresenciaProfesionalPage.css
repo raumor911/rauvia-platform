@@ -43,7 +43,5 @@
  .pp-report .report-meta { grid-template-columns:1fr; }
  .pp-report .pp-sources { grid-template-columns:repeat(2,minmax(0,1fr)); }
  .pp-report .pp-reference-map > div { grid-template-columns:1fr; }
- .pp-report .pp-table-wrap table { min-width:530px; }
- .pp-report .pp-table-wrap::before { content:'Desliza la tabla para consultar evidencia y límites →'; display:block; font-size:11px; color:#475569; margin-bottom:10px; }
 }
 
