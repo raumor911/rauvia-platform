@@ -1,14 +1,18 @@
 import RouteSEO from '../seo/PageMetadata';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type {WPPost} from '../lib/wp';
 import {initialContent} from '../lib/initialContent';
 import {sanitizeTitleHtml} from '../lib/editorial';
 import {publicationLabel,sortPublishedPosts} from '../lib/postDates';
 import FadeInUp from '../components/FadeInUp';
+import useScrollReveal from '../hooks/useScrollReveal';
+import '../styles/scrollReveal.css';
 
 export default function RecursosPage({initialPosts,initialStale}: {initialPosts?: WPPost[];initialStale?:boolean} = {}) {
   const [posts, setPosts] = useState<WPPost[]>(() => sortPublishedPosts(initialPosts || (initialContent()?.path === '/recursos/' ? initialContent()?.posts : undefined) || []));
+  const root = useRef<HTMLDivElement>(null);
+  useScrollReveal(root, '.rv-resource-card', posts.map(post => post.id).join(','));
   const [loading, setLoading] = useState(() => !(initialPosts || (initialContent()?.path==='/recursos/' ? initialContent()?.posts : undefined)));
 
   const [unavailable,setUnavailable] = useState(()=>initialStale ?? (initialContent()?.path==='/recursos/' && !!initialContent()?.stale));
@@ -34,7 +38,7 @@ export default function RecursosPage({initialPosts,initialStale}: {initialPosts?
   }, []);
 
   return (
-    <>
+    <div ref={root} className="rv-resources-motion">
       <RouteSEO path="/recursos" />
       
 
@@ -67,10 +71,10 @@ export default function RecursosPage({initialPosts,initialStale}: {initialPosts?
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post, index) => {
+              {posts.map((post) => {
                 const featuredMedia = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
                 return (
-                  <FadeInUp key={post.id} delay={index * 0.1}>
+                  <div key={post.id} className="rv-resource-card">
                     <Link to={`/recursos/${post.slug}/`} className="group flex flex-col h-full bg-rauvia-card border border-rauvia-border rounded-lg overflow-hidden transition-all hover:border-rauvia-accent/50 hover:shadow-lg">
                       {featuredMedia && (
                         <div className="aspect-video w-full overflow-hidden bg-rauvia-bg">
@@ -89,7 +93,7 @@ export default function RecursosPage({initialPosts,initialStale}: {initialPosts?
                         </div>
                       </div>
                     </Link>
-                  </FadeInUp>
+                  </div>
                 );
               })}
             </div>
@@ -98,6 +102,6 @@ export default function RecursosPage({initialPosts,initialStale}: {initialPosts?
       </section>
 
       
-    </>
+    </div>
   );
 }
