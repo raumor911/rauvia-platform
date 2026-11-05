@@ -73,11 +73,11 @@ export default function NosotrosPage() {
       {/* SECCIÓN 2 — ORIGEN DEL PROBLEMA */}
       <FadeInUp>
       <section className="py-10 md:py-20 bg-white border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
           <div className="w-full">
             <div className="flex justify-center">
               {/* Visual Origen */}
-              <div className="relative w-full">
+              <div className="relative w-full max-w-[1600px]">
                 <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
               </div>
             </div>
