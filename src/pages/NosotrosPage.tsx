@@ -162,7 +162,7 @@ export default function NosotrosPage() {
       <section className="py-10 md:py-20 bg-rauvia-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 md:mb-16">
-            <h2 className="max-w-3xl text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
+            <h2 className="max-w-3xl mx-auto text-center text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
               RAUVIA FUE CONSTRUIDA DESDE LA INTERSECCIÓN ENTRE <span className="text-rauvia-blue">NEGOCIO, OPERACIÓN Y TECNOLOGÍA.</span>
             </h2>
             <div className="space-y-4 text-slate-600 text-base leading-relaxed">
