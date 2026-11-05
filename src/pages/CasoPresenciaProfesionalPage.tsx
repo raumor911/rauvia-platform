@@ -147,17 +147,16 @@ export default function CasoPresenciaProfesionalPage() {
         {additionalReferences.filter(reference => reference.id !== 'monica').map(reference => <ReferenceSection key={reference.id} reference={reference} />)}
 
         <section className="report-evidence-detail pp-evidence" aria-labelledby="evidencia-title">
-          <span className="report-kicker">EVIDENCIA Y LÍMITES</span>
-          <h2 id="evidencia-title">Qué demuestra / Qué no demuestra</h2>
-          <div className="pp-table-wrap" role="region" aria-label="Evidencia de implementación y límites" tabIndex={0}>
-            <table><thead><tr><th scope="col">Evidencia</th><th scope="col">Qué demuestra</th><th scope="col">Qué no demuestra</th></tr></thead><tbody>
-              <tr><th scope="row">Sitio publicado</th><td>Una presencia profesional disponible para consulta pública.</td><td>Incremento en visitas, entrevistas o empleo.</td></tr>
-              <tr><th scope="row">Información estructurada</th><td>Identidad, trayectoria, competencias y escenarios de aportación organizados.</td><td>Validación independiente de todos los logros descritos por la profesional.</td></tr>
-              <tr><th scope="row">Bases de SEO</th><td>Título, descripción, canonical y datos estructurados observados en la página de referencia.</td><td>Indexación efectiva, posiciones en buscadores o mejora de ranking ATS.</td></tr>
-              <tr><th scope="row">Enlaces y contacto</th><td>Continuidad hacia LinkedIn y canales de contacto visibles.</td><td>Contactos recibidos, recomendaciones o contrataciones atribuibles al sitio.</td></tr>
+          <span className="report-kicker">EVIDENCIA DE LA CAPACIDAD</span>
+          <h2 id="evidencia-title">Qué demuestra</h2>
+          <div className="pp-table-wrap" role="region" aria-label="Evidencia de implementación" tabIndex={0}>
+            <table><thead><tr><th scope="col">Capacidad</th><th scope="col">Qué demuestra</th></tr></thead><tbody>
+              <tr><th scope="row">Presencia profesional</th><td>Organiza la trayectoria, las capacidades y las formas de colaboración en un sitio que se puede compartir.</td></tr>
+              <tr><th scope="row">Consultorios y salud</th><td>Presenta áreas de atención, servicios, ubicación y vías para consultar disponibilidad o solicitar una valoración.</td></tr>
+              <tr><th scope="row">Pequeños negocios</th><td>Reúne la oferta, el espacio, las opciones y los canales de contacto para ayudar a los clientes a conocer el negocio.</td></tr>
+              <tr><th scope="row">Estructura digital</th><td>Integra información organizada, navegación, metadatos y rutas de contacto adecuadas al contexto de cada sitio.</td></tr>
             </tbody></table>
           </div>
-          <p className="pp-evidence-note">La web complementa el CV y LinkedIn. No garantiza ranking ATS, entrevistas ni empleo. La presencia de metadatos no sustituye la validación del rastreo y la indexación; tampoco implica que un ATS consulte o puntúe el sitio.</p>
         </section>
 
         <section className="report-outlook pp-learning"><span className="report-kicker">DE LA PRESENCIA AL APRENDIZAJE</span>
