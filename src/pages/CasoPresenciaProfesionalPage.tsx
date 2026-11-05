@@ -13,6 +13,13 @@ const method = [
   ['Facilitar el descubrimiento', 'SEO técnico, datos estructurados, enlaces y contacto.'],
 ];
 
+const additionalReferences = [
+  { id: 'monica', name: 'Mónica García Urrutia', specialty: 'Product Operations · Experiencia de cliente', url: 'https://monicagarcia.rauviaweb.mx/', problem: 'Una trayectoria en operaciones y atención a clientes necesita mostrar cómo sus experiencias se conectan con su evolución hacia producto.', solution: 'La presencia organiza su recorrido, habilidades y proyecto destacado, y presenta situaciones en las que puede aportar a un equipo.', details: [['Contexto', 'Perfil profesional en evolución hacia producto.'], ['Estructura', 'Trayectoria, capacidades, proyecto y perspectiva.'], ['Siguiente paso', 'Conversación sobre oportunidades profesionales.']] },
+  { id: 'galenus', name: 'Consultorio Médico GALENUS', specialty: 'Salud · Consultorio con diversas especialidades', url: 'https://galenusconsultorio.rauviaweb.mx/', problem: 'Un consultorio con varias áreas de atención necesita orientar a las personas que buscan consulta, sin confundir información administrativa con valoración médica.', solution: 'El sitio presenta atención general, especialidades, servicios, ubicación y horarios, con una vía telefónica para consultar disponibilidad.', details: [['Contexto', 'Atención médica y especialidades.'], ['Estructura', 'Opciones de consulta, servicios y ubicación.'], ['Siguiente paso', 'Llamar para orientación y disponibilidad.']] },
+  { id: 'antonio', name: 'Antonio Colyn', specialty: 'Fisioterapia y quiropráctica · Iztapalapa', url: 'https://antoniocolyn.rauviaweb.mx/', problem: 'Quien busca atención por molestias de espalda o cuello necesita comprender qué se puede consultar y cómo acceder a una valoración.', solution: 'La página organiza motivos de consulta, servicios, ubicación y contacto, aclarando que cada situación requiere valoración individual.', details: [['Contexto', 'Práctica local de fisioterapia y quiropráctica.'], ['Estructura', 'Motivos de consulta, servicios y ubicación.'], ['Siguiente paso', 'Consultar disponibilidad para una valoración.']] },
+  { id: 'acacia', name: 'Acacia', specialty: 'Salón de fiestas · Huixquilucan', url: 'https://acacia.rauviaweb.mx/', problem: 'Al planear una celebración, las personas necesitan conocer el espacio, las opciones disponibles y cómo iniciar una consulta.', solution: 'El frente comercial reúne celebraciones, galería, paquetes, ubicación y canales de contacto para facilitar la exploración del salón.', details: [['Contexto', 'Salón para celebraciones y reuniones.'], ['Estructura', 'Espacio, celebraciones, paquetes y galería.'], ['Siguiente paso', 'Consultar el evento y su disponibilidad.']] }
+];
+
 function CapabilityCircuit() {
   return <figure className="report-circuit-panel" aria-label="Proceso de construcción de una presencia profesional">
     <figcaption className="report-kicker">DE LA TRAYECTORIA AL ACTIVO DIGITAL</figcaption>
@@ -111,6 +118,27 @@ export default function CasoPresenciaProfesionalPage() {
             <div><span>Presencia</span><p>Identidad visual propia, navegación adaptable, metadatos, canonical y datos estructurados Person.</p></div>
           </div>
         </section>
+
+        <section className="pp-applications" aria-labelledby="aethryon-frentes-title">
+          <span className="report-kicker">DE LA COMPRENSIÓN AL FRENTE COMERCIAL</span>
+          <h2 id="aethryon-frentes-title">Una capacidad, distintas situaciones</h2>
+          <p>En RAUVIA utilizamos AETHRYON para organizar el contexto, identificar la necesidad prioritaria y estructurar una ruta de acción. Esa lectura orienta cómo aterrizamos cada frente comercial: qué necesita comprender su público, qué información ofrece confianza y cuál es el siguiente paso adecuado.</p>
+          <p>Una presencia profesional, un consultorio con varias especialidades y un salón de fiestas requieren recorridos diferentes. RAUVIAWEB adapta la arquitectura y la comunicación a cada caso; el alcance se define según sus necesidades y evidencia disponible.</p>
+        </section>
+
+        {additionalReferences.map(reference => <section key={reference.id} className="report-evidence-row pp-reference" aria-labelledby={`${reference.id}-title`}>
+          <div>
+            <span className="report-kicker">IMPLEMENTACIÓN DE REFERENCIA</span>
+            <h2 id={`${reference.id}-title`}>{reference.name}</h2>
+            <p className="pp-specialty">{reference.specialty}</p>
+            <p>{reference.problem}</p>
+            <p>{reference.solution}</p>
+            <a className="pp-link" href={reference.url} target="_blank" rel="noopener noreferrer">Explorar el sitio de {reference.name} <ArrowRight aria-hidden="true" /></a>
+          </div>
+          <div className="case-findings pp-reference-map">
+            {reference.details.map(([label, detail]) => <div key={label}><span>{label}</span><p>{detail}</p></div>)}
+          </div>
+        </section>)}
 
         <section className="report-evidence-detail pp-evidence" aria-labelledby="evidencia-title">
           <span className="report-kicker">EVIDENCIA Y LÍMITES</span>
