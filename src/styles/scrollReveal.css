@@ -3,7 +3,9 @@
   transform: translate3d(0, 28px, 0);
   transition: opacity 720ms cubic-bezier(.22, 1, .36, 1), transform 720ms cubic-bezier(.22, 1, .36, 1);
 }
-.rv-reveal-target.rv-reveal-visible { opacity: 1; transform: none; }
+.rv-reveal-target.rv-reveal-visible, .rv-reveal-target:focus-within { opacity: 1; transform: none; }
+.rv-resources-motion .rv-resource-card:nth-child(3n + 2) { transition-delay: 90ms; }
+.rv-resources-motion .rv-resource-card:nth-child(3n) { transition-delay: 180ms; }
 .rv-home-problems .grid > .rv-reveal-target:nth-child(2),
 .aethryon-ux .grid > .rv-reveal-target:nth-child(2) { transition-delay: 90ms; }
 .rv-home-problems .grid > .rv-reveal-target:nth-child(3),
