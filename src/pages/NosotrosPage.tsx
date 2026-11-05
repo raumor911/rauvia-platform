@@ -32,13 +32,13 @@ export default function NosotrosPage() {
               </div>
               
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-rauvia-navy leading-[1.1]">
-                CONSTRUIMOS LA ESTRUCTURA <br/>
-                QUE PERMITE A LAS EMPRESAS <br/>
-                <span className="text-rauvia-blue">CRECER CON CLARIDAD</span><span className="text-rauvia-gold">.</span>
+                DEFENDEMOS TU PATRIMONIO. <br/>
+                CONSTRUIMOS CAPACIDADES <br/>
+                <span className="text-rauvia-blue">PARA HACERLO CRECER</span><span className="text-rauvia-gold">.</span>
               </h1>
               
               <p className="text-slate-600 text-base xl:text-lg max-w-md">
-                Somos una firma mexicana de consultoría estratégica y desarrollo tecnológico. RAUVIA ayuda a empresas con capacidad real que encuentran una brecha entre lo que pueden hacer, cómo lo entiende el mercado y cómo está estructurada su operación. Primero identifica qué está limitando el avance y después construye la capacidad comercial, operativa o tecnológica necesaria.
+                RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico. Ayudamos a propietarios y empresas a identificar pérdidas de valor, proteger sus recursos y desarrollar las capacidades comerciales, operativas y tecnológicas necesarias para fortalecer su negocio.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -108,7 +108,7 @@ export default function NosotrosPage() {
           <div className="flex flex-wrap justify-center gap-8">
             {[
               { title: 'CLARIDAD ANTES QUE COMPLEJIDAD', desc: 'Una solución debe poder comprenderse antes de poder ejecutarse.', icon: 'M4 4h16v16H4z M10 10h4v4h-4z' },
-              { title: 'ESTRUCTURA ANTES QUE ESCALA', desc: 'Crecer sin estructura aumenta fricción, dependencia y costo.', icon: 'M4 20h16v-4H4z M8 12h8v-4H8z M10 4h4v4h-4z' },
+              { title: 'ESTRUCTURA ANTES QUE ESCALA', desc: 'Antes de crecer, una empresa necesita proteger sus recursos, reducir pérdidas evitables y fortalecer la estructura que sostiene sus resultados.', icon: 'M4 20h16v-4H4z M8 12h8v-4H8z M10 4h4v4h-4z' },
               { title: 'TECNOLOGÍA CON PROPÓSITO', desc: 'La tecnología debe resolver una necesidad operativa concreta.', icon: 'M12 4L4 20h16z M12 12v4' },
               { title: 'EVIDENCIA ANTES QUE CERTEZA ARTIFICIAL', desc: 'Diferenciamos hechos, hipótesis e inferencias antes de recomendar una decisión.', icon: 'M12 22A10 10 0 10 12 2a10 10 0 000 20z M12 6v6l4 2' },
               { title: 'EJECUCIÓN SOBRE PRESENTACIÓN', desc: 'Un diagnóstico solo tiene valor cuando puede convertirse en una ruta de acción.', icon: 'M5 12l5 5L20 7' }
@@ -168,7 +168,8 @@ export default function NosotrosPage() {
             <div className="space-y-4 text-slate-600 text-base leading-relaxed">
               <p>RAUVIA fue fundada por Raúl Morales como una firma orientada a convertir análisis, estructura y tecnología en capacidades ejecutables para empresas.</p>
               <p>Actualmente, aporta la dirección, el criterio estratégico, la arquitectura de soluciones y la evolución metodológica de la organización.</p>
-              <p>Esta visión intelectual y metodológica se institucionaliza a través de RAUVIA, garantizando que el diagnóstico de negocio siempre preceda a la herramienta tecnológica.</p>
+              <p>En RAUVIA entendemos que detrás de cada empresa existe patrimonio construido mediante años de trabajo, inversión y decisiones. Nuestro propósito es ayudar a proteger ese valor, identificar los factores que lo comprometen y desarrollar soluciones que permitan preservarlo, recuperarlo y hacerlo crecer.</p>
+              <p>Para lograrlo, conectamos estrategia, procesos, tecnología y ejecución, con intervenciones diseñadas a partir de las necesidades reales de cada negocio.</p>
               
               <div className="pt-4">
                 <a 
@@ -245,7 +246,7 @@ export default function NosotrosPage() {
                 <span className="text-rauvia-blue">EN OTRA CAPA DE COMPLEJIDAD.</span>
               </h2>
               <div className="space-y-4 text-slate-600 text-base leading-relaxed">
-                <p>Trabajamos con dueños y equipos directivos que necesitan resolver un problema visible, construir una capacidad específica o preparar a la organización para una siguiente etapa.</p>
+                <p>Trabajamos con propietarios y equipos directivos que necesitan proteger el valor de sus empresas, recuperar recursos, resolver problemas operativos o construir nuevas capacidades de crecimiento.</p>
                 <p>Cada intervención debe dejar una estructura más clara, transferible y medible que la que existía al comenzar.</p>
               </div>
             </div>
