@@ -1,6 +1,6 @@
 import { useEffect, type RefObject } from 'react';
 
-export default function useScrollReveal(root: RefObject<HTMLElement | null>, selector: string) {
+export default function useScrollReveal(root: RefObject<HTMLElement | null>, selector: string, revision?: unknown) {
   useEffect(() => {
     const container = root.current;
     if (!container || !('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -23,5 +23,5 @@ export default function useScrollReveal(root: RefObject<HTMLElement | null>, sel
       observer.disconnect();
       elements.forEach(element => element.classList.remove('rv-reveal-target', 'rv-reveal-visible'));
     };
-  }, [root, selector]);
+  }, [root, selector, revision]);
 }

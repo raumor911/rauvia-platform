@@ -4,11 +4,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, PlayCircle, ShieldCheck, Target, Layers, Settings, BarChart3, TrendingUp, Hexagon } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import WhatsAppCTA from '../components/WhatsAppCTA';
+import { useRef } from 'react';
+import useScrollReveal from '../hooks/useScrollReveal';
+import '../styles/scrollReveal.css';
 
 export default function NosotrosPage() {
+  const root = useRef<HTMLDivElement>(null);
+  useScrollReveal(root, ':scope > div > section > div');
 
   return (
-    <>
+    <div ref={root}>
       <RouteSEO path="/nosotros" />
       <link rel="preload" as="image" media="(min-width: 1024px)" href="/media/rauvia-nosotros-hero-structure-v73.svg" fetchPriority="high" />
       
@@ -256,6 +261,6 @@ export default function NosotrosPage() {
       </section>
       </FadeInUp>
       
-    </>
+    </div>
   );
 }

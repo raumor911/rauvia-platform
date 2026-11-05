@@ -1,12 +1,14 @@
 import {trackEvent} from '../lib/analytics';
 import {ruta90} from '../data/ruta90.js';
 import RouteSEO from '../seo/PageMetadata';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { RAUVIA_ENTITY } from '../config/entity';
 import { ArrowRight, Hexagon, Target, CheckCircle2, ChevronDown, ChevronRight, Layers, Box, Cpu, LineChart, Network, Activity, BarChart3, Database, Globe } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import GrowthStructuralMap from '../components/GrowthStructuralMap';
+import useScrollReveal from '../hooks/useScrollReveal';
+import '../styles/scrollReveal.css';
 
 // Define the assets structure
 const assetsData = {
@@ -278,6 +280,8 @@ const assetsData = {
 };
 
 export default function SolucionesPage() {
+  const root = useRef<HTMLDivElement>(null);
+  useScrollReveal(root, ':scope > div > section > div, #catalogo > div > .mb-12, #catalogo .rv-catalog-layout');
   const [activeStage, setActiveStage] = useState('01');
   const [openProduct, setOpenProduct] = useState('frente-comercial-esencial');
 
@@ -296,7 +300,7 @@ export default function SolucionesPage() {
   const currentProducts = assetsData[activeStage as keyof typeof assetsData] || [];
 
   return (
-    <>
+    <div ref={root}>
       <RouteSEO path="/soluciones" />
       
 
@@ -670,6 +674,6 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN FINAL */}
       
-    </>
+    </div>
   );
 }
