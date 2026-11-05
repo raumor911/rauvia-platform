@@ -20,6 +20,22 @@ const additionalReferences = [
   { id: 'acacia', name: 'Acacia', specialty: 'Salón de fiestas · Huixquilucan', url: 'https://acacia.rauviaweb.mx/', problem: 'Al planear una celebración, las personas necesitan conocer el espacio, las opciones disponibles y cómo iniciar una consulta.', solution: 'El frente comercial reúne celebraciones, galería, paquetes, ubicación y canales de contacto para facilitar la exploración del salón.', details: [['Contexto', 'Salón para celebraciones y reuniones.'], ['Estructura', 'Espacio, celebraciones, paquetes y galería.'], ['Siguiente paso', 'Consultar el evento y su disponibilidad.']] }
 ];
 
+function ReferenceSection({reference}: {reference: typeof additionalReferences[number]}) {
+  return <section className="report-evidence-row pp-reference" aria-labelledby={`${reference.id}-title`}>
+    <div>
+      <span className="report-kicker">IMPLEMENTACIÓN DE REFERENCIA</span>
+      <h2 id={`${reference.id}-title`}>{reference.name}</h2>
+      <p className="pp-specialty">{reference.specialty}</p>
+      <p>{reference.problem}</p>
+      <p>{reference.solution}</p>
+      <a className="pp-link" href={reference.url} target="_blank" rel="noopener noreferrer">Explorar el sitio de {reference.name} <ArrowRight aria-hidden="true" /></a>
+    </div>
+    <div className="case-findings pp-reference-map">
+      {reference.details.map(([label, detail]) => <div key={label}><span>{label}</span><p>{detail}</p></div>)}
+    </div>
+  </section>;
+}
+
 function CapabilityCircuit() {
   return <figure className="report-circuit-panel" aria-label="Proceso de construcción de una presencia profesional">
     <figcaption className="report-kicker">DE LA TRAYECTORIA AL ACTIVO DIGITAL</figcaption>
@@ -119,6 +135,8 @@ export default function CasoPresenciaProfesionalPage() {
           </div>
         </section>
 
+        {additionalReferences.filter(reference => reference.id === 'monica').map(reference => <ReferenceSection key={reference.id} reference={reference} />)}
+
         <section className="pp-applications" aria-labelledby="aethryon-frentes-title">
           <span className="report-kicker">DE LA COMPRENSIÓN AL FRENTE COMERCIAL</span>
           <h2 id="aethryon-frentes-title">Una capacidad, distintas situaciones</h2>
@@ -126,19 +144,7 @@ export default function CasoPresenciaProfesionalPage() {
           <p>Una presencia profesional, un consultorio con varias especialidades y un salón de fiestas requieren recorridos diferentes. RAUVIAWEB adapta la arquitectura y la comunicación a cada caso; el alcance se define según sus necesidades y evidencia disponible.</p>
         </section>
 
-        {additionalReferences.map(reference => <section key={reference.id} className="report-evidence-row pp-reference" aria-labelledby={`${reference.id}-title`}>
-          <div>
-            <span className="report-kicker">IMPLEMENTACIÓN DE REFERENCIA</span>
-            <h2 id={`${reference.id}-title`}>{reference.name}</h2>
-            <p className="pp-specialty">{reference.specialty}</p>
-            <p>{reference.problem}</p>
-            <p>{reference.solution}</p>
-            <a className="pp-link" href={reference.url} target="_blank" rel="noopener noreferrer">Explorar el sitio de {reference.name} <ArrowRight aria-hidden="true" /></a>
-          </div>
-          <div className="case-findings pp-reference-map">
-            {reference.details.map(([label, detail]) => <div key={label}><span>{label}</span><p>{detail}</p></div>)}
-          </div>
-        </section>)}
+        {additionalReferences.filter(reference => reference.id !== 'monica').map(reference => <ReferenceSection key={reference.id} reference={reference} />)}
 
         <section className="report-evidence-detail pp-evidence" aria-labelledby="evidencia-title">
           <span className="report-kicker">EVIDENCIA Y LÍMITES</span>
