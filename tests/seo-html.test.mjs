@@ -27,6 +27,7 @@ try {
    assert.equal(res.status,200);assert.equal((head.match(/<title>/g)||[]).length,1);assert.equal((head.match(/rel="canonical"/g)||[]).length,1);
    assert.ok(head.includes(`href="${routeSeo[route].canonical}"`));assert.match(head,/name="description"/);assert.match(head,/property="og:url"/);assert.match(head,/name="twitter:card"/);
    assert.equal((html.match(/<h1\b/g)||[]).length,1);assert.match(html,/<main>[\s\S]+<\/main>/);assert.ok(html.indexOf('<main>')<html.lastIndexOf('<footer'));
+   if(route==='/trayectoria'){assert.match(html,/Planes y suscripciones RAUVIA Trayectoria/);assert.match(html,/Trayectoria Activa/);assert.match(html,/Precios por tipo de cambio/);assert.match(html,/Tarifario histórico de referencia/);}
    assert.doesNotMatch(html,/@vite\/client|@react-refresh|Asistente RAUVIA/);
    const schemas=[...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
    assert.ok(schemas.every(x=>x['@context']==='https://schema.org'));assert.equal(schemas.filter(x=>x['@type']==='Organization').length,1);assert.equal(schemas.filter(x=>x['@type']==='WebSite').length,1);

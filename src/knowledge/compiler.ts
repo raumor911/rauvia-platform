@@ -1,4 +1,5 @@
 import {personProfiles} from './personProfiles.ts';
+import {trayectoriaCatalog} from '../data/trayectoriaCatalog.ts';
 import {personSchema} from '../seo/personSchema.ts';
 import {buildGraph} from './graph.ts';
 import {publicProjection} from './publication.ts';
@@ -27,6 +28,7 @@ export function compileKnowledge(){
  const ontology='# Ontología del Knowledge Graph V74\n\nOntología propia de RAUVIA, no Schema.org/JSON-LD. Un nodo representa un concepto, no una ocurrencia observada. Identificadores conceptuales estables e independientes de las URLs. `canonical` pertenece sólo al Asset o Content que representa esa página; `Source.url` es una cita y puede apuntar a esa misma URL.\n\nTipos y campos específicos: `src/knowledge/types.ts`. Cada nodo contiene significado, razón editorial, status, evidenceState, visibilidad, aprobación, fuentes y referencias de assets.\n\n## Relaciones cerradas y tipadas\n\n'+table(['Relation','From','To'],Object.entries(RELATIONS).map(([rel,r])=>[rel,r.from,r.to]))+'\n`relatedTo`, `guaranteedSolution`, `createdBy` y `author` no son relaciones aceptadas. `possibleIntervention` y `mayLeadTo` Ruta 90 requieren condición de prioridad y capacidad de ejecución. AETHRYON produce una ruta de acción; no desemboca obligatoriamente en Ruta 90. El vínculo de automatización requiere proceso, responsables y reglas definidos. Las relaciones `supportedBy` institucionales son referencias editoriales, no validaciones externas.\n';
  const outputs:Record<string,string>={
   'public/llmo/knowledge-graph.json':json(publicGraph),'public/llmo/intent-coverage.json':json(publicCoverage),
+  'public/llmo/trayectoria-catalogo.json':json(trayectoriaCatalog),
   'data/knowledge/person-profiles.json':json(personProfiles(graph)),'data/knowledge/person-schema.json':json(personSchema()),'data/knowledge/master-graph.json':json(graph),'data/knowledge/intent-coverage.json':json(coverage),'data/knowledge/gaps.json':json(gaps),
   'data/knowledge/intent-coverage.csv':csv(headers,rows),'data/knowledge/gaps.csv':csv(gh,gr),
   'docs/search-intent-map.md':intentMap,'docs/business-problem-map.md':problemMap,'docs/knowledge-matrices.md':matrix,'docs/knowledge-graph-ontology.md':ontology

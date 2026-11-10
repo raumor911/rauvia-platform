@@ -15,3 +15,9 @@
 No forman una ruta obligatoria. La intervención depende del problema y las condiciones reales de la empresa. RAUVIA construye capacidades, no solo conecta herramientas.
 
 Fuentes: [Nosotros](https://rauvia.com.mx/nosotros/), [Soluciones](https://rauvia.com.mx/soluciones/).
+
+## RAUVIA Trayectoria
+
+Servicio de continuidad para que una página web publicada mantenga información y contacto vigentes. Incluye modalidades de presencia inicial y suscripciones para actualizaciones de alcance definido, además de cambios individuales. Tarifas publicadas como referencia histórica hasta confirmación comercial.
+
+Fuente: [Trayectoria](https://rauvia.com.mx/trayectoria/). Catálogo legible por máquinas: [trayectoria-catalogo.json](https://rauvia.com.mx/llmo/trayectoria-catalogo.json).
