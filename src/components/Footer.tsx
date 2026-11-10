@@ -63,6 +63,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
           
           <div className="flex flex-wrap justify-center gap-6 order-1 md:order-2">
             <Link to="/recursos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Blog</Link>
+            <Link to="/trayectoria/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Trayectoria</Link>
             <Link to="/casos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Casos</Link>
             <Link to="/aviso-de-privacidad/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Aviso de Privacidad</Link>
             <Link to="/terminos/" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Términos</Link>
