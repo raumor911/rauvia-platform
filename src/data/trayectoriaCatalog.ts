@@ -1,0 +1,92 @@
+// Fuente única del catálogo visible y el snapshot público de crawlers.
+// Precios históricos: no elevar a tarifario vigente sin aprobación comercial.
+export const trayectoriaCatalog = {
+  "schema_version": "1.0.0",
+  "product": "RAUVIA Trayectoria",
+  "publisher": "RAUVIA Consulting",
+  "canonical": "https://rauvia.com.mx/trayectoria/",
+  "source_date": "2026-10-14",
+  "reviewed_at": "2026-11-10",
+  "price_version": "historical-v1",
+  "status": "historical_reference_pending_commercial_confirmation",
+  "currency": "MXN",
+  "disclaimer": "Tarifas históricas de referencia recuperadas de la propuesta inicial del 14 de octubre de 2026. No son una oferta vinculante ni acreditan vigencia comercial. Confirma disponibilidad, condiciones, IVA de suscripciones y precio final con RAUVIA antes de contratar.",
+  "plans": [
+    {
+      "id": "presencia-libre",
+      "name": "Presencia Libre",
+      "monthly_price": 0,
+      "frequency": "sin mensualidad",
+      "summary": "Punto de partida para una presencia digital profesional.",
+      "includes": [
+        "Sitio web inicial gratuito sujeto a aceptación de alcance y disponibilidad",
+        "Alojamiento compartido y HTTPS"
+      ],
+      "changes_per_cycle": "No incluye cambios periódicos de la suscripción",
+      "conditions": "Disponibilidad, permanencia, dominio y alcances específicos se confirman antes de publicar."
+    },
+    {
+      "id": "trayectoria",
+      "name": "RAUVIA Trayectoria",
+      "monthly_price": 99,
+      "frequency": "mensual",
+      "summary": "Actualizaciones puntuales para mantener vigente tu sitio.",
+      "includes": [
+        "1 cambio Micro al mes",
+        "Revisión del alcance solicitado antes de ejecutar"
+      ],
+      "changes_per_cycle": "1 cambio Micro por mes",
+      "conditions": "Los cambios no se acumulan de un periodo a otro."
+    },
+    {
+      "id": "trayectoria-activa",
+      "name": "Trayectoria Activa",
+      "monthly_price": 149,
+      "frequency": "mensual",
+      "summary": "Para perfiles y negocios que actualizan su información con mayor frecuencia.",
+      "includes": [
+        "2 cambios Micro o 1 cambio Pequeño por mes",
+        "Revisión del alcance solicitado antes de ejecutar"
+      ],
+      "changes_per_cycle": "2 cambios Micro o 1 cambio Pequeño por mes",
+      "conditions": "Las alternativas son excluyentes y los cambios no se acumulan de un periodo a otro."
+    }
+  ],
+  "change_types": [
+    {
+      "id": "micro",
+      "name": "Micro",
+      "price_from": 149,
+      "description": "Cambio de un dato o elemento existente: teléfono, correo, enlace o texto puntual.",
+      "scope": "Un elemento existente"
+    },
+    {
+      "id": "pequeno",
+      "name": "Pequeño",
+      "price_from": 299,
+      "description": "Actualización de una sección existente, hasta 150 palabras y 3 ajustes relacionados.",
+      "scope": "Una sección existente"
+    },
+    {
+      "id": "mediano",
+      "name": "Mediano",
+      "price_from": 549,
+      "description": "Modificaciones en hasta 3 secciones existentes.",
+      "scope": "Hasta 3 secciones existentes"
+    },
+    {
+      "id": "mayor",
+      "name": "Mayor",
+      "price_from": 1290,
+      "description": "Nuevas páginas, secciones, rediseños, integraciones o funcionalidades personalizadas.",
+      "scope": "Cotización según alcance"
+    }
+  ],
+  "change_tax_note": "Los precios históricos de cambios individuales se documentaron en MXN, con IVA incluido. La condición fiscal de las suscripciones requiere confirmación.",
+  "policy": [
+    "Los cambios incluidos en las suscripciones no son acumulables.",
+    "Los desarrollos mayores y las nuevas funcionalidades se cotizan por separado.",
+    "Antes de ejecutar, RAUVIA valida alcance, insumos, aceptación y condiciones del servicio.",
+    "No se ofrecen resultados SEO garantizados ni soporte ilimitado."
+  ]
+} as const;
