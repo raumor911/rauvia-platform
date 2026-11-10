@@ -16,7 +16,7 @@ for(const path of ['/data/knowledge/master-graph.json','/data/knowledge/intent-c
 
 test('Public Trayectoria catalog matches source-controlled historical data',{skip:!base},async()=>{
  const response=await fetch(base+'/llmo/trayectoria-catalogo.json',{redirect:'manual'});
- assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/application\\/json/);
+ assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/application\/json/);
  const actual=await response.json();
  const expected=JSON.parse(fs.readFileSync('public/llmo/trayectoria-catalogo.json','utf8'));
  assert.deepEqual(actual,expected);assert.equal(actual.status,'historical_reference_pending_commercial_confirmation');
