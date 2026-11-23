@@ -20,6 +20,24 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
     return () => { io.disconnect(); el.classList.remove("ft-armed", "ft-in"); };
   }, []);
 
+  // Si la última sección de la página es oscura, el pie se funde con ella (retícula continua, sin filo ni velo en el borde).
+  useEffect(() => {
+    const el = ref.current;
+    const main = document.querySelector("main");
+    if (!el || !main || typeof MutationObserver === "undefined") return;
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const last = Array.from(main.querySelectorAll("section")).pop();
+      if (last?.classList.contains("fx-dark")) el.dataset.join = "dark"; else delete el.dataset.join;
+    };
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(check); };
+    check();
+    const mo = new MutationObserver(schedule);
+    mo.observe(main, { childList: true, subtree: true });
+    return () => { mo.disconnect(); if (raf) cancelAnimationFrame(raf); delete el.dataset.join; };
+  }, []);
+
   return (
     <footer ref={ref} className={(mobileLayer ? "rv-footer " : "") + "ft-epic bg-rauvia-navy-dark text-white relative overflow-hidden flex flex-col min-h-[550px] md:min-h-[100svh] justify-between"}>
       

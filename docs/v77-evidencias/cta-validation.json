@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T07:08:42.984Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base fa026da + working tree",
+  "capturedAt": "2026-11-23T07:12:56.568Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base 9b58c30 + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -225,7 +225,7 @@
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
     "src/components/HeroSection.tsx": "042fe95b587dd8908a82f14bc3960c4bff56d2f8d74a9cdd5e6bd69fc0c8c27c",
-    "src/components/Footer.tsx": "6ba7161d49c365e23cf4dfd3f034beded96ad3a13776a854a29904e6f02c5370",
+    "src/components/Footer.tsx": "f754003f9e3caff1f4a1c477d3b0b2fdbd4f1e9927451024165dd6c2da79fa59",
     "src/components/AethryonCore.tsx": "47809fadcdfd1153bb652f9887dd8637a65278ea71a4a0731863515ca6ef862f",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
     "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",

@@ -73,3 +73,11 @@
 }
 
 @media (max-width: 767px) { .ft-field { opacity: .6; } }
+
+/* Unión con una sección oscura contigua: sin filo dorado ni velo en el borde; el fondo arranca del mismo tono y la retícula continúa. */
+.ft-epic[data-join="dark"]::before { display: none; }
+.ft-epic[data-join="dark"] .ft-veil {
+  background:
+    radial-gradient(60% 55% at 50% 46%, transparent 0%, rgba(5, 19, 32, .15) 45%, rgba(5, 19, 32, .78) 100%),
+    linear-gradient(180deg, #051320 0%, rgba(5, 19, 32, 0) 22%, transparent 70%, rgba(5, 19, 32, .75) 100%);
+}

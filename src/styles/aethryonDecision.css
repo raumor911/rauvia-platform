@@ -1,7 +1,6 @@
 /* AETHRYON · sistema de decisión. Solo presentación: mismo texto, mismos encabezados y enlaces.
    Idea rectora: AETHRYON pone las opciones sobre la mesa y tú eliges. Las situaciones se pueden elegir, las rutas
-   se comparan, el ejemplo muestra la prioridad encenderse, los criterios se leen en un pentágono y el índice lateral
-   permite moverse por la decisión. Mejora progresiva: sin JS o con movimiento reducido todo se ve completo. */
+   se comparan, el ejemplo muestra la prioridad encenderse, los criterios se leen en un pentágono y Mejora progresiva: sin JS o con movimiento reducido todo se ve completo. */
 
 .fx-aethryon { --dm-ease: cubic-bezier(.2, .7, .2, 1); }
 
@@ -147,21 +146,6 @@
 .fx-aethryon #aethryon-ejecucion .aethryon-dark { background: linear-gradient(135deg, #0A2540, #051320) !important; box-shadow: 0 0 0 1px rgba(255, 215, 102, .35), 0 24px 60px -24px rgba(10, 37, 64, .8), 0 0 50px -12px rgba(230, 163, 0, .35); }
 .fx-aethryon #aethryon-ejecucion .max-w-lg > div { transition: transform .5s var(--dm-ease), box-shadow .5s var(--dm-ease); }
 .fx-aethryon #aethryon-ejecucion .max-w-lg > div:not(.w-px):hover { transform: translateY(-4px); }
-
-/* ---------- Índice lateral ---------- */
-.dm-dots { position: fixed; right: 18px; top: 50%; translate: 0 -50%; z-index: 40; display: none; flex-direction: column; gap: 4px; padding: 10px 5px; border-radius: 999px; background: rgba(5, 19, 32, .6); border: 1px solid rgba(255, 255, 255, .14); box-shadow: 0 16px 40px -16px rgba(0, 0, 0, .7); transition: background .4s, border-color .4s; }
-@media (min-width: 1280px) { .dm-dots { display: flex; } }
-.dm-dots a { position: relative; display: grid; place-items: center; width: 20px; height: 20px; }
-.dm-dots a::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, .42); transition: background .3s, transform .4s var(--dm-ease), box-shadow .3s; }
-.dm-dots a:hover::before { background: #fff; transform: scale(1.35); }
-.dm-dots a.is-on::before { background: #FFD766; transform: scale(1.55); box-shadow: 0 0 12px #FFD766; }
-.dm-dots a::after { content: attr(data-label); position: absolute; right: calc(100% + 12px); top: 50%; translate: 8px -50%; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: .4rem .75rem; border-radius: 8px; font: 600 .72rem/1.25 system-ui, sans-serif; color: #e3edf8; background: rgba(5, 19, 32, .95); border: 1px solid rgba(255, 215, 102, .3); opacity: 0; pointer-events: none; transition: opacity .25s, translate .3s var(--dm-ease); }
-.dm-dots a:hover::after, .dm-dots a:focus-visible::after { opacity: 1; translate: 0 -50%; }
-.dm-dots a:focus-visible { outline: 2px solid #FFD766; outline-offset: 1px; border-radius: 50%; }
-.dm-dots.on-light { background: rgba(255, 255, 255, .78); border-color: rgba(10, 37, 64, .16); }
-.dm-dots.on-light a::before { background: rgba(10, 37, 64, .35); }
-.dm-dots.on-light a:hover::before { background: #0A2540; }
-.dm-dots.on-light a.is-on::before { background: #E6A300; box-shadow: 0 0 10px rgba(230, 163, 0, .8); }
 
 /* ---------- Móvil y movimiento reducido ---------- */
 @media (max-width: 1023px) {

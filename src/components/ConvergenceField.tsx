@@ -94,16 +94,21 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
         layer.layout({ w, h, cx, cy, u, scale, nodes: on });
       }
 
-      // retícula triangular (cada nodo con 6 vecinos = panal)
+      // retícula triangular (cada nodo con 6 vecinos = panal). La fase es global (coordenadas de la página):
+      // dos campos contiguos (p. ej. cierre de página y pie) comparten los mismos puntos y parecen un solo tejido.
       const s = w < 768 ? 48 : w < 1280 ? 62 : 74;
       const dy = s * .866;
-      const rows = Math.ceil(h / dy) + 3, cols = Math.ceil(w / s) + 3;
+      const pageTop = rect.top + window.scrollY, pageLeft = rect.left + window.scrollX;
+      const gr0 = Math.floor(pageTop / dy) - 1;
+      const ox = ((pageLeft % s) + s) % s;
+      const par = (r: number) => (((gr0 + r) % 2) + 2) % 2;
+      const rows = Math.ceil(h / dy) + 4, cols = Math.ceil(w / s) + 3;
       const idx: number[][] = [];
       nodes = []; edges = []; seed = 7;
       for (let r = 0; r < rows; r++) {
         idx[r] = [];
         for (let c = 0; c < cols; c++) {
-          const x = (c - 1) * s + (r % 2 ? s / 2 : 0), y = (r - 1) * dy;
+          const x = (c - 1) * s + (par(r) ? s / 2 : 0) - ox, y = (gr0 + r) * dy - pageTop;
           const d = Math.hypot(x - cx, y - cy);
           const a = clamp(1 - Math.pow(d / R, 1.25), .06, 1);
           idx[r][c] = nodes.length;
@@ -114,8 +119,8 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
         const i = idx[r][c];
         const link = (rr: number, cc: number) => { const j = idx[rr]?.[cc]; if (j !== undefined) { edges.push([i, j]); nodes[i].nb.push(j); nodes[j].nb.push(i); } };
         link(r, c + 1);
-        link(r + 1, c + (r % 2 ? 1 : 0));
-        link(r + 1, c + (r % 2 ? 0 : -1));
+        link(r + 1, c + (par(r) ? 1 : 0));
+        link(r + 1, c + (par(r) ? 0 : -1));
       }
     }
 
@@ -283,8 +288,11 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
     layout();
     if (reduce) frame(performance.now(), true);
 
-    const ro = new ResizeObserver(() => { layout(); if (reduce) frame(performance.now(), true); });
+    let pending = 0;
+    const relayout = () => { if (pending) return; pending = requestAnimationFrame(() => { pending = 0; layout(); if (reduce) frame(performance.now(), true); }); };
+    const ro = new ResizeObserver(relayout);
     ro.observe(host);
+    ro.observe(document.body);
     const io = new IntersectionObserver(([en]) => { visible = en.isIntersecting; if (visible) { if (!began) { began = true; t0 = performance.now(); } start(); } }, { threshold: inward ? .25 : 0 });
     io.observe(host);
     const onVis = () => { if (!document.hidden && began) start(); };
@@ -293,6 +301,7 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
 
     return () => {
       if (raf) cancelAnimationFrame(raf);
+      if (pending) cancelAnimationFrame(pending);
       ro.disconnect(); io.disconnect();
       document.removeEventListener('visibilitychange', onVis);
       host.removeEventListener('pointermove', onMove); host.removeEventListener('pointerleave', onLeave);
