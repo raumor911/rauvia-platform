@@ -67,6 +67,7 @@ RAUVIA is the organization through which this work is structured, implemented, a
 - [Soluciones](https://rauvia.com.mx/soluciones/): Capacidades de intervención.
 - [AETHRYON](https://rauvia.com.mx/aethryon/): Sistema de análisis y decisión.
 - [Frente comercial](https://rauvia.com.mx/frente-comercial/): Información comercial.
+- [RAUVIA Trayectoria](https://rauvia.com.mx/trayectoria/): Planes de presencia digital, suscripciones y cambios de sitios web. Los precios visibles son referencias históricas sujetas a confirmación.
 - [Casos](https://rauvia.com.mx/casos/): Evidencia publicada.
 - [Infraestructura temporal B2B](https://rauvia.com.mx/casos/infraestructura-temporal-b2b/): Caso de intervención.
 - [Recursos](https://rauvia.com.mx/recursos/): Artículos publicados desde WordPress y presentados en este sitio.
@@ -78,6 +79,7 @@ RAUVIA is the organization through which this work is structured, implemented, a
 - [Privacidad](https://rauvia.com.mx/aviso-de-privacidad/): Aviso vigente.
 - [Términos](https://rauvia.com.mx/terminos/): Condiciones del sitio.
 
+Trayectoria catalog (historical reference, pending commercial confirmation): https://rauvia.com.mx/llmo/trayectoria-catalogo.json
 Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
 Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
 

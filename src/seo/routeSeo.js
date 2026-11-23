@@ -1498,11 +1498,11 @@ export const routeSeo = {
     "schema": []
   },
   "/trayectoria": {
-    "title": "RAUVIA Trayectoria | Evolución de presencia digital",
-    "description": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+    "title": "RAUVIA Trayectoria | Planes y actualizaciones web",
+    "description": "Conoce los planes Presencia Libre, Trayectoria y Trayectoria Activa, y los cambios Micro, Pequeño, Mediano y Mayor. Precios históricos de referencia sujetos a confirmación.",
     "canonical": "https://rauvia.com.mx/trayectoria/",
-    "ogTitle": "RAUVIA Trayectoria | Evolución de presencia digital",
-    "ogDescription": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+    "ogTitle": "RAUVIA Trayectoria | Planes y actualizaciones web",
+    "ogDescription": "Conoce los planes Presencia Libre, Trayectoria y Trayectoria Activa, y los cambios Micro, Pequeño, Mediano y Mayor. Precios históricos de referencia sujetos a confirmación.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",
@@ -1513,13 +1513,52 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/trayectoria/#webpage",
         "url": "https://rauvia.com.mx/trayectoria/",
-        "name": "RAUVIA Trayectoria | Evolución de presencia digital",
-        "description": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",
+        "name": "RAUVIA Trayectoria | Planes y actualizaciones web",
+        "description": "Conoce los planes Presencia Libre, Trayectoria y Trayectoria Activa, y los cambios Micro, Pequeño, Mediano y Mayor. Precios históricos de referencia sujetos a confirmación.",
         "isPartOf": {
           "@id": "https://rauvia.com.mx/#website"
         },
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/trayectoria/#service",
+        "name": "RAUVIA Trayectoria",
+        "description": "Continuidad de presencia digital y actualizaciones web de alcance definido. Las tarifas de la página son referencias históricas sujetas a confirmación.",
+        "serviceType": "Mantenimiento editorial y actualización de sitios web",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        },
+        "url": "https://rauvia.com.mx/trayectoria/",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Modalidades RAUVIA Trayectoria",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Presencia Libre"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "RAUVIA Trayectoria"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Trayectoria Activa"
+              }
+            }
+          ]
         }
       }
     ]

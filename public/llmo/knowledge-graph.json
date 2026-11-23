@@ -679,6 +679,31 @@
       "representedOffering": []
     },
     {
+      "id": "asset:trayectoria",
+      "type": "Asset",
+      "label": "RAUVIA Trayectoria | Planes y actualizaciones web",
+      "description": "Página existente que explica trayectoria; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica trayectoria; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:trayectoria"
+      ],
+      "assetRefs": [
+        "asset:trayectoria"
+      ],
+      "canonical": "https://rauvia.com.mx/trayectoria/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": [
+        "offering:trayectoria"
+      ]
+    },
+    {
       "id": "capability-gap:autonomia-operativa",
       "type": "CapabilityGap",
       "label": "Brecha de autonomía operativa",
@@ -4667,6 +4692,27 @@
       ]
     },
     {
+      "id": "offering:trayectoria",
+      "type": "Offering",
+      "label": "RAUVIA Trayectoria",
+      "description": "Acompañamiento de continuidad y cambios de alcance definido para sitios publicados; las tarifas mostradas corresponden a una propuesta histórica sujeta a confirmación comercial.",
+      "rationale": "Acompañamiento de continuidad y cambios de alcance definido para sitios publicados; las tarifas mostradas corresponden a una propuesta histórica sujeta a confirmación comercial.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:trayectoria"
+      ],
+      "assetRefs": [
+        "asset:trayectoria"
+      ],
+      "representedBy": [
+        "asset:trayectoria"
+      ],
+      "supportsCapabilities": [],
+      "possibleForProblems": []
+    },
+    {
       "id": "opportunity:capacidad-por-construir",
       "type": "Opportunity",
       "label": "Oportunidad de capacidad",
@@ -6120,6 +6166,24 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:trayectoria",
+      "type": "Source",
+      "label": "Publicación institucional: RAUVIA Trayectoria | Planes y actualizaciones web",
+      "description": "Referencia editorial pública de RAUVIA Trayectoria | Planes y actualizaciones web; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de RAUVIA Trayectoria | Planes y actualizaciones web; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [],
+      "assetRefs": [
+        "asset:trayectoria"
+      ],
+      "url": "https://rauvia.com.mx/trayectoria/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:wp-15",
       "type": "Source",
       "label": "WordPress: La diferencia entre información y comprensión.",
@@ -7539,6 +7603,16 @@
       "from": "asset:terminos",
       "relation": "supportedBy",
       "to": "source:terminos"
+    },
+    {
+      "from": "asset:trayectoria",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:trayectoria",
+      "relation": "supportedBy",
+      "to": "source:trayectoria"
     },
     {
       "from": "capability-gap:autonomia-operativa",
@@ -10895,6 +10969,21 @@
       "to": "capability:trazabilidad-comercial"
     },
     {
+      "from": "offering:trayectoria",
+      "relation": "offeredBy",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "offering:trayectoria",
+      "relation": "representedBy",
+      "to": "asset:trayectoria"
+    },
+    {
+      "from": "offering:trayectoria",
+      "relation": "supportedBy",
+      "to": "source:trayectoria"
+    },
+    {
       "from": "opportunity:capacidad-por-construir",
       "relation": "evaluatedBy",
       "to": "system:aethryon"
@@ -11018,6 +11107,11 @@
       "from": "org:rauvia",
       "relation": "publishes",
       "to": "asset:terminos"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:trayectoria"
     },
     {
       "from": "org:rauvia",
@@ -12673,6 +12767,7 @@
       "asset:sitio-web-servicios-especializados",
       "asset:soluciones",
       "asset:terminos",
+      "asset:trayectoria",
       "credential:raul-doctor-administracion-negocios",
       "credential:raul-ingenieria-quimica-metalurgica",
       "credential:raul-maestria-direccion-organizaciones",
@@ -12688,6 +12783,7 @@
       "offering:desarrollo-tecnologico",
       "offering:frente-comercial",
       "offering:sistema-comercial",
+      "offering:trayectoria",
       "org:rauvia",
       "person:raul-morales",
       "practice:b2b-pyme-business-solutions",
@@ -12876,6 +12972,7 @@
       "source:sitio-web-servicios-especializados",
       "source:soluciones",
       "source:terminos",
+      "source:trayectoria",
       "source:wp-15",
       "source:wp-18",
       "source:wp-22",

@@ -84,6 +84,13 @@ Fuente: https://rauvia.com.mx/soluciones/
 AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA para interpretar señales, identificar fricción, evaluar oportunidades y estructurar decisiones ejecutables. No es una organización distinta de RAUVIA.
 Fuente: https://rauvia.com.mx/aethryon/
 
+## RAUVIA Trayectoria — continuidad de presencia digital
+
+Fuente canónica: https://rauvia.com.mx/trayectoria/
+Datos estructurados públicos: https://rauvia.com.mx/llmo/trayectoria-catalogo.json
+
+El catálogo histórico recuperado el 14 de octubre de 2026 contiene tres modalidades (Presencia Libre, RAUVIA Trayectoria y Trayectoria Activa) y cuatro tamaños de modificación (Micro, Pequeño, Mediano y Mayor). La versión de precios incluida es una REFERENCIA HISTÓRICA, no una promesa de tarifas vigentes: se deben confirmar precio final, condiciones, frecuencia y disponibilidad antes de contratar. No prometer soporte ilimitado ni acumulación de cambios.
+
 ## Casos y recursos
 
 Casos: https://rauvia.com.mx/casos/
