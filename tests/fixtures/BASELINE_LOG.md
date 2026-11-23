@@ -117,3 +117,82 @@ Semánticos: 0 · Contenido: 12
 - v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
 - v72-excluded-html.json /sitio-web-servicios-especializados/index.html
 - v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+
+## 2026-11-23 · af40c7a
+Motivo: Agent-readiness: JSON-LD de Organization con telephone/address/areaServed/contactPoint en todas las páginas; inicio suma WebPage, ProfessionalService y DefinedTerm; footer con enlace tel: y rel terms/privacy. Título, descripción, canonical y H1 sin cambio
+Semánticos: 39 · Contenido: 12
+- v72-route-baseline.json / jsonld
+- v72-route-baseline.json /soluciones/ jsonld
+- v72-route-baseline.json /aethryon/ jsonld
+- v72-route-baseline.json /ruta-90/ jsonld
+- v72-route-baseline.json /frente-comercial/ jsonld
+- v72-route-baseline.json /nosotros/ jsonld
+- v72-route-baseline.json /recursos/ jsonld
+- v72-route-baseline.json /casos/ jsonld
+- aethryon-v70-seo.json jsonld
+- rau004-main-baseline.json /ruta-90 head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json / head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /nosotros head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /soluciones head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /aethryon head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /recursos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /frente-comercial head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /sitio-web-comercial-para-pymes head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /sitio-web-servicios-especializados head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos/infraestructura-temporal-b2b head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-comercial-servicios-profesionales head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-gratis-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-medicos-especialistas head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-local-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-medicos-agenda-whatsapp head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /aviso-de-privacidad head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /terminos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/corregir-informacion-en-ia head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/catalogos-para-ia head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/cobertura-y-envios head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/proveedores-tecnicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/auditoria head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/implementacion head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /trayectoria head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /rauviaweb head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos/presencia-posicionamiento-profesional head (title/meta/canonical/JSON-LD)
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /aviso-de-privacidad/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- v72-excluded-html.json /terminos/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+
+## 2026-11-23 · af40c7a
+Motivo: Casos: capa visual frontera (hero con campo, tarjetas con escena, cierre oscuro que se funde con el footer); cambia solo presentación en /casos y los dos casos. /recursos cambia por entradas de WordPress recién publicadas en el build, ajeno a esta rama. Sin cambios semánticos
+Semánticos: 0 · Contenido: 5
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- rau004-main-baseline.json /recursos contenido
+- rau004-main-baseline.json /casos contenido
+- rau004-main-baseline.json /casos/infraestructura-temporal-b2b contenido
+- rau004-main-baseline.json /casos/presencia-posicionamiento-profesional contenido
+
+## 2026-11-23 · af40c7a
+Motivo: Recursos: entradas del blog como protagonistas (hero compacto con campo, entrada destacada a todo el ancho, tarjetas con portada y flecha); solo presentación, mismo H1, textos y SEO. Sin cambios semánticos
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /recursos contenido
+
+## 2026-11-23 · af40c7a
+Motivo: Recursos: filtros por tema y etiqueta y asociaciones en cada tarjeta (tarjeta como article con enlace extendido); las tarjetas de /api/wp/posts?view=resources ahora incluyen términos compactos. Mismo H1 y SEO; sin cambios semánticos
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /recursos contenido
+
+## 2026-11-23 · af40c7a
+Motivo: Recursos: filtros por tema y etiqueta y asociaciones en cada tarjeta (tarjeta como article con enlace extendido); las tarjetas de /api/wp/posts?view=resources ahora incluyen términos compactos. Mismo H1 y SEO; sin cambios semánticos
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /recursos contenido

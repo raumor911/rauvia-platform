@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {Link} from 'react-router-dom';
 import {ArrowLeft} from 'lucide-react';
 import type {WPPost} from '../lib/wp';
@@ -6,12 +6,18 @@ import {publicationLabel} from '../lib/postDates';
 import FadeInUp from './FadeInUp';
 import RauviaEditorial, {sanitizeTitleHtml} from './RauviaEditorial';
 import {articleSeo} from '../seo/articleSeo';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/recursosFx.css';
 export default function PostArticle({post}: {post: WPPost}) {
  const {authorName, image:featuredMedia}=articleSeo(post);
+ const root=useRef<HTMLElement>(null);
+ usePageFx(root);
 
   return (
     <>
-      <article className="rauvia-post-page min-h-screen">
+      <article ref={root} className="rauvia-post-page fx-page rs-post min-h-screen">
+        <div className="fx-progress" aria-hidden="true" />
         <div className="rauvia-post-shell">
           <FadeInUp>
             <Link to="/recursos/" className="inline-flex items-center gap-2 text-rauvia-gray hover:text-rauvia-accent transition-colors mb-8 text-sm">

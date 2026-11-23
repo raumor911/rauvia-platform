@@ -46,6 +46,35 @@
       "url": "https://rauvia.com.mx",
       "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
       "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+      "telephone": "+52 55 8649 4076",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MX"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+52 55 8649 4076",
+          "url": "https://wa.me/525586494076",
+          "availableLanguage": [
+            "es-MX"
+          ],
+          "areaServed": "MX"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "privacy",
+          "email": "privacidad@rauvia.com.mx",
+          "availableLanguage": [
+            "es-MX"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.facebook.com/rauviaconsulting/",
         "https://www.instagram.com/rauviaconsulting/",

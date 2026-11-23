@@ -7,213 +7,213 @@
     "public/media/aethryon-convergence-mobile-960.webp": "bb26146d56cdcf8ecaa448ffa515879ffbd4bd3c2b3ab410855dd5ad3f1d6861"
   },
   "/ruta-90": {
-    "head": "ef1cd4b90cd5818e4b968910da4dbcbe46e41491e10870bada2988294cd426c6",
+    "head": "a668841a19146044de39dbca756fd55f36542fdba7efeba56bcfedf89e6514f4",
     "h1": [
       "Ruta 90: convierte una prioridad en capacidad instalada."
     ],
     "outsideHero": "0a0b1d7a7290709120fc580165f43ac4db46e966ffadae47dc0060aa638cf0c5"
   },
   "/": {
-    "head": "b3d1f77e926a7822591aa832e25320b9af61d02b632a957e5a5347e913b28c3f",
+    "head": "2e5d410316408b5815e9a76fa0a0eee01c82986c82cd0787bb4435d15c4d3cf1",
     "h1": [
       "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER."
     ],
     "outsideHero": "fa97821be522ae510609f86753938fd6c094d9976dc7f4056b5ef0ecf4bdca45"
   },
   "/nosotros": {
-    "head": "08fa7f07fae002d1a7804c3b84405a776827848f0893d7231969edab5311e66a",
+    "head": "e2226a75d9d042bfec4bf7caed2d62bc00b81bfd2def30f3cfa6fe1654b9d4b2",
     "h1": [
       "DEFENDEMOS TU PATRIMONIO. CONSTRUIMOS CAPACIDADES PARA HACERLO CRECER ."
     ],
     "outsideHero": "0afcb42ce473b09d8b4be1b170b57f0fbdf94325dd2819c29f75426ab9d99bc4"
   },
   "/soluciones": {
-    "head": "9d6de1583fd7f1e12d084d0197802ba056ecb0811352f9a334294cf204c0f05f",
+    "head": "05fadc674bbaa28be3fc5bc71e4d89246d0549206e10f7a55da1d1e9c67a48cd",
     "h1": [
       "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER ."
     ],
     "outsideHero": "b6432f4fda0fde9288afba1246081a29c9bf48a7b73d081cc4f545e8f5a1185a"
   },
   "/aethryon": {
-    "head": "c5657ba07a874a2bfa66c8ffa6897a1032498e8cec3b930d629d5d9a55c16937",
+    "head": "aacae7957fae3e3e380607f56a8172760caac05be8145b3ab9ceeefe4f987ee4",
     "h1": [
       "IDENTIFICA QUÉ ESTÁ FRENANDO EL CRECIMIENTO DE TU EMPRESA ."
     ],
     "outsideHero": "567712e515a35cbd68cacfc5a6ed59df5b4f346546bc3e71ec59a4c3f287a27b"
   },
   "/recursos": {
-    "head": "f0c7383709142d58ec6199ae1b074cbf2f3f1b384f5c3edcfa615124608eab85",
+    "head": "446446e0a823ab65d45c1648022cf3e4bf86333f9a8738fb14c56e2c11b9e83f",
     "h1": [
       "Recursos"
     ],
-    "outsideHero": "abf630e026a5b9a0aff92e90a302fe1e586fbfa93cd65a678b922b3d4f65b87e"
+    "outsideHero": "e8101fb6a70ad3664be53c2f9c2531d304e8f539b4f436d95e8d118ffa94f8b3"
   },
   "/frente-comercial": {
-    "head": "a7e0385a0d7b4fd5af4e0a29353d80bc24283f9a74cd152c99c77ea8eb44fee4",
+    "head": "adb08674a5ca56215075b8d9c368a507c0565283c048e405a9c97ec33b1aa40e",
     "h1": [
       "Haz más fácil entender, confiar y avanzar con tu empresa."
     ],
     "outsideHero": "d6a64958ea20a2d5d4be64fda45c4bc9b0a7ad179e1ed3f5da26ce20998d55f7"
   },
   "/sitio-web-comercial-para-pymes": {
-    "head": "91791f00530910c6dfa58dfaf543ca38f4220209e3d421044a910bf2b2b11c05",
+    "head": "052cb7eb55e558e20f39085df2fd8d8c0467f616320c807715491fcfb8a71ba5",
     "h1": [
       "Sitio web comercial para PyMES que necesitan explicar mejor lo que venden"
     ],
     "outsideHero": "3923f83b9b7e5bc6789deb0ba27a893452450497167e8fde73ec0ab53fd7ff58"
   },
   "/sitio-web-servicios-especializados": {
-    "head": "469acd8279457a7d3b090a91c687651c6d13016a967b428324767b34eb132968",
+    "head": "ee9221b5c1d76a30c6a72cc0703c72eaa5429f26a0bfce9507c126358a89526e",
     "h1": [
       "Sitio web para empresas de servicios especializados que necesitan explicar mejor su valor"
     ],
     "outsideHero": "9a242fe49c70692313fd4cda0f2348fdc185311d05c40cd1d34e9370fef023a7"
   },
   "/casos": {
-    "head": "11968d4b04e967e9ace315aa486814721b5cf19ef2e059f84987c17d0d513a3c",
+    "head": "eee37ebef2c837250a57b23d7bd55b38d0e839c72ec9562824b9151ede025e73",
     "h1": [
       "Casos y evidencia"
     ],
-    "outsideHero": "e2edf5f681bfc38619d4d4f5cd69f9e98cdabbd7b994189a61dbf65f87b0c32f"
+    "outsideHero": "fae80cfac38cd3ee47f9678ea54970aa279cb4d877caaa991f7e2c00f76c0970"
   },
   "/casos/infraestructura-temporal-b2b": {
-    "head": "3945c8b41644d4edaf5a3e6e761875122e3798b04417cd88d35973f1da9d8a67",
+    "head": "53219091ba607a5e6d38159a947ba4f5702079f8ec55157c17c93083cdddfa29",
     "h1": [
       "De generar conversaciones a construir un sistema para entender la demanda."
     ],
-    "outsideHero": "1cd5323471ac8103b69eea9b1519879e9d3d4294f325ac31d025862dc3611673"
+    "outsideHero": "d91eb620fa722025e21954bc17b5fd8b58ed488a49933023dd0eed6cf5bea24d"
   },
   "/pagina-comercial-servicios-profesionales": {
-    "head": "a9f0a83c438b848c64cdbcac770d786c68a5d57ae67df21708d001e9117246e5",
+    "head": "01709c2b251ed39e25a7fcf69e77ca7980c712ac8c3ed636d1ce391b4eeccfb6",
     "h1": [
       "Página comercial para servicios profesionales que necesitan explicar mejor su valor"
     ],
     "outsideHero": "da37d6f08e4f0e3c7560f64e4f8992d622e283aa05755c04391ee01c5fa3594e"
   },
   "/pagina-web-gratis-para-medicos": {
-    "head": "b0fa61346585569b1926e50bca269cf29a5fa47c2b98cde17afa1550cf5ced5b",
+    "head": "e9e4e5d0d101640e6d9f166db1950465cd87d10faa829861f83948151891470d",
     "h1": [
       "Página web gratis para médicos, con WhatsApp y agenda de citas"
     ],
     "outsideHero": "ee8bf36e5d7147adb0491666123d44cb94cd02617bdf1a73ba15eb072b153e11"
   },
   "/pagina-web-para-medicos-especialistas": {
-    "head": "4cfbf82afa083b7cc28b9de22ac71fbe575692d0435a9e699bbd3530e55088ff",
+    "head": "a080a04305e5fd3bf026613996c86dda27e0cd0c4048977a7c6ff8a9f3638055",
     "h1": [
       "Página web para médicos especialistas que necesitan comunicar confianza desde el primer contacto"
     ],
     "outsideHero": "367e5591df0843e9402b21ff28d20d2157212e1d84ae10877bea5513d1cdb5d9"
   },
   "/seo-local-para-medicos": {
-    "head": "19aebee21a7127490cd37a9f576d996c0555facdf5e2fa84be5fa4c4be0a591b",
+    "head": "8c95e27f7c532c679a293c0556758b0c9bfa94106df6802795cb888ff97c3fa4",
     "h1": [
       "SEO local para médicos que quieren ser más fáciles de encontrar"
     ],
     "outsideHero": "17f07eb16fc7c0238a08501cdfe3b74166d74f1fe5c09c1064c04e56e01de01c"
   },
   "/pagina-web-para-medicos": {
-    "head": "58117e286adea8be1ed5be9da2339a8c10665a9eba1283f50b5fdd3880c86c93",
+    "head": "85ed598ca77af941c15258f462ae704abac7924e0e945ca5c213774ab2122955",
     "h1": [
       "Página web para médicos que necesitan una presencia profesional, clara y fácil de encontrar"
     ],
     "outsideHero": "25fa01ec32705df559b5ac4b58d80cf90c5fbd9d6409e6484dae5e2f25a87097"
   },
   "/pagina-web-para-consultorio-medico": {
-    "head": "23c09fba2d041f533927998540cf2db22bc38cabc0d2414087ccf0120cd2f7f0",
+    "head": "0d8a8e3cb7fd94282ac87ddb7aac26afc982b2cba29bd46021231013c298fd3d",
     "h1": [
       "Página web para consultorio médico que organiza tu práctica en un solo lugar"
     ],
     "outsideHero": "8065791278a27893934cecf6e0b0dfdcbe02590d1c261e26cb714bfb1d24424a"
   },
   "/pagina-web-medicos-agenda-whatsapp": {
-    "head": "b43401e5d7adfa777da67b0b454ed34ab6f60d8ce5d0b3228e2b0929ff38edc5",
+    "head": "1fa074fbf10ca1e61bfdf146e130d338808eca22f4671658a42338bad79e2677",
     "h1": [
       "Página web para médicos con agenda y WhatsApp para facilitar el primer contacto"
     ],
     "outsideHero": "8900fe50069aec1e7236b28da81fe74b6f4311fb2b813be773c3d9923dbc424b"
   },
   "/aviso-de-privacidad": {
-    "head": "085a5794b37bee2588470982588ccc61223c093e149526669cb2131f32b81529",
+    "head": "e3a273ef0fbaa8aa6c9bca444d21fdfb5443ed2feae521a8072c1db1b11cd68a",
     "h1": [
       "RAUVIA Consulting"
     ],
     "outsideHero": "80798b337dc5b4b4d3544bc8be690779422409edbf09cb49d65ed6ef69a80bf9"
   },
   "/terminos": {
-    "head": "b0b37bd7ee58d25a77f1a49347340a36316182fb7d877e69558729d16279b576",
+    "head": "d12f3167bdc2593518fa49b331552ec775d8c86db3162b15a6146c069bde4170",
     "h1": [
       "RAUVIA Consulting"
     ],
     "outsideHero": "3f758b9d8aba7f5c77be77ac9655278d523e0353b99f897443039d945233bf2c"
   },
   "/seo-ai": {
-    "head": "a98981fd45413499afd1f64270c99eb54315a5ce198a14ea09b5327db63fd095",
+    "head": "28d169c5c8d0685ac003a3162a7eb449e70e1459b7e34e3b610d5c7e21473e2f",
     "h1": [
       "SEO para IA generativa (GEO) para empresas"
     ],
     "outsideHero": "55efb2fb69b3816cff35b9d8750adff595ddb2a05e20a314da447ca1c657b92b"
   },
   "/seo-ai/corregir-informacion-en-ia": {
-    "head": "f30922117c7ececbb25bb316abdd34ee67aad8f02f452e96e8d4de51ba3965b0",
+    "head": "613e9a5c1956b0bbf6bbba58c7af13ac488f693a1fd18d6df2fddf6e3884ac58",
     "h1": [
       "Aclara lo que los asistentes de IA dicen de tu empresa"
     ],
     "outsideHero": "3ee414eba6eb80ccd9ff6ae1f5817c4d5024fab2a91e7ea3fd8a6001ff54b998"
   },
   "/seo-ai/catalogos-para-ia": {
-    "head": "fbc33460b5aeecb5a650b0121c73335ca96d607a2f999e693249ded73a7c95bc",
+    "head": "fb23d49744ee8c9680bf95b13756afb55667b4c20bdfea3e845e0480908b1968",
     "h1": [
       "SEO para catálogos de productos en buscadores y asistentes de IA"
     ],
     "outsideHero": "e4726facb0173da0cd006e094db8d3d38200fcec17134c827619003c1c4c30fa"
   },
   "/seo-ai/cobertura-y-envios": {
-    "head": "6a9933595e11a7743298fabf3aa72a605c514225ab2ab729973ef6b16d071e6d",
+    "head": "6ba2c8f72f35d0bc113bde763c7682eb43eb2605ea6fa7df30de5797193067c8",
     "h1": [
       "SEO para IA: aclara dónde vendes, envías e instalas"
     ],
     "outsideHero": "6a4658c90cbb59dbaed8fe40f0c46ccc87b4dcaa617d102852caecee5e72755c"
   },
   "/seo-ai/proveedores-tecnicos": {
-    "head": "95f0eaf99e9845f96c14fcf637aad65b6bcb1f974731719cdb41aecfbf76d811",
+    "head": "797d98848897af531fc34d32f1cbade5da0eaf6578a372dff30a2da34dadae45",
     "h1": [
       "SEO para IA para proveedores técnicos"
     ],
     "outsideHero": "d712e63191f2d2c1c0c5e1ef5c5fa7d368fc2ecda9d532c7a3eaf7b8b3c6fe9d"
   },
   "/seo-ai/auditoria": {
-    "head": "3574fe68fb4364eaa8a01771e825ce783765812679a81f33d72ec4d462c48fa4",
+    "head": "f8557d6977f0c4c2bc765879d70f607c5941e88d704857a886d9cdbfd71e83a6",
     "h1": [
       "Auditoría GEO para empresas"
     ],
     "outsideHero": "9a20bbe664c80a3addc61ffd8c119c077d017fa30b5a464b752acdb035b7fd43"
   },
   "/seo-ai/implementacion": {
-    "head": "fc9d295c7ec4df5f2b2268db9619199de3b4a3353fd75a30beceacbc4dd41598",
+    "head": "1c93d57266a742e72528fa09aa7f7f537f98ad8d17a8e8c2471c6e21fe346f26",
     "h1": [
       "Implementación de SEO para IA para empresas"
     ],
     "outsideHero": "601e9a188455d9af46d4a1a33e19a7901b9b83b0fd80d33a4a230c7bb9eeb83e"
   },
   "/trayectoria": {
-    "head": "ae437c58d259052e1d2e2d996fa8dc64bf2f70ae1f04a39a65c32f286df4da52",
+    "head": "a91bf7a76b7db4ebf45d2cd16ee6dbdca9a4b95f404d4ce70fc1e73374574d58",
     "h1": [
       "Tu presencia digital debe evolucionar con tu empresa."
     ],
     "outsideHero": "2860a17c2edcddf5535be01aa43e83ba68af7bb84594ea7ed0ea080d1bf21460"
   },
   "/rauviaweb": {
-    "head": "40d2487e59388bee94b7d84c185a4631b53fb2576538b2c9c03401017929740d",
+    "head": "aefdd94ceb14fa1cc09bcadae52199af35bc3ecf2fc559ee50dc20c4934ec8de",
     "h1": [
       "Una presencia profesional que explique qué haces y cómo contactarte."
     ],
     "outsideHero": "df9550043959fbc7acbb73410420135464fb344077230c329f9c1afb88415aba"
   },
   "/casos/presencia-posicionamiento-profesional": {
-    "head": "30deb6f69a589597df661e91b5756cef88968581eca50ed5c152167a4ad5c5ba",
+    "head": "47ea54bc2babe6b37d5f1527f1a3a8661ba092db7ea7ba2c92fec92046b661e8",
     "h1": [
       "De la experiencia profesional a una presencia que comunica capacidades"
     ],
-    "outsideHero": "d6015fd1a6e18eef685ca69b6880886d66b9ce2bd20edfed2fff80deaf08a2a5"
+    "outsideHero": "6ed484bbcd2361e173db5a0acf53823de585dffe4e74e4a84e33f3b7d26ba601"
   }
 }

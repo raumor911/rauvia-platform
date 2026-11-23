@@ -56,10 +56,11 @@ test('corrupt disk cache and unwritable storage do not prevent valid resource re
  const cache=createWordPressCache({storagePath:file,fetcher:async()=>json(published)});assert.equal((await cache.getResourcesSnapshot()).posts[0].id,49);
  const unwritable=createWordPressCache({storagePath:dir,fetcher:async()=>json(published)});assert.equal((await unwritable.getPostsSnapshot()).posts[0].id,49);
 });
-test('resource summaries omit bodies and embedded author/terms, preserving title, date, image and links',()=>{
- const posts=published.map((p:any)=>({...p,content:{rendered:'large article body '.repeat(5000)},_embedded:{author:[{name:'Author'}],'wp:term':[[{name:'Tag'}]],'wp:featuredmedia':[{source_url:'https://blog.rauvia.com.mx/cover.webp',alt_text:'Cover'}]}}));
+test('resource summaries omit bodies and author, keep only compact topic terms, and preserve title, date, image and links',()=>{
+ const posts=published.map((p:any)=>({...p,content:{rendered:'large article body '.repeat(5000)},_embedded:{author:[{name:'Author'}],'wp:term':[[{id:1,name:'Tema',slug:'tema',taxonomy:'category',link:'https://blog.rauvia.com.mx/x',count:9}],[{id:2,name:'Etiqueta',slug:'etiqueta',taxonomy:'post_tag',description:'long '.repeat(50)}]],'wp:featuredmedia':[{source_url:'https://blog.rauvia.com.mx/cover.webp',alt_text:'Cover'}]}}));
  const cards=resourceCards(posts);assert.equal(cards[0].slug,posts[0].slug);assert.equal(cards[0].date,posts[0].date);assert.equal(cards[0].title.rendered,posts[0].title.rendered);
  assert.equal(cards[0]._embedded?.['wp:featuredmedia']?.[0].source_url,'https://blog.rauvia.com.mx/cover.webp');assert.equal(cards[0].content.rendered,'');assert.equal(cards[0]._embedded?.author,undefined);
+ assert.deepEqual(cards[0]._embedded?.['wp:term'],[[{id:1,name:'Tema',slug:'tema',taxonomy:'category'}],[{id:2,name:'Etiqueta',slug:'etiqueta',taxonomy:'post_tag'}]]);
  assert(Buffer.byteLength(JSON.stringify(cards))<Buffer.byteLength(JSON.stringify(posts))/10);assert(posts[0].content.rendered.length>1000);
 });
 test('client accepts marked stale resource data without launching a second WordPress request',async()=>{
