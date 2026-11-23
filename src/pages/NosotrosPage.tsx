@@ -9,7 +9,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
 import HeroScene from '../components/HeroScene';
-import { IntersectionVenn } from '../components/NosotrosVisuals';
+import { IntersectionVenn, ProblemScene, ProcessScene, ConvergenceScene } from '../components/NosotrosVisuals';
 import useNosotrosFx from '../hooks/useNosotrosFx';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
@@ -96,30 +96,20 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 2 — ORIGEN DEL PROBLEMA */}
       <FadeInUp>
-      <section className="fx-dark nx-console py-10 md:py-20 bg-rauvia-navy-dark border-y border-slate-100">
-        <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
-          <div className="w-full">
-            <div className="flex justify-center">
-              {/* Visual Origen */}
-              <div className="fx-window nx-window nx-reveal relative w-full max-w-[1600px]">
-                <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <section className="fx-dark nx-console py-10 md:py-24 bg-rauvia-navy-dark">
+        <ConvergenceField coreSelector=".nx-core" origin={[0.76, 0.5]} className="fx-field" />
+        <ProblemScene>
+          <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
+        </ProblemScene>
       </section>
       </FadeInUp>
 
       {/* SECCIÓN 4 — FORMA DE TRABAJO */}
       <FadeInUp>
-      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
-        <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
-          <div className="flex justify-center">
-            <div className="fx-window nx-window nx-reveal relative w-full max-w-[1600px]">
-              <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
-            </div>
-          </div>
-        </div>
+      <section className="fx-light nx-process-sec py-10 md:py-24 bg-white border-y border-slate-100">
+        <ProcessScene>
+          <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
+        </ProcessScene>
       </section>
       </FadeInUp>
 
@@ -173,8 +163,10 @@ export default function NosotrosPage() {
               </Link>
             </div>
             <div className="flex justify-center relative">
-               <Link to="/aethryon/" className="nx-orb w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
-                 <img width="1400" height="1060" loading="lazy" src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain group-hover:scale-[1.01] transition-transform" />
+               <Link to="/aethryon/" className="nx-orb w-full max-w-xl block cursor-pointer" title="Conocer más sobre AETHRYON">
+                 <ConvergenceScene>
+                   <img width="1400" height="1060" loading="lazy" src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain" />
+                 </ConvergenceScene>
                </Link>
             </div>
           </div>

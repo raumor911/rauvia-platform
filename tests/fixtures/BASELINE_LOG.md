@@ -82,3 +82,8 @@ Semánticos: 0 · Contenido: 1
 Motivo: UI/UX de Nosotros equiparable a AETHRYON (consolas luminosas, principios elegibles, diagrama de intersección, antes/después animado, cierre con retícula continua al pie): mismo texto, H1 y SEO; cambian clases y se agregan elementos decorativos aria-hidden y botones de selección sin texto propio
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json /nosotros contenido
+
+## 2026-11-23 · d77674a
+Motivo: Nosotros: las tres ilustraciones SVG claras (problema estructural, proceso, convergencia AETHRYON) se reconstruyen como escenas nativas con el mismo texto visible; las imágenes originales y su texto alternativo siguen en el DOM, ocultas visualmente. Sin cambios de title, meta, canonical, JSON-LD ni H1
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /nosotros contenido

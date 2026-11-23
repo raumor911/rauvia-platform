@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T07:20:38.668Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base ff8124c + working tree",
+  "capturedAt": "2026-11-23T07:30:35.203Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base d77674a + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -229,7 +229,7 @@
     "src/components/AethryonCore.tsx": "47809fadcdfd1153bb652f9887dd8637a65278ea71a4a0731863515ca6ef862f",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
     "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
-    "src/pages/NosotrosPage.tsx": "c636bc3ed1b50df157e2a784fae4625a4d3366873b235a99488905736e31efc2",
+    "src/pages/NosotrosPage.tsx": "f6ff7a389053ec8ea34021ad1ab227308a228cf311528f61fb84dfeb5aa5837a",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
     "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
     "src/pages/FrenteComercialPage.tsx": "c3808f3ae97f49b93b336c5d936df6a75c7c613ae25fedd4aaa5f4d8681fbd46",

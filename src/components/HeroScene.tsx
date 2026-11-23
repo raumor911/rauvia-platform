@@ -6,7 +6,7 @@ import type { CSSProperties, ReactNode } from 'react';
 // se conserva en el DOM, oculta visualmente (children).
 export type SceneChip = { label: string; x: number; y: number; dir?: 'in' | 'out'; gold?: boolean };
 
-function Core() {
+export function Core() {
   return (
     <svg className="fx-core-svg" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
       <defs>
