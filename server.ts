@@ -474,7 +474,17 @@ async function startServer() {
     });
     // The clean shell is an implementation template, never a public URL.
     app.get('/shell.html', (_req,res) => {res.status(404).type('text').send('Not found');});
-    app.use(express.static(distPath, {extensions:['html'],index:false,redirect:false}));
+    // Caché: /assets/ lleva hash en el nombre (Vite), así que es inmutable. /media/ e /images/ no
+    // llevan hash: caché moderada para que un reemplazo se vea en un día. HTML y el resto, sin cambio.
+    const assetsDir = path.join(distPath, 'assets') + path.sep;
+    const staticMutableDirs = [path.join(distPath, 'media') + path.sep, path.join(distPath, 'images') + path.sep];
+    app.use(express.static(distPath, {
+      extensions:['html'],index:false,redirect:false,
+      setHeaders: (res, filePath) => {
+        if (filePath.startsWith(assetsDir)) res.setHeader('Cache-Control','public, max-age=31536000, immutable');
+        else if (staticMutableDirs.some((dir) => filePath.startsWith(dir))) res.setHeader('Cache-Control','public, max-age=86400');
+      },
+    }));
     const knownRoutes = new Set(publicRoutes);
     app.use(async (req,res,next) => {
       if (!['GET','HEAD'].includes(req.method)) return next();
