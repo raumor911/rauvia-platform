@@ -74,8 +74,8 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
       scale = clamp(w / 1440, .55, 1.2);
 
       const core = host!.querySelector(coreSelector);
-      if (core) {
-        const c = core.getBoundingClientRect();
+      const c = core ? core.getBoundingClientRect() : null;
+      if (c && c.width > 0) {
         cx = c.left - rect.left + c.width / 2; cy = c.top - rect.top + c.height / 2;
       } else { cx = w * origin[0]; cy = h * origin[1]; }
       R = Math.hypot(Math.max(cx, w - cx), Math.max(cy, h - cy)) * .96;

@@ -6,21 +6,27 @@ import FadeInUp from '../components/FadeInUp';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import { useRef } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
+import usePageFx from '../hooks/usePageFx';
+import ConvergenceField from '../components/ConvergenceField';
 import '../styles/scrollReveal.css';
+import '../styles/pageFrontier.css';
 
 export default function NosotrosPage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, ':scope > div > section > div');
+  usePageFx(root);
 
   return (
-    <div ref={root}>
+    <div ref={root} className="fx-page fx-nosotros">
+      <div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/nosotros" />
       <link rel="preload" as="image" media="(min-width: 1024px)" href="/media/rauvia-nosotros-hero-structure-v73.svg" fetchPriority="high" />
       
       
 
       {/* SECCIÓN 1 — HERO */}
-      <section className="rv-nosotros-hero pt-32 pb-20 overflow-hidden relative">
+      <section className="rv-nosotros-hero fx-hero pt-32 pb-20 overflow-hidden relative">
+        <ConvergenceField coreSelector=".fx-art" origin={[0.68, 0.5]} className="fx-field" />
         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
           <div className="w-[800px] h-[800px] border border-slate-300 rounded-full"></div>
           <div className="absolute w-[600px] h-[600px] border border-slate-300 rounded-full"></div>
@@ -66,7 +72,7 @@ export default function NosotrosPage() {
 
             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
                {/* Hero Graphic */}
-               <div className="relative w-full max-w-2xl">
+               <div className="fx-art relative w-full max-w-2xl">
                  <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure-v73.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
                </div>
             </div>
@@ -77,12 +83,12 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 2 — ORIGEN DEL PROBLEMA */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-y border-slate-100">
+      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
         <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
           <div className="w-full">
             <div className="flex justify-center">
               {/* Visual Origen */}
-              <div className="relative w-full max-w-[1600px]">
+              <div className="fx-window relative w-full max-w-[1600px]">
                 <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
               </div>
             </div>
@@ -93,10 +99,10 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 4 — FORMA DE TRABAJO */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-y border-slate-100">
+      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
         <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
           <div className="flex justify-center">
-            <div className="relative w-full max-w-[1600px]">
+            <div className="fx-window relative w-full max-w-[1600px]">
               <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
             </div>
           </div>
@@ -106,7 +112,7 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 5 — PRINCIPIOS */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-rauvia-navy-dark text-white">
+      <section className="fx-dark fx-principles py-10 md:py-20 bg-rauvia-navy-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold mb-10 md:mb-16 text-center tracking-tight">PRINCIPIOS DE TRABAJO</h2>
           
@@ -118,7 +124,7 @@ export default function NosotrosPage() {
               { title: 'EVIDENCIA ANTES QUE CERTEZA ARTIFICIAL', desc: 'Diferenciamos hechos, hipótesis e inferencias antes de recomendar una decisión.', icon: 'M12 22A10 10 0 10 12 2a10 10 0 000 20z M12 6v6l4 2' },
               { title: 'EJECUCIÓN SOBRE PRESENTACIÓN', desc: 'Un diagnóstico solo tiene valor cuando puede convertirse en una ruta de acción.', icon: 'M5 12l5 5L20 7' }
             ].map((p, i) => (
-              <div key={i} className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] p-8 border border-slate-700 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors flex-grow-0">
+              <div key={i} className="fx-card w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] p-8 border border-slate-700 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors flex-grow-0">
                 <svg className="w-8 h-8 text-rauvia-gold mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d={p.icon} />
                 </svg>
@@ -133,7 +139,7 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 6 — AETHRYON */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-b border-slate-100 overflow-hidden relative">
+      <section className="fx-light py-10 md:py-20 bg-white border-b border-slate-100 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -164,7 +170,7 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 7 — FUNDADOR */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-rauvia-bg">
+      <section className="fx-light py-10 md:py-20 bg-rauvia-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 md:mb-16">
             <h2 className="max-w-3xl mx-auto text-center text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
@@ -199,7 +205,7 @@ export default function NosotrosPage() {
               { title: 'TECNOLOGÍA', desc: 'Arquitectura funcional y desarrollo de activos digitales.' },
               { title: 'EJECUCIÓN', desc: 'Implementación en operaciones y proyectos reales.' }
             ].map((b, i) => (
-              <div key={i} className="bg-white p-6 border border-slate-100 rounded-xl shadow-sm">
+              <div key={i} className="fx-founder-card fx-lift bg-white p-6 border border-slate-100 rounded-xl shadow-sm">
                 <div className="w-10 h-10 bg-slate-50 border border-slate-200 rounded flex items-center justify-center mb-4">
                   <div className="w-2 h-2 bg-rauvia-blue rounded-full"></div>
                 </div>
@@ -214,13 +220,13 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 8 — RELACIÓN CON EL CLIENTE */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-t border-slate-100">
+      <section className="fx-light py-10 md:py-20 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
             <div className="order-2 lg:order-1 flex flex-col sm:flex-row gap-8 justify-center">
               {/* Antes */}
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-100 flex-1 text-center flex flex-col items-center">
+              <div className="fx-before bg-slate-50 p-8 rounded-xl border border-slate-100 flex-1 text-center flex flex-col items-center">
                 <div className="text-xs font-bold tracking-widest text-slate-400 mb-6 uppercase">Antes</div>
                 <div className="flex gap-2 justify-center mb-6 opacity-40">
                   <div className="w-6 h-6 border-2 border-slate-400 rounded"></div>
@@ -231,7 +237,7 @@ export default function NosotrosPage() {
               </div>
               
               {/* Después */}
-              <div className="bg-white p-8 rounded-xl border border-rauvia-blue/30 shadow-lg flex-1 text-center flex flex-col items-center relative">
+              <div className="fx-after bg-white p-8 rounded-xl border border-rauvia-blue/30 shadow-lg flex-1 text-center flex flex-col items-center relative">
                 <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-4 h-4 text-rauvia-blue hidden sm:block">
                   <ArrowRight className="w-4 h-4" />
                 </div>

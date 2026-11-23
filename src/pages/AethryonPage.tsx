@@ -7,7 +7,10 @@ import {Link} from 'react-router-dom';
 import {ArrowRight, CheckCircle2, ChevronDown, MonitorPlay} from 'lucide-react';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import useScrollReveal from '../hooks/useScrollReveal';
+import usePageFx from '../hooks/usePageFx';
+import ConvergenceField from '../components/ConvergenceField';
 import '../styles/scrollReveal.css';
+import '../styles/pageFrontier.css';
 import './AethryonPage.css';
 
 function trackAethryonClick(destination: string, context: string) {
@@ -17,6 +20,7 @@ function trackAethryonClick(destination: string, context: string) {
 export default function AethryonPage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, ':scope > section:not(#aethryon-hero) > div:not(.absolute), :scope > section:not(#aethryon-hero) .grid > div');
+  usePageFx(root);
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return;
     // Exposure means half of a section heading is visible below the fixed header.
@@ -37,10 +41,12 @@ export default function AethryonPage() {
   }, []);
 
   return (
-    <div ref={root} className="aethryon-ux">
+    <div ref={root} className="aethryon-ux fx-page fx-aethryon">
+      <div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/aethryon" />
 
-<section id="aethryon-hero" className="aethryon-hero pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden relative bg-rauvia-bg">
+<section id="aethryon-hero" className="aethryon-hero aethryon-dark fx-hero pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden relative bg-rauvia-bg">
+        <ConvergenceField coreSelector=".fx-art" origin={[0.68, 0.5]} className="fx-field" />
         <div className="absolute inset-0 pointer-events-none opacity-20" 
              style={{ backgroundImage: 'linear-gradient(#cbd5e1 1px, transparent 1px), linear-gradient(90deg, #cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
@@ -78,7 +84,7 @@ export default function AethryonPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-6 xl:col-span-7 hidden lg:flex justify-center relative z-0 mt-12 lg:mt-0">
+            <div className="fx-art lg:col-span-6 xl:col-span-7 hidden lg:flex justify-center relative z-0 mt-12 lg:mt-0">
                <img width="980" height="640" loading="lazy" 
                  src="/media/aethryon-hero-orbital-v2-clean.svg" 
                  alt="AETHRYON" 
@@ -90,7 +96,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-resumen" className="py-10 md:py-16 bg-white border-y border-slate-100">
+<section id="aethryon-resumen" className="fx-light py-10 md:py-16 bg-white border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 data-aethryon-section="aethryon_quick_summary" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-8">AETHRYON en 30 segundos</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -103,7 +109,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-situaciones" className="py-10 md:py-16 bg-rauvia-bg">
+<section id="aethryon-situaciones" className="fx-light py-10 md:py-16 bg-rauvia-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 data-aethryon-section="aethryon_recognition" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-8">¿Te ocurre algo de esto?</h2>
           <div className="grid lg:grid-cols-3 gap-6">
@@ -128,7 +134,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-ejemplo" className="aethryon-dark py-10 md:py-16 bg-rauvia-navy text-white">
+<section id="aethryon-ejemplo" className="aethryon-dark fx-dark py-10 md:py-16 bg-rauvia-navy text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-4 block">CASO DE USO · EJEMPLO CONCEPTUAL</span>
           <h2 data-aethryon-section="aethryon_use_case" className="text-3xl lg:text-4xl font-extrabold leading-tight mb-4">Una empresa quiere crecer, pero tiene tres opciones.</h2>
@@ -145,7 +151,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-resultados" className="py-10 md:py-20 bg-white border-y border-slate-100">
+<section id="aethryon-resultados" className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
         <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="max-w-3xl mx-auto text-center mb-10 md:mb-16">
             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">RESULTADO</span>
@@ -216,7 +222,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-caminos" className="py-10 md:py-16 bg-rauvia-bg border-y border-slate-100">
+<section id="aethryon-caminos" className="fx-light py-10 md:py-16 bg-rauvia-bg border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 data-aethryon-section="aethryon_solution_paths" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-4">Posibles rutas después del análisis</h2>
           <p className="text-slate-600 text-lg aethryon-reading mb-8">Según la prioridad identificada, la intervención puede requerir distintas capacidades. Estos caminos ayudan a explorar opciones; un síntoma no determina por sí solo qué solución necesitas.</p>
@@ -234,7 +240,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="como-funciona" className="py-10 md:py-20 bg-white border-b border-slate-100 scroll-mt-20">
+<section id="como-funciona" className="fx-light py-10 md:py-20 bg-white border-b border-slate-100 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">PROCESO</span>
@@ -403,7 +409,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-criterios" className="py-10 md:py-20 bg-rauvia-bg">
+<section id="aethryon-criterios" className="fx-light py-10 md:py-20 bg-rauvia-bg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-16">
             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">CRITERIOS DE ANÁLISIS</span>
@@ -487,7 +493,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-aplicacion" className="py-10 md:py-20 bg-rauvia-bg border-b border-slate-100">
+<section id="aethryon-aplicacion" className="fx-light py-10 md:py-20 bg-rauvia-bg border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">APLICACIÓN</span>
@@ -515,7 +521,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-ejecucion" className="py-10 md:py-20 bg-white border-b border-slate-100">
+<section id="aethryon-ejecucion" className="fx-light py-10 md:py-20 bg-white border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">DE LA DECISIÓN A LA EJECUCIÓN</span>
           <h2 data-aethryon-section="aethryon_execution" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
@@ -563,7 +569,8 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-accion" className="aethryon-dark bg-rauvia-navy-dark text-white pt-16 md:pt-24 pb-12 relative overflow-hidden">
+<section id="aethryon-accion" className="aethryon-dark fx-dark bg-rauvia-navy-dark text-white pt-16 md:pt-24 pb-12 relative overflow-hidden">
+         <ConvergenceField flow="inward" origin={[0.5, 0.42]} className="fx-field" />
          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 data-aethryon-section="aethryon_final_cta" className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-12">
               NO NECESITAS TENER<br/>

@@ -58,3 +58,10 @@ Semánticos: 0 · Contenido: 12
 - v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
 - v72-excluded-html.json /sitio-web-servicios-especializados/index.html
 - v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+
+## 2026-11-23 · 57616da
+Motivo: Mejora visual de Soluciones, AETHRYON y Nosotros (capa frontera): mismo texto, H1 y SEO; cambian clases y se agregan elementos decorativos (barra de avance y lienzo aria-hidden)
+Semánticos: 0 · Contenido: 3
+- rau004-main-baseline.json /nosotros contenido
+- rau004-main-baseline.json /soluciones contenido
+- rau004-main-baseline.json /aethryon contenido
