@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react';
+import {useEffect, useRef, useState, type CSSProperties} from 'react';
 import {trackEvent} from '../lib/analytics';
 import {getSessionId} from '../lib/analyticsIdentity';
 import {recordOnce} from '../lib/ruta90Session.js';
@@ -10,8 +10,11 @@ import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
 import HeroScene from '../components/HeroScene';
+import {DecisionFork, CriteriaGauge} from '../components/DecisionVisuals';
+import useAethryonDecision from '../hooks/useAethryonDecision';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
+import '../styles/aethryonDecision.css';
 import './AethryonPage.css';
 
 function trackAethryonClick(destination: string, context: string) {
@@ -22,6 +25,10 @@ export default function AethryonPage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, ':scope > section:not(#aethryon-hero) > div:not(.absolute), :scope > section:not(#aethryon-hero) .grid > div');
   usePageFx(root);
+  useAethryonDecision(root);
+  const [pick, setPick] = useState<number | null>(null);
+  const [crit, setCrit] = useState(0);
+  const [checked, setChecked] = useState<number[]>([]);
   useEffect(() => {
     if (!('IntersectionObserver' in window)) return;
     // Exposure means half of a section heading is visible below the fixed header.
@@ -117,15 +124,15 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-situaciones" className="fx-light py-10 md:py-16 bg-rauvia-bg">
+<section id="aethryon-situaciones" className="aethryon-dark fx-dark py-10 md:py-20 bg-rauvia-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 data-aethryon-section="aethryon_recognition" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-8">¿Te ocurre algo de esto?</h2>
-          <div className="grid lg:grid-cols-3 gap-6">
+          <div className={'grid lg:grid-cols-3 gap-6 dm-opts' + (pick !== null ? ' has-pick' : '')}>
             {[
               ['01-oportunidades-sin-avance', 'Hay oportunidades, pero no avanzan', 'Hay clientes, proyectos o ideas, pero no está claro cuál atender primero.'],
               ['02-friccion-operativa', 'La operación genera fricción', 'Crecer aumenta el retrabajo, el desorden y la presión sobre el equipo.'],
               ['03-decisiones-abiertas', 'Hay demasiadas decisiones abiertas', 'Tiempo, dinero y atención se reparten sin una prioridad clara.']
-            ].map(([icon, title, text]) => <div key={icon} className="bg-white border border-slate-200 p-6 rounded-xl"><img loading="lazy" src={'/media/iconos-situacion-rauvia/' + icon + '.svg'} alt="" width="28" height="28" className="mb-4" /><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
+            ].map(([icon, title, text], i) => <div key={icon} className={'dm-opt relative bg-white border border-slate-200 p-6 rounded-xl' + (pick === i ? ' is-picked' : '')}><button type="button" className="dm-pick" aria-pressed={pick === i} aria-labelledby={'dm-opt-' + i} onClick={() => setPick(pick === i ? null : i)} /><img loading="lazy" src={'/media/iconos-situacion-rauvia/' + icon + '.svg'} alt="" width="28" height="28" className="mb-4" /><h3 id={'dm-opt-' + i} className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
           </div>
           <details className="aethryon-disclosure mt-6 bg-white border border-slate-200 rounded-xl">
             <summary className="p-5 font-semibold text-rauvia-navy">Ampliar el contexto de estas situaciones</summary>
@@ -147,14 +154,15 @@ export default function AethryonPage() {
           <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase mb-4 block">CASO DE USO · EJEMPLO CONCEPTUAL</span>
           <h2 data-aethryon-section="aethryon_use_case" className="text-3xl lg:text-4xl font-extrabold leading-tight mb-4">Una empresa quiere crecer, pero tiene tres opciones.</h2>
           <p className="text-slate-300 mb-8">Ejemplo para explicar una decisión; no representa un caso de éxito documentado.</p>
-          <ol className="space-y-4">
+          <DecisionFork />
+          <ol className="space-y-4 dm-timeline">
             {[
               ['Situación', 'La empresa quiere crecer.'],
               ['Opciones', 'Invertir en marketing, contratar personal o automatizar su operación.'],
               ['Análisis AETHRYON', 'El análisis muestra que la empresa ya recibe demanda suficiente, pero su operación depende de tareas manuales y no puede absorber más trabajo sin aumentar errores y presión sobre el equipo.'],
               ['Prioridad', 'Estructurar y automatizar el proceso operativo antes de aumentar la captación.'],
               ['Por qué', 'Esta prioridad busca evitar invertir en crecimiento antes de contar con la capacidad necesaria para sostenerlo.']
-            ].map(([title, text], index) => <li key={title} className={'aethryon-case-step grid md:grid-cols-[180px_1fr] gap-2 md:gap-6 p-5 md:p-6 rounded-lg border ' + (index === 3 ? 'border-rauvia-gold/50 bg-slate-900' : 'border-slate-700 bg-slate-800/50')}><h3 className="font-bold text-rauvia-gold-light"><span className="text-xs mr-2" aria-hidden="true">0{index + 1}</span>{title}</h3><p className="text-slate-200 leading-relaxed aethryon-reading">{text}</p></li>)}
+            ].map(([title, text], index) => <li key={title} className={'aethryon-case-step dm-step grid md:grid-cols-[180px_1fr] gap-2 md:gap-6 p-5 md:p-6 rounded-lg border ' + (index === 3 ? 'border-rauvia-gold/50 bg-slate-900' : 'border-slate-700 bg-slate-800/50')}><h3 className="font-bold text-rauvia-gold-light"><span className="text-xs mr-2" aria-hidden="true">0{index + 1}</span>{title}</h3><p className="text-slate-200 leading-relaxed aethryon-reading">{text}</p></li>)}
           </ol>
         </div>
       </section>
@@ -176,7 +184,7 @@ export default function AethryonPage() {
               ['Ruta de acción', 'Acciones, orden y responsables.'],
               ['Riesgos y dependencias', 'Qué puede bloquear el avance y qué condiciones vigilar.'],
               ['Indicadores de seguimiento', 'Cómo observar si la decisión comienza a producir avance.']
-            ].map(([title, text]) => <div key={title} className="border border-slate-200 rounded-lg bg-slate-50 p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-2">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
+            ].map(([title, text]) => <div key={title} className="fx-lift dm-result border border-slate-200 rounded-lg bg-slate-50 p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-2">{title}</h3><p className="text-sm text-slate-600 leading-relaxed">{text}</p></div>)}
           </div>
           <details className="aethryon-disclosure max-w-6xl mx-auto border border-slate-200 rounded-xl">
             <summary className="p-5 font-semibold text-rauvia-navy">Ver los seis resultados del análisis</summary>
@@ -230,11 +238,11 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-caminos" className="fx-light py-10 md:py-16 bg-rauvia-bg border-y border-slate-100">
+<section id="aethryon-caminos" className="aethryon-dark fx-dark py-10 md:py-20 bg-rauvia-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 data-aethryon-section="aethryon_solution_paths" className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy mb-4">Posibles rutas después del análisis</h2>
           <p className="text-slate-600 text-lg aethryon-reading mb-8">Según la prioridad identificada, la intervención puede requerir distintas capacidades. Estos caminos ayudan a explorar opciones; un síntoma no determina por sí solo qué solución necesitas.</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 dm-paths">
             {[
               ['Frente Comercial', 'Una presencia digital que explique tu valor y facilite el contacto.', '/frente-comercial/', 'Explorar Frente Comercial'],
               ['Sistema Comercial / CRM', 'Organizar oportunidades, seguimiento y responsabilidades comerciales.', '/soluciones/', 'Explorar soluciones comerciales'],
@@ -242,7 +250,7 @@ export default function AethryonPage() {
               ['Desarrollo Tecnológico', 'Construir la capacidad digital que necesita un proceso definido.', '/soluciones/', 'Explorar desarrollo tecnológico'],
               ['Automatización', 'Ejecutar tareas repetitivas con reglas claras e integración entre sistemas.', '/soluciones/', 'Explorar automatización'],
               ['Ruta 90', 'Organizar una prioridad clara cuando requiere un ciclo estructurado de ejecución.', '/ruta-90/', 'Explorar Ruta 90']
-            ].map(([title, text, destination, label]) => <div key={title} className="flex flex-col bg-white border border-slate-200 rounded-xl p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed mb-4">{text}</p><Link to={destination} onClick={() => trackAethryonClick(destination, 'solution_pathways')} className="inline-flex items-center gap-2 text-rauvia-blue font-semibold text-sm mt-auto py-3 min-h-[44px]">{label}<ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" /></Link></div>)}
+            ].map(([title, text, destination, label]) => <div key={title} className="fx-card dm-path flex flex-col bg-white border border-slate-200 rounded-xl p-6"><h3 className="text-lg font-bold text-rauvia-navy mb-3">{title}</h3><p className="text-sm text-slate-600 leading-relaxed mb-4">{text}</p><Link to={destination} onClick={() => trackAethryonClick(destination, 'solution_pathways')} className="inline-flex items-center gap-2 text-rauvia-blue font-semibold text-sm mt-auto py-3 min-h-[44px]">{label}<ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" /></Link></div>)}
           </div>
           <Link to="/soluciones/" onClick={() => trackAethryonClick('/soluciones/', 'solution_pathways')} className="inline-flex items-center justify-center gap-2 bg-rauvia-navy text-white px-6 py-3 rounded font-bold text-sm min-h-[52px] mt-8">EXPLORAR SOLUCIONES<ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
         </div>
@@ -262,12 +270,12 @@ export default function AethryonPage() {
 
           <div className="relative">
             {/* Connecting line for Desktop */}
-            <div className="hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-slate-100 z-0"></div>
+            <div className="dm-rail hidden lg:block absolute top-24 left-[10%] right-[10%] h-0.5 bg-slate-100 z-0"></div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 relative z-10">
               
               {/* PASO 01 */}
-              <div className="flex flex-col items-center text-center">
+              <div className="dm-step flex flex-col items-center text-center">
                 <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">1</div>
                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center">
                   <span className="lg:hidden text-xs font-bold text-slate-400 mb-2">PASO 01</span>
@@ -281,7 +289,7 @@ export default function AethryonPage() {
               </div>
 
               {/* PASO 02 */}
-              <div className="flex flex-col items-center text-center">
+              <div className="dm-step flex flex-col items-center text-center">
                 <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-slate-200 rounded-full items-center justify-center mb-6 z-10 text-slate-400 font-bold">2</div>
                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
                   {/* Vertical connector for mobile */}
@@ -297,7 +305,7 @@ export default function AethryonPage() {
               </div>
 
               {/* PASO 03 */}
-              <div className="flex flex-col items-center text-center">
+              <div className="dm-step flex flex-col items-center text-center">
                 <div className="hidden lg:flex w-12 h-12 bg-white border-2 border-rauvia-gold rounded-full items-center justify-center mb-6 z-10 text-rauvia-gold font-bold">3</div>
                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative">
                   <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
@@ -312,7 +320,7 @@ export default function AethryonPage() {
               </div>
 
               {/* PASO 04 */}
-              <div className="flex flex-col items-center text-center">
+              <div className="dm-step flex flex-col items-center text-center">
                 <div className="hidden lg:flex w-12 h-12 bg-rauvia-navy border-2 border-rauvia-navy rounded-full items-center justify-center mb-6 z-10 text-white font-bold">4</div>
                 <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 flex-grow flex flex-col items-center relative shadow-sm">
                   <div className="lg:hidden absolute -top-8 left-1/2 -translate-x-1/2 w-0.5 h-8 bg-slate-200"></div>
@@ -417,7 +425,7 @@ export default function AethryonPage() {
         </div>
       </section>
 
-<section id="aethryon-criterios" className="fx-light py-10 md:py-20 bg-rauvia-bg">
+<section id="aethryon-criterios" className="aethryon-dark fx-dark py-10 md:py-20 bg-rauvia-navy">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10 md:mb-16">
             <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-4 block">CRITERIOS DE ANÁLISIS</span>
@@ -426,8 +434,9 @@ export default function AethryonPage() {
             </h2>
           </div>
 
+          <CriteriaGauge active={crit} />
           <div className="space-y-4">
-            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open>
+            <details name="aethryon-criteria" onToggle={e => { if (e.currentTarget.open) setCrit(0); }} className="dm-crit group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open>
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
                 <div className="flex-1 flex flex-col items-center gap-2">
                   <div className="text-xs font-mono font-bold text-slate-400">01</div>
@@ -440,7 +449,7 @@ export default function AethryonPage() {
               </div>
             </details>
 
-            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+            <details name="aethryon-criteria" onToggle={e => { if (e.currentTarget.open) setCrit(1); }} className="dm-crit group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
                 <div className="flex-1 flex flex-col items-center gap-2">
                   <div className="text-xs font-mono font-bold text-slate-400">02</div>
@@ -453,7 +462,7 @@ export default function AethryonPage() {
               </div>
             </details>
 
-            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+            <details name="aethryon-criteria" onToggle={e => { if (e.currentTarget.open) setCrit(2); }} className="dm-crit group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
                 <div className="flex-1 flex flex-col items-center gap-2">
                   <div className="text-xs font-mono font-bold text-slate-400">03</div>
@@ -466,7 +475,7 @@ export default function AethryonPage() {
               </div>
             </details>
 
-            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+            <details name="aethryon-criteria" onToggle={e => { if (e.currentTarget.open) setCrit(3); }} className="dm-crit group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
                 <div className="flex-1 flex flex-col items-center gap-2">
                   <div className="text-xs font-mono font-bold text-slate-400">04</div>
@@ -479,7 +488,7 @@ export default function AethryonPage() {
               </div>
             </details>
 
-            <details name="aethryon-criteria" className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+            <details name="aethryon-criteria" onToggle={e => { if (e.currentTarget.open) setCrit(4); }} className="dm-crit group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
               <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-slate-50">
                 <div className="flex-1 flex flex-col items-center gap-2">
                   <div className="text-xs font-mono font-bold text-slate-400">05</div>
@@ -509,6 +518,7 @@ export default function AethryonPage() {
             <p className="text-slate-600 mt-4">Además de reconocer un síntoma, estas condiciones ayudan a valorar si necesitas analizar una decisión.</p>
           </div>
 
+          <div className="dm-meter" aria-hidden="true" style={{'--p': checked.length / 8} as CSSProperties}><span /></div>
           <div className="space-y-3">
             {[
               "Quieres hacer crecer tu empresa, pero no sabes qué resolver primero.",
@@ -520,9 +530,10 @@ export default function AethryonPage() {
               "Necesitas distinguir entre una señal real y una percepción interna.",
               "Existen distintas opiniones y no hay un criterio común para decidir."
             ].map((item, idx) => (
-              <div key={idx} className="flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg shadow-sm">
+              <div key={idx} className={'dm-check relative flex items-start gap-4 p-4 bg-white border border-slate-200 rounded-lg shadow-sm' + (checked.includes(idx) ? ' is-on' : '')}>
+                <button type="button" className="dm-pick" role="checkbox" aria-checked={checked.includes(idx)} aria-labelledby={'dm-chk-' + idx} onClick={() => setChecked(c => c.includes(idx) ? c.filter(v => v !== idx) : [...c, idx])} />
                 <CheckCircle2 className="w-5 h-5 text-rauvia-blue flex-shrink-0 mt-0.5" />
-                <span className="text-slate-700">{item}</span>
+                <span id={'dm-chk-' + idx} className="text-slate-700">{item}</span>
               </div>
             ))}
           </div>

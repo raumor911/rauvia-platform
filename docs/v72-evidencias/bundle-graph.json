@@ -1,42 +1,42 @@
 [
   {
-    "file": "assets/index-D2k3pePw.js",
+    "file": "assets/index-BOXNmN8W.js",
     "entry": true,
     "raw": 406240,
-    "gzip": 125438,
+    "gzip": 125439,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js"
     ],
     "dynamicImports": [
-      "assets/HomePage-qarMkBUm.js",
-      "assets/PaginaWebConsultorioMedicoPage-CuWytwxX.js",
-      "assets/PaginaWebMedicosAgendaWhatsappPage-Cl4z-LPX.js",
-      "assets/PaginaWebMedicosPage-BMKoa6vR.js",
-      "assets/SeoLocalMedicosPage-Be1ZhO2u.js",
-      "assets/PaginaWebMedicosEspecialistasPage-CX-8EF7a.js",
-      "assets/PaginaWebGratisMedicosPage-Cnnd40u8.js",
-      "assets/NosotrosPage-2UyCihYD.js",
-      "assets/SolucionesPage-zV0fsA4T.js",
-      "assets/Ruta90Page-BemF6pxi.js",
-      "assets/AethryonPage-CUV6oDVB.js",
-      "assets/RecursosPage-BgnRo9L4.js",
-      "assets/PostPage-8hSZ6mUe.js",
-      "assets/AvisoPrivacidadPage-1E1jSwFa.js",
-      "assets/TerminosPage-BvlRm4Hd.js",
-      "assets/FrenteComercialPage-aRVDoshZ.js",
-      "assets/SitioWebComercialPymesPage-Cc4Y0eSX.js",
-      "assets/SitioWebServiciosEspecializadosPage-BzNQ5jjo.js",
-      "assets/PaginaComercialServiciosProfesionalesPage-CvymSgPQ.js",
-      "assets/CasosIndexPage-BGI0BjH4.js",
-      "assets/CasoInfraestructuraB2BPage-BdPsvFFc.js",
-      "assets/CasoPresenciaProfesionalPage-DWk7nx_G.js",
-      "assets/TrayectoriaPage-DFs8Ennu.js",
-      "assets/SeoAiPage-3MmTEkV-.js",
-      "assets/SeoAiAuditoriaPage-B4HwOEqi.js",
-      "assets/SeoAiImplementacionPage-Brj35-vh.js",
-      "assets/RauviaWebPage-BK8dJram.js",
-      "assets/NotFoundPage-ZNu0tTfO.js"
+      "assets/HomePage-P3UcMsIW.js",
+      "assets/PaginaWebConsultorioMedicoPage-CeN8mNB1.js",
+      "assets/PaginaWebMedicosAgendaWhatsappPage-CC2lCqyC.js",
+      "assets/PaginaWebMedicosPage-Dvb1p6hU.js",
+      "assets/SeoLocalMedicosPage-BLYfHnem.js",
+      "assets/PaginaWebMedicosEspecialistasPage-B0hmK_Kp.js",
+      "assets/PaginaWebGratisMedicosPage-BWDRjzJb.js",
+      "assets/NosotrosPage-CVUe-AMQ.js",
+      "assets/SolucionesPage-CASZG8z5.js",
+      "assets/Ruta90Page-DqYLnH5X.js",
+      "assets/AethryonPage-4BWVSSPk.js",
+      "assets/RecursosPage-lV_9q0cd.js",
+      "assets/PostPage-Cw468SGl.js",
+      "assets/AvisoPrivacidadPage-6DlwGnKk.js",
+      "assets/TerminosPage-_YdY6rzk.js",
+      "assets/FrenteComercialPage-corvBn1U.js",
+      "assets/SitioWebComercialPymesPage-BodIGXUN.js",
+      "assets/SitioWebServiciosEspecializadosPage-DoPnZB-Y.js",
+      "assets/PaginaComercialServiciosProfesionalesPage-DTJOaSE3.js",
+      "assets/CasosIndexPage-BNq_HJkN.js",
+      "assets/CasoInfraestructuraB2BPage-aAVcJDm2.js",
+      "assets/CasoPresenciaProfesionalPage-B9pjaxlB.js",
+      "assets/TrayectoriaPage-Byfnyyh9.js",
+      "assets/SeoAiPage-WqpweoV2.js",
+      "assets/SeoAiAuditoriaPage-CKYQTku4.js",
+      "assets/SeoAiImplementacionPage-ClUtFVLP.js",
+      "assets/RauviaWebPage-SnjoKiSO.js",
+      "assets/NotFoundPage-B01EMGkK.js"
     ],
     "modules": [
       {
@@ -1352,18 +1352,18 @@
     ]
   },
   {
-    "file": "assets/AethryonPage-CUV6oDVB.js",
+    "file": "assets/AethryonPage-4BWVSSPk.js",
     "entry": false,
-    "raw": 42048,
-    "gzip": 9033,
+    "raw": 47558,
+    "gzip": 10954,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/ruta90Session-DEPGvLjf.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/circle-check-Hum5l2cP.js",
-      "assets/chevron-down-C39RnQOU.js",
+      "assets/circle-check-DCDifvOh.js",
+      "assets/chevron-down-BnHtFVL8.js",
       "assets/scrollReveal-CLJ7CXKb.js",
       "assets/pageFrontier-CfrVZQPP.js"
     ],
@@ -1377,13 +1377,33 @@
         ]
       },
       {
+        "id": "src/components/DecisionVisuals.tsx",
+        "renderedLength": 4901,
+        "imports": [
+          "node_modules/react/index.js",
+          "node_modules/react/jsx-runtime.js"
+        ]
+      },
+      {
+        "id": "src/hooks/useAethryonDecision.ts",
+        "renderedLength": 2719,
+        "imports": [
+          "node_modules/react/index.js"
+        ]
+      },
+      {
+        "id": "src/styles/aethryonDecision.css",
+        "renderedLength": 0,
+        "imports": []
+      },
+      {
         "id": "src/pages/AethryonPage.css",
-        "renderedLength": 94,
+        "renderedLength": 0,
         "imports": []
       },
       {
         "id": "src/pages/AethryonPage.tsx",
-        "renderedLength": 67298,
+        "renderedLength": 69397,
         "imports": [
           "node_modules/react/index.js",
           "src/lib/analytics.ts",
@@ -1397,8 +1417,11 @@
           "src/hooks/usePageFx.ts",
           "src/components/ConvergenceField.tsx",
           "src/components/HeroScene.tsx",
+          "src/components/DecisionVisuals.tsx",
+          "src/hooks/useAethryonDecision.ts",
           "src/styles/scrollReveal.css",
           "src/styles/pageFrontier.css",
+          "src/styles/aethryonDecision.css",
           "src/pages/AethryonPage.css",
           "node_modules/react/jsx-runtime.js"
         ]
@@ -1406,15 +1429,15 @@
     ]
   },
   {
-    "file": "assets/AvisoPrivacidadPage-1E1jSwFa.js",
+    "file": "assets/AvisoPrivacidadPage-6DlwGnKk.js",
     "entry": false,
     "raw": 17317,
-    "gzip": 4481,
+    "gzip": 4479,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/FadeInUp-DZJR7216.js"
+      "assets/FadeInUp-DpDfKW9I.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -1431,12 +1454,12 @@
     ]
   },
   {
-    "file": "assets/CasoInfraestructuraB2BPage-BTuz2SaM.js",
+    "file": "assets/CasoInfraestructuraB2BPage-WmbiccY2.js",
     "entry": false,
     "raw": 154,
-    "gzip": 152,
+    "gzip": 153,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -1455,16 +1478,16 @@
     ]
   },
   {
-    "file": "assets/CasoInfraestructuraB2BPage-BdPsvFFc.js",
+    "file": "assets/CasoInfraestructuraB2BPage-aAVcJDm2.js",
     "entry": false,
     "raw": 20958,
-    "gzip": 5856,
+    "gzip": 5858,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/CasoInfraestructuraB2BPage-BTuz2SaM.js"
+      "assets/CasoInfraestructuraB2BPage-WmbiccY2.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -1484,15 +1507,15 @@
     ]
   },
   {
-    "file": "assets/CasoPresenciaProfesionalPage-DWk7nx_G.js",
+    "file": "assets/CasoPresenciaProfesionalPage-B9pjaxlB.js",
     "entry": false,
     "raw": 19269,
     "gzip": 5442,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/CasoInfraestructuraB2BPage-BTuz2SaM.js",
-      "assets/index-D2k3pePw.js",
+      "assets/CasoInfraestructuraB2BPage-WmbiccY2.js",
+      "assets/index-BOXNmN8W.js",
       "assets/PageMetadata-CXoSkjpB.js"
     ],
     "dynamicImports": [],
@@ -1519,16 +1542,16 @@
     ]
   },
   {
-    "file": "assets/CasosIndexPage-BGI0BjH4.js",
+    "file": "assets/CasosIndexPage-BNq_HJkN.js",
     "entry": false,
     "raw": 4648,
-    "gzip": 1669,
+    "gzip": 1670,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/FadeInUp-DZJR7216.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/FadeInUp-DpDfKW9I.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -1547,12 +1570,12 @@
     ]
   },
   {
-    "file": "assets/CommercialLandings-C7i9naVZ.js",
+    "file": "assets/CommercialLandings-DdKzsP11.js",
     "entry": false,
     "raw": 237,
-    "gzip": 197,
+    "gzip": 200,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -1571,14 +1594,14 @@
     ]
   },
   {
-    "file": "assets/FadeInUp-DZJR7216.js",
+    "file": "assets/FadeInUp-DpDfKW9I.js",
     "entry": false,
     "raw": 121153,
-    "gzip": 39014,
+    "gzip": 39015,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -3599,21 +3622,21 @@
     ]
   },
   {
-    "file": "assets/FrenteComercialPage-aRVDoshZ.js",
+    "file": "assets/FrenteComercialPage-corvBn1U.js",
     "entry": false,
     "raw": 27089,
-    "gzip": 6516,
+    "gzip": 6517,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/circle-check-Hum5l2cP.js",
-      "assets/panels-top-left-C6cQvF6f.js",
-      "assets/chevron-down-C39RnQOU.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/search-hep88-Ap.js",
-      "assets/shield-DOJ-tFM2.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/circle-check-DCDifvOh.js",
+      "assets/panels-top-left-DOsTRxl-.js",
+      "assets/chevron-down-BnHtFVL8.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/shield-CNmap96j.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -3653,18 +3676,18 @@
     ]
   },
   {
-    "file": "assets/HomePage-qarMkBUm.js",
+    "file": "assets/HomePage-P3UcMsIW.js",
     "entry": false,
     "raw": 17147,
-    "gzip": 5339,
+    "gzip": 5341,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/FadeInUp-DZJR7216.js",
+      "assets/FadeInUp-DpDfKW9I.js",
       "assets/jsx-runtime-D2XgGOeN.js",
       "assets/scrollReveal-CLJ7CXKb.js",
-      "assets/index-D2k3pePw.js",
-      "assets/chevron-down-C39RnQOU.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/chevron-down-BnHtFVL8.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -3780,16 +3803,16 @@
     ]
   },
   {
-    "file": "assets/NosotrosPage-2UyCihYD.js",
+    "file": "assets/NosotrosPage-CVUe-AMQ.js",
     "entry": false,
     "raw": 15002,
-    "gzip": 4651,
+    "gzip": 4653,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/FadeInUp-DZJR7216.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/FadeInUp-DpDfKW9I.js",
       "assets/scrollReveal-CLJ7CXKb.js",
       "assets/pageFrontier-CfrVZQPP.js"
     ],
@@ -3824,7 +3847,7 @@
     ]
   },
   {
-    "file": "assets/NotFoundPage-ZNu0tTfO.js",
+    "file": "assets/NotFoundPage-B01EMGkK.js",
     "entry": false,
     "raw": 1621,
     "gzip": 733,
@@ -3832,8 +3855,8 @@
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/FadeInUp-DZJR7216.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/FadeInUp-DpDfKW9I.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -3916,21 +3939,21 @@
     ]
   },
   {
-    "file": "assets/PaginaComercialServiciosProfesionalesPage-CvymSgPQ.js",
+    "file": "assets/PaginaComercialServiciosProfesionalesPage-DTJOaSE3.js",
     "entry": false,
     "raw": 19594,
-    "gzip": 5451,
+    "gzip": 5454,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/compass-1K9imnCE.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/layers-CQMR-XyS.js",
-      "assets/search-hep88-Ap.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/compass-mMA5zAx6.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/layers-3JuCJCtu.js",
+      "assets/search-DM0Dxb63.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -3961,27 +3984,27 @@
     ]
   },
   {
-    "file": "assets/PaginaWebConsultorioMedicoPage-CuWytwxX.js",
+    "file": "assets/PaginaWebConsultorioMedicoPage-CeN8mNB1.js",
     "entry": false,
     "raw": 30904,
-    "gzip": 8063,
+    "gzip": 8065,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/arrow-up-right-CRMhhIJ5.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/users-round-DLactieG.js",
-      "assets/PaginaWebMedicosPage-C27g0iJu.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/file-text-Bd15J5A6.js",
-      "assets/search-hep88-Ap.js",
-      "assets/network-BcZgzYeR.js",
-      "assets/compass-1K9imnCE.js",
-      "assets/layers-CQMR-XyS.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/arrow-up-right-CwmomIvx.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/users-round-3VoL2UeK.js",
+      "assets/PaginaWebMedicosPage-DuxS21sA.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/file-text-1SVMOgdz.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/network-BiHA0JCV.js",
+      "assets/compass-mMA5zAx6.js",
+      "assets/layers-3JuCJCtu.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4014,51 +4037,12 @@
     ]
   },
   {
-    "file": "assets/PaginaWebGratisMedicosPage-Cnnd40u8.js",
-    "entry": false,
-    "raw": 21780,
-    "gzip": 6463,
-    "imports": [
-      "assets/rolldown-runtime-BWaJ3C7D.js",
-      "assets/PageMetadata-CXoSkjpB.js",
-      "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/search-hep88-Ap.js",
-      "assets/shield-check-DgE8o221.js"
-    ],
-    "dynamicImports": [],
-    "modules": [
-      {
-        "id": "node_modules/lucide-react/dist/esm/icons/sparkles.js",
-        "renderedLength": 605,
-        "imports": [
-          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
-        ]
-      },
-      {
-        "id": "src/pages/PaginaWebGratisMedicosPage.tsx",
-        "renderedLength": 31999,
-        "imports": [
-          "src/seo/PageMetadata.tsx",
-          "node_modules/react/index.js",
-          "node_modules/react-router-dom/dist/index.mjs",
-          "node_modules/lucide-react/dist/esm/lucide-react.js",
-          "src/pages/PaginaWebGratisMedicosPage.css",
-          "node_modules/react/jsx-runtime.js"
-        ]
-      }
-    ]
-  },
-  {
-    "file": "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
+    "file": "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
     "entry": false,
     "raw": 808,
-    "gzip": 414,
+    "gzip": 417,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4091,26 +4075,65 @@
     ]
   },
   {
-    "file": "assets/PaginaWebMedicosAgendaWhatsappPage-Cl4z-LPX.js",
+    "file": "assets/PaginaWebGratisMedicosPage-BWDRjzJb.js",
     "entry": false,
-    "raw": 35006,
-    "gzip": 9022,
+    "raw": 21780,
+    "gzip": 6467,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/arrow-up-right-CRMhhIJ5.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/users-round-DLactieG.js",
-      "assets/PaginaWebMedicosPage-C27g0iJu.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/file-text-Bd15J5A6.js",
-      "assets/search-hep88-Ap.js",
-      "assets/network-BcZgzYeR.js",
-      "assets/chart-no-axes-combined-DyTaTnMh.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/shield-check-DqdFrjvI.js"
+    ],
+    "dynamicImports": [],
+    "modules": [
+      {
+        "id": "node_modules/lucide-react/dist/esm/icons/sparkles.js",
+        "renderedLength": 605,
+        "imports": [
+          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
+        ]
+      },
+      {
+        "id": "src/pages/PaginaWebGratisMedicosPage.tsx",
+        "renderedLength": 31999,
+        "imports": [
+          "src/seo/PageMetadata.tsx",
+          "node_modules/react/index.js",
+          "node_modules/react-router-dom/dist/index.mjs",
+          "node_modules/lucide-react/dist/esm/lucide-react.js",
+          "src/pages/PaginaWebGratisMedicosPage.css",
+          "node_modules/react/jsx-runtime.js"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "assets/PaginaWebMedicosAgendaWhatsappPage-CC2lCqyC.js",
+    "entry": false,
+    "raw": 35006,
+    "gzip": 9024,
+    "imports": [
+      "assets/rolldown-runtime-BWaJ3C7D.js",
+      "assets/PageMetadata-CXoSkjpB.js",
+      "assets/jsx-runtime-D2XgGOeN.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/arrow-up-right-CwmomIvx.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/users-round-3VoL2UeK.js",
+      "assets/PaginaWebMedicosPage-DuxS21sA.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/file-text-1SVMOgdz.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/network-BiHA0JCV.js",
+      "assets/chart-no-axes-combined-DvMXP9C6.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4136,22 +4159,22 @@
     ]
   },
   {
-    "file": "assets/PaginaWebMedicosEspecialistasPage-CX-8EF7a.js",
+    "file": "assets/PaginaWebMedicosEspecialistasPage-B0hmK_Kp.js",
     "entry": false,
     "raw": 24264,
-    "gzip": 6727,
+    "gzip": 6730,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/arrow-up-right-CRMhhIJ5.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/search-hep88-Ap.js",
-      "assets/layers-CQMR-XyS.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/arrow-up-right-CwmomIvx.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/layers-3JuCJCtu.js",
       "assets/PaginaWebMedicosEspecialistasPage-CdP76FMC.js"
     ],
     "dynamicImports": [],
@@ -4187,27 +4210,65 @@
     ]
   },
   {
-    "file": "assets/PaginaWebMedicosPage-BMKoa6vR.js",
+    "file": "assets/PaginaWebMedicosPage-DuxS21sA.js",
+    "entry": false,
+    "raw": 706,
+    "gzip": 379,
+    "imports": [
+      "assets/index-BOXNmN8W.js"
+    ],
+    "dynamicImports": [],
+    "modules": [
+      {
+        "id": "node_modules/lucide-react/dist/esm/icons/clock-3.js",
+        "renderedLength": 243,
+        "imports": [
+          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
+        ]
+      },
+      {
+        "id": "node_modules/lucide-react/dist/esm/icons/phone.js",
+        "renderedLength": 378,
+        "imports": [
+          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
+        ]
+      },
+      {
+        "id": "node_modules/lucide-react/dist/esm/icons/stethoscope.js",
+        "renderedLength": 472,
+        "imports": [
+          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
+        ]
+      },
+      {
+        "id": "src/pages/PaginaWebMedicosPage.css",
+        "renderedLength": 0,
+        "imports": []
+      }
+    ]
+  },
+  {
+    "file": "assets/PaginaWebMedicosPage-Dvb1p6hU.js",
     "entry": false,
     "raw": 28189,
-    "gzip": 7805,
+    "gzip": 7808,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/arrow-up-right-CRMhhIJ5.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/PaginaWebMedicosPage-C27g0iJu.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/file-text-Bd15J5A6.js",
-      "assets/search-hep88-Ap.js",
-      "assets/network-BcZgzYeR.js",
-      "assets/chart-no-axes-combined-DyTaTnMh.js",
-      "assets/compass-1K9imnCE.js",
-      "assets/layers-CQMR-XyS.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/arrow-up-right-CwmomIvx.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/PaginaWebMedicosPage-DuxS21sA.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/file-text-1SVMOgdz.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/network-BiHA0JCV.js",
+      "assets/chart-no-axes-combined-DvMXP9C6.js",
+      "assets/compass-mMA5zAx6.js",
+      "assets/layers-3JuCJCtu.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4248,55 +4309,17 @@
     ]
   },
   {
-    "file": "assets/PaginaWebMedicosPage-C27g0iJu.js",
-    "entry": false,
-    "raw": 706,
-    "gzip": 381,
-    "imports": [
-      "assets/index-D2k3pePw.js"
-    ],
-    "dynamicImports": [],
-    "modules": [
-      {
-        "id": "node_modules/lucide-react/dist/esm/icons/clock-3.js",
-        "renderedLength": 243,
-        "imports": [
-          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
-        ]
-      },
-      {
-        "id": "node_modules/lucide-react/dist/esm/icons/phone.js",
-        "renderedLength": 378,
-        "imports": [
-          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
-        ]
-      },
-      {
-        "id": "node_modules/lucide-react/dist/esm/icons/stethoscope.js",
-        "renderedLength": 472,
-        "imports": [
-          "node_modules/lucide-react/dist/esm/createLucideIcon.js"
-        ]
-      },
-      {
-        "id": "src/pages/PaginaWebMedicosPage.css",
-        "renderedLength": 0,
-        "imports": []
-      }
-    ]
-  },
-  {
-    "file": "assets/PostPage-8hSZ6mUe.js",
+    "file": "assets/PostPage-Cw468SGl.js",
     "entry": false,
     "raw": 44766,
-    "gzip": 25096,
+    "gzip": 25095,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/editorial-DqKuTrgX.js",
-      "assets/FadeInUp-DZJR7216.js",
+      "assets/FadeInUp-DpDfKW9I.js",
       "assets/wp-CgwcUtkU.js"
     ],
     "dynamicImports": [],
@@ -4405,17 +4428,17 @@
     ]
   },
   {
-    "file": "assets/PresenceEditorialPage-BcBkccZs.js",
+    "file": "assets/PresenceEditorialPage-Bmlvc7uW.js",
     "entry": false,
     "raw": 19347,
-    "gzip": 6056,
+    "gzip": 6057,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/circle-check-Hum5l2cP.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/circle-check-DCDifvOh.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/check-DBUvq5_j.js"
+      "assets/check-wtIfBEDT.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4450,14 +4473,14 @@
     ]
   },
   {
-    "file": "assets/RauviaWebPage-BK8dJram.js",
+    "file": "assets/RauviaWebPage-SnjoKiSO.js",
     "entry": false,
     "raw": 234,
-    "gzip": 198,
+    "gzip": 197,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/PresenceEditorialPage-BcBkccZs.js"
+      "assets/PresenceEditorialPage-Bmlvc7uW.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4473,17 +4496,17 @@
     ]
   },
   {
-    "file": "assets/RecursosPage-BgnRo9L4.js",
+    "file": "assets/RecursosPage-lV_9q0cd.js",
     "entry": false,
     "raw": 4170,
-    "gzip": 1770,
+    "gzip": 1772,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/editorial-DqKuTrgX.js",
-      "assets/FadeInUp-DZJR7216.js",
+      "assets/FadeInUp-DpDfKW9I.js",
       "assets/scrollReveal-CLJ7CXKb.js"
     ],
     "dynamicImports": [
@@ -4510,15 +4533,15 @@
     ]
   },
   {
-    "file": "assets/Ruta90Page-BemF6pxi.js",
+    "file": "assets/Ruta90Page-DqYLnH5X.js",
     "entry": false,
     "raw": 15334,
-    "gzip": 5091,
+    "gzip": 5093,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/ruta90Session-DEPGvLjf.js"
     ],
     "dynamicImports": [],
@@ -4546,17 +4569,17 @@
     ]
   },
   {
-    "file": "assets/SeoAiAuditoriaPage-B4HwOEqi.js",
+    "file": "assets/SeoAiAuditoriaPage-CKYQTku4.js",
     "entry": false,
     "raw": 12820,
     "gzip": 4046,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/check-DBUvq5_j.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/check-wtIfBEDT.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/seoAiShared-D-kLo3E3.js"
+      "assets/seoAiShared-CSeq6hfb.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4577,17 +4600,17 @@
     ]
   },
   {
-    "file": "assets/SeoAiImplementacionPage-Brj35-vh.js",
+    "file": "assets/SeoAiImplementacionPage-ClUtFVLP.js",
     "entry": false,
     "raw": 14336,
-    "gzip": 4364,
+    "gzip": 4363,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/check-DBUvq5_j.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/check-wtIfBEDT.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/seoAiShared-D-kLo3E3.js"
+      "assets/seoAiShared-CSeq6hfb.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4608,17 +4631,17 @@
     ]
   },
   {
-    "file": "assets/SeoAiPage-3MmTEkV-.js",
+    "file": "assets/SeoAiPage-WqpweoV2.js",
     "entry": false,
     "raw": 20743,
-    "gzip": 5648,
+    "gzip": 5649,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/check-DBUvq5_j.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/check-wtIfBEDT.js",
       "assets/PageMetadata-CXoSkjpB.js",
-      "assets/seoAiShared-D-kLo3E3.js"
+      "assets/seoAiShared-CSeq6hfb.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4639,7 +4662,7 @@
     ]
   },
   {
-    "file": "assets/SeoLocalMedicosPage-Be1ZhO2u.js",
+    "file": "assets/SeoLocalMedicosPage-BLYfHnem.js",
     "entry": false,
     "raw": 27115,
     "gzip": 7621,
@@ -4647,14 +4670,14 @@
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/arrow-up-right-CRMhhIJ5.js",
-      "assets/check-DBUvq5_j.js",
-      "assets/shield-check-DgE8o221.js",
-      "assets/PaginaWebGratisMedicosPage-DpOjEt_h.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/network-BcZgzYeR.js",
-      "assets/file-text-Bd15J5A6.js",
+      "assets/index-BOXNmN8W.js",
+      "assets/arrow-up-right-CwmomIvx.js",
+      "assets/check-wtIfBEDT.js",
+      "assets/shield-check-DqdFrjvI.js",
+      "assets/PaginaWebGratisMedicosPage-BF1cPtYN.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/network-BiHA0JCV.js",
+      "assets/file-text-1SVMOgdz.js",
       "assets/PaginaWebMedicosEspecialistasPage-CdP76FMC.js"
     ],
     "dynamicImports": [],
@@ -4688,22 +4711,22 @@
     ]
   },
   {
-    "file": "assets/SitioWebComercialPymesPage-Cc4Y0eSX.js",
+    "file": "assets/SitioWebComercialPymesPage-BodIGXUN.js",
     "entry": false,
     "raw": 28187,
-    "gzip": 6472,
+    "gzip": 6477,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/circle-check-Hum5l2cP.js",
-      "assets/panels-top-left-C6cQvF6f.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/search-hep88-Ap.js",
-      "assets/target-CXoi7Nj3.js",
-      "assets/CommercialLandings-C7i9naVZ.js",
-      "assets/file-text-Bd15J5A6.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/circle-check-DCDifvOh.js",
+      "assets/panels-top-left-DOsTRxl-.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/search-DM0Dxb63.js",
+      "assets/target-B2LMze8L.js",
+      "assets/CommercialLandings-DdKzsP11.js",
+      "assets/file-text-1SVMOgdz.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4722,22 +4745,22 @@
     ]
   },
   {
-    "file": "assets/SitioWebServiciosEspecializadosPage-BzNQ5jjo.js",
+    "file": "assets/SitioWebServiciosEspecializadosPage-DoPnZB-Y.js",
     "entry": false,
     "raw": 33606,
-    "gzip": 7795,
+    "gzip": 7798,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js",
-      "assets/circle-check-Hum5l2cP.js",
-      "assets/panels-top-left-C6cQvF6f.js",
-      "assets/message-circle-C0hpvO40.js",
-      "assets/target-CXoi7Nj3.js",
-      "assets/shield-DOJ-tFM2.js",
-      "assets/file-text-Bd15J5A6.js",
-      "assets/CommercialLandings-C7i9naVZ.js"
+      "assets/index-BOXNmN8W.js",
+      "assets/circle-check-DCDifvOh.js",
+      "assets/panels-top-left-DOsTRxl-.js",
+      "assets/message-circle-B3byckzO.js",
+      "assets/target-B2LMze8L.js",
+      "assets/shield-CNmap96j.js",
+      "assets/file-text-1SVMOgdz.js",
+      "assets/CommercialLandings-DdKzsP11.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4770,21 +4793,21 @@
     ]
   },
   {
-    "file": "assets/SolucionesPage-zV0fsA4T.js",
+    "file": "assets/SolucionesPage-CASZG8z5.js",
     "entry": false,
     "raw": 39666,
-    "gzip": 10939,
+    "gzip": 10944,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
-      "assets/index-D2k3pePw.js",
+      "assets/index-BOXNmN8W.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/target-CXoi7Nj3.js",
-      "assets/circle-check-Hum5l2cP.js",
-      "assets/chevron-down-C39RnQOU.js",
-      "assets/layers-CQMR-XyS.js",
-      "assets/network-BcZgzYeR.js",
-      "assets/FadeInUp-DZJR7216.js",
+      "assets/target-B2LMze8L.js",
+      "assets/circle-check-DCDifvOh.js",
+      "assets/chevron-down-BnHtFVL8.js",
+      "assets/layers-3JuCJCtu.js",
+      "assets/network-BiHA0JCV.js",
+      "assets/FadeInUp-DpDfKW9I.js",
       "assets/scrollReveal-CLJ7CXKb.js",
       "assets/pageFrontier-CfrVZQPP.js"
     ],
@@ -4850,7 +4873,7 @@
     ]
   },
   {
-    "file": "assets/TerminosPage-BvlRm4Hd.js",
+    "file": "assets/TerminosPage-_YdY6rzk.js",
     "entry": false,
     "raw": 15103,
     "gzip": 4049,
@@ -4858,7 +4881,7 @@
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/PageMetadata-CXoSkjpB.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/FadeInUp-DZJR7216.js"
+      "assets/FadeInUp-DpDfKW9I.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4875,14 +4898,14 @@
     ]
   },
   {
-    "file": "assets/TrayectoriaPage-DFs8Ennu.js",
+    "file": "assets/TrayectoriaPage-Byfnyyh9.js",
     "entry": false,
     "raw": 236,
-    "gzip": 196,
+    "gzip": 195,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/PresenceEditorialPage-BcBkccZs.js"
+      "assets/PresenceEditorialPage-Bmlvc7uW.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4898,12 +4921,12 @@
     ]
   },
   {
-    "file": "assets/arrow-up-right-CRMhhIJ5.js",
+    "file": "assets/arrow-up-right-CwmomIvx.js",
     "entry": false,
     "raw": 156,
     "gzip": 150,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4917,12 +4940,12 @@
     ]
   },
   {
-    "file": "assets/chart-no-axes-combined-DyTaTnMh.js",
+    "file": "assets/chart-no-axes-combined-DvMXP9C6.js",
     "entry": false,
     "raw": 369,
-    "gzip": 244,
+    "gzip": 246,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4936,12 +4959,12 @@
     ]
   },
   {
-    "file": "assets/check-DBUvq5_j.js",
+    "file": "assets/check-wtIfBEDT.js",
     "entry": false,
     "raw": 113,
     "gzip": 130,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4955,12 +4978,12 @@
     ]
   },
   {
-    "file": "assets/chevron-down-C39RnQOU.js",
+    "file": "assets/chevron-down-BnHtFVL8.js",
     "entry": false,
     "raw": 117,
     "gzip": 131,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4974,12 +4997,12 @@
     ]
   },
   {
-    "file": "assets/circle-check-Hum5l2cP.js",
+    "file": "assets/circle-check-DCDifvOh.js",
     "entry": false,
     "raw": 167,
-    "gzip": 160,
+    "gzip": 162,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -4993,12 +5016,12 @@
     ]
   },
   {
-    "file": "assets/compass-1K9imnCE.js",
+    "file": "assets/compass-mMA5zAx6.js",
     "entry": false,
     "raw": 240,
-    "gzip": 197,
+    "gzip": 199,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5501,12 +5524,12 @@
     ]
   },
   {
-    "file": "assets/file-text-Bd15J5A6.js",
+    "file": "assets/file-text-1SVMOgdz.js",
     "entry": false,
     "raw": 322,
     "gzip": 208,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5588,12 +5611,12 @@
     ]
   },
   {
-    "file": "assets/layers-CQMR-XyS.js",
+    "file": "assets/layers-3JuCJCtu.js",
     "entry": false,
     "raw": 410,
-    "gzip": 231,
+    "gzip": 233,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5607,12 +5630,12 @@
     ]
   },
   {
-    "file": "assets/message-circle-C0hpvO40.js",
+    "file": "assets/message-circle-B3byckzO.js",
     "entry": false,
     "raw": 230,
-    "gzip": 202,
+    "gzip": 201,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5626,12 +5649,12 @@
     ]
   },
   {
-    "file": "assets/network-BcZgzYeR.js",
+    "file": "assets/network-BiHA0JCV.js",
     "entry": false,
     "raw": 373,
-    "gzip": 227,
+    "gzip": 229,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5677,12 +5700,12 @@
     ]
   },
   {
-    "file": "assets/panels-top-left-C6cQvF6f.js",
+    "file": "assets/panels-top-left-DOsTRxl-.js",
     "entry": false,
     "raw": 371,
-    "gzip": 258,
+    "gzip": 260,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5757,12 +5780,12 @@
     ]
   },
   {
-    "file": "assets/search-hep88-Ap.js",
+    "file": "assets/search-DM0Dxb63.js",
     "entry": false,
     "raw": 163,
-    "gzip": 158,
+    "gzip": 161,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5776,14 +5799,14 @@
     ]
   },
   {
-    "file": "assets/seoAiShared-D-kLo3E3.js",
+    "file": "assets/seoAiShared-CSeq6hfb.js",
     "entry": false,
     "raw": 7246,
-    "gzip": 2975,
+    "gzip": 2976,
     "imports": [
       "assets/rolldown-runtime-BWaJ3C7D.js",
       "assets/jsx-runtime-D2XgGOeN.js",
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5807,12 +5830,12 @@
     ]
   },
   {
-    "file": "assets/shield-DOJ-tFM2.js",
+    "file": "assets/shield-CNmap96j.js",
     "entry": false,
     "raw": 261,
-    "gzip": 217,
+    "gzip": 218,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5826,12 +5849,12 @@
     ]
   },
   {
-    "file": "assets/shield-check-DgE8o221.js",
+    "file": "assets/shield-check-DqdFrjvI.js",
     "entry": false,
     "raw": 409,
-    "gzip": 281,
+    "gzip": 283,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5852,12 +5875,12 @@
     ]
   },
   {
-    "file": "assets/target-CXoi7Nj3.js",
+    "file": "assets/target-B2LMze8L.js",
     "entry": false,
     "raw": 215,
     "gzip": 154,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
@@ -5871,12 +5894,12 @@
     ]
   },
   {
-    "file": "assets/users-round-DLactieG.js",
+    "file": "assets/users-round-3VoL2UeK.js",
     "entry": false,
     "raw": 242,
-    "gzip": 209,
+    "gzip": 212,
     "imports": [
-      "assets/index-D2k3pePw.js"
+      "assets/index-BOXNmN8W.js"
     ],
     "dynamicImports": [],
     "modules": [
