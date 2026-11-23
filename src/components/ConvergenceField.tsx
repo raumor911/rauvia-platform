@@ -17,7 +17,17 @@ const GROW = 1.9;
 const LEVELS = 8;
 const buckets: number[][] = Array.from({ length: LEVELS * 2 }, () => []);
 
-export default function HeroField() {
+type Props = {
+  /** Selector del elemento cuyo centro es el núcleo; si no existe se usa `origin`. */
+  coreSelector?: string;
+  /** Centro del núcleo como fracción del contenedor [x, y]. */
+  origin?: [number, number];
+  /** 'outward': la energía sale del núcleo (hero). 'inward': converge hacia el núcleo (footer). */
+  flow?: 'outward' | 'inward';
+  className?: string;
+};
+
+export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic', origin = [.5, .42], flow = 'outward', className = 'rv-hero-field' }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -35,6 +45,9 @@ export default function HeroField() {
     const ptr = { x: -9999, y: -9999, on: false };
     let t0 = performance.now();
     let last = t0;
+    let began = false;
+    let coreFlash = 0;
+    const inward = flow === 'inward';
     let spawnAt = 0;
     let raf = 0;
     let visible = true;
@@ -60,11 +73,11 @@ export default function HeroField() {
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
       scale = clamp(w / 1440, .55, 1.2);
 
-      const core = host!.querySelector('.rv-aethryon-graphic');
+      const core = host!.querySelector(coreSelector);
       if (core) {
         const c = core.getBoundingClientRect();
         cx = c.left - rect.left + c.width / 2; cy = c.top - rect.top + c.height / 2;
-      } else { cx = w * .5; cy = h * .42; }
+      } else { cx = w * origin[0]; cy = h * origin[1]; }
       R = Math.hypot(Math.max(cx, w - cx), Math.max(cy, h - cy)) * .96;
 
       // retícula triangular (cada nodo con 6 vecinos = panal)
@@ -93,16 +106,16 @@ export default function HeroField() {
     }
 
     function spawn() {
-      const starts = nodes.filter(n => n.d < R * .22);
-      if (!starts.length) return;
-      let cur = nodes.indexOf(starts[Math.floor(rnd() * starts.length)]);
+      const pool = inward ? nodes.filter(n => n.d > R * .5 && n.d < R * .85) : nodes.filter(n => n.d < R * .22);
+      if (!pool.length) return;
+      let cur = nodes.indexOf(pool[Math.floor(rnd() * pool.length)]);
       const path = [cur];
-      for (let k = 0; k < 40; k++) {
-        const ahead = nodes[cur].nb.filter(j => nodes[j].d > nodes[cur].d + 1);
-        if (!ahead.length) break;
-        cur = ahead[Math.floor(rnd() * ahead.length)];
+      for (let k = 0; k < 60; k++) {
+        const next = nodes[cur].nb.filter(j => inward ? nodes[j].d < nodes[cur].d - 1 : nodes[j].d > nodes[cur].d + 1);
+        if (!next.length) break;
+        cur = next[Math.floor(rnd() * next.length)];
         path.push(cur);
-        if (nodes[cur].a < .12) break;
+        if (inward ? nodes[cur].d < R * .08 : nodes[cur].a < .12) break;
       }
       if (path.length > 3) pulses.push({ path, seg: 0, t: 0, trail: [] });
     }
@@ -113,7 +126,8 @@ export default function HeroField() {
       const front = ((t - .1) / GROW) * R;
       // latido: cada 9 s un anillo de energía sale del núcleo
       const BEAT = 9, bt = still ? -1 : (t - (GROW + 2.2)) % BEAT;
-      const beatFront = t > GROW + 2.2 && bt >= 0 && bt < 2.4 ? (bt / 2.4) * R * .95 : -1;
+      const bp = bt / 2.4;
+      const beatFront = t > GROW + 2.2 && bt >= 0 && bt < 2.4 ? (inward ? 1 - bp : bp) * R * .95 : -1;
       const ignAt = (d: number, sw: number) => still ? 0 : Math.max(
         Math.exp(-Math.pow((d - front) / (R * sw), 2)),
         beatFront > 0 ? Math.exp(-Math.pow((d - beatFront) / (R * sw * 1.1), 2)) * .85 : 0);
@@ -124,6 +138,14 @@ export default function HeroField() {
       const cg = ctx!.createRadialGradient(cx, cy, 0, cx, cy, R * .5 * br);
       cg.addColorStop(0, 'rgba(60,150,190,.30)'); cg.addColorStop(.35, 'rgba(30,74,116,.18)'); cg.addColorStop(1, 'rgba(30,74,116,0)');
       ctx!.fillStyle = cg; ctx!.fillRect(0, 0, w, h);
+
+      // destello del núcleo cuando llega energía
+      if (coreFlash > .01) {
+        const fg = ctx!.createRadialGradient(cx, cy, 0, cx, cy, R * .2);
+        fg.addColorStop(0, `rgba(${GOLD},${.42 * coreFlash})`); fg.addColorStop(1, `rgba(${GOLD},0)`);
+        ctx!.fillStyle = fg; ctx!.fillRect(cx - R * .2, cy - R * .2, R * .4, R * .4);
+        coreFlash *= Math.max(0, 1 - dt * 2.4);
+      }
 
       // posiciones
       const push = 150 * scale;
@@ -189,7 +211,7 @@ export default function HeroField() {
       }
 
       if (!still && beatFront > 0) {
-        const ba = clamp(1 - beatFront / (R * .95));
+        const ba = inward ? Math.sin(bp * Math.PI) : clamp(1 - bp);
         ctx!.strokeStyle = `rgba(${GOLD},${.5 * ba})`; ctx!.lineWidth = 1.5;
         ctx!.beginPath(); ctx!.arc(cx, cy, beatFront, 0, 6.283); ctx!.stroke();
         ctx!.strokeStyle = `rgba(${GOLD},${.12 * ba})`; ctx!.lineWidth = 16;
@@ -209,11 +231,11 @@ export default function HeroField() {
           const len = Math.max(1, Math.hypot(B.x - A.x, B.y - A.y));
           p.t += (speed * dt) / len;
           while (p.t >= 1 && p.path[p.seg + 2] !== undefined) { p.t -= 1; p.seg++; }
-          if (p.t >= 1) { pulses.splice(k, 1); continue; }
+          if (p.t >= 1) { if (inward) coreFlash = Math.min(1, coreFlash + .25); pulses.splice(k, 1); continue; }
           const a2 = nodes[p.path[p.seg]], b2 = nodes[p.path[p.seg + 1]];
           const x = a2.x + (b2.x - a2.x) * p.t, y = a2.y + (b2.y - a2.y) * p.t;
           p.trail.push([x, y]); if (p.trail.length > 16) p.trail.shift();
-          const fade = clamp(1.25 - nodes[p.path[p.seg]].d / R);
+          const fade = inward ? clamp(.35 + (1 - nodes[p.path[p.seg]].d / R) * 1.1) : clamp(1.25 - nodes[p.path[p.seg]].d / R);
           for (let q = 1; q < p.trail.length; q++) {
             ctx!.strokeStyle = `rgba(${GOLD},${(q / p.trail.length) * .8 * fade})`; ctx!.lineWidth = 2;
             ctx!.beginPath(); ctx!.moveTo(p.trail[q - 1][0], p.trail[q - 1][1]); ctx!.lineTo(p.trail[q][0], p.trail[q][1]); ctx!.stroke();
@@ -244,13 +266,12 @@ export default function HeroField() {
 
     layout();
     if (reduce) frame(performance.now(), true);
-    else start();
 
     const ro = new ResizeObserver(() => { layout(); if (reduce) frame(performance.now(), true); });
     ro.observe(host);
-    const io = new IntersectionObserver(([en]) => { visible = en.isIntersecting; if (visible) start(); }, { threshold: 0 });
+    const io = new IntersectionObserver(([en]) => { visible = en.isIntersecting; if (visible) { if (!began) { began = true; t0 = performance.now(); } start(); } }, { threshold: inward ? .25 : 0 });
     io.observe(host);
-    const onVis = () => { if (!document.hidden) start(); };
+    const onVis = () => { if (!document.hidden && began) start(); };
     document.addEventListener('visibilitychange', onVis);
     if (fine && !reduce) { host.addEventListener('pointermove', onMove); host.addEventListener('pointerleave', onLeave); }
 
@@ -262,5 +283,5 @@ export default function HeroField() {
     };
   }, []);
 
-  return <canvas ref={ref} className="rv-hero-field" aria-hidden="true" />;
+  return <canvas ref={ref} className={className} aria-hidden="true" />;
 }

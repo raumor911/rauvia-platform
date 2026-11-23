@@ -42,3 +42,19 @@ Semánticos: 15 · Contenido: 20
 Motivo: Mejora visual de la home (capa frontera): mismo texto; cambia el marcado de Situación visible y se agrega la barra de avance
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json / contenido
+
+## 2026-11-23 · bf4eab0
+Motivo: Mejora visual del footer (cierre convergencia): mismo texto y enlaces; cambia el marcado del pie compartido (canvas decorativo y clases) en las páginas excluidas
+Semánticos: 0 · Contenido: 12
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /aviso-de-privacidad/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- v72-excluded-html.json /terminos/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
