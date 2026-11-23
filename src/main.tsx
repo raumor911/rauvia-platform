@@ -4,6 +4,7 @@ import App from './App.tsx';
 import {initialContent} from './lib/initialContent';
 import './index.css';
 import {preloadRoute} from './lib/routeLoader';
+import {registerWebMcpTools} from './lib/webmcp';
 
 async function bootstrap() {
 await preloadRoute(window.location.pathname);
@@ -20,6 +21,7 @@ if (container.hasChildNodes()) {
 }
 
 createRoot(container).render(<StrictMode><App /></StrictMode>);
+registerWebMcpTools();
 
 }
 bootstrap().catch(() => { /* Preserve the complete static document if a chunk fails. */ });

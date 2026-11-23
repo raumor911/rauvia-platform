@@ -31,6 +31,13 @@ export const routeSeo = {
             "https://www.linkedin.com/in/raumor/"
           ]
         },
+        "telephone": "+52 55 8649 4076",
+        "address": {"@type": "PostalAddress", "addressCountry": "MX"},
+        "areaServed": {"@type": "Country", "name": "México"},
+        "contactPoint": [
+          {"@type": "ContactPoint", "contactType": "customer service", "telephone": "+52 55 8649 4076", "url": "https://wa.me/525586494076", "availableLanguage": ["es-MX"], "areaServed": "MX"},
+          {"@type": "ContactPoint", "contactType": "privacy", "email": "privacidad@rauvia.com.mx", "availableLanguage": ["es-MX"]}
+        ],
         "sameAs": [
           "https://www.facebook.com/rauviaconsulting/",
           "https://www.instagram.com/rauviaconsulting/",
@@ -43,9 +50,51 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/#website",
         "name": "RAUVIA",
         "url": "https://rauvia.com.mx",
+        "inLanguage": "es-MX",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
         }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://rauvia.com.mx/#webpage",
+        "url": "https://rauvia.com.mx/",
+        "name": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+        "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+        "inLanguage": "es-MX",
+        "isPartOf": {"@id": "https://rauvia.com.mx/#website"},
+        "about": {"@id": "https://rauvia.com.mx/#organization"}
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://rauvia.com.mx/#service",
+        "name": "Consultoría estratégica y desarrollo tecnológico",
+        "serviceType": "Consultoría estratégica y desarrollo tecnológico para PyMES y empresas B2B",
+        "description": "Identifica dónde una empresa pierde oportunidades o capacidad y construye la estructura comercial, operativa o tecnológica necesaria para corregirlo. Las capacidades no forman una ruta obligatoria ni garantizan resultados.",
+        "url": "https://rauvia.com.mx/soluciones/",
+        "provider": {"@id": "https://rauvia.com.mx/#organization"},
+        "areaServed": {"@type": "Country", "name": "México"},
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Enfoques de intervención",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Organizar", "description": "Presentación, información y seguimiento básico."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistematizar", "description": "Procesos y sistemas comerciales replicables."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tecnologizar", "description": "Convertir procesos definidos en capacidades digitales."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatizar", "description": "Reducir trabajo repetitivo y fricción."}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Adaptar", "description": "Analizar señales, restricciones y prioridades mediante AETHRYON."}}
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "@id": "https://rauvia.com.mx/aethryon/#entity",
+        "name": "AETHRYON",
+        "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
+        "url": "https://rauvia.com.mx/aethryon/"
       }
     ]
   },

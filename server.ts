@@ -19,6 +19,7 @@ import { withRequestContext } from './server/observability/context.js';
 import {wordpressCache} from './server/wordpress/cache';
 import {resourceCards} from './server/wordpress/resources';
 import {canonicalPath} from './src/seo/buildMetaTags';
+import {agentDiscoveryMiddleware, mcpHandler, mcpNotAllowed, serverCardHandler} from './server/agent/agentReady';
 import {createCanonicalRedirectMiddleware} from './server/seo/legacyRoutes';
 import {createIndexNow, authorized, sitemapSnapshot, validateUrl} from './server/indexnow/service.js';
 
@@ -39,6 +40,8 @@ async function startServer() {
       res.setHeader('X-Content-Type-Options', 'nosniff');
     },
   }), (_req, res) => { res.status(404).type('text/plain').send('Not found'); });
+  app.use(agentDiscoveryMiddleware(isProd));
+  app.get('/.well-known/mcp/server-card.json', serverCardHandler);
   const PORT = Number(process.env.PORT) || 3000;
 
   // Inyectar Request ID y contexto de observabilidad
@@ -51,6 +54,8 @@ async function startServer() {
   // Limitar el tamaño del body a 1MB para prevenir ataques DoS por payloads gigantes
   app.use(express.json({ limit: '1mb' }));
   startObservabilityTicker();
+  app.post('/mcp', mcpHandler(isProd));
+  app.all('/mcp', mcpNotAllowed);
 
   const createHttpTask = (req: express.Request, res: express.Response, taskName: string) => {
     let aborted = false;
