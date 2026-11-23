@@ -4,11 +4,17 @@
 //   npm run test:ci    → build + suite (lo que corre el CI)
 import {spawn, spawnSync} from 'node:child_process';
 import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 if (!fs.existsSync('dist/server.cjs')) { console.error('Falta dist/. Ejecuta `npm run build` (o `npm run test:ci`).'); process.exit(2); }
 const PORT = process.env.TEST_PORT || '3119';
 const base = `http://127.0.0.1:${PORT}`;
-const server = spawn('node', ['dist/server.cjs'], {env: {...process.env, NODE_ENV: 'production', PORT}, stdio: 'ignore'});
+// Caché del sitemap en un temporal: el servidor la reescribe al arrancar y las pruebas no deben tocar archivos versionados.
+const cacheDir = fs.mkdtempSync(path.join(os.tmpdir(), 'rauvia-test-'));
+const cachePath = path.join(cacheDir, 'sitemap-cache.xml');
+fs.copyFileSync('data/sitemap-cache.xml', cachePath);
+const server = spawn('node', ['dist/server.cjs'], {env: {...process.env, NODE_ENV: 'production', PORT, SITEMAP_CACHE_PATH: cachePath}, stdio: 'ignore'});
 const stop = () => { try { server.kill(); } catch {} };
 process.on('exit', stop); process.on('SIGINT', () => process.exit(130));
 let ready = false;

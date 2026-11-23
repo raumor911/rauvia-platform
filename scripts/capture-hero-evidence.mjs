@@ -5,6 +5,8 @@
 // La aprobación es una decisión humana: sin --approve el estado queda "pending" y la prueba lo muestra como TODO.
 import fs from 'node:fs';
 import {createHash} from 'node:crypto';
+import os from 'node:os';
+import path from 'node:path';
 import {spawn, execSync} from 'node:child_process';
 import puppeteer from 'puppeteer';
 
@@ -27,7 +29,9 @@ if (approveIdx > -1) {
 const sourceFiles = ['src/components/HeroSection.tsx', 'src/components/Footer.tsx', 'src/components/AethryonCore.tsx', 'src/styles/mobileExperience.css', 'src/pages/SolucionesPage.tsx', 'src/pages/NosotrosPage.tsx', 'src/App.tsx', 'src/pages/AethryonPage.tsx', 'src/pages/FrenteComercialPage.tsx', 'src/pages/CasosIndexPage.tsx', 'src/lib/analytics.ts'];
 const sha = f => createHash('sha256').update(fs.readFileSync(f)).digest('hex');
 
-const server = spawn('node', ['dist/server.cjs'], {env: {...process.env, NODE_ENV: 'production', PORT: String(PORT)}, stdio: 'ignore'});
+const cachePath = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'rauvia-hero-')), 'sitemap-cache.xml');
+fs.copyFileSync('data/sitemap-cache.xml', cachePath);
+const server = spawn('node', ['dist/server.cjs'], {env: {...process.env, NODE_ENV: 'production', PORT: String(PORT), SITEMAP_CACHE_PATH: cachePath}, stdio: 'ignore'});
 const stop = () => { try { server.kill(); } catch {} };
 process.on('exit', stop);
 for (let i = 0; i < 40; i++) { try { if ((await fetch(base + '/')).ok) break; } catch {} await new Promise(r => setTimeout(r, 250)); }
