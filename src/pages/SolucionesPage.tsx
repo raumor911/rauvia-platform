@@ -10,6 +10,7 @@ import GrowthStructuralMap from '../components/GrowthStructuralMap';
 import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
+import HeroScene from '../components/HeroScene';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
 
@@ -311,7 +312,7 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN 1 — HERO */}
       <section className="rv-soluciones-hero fx-hero pt-32 pb-20 overflow-hidden relative">
-        <ConvergenceField coreSelector=".fx-art" origin={[0.68, 0.5]} className="fx-field" />
+        <ConvergenceField coreSelector=".fx-scene-core" origin={[0.68, 0.5]} className="fx-field" overlay="assets" />
         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
           <div className="w-[1000px] h-[1000px] border border-slate-300 rounded-full animate-spin-slow"></div>
           <div className="absolute w-[800px] h-[800px] border border-slate-300 rounded-full animate-spin-reverse-slow"></div>
@@ -349,13 +350,20 @@ export default function SolucionesPage() {
 
             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
                {/* Hero Graphic: AETHRYON deploying assets */}
-               <Link to="/aethryon/" className="fx-art relative w-full max-w-xl aspect-square flex items-center justify-center group cursor-pointer" title="Conocer más sobre AETHRYON">
-                  <picture className="contents">
-                    <source media="(max-width: 1023px)" type="image/webp"
-                      srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
-                      sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
-                    <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon-v73.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
-                  </picture>
+               <Link to="/aethryon/" className="relative block w-full max-w-[620px] group cursor-pointer" title="Conocer más sobre AETHRYON">
+                  <HeroScene chips={[
+                    { label: 'Sistema Comercial', x: 22, y: 17 },
+                    { label: 'Plataforma', x: 80, y: 24 },
+                    { label: 'Estructura Operativa', x: 20, y: 80 },
+                    { label: 'Automatización', x: 78, y: 82 },
+                  ]}>
+                    <picture className="contents">
+                      <source media="(max-width: 1023px)" type="image/webp"
+                        srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
+                        sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
+                      <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon-v73.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain" />
+                    </picture>
+                  </HeroScene>
                </Link>
             </div>
 

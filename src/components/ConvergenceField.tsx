@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { createOverlay, type Overlay, type OverlayKind, type OverlayNode } from './heroOverlays';
 
 // Campo de convergencia del hero (decorativo, aria-hidden).
 // Idea: "construimos la estructura". Puntos dispersos se ordenan en una retícula hexagonal que nace del núcleo
@@ -25,9 +26,11 @@ type Props = {
   /** 'outward': la energía sale del núcleo (hero). 'inward': converge hacia el núcleo (footer). */
   flow?: 'outward' | 'inward';
   className?: string;
+  /** Capa animada adicional dibujada sobre la retícula (escena de los hero de páginas internas). */
+  overlay?: OverlayKind;
 };
 
-export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic', origin = [.5, .42], flow = 'outward', className = 'rv-hero-field' }: Props) {
+export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic', origin = [.5, .42], flow = 'outward', className = 'rv-hero-field', overlay }: Props) {
   const ref = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -48,6 +51,7 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
     let began = false;
     let coreFlash = 0;
     const inward = flow === 'inward';
+    const layer: Overlay | null = overlay ? createOverlay(overlay) : null;
     let spawnAt = 0;
     let raf = 0;
     let visible = true;
@@ -79,6 +83,16 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
         cx = c.left - rect.left + c.width / 2; cy = c.top - rect.top + c.height / 2;
       } else { cx = w * origin[0]; cy = h * origin[1]; }
       R = Math.hypot(Math.max(cx, w - cx), Math.max(cy, h - cy)) * .96;
+
+      if (layer) {
+        const nodesEls = Array.from(host!.querySelectorAll<HTMLElement>('[data-fx-node]'));
+        const on: OverlayNode[] = nodesEls.map(el => {
+          const b = el.getBoundingClientRect();
+          return { x: b.left - rect.left + b.width / 2, y: b.top - rect.top + b.height / 2, dir: (el.dataset.fxDir as OverlayNode['dir']) || 'out' };
+        }).filter((n, i) => nodesEls[i].getBoundingClientRect().width > 0);
+        const u = c && c.width > 0 ? c.width / 2 : Math.min(w, h) * .12;
+        layer.layout({ w, h, cx, cy, u, scale, nodes: on });
+      }
 
       // retícula triangular (cada nodo con 6 vecinos = panal)
       const s = w < 768 ? 48 : w < 1280 ? 62 : 74;
@@ -245,6 +259,8 @@ export default function ConvergenceField({ coreSelector = '.rv-aethryon-graphic'
         ctx!.globalCompositeOperation = 'source-over';
         ctx!.lineWidth = 1;
       }
+
+      if (layer) { ctx!.lineWidth = 1; layer.draw(ctx!, t, dt, still, ptr); ctx!.lineWidth = 1; }
     }
 
     function loop(now: number) {

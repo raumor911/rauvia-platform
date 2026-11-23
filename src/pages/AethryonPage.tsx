@@ -9,6 +9,7 @@ import WhatsAppCTA from '../components/WhatsAppCTA';
 import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
+import HeroScene from '../components/HeroScene';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
 import './AethryonPage.css';
@@ -46,7 +47,7 @@ export default function AethryonPage() {
       <RouteSEO path="/aethryon" />
 
 <section id="aethryon-hero" className="aethryon-hero aethryon-dark fx-hero pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden relative bg-rauvia-bg">
-        <ConvergenceField coreSelector=".fx-art" origin={[0.68, 0.5]} className="fx-field" />
+        <ConvergenceField coreSelector=".fx-scene-core" origin={[0.68, 0.5]} className="fx-field" overlay="radar" />
         <div className="absolute inset-0 pointer-events-none opacity-20" 
              style={{ backgroundImage: 'linear-gradient(#cbd5e1 1px, transparent 1px), linear-gradient(90deg, #cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
@@ -84,12 +85,19 @@ export default function AethryonPage() {
               </div>
             </div>
 
-            <div className="fx-art lg:col-span-6 xl:col-span-7 hidden lg:flex justify-center relative z-0 mt-12 lg:mt-0">
-               <img width="980" height="640" loading="lazy" 
-                 src="/media/aethryon-hero-orbital-v2-clean.svg" 
-                 alt="AETHRYON" 
-                 className="w-full object-contain" 
-               />
+            <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-8 lg:mt-0">
+               <HeroScene chips={[
+                 { label: 'Oportunidades', x: 20, y: 20, dir: 'in' },
+                 { label: 'Fricción operativa', x: 82, y: 36, dir: 'in' },
+                 { label: 'Decisiones abiertas', x: 22, y: 82, dir: 'in' },
+                 { label: 'Ruta de acción', x: 74, y: 85, gold: true },
+               ]}>
+                 <img width="980" height="640" loading="lazy"
+                   src="/media/aethryon-hero-orbital-v2-clean.svg"
+                   alt="AETHRYON"
+                   className="w-full object-contain"
+                 />
+               </HeroScene>
             </div>
 
           </div>

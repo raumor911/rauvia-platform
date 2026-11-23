@@ -74,25 +74,36 @@ body:has(.fx-hero) nav.fixed.glass-card { background-color: rgba(255, 255, 255, 
 .fx-hero a:not([class~="bg-rauvia-navy"]):not([class~="bg-white"])[class*="text-rauvia-navy"]:hover { color: #FFD766; }
 .fx-hero :is(a, button):focus-visible { outline: 3px solid #FFD766; outline-offset: 3px; }
 
-/* ventana de arte: la ilustración original (pensada sobre fondo claro) flota como una consola iluminada */
-.fx-art {
-  position: relative; border-radius: 22px; background: #f4f8fc; overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(255, 215, 102, .38), 0 50px 100px -30px rgba(0, 0, 0, .75), 0 0 90px -10px rgba(42, 127, 158, .5), inset 0 1px 0 rgba(255, 255, 255, .6);
-  transform: translate3d(calc(var(--px, 0) * -8px), calc(var(--py, 0) * -6px), 0); transition: transform .8s var(--fx-ease), box-shadow .5s;
-  animation: fx-float 9s ease-in-out infinite;
+/* =====================================================================
+   Escena del hero: núcleo AETHRYON nativo + rótulos de vidrio; la capa animada (haces, radar o escudo)
+   la dibuja el canvas del campo. La ilustración original permanece en el DOM, oculta visualmente (.fx-src).
+   ===================================================================== */
+.fx-scene { position: relative; width: 100%; max-width: 620px; aspect-ratio: 1 / 1; margin-inline: auto; display: block; }
+.fx-src { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); border: 0; white-space: nowrap; pointer-events: none; }
+.fx-src img { width: 1px !important; height: 1px !important; }
+.fx-scene-core { position: absolute; left: 50%; top: 50%; width: 34%; aspect-ratio: 1; transform: translate(-50%, -50%); perspective: 700px; z-index: 2; }
+.fx-core-svg { width: 100%; height: 100%; display: block; overflow: visible; transition: transform .6s var(--fx-ease); transform: rotateY(calc(var(--px, 0) * 16deg)) rotateX(calc(var(--py, 0) * -16deg)); }
+.fx-core-halo { transform-origin: 100px 100px; animation: fx-breathe 4.2s ease-in-out infinite; }
+.fx-core-ring-a { transform-origin: 100px 100px; animation: fx-spin 38s linear infinite; }
+.fx-core-ring-b { transform-origin: 100px 100px; animation: fx-spin 26s linear infinite reverse; }
+.fx-core-hex { transform-origin: 100px 100px; animation: fx-breathe 4.2s ease-in-out infinite .4s; }
+@keyframes fx-spin { to { transform: rotate(360deg); } }
+@keyframes fx-breathe { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.06); opacity: 1; } }
+
+.fx-chip {
+  position: absolute; z-index: 3; left: var(--x); top: var(--y); transform: translate(-50%, -50%); white-space: nowrap;
+  display: inline-flex; align-items: center; gap: .55rem; padding: .5rem .85rem; border-radius: 999px;
+  font-size: clamp(.68rem, 1.9vw, .8rem); font-weight: 600; letter-spacing: .02em; color: #dbe8f6;
+  background: linear-gradient(135deg, rgba(14, 44, 74, .82), rgba(7, 26, 46, .78)); border: 1px solid rgba(140, 185, 235, .32);
+  box-shadow: 0 10px 28px -10px rgba(0, 0, 0, .7), inset 0 1px 0 rgba(255, 255, 255, .12);
 }
-@keyframes fx-float { 0%, 100% { margin-top: 0; } 50% { margin-top: -8px; } }
-.fx-art:hover { box-shadow: 0 0 0 1px rgba(255, 215, 102, .6), 0 60px 110px -30px rgba(0, 0, 0, .8), 0 0 110px -6px rgba(230, 163, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .6); }
-a.fx-art { display: block; }
-.fx-art::after { /* barrido de luz */
-  content: ''; position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply;
-  background: linear-gradient(180deg, transparent 0, transparent 44%, rgba(230, 163, 0, .07) 49%, rgba(230, 163, 0, .18) 50%, rgba(230, 163, 0, .07) 51%, transparent 56%, transparent 100%) 0 0 / 100% 300%;
-  animation: fx-sweep 8s ease-in-out infinite;
-}
-@keyframes fx-sweep { 0% { background-position: 0 0; } 100% { background-position: 0 100%; } }
-.fx-art img { display: block; }
-.fx-soluciones .fx-art { aspect-ratio: 1100 / 760; }
-.fx-art::before { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(120% 120% at 50% 50%, transparent 55%, rgba(10, 37, 64, .12) 100%); }
+.fx-chip::before { content: ''; width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; background: #8cb9eb; box-shadow: 0 0 10px rgba(140, 185, 235, .9); }
+.fx-chip::after { content: attr(data-label); }
+.fx-chip[data-gold] { color: #fff4c9; border-color: rgba(255, 215, 102, .6); background: linear-gradient(135deg, rgba(60, 40, 6, .78), rgba(20, 22, 30, .8)); box-shadow: 0 10px 28px -10px rgba(0, 0, 0, .7), 0 0 28px -6px rgba(230, 163, 0, .55), inset 0 1px 0 rgba(255, 255, 255, .14); }
+.fx-chip[data-gold]::before { background: #FFD766; box-shadow: 0 0 12px rgba(255, 215, 102, 1); animation: fx-ping 2.4s ease-out infinite; }
+.fx-chip { animation: fx-chip-in .9s var(--fx-ease) backwards; animation-delay: calc(1.4s + var(--i, 0) * 220ms); }
+@keyframes fx-chip-in { from { opacity: 0; transform: translate(-50%, -30%) scale(.85); filter: blur(6px); } to { opacity: 1; transform: translate(-50%, -50%); filter: none; } }
+@media (max-width: 767px) { .fx-scene { max-width: 420px; } .fx-chip { padding: .4rem .65rem; gap: .4rem; } }
 
 /* =====================================================================
    SECCIONES CLARAS · retícula tenue y tarjetas con foco dorado
@@ -227,9 +238,6 @@ a.fx-art { display: block; }
 .fx-nosotros .fx-before { transition: opacity .4s; }
 
 /* ---------- Móvil ---------- */
-@media (max-width: 1023px) {
-  .fx-art { animation: none; transform: none; }
-}
 @media (max-width: 767px) {
   .fx-hero h1 { animation-duration: .9s; }
 }
@@ -238,6 +246,5 @@ a.fx-art { display: block; }
 @media (prefers-reduced-motion: reduce) {
   .fx-page *, .fx-page *::before, .fx-page *::after { animation: none !important; transition: none !important; }
   .fx-progress { display: none; }
-  .fx-art, .fx-art::after { transform: none; }
-  .fx-art::after { display: none; }
+  .fx-core-svg { transform: none; }
 }

@@ -8,6 +8,7 @@ import { useRef } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
+import HeroScene from '../components/HeroScene';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
 
@@ -26,7 +27,7 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 1 — HERO */}
       <section className="rv-nosotros-hero fx-hero pt-32 pb-20 overflow-hidden relative">
-        <ConvergenceField coreSelector=".fx-art" origin={[0.68, 0.5]} className="fx-field" />
+        <ConvergenceField coreSelector=".fx-scene-core" origin={[0.68, 0.5]} className="fx-field" overlay="shield" />
         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
           <div className="w-[800px] h-[800px] border border-slate-300 rounded-full"></div>
           <div className="absolute w-[600px] h-[600px] border border-slate-300 rounded-full"></div>
@@ -72,8 +73,15 @@ export default function NosotrosPage() {
 
             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
                {/* Hero Graphic */}
-               <div className="fx-art relative w-full max-w-2xl">
-                 <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure-v73.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
+               <div className="relative w-full max-w-[620px]">
+                 <HeroScene chips={[
+                   { label: 'Pérdidas de valor', x: 20, y: 18, dir: 'in' },
+                   { label: 'Recursos protegidos', x: 80, y: 22 },
+                   { label: 'Capacidades operativas', x: 78, y: 82 },
+                   { label: 'Capacidades tecnológicas', x: 24, y: 84 },
+                 ]}>
+                   <img width="960" height="640" loading="lazy" src="/media/rauvia-nosotros-hero-structure-v73.svg" alt="Estructura Nosotros" className="w-full h-auto object-contain" />
+                 </HeroScene>
                </div>
             </div>
 

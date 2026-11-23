@@ -65,3 +65,10 @@ Semánticos: 0 · Contenido: 3
 - rau004-main-baseline.json /nosotros contenido
 - rau004-main-baseline.json /soluciones contenido
 - rau004-main-baseline.json /aethryon contenido
+
+## 2026-11-23 · 54631d5
+Motivo: Hero épico de Soluciones, AETHRYON y Nosotros: escena nativa (núcleo AETHRYON, rótulos por CSS y capa animada en canvas); mismo texto, H1 y SEO; la ilustración original sigue en el DOM, oculta visualmente
+Semánticos: 0 · Contenido: 3
+- rau004-main-baseline.json /nosotros contenido
+- rau004-main-baseline.json /soluciones contenido
+- rau004-main-baseline.json /aethryon contenido
