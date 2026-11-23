@@ -37,6 +37,8 @@ export default function useHomeFrontier(root: RefObject<HTMLElement | null>) {
             const r = hero.getBoundingClientRect();
             hero.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
             hero.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+            hero.style.setProperty('--px', String(((e.clientX - r.left) / r.width) * 2 - 1));
+            hero.style.setProperty('--py', String(((e.clientY - r.top) / r.height) * 2 - 1));
           });
         };
         hero.addEventListener('pointermove', move);

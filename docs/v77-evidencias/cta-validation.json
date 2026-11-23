@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T06:22:08.802Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base 0a90443 + working tree",
+  "capturedAt": "2026-11-23T06:32:24.042Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base 9a35d02 + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -55,7 +55,7 @@
         "rect": {
           "x": 42.5,
           "y": 305.015625,
-          "width": 249.140625,
+          "width": 250.140625,
           "height": 61.78125
         },
         "viewport": [
@@ -70,9 +70,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 303.640625,
+          "x": 304.640625,
           "y": 311.90625,
-          "width": 249.15625,
+          "width": 250.15625,
           "height": 48
         },
         "viewport": [
@@ -91,7 +91,7 @@
         "rect": {
           "x": 79.203125,
           "y": 514.484375,
-          "width": 262.484375,
+          "width": 236.9375,
           "height": 60.9375
         },
         "viewport": [
@@ -106,9 +106,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 357.6875,
+          "x": 332.140625,
           "y": 520.953125,
-          "width": 141.546875,
+          "width": 163.59375,
           "height": 48
         },
         "viewport": [
@@ -183,7 +183,7 @@
       "url": "http://127.0.0.1:3118/soluciones/",
       "focus": {
         "href": "/soluciones/",
-        "outline": "rgb(230, 163, 0) solid 3px",
+        "outline": "rgb(255, 215, 102) solid 3px",
         "outlineOffset": "3px",
         "tag": "A",
         "text": "CONOCER NUESTROS PRODUCTOS"
@@ -193,7 +193,7 @@
   "keyboard": {
     "focus": {
       "href": "/soluciones/",
-      "outline": "rgb(230, 163, 0) solid 3px",
+      "outline": "rgb(255, 215, 102) solid 3px",
       "outlineOffset": "3px",
       "tag": "A",
       "text": "CONOCER NUESTROS PRODUCTOS"
@@ -224,7 +224,7 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "f19b7507b3b5bb1aef237302238441358c01bd6dec17c1d5b8ed74ca6ec05272",
+    "src/components/HeroSection.tsx": "737fae4f560e844e673733f64d8ff04034e164a9e9d7e16c33625550586edb66",
     "src/components/Footer.tsx": "05747f83843a2967d46f4f869b92a67275d8a28e11f489d0d3911412c070af6e",
     "src/components/AethryonCore.tsx": "47809fadcdfd1153bb652f9887dd8637a65278ea71a4a0731863515ca6ef862f",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
