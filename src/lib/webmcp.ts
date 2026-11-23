@@ -5,7 +5,7 @@ import {ENTITIES} from '../config/entity';
 const PAGES = [
   ['/', 'Inicio'], ['/soluciones/', 'Soluciones'], ['/aethryon/', 'AETHRYON'], ['/casos/', 'Casos'],
   ['/nosotros/', 'Nosotros'], ['/trayectoria/', 'Trayectoria'], ['/recursos/', 'Recursos'],
-  ['/aviso-de-privacidad/', 'Aviso de privacidad'], ['/terminos/', 'Términos'],
+  ['/aviso-de-privacidad/', 'Aviso de privacidad'], ['/terminos/', 'Términos y condiciones'], ['/contacto-rauvia/', 'Contacto'],
 ];
 const asText = (value: unknown) => ({content: [{type: 'text', text: JSON.stringify(value, null, 2)}]});
 const noInput = {type: 'object', properties: {}, additionalProperties: false};

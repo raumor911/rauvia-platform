@@ -1,0 +1,139 @@
+/* Landings comerciales y médicas · CUERPO de la página, look actual de RAUVIA. Solo presentación: mismo texto,
+   mismo orden, mismos enlaces. Se carga desde landingFx.css, así que alcanza a las diez páginas.
+   Tres piezas:
+   1. Secciones claras: retícula tenue, filo dorado entre secciones, etiquetas con punto, tarjetas con foco dorado.
+   2. Bandas oscuras "instrumento" (retícula triangular, brillo, filo dorado) en las secciones de maqueta o galería.
+   3. Bandas azules que ya existían: se armonizan con las nuevas.
+   Sin JS y con movimiento reducido todo queda estático y completo. */
+
+.lf-page {
+  --lf-gold: #E6A300; --lf-gold-l: #FFD766; --lf-navy: #0A2540; --lf-abyss: #051320; --lf-blue: #1E4A74;
+  /* retícula triangular: tres familias de líneas a 0°, 60° y 120° (lado 64 px → separación 55.4 px) */
+  --lf-tri:
+    repeating-linear-gradient(0deg, transparent 0 54.4px, rgba(150, 190, 235, .075) 54.4px 55.4px),
+    repeating-linear-gradient(60deg, transparent 0 54.4px, rgba(150, 190, 235, .075) 54.4px 55.4px),
+    repeating-linear-gradient(120deg, transparent 0 54.4px, rgba(150, 190, 235, .075) 54.4px 55.4px);
+}
+
+/* =====================================================================
+   1 · SECCIONES CLARAS
+   ===================================================================== */
+.lf-page section:not(.lf-hero):not(.lf-final) {
+  background-image:
+    linear-gradient(90deg, transparent, rgba(230, 163, 0, .55) 50%, transparent),
+    radial-gradient(55% 60% at 100% 0%, rgba(30, 74, 116, .07), transparent 70%),
+    linear-gradient(rgba(30, 74, 116, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 74, 116, .035) 1px, transparent 1px);
+  background-size: 100% 1px, auto, 48px 48px, 48px 48px;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  background-position: top center, 100% 0, 0 0, 0 0;
+}
+.lf-page section:not(.lf-hero):not(.lf-final) h2 { letter-spacing: -.022em; text-wrap: balance; }
+
+/* etiquetas de sección: punto dorado con brillo en lugar de la raya o el número suelto */
+.lf-page :is(.med-eyebrow, .r56-eyebrow, .pcsp-eyebrow):not(.lf-hero *):not(.lf-final *) {
+  display: inline-flex; align-items: center; gap: .65em; width: fit-content; max-width: 100%;
+  padding: .38em .9em .38em .8em; border-radius: 999px; border: 1px solid rgba(30, 74, 116, .16);
+  background: linear-gradient(135deg, rgba(10, 37, 64, .06), rgba(30, 74, 116, .03));
+  color: var(--lf-blue); font-weight: 700;
+}
+.lf-page :is(.med-eyebrow, .r56-eyebrow, .pcsp-eyebrow):not(.lf-hero *):not(.lf-final *)::before {
+  content: ''; flex: none; width: 7px; height: 7px; border-radius: 50%; background: var(--lf-gold);
+  box-shadow: 0 0 0 3px rgba(230, 163, 0, .18), 0 0 10px rgba(230, 163, 0, .7);
+}
+.lf-page .r56-eyebrow:not(.lf-hero *):not(.lf-final *) { border-left-width: 1px; border-image: none; }
+.lf-page .pcsp-gold-line:not(.lf-hero *) { box-shadow: 0 0 10px rgba(230, 163, 0, .55); }
+
+/* tarjetas */
+.lf-page :is(.med-card, .pcsp-card, .pcsp-related-card, .r56-intro-card, .med-plan, .esp-example, .esp-featured, .hub-figure):not(.lf-hero *),
+.lf-page.lf-frente section:not(.lf-hero):not(.lf-final) :is(.rounded-xl, .rounded-2xl).border:not(.bg-rauvia-navy):not([class*="bg-rauvia-navy"]) {
+  border-color: rgba(30, 74, 116, .15);
+  background-image: linear-gradient(180deg, #fff, #f6f9fc);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .9) inset, 0 18px 34px -26px rgba(10, 37, 64, .45);
+  transition: transform .45s var(--fx-ease, ease), box-shadow .45s var(--fx-ease, ease), border-color .35s;
+}
+.lf-page :is(.med-card, .pcsp-card, .pcsp-related-card, .r56-intro-card, .med-plan):not(.lf-hero *):hover {
+  border-color: rgba(230, 163, 0, .5);
+  box-shadow: 0 2px 0 var(--lf-gold) inset, 0 30px 48px -28px rgba(10, 37, 64, .5);
+}
+/* listas en caja (síntomas, señales) con filo azul a la izquierda */
+.lf-page.r56-landing li.rounded-lg { border-left: 3px solid var(--lf-blue); background-image: linear-gradient(90deg, rgba(30, 74, 116, .06), transparent 60%); }
+
+/* botones del cuerpo: primario azul con brillo dorado al pasar */
+.lf-page section:not(.lf-hero):not(.lf-final) :is(.med-button:not(.med-button-secondary), .pcsp-button-primary) {
+  background: linear-gradient(135deg, #0A2540, #1E4A74); border-color: transparent; color: #fff;
+  box-shadow: 0 14px 28px -14px rgba(10, 37, 64, .7);
+  transition: transform .35s var(--fx-ease, ease), box-shadow .35s var(--fx-ease, ease);
+}
+.lf-page section:not(.lf-hero):not(.lf-final) :is(.med-button:not(.med-button-secondary), .pcsp-button-primary):hover {
+  transform: translateY(-2px); box-shadow: 0 18px 34px -14px rgba(10, 37, 64, .8), 0 0 0 2px rgba(230, 163, 0, .55);
+}
+.lf-page :is(.med-text-link, .pcsp-text-link) { text-decoration-color: var(--lf-gold); text-underline-offset: 5px; }
+
+/* =====================================================================
+   2 · BANDAS OSCURAS "INSTRUMENTO"
+   ===================================================================== */
+.lf-page :is(.hub-showcase, .hub-mobile-section, .esp-gallery-section, .esp-local, .sl-build, .sl-options, .med-showcase, .med-why, .r56-authority, .pcsp-insight, .lf-frente .bg-rauvia-navy-dark):not(.lf-final) {
+  --med-ink: #fff; --med-muted: #c3d3e5; --med-teal: #FFD766; --med-line: rgba(255, 255, 255, .16);
+  --pcsp-ink: #fff; --pcsp-muted: #c3d3e5; --pcsp-line: rgba(255, 255, 255, .16);
+  position: relative; isolation: isolate; color: #c3d3e5;
+  background-color: var(--lf-navy);
+  background-image:
+    linear-gradient(90deg, transparent, var(--lf-gold) 20%, var(--lf-gold-l) 50%, var(--lf-gold) 80%, transparent),
+    radial-gradient(50% 55% at 85% 12%, rgba(47, 106, 163, .38), transparent 70%),
+    radial-gradient(40% 45% at 8% 100%, rgba(230, 163, 0, .1), transparent 70%),
+    var(--lf-tri),
+    linear-gradient(180deg, #0A2540 0%, #071a2e 60%, #051320 100%);
+  background-size: 100% 2px, auto, auto, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, no-repeat;
+  background-position: top center, 0 0, 0 0, 0 0, 0 0;
+  box-shadow: inset 0 -1px 0 rgba(255, 215, 102, .22);
+}
+/* texto */
+.lf-page :is(.hub-showcase, .hub-mobile-section, .esp-gallery-section, .esp-local, .sl-build, .sl-options, .med-showcase, .med-why, .r56-authority, .pcsp-insight, .lf-frente .bg-rauvia-navy-dark):not(.lf-final) {
+  & :is(h2, h3, h4, strong, summary, .text-rauvia-navy, .text-rauvia-text) { color: #fff !important; text-shadow: 0 2px 24px rgba(5, 19, 32, .7); }
+  & :is(p, li, figcaption, dd, small, .text-slate-500, .text-slate-600, .text-slate-700, .text-slate-300, .text-rauvia-gray) { color: #c3d3e5 !important; }
+  & :is(.med-eyebrow, .r56-eyebrow, .pcsp-eyebrow) { color: var(--lf-gold-l); border-color: rgba(255, 215, 102, .3); background: rgba(255, 255, 255, .05); }
+  & a:not([class*="button"]):not([class*="bg-"]):not(figure a):not(.esp-enlarge) { color: var(--lf-gold-l); }
+  /* tarjetas y cajas: vidrio sobre fondo oscuro */
+  & :is(.med-card, .pcsp-card, .r56-intro-card, .med-plan, .esp-example, .esp-featured, article, .rounded-xl, .rounded-2xl, .rounded-lg):not(img):not(a[class*="bg-white"]):not(figure *) {
+    background-color: rgba(255, 255, 255, .055); background-image: none; border-color: rgba(255, 255, 255, .15) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 24px 40px -28px rgba(0, 0, 0, .8);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  & :is(.med-card, .pcsp-card, .esp-example):hover { border-color: rgba(255, 215, 102, .45) !important; box-shadow: inset 0 2px 0 var(--lf-gold), 0 30px 50px -28px rgba(0, 0, 0, .9) !important; }
+  & svg { filter: drop-shadow(0 0 8px rgba(230, 163, 0, .45)); }
+  /* las maquetas (imagen con fondo claro) se enmarcan, no se oscurecen */
+  & :is(figure, .hub-figure, .esp-wide-figure) { border-radius: 20px; background: transparent; border: 1px solid rgba(255, 215, 102, .28); box-shadow: 0 0 0 6px rgba(255, 255, 255, .04), 0 50px 80px -40px rgba(0, 0, 0, .95), 0 0 70px -20px rgba(47, 106, 163, .6); }
+  & figure img { border-radius: 19px; }
+  /* botones: dorado como en el hero */
+  & :is(.med-button:not(.med-button-secondary), .pcsp-button-primary, a.inline-flex.bg-white) { background: linear-gradient(135deg, #FFD766, #F2B820 55%, #E6A300); color: #0A2540 !important; border-color: transparent; box-shadow: 0 14px 30px -10px rgba(230, 163, 0, .6); }
+  & .med-button-secondary { background: rgba(255, 255, 255, .06); color: #fff; border-color: rgba(255, 255, 255, .28); }
+  /* fichas y pestañas propias de cada familia */
+  & .esp-local-flow > span { background: rgba(255, 255, 255, .07) !important; border: 1px solid rgba(255, 255, 255, .2) !important; color: #e8f0f8 !important; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1); }
+  & .esp-local-flow > span svg { color: var(--lf-gold-l); }
+  & .med-example-controls button { background: rgba(255, 255, 255, .06); color: #dce7f3; border: 1px solid rgba(255, 255, 255, .26); transition: transform .3s var(--fx-ease, ease), background .3s, border-color .3s; }
+  & .med-example-controls button:hover { border-color: var(--lf-gold-l); color: #fff; }
+  & .med-example-controls button span { color: var(--lf-gold-l); }
+  & .med-example-controls button[aria-pressed="true"] { background: linear-gradient(135deg, #FFD766, #F2B820 55%, #E6A300); color: #0A2540; border-color: transparent; box-shadow: 0 10px 24px -10px rgba(230, 163, 0, .7); }
+  & .med-example-controls button[aria-pressed="true"] span { color: #0A2540; }
+  & :is(.med-browser, .hub-figure, .esp-wide-figure) { --med-ink: #122e3a; --med-muted: #526773; --med-teal: #166158; --med-line: #dbe5e5; color: #122e3a; }
+  & .med-browser :is(h2, h3, h4, strong) { color: #122e3a !important; text-shadow: none; }
+  & .med-browser :is(p, li, small) { color: #526773 !important; }
+}
+/* chips blancos de la banda (sl-build): texto oscuro legible */
+.lf-page .sl-build span:not(.med-eyebrow) { color: #0A2540; }
+/* paneles de maqueta con interior claro: conservan sus tintas propias */
+
+/* =====================================================================
+   3 · FRENTE COMERCIAL · bloques propios
+   ===================================================================== */
+/* pregunta Sí / No: panel de instrumento */
+.lf-frente section :is(.bg-rauvia-navy):is(div) { background-image: var(--lf-tri), radial-gradient(60% 80% at 50% 0%, rgba(47, 106, 163, .35), transparent 70%); border: 1px solid rgba(255, 215, 102, .25); box-shadow: 0 40px 70px -40px rgba(5, 19, 32, .9), 0 0 0 1px rgba(255, 255, 255, .04) inset; }
+/* planes: el "Pro" lleva el filo dorado */
+.lf-frente #niveles :is(.border-t-4, [class*="border-rauvia-blue"], [class*="border-rauvia-navy"]) { border-top-color: var(--lf-gold) !important; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .lf-page :is(.hub-showcase, .esp-gallery-section, .sl-build, .med-showcase) figure { transition: box-shadow .5s var(--fx-ease, ease), transform .5s var(--fx-ease, ease); }
+  .lf-page :is(.hub-showcase, .esp-gallery-section, .sl-build, .med-showcase) figure:hover { transform: translateY(-4px); box-shadow: 0 0 0 6px rgba(255, 215, 102, .08), 0 56px 90px -40px rgba(0, 0, 0, .95), 0 0 80px -16px rgba(47, 106, 163, .8); }
+}

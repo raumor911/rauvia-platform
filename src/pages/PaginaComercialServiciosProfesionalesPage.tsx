@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Compass, MessageCircle, ShieldCheck, Layers, Route, Search, Plus } from 'lucide-react';
 import './PaginaComercialServiciosProfesionalesPage.css';
@@ -54,10 +58,13 @@ function SectionHeading({ label, children, id }: { label: string; children: Reac
 }
 
 export default function PaginaComercialServiciosProfesionalesPage() {
-  return <article className="pcsp">
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
+  return <article ref={root as any} className="fx-page lf-page pcsp">
+<div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-comercial-servicios-profesionales" />
     
-    <section className="pcsp-hero" aria-labelledby="pcsp-title">
+    <section className="fx-hero lf-hero pcsp-hero" aria-labelledby="pcsp-title"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" />
       <div className="pcsp-wrap">
         <p className="pcsp-eyebrow"><span className="pcsp-gold-line" /> Frente Comercial · Servicios profesionales</p>
         <div className="pcsp-hero-grid">
@@ -123,6 +130,6 @@ export default function PaginaComercialServiciosProfesionalesPage() {
 
     <section className="pcsp-section pcsp-white" aria-labelledby="pcsp-reading"><div className="pcsp-wrap"><SectionHeading label="Para seguir pensando tu caso" id="pcsp-reading">Artículos relacionados.</SectionHeading><div className="pcsp-readings">{articles.map(([name, slug], i) => <Link to={`/recursos/${slug}/`} key={slug}><span className="pcsp-reading-number">0{i + 1}</span><span>{name}</span><ArrowRight size={18} aria-hidden="true" /></Link>)}</div><Link className="pcsp-text-link pcsp-more" to="/recursos/">Ver todos los recursos <ArrowRight size={17} aria-hidden="true" /></Link></div></section>
 
-    <section className="pcsp-section pcsp-final" aria-labelledby="pcsp-final"><div className="pcsp-wrap"><div className="pcsp-final-inner"><p className="pcsp-eyebrow">Podemos empezar por entender tu caso</p><h2 id="pcsp-final">Si tu servicio depende de confianza, tu página debería ayudar a construirla.</h2><p className="pcsp-section-intro">Si sientes que tu experiencia, tu método o tu valor no se están entendiendo con suficiente claridad, podemos revisarlo.</p><p>No se trata de hacer una página más grande. Se trata de construir una página más útil para quien está evaluando contratarte.</p><div className="pcsp-actions"><ContactLink /><Link className="pcsp-text-link" to="/frente-comercial/">Ver Frente Comercial <ArrowRight size={17} aria-hidden="true" /></Link></div></div></div></section>
+    <section className="fx-dark lf-final pcsp-section pcsp-final" aria-labelledby="pcsp-final"><ConvergenceField flow="inward" className="fx-field" /><div className="pcsp-wrap"><div className="pcsp-final-inner"><p className="pcsp-eyebrow">Podemos empezar por entender tu caso</p><h2 id="pcsp-final">Si tu servicio depende de confianza, tu página debería ayudar a construirla.</h2><p className="pcsp-section-intro">Si sientes que tu experiencia, tu método o tu valor no se están entendiendo con suficiente claridad, podemos revisarlo.</p><p>No se trata de hacer una página más grande. Se trata de construir una página más útil para quien está evaluando contratarte.</p><div className="pcsp-actions"><ContactLink /><Link className="pcsp-text-link" to="/frente-comercial/">Ver Frente Comercial <ArrowRight size={17} aria-hidden="true" /></Link></div></div></div></section>
   </article>;
 }

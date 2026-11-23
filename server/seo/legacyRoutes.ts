@@ -41,7 +41,6 @@ export const RETIRED_PATHS = new Set<string>([
   '/test-madurez-sistemica',
   '/wp-content/uploads/2025/11/RAUVIA_PRESENTACION_GUIA_2025.pdf',
   '/sobre-rauvia',
-  '/contacto',
   '/consultoria_gratis',
   '/blindaje-operativo-2026',
   '/delegacion-hueca-caos-a-sistema-90-dias',
@@ -59,6 +58,7 @@ export const RETIRED_PATHS = new Set<string>([
 
 export const REDIRECT_PATHS = new Map<string, string>([
   ...V73_REPLACED_PATHS,
+  ['/contacto', '/contacto-rauvia/'],
   ['/blog', '/recursos/'],
   ['/servicios', '/soluciones/'],
   ['/componentes-ruta-90-dias-pymes', '/ruta-90/#componentes'],

@@ -1534,6 +1534,29 @@ export const routeSeo = {
     "twitterCard": "summary_large_image",
     "schema": []
   },
+  "/contacto-rauvia": {
+    "title": "Contacto | RAUVIA",
+    "description": "Habla con RAUVIA por WhatsApp o teléfono. Cuéntanos qué quieres resolver y te decimos si podemos ayudarte.",
+    "canonical": "https://rauvia.com.mx/contacto-rauvia/",
+    "ogTitle": "Contacto | RAUVIA",
+    "ogDescription": "Habla con RAUVIA por WhatsApp o teléfono. Cuéntanos qué quieres resolver y te decimos si podemos ayudarte.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "@id": "https://rauvia.com.mx/contacto-rauvia/#webpage",
+        "url": "https://rauvia.com.mx/contacto-rauvia/",
+        "name": "Contacto - RAUVIA",
+        "inLanguage": "es-MX",
+        "isPartOf": { "@id": "https://rauvia.com.mx/#website" },
+        "about": { "@id": "https://rauvia.com.mx/#organization" }
+      }
+    ]
+  },
   "/terminos": {
     "title": "Términos y Condiciones | RAUVIA",
     "description": "Términos y condiciones de RAUVIA Consulting.",

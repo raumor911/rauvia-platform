@@ -18,6 +18,7 @@ export const routeLoaders = {
   '/recursos/:slug': () => import('../pages/PostPage'),
   '/aviso-de-privacidad': () => import('../pages/AvisoPrivacidadPage'),
   '/terminos': () => import('../pages/TerminosPage'),
+  '/contacto-rauvia': () => import('../pages/ContactoPage'),
   '/frente-comercial': () => import('../pages/FrenteComercialPage'),
   '/sitio-web-comercial-para-pymes': () => import('../pages/SitioWebComercialPymesPage'),
   '/sitio-web-servicios-especializados': () => import('../pages/SitioWebServiciosEspecializadosPage'),

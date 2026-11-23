@@ -196,3 +196,54 @@ Semánticos: 0 · Contenido: 1
 Motivo: Recursos: filtros por tema y etiqueta y asociaciones en cada tarjeta (tarjeta como article con enlace extendido); las tarjetas de /api/wp/posts?view=resources ahora incluyen términos compactos. Mismo H1 y SEO; sin cambios semánticos
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json /recursos contenido
+
+## 2026-11-23 · ef82cd8
+Motivo: Capa frontera en 10 landings (frente-comercial, pymes, servicios especializados, servicios profesionales, 6 de médicos): hero oscuro con campo de convergencia, ruta comercial, cierre oscuro, barra de progreso. Solo presentación: 0 cambios semánticos (head, H1, texto). /recursos cambia por entradas vivas de WordPress al compilar.
+Semánticos: 0 · Contenido: 20
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+- rau004-main-baseline.json /recursos contenido
+- rau004-main-baseline.json /frente-comercial contenido
+- rau004-main-baseline.json /sitio-web-comercial-para-pymes contenido
+- rau004-main-baseline.json /sitio-web-servicios-especializados contenido
+- rau004-main-baseline.json /pagina-comercial-servicios-profesionales contenido
+- rau004-main-baseline.json /pagina-web-gratis-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-medicos-especialistas contenido
+- rau004-main-baseline.json /seo-local-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico contenido
+- rau004-main-baseline.json /pagina-web-medicos-agenda-whatsapp contenido
+
+## 2026-11-23 · ef82cd8
+Motivo: Enlaces de contacto y términos visibles en el pie de todas las páginas: nueva página /contacto-rauvia/ (ContactPage, datos públicos reales) y texto 'Términos y condiciones'. La única ruta nueva en la línea base es /contacto-rauvia; el resto es el texto del pie en el HTML excluido de landings, legales y casos. /contacto sigue retirada (410).
+Semánticos: 1 · Contenido: 12
+- rau004-main-baseline.json /contacto-rauvia (ruta nueva)
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /aviso-de-privacidad/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- v72-excluded-html.json /terminos/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+
+## 2026-11-23 · ef82cd8
+Motivo: /recursos cambia por entradas vivas de WordPress al compilar (no por código). /contacto pasa de 410 a redirección 301 hacia /contacto-rauvia/.
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /recursos contenido
+
+## 2026-11-23 · ef82cd8
+Motivo: /recursos cambia por entradas vivas de WordPress al compilar (no por código). Capa de cuerpo de las 10 landings (landingBody.css) es solo CSS: no cambia HTML.
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /recursos contenido

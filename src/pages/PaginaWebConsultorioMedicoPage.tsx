@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Check, Plus, UsersRound, Stethoscope, MapPin, MessageCircle, CalendarDays, Clock3, Phone, FileText, Search, Network, ShieldCheck, Building2, Compass, Layers3, UserRound } from 'lucide-react';
 import { ENTITIES } from '../config/entity';
@@ -74,14 +78,17 @@ function Figure({ name, caption }: { name: ImageName; caption: string }) {
   return <figure className="hub-figure"><a href={imagePath(name)} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar imagen: ${images[name][0]} (abre en otra pestaña)`}><Mockup name={name} /><span className="hub-enlarge">Ampliar ejemplo <ArrowUpRight size={14} aria-hidden="true" /></span></a><figcaption>{caption}</figcaption></figure>;
 }
 export default function PaginaWebConsultorioMedicoPage() {
-  return <div className="med-landing hub-landing cons-landing">
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
+  return <div ref={root as any} className="fx-page lf-page med-landing hub-landing cons-landing">
+<div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-web-para-consultorio-medico" />
     
     <div className="hub-topbar med-container">
       <nav className="hub-breadcrumb" aria-label="Ruta de navegación"><Link to="/">RAUVIA</Link><span aria-hidden="true">/</span><Link to="/soluciones/">Soluciones</Link><span aria-hidden="true">/</span><Link to={parentPath}>Página web para médicos</Link><span aria-hidden="true">/</span><span aria-current="page">Consultorio médico</span></nav>
       <nav className="hub-sections" aria-label="Secciones de la página"><a href="#profesionales">Profesionales</a><a href="#ubicacion">Ubicación</a><a href="#preguntas">Preguntas</a></nav>
     </div>
-    <section className="hub-hero"><div className="med-container hub-hero-grid">
+    <section className="fx-hero lf-hero hub-hero"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" /><div className="med-container hub-hero-grid">
       <div className="hub-hero-copy"><span className="med-eyebrow">Una presencia propia para tu consultorio</span><h1>Página web para consultorio médico que <span>organiza tu práctica en un solo lugar</span></h1>
         <p className="hub-lead">RAUVIA crea páginas web para consultorios médicos que reúnen profesionales, especialidades, ubicaciones, horarios y contacto. Las solicitudes de cita y las integraciones se acuerdan según la operación del consultorio.</p>
         <ul className="cons-hero-benefits"><li><Check size={15} aria-hidden="true" />Equipo y áreas de atención con contexto.</li><li><Check size={15} aria-hidden="true" />Información práctica fácil de consultar.</li><li><Check size={15} aria-hidden="true" />Un siguiente paso claro para contactar.</li></ul>
@@ -152,7 +159,7 @@ export default function PaginaWebConsultorioMedicoPage() {
     <section id="preguntas" className="med-section hub-faq-section"><div className="med-container"><Heading label="15 / Antes de definir el alcance" title="Preguntas frecuentes sobre páginas web para consultorios médicos" />
       <div className="med-faq">{faqs.map(([question,answer]) => <details key={question}><summary>{question}<Plus size={18} aria-hidden="true" /></summary><p>{answer}</p></details>)}</div><a className="med-text-link hub-faq-contact" href={whatsapp}>Cuéntanos cómo funciona tu consultorio <ArrowRight size={17} aria-hidden="true" /></a>
     </div></section>
-    <section className="med-section hub-final"><div className="med-container"><span className="med-eyebrow">Tu consultorio, explicado con claridad</span><h2>Organiza la presencia digital de tu consultorio</h2><p>Cuéntanos cómo funciona tu práctica y podemos ayudarte a definir qué información necesita tu página.</p><p>Una página web para consultorio médico puede reunir tu equipo, sedes y formas de contacto en una presencia propia.</p><div className="med-actions"><CTA /><CTA href={parentPath} secondary>Ver página web para médicos</CTA></div></div></section>
+    <section className="fx-dark lf-final med-section hub-final"><ConvergenceField flow="inward" className="fx-field" /><div className="med-container"><span className="med-eyebrow">Tu consultorio, explicado con claridad</span><h2>Organiza la presencia digital de tu consultorio</h2><p>Cuéntanos cómo funciona tu práctica y podemos ayudarte a definir qué información necesita tu página.</p><p>Una página web para consultorio médico puede reunir tu equipo, sedes y formas de contacto en una presencia propia.</p><div className="med-actions"><CTA /><CTA href={parentPath} secondary>Ver página web para médicos</CTA></div></div></section>
     <aside className="med-container hub-responsibility"><ShieldCheck size={22} aria-hidden="true" /><p>RAUVIA desarrolla infraestructura y presencia digital. La información médica, profesional y regulatoria publicada en cada proyecto debe ser proporcionada y validada por los profesionales responsables.</p></aside>
     <nav className="med-container med-related" aria-label="Soluciones y recursos relacionados"><p>Explora las alternativas para tu presencia digital.</p><div><Link to={parentPath}>Página web para médicos</Link><Link to="/pagina-web-gratis-para-medicos/">Página web gratis para médicos</Link><Link to="/pagina-web-para-medicos-especialistas/">Página para especialistas</Link><Link to="/seo-local-para-medicos/">SEO local para médicos</Link><Link to="/frente-comercial/">Frente Comercial</Link><Link to="/soluciones/">Soluciones RAUVIA</Link><Link to="/recursos/">Recursos y perspectivas</Link></div></nav>
   </div>;

@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight, ArrowUpRight, Check, Plus, UserRound, Stethoscope, MapPin,
@@ -82,14 +86,17 @@ function Figure({ name, caption, sizes }: { name: ImageName; caption: string; si
   return <figure className="hub-figure"><a href={imagePath(name)} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar imagen: ${images[name][0]} (abre en otra pestaña)`}><Mockup name={name} sizes={sizes} /><span className="hub-enlarge">Ampliar ejemplo <ArrowUpRight size={14} aria-hidden="true" /></span></a><figcaption>{caption}</figcaption></figure>;
 }
 export default function PaginaWebMedicosPage() {
-  return <div className="med-landing hub-landing">
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
+  return <div ref={root as any} className="fx-page lf-page med-landing hub-landing">
+<div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-web-para-medicos" />
     
     <div className="hub-topbar med-container">
       <nav className="hub-breadcrumb" aria-label="Ruta de navegación"><Link to="/">RAUVIA</Link><span aria-hidden="true">/</span><Link to="/soluciones/">Soluciones</Link><span aria-hidden="true">/</span><span aria-current="page">Página web para médicos</span></nav>
       <nav className="hub-sections" aria-label="Secciones de la página"><a href="#incluye">Qué puede incluir</a><a href="#solucion">Tu solución</a><a href="#preguntas">Preguntas</a></nav>
     </div>
-    <section className="hub-hero">
+    <section className="fx-hero lf-hero hub-hero"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" />
       <div className="med-container hub-hero-grid">
         <div className="hub-hero-copy"><span className="med-eyebrow">Presencia digital para tu práctica</span>
           <h1>Página web para médicos que necesitan una presencia <span>profesional, clara y fácil de encontrar</span></h1>
@@ -168,7 +175,7 @@ export default function PaginaWebMedicosPage() {
       <div className="med-faq">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<Plus size={18} aria-hidden="true" /></summary><p>{answer}</p></details>)}</div>
       <a className="med-text-link hub-faq-contact" href={whatsapp}>Cuéntanos qué necesitas y revisamos el alcance<ArrowRight size={17} aria-hidden="true" /></a>
     </div></section>
-    <section className="med-section hub-final"><div className="med-container">
+    <section className="fx-dark lf-final med-section hub-final"><ConvergenceField flow="inward" className="fx-field" /><div className="med-container">
       <span className="med-eyebrow">Una presencia que corresponde a tu práctica</span><h2>Construye una presencia médica que explique mejor tu práctica</h2>
       <p>Cuéntanos qué necesitas y te ayudamos a identificar qué tipo de página corresponde mejor a tu práctica.</p><p>Tu página web para médicos puede empezar por una base clara y crecer contigo.</p>
       <div className="med-actions"><CTA /><CTA href={freePath} secondary>Empezar con una página gratuita</CTA></div>

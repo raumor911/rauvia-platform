@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ArrowUpRight, Check, Plus, UserRound, UsersRound, Stethoscope, MapPin, Clock3, CalendarDays, MessageCircle, Phone, FileText, Search, Network, ShieldCheck, ChartNoAxesCombined } from 'lucide-react';
 import { ENTITIES } from '../config/entity';
@@ -86,14 +90,17 @@ function RequestExample() {
   </div>;
 }
 export default function PaginaWebMedicosAgendaWhatsappPage() {
-  return <div className="med-landing hub-landing agenda-landing">
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
+  return <div ref={root as any} className="fx-page lf-page med-landing hub-landing agenda-landing">
+<div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-web-medicos-agenda-whatsapp" />
     
     <div className="hub-topbar med-container">
       <nav className="hub-breadcrumb" aria-label="Ruta de navegación"><Link to="/">RAUVIA</Link><span aria-hidden="true">/</span><Link to="/soluciones/">Soluciones</Link><span aria-hidden="true">/</span><Link to={parentPath}>Página web para médicos</Link><span aria-hidden="true">/</span><span aria-current="page">Agenda y contacto</span></nav>
       <nav className="hub-sections" aria-label="Secciones de la página"><a href="#solicitud">Solicitud de cita</a><a href="#contacto">Contacto</a><a href="#preguntas">Preguntas</a></nav>
     </div>
-    <section className="hub-hero"><div className="med-container hub-hero-grid">
+    <section className="fx-hero lf-hero hub-hero"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" /><div className="med-container hub-hero-grid">
       <div className="hub-hero-copy"><span className="med-eyebrow">De la información al primer contacto</span><h1>Página web para médicos con agenda y WhatsApp <span>para facilitar el primer contacto</span></h1>
         <p className="hub-lead">Haz que una persona pueda entender qué atiendes, dónde estás y cómo solicitar una cita sin recorrer varios canales para encontrarte.</p>
         <div className="med-actions"><CTA /><CTA href={parentPath} secondary>Ver página web para médicos</CTA></div>
@@ -125,7 +132,7 @@ export default function PaginaWebMedicosAgendaWhatsappPage() {
     <section className="med-section med-container"><Heading label="16 / Para distintas prácticas" title="¿Para quién puede funcionar?" /><div className="hub-audience-grid">{['Médicos independientes','Médicos especialistas','Profesionales en consulta privada','Consultorios con varios médicos','Prácticas con varias ubicaciones','Médicos que coordinan citas actualmente por mensajes','Profesionales que quieren ordenar su primer contacto digital'].map((x,i) => <article key={x}><span>0{i+1}</span><h3>{x}</h3></article>)}</div><Link className="med-text-link" to="/pagina-web-para-medicos-especialistas/">Conocer páginas para médicos especialistas <ArrowRight size={17} aria-hidden="true" /></Link></section>
     <section className="med-section hub-boundaries"><div className="med-container"><Heading label="17 / Alcance definido" title="Una experiencia clara sin promesas irreales" text="RAUVIA diseña y desarrolla el recorrido de información y contacto. Los resultados dependen también de la operación y atención de cada práctica." /><ul>{['Más pacientes garantizados o una cantidad determinada de citas.','Posiciones específicas en buscadores o recomendaciones de sistemas de IA.','Disponibilidad o confirmación automática si no existe una integración real.','Respuestas automatizadas fuera del alcance acordado.','Resultados comerciales garantizados.'].map(x => <li key={x}>{x}</li>)}</ul><p className="agenda-note">Estos resultados y funciones no se prometen como parte de una página por sí sola.</p></div></section>
     <section id="preguntas" className="med-section med-container med-faq"><div><Heading label="18 / Dudas antes de comenzar" title="Preguntas frecuentes sobre páginas médicas con agenda y WhatsApp" /><p>El proceso puede partir de cómo coordinas tus citas hoy.</p></div><div>{faqs.map(([question,answer]) => <details key={question}><summary>{question}<Plus size={18} aria-hidden="true" /></summary><p>{answer}</p></details>)}</div></section>
-    <section className="med-section hub-final"><div className="med-container"><span className="med-eyebrow">Página web para médicos con agenda y WhatsApp</span><h2>Haz más claro el camino entre encontrarte y contactarte</h2><p>Cuéntanos cómo gestionas actualmente tus citas y podemos ayudarte a diseñar una ruta de contacto adecuada para tu práctica.</p><div className="med-actions"><CTA /><CTA href={parentPath} secondary>Ver página web para médicos</CTA></div><span className="med-final-note">Podemos adaptar el flujo según cómo atiendes actualmente.</span></div></section>
+    <section className="fx-dark lf-final med-section hub-final"><ConvergenceField flow="inward" className="fx-field" /><div className="med-container"><span className="med-eyebrow">Página web para médicos con agenda y WhatsApp</span><h2>Haz más claro el camino entre encontrarte y contactarte</h2><p>Cuéntanos cómo gestionas actualmente tus citas y podemos ayudarte a diseñar una ruta de contacto adecuada para tu práctica.</p><div className="med-actions"><CTA /><CTA href={parentPath} secondary>Ver página web para médicos</CTA></div><span className="med-final-note">Podemos adaptar el flujo según cómo atiendes actualmente.</span></div></section>
     <aside className="med-container hub-responsibility"><ShieldCheck size={23} aria-hidden="true" /><div><h2>Información validada por sus responsables</h2><p>RAUVIA desarrolla infraestructura y presencia digital. La información médica, profesional y regulatoria publicada en cada proyecto debe ser proporcionada y validada por los profesionales responsables.</p><p>Los formularios destinados únicamente a solicitudes comerciales o de cita no deben utilizarse como sustituto de un sistema clínico.</p></div></aside>
     <nav className="med-container med-related" aria-label="Soluciones y recursos relacionados"><span>Explora la solución según tu práctica</span><div><Link to={parentPath}>Página web para médicos</Link><Link to="/pagina-web-gratis-para-medicos/">Empezar gratis</Link><Link to="/pagina-web-para-medicos-especialistas/">Médicos especialistas</Link><Link to={consultorioPath}>Consultorio médico</Link><Link to="/seo-local-para-medicos/">SEO local para médicos</Link><Link to="/frente-comercial/">Frente Comercial</Link><Link to="/soluciones/">Soluciones</Link><Link to="/recursos/">Recursos</Link></div></nav>
   </div>;

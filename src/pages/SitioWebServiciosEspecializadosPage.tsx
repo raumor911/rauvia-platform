@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { 
   ArrowRight, CheckCircle2, XCircle, Layout, MessageCircle, 
@@ -10,14 +14,17 @@ import './CommercialLandings.css';
 const waLink = "https://wa.me/525586494076?text=Hola%20RAUVIA%2C%20quiero%20cotizar%20un%20sitio%20web%20para%20mi%20empresa%20de%20servicios%20especializados.%20Me%20gustar%C3%ADa%20definir%20el%20alcance%20seg%C3%BAn%20mis%20servicios%2C%20zona%20de%20atenci%C3%B3n%20y%20sitio%20actual.";
 
 export default function SitioWebServiciosEspecializadosPage() {
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
 
   return (
-    <article className="r56-landing r56-specialists">
+    <article ref={root as any} className="fx-page lf-page r56-landing r56-specialists">
+<div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/sitio-web-servicios-especializados" />
       
 
       {/* Hero */}
-      <section className="r56-section r56-hero pt-32 pb-24 px-4 bg-rauvia-bg">
+      <section className="fx-hero lf-hero r56-section r56-hero pt-32 pb-24 px-4 bg-rauvia-bg"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" />
         <div className="max-w-7xl mx-auto">
           <p className="r56-eyebrow">Frente Comercial · Servicios especializados</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -705,7 +712,7 @@ export default function SitioWebServiciosEspecializadosPage() {
       </section>
 
       {/* CTA Final */}
-      <section className="r56-section r56-final py-24 px-4 bg-rauvia-bg text-center">
+      <section className="fx-dark lf-final r56-section r56-final py-24 px-4 bg-rauvia-bg text-center"><ConvergenceField flow="inward" className="fx-field" />
         <div className="max-w-4xl mx-auto">
           <div>
             <h2 className="text-3xl md:text-4xl font-display text-rauvia-navy mb-8">

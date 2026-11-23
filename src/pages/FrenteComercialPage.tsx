@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, XCircle, ChevronDown, Check, X, Smartphone, Zap, Search, Shield, Layout, Settings } from 'lucide-react';
 import { RAUVIA_ENTITY } from '../config/entity';
@@ -19,6 +23,8 @@ const trackEvent = (eventName: string, params = {}) => {
 };
 
 export default function FrenteComercialPage() {
+  const root = useRef<HTMLDivElement>(null);
+  usePageFx(root);
   
   useEffect(() => {
     trackEvent('fce_view');
@@ -66,12 +72,15 @@ export default function FrenteComercialPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen pt-20">
+    <div ref={root} className="fx-page lf-page lf-frente bg-white min-h-screen">
+      <div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/frente-comercial" />
       
 
       {/* HERO */}
-      <section className="rv-frente-hero pt-16 md:pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+      <section className="rv-frente-hero fx-hero lf-hero pt-36 md:pt-44 pb-20 px-4 sm:px-6 lg:px-8">
+        <ConvergenceField origin={[0.5, 0.5]} className="fx-field" />
+        <div className="max-w-5xl mx-auto text-center relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-rauvia-navy leading-tight mb-8">
           Haz más fácil entender, confiar <br className="hidden md:block"/>y avanzar con tu empresa.
         </h1>
@@ -97,6 +106,7 @@ export default function FrenteComercialPage() {
         <p className="text-sm font-semibold text-slate-500 uppercase tracking-widest">
           Alcance claro · pago único · sin mensualidad obligatoria
         </p>
+      </div>
       </section>
 
       {/* SÍNTOMA (RECONOCIMIENTO) */}
@@ -416,7 +426,8 @@ export default function FrenteComercialPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="py-20 md:py-32 bg-rauvia-navy text-white text-center">
+      <section className="fx-dark lf-final py-20 md:py-32 bg-rauvia-navy text-white text-center">
+        <ConvergenceField flow="inward" className="fx-field" />
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8 leading-tight">
             Antes de hacer más, revisa cómo estás presentando lo que ya vendes.

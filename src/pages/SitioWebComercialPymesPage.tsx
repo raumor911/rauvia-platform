@@ -1,5 +1,9 @@
 import RouteSEO from '../seo/PageMetadata';
-import React from 'react';
+import React, { useRef } from 'react';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
 import { 
   ArrowRight, CheckCircle2, XCircle, Layout, MessageCircle, 
@@ -10,14 +14,17 @@ import './CommercialLandings.css';
 const waLink = "https://wa.me/525586494076?text=Hola%20RAUVIA,%20quiero%20revisar%20si%20mi%20sitio%20web%20est%C3%A1%20ayudando%20a%20vender.";
 
 export default function SitioWebComercialPymesPage() {
+  const root = useRef<HTMLElement>(null);
+  usePageFx(root);
 
   return (
-    <article className="r56-landing r56-pymes">
+    <article ref={root as any} className="fx-page lf-page r56-landing r56-pymes">
+<div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/sitio-web-comercial-para-pymes" />
       
 
       {/* Hero */}
-      <section className="r56-section r56-hero pt-32 pb-24 px-4 bg-rauvia-bg">
+      <section className="fx-hero lf-hero r56-section r56-hero pt-32 pb-24 px-4 bg-rauvia-bg"><ConvergenceField origin={[0.74, 0.5]} className="fx-field" />
         <div className="max-w-7xl mx-auto">
           <p className="r56-eyebrow">Frente Comercial · PyMES</p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -593,7 +600,7 @@ export default function SitioWebComercialPymesPage() {
       </section>
 
       {/* CTA Final */}
-      <section className="r56-section r56-final py-24 px-4 bg-rauvia-bg text-center">
+      <section className="fx-dark lf-final r56-section r56-final py-24 px-4 bg-rauvia-bg text-center"><ConvergenceField flow="inward" className="fx-field" />
         <div className="max-w-4xl mx-auto">
           <div>
             <h2 className="text-3xl md:text-4xl font-display text-rauvia-navy mb-8">
