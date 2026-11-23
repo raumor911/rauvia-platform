@@ -3,6 +3,7 @@ import {ArrowRight, CheckCircle2} from 'lucide-react';
 import {Link} from 'react-router-dom';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from './WhatsAppCTA';
+import TrayectoriaCatalog from './TrayectoriaCatalog';
 
 export type PresencePageKey = 'trayectoria' | 'rauviaweb' | 'caso-profesional';
 
@@ -102,6 +103,7 @@ export default function PresenceEditorialPage({page}: {page:PresencePageKey}) {
           <h1 className="max-w-4xl text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-8">{item.title}</h1>
           <p className="max-w-3xl text-lg md:text-xl leading-relaxed text-slate-700">{item.intro}</p>
           <nav aria-label="Siguientes pasos" className="flex flex-wrap gap-4 mt-10">
+            {page==='trayectoria'&&<a href="#planes" className="inline-flex items-center gap-2 min-h-12 px-5 py-3 rounded-lg bg-rauvia-navy text-white font-semibold hover:bg-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2">Ver planes y precios <ArrowRight size={16} aria-hidden="true"/></a>}
             {item.related.slice(0,2).map(link=><Link key={link.to} to={link.to} className="inline-flex items-center gap-2 min-h-12 px-5 py-3 rounded-lg border border-slate-300 bg-white font-semibold text-rauvia-navy hover:border-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2">{link.label}<ArrowRight size={16} aria-hidden="true"/></Link>)}
           </nav>
         </div>
@@ -118,6 +120,7 @@ export default function PresenceEditorialPage({page}: {page:PresencePageKey}) {
           </ol>
         </div>
       </section>
+      {page==='trayectoria'&&<TrayectoriaCatalog/>}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-6">{item.outcomeTitle}</h2>
         <p className="text-lg text-slate-700 leading-relaxed max-w-3xl mb-7">{item.outcome}</p>
