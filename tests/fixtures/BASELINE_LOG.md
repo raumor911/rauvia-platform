@@ -101,3 +101,19 @@ Semánticos: 0 · Contenido: 1
 Motivo: Nosotros: las tres ilustraciones SVG claras (problema estructural, proceso, convergencia AETHRYON) se reconstruyen como escenas nativas con el mismo texto visible; las imágenes originales y su texto alternativo siguen en el DOM, ocultas visualmente. Sin cambios de title, meta, canonical, JSON-LD ni H1
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json /nosotros contenido
+
+## 2026-11-23 · 1e1fa3b
+Motivo: Logo compacto (sin lema) en navbar y footer: cambia el src/clase de la imagen del footer en el HTML excluido; cambio solo de presentación
+Semánticos: 0 · Contenido: 12
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /aviso-de-privacidad/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- v72-excluded-html.json /terminos/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html

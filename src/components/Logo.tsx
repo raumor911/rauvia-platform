@@ -9,7 +9,8 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
   const [imgError, setImgError] = useState(false);
   const isFooter = variant === 'footer';
 
-  const logoSrc = "/media/RAUVIA_CONSULTING_LOGO.svg";
+  // Versión compacta (sin lema): a tamaño de barra el lema no se lee y ensuciaba el conjunto.
+  const logoSrc = "/media/RAUVIA_CONSULTING_LOGO_compact.svg";
 
   if (isFooter) {
     return (
@@ -18,7 +19,7 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
           <img 
             src={logoSrc} 
             alt="RAUVIA Consulting" 
-            className="h-8 md:h-9 w-auto object-contain brightness-0 invert"
+            className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
             onError={() => setImgError(true)}
           />
         ) : (
@@ -45,7 +46,7 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
         <img 
           src={logoSrc} 
           alt="RAUVIA Consulting" 
-          className="h-9 md:h-11 w-auto object-contain"
+          className="h-10 md:h-14 w-auto object-contain"
           onError={() => setImgError(true)}
         />
       ) : (
