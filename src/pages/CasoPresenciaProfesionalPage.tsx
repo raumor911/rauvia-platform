@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowDown, ArrowRight } from 'lucide-react';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import './CasoInfraestructuraB2BPage.css';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
 import './CasoPresenciaProfesionalPage.css';
+import '../styles/casosFx.css';
 
 const method = [
   ['Comprender', 'Trayectoria, especialidad, públicos y objetivos.'],
@@ -50,10 +54,13 @@ function CapabilityCircuit() {
 }
 
 export default function CasoPresenciaProfesionalPage() {
+  const mainRef = useRef<HTMLElement>(null);
+  usePageFx(mainRef);
   return <>
     <RouteSEO path="/casos/presencia-posicionamiento-profesional" />
-    <main className="rauvia-case-report pp-report">
-      <section className="report-hero"><div className="report-hero-inner">
+    <main ref={mainRef} className="rauvia-case-report pp-report fx-page fx-case">
+      <div className="fx-progress" aria-hidden="true" />
+      <section className="report-hero fx-hero"><ConvergenceField origin={[0.84, 0.5]} className="fx-field" /><div className="report-hero-inner">
         <Link className="pp-back" to="/casos/">Casos y evidencia <ArrowRight aria-hidden="true" /></Link>
         <span className="report-kicker">PROFESIONISTAS · IDENTIDAD DIGITAL · RELEVANCIA</span>
         <h1>De la experiencia profesional a una presencia que comunica capacidades</h1>
@@ -170,13 +177,13 @@ export default function CasoPresenciaProfesionalPage() {
           <p className="pp-evidence-note">Nuevas implementaciones podrán ampliar este caso con autorización y evidencia propia. Una referencia concreta ilustra la capacidad; no establece resultados universales.</p>
         </section>
 
-        <section className="report-cta pp-close"><span className="report-kicker">CONTINUAR LA CONVERSACIÓN</span>
+        </div>
+        <section className="report-cta pp-close cx-cta fx-dark"><ConvergenceField flow="inward" className="fx-field" /><div className="report-shell"><span className="report-kicker">CONTINUAR LA CONVERSACIÓN</span>
           <h2>Tu experiencia tiene valor. Hagamos que sea más fácil comprenderlo</h2>
           <p>Una presencia profesional puede conectar lo que has construido con las personas que necesitan entender tu aportación.</p>
-          <div><Link to="/rauviaweb/">Conocer RAUVIAWEB</Link>
+          <div className="cx-actions"><Link to="/rauviaweb/">Conocer RAUVIAWEB</Link>
             <WhatsAppCTA href="https://wa.me/525586494076?text=Hola%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20mi%20presencia%20profesional">Hablar con RAUVIA</WhatsAppCTA></div>
-        </section>
-      </div>
+        </div></section>
     </main>
   </>;
 }

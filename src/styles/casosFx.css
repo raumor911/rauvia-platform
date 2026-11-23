@@ -1,0 +1,150 @@
+/* Casos · capa visual "frontera" (índice y los dos casos). Solo presentación: mismo texto, H1 y SEO.
+   Reutiliza el lenguaje de pageFrontier.css (hero oscuro con campo, tarjetas, cierre oscuro que se funde con el footer). */
+
+/* =====================================================================
+   ÍNDICE · hero
+   ===================================================================== */
+.cs-hero .cs-title { color: #fff; line-height: 1.02; }
+.cs-hero .cs-lead { color: #e7effa; animation: fx-fade 1.2s ease .7s backwards; }
+.cs-hero .cs-copy { color: #b9c9db; animation: fx-fade 1.2s ease .9s backwards; }
+.cs-hero .cs-title::after { /* filo dorado bajo el título */
+  content: ''; display: block; width: 84px; height: 4px; margin-top: 1.4rem; border-radius: 3px;
+  background: linear-gradient(90deg, #1E4A74, #E6A300 65%, #FFD766); box-shadow: 0 0 18px rgba(230, 163, 0, .6);
+}
+.cs-scene-box { max-width: 560px; }
+.cs-scene-core { width: 30%; }
+
+/* =====================================================================
+   ÍNDICE · tarjetas de caso
+   ===================================================================== */
+.cs-cases { padding-top: clamp(4rem, 7vw, 6.5rem); }
+.cs-card {
+  position: relative; display: flex; flex-direction: column; overflow: hidden; isolation: isolate;
+  background: #fff; border-radius: 24px; border: 1px solid rgba(30, 74, 116, .12);
+  box-shadow: 0 40px 70px -48px rgba(10, 37, 64, .55), 0 0 0 1px rgba(255, 255, 255, .6) inset;
+  transition: transform .5s var(--fx-ease), box-shadow .5s var(--fx-ease), border-color .4s;
+}
+.cs-card:hover, .cs-card:focus-within { transform: translateY(-8px); border-color: rgba(230, 163, 0, .55); box-shadow: 0 54px 84px -44px rgba(10, 37, 64, .6), 0 0 0 1px rgba(230, 163, 0, .14), 0 0 70px -26px rgba(230, 163, 0, .4); }
+.cs-visual {
+  position: relative; padding: 1.4rem 1.2rem 1rem; overflow: hidden;
+  background:
+    radial-gradient(60% 80% at 80% 50%, rgba(30, 74, 116, .7), transparent 72%),
+    radial-gradient(46% 60% at 100% 100%, rgba(230, 163, 0, .16), transparent 70%),
+    linear-gradient(180deg, #0A2540, #051320);
+}
+.cs-visual::before { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px); background-size: 36px 36px; -webkit-mask-image: radial-gradient(80% 90% at 50% 50%, #000, transparent 80%); mask-image: radial-gradient(80% 90% at 50% 50%, #000, transparent 80%); }
+.cs-visual::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent, #E6A300 30%, #FFD766 50%, #E6A300 70%, transparent); box-shadow: 0 0 22px 2px rgba(230, 163, 0, .45); }
+.cs-scene { position: relative; display: block; width: 100%; height: auto; max-height: 240px; z-index: 1; }
+
+.cs-body { display: flex; flex-direction: column; flex: 1; padding: clamp(1.6rem, 3vw, 2.4rem); }
+.cs-kicker { display: inline-flex; align-items: center; gap: .7rem; margin-bottom: 1.2rem; font-size: .72rem; font-weight: 800; letter-spacing: .16em; color: #1E4A74; text-transform: uppercase; }
+.cs-kicker::before { content: ''; flex-shrink: 0; width: 30px; height: 3px; border-radius: 2px; background: linear-gradient(90deg, #1E4A74, #E6A300 70%, #FFD766); }
+.cs-h2 { margin-bottom: 1rem; font-size: clamp(1.45rem, 2.4vw, 1.95rem); font-weight: 800; line-height: 1.18; letter-spacing: -.02em; color: #0A2540; transition: color .3s; }
+.cs-card:hover .cs-h2 { color: #1E4A74; }
+.cs-p { flex: 1; margin-bottom: 2rem; line-height: 1.7; color: #475569; }
+.cs-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(30, 74, 116, .12); }
+.cs-metrics > div { min-width: 0; padding-left: 1rem; border-left: 3px solid #E6A300; }
+.cs-num { display: block; margin-bottom: .35rem; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 900; line-height: 1.1; font-variant-numeric: tabular-nums; background: linear-gradient(95deg, #0A2540, #1E4A74 70%, #2f6aa3); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.cs-arrow { margin-inline: .25rem; font-weight: 500; -webkit-text-fill-color: #E6A300; color: #E6A300; }
+.cs-cap { display: block; font-size: .7rem; font-weight: 700; letter-spacing: .08em; line-height: 1.45; color: #64748b; text-transform: uppercase; }
+.cs-link { position: relative; display: inline-flex; align-items: center; align-self: flex-start; gap: .6rem; margin-top: auto; font-weight: 800; color: #1E4A74; text-decoration: none; transition: color .3s; }
+.cs-link::after { content: ''; position: absolute; inset: -9999px; } /* toda la tarjeta es el enlace */
+.cs-card { contain: paint; }
+.cs-link svg { width: 1.25rem; height: 1.25rem; transition: transform .35s var(--fx-ease); }
+.cs-card:hover .cs-link { color: #0A2540; }
+.cs-card:hover .cs-link svg { transform: translateX(6px); }
+.cs-link:focus-visible { outline: 3px solid #E6A300; outline-offset: 6px; border-radius: 4px; }
+
+/* escenas animadas (el estado de reposo ya es el final legible) */
+.cs-dot { fill: #8cb9eb; opacity: .85; animation: cs-drop 6.5s ease-in infinite; animation-delay: var(--d); }
+.cs-dot-gold { fill: #FFD766; filter: drop-shadow(0 0 6px rgba(255, 215, 102, .9)); opacity: 1; animation-name: cs-pass; }
+@keyframes cs-drop { 0% { translate: 0 0; opacity: 0; } 12% { opacity: .85; } 60% { translate: var(--tx) var(--ty); opacity: .6; } 78%, 100% { translate: var(--tx) var(--ty); opacity: 0; } }
+@keyframes cs-pass { 0% { translate: 0 0; opacity: 0; } 12% { opacity: 1; } 78% { translate: var(--tx) var(--ty); opacity: 1; } 92%, 100% { translate: var(--tx) var(--ty); opacity: 0; } }
+.cs-sieve path:first-child, .cs-sieve path:nth-child(2) { animation: cs-flicker 3.4s ease-in-out infinite; }
+@keyframes cs-flicker { 0%, 100% { stroke-opacity: .35; } 50% { stroke-opacity: .85; } }
+.cs-hex { transform-origin: 320px 108px; animation: fx-breathe 4.2s ease-in-out infinite; }
+.cs-piece { fill: rgba(140, 185, 235, .26); stroke: rgba(140, 185, 235, .55); stroke-width: 1; animation: cs-gather 5.5s var(--fx-ease) infinite alternate; animation-delay: var(--d); }
+.cs-line { fill: rgba(255, 215, 102, .8); stroke: none; }
+.cs-card { --fx-ease: cubic-bezier(.2, .7, .2, 1); }
+@keyframes cs-gather { 0%, 12% { translate: var(--fx) var(--fy); opacity: .3; } 55%, 100% { translate: 0 0; opacity: 1; } }
+.cs-pulse { animation: fx-ping-svg 2.4s ease-out infinite; transform-origin: 338px 44px; }
+@keyframes fx-ping-svg { 0% { opacity: 1; transform: scale(1); } 70%, 100% { opacity: .15; transform: scale(2.4); } }
+.cs-hex-sm { transform-origin: 86px 60px; animation: fx-breathe 4.2s ease-in-out infinite; }
+
+@media (max-width: 767px) {
+  .cs-metrics { grid-template-columns: 1fr; gap: 1.2rem; }
+  .cs-scene-box { max-width: 380px; }
+  .cs-scene-box .fx-chip { left: clamp(25%, var(--x), 75%); padding: .35rem .55rem; font-size: .62rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-dot, .cs-piece, .cs-pulse, .cs-hex, .cs-hex-sm, .cs-sieve path { animation: none !important; }
+  .cs-card, .cs-card:hover { transform: none; }
+}
+
+/* =====================================================================
+   CASOS DETALLE · mismo lenguaje (hero oscuro con campo, números, paneles y cierre que se funde con el footer)
+   ===================================================================== */
+.rauvia-case-report.fx-case { padding-bottom: 0; }
+
+/* hero */
+.rauvia-case-report .fx-hero.report-hero { background: var(--fx-abyss); border-top: 0; }
+.rauvia-case-report .report-hero .report-hero-inner { position: relative; z-index: 2; padding: clamp(44px, 6vw, 84px) 0 clamp(40px, 5vw, 68px); }
+.rauvia-case-report .report-hero h1 { max-width: 920px; font-size: clamp(30px, 4.2vw, 54px); line-height: 1.06; letter-spacing: -.035em; margin: 18px 0 22px; }
+.rauvia-case-report .report-hero p { color: #c3d3e5; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.65; max-width: 860px; animation: fx-fade 1.2s ease .8s backwards; }
+.rauvia-case-report .fx-hero .report-kicker { color: #FFD766; }
+.rauvia-case-report .fx-hero .report-kicker::before { box-shadow: 0 0 12px rgba(230, 163, 0, .55); }
+.rauvia-case-report .fx-hero .pp-back { color: #9fc3ea; }
+.rauvia-case-report .fx-hero .pp-back:hover { color: #FFD766; }
+.rauvia-case-report .fx-hero .report-meta { margin-top: 34px; padding: 18px 22px; border: 1px solid rgba(255, 255, 255, .14); border-radius: 16px; background: linear-gradient(180deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .02)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 30px 50px -34px rgba(0, 0, 0, .8); }
+.rauvia-case-report .fx-hero .report-meta > div { border-left-color: rgba(255, 255, 255, .14); }
+.rauvia-case-report .fx-hero .report-meta > div > span:first-child { color: #8fb8e3; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+.rauvia-case-report .fx-hero .report-meta > div > span:last-child { color: #fff; font-size: 14px; font-weight: 600; }
+
+/* marcas de sección: filo dorado antes de cada rótulo */
+.fx-case .report-kicker::before { content: ''; display: inline-block; width: 26px; height: 3px; margin-right: 12px; vertical-align: middle; border-radius: 2px; background: linear-gradient(90deg, #1E4A74, #E6A300 70%, #FFD766); }
+
+/* cifras con degradado de marca */
+.rauvia-case-report .case-metrics > div > span:first-child,
+.rauvia-case-report .report-classification-stats span:first-child,
+.rauvia-case-report .case-benchmark-summary span:first-child {
+  background: linear-gradient(95deg, #0A2540, #0756db 75%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.rauvia-case-report .case-metrics > div, .rauvia-case-report .report-classification-stats > div { transition: transform .4s var(--fx-ease), background .4s; }
+.rauvia-case-report .case-metrics > div:hover, .rauvia-case-report .report-classification-stats > div:hover { transform: translateY(-3px); }
+
+/* paneles */
+.rauvia-case-report .report-finding { border-left: 0; border-radius: 16px; background: linear-gradient(180deg, #f6fafe, #eaf2fa); box-shadow: inset 4px 0 0 #E6A300, 0 30px 50px -36px rgba(10, 37, 64, .45); padding: 20px 24px; }
+.rauvia-case-report .report-transition { border-radius: 16px; background: linear-gradient(180deg, #f6fafe, #eaf2fa); box-shadow: 0 0 0 1px rgba(30, 74, 116, .1), 0 30px 54px -38px rgba(10, 37, 64, .45); }
+.rauvia-case-report .report-benchmark-panel { border-left: 0; padding: 22px 24px; border-radius: 16px; background: #fff; box-shadow: 0 0 0 1px rgba(30, 74, 116, .1), inset 4px 0 0 #E6A300, 0 36px 60px -42px rgba(10, 37, 64, .5); }
+.rauvia-case-report .report-circuit-panel { border-radius: 18px; box-shadow: 0 0 0 1px rgba(30, 74, 116, .12), 0 40px 70px -46px rgba(10, 37, 64, .55); transition: box-shadow .5s var(--fx-ease), transform .5s var(--fx-ease); }
+.rauvia-case-report .report-circuit-panel:hover { box-shadow: 0 0 0 1px rgba(230, 163, 0, .5), 0 50px 80px -44px rgba(10, 37, 64, .6), 0 0 60px -22px rgba(230, 163, 0, .35); transform: translateY(-3px); }
+.rauvia-case-report .case-findings > div { transition: transform .4s var(--fx-ease), background .4s; }
+.rauvia-case-report .case-findings > div:hover { transform: translateX(4px); }
+
+/* secciones oscuras propias del caso */
+.rauvia-case-report .report-blind { position: relative; background: linear-gradient(180deg, #0A2540, #071a2e 60%, #051320); }
+.rauvia-case-report .report-blind::before { content: ''; position: absolute; left: 50%; top: 0; width: min(70%, 900px); height: 1px; transform: translateX(-50%); background: linear-gradient(90deg, transparent, #E6A300, #FFD766, #E6A300, transparent); box-shadow: 0 0 36px 5px rgba(230, 163, 0, .26); }
+.rauvia-case-report .report-blind .report-kicker { color: #FFD766; }
+.rauvia-case-report .report-blind-steps > span { transition: color .3s; }
+.rauvia-case-report .report-blind-steps > span:hover { color: #FFD766; }
+.rauvia-case-report .report-blind-conclusion { color: #FFD766; text-shadow: 0 0 24px rgba(230, 163, 0, .45); }
+
+/* tablas */
+.rauvia-case-report .report-evidence-detail tbody tr, .rauvia-case-report .pp-table-wrap tbody tr { transition: background .3s, box-shadow .3s; }
+.rauvia-case-report .report-evidence-detail tbody tr:hover, .rauvia-case-report .pp-table-wrap tbody tr:hover { background: linear-gradient(90deg, rgba(230, 163, 0, .1), transparent 70%); box-shadow: inset 4px 0 0 #E6A300; }
+
+/* cierre oscuro a todo el ancho; se funde con el footer (retícula continua) */
+.rauvia-case-report .cx-cta.fx-dark { padding: clamp(4.5rem, 8vw, 7.5rem) 0 clamp(5rem, 9vw, 8rem); border-bottom: 0; text-align: center; }
+.rauvia-case-report .cx-cta > .report-shell { display: block; margin: 0 auto; max-width: 860px; position: relative; z-index: 2; }
+.rauvia-case-report .cx-cta .report-kicker { color: #FFD766; justify-content: center; }
+.rauvia-case-report .cx-cta h2 { color: #fff; font-size: clamp(26px, 3.6vw, 44px); line-height: 1.12; margin: 14px 0 20px; }
+.rauvia-case-report .cx-cta p { color: #b9c9db; font-size: clamp(15px, 1.5vw, 18px); max-width: 680px; margin: 0 auto; }
+.rauvia-case-report .cx-cta .cx-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 34px; }
+.rauvia-case-report .cx-cta .cx-actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 14px 28px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .28); background: rgba(255, 255, 255, .05); color: #fff; font-size: 14px; font-weight: 800; text-decoration: none; transition: transform .35s var(--fx-ease), background .3s, border-color .3s, box-shadow .3s; }
+.rauvia-case-report .cx-cta .cx-actions a:hover { background: rgba(255, 255, 255, .1); border-color: #FFD766; box-shadow: 0 0 24px -4px rgba(230, 163, 0, .5); transform: translateY(-2px); }
+.rauvia-case-report .cx-cta .cx-actions a:first-child { color: #0A2540; border-color: transparent; background: linear-gradient(135deg, #FFD766 0%, #F2B820 55%, #E6A300 100%); box-shadow: 0 14px 34px -10px rgba(230, 163, 0, .65), 0 0 0 1px rgba(255, 255, 255, .25) inset; }
+.rauvia-case-report .cx-cta .cx-actions a:first-child:hover { background: linear-gradient(135deg, #FFE08A 0%, #F6C334 55%, #E6A300 100%); }
+.rauvia-case-report .cx-cta .cx-actions a:focus-visible { outline: 3px solid #FFD766; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .rauvia-case-report .case-metrics > div:hover, .rauvia-case-report .report-circuit-panel:hover, .rauvia-case-report .case-findings > div:hover { transform: none; }
+}

@@ -3,7 +3,11 @@ import WhatsAppCTA from "../components/WhatsAppCTA";
 import React, { useEffect, useRef, useId } from 'react';
 import { ArrowRight, ArrowDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import ConvergenceField from '../components/ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import '../styles/pageFrontier.css';
 import './CasoInfraestructuraB2BPage.css';
+import '../styles/casosFx.css';
 
 
 /** Reusable SVG figure. Numeric coordinates, accessible names and no external assets. */
@@ -79,6 +83,8 @@ function DemandCircuit() {
 }
 
 export default function CasoInfraestructuraB2BPage() {
+  const mainRef = useRef<HTMLElement>(null);
+  usePageFx(mainRef);
   const benchmarkRef = useRef<HTMLDivElement>(null);
   const evidenceRef = useRef<HTMLDivElement>(null);
 
@@ -123,8 +129,9 @@ export default function CasoInfraestructuraB2BPage() {
       
       
       
-      <main className="rauvia-case-report">
-<section className="report-hero"><div className="report-hero-inner"><span className="report-kicker">
+      <main ref={mainRef} className="rauvia-case-report fx-page fx-case">
+<div className="fx-progress" aria-hidden="true" />
+<section className="report-hero fx-hero"><ConvergenceField origin={[0.84, 0.5]} className="fx-field" /><div className="report-hero-inner"><span className="report-kicker">
                 CASO · COMERCIAL Y CAPTURA DE DEMANDA
               </span>
               <h1 >
@@ -458,30 +465,28 @@ export default function CasoInfraestructuraB2BPage() {
                   </p>
                 </div>
               </div></section>
-<section className="report-cta"><h2 className="text-3xl md:text-4xl font-extrabold text-rauvia-navy mb-6 tracking-tight">
+</div>
+<section className="report-cta cx-cta fx-dark"><ConvergenceField flow="inward" className="fx-field" /><div className="report-shell"><h2>
                 ¿Tu empresa genera conversaciones, pero no está claro qué ocurre después?
               </h2>
-              <p className="text-lg text-slate-600 mb-10">
+              <p>
                 Antes de aumentar la inversión en captación, conviene entender qué parte de la demanda ya existente se está aprovechando y cuál se está perdiendo.
               </p>
               
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <div className="cx-actions">
                 <WhatsAppCTA 
                   href="https://wa.me/525586494076?text=Hola,%20me%20gustar%C3%ADa%20revisar%20el%20caso%20de%20mi%20empresa"
-                  className="inline-flex justify-center items-center px-8 py-4 bg-rauvia-blue text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
                   onClick={() => trackCtaClick('case_cta_review')}
                 >
                   Revisar mi caso
                 </WhatsAppCTA>
                 <Link 
                   to="/aethryon/"
-                  className="inline-flex justify-center items-center px-8 py-4 bg-white text-rauvia-navy border border-slate-200 font-bold rounded-lg hover:bg-slate-50 hover:border-slate-300 transition-colors"
                   onClick={() => trackCtaClick('case_aethryon_click')}
                 >
                   Conocer AETHRYON
                 </Link>
-              </div></section>
-</div>
+              </div></div></section>
       </main>
     </>
   );
