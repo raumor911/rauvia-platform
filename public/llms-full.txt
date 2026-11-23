@@ -84,6 +84,18 @@ Fuente: https://rauvia.com.mx/soluciones/
 AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA para interpretar señales, identificar fricción, evaluar oportunidades y estructurar decisiones ejecutables. No es una organización distinta de RAUVIA.
 Fuente: https://rauvia.com.mx/aethryon/
 
+## SEO para IA generativa (GEO)
+
+Fuente canónica: https://rauvia.com.mx/seo-ai/
+Auditoría GEO: https://rauvia.com.mx/seo-ai/auditoria/
+Implementación de SEO para IA: https://rauvia.com.mx/seo-ai/implementacion/
+
+RAUVIA prepara y verifica la información pública de una empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA. Son dos servicios distintos. La auditoría es un diagnóstico documentado, con evidencia por URL, una matriz de lo que las respuestas dicen u omiten sobre la oferta y un plan de corrección priorizado; no modifica el sitio y puede contratarse sola. La implementación es un programa de seis meses con cambios acordados cada mes y evidencia del antes y el después; no incluye rediseño, migración, producción masiva ni pauta.
+
+Precios publicados en esas páginas, antes de IVA: auditoría, $9,900 MXN en pago único; implementación, $29,900 MXN al mes durante 6 meses ($179,400 MXN en total, sin renovación automática en la propuesta). Alcance, condiciones de arranque, pausas, terminación y pago se confirman en la propuesta o contrato antes de contratar.
+
+RAUVIA no entrena modelos y no garantiza posiciones, menciones, citas, tráfico, leads ni ventas. Una mención en un asistente no demuestra una visita ni una venta. Los ejemplos de esas páginas son ficticios y no corresponden a clientes ni a resultados.
+
 ## Casos y recursos
 
 Casos: https://rauvia.com.mx/casos/

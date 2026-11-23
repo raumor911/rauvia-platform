@@ -26,6 +26,9 @@ export const routeLoaders = {
   '/casos/infraestructura-temporal-b2b': () => import('../pages/CasoInfraestructuraB2BPage'),
   '/casos/presencia-posicionamiento-profesional': () => import('../pages/CasoPresenciaProfesionalPage'),
   '/trayectoria': () => import('../pages/TrayectoriaPage'),
+  '/seo-ai': () => import('../pages/SeoAiPage'),
+  '/seo-ai/auditoria': () => import('../pages/SeoAiAuditoriaPage'),
+  '/seo-ai/implementacion': () => import('../pages/SeoAiImplementacionPage'),
   '/rauviaweb': () => import('../pages/RauviaWebPage'),
   '*': () => import('../pages/NotFoundPage'),
 };

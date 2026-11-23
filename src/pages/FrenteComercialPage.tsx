@@ -409,6 +409,7 @@ export default function FrenteComercialPage() {
           <p className="text-slate-700 mb-6">Conoce cómo mantener actualizada la oferta de una empresa o construir una primera presencia profesional.</p>
           <nav aria-label="Recursos relacionados" className="flex flex-wrap gap-4">
             <Link to="/trayectoria/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">RAUVIA Trayectoria</Link>
+            <Link to="/seo-ai/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">SEO para IA generativa (GEO)</Link>
             <Link to="/rauviaweb/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">RAUVIAWEB</Link>
           </nav>
         </div>

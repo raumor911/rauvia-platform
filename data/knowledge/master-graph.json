@@ -553,6 +553,93 @@
       "representedOffering": []
     },
     {
+      "id": "asset:seo-ai",
+      "type": "Asset",
+      "label": "SEO para IA generativa (GEO) para empresas | RAUVIA",
+      "description": "Página existente que explica seo ai; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai"
+      ],
+      "assetRefs": [
+        "asset:seo-ai"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": [
+        "offering:seo-ai"
+      ]
+    },
+    {
+      "id": "asset:seo-ai-auditoria",
+      "type": "Asset",
+      "label": "Auditoría GEO para empresas | RAUVIA",
+      "description": "Página existente que explica seo ai auditoria; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai auditoria; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-auditoria"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-auditoria"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/auditoria/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": [
+        "offering:seo-ai-auditoria"
+      ]
+    },
+    {
+      "id": "asset:seo-ai-implementacion",
+      "type": "Asset",
+      "label": "Implementación de SEO para IA (GEO) | RAUVIA",
+      "description": "Página existente que explica seo ai implementacion; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai implementacion; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-implementacion"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-implementacion"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/implementacion/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": [
+        "offering:seo-ai-implementacion"
+      ]
+    },
+    {
       "id": "asset:seo-local-medicos",
       "type": "Asset",
       "label": "SEO local para médicos | RAUVIA",
@@ -5684,6 +5771,81 @@
       ]
     },
     {
+      "id": "offering:seo-ai",
+      "type": "Offering",
+      "label": "SEO para IA generativa (GEO)",
+      "description": "Servicio de preparación y verificación de la información pública de una empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA; se compone de una auditoría y un programa de implementación. No garantiza posiciones, menciones, citas, tráfico, leads ni ventas.",
+      "rationale": "Servicio de preparación y verificación de la información pública de una empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA; se compone de una auditoría y un programa de implementación. No garantiza posiciones, menciones, citas, tráfico, leads ni ventas.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai"
+      ],
+      "assetRefs": [
+        "asset:seo-ai"
+      ],
+      "representedBy": [
+        "asset:seo-ai"
+      ],
+      "supportsCapabilities": [],
+      "possibleForProblems": []
+    },
+    {
+      "id": "offering:seo-ai-auditoria",
+      "type": "Offering",
+      "label": "Auditoría GEO para empresas",
+      "description": "Diagnóstico documentado de lo que buscadores y asistentes de IA pueden consultar de una empresa y de cómo se describe su oferta, con evidencia, prioridades y plan de corrección. No modifica el sitio y puede contratarse sola; el precio y el alcance están publicados en la página; las condiciones se confirman en la propuesta.",
+      "rationale": "Diagnóstico documentado de lo que buscadores y asistentes de IA pueden consultar de una empresa y de cómo se describe su oferta, con evidencia, prioridades y plan de corrección. No modifica el sitio y puede contratarse sola; el precio y el alcance están publicados en la página; las condiciones se confirman en la propuesta.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-auditoria"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-auditoria"
+      ],
+      "representedBy": [
+        "asset:seo-ai-auditoria"
+      ],
+      "supportsCapabilities": [],
+      "possibleForProblems": []
+    },
+    {
+      "id": "offering:seo-ai-implementacion",
+      "type": "Offering",
+      "label": "Implementación de SEO para IA",
+      "description": "Programa de seis meses con cambios acordados y verificables sobre URLs o plantillas de una empresa, con evidencia del antes y el después. No incluye rediseño ni migración y no garantiza posiciones, menciones, citas ni ventas; condiciones de contratación se confirman en la propuesta.",
+      "rationale": "Programa de seis meses con cambios acordados y verificables sobre URLs o plantillas de una empresa, con evidencia del antes y el después. No incluye rediseño ni migración y no garantiza posiciones, menciones, citas ni ventas; condiciones de contratación se confirman en la propuesta.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-implementacion"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-implementacion"
+      ],
+      "representedBy": [
+        "asset:seo-ai-implementacion"
+      ],
+      "supportsCapabilities": [],
+      "possibleForProblems": []
+    },
+    {
       "id": "offering:sistema-comercial",
       "type": "Offering",
       "label": "Sistema Comercial",
@@ -7333,6 +7495,72 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:seo-ai",
+      "type": "Source",
+      "label": "Publicación institucional: SEO para IA generativa (GEO) para empresas | RAUVIA",
+      "description": "Referencia editorial pública de SEO para IA generativa (GEO) para empresas | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO para IA generativa (GEO) para empresas | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-auditoria",
+      "type": "Source",
+      "label": "Publicación institucional: Auditoría GEO para empresas | RAUVIA",
+      "description": "Referencia editorial pública de Auditoría GEO para empresas | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Auditoría GEO para empresas | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-auditoria"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/auditoria/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-implementacion",
+      "type": "Source",
+      "label": "Publicación institucional: Implementación de SEO para IA (GEO) | RAUVIA",
+      "description": "Referencia editorial pública de Implementación de SEO para IA (GEO) | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Implementación de SEO para IA (GEO) | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-implementacion"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/implementacion/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:seo-local-medicos",
       "type": "Source",
       "label": "Publicación institucional: SEO local para médicos | RAUVIA",
@@ -7747,7 +7975,7 @@
       ],
       "schemaId": "https://rauvia.com.mx/aethryon/#entity",
       "name": "AETHRYON",
-      "url": "https://rauvia.com.mx/aethryon",
+      "url": "https://rauvia.com.mx/aethryon/",
       "attribution": "developed_by_rauvia",
       "representedBy": [
         "asset:aethryon"
@@ -8635,6 +8863,36 @@
       "from": "asset:ruta90",
       "relation": "supportedBy",
       "to": "source:ruta90"
+    },
+    {
+      "from": "asset:seo-ai-auditoria",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-auditoria",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-auditoria"
+    },
+    {
+      "from": "asset:seo-ai-implementacion",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-implementacion",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-implementacion"
+    },
+    {
+      "from": "asset:seo-ai",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai",
+      "relation": "supportedBy",
+      "to": "source:seo-ai"
     },
     {
       "from": "asset:seo-local-medicos",
@@ -12496,6 +12754,51 @@
       "to": "capability:ubicacion-clara"
     },
     {
+      "from": "offering:seo-ai-auditoria",
+      "relation": "offeredBy",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "offering:seo-ai-auditoria",
+      "relation": "representedBy",
+      "to": "asset:seo-ai-auditoria"
+    },
+    {
+      "from": "offering:seo-ai-auditoria",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-auditoria"
+    },
+    {
+      "from": "offering:seo-ai-implementacion",
+      "relation": "offeredBy",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "offering:seo-ai-implementacion",
+      "relation": "representedBy",
+      "to": "asset:seo-ai-implementacion"
+    },
+    {
+      "from": "offering:seo-ai-implementacion",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-implementacion"
+    },
+    {
+      "from": "offering:seo-ai",
+      "relation": "offeredBy",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "offering:seo-ai",
+      "relation": "representedBy",
+      "to": "asset:seo-ai"
+    },
+    {
+      "from": "offering:seo-ai",
+      "relation": "supportedBy",
+      "to": "source:seo-ai"
+    },
+    {
       "from": "offering:sistema-comercial",
       "relation": "offeredBy",
       "to": "org:rauvia"
@@ -12624,6 +12927,21 @@
       "from": "org:rauvia",
       "relation": "publishes",
       "to": "asset:ruta90"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai-auditoria"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai-implementacion"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai"
     },
     {
       "from": "org:rauvia",
@@ -14299,6 +14617,9 @@
       "asset:privacidad",
       "asset:recursos",
       "asset:ruta90",
+      "asset:seo-ai",
+      "asset:seo-ai-auditoria",
+      "asset:seo-ai-implementacion",
       "asset:seo-local-medicos",
       "asset:sitio-web-comercial-pymes",
       "asset:sitio-web-servicios-especializados",
@@ -14318,6 +14639,9 @@
       "offering:automatizacion",
       "offering:desarrollo-tecnologico",
       "offering:frente-comercial",
+      "offering:seo-ai",
+      "offering:seo-ai-auditoria",
+      "offering:seo-ai-implementacion",
       "offering:sistema-comercial",
       "org:rauvia",
       "person:raul-morales",
@@ -14513,6 +14837,9 @@
       "source:raul-public-cv",
       "source:recursos",
       "source:ruta90",
+      "source:seo-ai",
+      "source:seo-ai-auditoria",
+      "source:seo-ai-implementacion",
       "source:seo-local-medicos",
       "source:sitio-web-comercial-pymes",
       "source:sitio-web-servicios-especializados",

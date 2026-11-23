@@ -1497,6 +1497,104 @@ export const routeSeo = {
     "twitterCard": "summary_large_image",
     "schema": []
   },
+  "/seo-ai": {
+    "title": "SEO para IA generativa (GEO) para empresas | RAUVIA",
+    "description": "Preparamos tu sitio para que buscadores y asistentes de IA encuentren qué vende tu empresa, para qué casos sirve y dónde puede entregarlo.",
+    "canonical": "https://rauvia.com.mx/seo-ai/",
+    "lang": "es-MX",
+    "ogTitle": "SEO para IA generativa (GEO) para empresas | RAUVIA",
+    "ogDescription": "Preparamos tu sitio para que buscadores y asistentes de IA encuentren qué vende tu empresa, para qué casos sirve y dónde puede entregarlo.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/#servicio",
+        "name": "SEO para IA generativa (GEO) para empresas",
+        "serviceType": "Consultoría, auditoría e implementación de SEO para IA",
+        "url": "https://rauvia.com.mx/seo-ai/",
+        "description": "Preparación y verificación de la información pública de una empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA. Auditoría e implementación se contratan por separado; no se garantizan posiciones, menciones ni citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      }
+    ]
+  },
+  "/seo-ai/auditoria": {
+    "title": "Auditoría GEO para empresas | RAUVIA",
+    "description": "Identifica qué pueden rastrear los buscadores, cómo se describe tu oferta en respuestas de IA y qué conviene corregir primero.",
+    "canonical": "https://rauvia.com.mx/seo-ai/auditoria/",
+    "lang": "es-MX",
+    "ogTitle": "Auditoría GEO para empresas | RAUVIA",
+    "ogDescription": "Identifica qué pueden rastrear los buscadores, cómo se describe tu oferta en respuestas de IA y qué conviene corregir primero.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/auditoria/#servicio",
+        "name": "Auditoría GEO para empresas",
+        "serviceType": "Auditoría de SEO para IA (GEO)",
+        "url": "https://rauvia.com.mx/seo-ai/auditoria/",
+        "description": "Diagnóstico documentado de lo que buscadores y asistentes de IA pueden consultar de una empresa y de cómo se describe su oferta, con evidencia, prioridades y plan de corrección. No modifica el sitio ni garantiza posiciones, menciones o citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/auditoria/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "RAUVIA", "item": "https://rauvia.com.mx/"},
+          {"@type": "ListItem", "position": 2, "name": "SEO para IA", "item": "https://rauvia.com.mx/seo-ai/"},
+          {"@type": "ListItem", "position": 3, "name": "Auditoría GEO", "item": "https://rauvia.com.mx/seo-ai/auditoria/"}
+        ]
+      }
+    ]
+  },
+  "/seo-ai/implementacion": {
+    "title": "Implementación de SEO para IA (GEO) | RAUVIA",
+    "description": "Corrige barreras de rastreo y mejora cómo tu sitio explica productos, aplicaciones y cobertura. Solicita una propuesta de implementación.",
+    "canonical": "https://rauvia.com.mx/seo-ai/implementacion/",
+    "lang": "es-MX",
+    "ogTitle": "Implementación de SEO para IA (GEO) | RAUVIA",
+    "ogDescription": "Corrige barreras de rastreo y mejora cómo tu sitio explica productos, aplicaciones y cobertura. Solicita una propuesta de implementación.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/implementacion/#servicio",
+        "name": "Implementación de SEO para IA para empresas",
+        "serviceType": "Implementación de SEO para IA",
+        "url": "https://rauvia.com.mx/seo-ai/implementacion/",
+        "description": "Cambios acordados y verificables sobre URLs o plantillas de una empresa para mejorar el rastreo y cómo su sitio explica productos, aplicaciones y cobertura, con evidencia del antes y el después. No garantiza posiciones, menciones, citas ni ventas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/implementacion/#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "RAUVIA", "item": "https://rauvia.com.mx/"},
+          {"@type": "ListItem", "position": 2, "name": "SEO para IA", "item": "https://rauvia.com.mx/seo-ai/"},
+          {"@type": "ListItem", "position": 3, "name": "Implementación de SEO para IA", "item": "https://rauvia.com.mx/seo-ai/implementacion/"}
+        ]
+      }
+    ]
+  },
   "/trayectoria": {
     "title": "RAUVIA Trayectoria | Evolución de presencia digital",
     "description": "Mantén tu presencia digital alineada a los cambios de tu empresa. RAUVIA Trayectoria organiza actualizaciones de alcance definido, con criterio comercial y verificación.",

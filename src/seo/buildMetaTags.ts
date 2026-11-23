@@ -5,7 +5,7 @@ export interface PageSeo {
   title: string; description: string; canonical?: string | null; ogTitle?: string;
   ogDescription?: string; ogType?: string; ogImage?: string; robots?: string;
   twitterCard?: string; imageWidth?: string; imageHeight?: string; imageAlt?: string;
-  publishedTime?: string; modifiedTime?: string; author?: string; schema?: object[];
+  publishedTime?: string; modifiedTime?: string; author?: string; schema?: object[]; lang?: string;
 }
 export const canonicalPath = (path: string) => path === '/' ? '/' : path.replace(/\/+$/, '') + '/';
 export function escapeHtml(value: unknown) {
