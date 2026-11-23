@@ -1523,6 +1523,210 @@ export const routeSeo = {
       }
     ]
   },
+  "/seo-ai/corregir-informacion-en-ia": {
+    "title": "Corregir información de tu empresa en IA | RAUVIA",
+    "description": "Detecta por qué un asistente atribuye servicios, condiciones o zonas equivocadas a tu empresa. Audita las fuentes antes de corregir tu sitio.",
+    "canonical": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/",
+    "lang": "es-MX",
+    "ogTitle": "Corregir información de tu empresa en IA | RAUVIA",
+    "ogDescription": "Detecta por qué un asistente atribuye servicios, condiciones o zonas equivocadas a tu empresa. Audita las fuentes antes de corregir tu sitio.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/#servicio",
+        "name": "Corrección de información de empresa en respuestas de IA",
+        "serviceType": "Corrección de información de empresa en respuestas de IA",
+        "url": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/",
+        "description": "Auditoría de las afirmaciones que buscadores y asistentes de IA hacen sobre la oferta de una empresa, con fuentes, contradicciones priorizadas y plan de cambios. No modifica el sitio ni garantiza cambios en una respuesta, menciones ni citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RAUVIA",
+            "item": "https://rauvia.com.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO para IA",
+            "item": "https://rauvia.com.mx/seo-ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Corregir información en IA",
+            "item": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/"
+          }
+        ]
+      }
+    ]
+  },
+  "/seo-ai/catalogos-para-ia": {
+    "title": "SEO para catálogos de productos e IA | RAUVIA",
+    "description": "Convierte las fichas prioritarias de tu catálogo en páginas que explican producto, aplicación, límites y requisitos de cotización.",
+    "canonical": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/",
+    "lang": "es-MX",
+    "ogTitle": "SEO para catálogos de productos e IA | RAUVIA",
+    "ogDescription": "Convierte las fichas prioritarias de tu catálogo en páginas que explican producto, aplicación, límites y requisitos de cotización.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/#servicio",
+        "name": "SEO para catálogos de productos en buscadores y asistentes de IA",
+        "serviceType": "SEO para catálogos de productos en buscadores y asistentes de IA",
+        "url": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/",
+        "description": "Implementación acotada sobre las fichas prioritarias de un catálogo existente: aplicación, variantes, condiciones y datos a confirmar, con verificación. No garantiza posiciones, menciones ni citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RAUVIA",
+            "item": "https://rauvia.com.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO para IA",
+            "item": "https://rauvia.com.mx/seo-ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Catálogos para IA",
+            "item": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/"
+          }
+        ]
+      }
+    ]
+  },
+  "/seo-ai/cobertura-y-envios": {
+    "title": "SEO para IA y zonas de servicio y envío | RAUVIA",
+    "description": "Aclara qué zonas atiendes por modalidad, cuándo aplican excepciones y qué debe confirmar el comprador antes de pedir una cotización.",
+    "canonical": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/",
+    "lang": "es-MX",
+    "ogTitle": "SEO para IA y zonas de servicio y envío | RAUVIA",
+    "ogDescription": "Aclara qué zonas atiendes por modalidad, cuándo aplican excepciones y qué debe confirmar el comprador antes de pedir una cotización.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/#servicio",
+        "name": "SEO para IA: cobertura, envíos e instalación",
+        "serviceType": "SEO para IA: cobertura, envíos e instalación",
+        "url": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/",
+        "description": "Publicación verificable de las zonas de servicio, envío, retiro e instalación que una empresa aprueba, con una respuesta o condición por modalidad. No cambia la logística ni garantiza posiciones, menciones ni citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RAUVIA",
+            "item": "https://rauvia.com.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO para IA",
+            "item": "https://rauvia.com.mx/seo-ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cobertura y envíos",
+            "item": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/"
+          }
+        ]
+      }
+    ]
+  },
+  "/seo-ai/proveedores-tecnicos": {
+    "title": "SEO para IA para proveedores técnicos | RAUVIA",
+    "description": "Prepara una línea de oferta técnica para que Compras pueda evaluar aplicaciones, requisitos, evidencia y datos para cotizar.",
+    "canonical": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/",
+    "lang": "es-MX",
+    "ogTitle": "SEO para IA para proveedores técnicos | RAUVIA",
+    "ogDescription": "Prepara una línea de oferta técnica para que Compras pueda evaluar aplicaciones, requisitos, evidencia y datos para cotizar.",
+    "ogType": "website",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/#servicio",
+        "name": "SEO para IA para proveedores técnicos",
+        "serviceType": "SEO para IA para proveedores técnicos",
+        "url": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/",
+        "description": "Preparación de una línea técnica para que Compras pueda evaluar aplicaciones, requisitos, evidencia y datos para cotizar. No crea pipeline comercial ni garantiza posiciones, menciones ni citas.",
+        "provider": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RAUVIA",
+            "item": "https://rauvia.com.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "SEO para IA",
+            "item": "https://rauvia.com.mx/seo-ai/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Proveedores técnicos",
+            "item": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/"
+          }
+        ]
+      }
+    ]
+  },
   "/seo-ai/auditoria": {
     "title": "Auditoría GEO para empresas | RAUVIA",
     "description": "Identifica qué pueden rastrear los buscadores, cómo se describe tu oferta en respuestas de IA y qué conviene corregir primero.",

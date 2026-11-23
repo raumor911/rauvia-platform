@@ -11,8 +11,9 @@ export type ServiceIntent = 'general' | 'auditoria' | 'implementacion';
 export const whatsappUrl = (message: string) => 'https://wa.me/525586494076?text=' + encodeURIComponent(message);
 
 // El evento se adapta a la taxonomía existente: cta_click con propiedades controladas (sin correos ni texto libre).
-export function trackCta(placement: string, serviceIntent: ServiceIntent) {
-  return () => trackEvent('cta_click', {cta_id: 'seo_ai_cta_click', placement, service_intent: serviceIntent});
+// intent_id (valor fijo: correccion, catalogos, cobertura, proveedores) identifica la landing de origen.
+export function trackCta(placement: string, serviceIntent: ServiceIntent, intentId?: string) {
+  return () => trackEvent('cta_click', {cta_id: 'seo_ai_cta_click', placement, service_intent: serviceIntent, ...(intentId ? {intent_id: intentId} : {})});
 }
 
 // Índice de escalonado para las animaciones (CSS lee --sa-i).
@@ -91,12 +92,13 @@ export function Breadcrumb({current}: {current: string}) {
   </nav>;
 }
 
+const ext = (href: string) => /^https?:/.test(href) ? {target: '_blank', rel: 'noopener noreferrer'} : {};
 type CtaLink = {href: string; label: string; placement: string};
 type HeroProps = {
   crumb: string; kicker: string; hook: string; h1: string; lead: string; chip: string;
-  primary: CtaLink; secondary: CtaLink; intent: ServiceIntent; signal?: SignalProps;
+  primary: CtaLink; secondary: CtaLink; intent: ServiceIntent; intentId?: string; signal?: SignalProps;
 };
-export function SeoAiHero({crumb, kicker, hook, h1, lead, chip, primary, secondary, intent, signal}: HeroProps) {
+export function SeoAiHero({crumb, kicker, hook, h1, lead, chip, primary, secondary, intent, intentId, signal}: HeroProps) {
   return <section className="seoai-hero pt-24 md:pt-28 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
     <div className="max-w-6xl mx-auto">
       <Breadcrumb current={crumb} />
@@ -108,8 +110,8 @@ export function SeoAiHero({crumb, kicker, hook, h1, lead, chip, primary, seconda
           <p className="seoai-lead text-lg md:text-xl max-w-2xl mb-6 sa-rise" style={idx(4)}>{lead}</p>
           <p className="seoai-chip sa-rise" style={idx(5)}>{chip}</p>
           <div className="flex flex-wrap gap-4 sa-rise" style={idx(6)}>
-            <a href={primary.href} onClick={trackCta(primary.placement, intent)} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">{primary.label} <ArrowRight className="w-4 h-4" aria-hidden="true" /></a>
-            <a href={secondary.href} onClick={trackCta(secondary.placement, intent)} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">{secondary.label}</a>
+            <a href={primary.href} {...ext(primary.href)} onClick={trackCta(primary.placement, intent, intentId)} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">{primary.label} <ArrowRight className="w-4 h-4" aria-hidden="true" /></a>
+            <a href={secondary.href} {...ext(secondary.href)} onClick={trackCta(secondary.placement, intent, intentId)} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">{secondary.label}</a>
           </div>
         </div>
         <SeoAiSignal {...signal} />

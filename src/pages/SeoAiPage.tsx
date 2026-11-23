@@ -124,6 +124,45 @@ export default function SeoAiPage() {
       </div>
     </section>
 
+    <section id="no-aparece" className="py-16 scroll-mt-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="seoai-kicker text-rauvia-blue! mb-2" data-sa>[ 03 ] Diagnóstico</p>
+        <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa style={idx(1)}>Mi empresa no aparece en ChatGPT</h2>
+        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(2)}>Esa frase puede describir tres problemas distintos. Separarlos evita corregir lo que no era. No prometemos aparecer ni controlar lo que genera un modelo; sí podemos revisar la evidencia pública y comprobar qué cambia al repetir las preguntas.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            ['Ausencia', 'La pregunta correcta no devuelve tu empresa. Se revisa si tu oferta, tu cobertura y tus páginas pueden consultarse y entenderse. Empieza con una auditoría.'],
+            ['Afirmación incorrecta', 'Un asistente atribuye servicios, condiciones o zonas que no son los tuyos. Se rastrea qué fuente puede respaldarlo y qué verdad debes publicar.'],
+            ['Falta de evidencia para comprar', 'Tu empresa aparece, pero Compras no encuentra aplicación, requisitos o datos para cotizar. Se trabaja la ficha que debe responder esa pregunta.'],
+          ].map(([name, text], i) => <article key={name} className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa style={idx(i)}>
+            <p className="seoai-index mb-2">[ 0{i + 1} ] Tipo {i + 1}</p>
+            <h3 className="text-xl font-bold text-rauvia-navy mb-3">{name}</h3>
+            <p className="text-slate-700">{text}</p>
+          </article>)}
+        </div>
+      </div>
+    </section>
+
+    <section id="soluciones-por-caso" className="py-16 bg-slate-50 border-y border-slate-100 scroll-mt-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="seoai-kicker text-rauvia-blue! mb-2" data-sa>[ 04 ] Soluciones por caso</p>
+        <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa style={idx(1)}>Elige la situación que se parece a la tuya</h2>
+        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(2)}>Cada ruta explica un caso concreto, con su ejemplo ficticio y el servicio que le corresponde, la auditoría o la implementación.</p>
+        <div className="grid md:grid-cols-2 gap-6">
+          {([
+            ['/seo-ai/corregir-informacion-en-ia/', 'Corregir información de mi empresa en asistentes de IA', 'Una IA describe mal qué vendes o a quién atiendes. Se audita la afirmación, la fuente y la corrección.', 'Auditoría'],
+            ['/seo-ai/catalogos-para-ia/', 'SEO para catálogos de productos en buscadores y asistentes de IA', 'El catálogo existe, pero el comprador no entiende para qué sirve ni cómo cotizarlo.', 'Implementación'],
+            ['/seo-ai/cobertura-y-envios/', 'Aclarar dónde vendo, envío e instalo', 'El comprador necesita saber si llegas a su zona, y con qué modalidad, antes de cotizar.', 'Implementación'],
+            ['/seo-ai/proveedores-tecnicos/', 'SEO para IA para proveedores técnicos', 'Compras necesita evaluar tu línea para una aplicación y pedir una cotización con datos claros.', 'Implementación'],
+          ] as const).map(([to, label, text, service], i) => <article key={to} className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa style={idx(i)}>
+            <p className="seoai-index mb-2">[ 0{i + 1} ] {service}</p>
+            <h3 className="text-lg font-bold text-rauvia-navy mb-2"><Link to={to} onClick={trackCta('soluciones_por_caso', service === 'Auditoría' ? 'auditoria' : 'implementacion')} className="hover:underline">{label}</Link></h3>
+            <p className="text-slate-700 text-sm">{text}</p>
+          </article>)}
+        </div>
+      </div>
+    </section>
+
     <section id="alcance" className="py-16 scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>Auditoría e implementación</h2>

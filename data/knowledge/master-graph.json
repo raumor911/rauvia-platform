@@ -611,6 +611,87 @@
       ]
     },
     {
+      "id": "asset:seo-ai-catalogos",
+      "type": "Asset",
+      "label": "SEO para catálogos de productos e IA | RAUVIA",
+      "description": "Página existente que explica seo ai catalogos; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai catalogos; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-catalogos"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-catalogos"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": []
+    },
+    {
+      "id": "asset:seo-ai-cobertura",
+      "type": "Asset",
+      "label": "SEO para IA y zonas de servicio y envío | RAUVIA",
+      "description": "Página existente que explica seo ai cobertura; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai cobertura; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-cobertura"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-cobertura"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": []
+    },
+    {
+      "id": "asset:seo-ai-correccion",
+      "type": "Asset",
+      "label": "Corregir información de tu empresa en IA | RAUVIA",
+      "description": "Página existente que explica seo ai correccion; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai correccion; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-correccion"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-correccion"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": []
+    },
+    {
       "id": "asset:seo-ai-implementacion",
       "type": "Asset",
       "label": "Implementación de SEO para IA (GEO) | RAUVIA",
@@ -638,6 +719,33 @@
       "representedOffering": [
         "offering:seo-ai-implementacion"
       ]
+    },
+    {
+      "id": "asset:seo-ai-proveedores",
+      "type": "Asset",
+      "label": "SEO para IA para proveedores técnicos | RAUVIA",
+      "description": "Página existente que explica seo ai proveedores; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica seo ai proveedores; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai-proveedores"
+      ],
+      "assetRefs": [
+        "asset:seo-ai-proveedores"
+      ],
+      "canonical": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/",
+      "assetType": "landing",
+      "specificity": "specific",
+      "coversIntent": [],
+      "explainsProblem": [],
+      "supportsCapability": [],
+      "representedOffering": []
     },
     {
       "id": "asset:seo-local-medicos",
@@ -7593,6 +7701,72 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:seo-ai-catalogos",
+      "type": "Source",
+      "label": "Publicación institucional: SEO para catálogos de productos e IA | RAUVIA",
+      "description": "Referencia editorial pública de SEO para catálogos de productos e IA | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO para catálogos de productos e IA | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-catalogos"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/catalogos-para-ia/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-cobertura",
+      "type": "Source",
+      "label": "Publicación institucional: SEO para IA y zonas de servicio y envío | RAUVIA",
+      "description": "Referencia editorial pública de SEO para IA y zonas de servicio y envío | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO para IA y zonas de servicio y envío | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-cobertura"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/cobertura-y-envios/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-correccion",
+      "type": "Source",
+      "label": "Publicación institucional: Corregir información de tu empresa en IA | RAUVIA",
+      "description": "Referencia editorial pública de Corregir información de tu empresa en IA | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Corregir información de tu empresa en IA | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-correccion"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:seo-ai-implementacion",
       "type": "Source",
       "label": "Publicación institucional: Implementación de SEO para IA (GEO) | RAUVIA",
@@ -7610,6 +7784,28 @@
         "asset:seo-ai-implementacion"
       ],
       "url": "https://rauvia.com.mx/seo-ai/implementacion/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-proveedores",
+      "type": "Source",
+      "label": "Publicación institucional: SEO para IA para proveedores técnicos | RAUVIA",
+      "description": "Referencia editorial pública de SEO para IA para proveedores técnicos | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO para IA para proveedores técnicos | RAUVIA; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [],
+      "assetRefs": [
+        "asset:seo-ai-proveedores"
+      ],
+      "url": "https://rauvia.com.mx/seo-ai/proveedores-tecnicos/",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -8951,6 +9147,36 @@
       "to": "source:seo-ai-auditoria"
     },
     {
+      "from": "asset:seo-ai-catalogos",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-catalogos",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-catalogos"
+    },
+    {
+      "from": "asset:seo-ai-cobertura",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-cobertura",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-cobertura"
+    },
+    {
+      "from": "asset:seo-ai-correccion",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-correccion",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-correccion"
+    },
+    {
       "from": "asset:seo-ai-implementacion",
       "relation": "partOf",
       "to": "website:rauvia"
@@ -8959,6 +9185,16 @@
       "from": "asset:seo-ai-implementacion",
       "relation": "supportedBy",
       "to": "source:seo-ai-implementacion"
+    },
+    {
+      "from": "asset:seo-ai-proveedores",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:seo-ai-proveedores",
+      "relation": "supportedBy",
+      "to": "source:seo-ai-proveedores"
     },
     {
       "from": "asset:seo-ai",
@@ -13037,7 +13273,27 @@
     {
       "from": "org:rauvia",
       "relation": "publishes",
+      "to": "asset:seo-ai-catalogos"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai-cobertura"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai-correccion"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
       "to": "asset:seo-ai-implementacion"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:seo-ai-proveedores"
     },
     {
       "from": "org:rauvia",
@@ -14725,7 +14981,11 @@
       "asset:ruta90",
       "asset:seo-ai",
       "asset:seo-ai-auditoria",
+      "asset:seo-ai-catalogos",
+      "asset:seo-ai-cobertura",
+      "asset:seo-ai-correccion",
       "asset:seo-ai-implementacion",
+      "asset:seo-ai-proveedores",
       "asset:seo-local-medicos",
       "asset:sitio-web-comercial-pymes",
       "asset:sitio-web-servicios-especializados",
@@ -14947,7 +15207,11 @@
       "source:ruta90",
       "source:seo-ai",
       "source:seo-ai-auditoria",
+      "source:seo-ai-catalogos",
+      "source:seo-ai-cobertura",
+      "source:seo-ai-correccion",
       "source:seo-ai-implementacion",
+      "source:seo-ai-proveedores",
       "source:seo-local-medicos",
       "source:sitio-web-comercial-pymes",
       "source:sitio-web-servicios-especializados",
