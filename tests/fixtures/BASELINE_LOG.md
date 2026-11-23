@@ -37,3 +37,12 @@ Semánticos: 15 · Contenido: 20
 - rau004-main-baseline.json /casos contenido
 - rau004-main-baseline.json /trayectoria contenido
 - rau004-main-baseline.json /casos/presencia-posicionamiento-profesional contenido
+
+## 2026-11-23 · 0a90443
+Motivo: Cuatro landings SEO AI por caso (v0.3) y secciones nuevas del hub /seo-ai/
+Semánticos: 4 · Contenido: 1
+- rau004-main-baseline.json /seo-ai/corregir-informacion-en-ia (ruta nueva)
+- rau004-main-baseline.json /seo-ai/catalogos-para-ia (ruta nueva)
+- rau004-main-baseline.json /seo-ai/cobertura-y-envios (ruta nueva)
+- rau004-main-baseline.json /seo-ai/proveedores-tecnicos (ruta nueva)
+- rau004-main-baseline.json /seo-ai contenido

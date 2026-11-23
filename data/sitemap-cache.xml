@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rauvia.com.mx/trayectoria/</loc></url>
-  <url><loc>https://rauvia.com.mx/rauviaweb/</loc></url>
-  <url><loc>https://rauvia.com.mx/seo-ai/</loc></url>
-  <url><loc>https://rauvia.com.mx/seo-ai/auditoria/</loc></url>
-  <url><loc>https://rauvia.com.mx/seo-ai/implementacion/</loc></url>
   <url><loc>https://rauvia.com.mx/ruta-90/</loc></url>
   <url><loc>https://rauvia.com.mx/</loc></url>
   <url><loc>https://rauvia.com.mx/nosotros/</loc></url>
@@ -15,7 +10,6 @@
   <url><loc>https://rauvia.com.mx/sitio-web-comercial-para-pymes/</loc></url>
   <url><loc>https://rauvia.com.mx/sitio-web-servicios-especializados/</loc></url>
   <url><loc>https://rauvia.com.mx/casos/</loc></url>
-  <url><loc>https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/</loc></url>
   <url><loc>https://rauvia.com.mx/casos/infraestructura-temporal-b2b/</loc></url>
   <url><loc>https://rauvia.com.mx/pagina-comercial-servicios-profesionales/</loc></url>
   <url><loc>https://rauvia.com.mx/pagina-web-gratis-para-medicos/</loc></url>
@@ -26,6 +20,16 @@
   <url><loc>https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/</loc></url>
   <url><loc>https://rauvia.com.mx/aviso-de-privacidad/</loc></url>
   <url><loc>https://rauvia.com.mx/terminos/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/catalogos-para-ia/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/cobertura-y-envios/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/proveedores-tecnicos/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/auditoria/</loc></url>
+  <url><loc>https://rauvia.com.mx/seo-ai/implementacion/</loc></url>
+  <url><loc>https://rauvia.com.mx/trayectoria/</loc></url>
+  <url><loc>https://rauvia.com.mx/rauviaweb/</loc></url>
+  <url><loc>https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/</loc></url>
   <url><loc>https://rauvia.com.mx/recursos/que-es-aethryon-sistema-analisis/</loc><lastmod>2026-10-08T23:47:27+00:00</lastmod></url>
   <url><loc>https://rauvia.com.mx/recursos/empresa-tecnica-b2b-evidencia-proveedor-corporativo/</loc><lastmod>2026-10-08T22:24:41+00:00</lastmod></url>
   <url><loc>https://rauvia.com.mx/recursos/experiencia-firma-evidencia-comercial/</loc><lastmod>2026-10-08T22:21:11+00:00</lastmod></url>

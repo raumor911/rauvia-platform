@@ -29,6 +29,10 @@ export const routeLoaders = {
   '/seo-ai': () => import('../pages/SeoAiPage'),
   '/seo-ai/auditoria': () => import('../pages/SeoAiAuditoriaPage'),
   '/seo-ai/implementacion': () => import('../pages/SeoAiImplementacionPage'),
+  '/seo-ai/corregir-informacion-en-ia': () => import('../pages/SeoAiCorreccionPage'),
+  '/seo-ai/catalogos-para-ia': () => import('../pages/SeoAiCatalogosPage'),
+  '/seo-ai/cobertura-y-envios': () => import('../pages/SeoAiCoberturaPage'),
+  '/seo-ai/proveedores-tecnicos': () => import('../pages/SeoAiProveedoresPage'),
   '/rauviaweb': () => import('../pages/RauviaWebPage'),
   '*': () => import('../pages/NotFoundPage'),
 };
