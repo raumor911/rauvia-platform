@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, ChevronDown } from "lucide-react";
 import AethryonCore from "./AethryonCore";
+import ConvergenceField from "./ConvergenceField";
 import { trackEvent } from "../lib/analytics";
 import "../styles/homeHero.css";
+import "../styles/homeHeroEpic.css";
 
 export default function HeroSection() {
   return (
     <>
       <section className="rv-home-hero" aria-labelledby="home-hero-title">
+        <ConvergenceField />
         <div className="rv-hero-container">
           <p className="rv-hero-eyebrow">CONSULTORÍA PARA PYMES Y EMPRESAS B2B</p>
           <div className="rv-hero-grid">

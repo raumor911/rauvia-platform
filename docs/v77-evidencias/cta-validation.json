@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T05:34:48.494Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base 155b4ca + working tree",
+  "capturedAt": "2026-11-23T07:30:35.203Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base d77674a + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -55,7 +55,7 @@
         "rect": {
           "x": 42.5,
           "y": 305.015625,
-          "width": 249.140625,
+          "width": 250.140625,
           "height": 61.78125
         },
         "viewport": [
@@ -70,9 +70,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 303.640625,
+          "x": 304.640625,
           "y": 311.90625,
-          "width": 249.15625,
+          "width": 250.15625,
           "height": 48
         },
         "viewport": [
@@ -91,7 +91,7 @@
         "rect": {
           "x": 79.203125,
           "y": 514.484375,
-          "width": 262.484375,
+          "width": 236.9375,
           "height": 60.9375
         },
         "viewport": [
@@ -106,9 +106,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 357.6875,
+          "x": 332.140625,
           "y": 520.953125,
-          "width": 141.546875,
+          "width": 163.59375,
           "height": 48
         },
         "viewport": [
@@ -183,8 +183,8 @@
       "url": "http://127.0.0.1:3118/soluciones/",
       "focus": {
         "href": "/soluciones/",
-        "outline": "rgb(30, 74, 116) solid 3px",
-        "outlineOffset": "4px",
+        "outline": "rgb(255, 215, 102) solid 3px",
+        "outlineOffset": "3px",
         "tag": "A",
         "text": "CONOCER NUESTROS PRODUCTOS"
       }
@@ -193,8 +193,8 @@
   "keyboard": {
     "focus": {
       "href": "/soluciones/",
-      "outline": "rgb(30, 74, 116) solid 3px",
-      "outlineOffset": "4px",
+      "outline": "rgb(255, 215, 102) solid 3px",
+      "outlineOffset": "3px",
       "tag": "A",
       "text": "CONOCER NUESTROS PRODUCTOS"
     },
@@ -224,14 +224,14 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "f19b7507b3b5bb1aef237302238441358c01bd6dec17c1d5b8ed74ca6ec05272",
-    "src/components/Footer.tsx": "05747f83843a2967d46f4f869b92a67275d8a28e11f489d0d3911412c070af6e",
+    "src/components/HeroSection.tsx": "042fe95b587dd8908a82f14bc3960c4bff56d2f8d74a9cdd5e6bd69fc0c8c27c",
+    "src/components/Footer.tsx": "f754003f9e3caff1f4a1c477d3b0b2fdbd4f1e9927451024165dd6c2da79fa59",
     "src/components/AethryonCore.tsx": "47809fadcdfd1153bb652f9887dd8637a65278ea71a4a0731863515ca6ef862f",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
-    "src/pages/SolucionesPage.tsx": "aaadef61d16bc86da453527627ccf694c1e2b5b9d7f8537faae0d8b0561b0362",
-    "src/pages/NosotrosPage.tsx": "723ead29d3aff6f8c9d7bcd6bbb2da9b10533f3ebbbb2ef4c6eab06c3f869ea8",
+    "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
+    "src/pages/NosotrosPage.tsx": "f6ff7a389053ec8ea34021ad1ab227308a228cf311528f61fb84dfeb5aa5837a",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
-    "src/pages/AethryonPage.tsx": "c82c66f88f017ccaf5147ed2e6c0fa8aaf47ff2c2b966179e63f9d41f9028cdb",
+    "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
     "src/pages/FrenteComercialPage.tsx": "c3808f3ae97f49b93b336c5d936df6a75c7c613ae25fedd4aaa5f4d8681fbd46",
     "src/pages/CasosIndexPage.tsx": "9ec64d350066266e416bb54665a6d7ae06864d04cbebb9736253dc4c71d09802",
     "src/lib/analytics.ts": "5e95671bbc6ffe4f67272d5fb4f551ee9f8215eec105cd4a0784fe3213254f48"

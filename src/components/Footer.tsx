@@ -1,11 +1,45 @@
+import { useEffect, useRef } from "react";
 import Logo from "./Logo";
+import ConvergenceField from "./ConvergenceField";
+import "../styles/footerEpic.css";
 import { Link } from "react-router-dom";
 import { ArrowRight, Facebook, Instagram, Linkedin } from "lucide-react";
 import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
+  const ref = useRef<HTMLElement>(null);
+
+  // Entrada del cierre al llegar a él (mejora progresiva: solo con IntersectionObserver y sin movimiento reducido).
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    el.classList.add("ft-armed");
+    const io = new IntersectionObserver(([en]) => { if (en.isIntersecting) { el.classList.add("ft-in"); io.disconnect(); } }, { threshold: 0.2 });
+    io.observe(el);
+    return () => { io.disconnect(); el.classList.remove("ft-armed", "ft-in"); };
+  }, []);
+
+  // Si la última sección de la página es oscura, el pie se funde con ella (retícula continua, sin filo ni velo en el borde).
+  useEffect(() => {
+    const el = ref.current;
+    const main = document.querySelector("main");
+    if (!el || !main || typeof MutationObserver === "undefined") return;
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const last = Array.from(main.querySelectorAll("section")).pop();
+      if (last?.classList.contains("fx-dark")) el.dataset.join = "dark"; else delete el.dataset.join;
+    };
+    const schedule = () => { if (!raf) raf = requestAnimationFrame(check); };
+    check();
+    const mo = new MutationObserver(schedule);
+    mo.observe(main, { childList: true, subtree: true });
+    return () => { mo.disconnect(); if (raf) cancelAnimationFrame(raf); delete el.dataset.join; };
+  }, []);
+
   return (
-    <footer className={(mobileLayer ? "rv-footer " : "") + "bg-rauvia-navy-dark text-white relative overflow-hidden flex flex-col min-h-[550px] md:min-h-[100svh] justify-between"}>
+    <footer ref={ref} className={(mobileLayer ? "rv-footer " : "") + "ft-epic bg-rauvia-navy-dark text-white relative overflow-hidden flex flex-col min-h-[550px] md:min-h-[100svh] justify-between"}>
       
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 overflow-hidden">
@@ -18,16 +52,18 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
            />
          </Link>
       </div>
+      <div className="ft-veil" aria-hidden="true" />
+      <ConvergenceField flow="inward" origin={[0.5, 0.46]} className="ft-field" />
 
       <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-24 md:pt-32 pb-16 relative z-10 flex-grow flex flex-col justify-center">
         <div className="flex flex-col lg:grid lg:grid-cols-12 gap-16 lg:gap-8 items-center w-full">
           {/* Left Text / Main Message */}
           <div className="w-full lg:col-span-5 xl:col-span-4 order-1 lg:order-none text-center lg:text-left">
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug text-slate-300">
+            <p data-ft style={{"--i":0} as React.CSSProperties} className="ft-statement text-2xl sm:text-3xl lg:text-4xl font-medium leading-snug text-slate-300">
               No conectamos herramientas.<br className="hidden sm:block"/>
               Conectamos estrategia,<br className="hidden sm:block"/>
               procesos, tecnología y personas<br className="hidden sm:block"/>
-              en un sistema <span className="text-rauvia-gold font-bold">que genera resultados.</span>
+              en un sistema <span className="ft-gold text-rauvia-gold font-bold">que genera resultados.</span>
             </p>
           </div>
 
@@ -36,16 +72,16 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
           </div>
 
           {/* Right Text / Definition & CTA */}
-          <div className="w-full lg:col-span-5 xl:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-6 border-t lg:border-t-0 lg:border-l border-slate-700/50 pt-8 lg:pt-0 lg:pl-10 order-3 lg:order-none">
+          <div data-ft style={{"--i":2} as React.CSSProperties} className="ft-side w-full lg:col-span-5 xl:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-6 border-t lg:border-t-0 lg:border-l border-slate-700/50 pt-8 lg:pt-0 lg:pl-10 order-3 lg:order-none">
             <div>
-              <span className="text-rauvia-gold font-bold tracking-widest text-sm uppercase block mb-3">AETHRYON</span>
+              <span className="ft-label text-rauvia-gold font-bold tracking-widest text-sm uppercase block mb-3">AETHRYON</span>
               <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-sm">
                 El núcleo que transforma capacidad en estructura y estructura en crecimiento.
               </p>
             </div>
             <WhatsAppCTA 
               href="https://wa.me/525586494076" 
-              className="mt-4 flex items-center justify-center gap-2 bg-white hover:bg-slate-200 text-rauvia-navy-dark px-8 py-4 rounded text-sm font-bold tracking-wider transition-all min-h-[52px] w-full sm:w-auto"
+              className="ft-cta mt-4 flex items-center justify-center gap-2 bg-white hover:bg-slate-200 text-rauvia-navy-dark px-8 py-4 rounded text-sm font-bold tracking-wider transition-all min-h-[52px] w-full sm:w-auto"
             >
               INICIAR CONVERSACIÓN
               <ArrowRight className="w-4 h-4" />
@@ -56,7 +92,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
 
       {/* Bottom Bar */}
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 pb-8 relative z-10">
-        <div className="max-w-[1600px] mx-auto flex flex-col md:grid md:grid-cols-3 items-center gap-8 md:gap-6 pt-8 border-t border-slate-800">
+        <div data-ft style={{"--i":4} as React.CSSProperties} className="ft-bar max-w-[1600px] mx-auto flex flex-col md:grid md:grid-cols-3 items-center gap-8 md:gap-6 pt-8 border-t border-slate-800">
           <div className="flex justify-center md:justify-start order-2 md:order-1 min-h-[44px] items-center">
             <Logo variant="footer" />
           </div>
@@ -80,7 +116,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
             </a>
           </div>
         </div>
-        <p className="max-w-[1600px] mx-auto mt-4 text-center text-xs text-slate-400">
+        <p data-ft style={{"--i":5} as React.CSSProperties} className="ft-credit max-w-[1600px] mx-auto mt-4 text-center text-xs text-slate-400">
           Experiencia digital desarrollada por{' '}
           <a href="https://rauvia.com.mx/" className="inline-flex items-center min-h-[44px] underline underline-offset-4 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">RAUVIA Consulting</a>
         </p>

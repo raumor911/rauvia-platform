@@ -8,7 +8,11 @@ import { ArrowRight, Hexagon, Target, CheckCircle2, ChevronDown, ChevronRight, L
 import FadeInUp from '../components/FadeInUp';
 import GrowthStructuralMap from '../components/GrowthStructuralMap';
 import useScrollReveal from '../hooks/useScrollReveal';
+import usePageFx from '../hooks/usePageFx';
+import ConvergenceField from '../components/ConvergenceField';
+import HeroScene from '../components/HeroScene';
 import '../styles/scrollReveal.css';
+import '../styles/pageFrontier.css';
 
 // Define the assets structure
 const assetsData = {
@@ -282,6 +286,7 @@ const assetsData = {
 export default function SolucionesPage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, ':scope > div > section > div, #catalogo > div > .mb-12, #catalogo .rv-catalog-layout');
+  usePageFx(root);
   const [activeStage, setActiveStage] = useState('01');
   const [openProduct, setOpenProduct] = useState('frente-comercial-esencial');
 
@@ -300,12 +305,14 @@ export default function SolucionesPage() {
   const currentProducts = assetsData[activeStage as keyof typeof assetsData] || [];
 
   return (
-    <div ref={root}>
+    <div ref={root} className="fx-page fx-soluciones">
+      <div className="fx-progress" aria-hidden="true" />
       <RouteSEO path="/soluciones" />
       
 
       {/* SECCIÓN 1 — HERO */}
-      <section className="rv-soluciones-hero pt-32 pb-20 overflow-hidden relative">
+      <section className="rv-soluciones-hero fx-hero pt-32 pb-20 overflow-hidden relative">
+        <ConvergenceField coreSelector=".fx-scene-core" origin={[0.68, 0.5]} className="fx-field" overlay="assets" />
         <div className="absolute inset-0 pointer-events-none flex justify-center items-center opacity-10">
           <div className="w-[1000px] h-[1000px] border border-slate-300 rounded-full animate-spin-slow"></div>
           <div className="absolute w-[800px] h-[800px] border border-slate-300 rounded-full animate-spin-reverse-slow"></div>
@@ -343,13 +350,20 @@ export default function SolucionesPage() {
 
             <div className="lg:col-span-6 xl:col-span-7 flex justify-center relative z-0 mt-12 lg:mt-0">
                {/* Hero Graphic: AETHRYON deploying assets */}
-               <Link to="/aethryon/" className="relative w-full max-w-xl aspect-square flex items-center justify-center group cursor-pointer" title="Conocer más sobre AETHRYON">
-                  <picture className="contents">
-                    <source media="(max-width: 1023px)" type="image/webp"
-                      srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
-                      sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
-                    <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon-v73.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform" />
-                  </picture>
+               <Link to="/aethryon/" className="relative block w-full max-w-[620px] group cursor-pointer" title="Conocer más sobre AETHRYON">
+                  <HeroScene chips={[
+                    { label: 'Sistema Comercial', x: 22, y: 17 },
+                    { label: 'Plataforma', x: 80, y: 24 },
+                    { label: 'Estructura Operativa', x: 20, y: 80 },
+                    { label: 'Automatización', x: 78, y: 82 },
+                  ]}>
+                    <picture className="contents">
+                      <source media="(max-width: 1023px)" type="image/webp"
+                        srcSet="/media/rauvia-solutions-hero-mobile-640.webp 640w, /media/rauvia-solutions-hero-mobile-960.webp 960w"
+                        sizes="(max-width: 767px) calc(100vw - 32px), 576px" />
+                      <img width="1100" height="760" loading="eager" fetchPriority="high" decoding="async" src="/media/rauvia-solutions-hero-support-aethryon-v73.svg" alt="AETHRYON desplegando activos" className="w-full h-full object-contain" />
+                    </picture>
+                  </HeroScene>
                </Link>
             </div>
 
@@ -359,7 +373,7 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN 2 — FILOSOFÍA */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-y border-slate-100">
+      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-8">
             NO VENDEMOS SERVICIOS.<br/>
@@ -382,7 +396,7 @@ export default function SolucionesPage() {
       </FadeInUp>
 
       {/* SECCIÓN 3 — CATÁLOGO DE ACTIVOS */}
-      <section id="catalogo" className="py-10 md:py-20 bg-rauvia-bg">
+      <section id="catalogo" className="fx-light fx-catalog py-10 md:py-20 bg-rauvia-bg">
         <div className="max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           
           <div className="mb-12">
@@ -576,7 +590,7 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN 4 — RELACIÓN ENTRE PRODUCTOS (MAPA) */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-white border-y border-slate-100 overflow-hidden">
+      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-extrabold text-rauvia-navy mb-4">CAPACIDADES DE CRECIMIENTO</h2>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 md:p-6 mb-10 md:mb-16 max-w-3xl mx-auto text-left flex items-start gap-4">
@@ -597,7 +611,7 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN 5 — COMPARADOR */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-rauvia-bg">
+      <section className="fx-light fx-compare py-10 md:py-20 bg-rauvia-bg">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 id="soluciones-comparacion" className="text-3xl font-extrabold text-rauvia-navy mb-12 text-center">¿QUÉ ACTIVO NECESITA TU EMPRESA?</h2>
           
@@ -637,9 +651,10 @@ export default function SolucionesPage() {
 
       {/* SECCIÓN 6 — AETHRYON INTEGRATION */}
       <FadeInUp>
-      <section className="py-10 md:py-20 bg-rauvia-navy text-white relative overflow-hidden">
+      <section className="fx-dark fx-flow py-10 md:py-20 bg-rauvia-navy text-white relative overflow-hidden">
+        <ConvergenceField coreSelector=".fx-core" flow="inward" className="fx-field" />
         {/* Background Grid */}
-        <div className="absolute inset-0 pointer-events-none opacity-10" 
+        <div className="hidden absolute inset-0 pointer-events-none opacity-10" 
              style={{ backgroundImage: 'linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
         </div>
 
@@ -652,18 +667,18 @@ export default function SolucionesPage() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 max-w-4xl mx-auto">
-             <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-xl flex-1 text-center w-full">
+             <div className="fx-flow-node bg-slate-800/50 border border-slate-700 p-6 rounded-xl flex-1 text-center w-full">
                <span className="text-xs text-slate-400 font-bold uppercase tracking-wider block mb-2">Señal</span>
                <span className="text-lg font-medium text-white">Situación<br/>Observable</span>
              </div>
              <ArrowRight className="w-6 h-6 text-rauvia-gold rotate-90 md:rotate-0 flex-shrink-0" />
-             <div className="bg-rauvia-navy-dark border border-rauvia-blue p-6 rounded-xl flex-1 text-center shadow-[0_0_30px_rgba(37,99,235,0.2)] w-full">
+             <div className="fx-flow-node fx-core bg-rauvia-navy-dark border border-rauvia-blue p-6 rounded-xl flex-1 text-center shadow-[0_0_30px_rgba(37,99,235,0.2)] w-full">
                <img width="64" height="64" loading="lazy" src="/media/iconos-enfoques-rauvia/05-aethryon.svg" alt="Aethryon" className="w-12 h-12 mx-auto mb-2" />
                <span className="text-xs text-rauvia-blue font-bold uppercase tracking-wider block mb-1">Análisis</span>
                <span className="text-lg font-bold text-white">AETHRYON</span>
              </div>
              <ArrowRight className="w-6 h-6 text-rauvia-gold rotate-90 md:rotate-0 flex-shrink-0" />
-             <div className="bg-slate-800/50 border border-slate-700 p-6 rounded-xl flex-1 text-center w-full">
+             <div className="fx-flow-node bg-slate-800/50 border border-slate-700 p-6 rounded-xl flex-1 text-center w-full">
                <span className="text-xs text-slate-400 font-bold uppercase tracking-wider block mb-2">Solución</span>
                <span className="text-lg font-medium text-white">Activo<br/>Recomendado</span>
              </div>

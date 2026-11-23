@@ -25,40 +25,28 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section className="bg-slate-50 border-y border-slate-200 relative w-full py-20 lg:py-32" id="problema">
-      {/* Blueprint Grid Background */}
-      <div 
-        className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-        style={{ 
-          backgroundImage: 'linear-gradient(#0F172A 1px, transparent 1px), linear-gradient(90deg, #0F172A 1px, transparent 1px)',
-          backgroundSize: '40px 40px' 
-        }}
-      />
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        <div className="mb-16 lg:mb-24 text-center">
-          <span className="text-xs font-bold tracking-widest text-rauvia-blue uppercase block mb-6">
+    <section className="fr-problem relative w-full" id="problema" aria-labelledby="problema-titulo">
+      <div className="fr-problem-inner max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="fr-problem-head text-center">
+          <span className="fr-kicker block">
             SITUACIÓN VISIBLE
           </span>
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-rauvia-navy leading-tight">
+          <h2 id="problema-titulo" className="fr-problem-title">
             Muchas empresas <br className="hidden lg:block"/> tienen capacidades. <br/>
-            <span className="text-rauvia-blue">Pocas las convierten <br className="hidden lg:block"/> en resultados.</span>
+            <span>Pocas las convierten <br className="hidden lg:block"/> en resultados.</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="fr-problem-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {problems.map((problem, idx) => (
-            <div 
-              key={idx} 
-              className="group bg-white border border-slate-200 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-xl hover:border-rauvia-blue/40 transition-all duration-300 cursor-pointer"
-            >
-              <div className="w-16 h-16 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 group-hover:bg-blue-50 transition-all duration-300">
+            <div key={idx} className="fr-card group flex flex-col items-center text-center">
+              <div className="fr-icon flex items-center justify-center">
                 {problem.icon}
               </div>
-              <h3 className="text-[14px] lg:text-[15px] font-bold text-rauvia-navy mb-4 tracking-wider uppercase leading-snug h-auto lg:h-12 flex items-center justify-center">
+              <h3 className="fr-card-title">
                 {problem.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed text-sm">
+              <p className="fr-card-text">
                 {problem.description}
               </p>
             </div>
