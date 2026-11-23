@@ -16,7 +16,9 @@ const fixture=http.createServer((req,res)=>{const slug=new URL(req.url,'http://f
 await new Promise(r=>fixture.listen(0,'127.0.0.1',r));
 const port=3121,base=`http://127.0.0.1:${port}`;
 const log=fs.openSync(nodePath.join(artifacts,'fixture-server.log'),'w');
-const child=spawn(process.execPath,['dist/server.cjs'],{env:{...process.env,NODE_ENV:'production',PORT:String(port),VITE_WORDPRESS_API_URL:`http://127.0.0.1:${fixture.address().port}/wp-json/wp/v2`,SITEMAP_REFRESH_ON_START:'false'},stdio:['ignore',log,log]});
+// Caché del sitemap en un temporal: el servidor reconcilia y reescribe al arrancar; no debe tocar data/ versionado.
+const sitemapCache=nodePath.join(fs.mkdtempSync(nodePath.join(os.tmpdir(),'rauvia-sitemap-')),'sitemap-cache.xml');fs.copyFileSync('data/sitemap-cache.xml',sitemapCache);
+const child=spawn(process.execPath,['dist/server.cjs'],{env:{...process.env,NODE_ENV:'production',PORT:String(port),VITE_WORDPRESS_API_URL:`http://127.0.0.1:${fixture.address().port}/wp-json/wp/v2`,SITEMAP_REFRESH_ON_START:'false',SITEMAP_CACHE_PATH:sitemapCache},stdio:['ignore',log,log]});
 try {
  let ready=false;for(let i=0;i<100;i++){try{await fetch(base+'/');ready=true;break;}catch{await new Promise(r=>setTimeout(r,100));}}
  assert.ok(ready,'production server started');

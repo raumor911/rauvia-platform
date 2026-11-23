@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import { randomUUID } from 'node:crypto';
 import { publicRoutes } from './scripts/public-routes.js';
-import { fetchPosts, renderSitemap } from './scripts/generate-sitemap.js';
+import { fetchPosts, renderSitemap, reconcileCachedSitemap } from './scripts/generate-sitemap.js';
 import { GoogleGenAI } from '@google/genai';
 import { ASSISTANT_SYSTEM_PROMPT } from './server/prompts/assistant';
 import { testConnection, isDbConfigured, closeDbPool } from './server/db';
@@ -198,6 +198,7 @@ async function startServer() {
   let sitemapRevision = -1;
   let refreshInProgress: Promise<string> | null = null;
   let sitemapIntervalId: NodeJS.Timeout | null = null;
+  let sitemapReconciledOnBoot = false;
   
   const SITEMAP_CACHE_PATH = process.env.SITEMAP_CACHE_PATH || path.join(process.cwd(), 'data', 'sitemap-cache.xml');
 
@@ -206,6 +207,14 @@ async function startServer() {
     if (fs.existsSync(SITEMAP_CACHE_PATH)) {
       cachedSitemapXml = fs.readFileSync(SITEMAP_CACHE_PATH, 'utf-8');
       console.log('[Sitemap] Loaded from disk cache.');
+      // Tras un despliegue, la caché puede no incluir las rutas institucionales nuevas: se reconcilian de inmediato.
+      const reconciled = reconcileCachedSitemap(cachedSitemapXml);
+      if (reconciled !== cachedSitemapXml) {
+        cachedSitemapXml = reconciled;
+        sitemapReconciledOnBoot = true;
+        try { fs.writeFileSync(SITEMAP_CACHE_PATH, reconciled, 'utf-8'); } catch (err) { console.warn('[Sitemap] Failed to persist reconciled cache:', err); }
+        console.log('[Sitemap] Cache reconciled with deployed institutional routes.');
+      }
       observeIndexNow(cachedSitemapXml);
     }
   } catch (err) {
@@ -259,7 +268,8 @@ async function startServer() {
   }
 
   const sitemapRefreshOnStart = process.env.SITEMAP_REFRESH_ON_START === 'true';
-  if (sitemapRefreshOnStart || !cachedSitemapXml) {
+  // SITEMAP_REFRESH_ON_START=false desactiva también el refresco forzado por reconciliación (la reconciliación local ya ocurrió).
+  if (sitemapRefreshOnStart || (sitemapReconciledOnBoot && process.env.SITEMAP_REFRESH_ON_START !== 'false') || !cachedSitemapXml) {
     refreshSitemap().catch(() => {});
   }
   

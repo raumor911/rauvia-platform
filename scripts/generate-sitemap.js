@@ -88,3 +88,14 @@ export function renderSitemap(posts) {
     [...entries].map(([route, date]) => `  <url><loc>${escapeXml(`https://rauvia.com.mx${route}`)}</loc>${date ? `<lastmod>${date}</lastmod>` : ''}</url>`).join('\n') + '\n</urlset>\n';
 }
 
+
+// Reconcilia un sitemap persistido con las rutas institucionales del código desplegado.
+// Conserva las entradas editoriales (/recursos/…) con su lastmod y regenera las institucionales desde publicRoutes.
+// Así un despliegue con rutas nuevas (o retiradas) se refleja al arrancar, sin esperar al refresco programado.
+export function reconcileCachedSitemap(xml) {
+  const posts = [];
+  for (const m of String(xml).matchAll(/<url><loc>https:\/\/rauvia\.com\.mx\/recursos\/([^/<>]+)\/<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?<\/url>/g)) {
+    posts.push({ slug: m[1], ...(m[2] ? { modified: m[2] } : {}) });
+  }
+  return renderSitemap(posts);
+}

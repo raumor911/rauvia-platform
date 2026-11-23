@@ -10,6 +10,7 @@
 ## Sincronización y resiliencia
 - Express mantiene un snapshot del sitemap en memoria y en `data/sitemap-cache.xml` (ruta configurable).
 - El refresco programado está configurado por defecto cada **6 horas** (`SITEMAP_REFRESH_INTERVAL_MS=21600000`). El webhook autenticado `/internal/indexnow`, cuando está conectado correctamente a WordPress, invalida y actualiza la lista y el sitemap después de publicaciones, cambios o eliminaciones.
+- **Reconciliación al arrancar (2026-11-23):** al cargar la caché persistida, Express la reconcilia con las rutas institucionales del código desplegado (`reconcileCachedSitemap`): conserva los artículos `/recursos/` con su `lastmod`, añade las rutas nuevas y retira las eliminadas, y fuerza un refresco con WordPress. Un despliegue con páginas nuevas aparece en `/sitemap.xml` al reiniciar, sin esperar las 6 horas.
 - En el arranque, si existe caché persistida, no se fuerza recuperación inmediata salvo `SITEMAP_REFRESH_ON_START=true`; una nueva publicación puede tardar hasta el refresco programado si falla el webhook. Se conserva el snapshot anterior si falla WordPress.
 - La copia versionada `data/sitemap-cache.xml` es **snapshot de respaldo**, no sustituye el contenido vivo ni permite prometer que todas las URLs ya estén indexadas. Los cambios en GitHub no actualizan Hostinger sin despliegue.
 
