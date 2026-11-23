@@ -37,3 +37,8 @@ Semánticos: 15 · Contenido: 20
 - rau004-main-baseline.json /casos contenido
 - rau004-main-baseline.json /trayectoria contenido
 - rau004-main-baseline.json /casos/presencia-posicionamiento-profesional contenido
+
+## 2026-11-23 · 0a90443
+Motivo: Animación de /ruta-90/: barra de avance y línea de 90 días decorativas en el HTML inicial
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /ruta-90 contenido
