@@ -36,7 +36,7 @@
           "@id": "https://rauvia.com.mx/#raul-morales",
           "name": "Raúl Antonio Morales Domínguez",
           "jobTitle": "Fundador y Director Estratégico",
-          "url": "https://rauvia.com.mx/nosotros",
+          "url": "https://rauvia.com.mx/nosotros/",
           "sameAs": [
             "https://www.linkedin.com/in/raumor/"
           ]
@@ -59,7 +59,7 @@
       }
     ],
     "h1": [
-      "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER.</span>"
+      "<span>CONSTRUIMOS LA </span><span>ESTRUCTURA QUE </span><span>PERMITE A LAS </span><span>EMPRESAS <strong>CRECER.</strong></span>"
     ]
   },
   "/soluciones/": {
@@ -90,7 +90,7 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
-        "url": "https://rauvia.com.mx/soluciones",
+        "url": "https://rauvia.com.mx/soluciones/",
         "name": "Portafolio de Soluciones - RAUVIA",
         "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
         "publisher": {
@@ -156,7 +156,7 @@
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/aethryon/#webpage",
         "name": "AETHRYON - RAUVIA",
-        "url": "https://rauvia.com.mx/aethryon",
+        "url": "https://rauvia.com.mx/aethryon/",
         "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
@@ -428,7 +428,7 @@
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "@id": "https://rauvia.com.mx/nosotros/#webpage",
-        "url": "https://rauvia.com.mx/nosotros",
+        "url": "https://rauvia.com.mx/nosotros/",
         "name": "Nosotros - RAUVIA",
         "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
         "publisher": {
@@ -444,13 +444,45 @@
         "@id": "https://rauvia.com.mx/#raul-morales",
         "name": "Raúl Antonio Morales Domínguez",
         "jobTitle": "Fundador y Director Estratégico",
-        "url": "https://rauvia.com.mx/nosotros",
+        "url": "https://raulmorales.com.mx/",
         "sameAs": [
+          "https://raulmorales.com.mx/",
           "https://www.linkedin.com/in/raumor/"
+        ],
+        "alternateName": [
+          "Raúl Morales",
+          "Dr. Raúl Morales",
+          "Raúl Morales, DBA",
+          "Raúl Morales, MDO",
+          "Ing. Raúl Morales",
+          "Raúl Morales, IQM",
+          "RAUMOR"
         ],
         "worksFor": {
           "@id": "https://rauvia.com.mx/#organization"
-        }
+        },
+        "hasCredential": [
+          {
+            "@id": "https://rauvia.com.mx/#raul-morales-credential-doctor-administracion-negocios",
+            "@type": "EducationalOccupationalCredential",
+            "name": "Doctor en Administración de Negocios",
+            "credentialCategory": "Doctorado"
+          },
+          {
+            "@id": "https://rauvia.com.mx/#raul-morales-credential-maestria-direccion-organizaciones",
+            "@type": "EducationalOccupationalCredential",
+            "name": "Maestría en Dirección de Organizaciones",
+            "credentialCategory": "Maestría",
+            "citation": "https://raulmorales.com.mx/mi-cv/"
+          },
+          {
+            "@id": "https://rauvia.com.mx/#raul-morales-credential-ingenieria-quimica-metalurgica",
+            "@type": "EducationalOccupationalCredential",
+            "name": "Ingeniería Química Metalúrgica",
+            "credentialCategory": "Título profesional / Ingeniería",
+            "citation": "https://raulmorales.com.mx/mi-cv/"
+          }
+        ]
       },
       {
         "@context": "https://schema.org",
@@ -479,7 +511,7 @@
       }
     ],
     "h1": [
-      "CONSTRUIMOS LA ESTRUCTURA <br/>QUE PERMITE A LAS EMPRESAS <br/><span class=\"text-rauvia-blue\">CRECER CON CLARIDAD</span><span class=\"text-rauvia-gold\">.</span>"
+      "DEFENDEMOS TU PATRIMONIO. <br/>CONSTRUIMOS CAPACIDADES <br/><span class=\"text-rauvia-blue\">PARA HACERLO CRECER</span><span class=\"text-rauvia-gold\">.</span>"
     ]
   },
   "/recursos/": {
@@ -510,7 +542,7 @@
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/recursos/#webpage",
-        "url": "https://rauvia.com.mx/recursos",
+        "url": "https://rauvia.com.mx/recursos/",
         "name": "Recursos y Blog | RAUVIA",
         "description": "Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.",
         "publisher": {

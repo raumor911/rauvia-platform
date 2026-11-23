@@ -1,0 +1,898 @@
+[
+  {
+    "route": "/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      320,
+      568
+    ],
+    "scrollWidth": 320,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollWidth": 390,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      430,
+      932
+    ],
+    "scrollWidth": 430,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      768,
+      1024
+    ],
+    "scrollWidth": 768,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      850,
+      1000
+    ],
+    "scrollWidth": 850,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      1024,
+      1366
+    ],
+    "scrollWidth": 1024,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/HomePage-BfQYGZu_.css"
+    ]
+  },
+  {
+    "route": "/nosotros/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/soluciones/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/aethryon/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/scrollReveal-Ck3Ohlwe.css",
+      "/assets/AethryonPage-BJH03QuE.css"
+    ]
+  },
+  {
+    "route": "/ruta-90/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "/assets/Ruta90Page-I7svEGAc.css"
+    ]
+  },
+  {
+    "route": "/frente-comercial/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  },
+  {
+    "route": "/recursos/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css",
+      "http://127.0.0.1:3118/assets/scrollReveal-Ck3Ohlwe.css"
+    ]
+  },
+  {
+    "route": "/casos/",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "scrollWidth": 1440,
+    "h1": 1,
+    "badTargets": [],
+    "brokenVisibleImages": [],
+    "clippedInteractive": [],
+    "stylesheets": [
+      "/assets/index-CbBg5xVb.css"
+    ]
+  }
+]

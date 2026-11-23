@@ -2,7 +2,6 @@
   "title": "RAUVIA Consulting | AETHRYON",
   "meta": [
     "<meta charset=\"UTF-8\" />",
-    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
     "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
     "<meta name=\"robots\" content=\"index, follow\">",
     "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
@@ -26,7 +25,7 @@
       "@type": "WebPage",
       "@id": "https://rauvia.com.mx/aethryon/#webpage",
       "name": "AETHRYON - RAUVIA",
-      "url": "https://rauvia.com.mx/aethryon",
+      "url": "https://rauvia.com.mx/aethryon/",
       "description": "Sistema de análisis y convergencia desarrollado por RAUVIA para estructurar decisiones.",
       "publisher": {
         "@id": "https://rauvia.com.mx/#organization"

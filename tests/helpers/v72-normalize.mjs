@@ -1,0 +1,3 @@
+// Normalización compartida por tests/mobile-experience.test.mjs y scripts/refresh-baselines.mjs.
+// El número de WhatsApp se normaliza: cambiarlo es una decisión de contacto, no una regresión de contenido.
+export function normalize(h){return h.replace(/wa\.me\/\d+/g,'wa.me/PHONE').replace(',"founder":{"@id":"https://rauvia.com.mx/#raul-morales"}', '').replace(/<p\b[^>]*>Experiencia digital desarrollada por[\s\S]*?<\/p>/g,'').replace(/<link\b(?=[^>]*rel="(?:stylesheet|modulepreload)")[^>]*>/g,'').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET').replace(/_R_[A-Za-z0-9]+_/g,'_R_ID_').replace(/\s+/g,' ').trim();}

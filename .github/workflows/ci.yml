@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
+      # El build regenera el grafo público: si difiere de lo versionado, falta commitearlo.
+      - name: Grafo de conocimiento versionado al día
+        run: git diff --exit-code -- public/llmo data/knowledge
+      # Suite completa contra el servidor de producción de dist/. Si falla una línea base congelada,
+      # revisa el cambio y actualízala con: npm run baselines:refresh -- --write --reason "motivo"
+      - run: npm test

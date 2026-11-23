@@ -39,7 +39,11 @@
     "postinstall": "node scripts/prepare-hostinger.cjs",
     "test:resources-performance": "node --import tsx --test tests/resources-performance.test.ts tests/resources-performance-app.test.mjs",
     "test:redirects": "node --import tsx --test tests/redirect-canonical.test.ts && node --test tests/redirect-sitemap-http.test.mjs",
-    "test:trayectoria": "node --import tsx --test tests/trayectoria-catalog.test.mjs"
+    "test:trayectoria": "node --import tsx --test tests/trayectoria-catalog.test.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "test:ci": "npm run build && npm test",
+    "baselines:refresh": "node scripts/refresh-baselines.mjs",
+    "evidence:hero": "node scripts/capture-hero-evidence.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.21.0",

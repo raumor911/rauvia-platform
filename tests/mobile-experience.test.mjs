@@ -4,7 +4,7 @@ const manifest=JSON.parse(fs.readFileSync('dist/.vite/manifest.json','utf8'));
 const pageKeys=['HomePage','SolucionesPage','AethryonPage','Ruta90Page','FrenteComercialPage','NosotrosPage','RecursosPage','CasosIndexPage'];
 const text=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
 // Strip only the two explicitly authorized V73 changes before the frozen V72 hash check.
-function normalize(h){return h.replace(',"founder":{"@id":"https://rauvia.com.mx/#raul-morales"}', '').replace(/<p\b[^>]*>Experiencia digital desarrollada por[\s\S]*?<\/p>/g,'').replace(/<link\b(?=[^>]*rel="(?:stylesheet|modulepreload)")[^>]*>/g,'').replace(/\/assets\/[^"<>]+/g,'/assets/BUILD-ASSET').replace(/_R_[A-Za-z0-9]+_/g,'_R_ID_').replace(/\s+/g,' ').trim();}
+import {normalize} from './helpers/v72-normalize.mjs';
 function closure(key){const seen=new Set();function walk(k){if(seen.has(k))return;seen.add(k);for(const child of manifest[k].imports||[])walk(child);}walk('index.html');walk(key);return [...seen].map(k=>manifest[k].file);}
 test('All eight entries retain their unique H1 and complete static route content',()=>{
  for(const [route,old] of Object.entries(baseline)){const h=fs.readFileSync('dist/'+(route==='/'?'':route.slice(1))+'index.html','utf8');const headings=[...h.matchAll(/<h1\b[^>]*>(.*?)<\/h1>/g)].map(m=>text(m[1]));assert.deepEqual(headings,old.h1.map(text),route);assert.ok(h.includes('rv-main-site'),route);assert.match(h,/viewport-fit=cover/);assert.equal((h.match(/name="viewport"/g)||[]).length,1);}

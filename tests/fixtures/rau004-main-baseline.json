@@ -18,21 +18,21 @@
     "h1": [
       "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER."
     ],
-    "outsideHero": "ec912071ab426230fb1b7af782ccb7ce32ecf6e4c1fd83c10c464ce12ef55228"
+    "outsideHero": "6443bccf177489740b643b6d2b0ff847ffed278ee218282fa7cf0b4246a9fea6"
   },
   "/nosotros": {
     "head": "08fa7f07fae002d1a7804c3b84405a776827848f0893d7231969edab5311e66a",
     "h1": [
-      "CONSTRUIMOS LA ESTRUCTURA QUE PERMITE A LAS EMPRESAS CRECER CON CLARIDAD ."
+      "DEFENDEMOS TU PATRIMONIO. CONSTRUIMOS CAPACIDADES PARA HACERLO CRECER ."
     ],
-    "outsideHero": "d96a0e679bbe4ff73fca7fefb19104d508a9c141e2915bbfca35f115779c4061"
+    "outsideHero": "03b76325879746713cece1e8b5efad077d6a837451dceaa7226d9d0603a182c5"
   },
   "/soluciones": {
     "head": "9d6de1583fd7f1e12d084d0197802ba056ecb0811352f9a334294cf204c0f05f",
     "h1": [
       "CONSTRUIMOS LOS ACTIVOS QUE TU EMPRESA NECESITA PARA CRECER ."
     ],
-    "outsideHero": "65ca934f714d94e26017e56fc1ec12bb399347f8e7d8541443cbdf9b7c5ca4b0"
+    "outsideHero": "ac7591fcbf64aaaf5c1fd3529ae07b75916615dc8b6af43cf6ed35b5ad3c1ec2"
   },
   "/aethryon": {
     "head": "c5657ba07a874a2bfa66c8ffa6897a1032498e8cec3b930d629d5d9a55c16937",
@@ -46,14 +46,14 @@
     "h1": [
       "Recursos"
     ],
-    "outsideHero": "10396050afeb62d4f4ea8ac4fe57e8d815cd9c3cbf3aded6e0bacb9835ff9fbe"
+    "outsideHero": "abf630e026a5b9a0aff92e90a302fe1e586fbfa93cd65a678b922b3d4f65b87e"
   },
   "/frente-comercial": {
     "head": "a7e0385a0d7b4fd5af4e0a29353d80bc24283f9a74cd152c99c77ea8eb44fee4",
     "h1": [
       "Haz más fácil entender, confiar y avanzar con tu empresa."
     ],
-    "outsideHero": "707403953138a8698cb23d22346851182bb0977383dc1c1cc7afb0b46279bda7"
+    "outsideHero": "d6a64958ea20a2d5d4be64fda45c4bc9b0a7ad179e1ed3f5da26ce20998d55f7"
   },
   "/sitio-web-comercial-para-pymes": {
     "head": "91791f00530910c6dfa58dfaf543ca38f4220209e3d421044a910bf2b2b11c05",
@@ -74,7 +74,7 @@
     "h1": [
       "Casos y evidencia"
     ],
-    "outsideHero": "b554b9374d7799d752ee5aecffdc5189d11bd55b56c78e831f668b51f5dcb9eb"
+    "outsideHero": "e2edf5f681bfc38619d4d4f5cd69f9e98cdabbd7b994189a61dbf65f87b0c32f"
   },
   "/casos/infraestructura-temporal-b2b": {
     "head": "3945c8b41644d4edaf5a3e6e761875122e3798b04417cd88d35973f1da9d8a67",
@@ -146,12 +146,33 @@
     ],
     "outsideHero": "3f758b9d8aba7f5c77be77ac9655278d523e0353b99f897443039d945233bf2c"
   },
+  "/seo-ai": {
+    "head": "a98981fd45413499afd1f64270c99eb54315a5ce198a14ea09b5327db63fd095",
+    "h1": [
+      "SEO para IA generativa (GEO) para empresas"
+    ],
+    "outsideHero": "9eb441d51a5e981e37f25cfb8c2f9fd5068cf5ccad3ec197cd5e81dca6b42d93"
+  },
+  "/seo-ai/auditoria": {
+    "head": "3574fe68fb4364eaa8a01771e825ce783765812679a81f33d72ec4d462c48fa4",
+    "h1": [
+      "Auditoría GEO para empresas"
+    ],
+    "outsideHero": "9a20bbe664c80a3addc61ffd8c119c077d017fa30b5a464b752acdb035b7fd43"
+  },
+  "/seo-ai/implementacion": {
+    "head": "fc9d295c7ec4df5f2b2268db9619199de3b4a3353fd75a30beceacbc4dd41598",
+    "h1": [
+      "Implementación de SEO para IA para empresas"
+    ],
+    "outsideHero": "601e9a188455d9af46d4a1a33e19a7901b9b83b0fd80d33a4a230c7bb9eeb83e"
+  },
   "/trayectoria": {
-    "head": "caba150b55f568e89e9acdb6f8d1a60a222c5ad5c9f6950a219e86712e7fd5f2",
+    "head": "ae437c58d259052e1d2e2d996fa8dc64bf2f70ae1f04a39a65c32f286df4da52",
     "h1": [
       "Tu presencia digital debe evolucionar con tu empresa."
     ],
-    "outsideHero": "a5c27128e6da47d1156fbff10226ce3d958e8acc26ba51d593ce46be6e016bd4"
+    "outsideHero": "2860a17c2edcddf5535be01aa43e83ba68af7bb84594ea7ed0ea080d1bf21460"
   },
   "/rauviaweb": {
     "head": "40d2487e59388bee94b7d84c185a4631b53fb2576538b2c9c03401017929740d",
@@ -163,8 +184,8 @@
   "/casos/presencia-posicionamiento-profesional": {
     "head": "30deb6f69a589597df661e91b5756cef88968581eca50ed5c152167a4ad5c5ba",
     "h1": [
-      "De información profesional dispersa a una presentación digital coherente."
+      "De la experiencia profesional a una presencia que comunica capacidades"
     ],
-    "outsideHero": "42e26931ba8a16ea9dd7ea9dd8553eb8212e3d88953e75564d17a674c645d8c1"
+    "outsideHero": "d6015fd1a6e18eef685ca69b6880886d66b9ce2bd20edfed2fff80deaf08a2a5"
   }
 }
