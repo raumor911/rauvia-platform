@@ -4,18 +4,23 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, PlayCircle, ShieldCheck, Target, Layers, Settings, BarChart3, TrendingUp, Hexagon } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import WhatsAppCTA from '../components/WhatsAppCTA';
-import { useRef } from 'react';
+import { useRef, useState, type CSSProperties } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
 import HeroScene from '../components/HeroScene';
+import { IntersectionVenn } from '../components/NosotrosVisuals';
+import useNosotrosFx from '../hooks/useNosotrosFx';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
+import '../styles/nosotrosFx.css';
 
 export default function NosotrosPage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, ':scope > div > section > div');
   usePageFx(root);
+  useNosotrosFx(root);
+  const [pick, setPick] = useState<number | null>(null);
 
   return (
     <div ref={root} className="fx-page fx-nosotros">
@@ -91,12 +96,12 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 2 — ORIGEN DEL PROBLEMA */}
       <FadeInUp>
-      <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
+      <section className="fx-dark nx-console py-10 md:py-20 bg-rauvia-navy-dark border-y border-slate-100">
         <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
           <div className="w-full">
             <div className="flex justify-center">
               {/* Visual Origen */}
-              <div className="fx-window relative w-full max-w-[1600px]">
+              <div className="fx-window nx-window nx-reveal relative w-full max-w-[1600px]">
                 <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
               </div>
             </div>
@@ -110,7 +115,7 @@ export default function NosotrosPage() {
       <section className="fx-light py-10 md:py-20 bg-white border-y border-slate-100">
         <div className="w-full px-4 sm:px-6 lg:px-12 mx-auto">
           <div className="flex justify-center">
-            <div className="fx-window relative w-full max-w-[1600px]">
+            <div className="fx-window nx-window nx-reveal relative w-full max-w-[1600px]">
               <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
             </div>
           </div>
@@ -120,11 +125,11 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 5 — PRINCIPIOS */}
       <FadeInUp>
-      <section className="fx-dark fx-principles py-10 md:py-20 bg-rauvia-navy-dark text-white">
+      <section className="fx-dark fx-principles nx-principles py-10 md:py-20 bg-rauvia-navy-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold mb-10 md:mb-16 text-center tracking-tight">PRINCIPIOS DE TRABAJO</h2>
           
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className={'nx-opts flex flex-wrap justify-center gap-8' + (pick !== null ? ' has-pick' : '')}>
             {[
               { title: 'CLARIDAD ANTES QUE COMPLEJIDAD', desc: 'Una solución debe poder comprenderse antes de poder ejecutarse.', icon: 'M4 4h16v16H4z M10 10h4v4h-4z' },
               { title: 'ESTRUCTURA ANTES QUE ESCALA', desc: 'Antes de crecer, una empresa necesita proteger sus recursos, reducir pérdidas evitables y fortalecer la estructura que sostiene sus resultados.', icon: 'M4 20h16v-4H4z M8 12h8v-4H8z M10 4h4v4h-4z' },
@@ -132,11 +137,12 @@ export default function NosotrosPage() {
               { title: 'EVIDENCIA ANTES QUE CERTEZA ARTIFICIAL', desc: 'Diferenciamos hechos, hipótesis e inferencias antes de recomendar una decisión.', icon: 'M12 22A10 10 0 10 12 2a10 10 0 000 20z M12 6v6l4 2' },
               { title: 'EJECUCIÓN SOBRE PRESENTACIÓN', desc: 'Un diagnóstico solo tiene valor cuando puede convertirse en una ruta de acción.', icon: 'M5 12l5 5L20 7' }
             ].map((p, i) => (
-              <div key={i} className="fx-card w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] p-8 border border-slate-700 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors flex-grow-0">
+              <div key={i} style={{ '--i': i } as CSSProperties} className={'fx-card nx-opt nx-reveal w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] p-8 border border-slate-700 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors flex-grow-0' + (pick === i ? ' is-picked' : '')}>
+                <button type="button" className="nx-pick" aria-pressed={pick === i} aria-labelledby={'nx-opt-' + i} onClick={() => setPick(pick === i ? null : i)} />
                 <svg className="w-8 h-8 text-rauvia-gold mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d={p.icon} />
                 </svg>
-                <h3 className="text-sm font-bold tracking-widest text-slate-200 mb-3 uppercase leading-relaxed">{p.title}</h3>
+                <h3 id={'nx-opt-' + i} className="text-sm font-bold tracking-widest text-slate-200 mb-3 uppercase leading-relaxed">{p.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -167,7 +173,7 @@ export default function NosotrosPage() {
               </Link>
             </div>
             <div className="flex justify-center relative">
-               <Link to="/aethryon/" className="w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
+               <Link to="/aethryon/" className="nx-orb w-full max-w-lg block group cursor-pointer" title="Conocer más sobre AETHRYON">
                  <img width="1400" height="1060" loading="lazy" src="/media/aethryon-convergence-animated.svg" alt="AETHRYON" className="w-full object-contain group-hover:scale-[1.01] transition-transform" />
                </Link>
             </div>
@@ -178,12 +184,13 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 7 — FUNDADOR */}
       <FadeInUp>
-      <section className="fx-light py-10 md:py-20 bg-rauvia-bg">
+      <section className="fx-dark nx-founder py-10 md:py-20 bg-rauvia-navy-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 md:mb-16">
             <h2 className="max-w-3xl mx-auto text-center text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
               RAUVIA FUE CONSTRUIDA DESDE LA INTERSECCIÓN ENTRE <span className="text-rauvia-blue">NEGOCIO, OPERACIÓN Y TECNOLOGÍA.</span>
             </h2>
+            <IntersectionVenn />
             <div className="space-y-4 text-slate-600 text-base leading-relaxed">
               <p>RAUVIA fue fundada por Raúl Morales como una firma orientada a convertir análisis, estructura y tecnología en capacidades ejecutables para empresas.</p>
               <p>Actualmente, aporta la dirección, el criterio estratégico, la arquitectura de soluciones y la evolución metodológica de la organización.</p>
@@ -213,7 +220,7 @@ export default function NosotrosPage() {
               { title: 'TECNOLOGÍA', desc: 'Arquitectura funcional y desarrollo de activos digitales.' },
               { title: 'EJECUCIÓN', desc: 'Implementación en operaciones y proyectos reales.' }
             ].map((b, i) => (
-              <div key={i} className="fx-founder-card fx-lift bg-white p-6 border border-slate-100 rounded-xl shadow-sm">
+              <div key={i} style={{ '--i': i } as CSSProperties} className="fx-founder-card fx-card nx-reveal bg-white p-6 border border-slate-100 rounded-xl shadow-sm">
                 <div className="w-10 h-10 bg-slate-50 border border-slate-200 rounded flex items-center justify-center mb-4">
                   <div className="w-2 h-2 bg-rauvia-blue rounded-full"></div>
                 </div>
@@ -228,11 +235,12 @@ export default function NosotrosPage() {
 
       {/* SECCIÓN 8 — RELACIÓN CON EL CLIENTE */}
       <FadeInUp>
-      <section className="fx-light py-10 md:py-20 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="fx-dark nx-relation py-10 md:py-20 bg-rauvia-navy-dark">
+        <ConvergenceField flow="inward" origin={[0.5, 0.5]} className="fx-field" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
-            <div className="order-2 lg:order-1 flex flex-col sm:flex-row gap-8 justify-center">
+            <div className="nx-ba nx-reveal order-2 lg:order-1 flex flex-col sm:flex-row gap-8 justify-center">
               {/* Antes */}
               <div className="fx-before bg-slate-50 p-8 rounded-xl border border-slate-100 flex-1 text-center flex flex-col items-center">
                 <div className="text-xs font-bold tracking-widest text-slate-400 mb-6 uppercase">Antes</div>

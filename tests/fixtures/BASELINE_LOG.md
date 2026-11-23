@@ -77,3 +77,8 @@ Semánticos: 0 · Contenido: 3
 Motivo: UI/UX de AETHRYON como sistema de decisión (opciones elegibles, ramas del ejemplo, pentágono de criterios, rieles de pasos, índice lateral): mismo texto, H1 y SEO; cambian clases y se agregan elementos decorativos aria-hidden y botones de selección sin texto propio
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json /aethryon contenido
+
+## 2026-11-23 · ff8124c
+Motivo: UI/UX de Nosotros equiparable a AETHRYON (consolas luminosas, principios elegibles, diagrama de intersección, antes/después animado, cierre con retícula continua al pie): mismo texto, H1 y SEO; cambian clases y se agregan elementos decorativos aria-hidden y botones de selección sin texto propio
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json /nosotros contenido
