@@ -3,16 +3,19 @@ import { RAUVIA_ENTITY, ENTITIES } from '../config/entity';
 import FadeInUp from '../components/FadeInUp';
 import { useRef } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
+import useHomeFrontier from '../hooks/useHomeFrontier';
 import HeroSection from '../components/HeroSection';
 import ProblemSection from '../components/ProblemSection';
 import MethodologySection from '../components/MethodologySection';
 import CapabilitiesSection from '../components/CapabilitiesSection';
 import '../styles/scrollReveal.css';
+import '../styles/homeFrontier.css';
 
 
 export default function HomePage() {
   const root = useRef<HTMLDivElement>(null);
   useScrollReveal(root, '.rv-home-reveal > section, .rv-home-problems .grid > div');
+  useHomeFrontier(root);
 
   const webSiteData = {
     "@context": "https://schema.org",
@@ -28,6 +31,7 @@ export default function HomePage() {
   return (
     <div ref={root}>
       <RouteSEO path="/" />
+      <div className="fr-progress" aria-hidden="true" />
       
       
       

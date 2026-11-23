@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T05:34:48.494Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base 155b4ca + working tree",
+  "capturedAt": "2026-11-23T06:22:08.802Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base 0a90443 + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -183,8 +183,8 @@
       "url": "http://127.0.0.1:3118/soluciones/",
       "focus": {
         "href": "/soluciones/",
-        "outline": "rgb(30, 74, 116) solid 3px",
-        "outlineOffset": "4px",
+        "outline": "rgb(230, 163, 0) solid 3px",
+        "outlineOffset": "3px",
         "tag": "A",
         "text": "CONOCER NUESTROS PRODUCTOS"
       }
@@ -193,8 +193,8 @@
   "keyboard": {
     "focus": {
       "href": "/soluciones/",
-      "outline": "rgb(30, 74, 116) solid 3px",
-      "outlineOffset": "4px",
+      "outline": "rgb(230, 163, 0) solid 3px",
+      "outlineOffset": "3px",
       "tag": "A",
       "text": "CONOCER NUESTROS PRODUCTOS"
     },

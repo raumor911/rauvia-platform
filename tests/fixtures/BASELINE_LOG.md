@@ -37,3 +37,8 @@ Semánticos: 15 · Contenido: 20
 - rau004-main-baseline.json /casos contenido
 - rau004-main-baseline.json /trayectoria contenido
 - rau004-main-baseline.json /casos/presencia-posicionamiento-profesional contenido
+
+## 2026-11-23 · 0a90443
+Motivo: Mejora visual de la home (capa frontera): mismo texto; cambia el marcado de Situación visible y se agrega la barra de avance
+Semánticos: 0 · Contenido: 1
+- rau004-main-baseline.json / contenido
