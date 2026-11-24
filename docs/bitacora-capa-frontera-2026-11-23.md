@@ -101,7 +101,25 @@ Hasta aquí solo el hero, el cierre y detalles (tarjetas, preguntas frecuentes) 
 
 **Verificación:** lint sin errores; `npm test` 546 bien, 0 fallas (solo el TODO de aprobación visual del Hero); evidencia 56 filas, 0 hallazgos; `/contacto-rauvia/` responde 200 y `/contacto/` sigue en 410.
 
-## 6. Notas de operación
+## 6. Estado de estabilidad (revisión del 2026-11-23)
+
+**Estable**
+
+- Código: `npm test` 546 bien, 0 fallas (solo el TODO de aprobación visual del Hero, que no es una falla); lint sin errores; compilación de producción incluida en `npm run test:ci`.
+- Evidencia móvil: 56 revisiones, 0 hallazgos; sin desborde horizontal en las páginas revisadas (1440 y 390 px).
+- Producción disponible: `/`, `/soluciones/`, `/aethryon/`, `/casos/`, `/recursos/`, `/nosotros/`, `/frente-comercial/`, `/pagina-web-para-medicos/`, `/terminos/`, `robots.txt`, `sitemap.xml` y `llms.txt` respondieron 200.
+
+**A vigilar**
+
+- Tiempos de respuesta irregulares en producción (una sola medición): entre ~0.2 s (`/sitemap.xml`) y ~12 s (`/` y `/terminos/`). Puede ser arranque en frío del hosting o de la red; no se pudo confirmar. Repetir la medición varias veces tras redesplegar.
+- Producción sigue en la versión anterior hasta redesplegar (Hostinger no despliega solo): `/contacto-rauvia/` da 404 allá y el escáner de agentes no verá los enlaces nuevos de contacto y términos hasta entonces.
+- Ruido solo en local: `/api/events` responde 500 (sin credenciales de MySQL) y `ipapi.co` se bloquea por CORS en localhost. No verificado en producción.
+
+**Respaldo:** el trabajo quedó subido a `main` en el commit `11dc79f` (28 archivos).
+
+**Siguiente paso:** redesplegar en Hostinger (`dist/server.cjs`), volver a pasar el escáner de agentes y medir los tiempos de respuesta.
+
+## 7. Notas de operación
 
 - Congeladas: `node scripts/refresh-baselines.mjs` (simulacro) y `--write --reason "…"` (registra en `tests/fixtures/BASELINE_LOG.md`).
 - Tras compilar o probar, restaurar `docs/v72-evidencias/bundle-graph.json` y `data/sitemap-cache.xml` con `git checkout`.
@@ -109,7 +127,7 @@ Hasta aquí solo el hero, el cierre y detalles (tarjetas, preguntas frecuentes) 
 - Regla global a recordar: `.rv-main-site main a:not([class*=flex]):not([class*=block])` fuerza `inline-flex`; añade `flex` o `block` en la clase cuando el enlace deba ser de bloque.
 - Producción (Hostinger) no despliega sola: sigue sirviendo la versión anterior hasta redesplegar (`dist/server.cjs`).
 
-## 7. Pendiente de decisión
+## 8. Pendiente de decisión
 
 - Hacer commit y push de las 10 landings y de esta bitácora.
 - Redesplegar en Hostinger.

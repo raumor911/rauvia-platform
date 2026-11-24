@@ -231,6 +231,7 @@
       "intent:pagina-web-restaurante",
       "intent:presencia-local-restaurante",
       "intent:presencia-medica-dispersa",
+      "intent:presencia-posicionamiento-profesional",
       "intent:reservas-restaurante",
       "intent:restaurante-depende-redes",
       "intent:seo-local-medicos",
@@ -701,6 +702,22 @@
     ],
     "existingCoverage": [
       "asset:pagina-web-medicos"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-presencia-posicionamiento-profesional",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:presencia-posicionamiento-profesional"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:case-presencia-posicionamiento-profesional"
     ],
     "missing": "Artículo o guía relacionada en el snapshot",
     "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
@@ -1714,6 +1731,22 @@
     ],
     "existingCoverage": [
       "asset:pagina-web-medicos"
+    ],
+    "missing": "Evidencia de aplicación delimitada y revisada",
+    "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."
+  },
+  {
+    "id": "gap:evidence-gap:intent-presencia-posicionamiento-profesional",
+    "type": "EVIDENCE_GAP",
+    "intents": [
+      "intent:presencia-posicionamiento-profesional"
+    ],
+    "capabilities": [
+      "capability:presencia-digital-profesional",
+      "capability:presencia-local"
+    ],
+    "existingCoverage": [
+      "asset:case-presencia-posicionamiento-profesional"
     ],
     "missing": "Evidencia de aplicación delimitada y revisada",
     "rationale": "Cobertura editorial disponible; no acredita eficacia ni resultados transferibles a esta intención."

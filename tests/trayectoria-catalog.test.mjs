@@ -55,7 +55,8 @@ test('Table is mounted in the prerendered route, without a separate duplicate pa
   const table=fs.readFileSync('src/components/TrayectoriaCatalog.tsx','utf8');
   const footer=fs.readFileSync('src/components/Footer.tsx','utf8');
   assert.match(view,/page==='trayectoria'&&<TrayectoriaCatalog\/>/);
-  assert.match(table,/<table/);
+  assert.match(table,/<ul className="pr-plans/);
+  assert.match(table,/<ul className="pr-changes/);
   assert.match(table,/catalog\.plans\.map/);
   assert.match(table,/catalog\.change_types\.map/);
   assert.match(footer,/to="\/trayectoria\/"/);

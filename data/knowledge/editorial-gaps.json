@@ -253,13 +253,51 @@
         "claims": [
           "claim:benchmark-interno",
           "claim:conversaciones-reportadas",
-          "claim:trazabilidad-en-construccion"
+          "claim:inversion-registrada",
+          "claim:costo-por-conversacion",
+          "claim:alcance-visualizaciones",
+          "claim:clasificacion-conversaciones",
+          "claim:trazabilidad-en-construccion",
+          "claim:rediseno-web-estado"
         ],
         "limitations": [
           "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
           "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
           "Reporte propio, sin validación independiente ni atribución causal establecida.",
-          "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado."
+          "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; visualizaciones y alcance ≠ demanda calificada; interacciones clasificadas ≠ funnel ni tasas de conversión; capacidad en construcción ≠ resultado terminado."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:evidencia-presencia-profesional",
+      "priority": "REVIEW",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué permite concluir el caso de presencia y posicionamiento profesional de RAUVIA?",
+        "intents": [
+          "intent:presencia-posicionamiento-profesional"
+        ],
+        "problems": [
+          "problem:presencia-digital-fragmentada"
+        ],
+        "capabilities": [
+          "capability:presencia-digital-profesional",
+          "capability:presencia-local"
+        ],
+        "primarySource": "asset:case-presencia-posicionamiento-profesional",
+        "claims": [
+          "claim:presencia-profesional-capacidad",
+          "claim:referencias-implementadas",
+          "claim:presencia-profesional-evidencia-pendiente"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Reporte propio, sin validación independiente ni atribución causal establecida.",
+          "Sin métricas publicadas: una implementación de referencia no equivale a descubrimiento, contactos, oportunidades, clientes ni resultados.",
+          "Las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales; en salud la información administrativa no sustituye una valoración médica."
         ]
       },
       "publication": "not_authorized"

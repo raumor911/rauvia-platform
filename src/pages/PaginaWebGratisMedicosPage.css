@@ -4,3 +4,113 @@
 @media(max-width:900px){.med-container{width:calc(100% - 48px)}.med-desktop-links{display:none}.med-local-inner{flex-wrap:wrap;gap:0 20px;padding-block:14px}.med-nav-cta{margin-left:auto}.med-mobile-nav{display:block;width:100%;border-top:1px solid var(--med-line);margin-top:9px}.med-mobile-nav summary{display:flex;justify-content:space-between;align-items:center;padding:12px 0 0;font-size:12px;cursor:pointer;list-style:none;min-height:44px}.med-mobile-nav summary::-webkit-details-marker{display:none}.med-mobile-nav>div{display:grid;grid-template-columns:repeat(3,1fr);gap:5px 15px;padding-top:16px}.med-mobile-nav a{font-size:13px;padding-block:12px}.med-hero{padding:52px 0}.med-hero-grid{grid-template-columns:1fr;gap:44px}.med-hero-copy{max-width:660px}.med-hero-preview{max-width:700px;width:100%;justify-self:center;padding:26px}.med-hero-copy .med-fine{max-width:600px}.med-feature-strip>.med-container{display:grid;grid-template-columns:repeat(3,1fr)}.med-section{padding-block:72px}.med-grid-three{grid-template-columns:repeat(2,minmax(0,1fr))}.med-plans{grid-template-columns:1fr;max-width:650px;margin-inline:auto}.med-plan h3,.med-plan-price,.med-plan>p{min-height:0}.med-plan-price{margin-bottom:22px}.med-plan h3{font-size:26px;margin-bottom:20px}.med-plan .med-button{margin-top:15px}.med-showcase-grid{grid-template-columns:1fr;gap:26px;min-height:0}.med-example-copy h3{font-size:1.6rem}.med-example-copy .med-eyebrow{margin-bottom:12px}.med-example-copy .med-text-link{margin-top:10px}.med-example-copy{min-height:190px}.med-showcase-grid>.med-browser{align-self:start}.med-split,.med-promise,.med-faq{grid-template-columns:1fr;gap:30px}.med-responsibility{margin-bottom:72px}.med-promise .med-eyebrow{margin-bottom:14px}}
 @media(max-width:540px){.med-landing{padding-top:100px}.med-container{width:calc(100% - 36px)}.med-section{padding-block:56px}.med-hero{padding-block:38px 44px}.med-hero h1{font-size:36px}.med-eyebrow{font-size:10px;margin-bottom:18px}.med-hero-copy .med-lead{font-size:16px}.med-hero-copy p{font-size:14px}.med-actions{gap:12px;align-items:stretch;flex-direction:column}.med-actions .med-text-link{justify-content:center}.med-button{min-height:52px;width:100%;font-size:13px}.med-hero-preview{padding:18px 12px 12px;border-radius:10px}.med-preview-label{font-size:10px}.med-preview-bottom{gap:12px;padding-top:18px}.med-preview-bottom strong{font-size:15px}.med-price-badge{font-size:20px}.med-feature-strip>.med-container{grid-template-columns:repeat(2,1fr);gap:17px 10px;padding-block:25px}.med-feature-strip span{font-size:11px}.med-heading{margin-bottom:30px}.med-heading p{font-size:16px;margin-top:18px}.med-grid-three,.med-grid-four{grid-template-columns:1fr}.med-card{padding:26px}.med-card-top{margin-bottom:20px}.med-example-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}.med-example-controls button{padding:12px 10px;font-size:11px}.med-example-controls button:last-child{grid-column:1/-1}.med-example-controls button span{margin-right:7px}.med-example-copy{min-height:205px}.med-showcase-note{font-size:11px}.med-process .med-grid{gap:30px}.med-step{margin-bottom:18px;padding-bottom:14px}.med-why .med-grid{gap:30px}.med-why h3{margin-bottom:10px}.med-faq{gap:8px}.med-faq summary{font-size:14px;gap:14px}.med-responsibility{padding:24px;gap:13px;margin-bottom:56px}.med-responsibility>svg{width:18px}.med-responsibility h2{font-size:16px}.med-final .med-actions{max-width:340px;margin-inline:auto;margin-top:28px}.med-final p{font-size:15px}.med-related>div{display:grid;grid-template-columns:1fr 1fr;gap:12px 18px}.med-related a{padding-block:8px}.med-landing [id]{scroll-margin-top:120px}}
 @media(prefers-reduced-motion:reduce){.med-landing *{scroll-behavior:auto!important;transition:none!important}}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Planes · versión sobria y de prestigio (solo presentación; mismo texto, precios, enlaces y orden).
+   Banda azul marino con filo dorado; tarjetas con numeración Nº, cifras en serif y riqueza creciente
+   de la 01 a la 03. Selectores acotados a .med-landing para ganar a landingBody.css/landingFx.css.
+   ─────────────────────────────────────────────────────────────────────────── */
+.lf-page.med-landing section.med-plans-section:not(.lf-hero):not(.lf-final){
+  --med-ink:#fff;--med-muted:#c3d3e5;--med-teal:#FFD766;--med-line:rgba(255,255,255,.14);
+  --pl-serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  position:relative;isolation:isolate;color:#c3d3e5;background-color:#0A2540;
+  background-image:linear-gradient(90deg,transparent,#E6A300 20%,#FFD766 50%,#E6A300 80%,transparent),radial-gradient(50% 55% at 85% 8%,rgba(47,106,163,.38),transparent 70%),radial-gradient(40% 45% at 6% 100%,rgba(230,163,0,.09),transparent 70%),var(--lf-tri),linear-gradient(180deg,#0A2540 0%,#071a2e 60%,#051320 100%);
+  background-size:100% 2px,auto,auto,auto,auto;background-repeat:no-repeat,no-repeat,no-repeat,repeat,no-repeat;background-position:top center,0 0,0 0,0 0,0 0;
+  box-shadow:inset 0 -1px 0 rgba(255,215,102,.22);border:0}
+.med-landing .med-plans-section .med-heading h2{font-family:var(--pl-serif);font-weight:500;letter-spacing:-.02em;color:#fff;text-shadow:0 2px 24px rgba(5,19,32,.7)}
+.med-landing .med-plans-section .med-heading p{color:#c3d3e5}
+.med-landing .med-plans-section .med-heading .med-eyebrow{color:#FFD766;border-color:rgba(255,215,102,.3);background:rgba(255,255,255,.05)}
+.med-landing .med-plans{gap:26px;align-items:stretch}
+
+/* tarjeta base (Nº 01: puerta de entrada, cristal sobrio con filo dorado fino) */
+.lf-page.med-landing section.med-plans-section .med-plan{
+  position:relative;overflow:hidden;border-radius:18px;padding:34px 30px 30px;color:#c3d3e5;
+  border:1px solid rgba(255,215,102,.26);background-color:rgba(255,255,255,.05);
+  background-image:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 28px 44px -30px rgba(0,0,0,.85);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .4s,box-shadow .5s,background-color .4s}
+.lf-page.med-landing section.med-plans-section .med-plan:hover{
+  transform:translateY(-8px);border-color:rgba(255,215,102,.62);background-color:rgba(255,255,255,.07);
+  box-shadow:inset 0 2px 0 #E6A300,0 38px 56px -30px rgba(0,0,0,.95),0 0 60px -26px rgba(230,163,0,.6)}
+.med-landing .med-plan-free{border-color:rgba(255,215,102,.22)}
+
+/* Nº 02: filo dorado superior y resplandor suave */
+.lf-page.med-landing section.med-plans-section .med-plan-2{
+  border-color:rgba(255,215,102,.48);
+  background-image:radial-gradient(90% 55% at 100% 0%,rgba(230,163,0,.13),transparent 65%),linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.025));
+  box-shadow:inset 0 2px 0 rgba(230,163,0,.85),0 34px 52px -30px rgba(0,0,0,.9),0 0 50px -30px rgba(230,163,0,.5)}
+/* Nº 03: borde en degradado dorado, fondo más profundo y destello */
+.lf-page.med-landing section.med-plans-section .med-plan-3{
+  border:1px solid transparent;
+  background-color:#0b2a4a;
+  background-image:radial-gradient(85% 60% at 100% 0%,rgba(255,215,102,.2),transparent 62%),radial-gradient(70% 40% at 0% 100%,rgba(47,106,163,.4),transparent 70%),linear-gradient(180deg,#0f3358,#091f39);
+  background-clip:padding-box,padding-box,padding-box;
+  box-shadow:0 0 0 1px rgba(255,215,102,.55),inset 0 1px 0 rgba(255,255,255,.18),0 40px 60px -30px rgba(0,0,0,.95),0 0 70px -24px rgba(230,163,0,.6)}
+.lf-page.med-landing section.med-plans-section .med-plan-3:hover{box-shadow:0 0 0 1px #FFD766,inset 0 2px 0 #FFD766,0 44px 64px -30px rgba(0,0,0,1),0 0 90px -20px rgba(230,163,0,.75)}
+.med-landing .med-plan-3::after{content:"";position:absolute;top:0;bottom:0;left:-70%;width:40%;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,255,255,.14),transparent);transform:skewX(-18deg);transition:none}
+.med-landing .med-plan-3:hover::after{left:140%;transition:left 1.1s cubic-bezier(.2,.8,.2,1)}
+
+/* cabecera: numeración y ornamento */
+.med-landing .med-plan-top{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.med-landing .med-plan-no{font-family:var(--pl-serif);font-size:15px;letter-spacing:.14em;color:#FFD766;font-variant-numeric:lining-nums}
+.med-landing .med-plan-orn{flex:1;height:1px;background:linear-gradient(90deg,rgba(255,215,102,.6),transparent)}
+.med-landing .med-plan-orn::after{content:"";display:block;width:5px;height:5px;margin-top:-2px;background:#FFD766;transform:rotate(45deg);box-shadow:0 0 10px rgba(255,215,102,.8)}
+.lf-page.med-landing section.med-plans-section .med-plan .med-eyebrow{display:block;width:auto;padding:0;border:0;background:none;border-radius:0;font-size:11px;letter-spacing:.16em;margin-bottom:12px;color:#FFD766}
+.lf-page.med-landing section.med-plans-section .med-plan .med-eyebrow::before{content:none}
+
+/* títulos y cifras en serif, peso fino */
+.med-landing .med-plan h3{font-family:var(--pl-serif);font-weight:500;font-size:1.7rem;letter-spacing:-.015em;line-height:1.18;min-height:2.1rem;margin-bottom:22px;color:#fff;text-shadow:none}
+.med-landing .med-plan-price{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:.4em;row-gap:2px;min-height:7.6rem;padding-bottom:22px;margin-bottom:6px;border-bottom:1px solid rgba(255,215,102,.2);font-weight:400;letter-spacing:0;line-height:1;color:#fff}
+.med-landing .med-plan-price .med-price-from{flex-basis:100%;font-family:inherit;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#FFD766;margin:0 0 10px;display:block}
+.med-landing .med-plan-free .med-plan-price::before{content:"";flex-basis:100%;height:21px}
+.med-landing .med-plan-price .med-price-amt{display:inline;font-family:var(--pl-serif);font-size:clamp(2.7rem,4.2vw,3.5rem);font-weight:400;letter-spacing:-.03em;color:#fff;margin:0;font-variant-numeric:lining-nums}
+.med-landing .med-plan-price .med-price-cur{display:inline;font-size:13px;letter-spacing:.16em;color:#c3d3e5;margin:0}
+.med-landing .med-plan-price .med-price-suffix{flex-basis:100%;display:block;font-size:12px;letter-spacing:.06em;color:#c3d3e5;margin:10px 0 0}
+.med-landing .med-plan-zero{font-size:inherit}
+.med-landing .med-plan>p{font-size:14px;line-height:1.7;min-height:72px;color:#c3d3e5!important;margin-top:18px}
+.med-landing .med-plan ul{border-top:0;padding:18px 0 22px;margin:0}
+.med-landing .med-plan li{font-size:13.5px;margin-bottom:12px;color:#dbe6f2}
+.med-landing .med-plan li svg{color:#FFD766;filter:none}
+.med-landing .med-plan .med-plan-exclusions{font-size:12.5px;line-height:1.65;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;padding-bottom:22px;color:#b4c6da!important}
+
+/* botones: mismo tamaño y alineación en las tres; dorado sólido para la puerta de entrada, filo dorado en las demás */
+.lf-page.med-landing section.med-plans-section .med-plan .med-button{
+  margin-top:auto;min-height:58px;width:100%;justify-content:center;text-align:center;gap:12px;font-size:13px;letter-spacing:.02em;padding:14px 18px;border-radius:10px;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .3s,color .3s}
+.lf-page.med-landing section.med-plans-section .med-plan .med-button:not(.med-button-secondary){background:linear-gradient(135deg,#FFD766,#F2B820 55%,#E6A300);color:#0A2540;border-color:transparent;box-shadow:0 14px 30px -12px rgba(230,163,0,.55)}
+.lf-page.med-landing section.med-plans-section .med-plan .med-button:not(.med-button-secondary):hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(230,163,0,.8)}
+.lf-page.med-landing section.med-plans-section .med-plan .med-button.med-button-secondary{background:transparent;color:#FFD766;border:1px solid rgba(255,215,102,.6);box-shadow:none}
+.lf-page.med-landing section.med-plans-section .med-plan .med-button.med-button-secondary:hover{background:rgba(255,215,102,.12);color:#fff;border-color:#FFD766;transform:translateY(-2px)}
+.med-landing .med-plan .med-button svg{transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.med-landing .med-plan .med-button:hover svg{transform:translateX(5px)}
+.lf-page.med-landing .med-plans-section .med-button:focus-visible{outline:3px solid #FFD766;outline-offset:4px}
+
+/* entrada escalonada (la activa el JS; sin JS o con movimiento reducido no hay estado oculto) */
+.lf-page.med-landing section.med-plans-section .med-plan.med-rv{opacity:0;transform:translateY(34px);filter:blur(5px);transition:opacity .8s cubic-bezier(.2,.8,.2,1) var(--d,0ms),transform .9s cubic-bezier(.2,.8,.2,1) var(--d,0ms),filter .8s ease var(--d,0ms)!important}
+.lf-page.med-landing section.med-plans-section .med-plan.med-rv.med-in{opacity:1;transform:none;filter:none}
+
+@media(max-width:1280px){.med-landing .med-plan h3{min-height:3.6rem}}
+@media(max-width:1100px){
+  .med-landing .med-plans{gap:18px}
+  .lf-page.med-landing section.med-plans-section .med-plan{padding:30px 22px 26px}
+  .med-landing .med-plan h3{font-size:1.45rem;min-height:3.6rem}
+  .med-landing .med-plan-price .med-price-amt{font-size:clamp(2.3rem,3.8vw,2.9rem)}
+}
+@media(max-width:900px){
+  .med-landing .med-plans{max-width:560px;gap:22px}
+  .lf-page.med-landing section.med-plans-section .med-plan{padding:30px 24px 26px}
+  .med-landing .med-plan h3{min-height:0;font-size:1.65rem;margin-bottom:16px}
+  .med-landing .med-plan-price{min-height:0}
+  .med-landing .med-plan-free .med-plan-price::before{display:none}
+  .med-landing .med-plan>p{min-height:0}
+  .med-landing .med-plan-price .med-price-amt{font-size:2.9rem}
+  .lf-page.med-landing section.med-plans-section .med-plan:hover{transform:none}
+}
+@media(max-width:380px){.med-landing .med-plan-price .med-price-amt{font-size:2.5rem}.lf-page.med-landing section.med-plans-section .med-plan{padding:26px 18px 22px}}
+@media(prefers-reduced-motion:reduce){
+  .lf-page.med-landing section.med-plans-section .med-plan,.lf-page.med-landing section.med-plans-section .med-plan .med-button,.med-landing .med-plan .med-button svg{transition:none!important}
+  .lf-page.med-landing section.med-plans-section .med-plan:hover,.lf-page.med-landing section.med-plans-section .med-plan .med-button:hover{transform:none}
+  .med-landing .med-plan .med-button:hover svg{transform:none}
+  .med-landing .med-plan-3::after{display:none}
+}

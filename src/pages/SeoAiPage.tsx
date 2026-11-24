@@ -3,20 +3,38 @@ import {Link} from 'react-router-dom';
 import {ArrowRight, Check} from 'lucide-react';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from '../components/WhatsAppCTA';
-import {idx, trackCta, useTechMotion, whatsappUrl, SeoAiSignal, auditDeliverables, months} from './seoAiShared';
+import {idx, trackCta, useTechMotion, whatsappUrl, auditDeliverables, months} from './seoAiShared';
 import './SeoAiPage.css';
 
-// Contrato: RAUVIA_SEO_AI_Especificacion_tecnica_landing_v0.1 (bóveda AETHRYON).
+// Contrato: RAUVIA_SEO_AI_Especificacion_tecnica_landing_v0.1 (bóveda AETHRYON), evolucionado por
+// RAUVIA_Dos_Paginas_SEO_GEO_AEO_2027_Especificacion v1.0 (borrador para revisión).
 // Todo el contenido vive en el HTML inicial (prerender); sin JS cada sección y cada respuesta es legible.
 const whatsapp = whatsappUrl('Hola RAUVIA, quiero solicitar el alcance de una auditoría de SEO para IA (GEO) para mi empresa.');
 
 const method = [
   ['Acceso', 'Revisamos qué puede consultar un buscador o asistente de tu sitio: HTML disponible, enlaces y rastreo.', 'Puede corregirse: bloqueos de rastreo, contenido que solo aparece con scripts, enlaces rotos o inexistentes.'],
-  ['Oferta', 'Revisamos si identidad, nicho, productos y servicios están definidos sin ambigüedad.', 'Puede corregirse: nombres inconsistentes, descripciones vagas, productos sin una página que los explique.'],
+  ['Empresa y oferta', 'Revisamos si identidad, nicho, productos y servicios están definidos sin ambigüedad.', 'Puede corregirse: nombres inconsistentes, descripciones vagas, productos sin una página que los explique.'],
   ['Casos de uso y cobertura', 'Revisamos para qué necesidad sirve cada producto, en qué condiciones y en qué zona de atención o entrega.', 'Puede corregirse: aplicaciones, condiciones técnicas y cobertura que hoy no están escritas o no coinciden entre páginas.'],
+  ['Comprobación de representación', 'Registramos preguntas, superficie, fecha, respuesta, mención o cita si existe, y discrepancias con tu información autorizada.', 'Puede repetirse: las preguntas acordadas se repiten cuando corresponda. Una respuesta puede cambiar y una prueba solo muestra lo observado en esas condiciones.'],
 ] as const;
 
 // Ejemplos ficticios: no son clientes ni resultados; no afirman inventario, capacidad ni citas reales.
+const ficha = [
+  ['Pregunta de compra', '¿Qué proveedor ofrece gabinetes para instalaciones exteriores y entrega en Querétaro?'],
+  ['Información publicada', 'Ficha de producto con aplicación exterior; sin cobertura ni instalación aclaradas.'],
+  ['Condición por confirmar', 'Zonas de entrega y qué incluye la instalación, según lo que Operación confirme.'],
+  ['Siguiente paso', 'Publicar condiciones aprobadas y repetir la pregunta, con fecha y superficie registradas.'],
+] as const;
+
+const muestra = [
+  ['Pregunta de compra', '¿Hay entrega en Querétaro y está incluida la instalación?'],
+  ['Página revisada', 'Ficha de un producto exterior; URL ficticia no enlazable.'],
+  ['Hecho revisable', 'La ficha hipotética no aclara cobertura ni instalación.'],
+  ['Qué confirmar', 'Operación determina zonas, restricciones y qué se contrata.'],
+  ['Trabajo entregable', 'Bloque HTML con condiciones aprobadas, enlace y registro de cambio.'],
+  ['Validación', 'Comprobar el texto publicado y repetir la pregunta con fecha y superficie.'],
+  ['Resultado no garantizado', 'Que el asistente modifique su respuesta o cite la ficha.'],
+] as const;
 const examples = [
   {niche: 'Industria · producto', question: '¿Qué proveedor ofrece gabinetes para instalaciones exteriores y entrega en Querétaro?', parts: [
     ['Producto', 'Qué gabinete se ofrece y cómo se llama en cada página.'],
@@ -43,18 +61,20 @@ const examples = [
 const whatsappImpl = whatsappUrl('Hola RAUVIA, quiero solicitar una propuesta de implementación de SEO para IA (GEO) para mi empresa.');
 
 const measure = [
-  ['Rastreabilidad e indexación', 'Si las páginas acordadas responden, se pueden rastrear y están indexadas. Son tres estados distintos.'],
+  ['Acceso y rastreo', 'Si las páginas acordadas responden y pueden rastrearse. Responder, poder rastrearse y estar indexada son estados distintos.'],
+  ['Indexación', 'Se reporta un estado solo cuando hay evidencia suficiente y permisos; de otro modo, «no verificado».'],
   ['Impresiones y clics', 'Cuánto aparece y cuánto se visita el sitio en buscadores, según los datos a los que se tenga acceso autorizado.'],
-  ['Presencia o cita en asistentes', 'Si un asistente menciona a la empresa o cita una de sus páginas, con pregunta, fecha y superficie anotadas.'],
-  ['Exactitud comercial', 'Si lo que se dice sobre productos, usos, condiciones y cobertura coincide con lo que la empresa ofrece.'],
-  ['Solicitudes', 'Cuántas conversaciones comerciales llegan y cuántas avanzan. Se registran aparte de lo anterior.'],
+  ['Mención y cita en asistentes', 'Si un asistente nombra a la empresa o enlaza una de sus páginas, con pregunta, fecha y superficie anotadas.'],
+  ['Fidelidad comercial', 'Si lo que se dice sobre productos, usos, condiciones y cobertura coincide con la información autorizada.'],
+  ['Solicitudes y avance comercial', 'Cuántas conversaciones comerciales llegan y cómo evolucionan. Se registran aparte y no se atribuyen a la IA sin evidencia.'],
 ] as const;
 
 const faqs = [
-  ['¿Cuál es la diferencia entre SEO, GEO y AEO?', 'SEO es la optimización para buscadores. GEO es la optimización para motores generativos y AEO para motores de respuesta. En RAUVIA se trabajan juntos sobre la misma información pública de tu empresa.'],
+  ['¿Cuál es la diferencia entre SEO, GEO y AEO?', 'SEO trabaja la visibilidad en buscadores; GEO se refiere a la optimización para experiencias generativas y AEO para motores de respuesta. Se solapan: son lenguaje de mercado, no tres productos separados. En RAUVIA se trabajan juntos sobre la misma información pública de tu empresa, sin prometer cómo la utilizará cada sistema.'],
   ['¿Pueden garantizar que aparezca en ChatGPT?', 'No. Nadie controla qué fuentes elige un asistente ni cuándo las cita. Trabajamos para que tu información sea accesible, clara y verificable, y comprobamos qué dice cada asistente con preguntas acordadas.'],
   ['¿Se puede trabajar sobre mi sitio actual?', 'Sí. La auditoría parte del sitio o catálogo que ya tienes. Si hace falta cambiar el sitio, se propone por separado y solo se ejecuta si lo autorizas.'],
   ['¿Qué revisan sobre cobertura y envíos?', 'Revisamos si la zona de atención o entrega, y las condiciones que aplican, están escritas de forma consistente en tu sitio. No afirmamos inventario ni capacidad que no nos confirmes.'],
+  ['¿Puedo contratar la implementación sin la auditoría de RAUVIA?', 'Sí, si existe un diagnóstico suficiente, propio o de terceros, para delimitar el trabajo. Si no lo hay, la auditoría es el punto de partida.'],
   ['¿La auditoría incluye implementación?', 'No. La auditoría entrega evidencia, hallazgos y un plan de corrección, y no modifica el sitio. Ejecutar ese plan es la implementación, un programa aparte de seis meses. Puedes comprar la auditoría sola y decidir después.'],
 ] as const;
 
@@ -68,34 +88,57 @@ export default function SeoAiPage() {
     <section className="seoai-hero pt-16 md:pt-24 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
         <div>
-          <p className="seoai-kicker mb-4 sa-rise" style={idx(0)}>SEO AI · RAUVIA Consulting</p>
-          <p className="seoai-hook sa-rise" style={idx(1)}>Tu cliente ya le pregunta a la IA. ¿Qué responde de tu empresa?</p>
-          <h1 className="seoai-h1 text-3xl md:text-5xl font-extrabold leading-tight mb-6 sa-rise" style={idx(2)}>SEO para IA generativa (GEO) para empresas</h1>
-          <p className="seoai-lead text-lg md:text-xl max-w-2xl mb-4 sa-rise" style={idx(3)}>Preparamos tu sitio para que buscadores y asistentes de IA encuentren qué vende tu empresa, para qué casos sirve y dónde puede entregarlo.</p>
-          <p className="seoai-aux max-w-2xl mb-8 sa-rise" style={idx(4)}>Primero revisamos qué puede consultar un buscador o asistente. Después comprobamos qué dice sobre tu empresa con preguntas reales de compra.</p>
+          <p className="seoai-kicker mb-4 sa-rise" style={idx(0)}>SEO AI · RAUVIA Consulting · Edición 2027</p>
+          <p className="seoai-hook sa-rise" style={idx(1)}>Las personas pueden buscar respuestas en Google y también conversar con un asistente. ¿Qué podría encontrar un comprador sobre tu empresa?</p>
+          <h1 className="seoai-h1 text-3xl md:text-5xl font-extrabold leading-tight mb-6 sa-rise" style={idx(2)}>Prepara tu empresa para las búsquedas con IA en 2027</h1>
+          <p className="seoai-lead text-lg md:text-xl max-w-2xl mb-4 sa-rise" style={idx(3)}>Preparamos y verificamos la información pública de tu empresa para que buscadores y asistentes puedan encontrar qué vendes, para qué sirve y dónde lo entregas.</p>
+          <p className="seoai-aux max-w-2xl mb-8 sa-rise" style={idx(4)}>Primero revisamos el acceso y la oferta; después comprobamos respuestas con preguntas de compra acordadas.</p>
           <div className="flex flex-wrap gap-4 sa-rise" style={idx(5)}>
-            <a href="#solicitar-auditoria" onClick={trackCta('hero_primary', 'general')} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">Solicitar alcance de auditoría <ArrowRight className="w-4 h-4" aria-hidden="true" /></a>
-            <a href="#medicion" onClick={trackCta('hero_secondary', 'general')} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">Ver cómo lo medimos</a>
+            <Link to="/seo-ai/auditoria/" onClick={trackCta('hero_primary', 'auditoria')} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">Conocer la auditoría <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            <a href="#medicion" onClick={trackCta('hero_secondary', 'general')} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors">Ver cómo comprobamos</a>
           </div>
+          <p className="seoai-aux mt-4 text-sm sa-rise" style={idx(5)}>Auditoría $9,900 MXN + IVA, pago único. Enviar una solicitud no contrata el servicio.</p>
         </div>
-        <SeoAiSignal />
+        <figure className="seoai-ficha sa-rise" style={idx(5)} aria-labelledby="ficha-title">
+          <p id="ficha-title" className="seoai-ficha-head">Ficha de trabajo · demostración ficticia</p>
+          <dl>
+            {ficha.map(([term, text], k) => <div key={term} className="seoai-ficha-row" style={idx(k)}><dt>{term}</dt><dd>{text}</dd></div>)}
+          </dl>
+          <figcaption>Demostración ficticia; no es una respuesta de un asistente ni un resultado de cliente.</figcaption>
+        </figure>
       </div>
     </section>
 
     <section id="que-es" className="py-14 bg-slate-50 border-y border-slate-100 scroll-mt-24">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="seoai-kicker text-rauvia-blue! mb-2" data-sa>[ 00 ] Contexto</p>
-        <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-4" data-sa style={idx(1)}>Qué es SEO para IA</h2>
-        <p className="seoai-statement mb-4" data-sa style={idx(2)}>Antes te encontraban por Google. Ahora te encuentran por medio de ChatGPT, Claude o Gemini.</p>
-        <p className="text-lg text-slate-700" data-sa style={idx(3)}>Nuestro trabajo será preparar y verificar la información pública de tu empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA.</p>
+        <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-4" data-sa style={idx(1)}>Una nueva pregunta para tu presencia digital</h2>
+        <p className="seoai-statement mb-4" data-sa style={idx(2)}>Cuando una persona busca un proveedor, ya puede encontrarse con una lista de enlaces o con una respuesta generada a partir de varias fuentes. En ambos casos importa una pregunta: ¿puede encontrar información suficiente y correcta para decidir si tu empresa es una opción?</p>
+        <p className="text-lg text-slate-700 mb-4" data-sa style={idx(3)}>No necesitas asumir que todos tus compradores ya usan asistentes. Puedes empezar por una sola oferta y comprobar qué información de ella está disponible hoy. Así preparas un activo útil para tu equipo comercial y para quienes investigan antes de contactarte.</p>
+        <p className="text-slate-600 text-sm mb-4" data-sa style={idx(4)}>Como referencia, en una encuesta de febrero de 2026, el 42 % de los adultos de Estados Unidos dijo usar alguna vez chatbots de IA para buscar información (<a className="underline text-rauvia-blue" href="https://www.pewresearch.org/chart/search-and-work-are-the-most-common-uses-for-chatbots-1-in-10-use-these-tools-for-emotional-support/" target="_blank" rel="noopener noreferrer">Pew Research Center</a>). No es una cifra de México, ni de compras, ni una proyección para 2027.</p>
+        <p className="text-lg text-slate-700" data-sa style={idx(5)}>Si un comprador pregunta qué vendes, dónde lo entregas y qué condiciones debe confirmar, ¿encuentra esas respuestas en tu sitio?</p>
+        <p className="mt-4 text-sm" data-sa style={idx(6)}>¿Prefieres aprender primero? <Link to="/recursos/seo-para-ia/" onClick={trackCta('contexto_guia', 'general')} className="seoai-link font-semibold text-rauvia-blue underline">Lee la guía práctica de SEO, GEO y AEO para empresas</Link>.</p>
+      </div>
+    </section>
+
+    <section id="muestra" className="py-16 scroll-mt-24">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>¿Tu sitio responde lo que Compras necesita saber?</h2>
+        <p className="text-slate-700 mb-6 max-w-3xl" data-sa style={idx(1)}>Una empresa puede tener un catálogo completo y dejar sin respuesta una aplicación, una condición o una zona de entrega. Importa si lo que se dice es correcto y comprobable. Esto es lo que se entrega y cómo se verifica.</p>
+        <p className="inline-block rounded border border-amber-300 bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-900 mb-4" data-sa>Demostración ficticia: no es un cliente, una respuesta de IA ni un resultado medido</p>
+        <table className="seoai-table" data-sa>
+          <thead><tr><th scope="col">Campo</th><th scope="col">Demostración ficticia</th></tr></thead>
+          <tbody>{muestra.map(([k, v]) => <tr key={k}><td data-label="Campo"><strong className="text-rauvia-navy">{k}</strong></td><td data-label="Demostración ficticia">{v}</td></tr>)}</tbody>
+        </table>
+        <p className="mt-4 text-sm" data-sa><Link to="/seo-ai/auditoria/" onClick={trackCta('muestra_auditoria', 'auditoria')} className="seoai-link font-semibold text-rauvia-blue underline">Ver una muestra de la auditoría</Link>. El resultado verificable es el contenido aprobado y su registro; la respuesta de un tercero es una observación separada.</p>
       </div>
     </section>
 
     <section id="metodo" className="py-16 scroll-mt-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>Cómo trabaja RAUVIA</h2>
-        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Tres capas, una sola pregunta: ¿pueden entenderte? En cada etapa mostramos qué se revisa y qué puede corregirse.</p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Cuatro pasos, una sola pregunta: ¿pueden entenderte? Responder, poder rastrearse y estar indexada son estados diferentes; en cada etapa mostramos qué se revisa y qué puede corregirse.</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {method.map(([name, review, fix], i) => <article key={name} className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa style={idx(i)}>
             <p className="seoai-index mb-2">[ 0{i + 1} ] Etapa {i + 1}</p>
             <h3 className="text-xl font-bold text-rauvia-navy mb-3">{name}</h3>
@@ -185,7 +228,7 @@ export default function SeoAiPage() {
             <h3 className="text-xl font-bold text-rauvia-navy mb-1">Implementación de SEO para IA</h3>
             <p className="seoai-price">$29,900 MXN + IVA al mes</p>
             <p className="seoai-price-note">Durante 6 meses · $179,400 MXN + IVA en total. Cada mes recibes cambios acordados, evidencia de verificación y un reporte de avance.</p>
-            <p className="text-slate-700 text-sm mb-3"><strong>Alcance base propuesto.</strong> Un dominio y una línea comercial. Cada mes se acuerda un bloque de cambios: hasta 3 URLs existentes o una intervención acotada en una plantilla, no ambas.</p>
+            <p className="text-slate-700 text-sm mb-3"><strong>Alcance base propuesto.</strong> Un dominio y una línea comercial. Cada mes se acuerda un bloque de cambios: hasta 3 URLs existentes o una intervención acotada en una plantilla, no ambas. Se necesita un diagnóstico que permita delimitar el trabajo; puede ser de RAUVIA o de terceros.</p>
             <ul className="space-y-2 mb-4 text-slate-700 text-sm">
               {['El alcance del bloque acordado.', 'Evidencia del antes y el después, o instrucciones verificables si despliega tu equipo.', 'Un reporte que separa rastreo e indexación, presencia o cita en asistentes y fidelidad de las respuestas.', 'Qué se pudo verificar, qué queda pendiente y prioridades del mes siguiente.'].map((t, i) => <li key={t} className="seoai-check flex gap-2" style={idx(i)}><Check className="w-5 h-5 mt-0.5 shrink-0 text-rauvia-blue" aria-hidden="true" /><span>{t}</span></li>)}
             </ul>
@@ -211,7 +254,7 @@ export default function SeoAiPage() {
     <section id="medicion" className="py-16 bg-slate-50 border-y border-slate-100 scroll-mt-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>Cómo comprobamos</h2>
-        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Separamos cinco cosas que suelen confundirse. Una mención en un asistente no demuestra una visita ni una venta, y no lo vendemos como si lo fuera.</p>
+        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Separamos seis cosas que suelen confundirse. Una entrega comprobada no es una venta atribuida. Una mención en un asistente no demuestra una visita ni una venta, y no lo vendemos como si lo fuera. Los resultados de asistentes son variables: una prueba muestra únicamente lo observado bajo esas condiciones.</p>
         <ol className="grid md:grid-cols-2 gap-4">
           {measure.map(([name, text], i) => <li key={name} className="seoai-card rounded-lg bg-white border border-slate-200 p-5" data-sa style={idx(i)}><h3 className="font-bold text-rauvia-navy mb-1"><span className="seoai-index mr-2">0{i + 1}</span>{name}</h3><p className="text-slate-700 text-sm">{text}</p></li>)}
         </ol>
@@ -234,6 +277,10 @@ export default function SeoAiPage() {
         <p className="text-slate-200 mb-3" data-sa style={idx(2)}>Cuéntanos tu dominio o catálogo y la línea de negocio o pregunta que quieres resolver. Revisamos la información y te respondemos con una propuesta de alcance.</p>
         <p className="text-slate-200 mb-3" data-sa style={idx(3)}>Enviar la solicitud no contrata la auditoría ni implica que sea gratuita: primero se acuerda el alcance.</p>
         <p className="text-slate-200 mb-6" data-sa style={idx(4)}>No necesitamos contraseñas ni accesos para empezar.</p>
+        <div className="mb-4 flex flex-wrap gap-4" data-sa style={idx(5)}>
+          <Link to="/seo-ai/auditoria/" onClick={trackCta('solicitar_alcance', 'auditoria')} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold">Ver alcance y solicitar auditoría <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+          <Link to="/seo-ai/implementacion/" onClick={trackCta('solicitar_alcance', 'implementacion')} className="underline font-semibold self-center text-slate-100">Ya tengo diagnóstico: solicitar implementación</Link>
+        </div>
         <div data-sa style={idx(5)}>
           <WhatsAppCTA href={whatsapp} onClick={trackCta('solicitud', 'auditoria')} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solicitar por WhatsApp <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
         </div>

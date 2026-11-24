@@ -1103,7 +1103,7 @@
       "id": "answer:evidencia-comercial",
       "familyId": "answer-family:evidencia-comercial",
       "question": "¿Qué permite concluir el caso de infraestructura temporal B2B?",
-      "answer": "El caso publicado por RAUVIA describe una intervención comercial en evolución: reporta un benchmark interno de 2.67 a 4.00 y 3,564 conversaciones iniciadas entre octubre de 2025 y julio de 2026. La trazabilidad comercial sigue en construcción. Esos datos permiten describir interacción y estado del trabajo, sin convertir conversaciones en clientes o atribuir un crecimiento de ventas a la intervención.",
+      "answer": "El caso publicado por RAUVIA describe una intervención comercial en evolución. En su primera fase (octubre de 2025 – julio de 2026) registra una inversión de $38,345.94 MXN, 3,564 conversaciones iniciadas (costo promedio de $10.76 MXN por conversación), 811,365 visualizaciones y 447,527 de alcance acumulado; clasificó 511 interacciones (154 de catálogo o información y 25 conversaciones largas) y reporta un benchmark interno de 2.67 a 4.00 (+1.33 puntos). La trazabilidad comercial de la fase 2 (julio de 2026 – actualidad) sigue en construcción. Esos datos describen interacción, exposición y estado del trabajo; no son oportunidades, clientes, cierres ni crecimiento de ventas atribuible a la intervención.",
       "intentIds": [
         "intent:infraestructura-temporal-b2b"
       ],
@@ -1142,14 +1142,19 @@
       "claimIds": [
         "claim:benchmark-interno",
         "claim:conversaciones-reportadas",
-        "claim:trazabilidad-en-construccion"
+        "claim:inversion-registrada",
+        "claim:costo-por-conversacion",
+        "claim:alcance-visualizaciones",
+        "claim:clasificacion-conversaciones",
+        "claim:trazabilidad-en-construccion",
+        "claim:rediseno-web-estado"
       ],
       "citationBundleId": "citation:evidencia-comercial",
       "limitations": [
         "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
         "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
         "Reporte propio, sin validación independiente ni atribución causal establecida.",
-        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado."
+        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; visualizaciones y alcance ≠ demanda calificada; interacciones clasificadas ≠ funnel ni tasas de conversión; capacidad en construcción ≠ resultado terminado."
       ],
       "fit": {
         "when": [
@@ -1171,10 +1176,87 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "answer:evidencia-presencia-profesional",
+      "familyId": "answer-family:evidencia-presencia-profesional",
+      "question": "¿Qué permite concluir el caso de presencia y posicionamiento profesional de RAUVIA?",
+      "answer": "El caso publicado por RAUVIA explica cómo organiza, mediante RAUVIAWEB, la trayectoria, la especialidad y los canales de contacto de un profesionista en una presencia digital, y enlaza seis implementaciones de referencia: Erika Morales, Allison García Urrutia, Mónica García Urrutia, Consultorio Médico GALENUS, Antonio Colyn y Acacia. Presenta una capacidad activa; la evidencia de descubrimiento, contactos y oportunidades sigue en construcción y no publica métricas, conversaciones, oportunidades, clientes ni cierres. Las referencias ilustran la capacidad, no demuestran resultados.",
+      "intentIds": [
+        "intent:presencia-posicionamiento-profesional"
+      ],
+      "problemIds": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "capabilityIds": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "interventionConditions": [
+        {
+          "id": "offering:desarrollo-tecnologico",
+          "condition": "Necesidad, evidencia, alcance y capacidad de ejecución revisados; no recomendación automática."
+        },
+        {
+          "id": "offering:frente-comercial",
+          "condition": "Oferta y capacidad existentes; brecha principal de comprensión o representación, no seguimiento ni demanda."
+        },
+        {
+          "id": "system:aethryon",
+          "condition": "Prioridad o restricción aún no clara; revisión de contexto y evidencia."
+        }
+      ],
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:case-presencia-posicionamiento-profesional",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:case-presencia-posicionamiento-profesional",
+      "claimIds": [
+        "claim:presencia-profesional-capacidad",
+        "claim:referencias-implementadas",
+        "claim:presencia-profesional-evidencia-pendiente"
+      ],
+      "citationBundleId": "citation:evidencia-presencia-profesional",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Reporte propio, sin validación independiente ni atribución causal establecida.",
+        "Sin métricas publicadas: una implementación de referencia no equivale a descubrimiento, contactos, oportunidades, clientes ni resultados.",
+        "Las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales; en salud la información administrativa no sustituye una valoración médica."
+      ],
+      "fit": {
+        "when": [
+          "Se consulta evidencia de presencia profesional con su contexto y límites."
+        ],
+        "possible": [
+          "La aplicabilidad a otro perfil requiere conocer su experiencia, públicos y objetivos."
+        ],
+        "nonFit": [
+          "Se pretende usar el caso como garantía de visibilidad, contactos o pacientes."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "answer:entidad-rauvia",
       "familyId": "answer-family:entidad-rauvia",
       "question": "¿Qué es RAUVIA y en qué situaciones interviene?",
-      "answer": "RAUVIA ayuda a empresas con capacidad real que encuentran una brecha entre lo que pueden hacer, cómo lo entiende el mercado y cómo está estructurada su operación. Primero identifica qué está limitando el avance y después construye la capacidad comercial, operativa o tecnológica necesaria. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico; sus alcances publicados orientan la revisión de la situación, sin prometer resultados.",
+      "answer": "RAUVIA es una empresa mexicana que combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas. Frente Comercial y SEO para IA son dos servicios digitales actuales. También puede definir intervenciones empresariales más amplias, incluida la consultoría, cuando la situación y el alcance acordado lo requieren. Los entregables y criterios de revisión se acuerdan por servicio; los resultados comerciales no están asegurados.",
       "intentIds": [
         "intent:que-es-rauvia"
       ],

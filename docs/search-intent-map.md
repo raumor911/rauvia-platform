@@ -49,6 +49,7 @@ Generado desde `src/knowledge/intents.ts`; editar esa autoridad y ejecutar `npm 
 | intent:pagina-web-servicios-profesionales | CATEGORY | Página web para servicios profesionales | territory:activos-digitales | supported | public |
 | intent:presencia-local-restaurante | PROBLEM | Presencia local de un restaurante | territory:activos-digitales | hypothesis | internal |
 | intent:presencia-medica-dispersa | PROBLEM | Mi presencia médica está dispersa | territory:activos-digitales | supported | public |
+| intent:presencia-posicionamiento-profesional | USE_CASE | Presencia y posicionamiento profesional de profesionistas | territory:activos-digitales | supported | public |
 | intent:presentar-capacidad-exportadora | PROBLEM | Presentar capacidad exportadora | territory:activos-digitales | hypothesis | internal |
 | intent:procesos-dependen-personas | PROBLEM | Los procesos dependen de personas | territory:arquitectura-operativa | supported | public |
 | intent:prospectos-no-avanzan | PROBLEM | Tengo prospectos pero no avanzan | territory:sistemas-comerciales | supported | public |

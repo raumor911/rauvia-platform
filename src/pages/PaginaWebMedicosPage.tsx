@@ -2,6 +2,8 @@ import RouteSEO from '../seo/PageMetadata';
 import React, { useRef } from 'react';
 import ConvergenceField from '../components/ConvergenceField';
 import usePageFx from '../hooks/usePageFx';
+import useFrenteMotion from '../hooks/useFrenteMotion';
+import '../styles/frenteMotion.css';
 import '../styles/pageFrontier.css';
 import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
@@ -14,6 +16,7 @@ import {
 import { ENTITIES } from '../config/entity';
 import './PaginaWebGratisMedicosPage.css';
 import './PaginaWebMedicosPage.css';
+import './PaginaWebMedicosPremium.css';
 
 const canonical = 'https://rauvia.com.mx/pagina-web-para-medicos/';
 const ogDescription = 'Construye una presencia médica profesional que explique quién eres, qué atiendes, dónde te encuentras y cómo pueden contactarte.';
@@ -43,7 +46,7 @@ const faqs = [
   ['¿Una página web ayuda al SEO local?', 'Puede aportar una base clara para relacionar tu práctica, especialidad y ubicación. Su efecto depende también de la consistencia de tus datos, competencia, contenido y otros factores; no garantiza posiciones específicas.'],
   ['¿Qué diferencia hay entre la página gratuita y una página personalizada?', 'La opción gratuita permite construir una primera presencia bajo dominio RAUVIA con el alcance de su plan básico. Una página personalizada adapta la presentación, secciones e integraciones a tu práctica y puede contemplar dominio propio, según lo acordado.'],
   ['¿Qué es el Frente Comercial Médico?', 'Es un alcance más completo que puede integrar presencia web, contacto, agenda, contenido, estructura SEO/GEO y medición. Los componentes se definen según las necesidades del médico o consultorio.'],
-  ['¿Cuánto cuesta una página web para médicos?', 'Depende del alcance: personalización, número de secciones, consultorios, contenido e integraciones. Existe una opción gratuita con alcance básico; los proyectos personalizados y el Frente Comercial Médico se cotizan según alcance. Contáctanos para identificar la alternativa adecuada.'],
+  ['¿Cuánto cuesta una página web para médicos?', 'Depende del alcance: personalización, número de secciones, consultorios, contenido e integraciones. Existe una opción gratuita con alcance básico; la web personalizada parte desde $7,900 MXN + IVA y el Frente Comercial Médico desde $13,900 MXN + IVA, según alcance. Contáctanos para identificar la alternativa adecuada.'],
 ] as const;
 const questions = [
   [UserRound, '¿Quién eres?', 'Perfil profesional y presentación.'],
@@ -70,6 +73,11 @@ const solutions = [
   { icon: Compass, title: 'Quiero mejorar mi presencia local', text: 'Si ya tienes presencia digital pero necesitas ordenar cómo se relacionan tu especialidad, ubicación, sitio y contacto.', cta: 'Ver SEO local para médicos', href: '/seo-local-para-medicos/', label: 'Especialidad, zona y contacto' },
   { icon: Layers3, title: 'Necesito una presencia comercial más completa', text: 'Si necesitas integrar sitio, contacto, agenda, contenido, medición y estructura comercial en un mismo sistema.', cta: 'Conocer Frente Comercial Médico', href: '/frente-comercial/', label: 'Un sistema más integrado' },
 ] as const;
+const levels = [
+  { name: 'Página médica gratuita', label: 'Primera presencia', text: 'Para construir una primera presencia propia.', price: '$0', unit: 'MXN', from: false, note: 'Bajo dominio RAUVIA, con el alcance del plan básico.', items: ['Dominio RAUVIA y alojamiento', 'Perfil profesional y especialidad', 'Ubicación y WhatsApp', 'Base SEO/GEO'], href: freePath, cta: 'Empezar gratis', primary: false },
+  { name: 'Página médica personalizada', label: 'Adaptada a tu práctica', text: 'Para médicos que necesitan una presentación profesional adaptada a su práctica.', price: '$7,900', unit: 'MXN + IVA', from: true, note: 'Secciones, diseño e integraciones según lo acordado.', items: ['Dominio propio', 'Diseño personalizado y más secciones', 'Contenido por especialidad', 'SEO local ampliado'], href: whatsapp, cta: 'Solicitar información', primary: true },
+  { name: 'Frente Comercial Médico', label: 'Presencia integrada', text: 'Para integrar presencia web, estructura de contacto, visibilidad, contenido y medición.', price: '$13,900', unit: 'MXN + IVA', from: true, note: 'Alcance definido según tu operación.', items: ['Arquitectura de oferta completa', 'Diferenciación profesional', 'SEO/GEO avanzado', 'Estrategia de confianza', 'Analítica y optimización'], href: '/frente-comercial/', cta: 'Conocer Frente Comercial', primary: false },
+] as const;
 function CTA({ children = 'Cotizar mi página web médica', href = whatsapp, secondary = false }: { children?: React.ReactNode; href?: string; secondary?: boolean }) {
   const className = `med-button${secondary ? ' med-button-secondary' : ''}`;
   const content = <>{children}<ArrowRight size={17} aria-hidden="true" /></>;
@@ -88,6 +96,7 @@ function Figure({ name, caption, sizes }: { name: ImageName; caption: string; si
 export default function PaginaWebMedicosPage() {
   const root = useRef<HTMLElement>(null);
   usePageFx(root);
+  useFrenteMotion(root);
   return <div ref={root as any} className="fx-page lf-page med-landing hub-landing">
 <div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-web-para-medicos" />
@@ -156,9 +165,16 @@ export default function PaginaWebMedicosPage() {
     <section id="alcances" className="med-section med-container">
       <Heading label="09 / Crece desde tu necesidad actual" title="Puedes empezar con lo que necesitas hoy" />
       <div className="med-grid med-grid-three hub-levels">
-        <article><span className="med-eyebrow">01 / Primera presencia</span><h3>Página médica gratuita</h3><p>Para construir una primera presencia propia.</p><span className="hub-level-note">Bajo dominio RAUVIA, con el alcance del plan básico.</span><CTA href={freePath} secondary>Empezar gratis</CTA></article>
-        <article><span className="med-eyebrow">02 / Adaptada a tu práctica</span><h3>Página médica personalizada</h3><p>Para médicos que necesitan una presentación profesional adaptada a su práctica.</p><span className="hub-level-note">Secciones, diseño e integraciones según lo acordado.</span><CTA>Solicitar información</CTA></article>
-        <article><span className="med-eyebrow">03 / Presencia integrada</span><h3>Frente Comercial Médico</h3><p>Para integrar presencia web, estructura de contacto, visibilidad, contenido y medición.</p><strong className="hub-level-note">Cotización según alcance</strong><CTA href="/frente-comercial/" secondary>Conocer Frente Comercial</CTA></article>
+        {levels.map((lv, i) => <article key={lv.name} className={`hub-level hub-level-${i + 1}`}>
+          <span className="hub-level-no" aria-hidden="true">Nº 0{i + 1}</span>
+          <span className="med-eyebrow">{lv.label}</span>
+          <h3>{lv.name}</h3>
+          <p className="hub-level-desc">{lv.text}</p>
+          <p className="hub-level-price">{lv.from && <small>Desde</small>}{lv.price}<span>{lv.unit}</span></p>
+          <span className="hub-level-note">{lv.note}</span>
+          <ul className="hub-level-list">{lv.items.map(x => <li key={x}><span aria-hidden="true"><Check size={13} /></span>{x}</li>)}</ul>
+          <CTA href={lv.href} secondary={!lv.primary}>{lv.cta}</CTA>
+        </article>)}
       </div>
       <div className="hub-front"><div><span className="med-eyebrow">Cuando necesitas integrar más</span><h3>Tu presencia digital, organizada como un sistema.</h3><p>La presentación profesional y las rutas de contacto pueden conectarse con contenido, agenda y medición. Definimos los componentes que corresponden a tu operación.</p><Link className="med-text-link" to="/frente-comercial/">Conocer el enfoque de Frente Comercial<ArrowRight size={17} aria-hidden="true" /></Link></div><Figure name="frente-comercial-medico" sizes="(max-width: 900px) 92vw, 58vw" caption="Ejemplo conceptual de un alcance integrado. Las gráficas son ilustrativas y no representan resultados reales." /></div>
     </section>

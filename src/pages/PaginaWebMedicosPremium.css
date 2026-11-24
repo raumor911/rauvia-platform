@@ -1,0 +1,107 @@
+/* /pagina-web-para-medicos/: capa premium y de presencia. Solo presentación; se carga después del CSS base. */
+.lf-page.hub-landing { --pm-serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif; --pm-gold: #E6A300; --pm-gold-l: #FFD766; --pm-navy: #0a2540; }
+
+/* Títulos con voz de despacho: serif fina + filo dorado que se dibuja */
+.lf-page.hub-landing .med-heading h2 { font-family: var(--pm-serif); font-weight: 500; letter-spacing: -.015em; line-height: 1.12; }
+.lf-page.hub-landing .med-heading { position: relative; padding-bottom: 1.6rem; }
+.lf-page.hub-landing .med-heading::after { content: ""; position: absolute; left: 0; bottom: 0; width: 72px; height: 2px; background: linear-gradient(90deg, var(--pm-gold), var(--pm-gold-l), transparent); transition: width 1.1s cubic-bezier(.2,.8,.2,1) .25s; }
+.lf-page.hub-landing .med-heading.fr-rv:not(.fr-in)::after { width: 0; }
+.lf-page.hub-landing .hub-hero h1 { font-family: var(--pm-serif); font-weight: 500; }
+.lf-page.hub-landing .hub-final h2 { font-family: var(--pm-serif); font-weight: 500; }
+
+/* Hero: entrada y paralaje suave con el puntero */
+@media (prefers-reduced-motion: no-preference) {
+  .hub-hero-copy > * { animation: frUp .9s cubic-bezier(.2,.8,.2,1) both; }
+  .hub-hero-copy > *:nth-child(1) { animation-delay: .05s; } .hub-hero-copy > *:nth-child(2) { animation-delay: .2s; }
+  .hub-hero-copy > *:nth-child(3) { animation-delay: .35s; } .hub-hero-copy > *:nth-child(4) { animation-delay: .5s; }
+  .hub-hero-copy > *:nth-child(n+5) { animation-delay: .65s; }
+  .hub-hero-visual { animation: medFromRight 1.2s cubic-bezier(.2,.8,.2,1) .3s backwards; transition: transform .5s cubic-bezier(.2,.8,.2,1); transform: translate3d(calc(var(--px, 0) * -10px), calc(var(--py, 0) * -8px), 0); }
+  .hub-hero-visual { position: relative; }
+  .hub-hero-visual::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.28) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; animation: pmSheen 6s ease-in-out 2.2s infinite; }
+  .hub-signals { animation: frUp .9s cubic-bezier(.2,.8,.2,1) .9s both; }
+}
+@keyframes pmSheen { 0%, 55% { background-position: 160% 0; } 100% { background-position: -60% 0; } }
+.lf-page.hub-landing .hub-signals span { color: var(--pm-gold-l); }
+
+/* Tarjetas: numeración, filo dorado, elevación */
+.lf-page.hub-landing :is(.hub-question-grid .med-card, .hub-solution-grid article, .hub-feature-grid article, .hub-seo-grid article, .hub-audience-grid article, .hub-levels article) { transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s, border-color .4s; position: relative; }
+.lf-page.hub-landing :is(.hub-question-grid .med-card, .hub-solution-grid article, .hub-seo-grid article, .hub-levels article):hover { transform: translateY(-6px); border-color: rgba(230,163,0,.55); box-shadow: 0 30px 50px -28px rgba(10,37,64,.45), inset 0 2px 0 var(--pm-gold); }
+.lf-page.hub-landing .hub-feature-grid article:hover { transform: translateY(-3px); border-color: rgba(230,163,0,.5); box-shadow: 0 18px 30px -22px rgba(10,37,64,.45); }
+.lf-page.hub-landing :is(.hub-question-grid .med-card h3, .hub-solution-grid article h3, .hub-levels article h3, .hub-comparison h3, .hub-front h3) { font-family: var(--pm-serif); font-weight: 500; }
+.lf-page.hub-landing .hub-solution-grid article .med-text-link svg { transition: transform .3s; }
+.lf-page.hub-landing .hub-solution-grid article:hover .med-text-link svg { transform: translateX(5px); }
+
+/* Recorrido búsqueda → contacto: se enciende paso a paso */
+.lf-page.hub-landing .hub-flow { position: relative; }
+.lf-page.hub-landing .hub-flow li { transition: opacity .7s ease, transform .8s cubic-bezier(.2,.8,.2,1), border-color .6s, box-shadow .6s; }
+.lf-page.hub-landing .hub-flow li:nth-child(1) { transition-delay: .05s; } .lf-page.hub-landing .hub-flow li:nth-child(2) { transition-delay: .25s; }
+.lf-page.hub-landing .hub-flow li:nth-child(3) { transition-delay: .45s; } .lf-page.hub-landing .hub-flow li:nth-child(4) { transition-delay: .65s; }
+.lf-page.hub-landing .hub-flow li:nth-child(5) { transition-delay: .85s; } .lf-page.hub-landing .hub-flow li:nth-child(6) { transition-delay: 1.05s; }
+.lf-page.hub-landing .hub-flow.fr-rv:not(.fr-in) li { opacity: .2; transform: translateY(18px) scale(.96); }
+.lf-page.hub-landing .hub-flow li { border-color: rgba(230,163,0,.35); box-shadow: 0 14px 28px -22px rgba(10,37,64,.45); }
+.lf-page.hub-landing .hub-flow.fr-rv:not(.fr-in) li { border-color: #dbe4e9; box-shadow: none; }
+.lf-page.hub-landing .hub-flow li > span { font-family: var(--pm-serif); color: #B7791F; }
+
+/* Figuras: conservan su animación original (lf-rise); solo un zoom suave al pasar el cursor */
+.lf-page.hub-landing .hub-figure img { transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+.lf-page.hub-landing .hub-figure:hover img { transform: scale(1.02); }
+
+/* Comparación: la presencia profesional es la protagonista */
+.lf-page.hub-landing .hub-comparison article:last-child { position: relative; color: #fff; border: 1px solid rgba(255,215,102,.4); background-color: var(--pm-navy); background-image: radial-gradient(70% 80% at 0% 0%, rgba(47,106,163,.55), transparent 70%); box-shadow: 0 40px 70px -40px rgba(5,19,32,.9), 0 0 60px -26px rgba(230,163,0,.5); }
+.lf-page.hub-landing .hub-comparison article:last-child :is(h3, li) { color: #fff; }
+.lf-page.hub-landing .hub-comparison article:last-child .med-eyebrow { color: var(--pm-gold-l); }
+.lf-page.hub-landing .hub-comparison article:last-child svg { color: var(--pm-gold-l); }
+.lf-page.hub-landing .hub-comparison article:first-child { opacity: .85; border-style: dashed; }
+.lf-page.hub-landing .hub-comparison article.fr-rv:last-child:not(.fr-in) li { opacity: 0; transform: translateX(-14px); }
+.lf-page.hub-landing .hub-comparison article:last-child li { transition: opacity .6s, transform .7s cubic-bezier(.2,.8,.2,1); }
+.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(n) { transition-delay: calc(var(--n, 0) * 70ms + .3s); }
+.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(1){--n:1}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(2){--n:2}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(3){--n:3}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(4){--n:4}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(5){--n:5}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(6){--n:6}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(7){--n:7}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(8){--n:8}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(9){--n:9}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(10){--n:10}.lf-page.hub-landing .hub-comparison article:last-child li:nth-child(11){--n:11}
+
+/* Niveles: precio con presencia */
+.lf-page.hub-landing .hub-level-price { margin: 1rem 0 .4rem; font-family: var(--pm-serif); font-size: 2.3rem; line-height: 1; font-weight: 500; color: var(--pm-navy); }
+.lf-page.hub-landing .hub-level-price small { display: block; margin-bottom: .35rem; font-family: inherit; font-size: .7rem; font-variant: small-caps; letter-spacing: .2em; color: #B7791F; }
+.lf-page.hub-landing .hub-level-price span { font-family: system-ui, sans-serif; font-size: .75rem; letter-spacing: .1em; color: #64748b; }
+.lf-page.hub-landing .hub-levels article:nth-child(3) { border-color: rgba(230,163,0,.5); box-shadow: 0 30px 56px -34px rgba(10,37,64,.5), inset 0 2px 0 var(--pm-gold); }
+
+/* Etiquetas de showcase y cierre */
+.lf-page.hub-landing .hub-showcase-tags span { transition: transform .3s, border-color .3s; }
+.lf-page.hub-landing .hub-showcase-tags span:hover { transform: translateY(-2px); border-color: rgba(255,215,102,.6); }
+.lf-page.hub-landing .hub-final .med-button:not(.med-button-secondary) { background: linear-gradient(135deg, #FFD766, #F2B820 55%, #E6A300); color: var(--pm-navy); border-color: transparent; box-shadow: 0 14px 30px -10px rgba(230,163,0,.6); }
+.lf-page.hub-landing .hub-final .med-button:not(.med-button-secondary):hover { box-shadow: 0 18px 40px -10px rgba(230,163,0,.85); }
+.lf-page.hub-landing .hub-final h2 { text-shadow: 0 2px 30px rgba(5,19,32,.7); }
+
+/* ── Niveles: tres piezas de una misma colección ── */
+.lf-page.hub-landing .hub-levels { gap: 1.5rem; align-items: stretch; }
+.lf-page.hub-landing .hub-level { display: flex; flex-direction: column; padding: 2.4rem 2rem 2rem; border-radius: 22px; overflow: hidden; }
+.lf-page.hub-landing .hub-level-no { position: absolute; right: 1.5rem; top: 1.4rem; font-family: var(--pm-serif); font-size: .8rem; font-style: italic; letter-spacing: .12em; color: rgba(10,37,64,.4); }
+.lf-page.hub-landing .hub-level::before { content: ""; position: absolute; left: 2rem; top: 0; width: 56px; height: 3px; background: linear-gradient(90deg, var(--pm-gold), var(--pm-gold-l)); transition: width .6s cubic-bezier(.2,.8,.2,1); }
+.lf-page.hub-landing .hub-level:hover::before { width: calc(100% - 4rem); }
+.lf-page.hub-landing .hub-level h3 { margin: .9rem 0 .6rem; font-size: 1.65rem; line-height: 1.15; }
+.lf-page.hub-landing .hub-level-desc { margin: 0; min-height: 3.4rem; font-size: .96rem; line-height: 1.6; color: #526773; }
+.lf-page.hub-landing .hub-level-price { margin: 1.4rem 0 .4rem; padding-top: 1.4rem; border-top: 1px solid rgba(10,37,64,.12); font-size: 2.8rem; }
+.lf-page.hub-landing .hub-level-price span { margin-left: .5rem; }
+.lf-page.hub-landing .hub-level-note { display: block; margin-bottom: 1.2rem; font-size: .82rem; line-height: 1.5; color: #64748b; }
+.lf-page.hub-landing .hub-level-list { list-style: none; margin: 0 0 1.8rem; padding: 0; display: flex; flex-direction: column; gap: .7rem; flex-grow: 1; }
+.lf-page.hub-landing .hub-level-list li { display: flex; align-items: flex-start; gap: .7rem; font-size: .93rem; line-height: 1.5; color: #1e3a52; }
+.lf-page.hub-landing .hub-level-list li span { flex-shrink: 0; display: grid; place-items: center; width: 20px; height: 20px; margin-top: 2px; border-radius: 50%; color: #8a6414; background: rgba(230,163,0,.16); border: 1px solid rgba(230,163,0,.4); }
+.lf-page.hub-landing .hub-level .med-button { justify-content: center; width: 100%; min-height: 54px; border-radius: 10px; font-weight: 700; }
+/* 01: puerta de entrada sobria */
+.lf-page.hub-landing .hub-level-1 { background: linear-gradient(180deg, #fff, #f6f9f9); }
+/* 02: acabado intermedio con luz dorada */
+.lf-page.hub-landing .hub-level-2 { background: linear-gradient(180deg, #fff, #f1f6f6); border-color: rgba(230,163,0,.5); box-shadow: 0 30px 56px -34px rgba(10,37,64,.5), 0 0 50px -28px rgba(230,163,0,.6); }
+/* 03: la pieza insignia */
+.lf-page.hub-landing .hub-level-3 { color: #fff; border: 1px solid rgba(255,215,102,.55); background-color: var(--pm-navy); background-image: radial-gradient(80% 60% at 0% 0%, rgba(47,106,163,.6), transparent 70%), radial-gradient(50% 40% at 100% 100%, rgba(230,163,0,.2), transparent 70%); box-shadow: 0 40px 70px -36px rgba(5,19,32,.95), 0 0 70px -24px rgba(230,163,0,.55); }
+.lf-page.hub-landing .hub-level-3 :is(h3, .hub-level-price, .hub-level-list li) { color: #fff; }
+.lf-page.hub-landing .hub-level-3 :is(.hub-level-desc, .hub-level-note) { color: #c3d3e5; }
+.lf-page.hub-landing .hub-level-3 .hub-level-no { color: rgba(255,215,102,.7); }
+.lf-page.hub-landing .hub-level-3 .med-eyebrow { color: var(--pm-gold-l); background: rgba(255,255,255,.06); border-color: rgba(255,215,102,.35); }
+.lf-page.hub-landing .hub-level-3 .hub-level-price { border-top-color: rgba(255,255,255,.18); }
+.lf-page.hub-landing .hub-level-3 .hub-level-price small, .lf-page.hub-landing .hub-level-3 .hub-level-price span { color: var(--pm-gold-l); }
+.lf-page.hub-landing .hub-level-3 .hub-level-list li span { color: var(--pm-navy); background: var(--pm-gold-l); border-color: transparent; }
+.lf-page.hub-landing .hub-level-3 .med-button { color: var(--pm-navy); background: rgba(255,255,255,.06); color: #fff; border: 1px solid rgba(255,215,102,.55); }
+.lf-page.hub-landing .hub-level-3 .med-button:hover { background: linear-gradient(135deg, #FFD766, #E6A300); color: var(--pm-navy); }
+.lf-page.hub-landing .hub-level-3::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.12) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; transition: background-position 1.2s ease; }
+.lf-page.hub-landing .hub-level-3:hover::after { background-position: -60% 0; }
+/* botón principal de la 02 en dorado */
+.lf-page.hub-landing .hub-level-2 .med-button:not(.med-button-secondary) { background: linear-gradient(135deg, #FFD766, #F2B820 55%, #E6A300); color: var(--pm-navy); border-color: transparent; box-shadow: 0 14px 30px -10px rgba(230,163,0,.6); }
+@media (max-width: 900px) { .lf-page.hub-landing .hub-levels { grid-template-columns: 1fr; } .lf-page.hub-landing .hub-level-desc { min-height: 0; } }

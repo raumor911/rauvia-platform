@@ -214,6 +214,16 @@
       ]
     },
     {
+      "id": "answer-family:evidencia-presencia-profesional",
+      "question": "¿Qué permite concluir el caso de presencia y posicionamiento profesional de RAUVIA?",
+      "answerIds": [
+        "answer:evidencia-presencia-profesional"
+      ],
+      "intentIds": [
+        "intent:presencia-posicionamiento-profesional"
+      ]
+    },
+    {
       "id": "answer-family:entidad-rauvia",
       "question": "¿Qué es RAUVIA y en qué situaciones interviene?",
       "answerIds": [
@@ -856,6 +866,22 @@
       "intentId": "intent:presencia-medica-dispersa",
       "answerId": "answer:presencia-medica",
       "familyId": "answer-family:presencia-medica",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:presencia-posicionamiento-profesional",
+      "queries": [
+        "Presencia y posicionamiento profesional de profesionistas",
+        "¿Qué evidencia y límites tiene el caso de presencia y posicionamiento profesional de RAUVIA?"
+      ],
+      "intentId": "intent:presencia-posicionamiento-profesional",
+      "answerId": "answer:evidencia-presencia-profesional",
+      "familyId": "answer-family:evidencia-presencia-profesional",
       "visibility": "public",
       "publication": {
         "approved": true,
@@ -1964,6 +1990,23 @@
         "capability:presencia-local"
       ],
       "citationBundleId": "citation:presencia-medica"
+    },
+    {
+      "queryArchetypeId": "query-archetype:presencia-posicionamiento-profesional",
+      "intentId": "intent:presencia-posicionamiento-profesional",
+      "answerId": "answer:evidencia-presencia-profesional",
+      "problemIds": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "problemRole": "expressed_need",
+      "entityIds": [
+        "org:rauvia"
+      ],
+      "capabilityIds": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "citationBundleId": "citation:evidencia-presencia-profesional"
     },
     {
       "queryArchetypeId": "query-archetype:procesos-dependen-personas",

@@ -1,21 +1,21 @@
 {
   "/": {
     "title": [
-      "RAUVIA Consulting | Consultoría y desarrollo tecnológico"
+      "RAUVIA | Servicios digitales y trabajo especializado para empresas"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
-      "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta name=\"description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
-      "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta property=\"og:title\" content=\"RAUVIA | Servicios digitales y trabajo especializado para empresas\">",
+      "<meta property=\"og:description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/\">",
       "<meta property=\"og:type\" content=\"website\">",
       "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Consultoría y desarrollo tecnológico\">",
-      "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta name=\"twitter:title\" content=\"RAUVIA | Servicios digitales y trabajo especializado para empresas\">",
+      "<meta name=\"twitter:description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
     ],
@@ -31,7 +31,7 @@
         "alternateName": "RAUVIA",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "founder": {
           "@id": "https://rauvia.com.mx/#raul-morales",
           "name": "Raúl Antonio Morales Domínguez",
@@ -92,8 +92,8 @@
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/#webpage",
         "url": "https://rauvia.com.mx/",
-        "name": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
-        "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+        "name": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
+        "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
         "inLanguage": "es-MX",
         "isPartOf": {
           "@id": "https://rauvia.com.mx/#website"
@@ -174,7 +174,7 @@
       }
     ],
     "h1": [
-      "<span>CONSTRUIMOS LA </span><span>ESTRUCTURA QUE </span><span>PERMITE A LAS </span><span>EMPRESAS <strong>CRECER.</strong></span>"
+      "<span>HAZ QUE TU </span><span>EMPRESA SEA MÁS </span><span>FÁCIL DE ENTENDER </span><span>Y <strong>ENCONTRAR.</strong></span>"
     ]
   },
   "/soluciones/": {
@@ -207,7 +207,7 @@
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
         "url": "https://rauvia.com.mx/soluciones/",
         "name": "Portafolio de Soluciones - RAUVIA",
-        "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "Catálogo de soluciones empresariales. RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
         }
@@ -220,7 +220,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -320,7 +320,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -457,7 +457,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -546,14 +546,26 @@
             "name": "Frente Comercial Esencial",
             "price": "6900.00",
             "priceCurrency": "MXN",
-            "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional."
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "6900.00",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
+            },
+            "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional. Precio en MXN + IVA, pago único."
           },
           {
             "@type": "Offer",
             "name": "Frente Comercial Pro",
             "price": "9900.00",
             "priceCurrency": "MXN",
-            "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación."
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "9900.00",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
+            },
+            "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación. Precio en MXN + IVA, pago único."
           },
           {
             "@type": "Offer",
@@ -562,13 +574,14 @@
               "@type": "UnitPriceSpecification",
               "price": "13900.00",
               "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false,
               "referenceQuantity": {
                 "@type": "QuantitativeValue",
                 "value": "1",
                 "unitCode": "C62"
               }
             },
-            "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión."
+            "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión. Precio «desde» en MXN + IVA, pago único."
           }
         ]
       },
@@ -580,7 +593,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -633,21 +646,21 @@
   },
   "/nosotros/": {
     "title": [
-      "RAUVIA Consulting | Nosotros"
+      "Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
-      "<meta name=\"description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta name=\"description\" content=\"Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"RAUVIA Consulting | Nosotros\">",
-      "<meta property=\"og:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta property=\"og:title\" content=\"Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA\">",
+      "<meta property=\"og:description\" content=\"Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/nosotros/\">",
       "<meta property=\"og:type\" content=\"website\">",
       "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Nosotros\">",
-      "<meta name=\"twitter:description\" content=\"RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.\">",
+      "<meta name=\"twitter:title\" content=\"Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA\">",
+      "<meta name=\"twitter:description\" content=\"Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
     ],
@@ -661,7 +674,7 @@
         "@id": "https://rauvia.com.mx/nosotros/#webpage",
         "url": "https://rauvia.com.mx/nosotros/",
         "name": "Nosotros - RAUVIA",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
         },
@@ -723,7 +736,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -771,7 +784,7 @@
       }
     ],
     "h1": [
-      "DEFENDEMOS TU PATRIMONIO. <br/>CONSTRUIMOS CAPACIDADES <br/><span class=\"text-rauvia-blue\">PARA HACERLO CRECER</span><span class=\"text-rauvia-gold\">.</span>"
+      "TRABAJO ESPECIALIZADO Y TECNOLOGÍA <br/><span class=\"text-rauvia-blue\">PARA RESOLVER PROBLEMAS REALES</span><span class=\"text-rauvia-gold\">.</span>"
     ]
   },
   "/recursos/": {
@@ -817,7 +830,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",
@@ -910,7 +923,7 @@
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
           "@type": "PostalAddress",

@@ -563,7 +563,12 @@
       "claims": [
         "claim:benchmark-interno",
         "claim:conversaciones-reportadas",
-        "claim:trazabilidad-en-construccion"
+        "claim:inversion-registrada",
+        "claim:costo-por-conversacion",
+        "claim:alcance-visualizaciones",
+        "claim:clasificacion-conversaciones",
+        "claim:trazabilidad-en-construccion",
+        "claim:rediseno-web-estado"
       ],
       "evidence": [
         "case:infraestructura-temporal-b2b"
@@ -572,12 +577,17 @@
         "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
         "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
         "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida.",
-        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; capacidad en construcción ≠ resultado terminado.",
-        "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas.",
+        "Benchmark interno ≠ ventas; conversaciones ≠ oportunidades, clientes o cierres; visualizaciones y alcance ≠ demanda calificada; interacciones clasificadas ≠ funnel ni tasas de conversión; capacidad en construcción ≠ resultado terminado.",
+        "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas ni se publican oportunidades, cotizaciones o cierres.",
         "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión.",
+        "Costo por conversación ≠ costo por oportunidad, cliente o cierre.",
         "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Inversión registrada ≠ retorno, ingreso ni costo de adquisición de clientes; no establece causalidad con ventas.",
+        "No constituyen un funnel comercial ni tasas de conversión; no toda la demanda fue clasificada; ni catálogo/información ni conversaciones largas equivalen a oportunidades, ventas o cierres.",
         "Reporte propio, sin validación independiente ni atribución causal establecida.",
-        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+        "Un componente implementado no demuestra efecto en demanda o ventas; los componentes en evolución o de siguiente fase no son resultados concluidos.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Visualizaciones y alcance ≠ demanda calificada, conversaciones, oportunidades ni ventas."
       ],
       "last_reviewed": "2026-10-06",
       "assertions": [
@@ -586,8 +596,8 @@
           "sourceIds": [
             "source:case-infraestructura-temporal-b2b"
           ],
-          "scope": "Comparación interna de capacidades digitales/comerciales del caso.",
-          "period": "Fase inicial publicada; la página no precisa fechas independientes para cada medición del benchmark.",
+          "scope": "Comparación interna de seis dimensiones de capacidades digitales/comerciales (amplitud de oferta, propuesta de valor, activación social, profundidad web, diferenciación y SEO local); los cortes se grafican a intervalos iguales, no a escala temporal.",
+          "period": "Tres cortes publicados: 03 oct 2025, 31 dic 2025 y 15 jul 2026.",
           "attributionLimit": "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida."
         },
         {
@@ -595,18 +605,123 @@
           "sourceIds": [
             "source:case-infraestructura-temporal-b2b"
           ],
-          "scope": "Volumen de interacción reportado en el caso.",
+          "scope": "Volumen de interacción registrado durante la fase 1 de presencia digital y captación.",
           "period": "Octubre 2025 – julio 2026.",
           "attributionLimit": "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión."
+        },
+        {
+          "claimId": "claim:inversion-registrada",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Inversión registrada en el periodo de presencia digital y captación; la página no desglosa canales ni conceptos.",
+          "period": "Octubre 2025 – julio 2026.",
+          "attributionLimit": "Inversión registrada ≠ retorno, ingreso ni costo de adquisición de clientes; no establece causalidad con ventas."
+        },
+        {
+          "claimId": "claim:costo-por-conversacion",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Cociente entre la inversión registrada y las conversaciones iniciadas en la fase 1.",
+          "period": "Octubre 2025 – julio 2026.",
+          "attributionLimit": "Costo por conversación ≠ costo por oportunidad, cliente o cierre."
+        },
+        {
+          "claimId": "claim:alcance-visualizaciones",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Exposición registrada durante la fase 1.",
+          "period": "Octubre 2025 – julio 2026.",
+          "attributionLimit": "Visualizaciones y alcance ≠ demanda calificada, conversaciones, oportunidades ni ventas."
+        },
+        {
+          "claimId": "claim:clasificacion-conversaciones",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Clasificación de una parte de las interacciones; las categorías describen niveles observados en la revisión.",
+          "period": "La página no declara un periodo específico para la clasificación.",
+          "attributionLimit": "No constituyen un funnel comercial ni tasas de conversión; no toda la demanda fue clasificada; ni catálogo/información ni conversaciones largas equivalen a oportunidades, ventas o cierres."
         },
         {
           "claimId": "claim:trazabilidad-en-construccion",
           "sourceIds": [
             "source:case-infraestructura-temporal-b2b"
           ],
-          "scope": "Estado de la intervención reportado por la página original.",
-          "period": "Estado publicado, sin fecha de cierre declarada.",
-          "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas."
+          "scope": "Fase 2 de la intervención, reportada por la página original; incluye registro estructurado, variables comerciales observables y seguimiento.",
+          "period": "Julio 2026 – actualidad; sin fecha de cierre declarada.",
+          "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas ni se publican oportunidades, cotizaciones o cierres."
+        },
+        {
+          "claimId": "claim:rediseno-web-estado",
+          "sourceIds": [
+            "source:case-infraestructura-temporal-b2b"
+          ],
+          "scope": "Estado por componente reportado por la página original.",
+          "period": "Estado publicado, sin fechas por componente.",
+          "attributionLimit": "Un componente implementado no demuestra efecto en demanda o ventas; los componentes en evolución o de siguiente fase no son resultados concluidos."
+        }
+      ]
+    },
+    {
+      "id": "citation:evidencia-presencia-profesional",
+      "answerId": "answer:evidencia-presencia-profesional",
+      "primary_source": "source:case-presencia-posicionamiento-profesional",
+      "supporting_sources": [
+        "source:aethryon",
+        "source:frente-comercial",
+        "source:soluciones"
+      ],
+      "claims": [
+        "claim:presencia-profesional-capacidad",
+        "claim:referencias-implementadas",
+        "claim:presencia-profesional-evidencia-pendiente"
+      ],
+      "evidence": [
+        "case:presencia-posicionamiento-profesional"
+      ],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Capacidad o evidencia en construcción ≠ resultado concluido; sin métricas, conversaciones, oportunidades, clientes ni cierres publicados.",
+        "Describe una capacidad y su método, no resultados; las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales; en salud la información administrativa no sustituye una valoración médica.",
+        "Reporte propio, sin validación independiente ni atribución causal establecida.",
+        "Sin métricas publicadas: una implementación de referencia no equivale a descubrimiento, contactos, oportunidades, clientes ni resultados.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Una referencia ilustra la capacidad y no establece resultados universales; no demuestra descubrimiento, contactos, oportunidades ni clientes."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:presencia-profesional-capacidad",
+          "sourceIds": [
+            "source:case-presencia-posicionamiento-profesional"
+          ],
+          "scope": "Capacidad descrita en el caso con seis implementaciones de referencia (profesionistas, salud y un pequeño negocio).",
+          "period": "Capacidad activa; sin periodo de medición publicado.",
+          "attributionLimit": "Describe una capacidad y su método, no resultados; las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales."
+        },
+        {
+          "claimId": "claim:referencias-implementadas",
+          "sourceIds": [
+            "source:case-presencia-posicionamiento-profesional"
+          ],
+          "scope": "Los sitios ilustran cómo se organiza la información de cada práctica o negocio; en salud, la información administrativa no sustituye una valoración médica y el sitio de psicología no ofrece psicoterapia clínica ni diagnósticos.",
+          "period": "Sitios enlazados al momento de la publicación del caso; sin fecha de entrega publicada.",
+          "attributionLimit": "Una referencia ilustra la capacidad y no establece resultados universales; no demuestra descubrimiento, contactos, oportunidades ni clientes."
+        },
+        {
+          "claimId": "claim:presencia-profesional-evidencia-pendiente",
+          "sourceIds": [
+            "source:case-presencia-posicionamiento-profesional"
+          ],
+          "scope": "Estado de la evidencia reportado por la página original: relevancia informativa por evaluar y oportunidades por documentar con contactos confirmados y su origen.",
+          "period": "Sin periodo de medición publicado.",
+          "attributionLimit": "Capacidad o evidencia en construcción ≠ resultado concluido; sin métricas, conversaciones, oportunidades, clientes ni cierres publicados."
         }
       ]
     },
@@ -730,18 +845,46 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:alcance-visualizaciones",
+      "text": "El caso publicado reporta 811,365 visualizaciones y 447,527 de alcance acumulado.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Exposición registrada durante la fase 1.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Visualizaciones y alcance ≠ demanda calificada, conversaciones, oportunidades ni ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "exposure_count"
+    },
+    {
       "id": "claim:benchmark-interno",
-      "text": "El caso publicado reporta un benchmark interno de 2.67 a 4.00.",
+      "text": "El caso publicado reporta un benchmark interno comparativo (índice 1–5) de 2.67 el 03 de octubre de 2025, 3.67 el 31 de diciembre de 2025 y 4.00 el 15 de julio de 2026 (+1.33 puntos; +49.8% de evolución relativa acumulada).",
       "claimType": "result",
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Comparación interna de capacidades digitales/comerciales del caso.",
-      "period": "Fase inicial publicada; la página no precisa fechas independientes para cada medición del benchmark.",
+      "scope": "Comparación interna de seis dimensiones de capacidades digitales/comerciales (amplitud de oferta, propuesta de valor, activación social, profundidad web, diferenciación y SEO local); los cortes se grafican a intervalos iguales, no a escala temporal.",
+      "period": "Tres cortes publicados: 03 oct 2025, 31 dic 2025 y 15 jul 2026.",
       "attributionLimit": "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
       "measurementKind": "internal_benchmark"
+    },
+    {
+      "id": "claim:clasificacion-conversaciones",
+      "text": "El caso publicado reporta 511 interacciones clasificadas, de las cuales 154 corresponden a catálogo o información y 25 a conversaciones largas.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Clasificación de una parte de las interacciones; las categorías describen niveles observados en la revisión.",
+      "period": "La página no declara un periodo específico para la clasificación.",
+      "attributionLimit": "No constituyen un funnel comercial ni tasas de conversión; no toda la demanda fue clasificada; ni catálogo/información ni conversaciones largas equivalen a oportunidades, ventas o cierres.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "classified_interactions"
     },
     {
       "id": "claim:conversaciones-reportadas",
@@ -750,12 +893,26 @@
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Volumen de interacción reportado en el caso.",
+      "scope": "Volumen de interacción registrado durante la fase 1 de presencia digital y captación.",
       "period": "Octubre 2025 – julio 2026.",
       "attributionLimit": "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
       "measurementKind": "interaction_count"
+    },
+    {
+      "id": "claim:costo-por-conversacion",
+      "text": "El caso publicado reporta un costo promedio de $10.76 MXN por conversación iniciada.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Cociente entre la inversión registrada y las conversaciones iniciadas en la fase 1.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Costo por conversación ≠ costo por oportunidad, cliente o cierre.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "unit_cost"
     },
     {
       "id": "claim:frente-comercial-alcance",
@@ -771,6 +928,20 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:inversion-registrada",
+      "text": "El caso publicado registra una inversión de $38,345.94 MXN durante la fase 1.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Inversión registrada en el periodo de presencia digital y captación; la página no desglosa canales ni conceptos.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Inversión registrada ≠ retorno, ingreso ni costo de adquisición de clientes; no establece causalidad con ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "recorded_spend"
+    },
+    {
       "id": "claim:presencia-medica-alcance",
       "text": "La página para médicos organiza información profesional, especialidad, ubicación y contacto.",
       "claimType": "capability",
@@ -782,6 +953,33 @@
       "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
       "causalStatus": "not_established",
       "guaranteesResults": false
+    },
+    {
+      "id": "claim:presencia-profesional-capacidad",
+      "text": "RAUVIA, mediante RAUVIAWEB, organiza trayectoria, especialidad, capacidades y canales de contacto de profesionistas en un sitio adecuado a cada perfil.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Capacidad descrita en el caso con seis implementaciones de referencia (profesionistas, salud y un pequeño negocio).",
+      "period": "Capacidad activa; sin periodo de medición publicado.",
+      "attributionLimit": "Describe una capacidad y su método, no resultados; las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:presencia-profesional-evidencia-pendiente",
+      "text": "La evidencia de descubrimiento, contactos y oportunidades del caso de presencia profesional sigue en construcción y no se publican métricas de impacto.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Estado de la evidencia reportado por la página original: relevancia informativa por evaluar y oportunidades por documentar con contactos confirmados y su origen.",
+      "period": "Sin periodo de medición publicado.",
+      "attributionLimit": "Capacidad o evidencia en construcción ≠ resultado concluido; sin métricas, conversaciones, oportunidades, clientes ni cierres publicados.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "fulfilmentState": "in_construction"
     },
     {
       "id": "claim:rauvia-capacidades",
@@ -798,7 +996,7 @@
     },
     {
       "id": "claim:rauvia-identidad",
-      "text": "RAUVIA es una firma de consultoría estratégica y desarrollo tecnológico.",
+      "text": "RAUVIA es una empresa mexicana que combina metodología, tecnología y trabajo especializado para ayudar a las empresas a resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas. Sus servicios digitales incluyen Frente Comercial y SEO para IA. Cuando la situación lo requiere, puede definir intervenciones empresariales más amplias, incluyendo consultoría especializada, según un alcance acordado.",
       "claimType": "factual",
       "supportedBy": [
         "source:nosotros"
@@ -806,6 +1004,33 @@
       "scope": "Identidad institucional pública.",
       "period": "Identidad vigente en la fuente canónica.",
       "attributionLimit": "Descripción institucional propia, no certificación externa.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:rediseno-web-estado",
+      "text": "El caso reporta el estado del rediseño y relanzamiento web: reorganización de arquitectura, casos de uso por necesidad y separación de venta y renta como implementados; mayor profundidad y SEO técnico y local en evolución; GEO/LLMO progresivo como siguiente fase.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Estado por componente reportado por la página original.",
+      "period": "Estado publicado, sin fechas por componente.",
+      "attributionLimit": "Un componente implementado no demuestra efecto en demanda o ventas; los componentes en evolución o de siguiente fase no son resultados concluidos.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "fulfilmentState": "in_evolution"
+    },
+    {
+      "id": "claim:referencias-implementadas",
+      "text": "El caso presenta seis implementaciones de referencia enlazadas: Erika Morales, Allison García Urrutia, Mónica García Urrutia, Consultorio Médico GALENUS, Antonio Colyn y Acacia.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Los sitios ilustran cómo se organiza la información de cada práctica o negocio; en salud, la información administrativa no sustituye una valoración médica y el sitio de psicología no ofrece psicoterapia clínica ni diagnósticos.",
+      "period": "Sitios enlazados al momento de la publicación del caso; sin fecha de entrega publicada.",
+      "attributionLimit": "Una referencia ilustra la capacidad y no establece resultados universales; no demuestra descubrimiento, contactos, oportunidades ni clientes.",
       "causalStatus": "not_established",
       "guaranteesResults": false
     },
@@ -824,14 +1049,14 @@
     },
     {
       "id": "claim:trazabilidad-en-construccion",
-      "text": "El caso describe una capacidad de trazabilidad comercial en construcción.",
+      "text": "El caso describe una capacidad de trazabilidad comercial en construcción (Catalyst) para observar el recorrido de cada oportunidad.",
       "claimType": "capability",
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Estado de la intervención reportado por la página original.",
-      "period": "Estado publicado, sin fecha de cierre declarada.",
-      "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas.",
+      "scope": "Fase 2 de la intervención, reportada por la página original; incluye registro estructurado, variables comerciales observables y seguimiento.",
+      "period": "Julio 2026 – actualidad; sin fecha de cierre declarada.",
+      "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas ni se publican oportunidades, cotizaciones o cierres.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
       "fulfilmentState": "in_construction"
@@ -863,6 +1088,14 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:case-presencia-posicionamiento-profesional",
+      "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA Consulting",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:frente-comercial",
       "url": "https://rauvia.com.mx/frente-comercial/",
       "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA Consulting",
@@ -873,7 +1106,7 @@
     {
       "id": "source:nosotros",
       "url": "https://rauvia.com.mx/nosotros/",
-      "label": "Publicación institucional: RAUVIA Consulting | Nosotros",
+      "label": "Publicación institucional: Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"

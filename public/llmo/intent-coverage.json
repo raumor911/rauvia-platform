@@ -1711,6 +1711,49 @@
       "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
     },
     {
+      "intent": "intent:presencia-posicionamiento-profesional",
+      "label": "Presencia y posicionamiento profesional de profesionistas",
+      "family": "USE_CASE",
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "problems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "restrictions": [
+        "restriction:dependencia-plataformas-externas",
+        "restriction:informacion-dispersa"
+      ],
+      "capabilityGaps": [
+        "capability-gap:presencia-digital-propia",
+        "capability-gap:presencia-local",
+        "capability-gap:ruta-contacto"
+      ],
+      "capabilities": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "possibleInterventions": [
+        "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "system:aethryon"
+      ],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:case-presencia-posicionamiento-profesional",
+      "supportingAssets": [
+        "asset:aethryon",
+        "asset:frente-comercial",
+        "asset:soluciones"
+      ],
+      "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "HIGH",
+      "rationale": "Intent, problema, capacidad y página específica con soporte editorial; no prueba de demanda ni eficacia."
+    },
+    {
       "intent": "intent:procesos-dependen-personas",
       "label": "Los procesos dependen de personas",
       "family": "PROBLEM",

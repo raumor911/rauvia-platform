@@ -11,11 +11,12 @@ const read = path => readFileSync(new URL(path, import.meta.url), 'utf8');
 const dist = new URL('../dist/seo-ai/index.html', import.meta.url);
 
 test('SEO AI: metadata del contrato', () => {
-  assert.equal(seo.title, 'SEO para IA generativa (GEO) para empresas | RAUVIA');
+  // Especificación 2027 v1.0: el hub evoluciona su título, H1 y descripción.
+  assert.equal(seo.title, 'SEO para IA, GEO y AEO para empresas | RAUVIA');
   assert.equal(seo.canonical, 'https://rauvia.com.mx/seo-ai/');
   assert.equal(seo.lang, 'es-MX');
   assert.equal(seo.robots, 'index, follow');
-  assert.match(seo.description, /^Preparamos tu sitio para que buscadores y asistentes de IA/);
+  assert.match(seo.description, /^Revisa qué pueden consultar buscadores y asistentes sobre tu empresa/);
   assert.doesNotMatch(seo.description, /garant/i);
 });
 
@@ -39,7 +40,7 @@ test('SEO AI: un Service ligado a la Organization real, sin ofertas ni reseñas 
 });
 
 test('SEO AI: enlace descriptivo desde Frente Comercial y sin rutas futuras', () => {
-  assert.match(read('../src/pages/FrenteComercialPage.tsx'), /to="\/seo-ai\/"[^>]*>SEO para IA generativa \(GEO\)</);
+  assert.match(read('../src/pages/FrenteComercialPage.tsx'), /to: '\/seo-ai\/', t: 'SEO para IA generativa \(GEO\)'/);
   const page = read('../src/pages/SeoAiPage.tsx');
   // El hub enlaza a cada hija con texto descriptivo; ambas existen y están registradas (tests/seo-ai-children).
   assert.match(page, /to="\/seo-ai\/auditoria\/"[^>]*>Ver el detalle de la auditoría GEO/);
@@ -95,11 +96,11 @@ test('SEO AI: copy fuente de la página (secciones, anclas y límites)', () => {
 test('SEO AI: HTML inicial prerenderizado (requiere npm run build)', {skip: !existsSync(dist)}, () => {
   const html = readFileSync(dist, 'utf8');
   assert.match(html, /<html lang="es-MX"/);
-  assert.match(html, /<title>SEO para IA generativa \(GEO\) para empresas \| RAUVIA<\/title>/);
+  assert.match(html, /<title>SEO para IA, GEO y AEO para empresas \| RAUVIA<\/title>/);
   assert.equal([...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map(m => m[1]).join(), 'https://rauvia.com.mx/seo-ai/');
   assert.doesNotMatch(html, /noindex/i);
   assert.equal([...html.matchAll(/<h1\b/g)].length, 1);
-  assert.equal((html.match(/<h3[^>]*>¿[^<]+\?<\/h3>/g) || []).length, 5);
+  assert.equal((html.match(/<h3[^>]*>¿[^<]+\?<\/h3>/g) || []).length, 6);
   assert.match(html, /id="solicitar-auditoria"/);
   assert.match(html, /"@id":"https:\/\/rauvia\.com\.mx\/seo-ai\/#servicio"/);
 });
@@ -112,8 +113,8 @@ test('SEO AI: capa gráfica decorativa, accesible y sin romper el contrato', () 
   assert.match(shared, /Ilustración conceptual[^<]*No es un resultado real/);
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)/);
   for (const token of ['#0A2540', '#1E4A74', '#E6A300', '#FFD766']) assert.ok(css.includes(token), token);
-  // H1 y textos fijos del contrato se conservan literalmente.
-  for (const text of ['SEO para IA generativa (GEO) para empresas', 'Primero revisamos qué puede consultar un buscador o asistente. Después comprobamos qué dice sobre tu empresa con preguntas reales de compra.', 'Nuestro trabajo será preparar y verificar la información pública de tu empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA.']) assert.ok(page.includes(text), text);
+  // H1 y textos fijos de la especificación 2027 v1.0 se conservan literalmente.
+  for (const text of ['Prepara tu empresa para las búsquedas con IA en 2027', 'Primero revisamos el acceso y la oferta; después comprobamos respuestas con preguntas de compra acordadas.', 'Preparamos y verificamos la información pública de tu empresa para que buscadores y asistentes puedan encontrar qué vendes, para qué sirve y dónde lo entregas.', 'Una nueva pregunta para tu presencia digital']) assert.ok(page.includes(text), text);
   // El gancho no promete resultados.
-  assert.doesNotMatch(page, /garantizad|#1|primer[ao]s? posici|aparecer[áa]s/i);
+  assert.doesNotMatch(page, /(?<!no )garantizad|#1|primer[ao]s? posici|aparecer[áa]s/i);
 });

@@ -458,6 +458,10 @@ async function startServer() {
         res.type('html').send(html);request.complete({posts:posts.length,stale,durationMs:Date.now()-started});
       } catch(error){request.fail({error:serializeError(error)});next(error);}
     });
+    // Guía estática (no es un artículo de WordPress): su HTML prerenderizado va antes de la resolución por slug.
+    app.get('/recursos/seo-para-ia/', (_req,res,next) => {
+      res.sendFile(path.join(distPath,'recursos','seo-para-ia','index.html'),error => {if(error)next(error);});
+    });
     // Resolve published articles before static files, so old snapshots cannot
     // override fresh WordPress metadata, content or a confirmed missing slug.
     app.get(/^\/recursos\/([^/]+)\/$/, async (req,res,next) => {
