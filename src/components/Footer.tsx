@@ -63,7 +63,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
               No conectamos herramientas.<br className="hidden sm:block"/>
               Conectamos estrategia,<br className="hidden sm:block"/>
               procesos, tecnología y personas<br className="hidden sm:block"/>
-              en un sistema <span className="ft-gold text-rauvia-gold font-bold">que genera resultados.</span>
+              en una solución <span className="ft-gold text-rauvia-gold font-bold">que se puede poner en práctica.</span>
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
             <div>
               <span className="ft-label text-rauvia-gold font-bold tracking-widest text-sm uppercase block mb-3">AETHRYON</span>
               <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-sm">
-                El núcleo que transforma capacidad en estructura y estructura en crecimiento.
+                Apoya el análisis y la estructuración de decisiones.
               </p>
             </div>
             <WhatsAppCTA 

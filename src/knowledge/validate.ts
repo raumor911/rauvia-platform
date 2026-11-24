@@ -71,7 +71,8 @@ export function auditGraph(graph:Graph|PublicGraph,master?:Graph):string[]{
    if(n.causalStatus==='supported'&&(!arr(n.evidenceRefs).length||n.evidenceState!=='validated'))fail(`Causalidad sin validación: ${id}`);
    if(n.measurementKind==='internal_benchmark'&&n.outcome==='sales')fail(`Benchmark interpretado como ventas: ${id}`);
    if(n.measurementKind==='interaction_count'&&n.outcome==='sales')fail(`Interacción interpretada como ventas: ${id}`);
-   if(n.fulfilmentState==='in_construction'&&(n.claimType==='result'||n.outcome==='sales'))fail(`Construcción interpretada como resultado: ${id}`);
+   if(n.measurementKind&&n.measurementKind!=='sales_result'&&n.outcome==='sales')fail(`Métrica no comercial interpretada como ventas: ${id}`);
+   if(['in_construction','next_phase'].includes(String(n.fulfilmentState))&&(n.claimType==='result'||n.outcome==='sales'))fail(`Construcción interpretada como resultado: ${id}`);
    if(id==='claim:ruta90-adoptado'&&!/método adoptado y utilizado/i.test(String(n.text)))fail('Falsa atribución de Ruta 90');
    if(/(?:Ruta\s*90.*(?:cread[oa]|desarrollad[oa]|diseñad[oa]|autoría)|(?:RAUVIA|Morales).*(?:creó|desarrolló|creador|autor de).*Ruta\s*90)/i.test(String(n.text)))fail('Claim con falsa autoría de Ruta 90');
   }

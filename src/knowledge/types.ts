@@ -41,12 +41,13 @@ export interface SourceNode extends BaseNode {
 export interface ClaimNode extends BaseNode {
  type:'Claim'; text:string; claimType:'factual'|'capability'|'observed'|'result'; supportedBy:string[];
  scope:string; period:string; attributionLimit:string; causalStatus:'not_established'|'supported'|'not_applicable';
- guaranteesResults:false; measurementKind?:'internal_benchmark'|'interaction_count'|'sales_result';
- fulfilmentState?:'in_construction'|'completed'; outcome?:'benchmark_change'|'interaction'|'sales';
+ guaranteesResults:false; measurementKind?:'internal_benchmark'|'interaction_count'|'sales_result'|'recorded_spend'|'unit_cost'|'exposure_count'|'classified_interactions';
+ fulfilmentState?:'in_construction'|'completed'|'in_evolution'|'next_phase'; outcome?:'benchmark_change'|'interaction'|'sales'|'spend'|'exposure'|'classification';
 }
 export interface IdentityNode extends BaseNode {type:'Organization'|'Person'|'WebSite';schemaId:string;name:string;url:string;legalName?:string;jobTitle?:string;sameAs?:string[];credentialRefs?:string[];organizationRefs?:string[];publicAuthorRefs?:string[];sourceRefs?:string[];aliases?:string[];discoveryAliases?:string[];identitySurfaces?:string[];practiceRefs?:string[];careerEvidenceRefs?:string[];}
 export interface InterventionNode extends BaseNode {type:'Offering'|'System'|'Method'; representedBy:string[]; supportsCapabilities:string[]; possibleForProblems:string[]; schemaId?:string;name?:string;url?:string; attribution?:'developed_by_rauvia'|'adopted_by_rauvia';}
-export interface CaseNode extends BaseNode {type:'Case';representedBy:string[];claims:string[];vertical:string;period:string;guaranteesResults:false;causalStatus:'not_established';}
+export interface CaseReference {name:string;context:string;url:string;}
+export interface CaseNode extends BaseNode {type:'Case';representedBy:string[];claims:string[];vertical:string;period:string;guaranteesResults:false;causalStatus:'not_established';canonicalUrl?:string;interventionState?:string;evidenceStatus?:string;attributionLimit?:string;pendingEvidence?:string[];references?:CaseReference[];}
 export interface UseCaseNode extends BaseNode {type:'UseCase';vertical:string;problems:string[];capabilities:string[];representedBy:string[];guaranteesResults:false;}
 export type PracticeOrigin='CAREER_EVIDENCE'|'RAUVIA_PRACTICE'|'BOTH';
 export interface PracticeAreaNode extends BaseNode {type:'PracticeArea';practiceOrigin:PracticeOrigin;topics:string[];problems:string[];supportsCapabilities:string[];careerEvidenceRefs:string[];evidenceContentRefs:string[];throughOrganizationRefs:string[];attributionLimit:string;guaranteesResults:false;}

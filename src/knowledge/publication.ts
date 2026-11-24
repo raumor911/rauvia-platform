@@ -6,7 +6,7 @@ export const PUBLIC_FIELDS:Record<NodeType,string[]>={
  Asset:['canonical','assetType','specificity','coversIntent','explainsProblem','supportsCapability','representedOffering'],
  Content:['canonical','title','slug','publishedAt','source','coversIntent','explainsProblem','supportsCapability','editorialAuthority','snapshotDate','authorRefs','authorshipEvidence'],
  Source:['url','kind','verification','publisher','snapshotDate','citationUrls','declarationScope'],Claim:['text','claimType','supportedBy','scope','period','attributionLimit','causalStatus','guaranteesResults','measurementKind','fulfilmentState','outcome'],
- Case:['representedBy','claims','vertical','period','guaranteesResults','causalStatus'],UseCase:['vertical','problems','capabilities','representedBy','guaranteesResults'],
+ Case:['representedBy','claims','vertical','period','guaranteesResults','causalStatus','canonicalUrl','interventionState','evidenceStatus','attributionLimit','pendingEvidence','references'],UseCase:['vertical','problems','capabilities','representedBy','guaranteesResults'],
  System:['schemaId','name','url','attribution','representedBy','supportsCapabilities','possibleForProblems'],Method:['attribution','representedBy','supportsCapabilities','possibleForProblems'],Offering:['representedBy','supportsCapabilities','possibleForProblems'],
  Problem:['restrictions','capabilities','aliases'],Restriction:['gaps'],CapabilityGap:['capabilities'],Capability:['interventions'],
  Vertical:[],ICP:[],Signal:[],Opportunity:[],Priority:[],ActionRoute:[],Concept:[],TopicTerritory:[]

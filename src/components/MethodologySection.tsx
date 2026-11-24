@@ -6,7 +6,7 @@ const steps = [
   { num: "02", title: "ESTRUCTURA", desc: "Diseñamos la arquitectura correcta para generar valor.", glyph: glyphs.estructura },
   { num: "03", title: "SISTEMA", desc: "Construimos activos digitales y procesos que funcionan.", glyph: glyphs.sistema },
   { num: "04", title: "MEDICIÓN", desc: "Implementamos métricas para tomar mejores decisiones.", glyph: glyphs.medicion },
-  { num: "05", title: "ESCALAMIENTO", desc: "Optimización continua para crecer sin límites.", glyph: glyphs.escalamiento },
+  { num: "05", title: "ESCALAMIENTO", desc: "Revisamos lo aprendido y definimos los siguientes ajustes cuando el alcance lo contempla.", glyph: glyphs.escalamiento },
 ];
 
 export default function MethodologySection() {
@@ -21,8 +21,8 @@ export default function MethodologySection() {
             <span className="hx-kicker">NUESTRA METODOLOGÍA</span>
             <span className="hx-bar" aria-hidden="true" />
             <h2 id="metodologia-titulo" className="hx-title mt-8">
-              Convertimos capacidades <br className="hidden lg:block" />en sistemas que generan <br className="hidden lg:block" />
-              <em>crecimiento.</em>
+              De una necesidad concreta <br className="hidden lg:block" />a una solución que se puede <br className="hidden lg:block" />
+              <em>poner en práctica.</em>
             </h2>
           </div>
 

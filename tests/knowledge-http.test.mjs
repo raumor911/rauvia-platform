@@ -6,7 +6,7 @@ for(const file of ['knowledge-graph.json','intent-coverage.json'])test(`Knowledg
  const response=await fetch(base+'/llmo/'+file,{redirect:'manual'});assert.equal(response.status,200);assert.equal(response.headers.get('location'),null);assert.match(response.headers.get('content-type'),/application\/json/);
  const body=await response.text();assert.equal(body,fs.readFileSync('public/llmo/'+file,'utf8'));const value=JSON.parse(body);assert.equal(value.scope,'public');assert.doesNotMatch(body,/vertical:restaurant|vertical:export-business|repositoryRef|privateNotes|matchGroups|\/Users\//);
  if(file==='knowledge-graph.json'){assert.ok(value.nodes.length>=208);assert.ok(value.nodes.some(n=>n.id==='asset:trayectoria'));assert.ok(value.nodes.some(n=>n.id==='offering:trayectoria'));for(const id of ['asset:seo-ai','asset:seo-ai-auditoria','asset:seo-ai-implementacion','offering:seo-ai','offering:seo-ai-auditoria','offering:seo-ai-implementacion'])assert.ok(value.nodes.some(n=>n.id===id),id);assert.equal(value.nodes.filter(n=>n.type==='Organization').length,1);assert.equal(value.nodes.find(n=>n.id==='method:ruta90').attribution,'adopted_by_rauvia');}
- else{assert.equal(value.intents.length,64);assert(value.intents.every(n=>n.evidenceState==='editorial'));}
+ else{assert.equal(value.intents.length,65);assert(value.intents.every(n=>n.evidenceState==='editorial'));}
 });
 test('LLMO index and curated text register both public resources',{skip:!base},async()=>{
  const index=await (await fetch(base+'/llmo/index.json')).json();for(const name of ['knowledge-graph.json','intent-coverage.json'])assert(index.resources.some(r=>r.url==='https://rauvia.com.mx/llmo/'+name));

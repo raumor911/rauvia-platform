@@ -1,7 +1,7 @@
 import RouteSEO from '../seo/PageMetadata';
 import { RAUVIA_ENTITY } from '../config/entity';
 import { Link } from 'react-router-dom';
-import { ArrowRight, PlayCircle, ShieldCheck, Target, Layers, Settings, BarChart3, TrendingUp, Hexagon } from 'lucide-react';
+import { ArrowRight, PlayCircle } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import { useRef, useState, type CSSProperties } from 'react';
@@ -9,7 +9,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 import usePageFx from '../hooks/usePageFx';
 import ConvergenceField from '../components/ConvergenceField';
 import HeroScene from '../components/HeroScene';
-import { IntersectionVenn, ProblemScene, ProcessScene, ConvergenceScene } from '../components/NosotrosVisuals';
+import { IntersectionVenn, ConvergenceScene } from '../components/NosotrosVisuals';
 import useNosotrosFx from '../hooks/useNosotrosFx';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
@@ -44,35 +44,35 @@ export default function NosotrosPage() {
             <div className="lg:col-span-6 xl:col-span-5 space-y-6 relative z-20">
               <div className="inline-block">
                 <span className="text-xs font-bold tracking-widest text-rauvia-blue uppercase">
-                  RAUVIA CONSULTING
+                  SOBRE RAUVIA
                 </span>
               </div>
               
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-rauvia-navy leading-[1.1]">
-                DEFENDEMOS TU PATRIMONIO. <br/>
-                CONSTRUIMOS CAPACIDADES <br/>
-                <span className="text-rauvia-blue">PARA HACERLO CRECER</span><span className="text-rauvia-gold">.</span>
+                TRABAJO ESPECIALIZADO Y TECNOLOGÍA <br/>
+                <span className="text-rauvia-blue">PARA RESOLVER PROBLEMAS REALES</span><span className="text-rauvia-gold">.</span>
               </h1>
               
-              <p className="text-slate-600 text-base xl:text-lg max-w-md">
-                RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico. Ayudamos a propietarios y empresas a identificar pérdidas de valor, proteger sus recursos y desarrollar las capacidades comerciales, operativas y tecnológicas necesarias para fortalecer su negocio.
-              </p>
+              <div className="text-slate-600 text-base xl:text-lg max-w-md space-y-3">
+                <p>RAUVIA es una empresa mexicana que combina metodología, tecnología y trabajo especializado para ayudar a otras empresas a entender sus desafíos y desarrollar soluciones que puedan poner en práctica.</p>
+                <p>Algunas necesidades empiezan con algo concreto: explicar mejor una oferta o preparar la información de una empresa para buscadores y asistentes de IA. Otras requieren revisar la forma en que se vende, se opera o se toman decisiones. El alcance se define según la situación.</p>
+              </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <WhatsAppCTA 
-                   href="https://wa.me/525586494076" 
+                <Link 
+                  to="/soluciones/"
                   className="flex items-center justify-center gap-2 bg-rauvia-navy hover:bg-rauvia-navy-dark text-white px-5 py-3 rounded text-xs xl:text-sm font-semibold tracking-wide transition-all shadow-lg shadow-rauvia-navy/20 min-h-[52px]"
                 >
-                  HABLAR CON RAUVIA
-                  <ArrowRight className="w-4 h-4" />
-                </WhatsAppCTA>
-                <Link 
-                  to="/aethryon/"
+                  EXPLORAR SOLUCIONES
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+                <WhatsAppCTA 
+                   href="https://wa.me/525586494076" 
                   className="flex items-center justify-center gap-2 text-rauvia-navy hover:text-rauvia-blue px-4 py-3 rounded text-xs xl:text-sm font-semibold tracking-wide transition-all whitespace-nowrap min-h-[52px]"
                 >
-                  <PlayCircle className="w-5 h-5 text-rauvia-blue" />
-                  CONOCER CÓMO TRABAJAMOS
-                </Link>
+                  <PlayCircle className="w-5 h-5 text-rauvia-blue" aria-hidden="true" />
+                  HABLAR CON RAUVIA
+                </WhatsAppCTA>
               </div>
             </div>
 
@@ -80,8 +80,8 @@ export default function NosotrosPage() {
                {/* Hero Graphic */}
                <div className="relative w-full max-w-[620px]">
                  <HeroScene chips={[
-                   { label: 'Pérdidas de valor', x: 20, y: 18, dir: 'in' },
-                   { label: 'Recursos protegidos', x: 80, y: 22 },
+                   { label: 'Problema real', x: 20, y: 18, dir: 'in' },
+                   { label: 'Alcance acordado', x: 80, y: 22 },
                    { label: 'Capacidades operativas', x: 78, y: 82 },
                    { label: 'Capacidades tecnológicas', x: 24, y: 84 },
                  ]}>
@@ -94,22 +94,72 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* SECCIÓN 2 — ORIGEN DEL PROBLEMA */}
+      {/* SECCIÓN 2 — QUÉ HACEMOS */}
       <FadeInUp>
-      <section className="fx-dark nx-console py-10 md:py-24 bg-rauvia-navy-dark">
-        <ConvergenceField coreSelector=".nx-core" origin={[0.76, 0.5]} className="fx-field" />
-        <ProblemScene>
-          <img width="1600" height="760" loading="lazy" src="/media/rauvia-structure-problem-aethryon.svg" alt="Estructura del Problema" className="w-full h-auto object-contain" />
-        </ProblemScene>
+      <section id="que-hacemos" className="fx-light py-12 md:py-24 bg-white border-y border-slate-100 scroll-mt-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-4">QUÉ HACEMOS</span>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">Una necesidad concreta puede revelar un problema más amplio.</h2>
+          <div className="space-y-4 text-slate-600 text-base lg:text-lg leading-relaxed">
+            <p>Una empresa puede tener conocimiento, clientes y experiencia, pero aun así encontrar difícil explicar lo que ofrece, dar seguimiento a sus oportunidades o conectar la información con su operación.</p>
+            <p>En RAUVIA comenzamos por entender la situación. A partir de ahí definimos el alcance: puede ser un activo digital, un diagnóstico, una intervención comercial u operativa, o trabajo tecnológico especializado. No todas las empresas necesitan la misma solución ni tienen que recorrer el mismo camino.</p>
+          </div>
+        </div>
       </section>
       </FadeInUp>
 
-      {/* SECCIÓN 4 — FORMA DE TRABAJO */}
+      {/* SECCIÓN 3 — DOS PUERTAS DE ENTRADA */}
       <FadeInUp>
-      <section className="fx-light nx-process-sec py-10 md:py-24 bg-white border-y border-slate-100">
-        <ProcessScene>
-          <img width="1800" height="980" loading="lazy" src="/media/aethryon-process-v5.svg" alt="De la ambigüedad a un sistema ejecutable" className="w-full h-auto object-contain" />
-        </ProcessScene>
+      <section id="puertas" className="fx-light py-12 md:py-24 bg-slate-50 border-b border-slate-100 scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-4">DOS PUERTAS DE ENTRADA</span>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-10">Dos formas de empezar a trabajar con RAUVIA.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <article className="bg-white border border-slate-200 rounded-xl p-8 flex flex-col shadow-sm">
+              <h3 className="text-sm font-bold tracking-widest text-rauvia-navy uppercase mb-4">Frente Comercial</h3>
+              <p className="text-slate-600 leading-relaxed mb-6 flex-grow">Si tu empresa ya tiene productos, servicios o experiencia, pero explicarlos requiere reunir mensajes, archivos y enlaces, organizamos esa información en un activo comercial digital. La intención es que un comprador pueda entender qué haces, revisar la evidencia disponible y saber cómo avanzar.</p>
+              <Link to="/frente-comercial/" className="inline-flex items-center gap-2 text-rauvia-blue hover:text-rauvia-navy font-bold text-sm tracking-wide">Conocer Frente Comercial <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </article>
+            <article className="bg-white border border-slate-200 rounded-xl p-8 flex flex-col shadow-sm">
+              <h3 className="text-sm font-bold tracking-widest text-rauvia-navy uppercase mb-4">SEO para IA</h3>
+              <div className="text-slate-600 leading-relaxed mb-6 flex-grow space-y-3">
+                <p>Si quieres revisar cómo se encuentra y se interpreta la información de tu empresa, trabajamos sobre acceso, claridad de la oferta, aplicaciones, condiciones y cobertura. Después documentamos lo que se puede observar con preguntas acordadas en las superficies definidas.</p>
+                <p>No controlamos las respuestas de buscadores o asistentes ni garantizamos posiciones, menciones o ventas.</p>
+              </div>
+              <Link to="/seo-ai/" className="inline-flex items-center gap-2 text-rauvia-blue hover:text-rauvia-navy font-bold text-sm tracking-wide">Conocer SEO para IA <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+            </article>
+          </div>
+          <div className="mt-8 border-l-4 border-rauvia-gold bg-white rounded-r-xl p-6">
+            <h3 className="text-sm font-bold tracking-widest text-rauvia-navy uppercase mb-2">Cuando la necesidad va más allá</h3>
+            <p className="text-slate-600 leading-relaxed mb-3">Si el problema incluye estrategia, seguimiento comercial, operación o tecnología, podemos definir una intervención más amplia. El trabajo especializado —incluida la consultoría— se acuerda a partir de un problema y un alcance concretos; no está incluido automáticamente en los productos anteriores.</p>
+            <Link to="/soluciones/" className="inline-flex items-center gap-2 text-rauvia-blue hover:text-rauvia-navy font-bold text-sm tracking-wide">Ver nuestras capacidades <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </section>
+      </FadeInUp>
+
+      {/* SECCIÓN 4 — CÓMO TRABAJAMOS */}
+      <FadeInUp>
+      <section id="como-trabajamos" className="fx-light py-12 md:py-24 bg-white border-b border-slate-100 scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-4">CÓMO TRABAJAMOS</span>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-10">Entender, definir, ejecutar y revisar.</h2>
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {[
+              ['Comprender', 'Escuchamos a las personas involucradas y revisamos el contexto, la información y las capacidades existentes.'],
+              ['Delimitar', 'Acordamos qué problema atender, cuál es el alcance, qué queda fuera y cómo se revisará la entrega.'],
+              ['Diseñar', 'Definimos una solución adecuada: puede incluir contenido, un activo digital, procesos, análisis o tecnología.'],
+              ['Construir e implementar', 'Ejecutamos lo acordado o acompañamos al equipo responsable, de acuerdo con el proyecto.'],
+              ['Verificar y aprender', 'Revisamos entregables y evidencia disponible; diferenciamos lo que se comprobó de lo que todavía es una hipótesis o depende de terceros.'],
+            ].map(([t, d], i) => (
+              <li key={t} className="flex gap-4 rounded-xl border border-slate-200 bg-white p-6">
+                <span className="shrink-0 w-9 h-9 rounded-full bg-rauvia-navy text-rauvia-gold flex items-center justify-center text-sm font-bold" aria-hidden="true">{i + 1}</span>
+                <div><h3 className="font-bold text-rauvia-navy mb-1">{t}</h3><p className="text-slate-600 text-sm leading-relaxed">{d}</p></div>
+              </li>
+            ))}
+          </ol>
+          <p className="text-slate-500 text-sm">El orden y la profundidad varían según el servicio. No prometemos una transformación integral cuando solo se contrata un alcance específico.</p>
+        </div>
       </section>
       </FadeInUp>
 
@@ -117,15 +167,15 @@ export default function NosotrosPage() {
       <FadeInUp>
       <section className="fx-dark fx-principles nx-principles py-10 md:py-20 bg-rauvia-navy-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold mb-10 md:mb-16 text-center tracking-tight">PRINCIPIOS DE TRABAJO</h2>
+          <h2 className="text-3xl font-extrabold mb-10 md:mb-16 text-center tracking-tight">PRINCIPIOS PARA TRABAJAR CON CLARIDAD</h2>
           
           <div className={'nx-opts flex flex-wrap justify-center gap-8' + (pick !== null ? ' has-pick' : '')}>
             {[
-              { title: 'CLARIDAD ANTES QUE COMPLEJIDAD', desc: 'Una solución debe poder comprenderse antes de poder ejecutarse.', icon: 'M4 4h16v16H4z M10 10h4v4h-4z' },
-              { title: 'ESTRUCTURA ANTES QUE ESCALA', desc: 'Antes de crecer, una empresa necesita proteger sus recursos, reducir pérdidas evitables y fortalecer la estructura que sostiene sus resultados.', icon: 'M4 20h16v-4H4z M8 12h8v-4H8z M10 4h4v4h-4z' },
-              { title: 'TECNOLOGÍA CON PROPÓSITO', desc: 'La tecnología debe resolver una necesidad operativa concreta.', icon: 'M12 4L4 20h16z M12 12v4' },
-              { title: 'EVIDENCIA ANTES QUE CERTEZA ARTIFICIAL', desc: 'Diferenciamos hechos, hipótesis e inferencias antes de recomendar una decisión.', icon: 'M12 22A10 10 0 10 12 2a10 10 0 000 20z M12 6v6l4 2' },
-              { title: 'EJECUCIÓN SOBRE PRESENTACIÓN', desc: 'Un diagnóstico solo tiene valor cuando puede convertirse en una ruta de acción.', icon: 'M5 12l5 5L20 7' }
+              { title: 'CLARIDAD ANTES QUE COMPLEJIDAD', desc: 'Una solución debe poder entenderse y utilizarse por las personas responsables.', icon: 'M4 4h16v16H4z M10 10h4v4h-4z' },
+              { title: 'ESTRUCTURA ANTES QUE ESCALA', desc: 'Antes de ampliar una actividad, conviene entender sus dependencias, recursos y restricciones.', icon: 'M4 20h16v-4H4z M8 12h8v-4H8z M10 4h4v4h-4z' },
+              { title: 'TECNOLOGÍA CON PROPÓSITO', desc: 'Una herramienta aporta valor cuando responde a una necesidad concreta y puede incorporarse al trabajo.', icon: 'M12 4L4 20h16z M12 12v4' },
+              { title: 'EVIDENCIA ANTES QUE CERTEZA ARTIFICIAL', desc: 'Separamos hechos, hipótesis y datos desconocidos para no atribuir resultados sin soporte.', icon: 'M12 22A10 10 0 10 12 2a10 10 0 000 20z M12 6v6l4 2' },
+              { title: 'EJECUCIÓN SOBRE PRESENTACIÓN', desc: 'El análisis debe servir para tomar decisiones y producir entregables adecuados al alcance acordado.', icon: 'M5 12l5 5L20 7' }
             ].map((p, i) => (
               <div key={i} style={{ '--i': i } as CSSProperties} className={'fx-card nx-opt nx-reveal w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] p-8 border border-slate-700 bg-slate-800/30 rounded-xl hover:bg-slate-800/50 transition-colors flex-grow-0' + (pick === i ? ' is-picked' : '')}>
                 <button type="button" className="nx-pick" aria-pressed={pick === i} aria-labelledby={'nx-opt-' + i} onClick={() => setPick(pick === i ? null : i)} />
@@ -147,16 +197,14 @@ export default function NosotrosPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-6">NÚCLEO DE INTELIGENCIA ESTRATÉGICA</span>
+              <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-6">AETHRYON</span>
               <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
-                AETHRYON HACE VISIBLE<br/>
-                LO QUE UNA ORGANIZACIÓN<br/>
-                <span className="text-rauvia-blue">NECESITA CONECTAR.</span>
+                UNA FORMA DE CONECTAR<br/>
+                <span className="text-rauvia-blue">INFORMACIÓN Y DECISIONES.</span>
               </h2>
               <div className="space-y-4 text-slate-600 text-base leading-relaxed mb-8">
-                <p>AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA para interpretar señales, identificar fricción, evaluar oportunidades y estructurar decisiones ejecutables.</p>
-                <p>No sustituye la experiencia directiva ni representa una solución universal para cualquier problema empresarial.</p>
-                <p>La organiza, la contrasta y la convierte en una arquitectura de acción.</p>
+                <p>AETHRYON es el sistema de análisis y convergencia desarrollado por RAUVIA. Ayuda a organizar señales, identificar fricciones y estructurar alternativas cuando el trabajo requiere comprender relaciones entre distintas partes de una empresa.</p>
+                <p>No sustituye el criterio de propietarios, directivos o especialistas, ni convierte por sí mismo una hipótesis en resultado. Su aplicación depende del problema y del alcance acordado.</p>
               </div>
               <Link to="/aethryon/" className="inline-flex items-center gap-2 text-rauvia-navy hover:text-rauvia-blue font-bold tracking-wider text-sm transition-colors uppercase">
                 CONOCER AETHRYON <ArrowRight className="w-4 h-4" />
@@ -180,14 +228,12 @@ export default function NosotrosPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-10 md:mb-16">
             <h2 className="max-w-3xl mx-auto text-center text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
-              RAUVIA FUE CONSTRUIDA DESDE LA INTERSECCIÓN ENTRE <span className="text-rauvia-blue">NEGOCIO, OPERACIÓN Y TECNOLOGÍA.</span>
+              RAUVIA, DESDE <span className="text-rauvia-blue">NEGOCIO, OPERACIÓN Y TECNOLOGÍA.</span>
             </h2>
             <IntersectionVenn />
             <div className="space-y-4 text-slate-600 text-base leading-relaxed">
-              <p>RAUVIA fue fundada por Raúl Morales como una firma orientada a convertir análisis, estructura y tecnología en capacidades ejecutables para empresas.</p>
-              <p>Actualmente, aporta la dirección, el criterio estratégico, la arquitectura de soluciones y la evolución metodológica de la organización.</p>
-              <p>En RAUVIA entendemos que detrás de cada empresa existe patrimonio construido mediante años de trabajo, inversión y decisiones. Nuestro propósito es ayudar a proteger ese valor, identificar los factores que lo comprometen y desarrollar soluciones que permitan preservarlo, recuperarlo y hacerlo crecer.</p>
-              <p>Para lograrlo, conectamos estrategia, procesos, tecnología y ejecución, con intervenciones diseñadas a partir de las necesidades reales de cada negocio.</p>
+              <p>RAUVIA fue fundada por Raúl Morales con el propósito de conectar análisis, estructura, tecnología y ejecución en el trabajo con empresas. Su dirección aporta criterio estratégico, arquitectura de soluciones y evolución metodológica.</p>
+              <p>Detrás de cada empresa hay tiempo, decisiones, inversión y conocimiento acumulado. Por eso buscamos comprender los recursos y capacidades existentes antes de proponer cambios, y distinguir lo que puede protegerse o mejorarse de aquello que requiere más evidencia.</p>
               
               <div className="pt-4">
                 <a 
@@ -225,51 +271,37 @@ export default function NosotrosPage() {
       </section>
       </FadeInUp>
 
-      {/* SECCIÓN 8 — RELACIÓN CON EL CLIENTE */}
+      {/* SECCIÓN 8 — EVIDENCIA Y TRANSPARENCIA */}
       <FadeInUp>
-      <section className="fx-dark nx-relation py-10 md:py-20 bg-rauvia-navy-dark">
-        <ConvergenceField flow="inward" origin={[0.5, 0.5]} className="fx-field" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
-            <div className="nx-ba nx-reveal order-2 lg:order-1 flex flex-col sm:flex-row gap-8 justify-center">
-              {/* Antes */}
-              <div className="fx-before bg-slate-50 p-8 rounded-xl border border-slate-100 flex-1 text-center flex flex-col items-center">
-                <div className="text-xs font-bold tracking-widest text-slate-400 mb-6 uppercase">Antes</div>
-                <div className="flex gap-2 justify-center mb-6 opacity-40">
-                  <div className="w-6 h-6 border-2 border-slate-400 rounded"></div>
-                  <div className="w-6 h-6 border-2 border-slate-400 rounded-full"></div>
-                  <div className="w-6 h-6 border-2 border-slate-400 rotate-45"></div>
-                </div>
-                <div className="text-sm font-medium text-slate-600">Dependencia,<br/>dispersión y fricción.</div>
-              </div>
-              
-              {/* Después */}
-              <div className="fx-after bg-white p-8 rounded-xl border border-rauvia-blue/30 shadow-lg flex-1 text-center flex flex-col items-center relative">
-                <div className="absolute -left-6 top-1/2 -translate-y-1/2 w-4 h-4 text-rauvia-blue hidden sm:block">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
-                <div className="text-xs font-bold tracking-widest text-rauvia-blue mb-6 uppercase">Después</div>
-                <div className="flex gap-2 justify-center mb-6">
-                  <div className="w-6 h-6 bg-rauvia-navy rounded"></div>
-                  <div className="w-6 h-6 bg-rauvia-navy rounded"></div>
-                  <div className="w-6 h-6 bg-rauvia-navy rounded"></div>
-                </div>
-                <div className="text-sm font-bold text-rauvia-navy">Claridad, transferencia<br/>y medición.</div>
-              </div>
-            </div>
+      <section id="evidencia" className="fx-light py-12 md:py-20 bg-white border-b border-slate-100 scroll-mt-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-xs font-bold tracking-widest text-rauvia-gold uppercase block mb-4">EVIDENCIA Y TRANSPARENCIA</span>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">Mostrar el trabajo, sin confundirlo con una garantía.</h2>
+          <div className="space-y-4 text-slate-600 text-base lg:text-lg leading-relaxed mb-8">
+            <p>Los casos y las implementaciones ayudan a entender cómo se ha aplicado nuestro trabajo. Cuando existe información publicable, buscamos explicar la situación, la intervención, los entregables y las evidencias disponibles, junto con sus límites.</p>
+            <p>Una muestra de un sitio no demuestra por sí sola ventas o crecimiento; una cifra comercial debe presentarse con su periodo y contexto. Si algo no se ha medido, lo decimos.</p>
+          </div>
+          <Link to="/casos/" className="inline-flex items-center gap-2 text-rauvia-blue hover:text-rauvia-navy font-bold tracking-wider text-sm uppercase">Ver casos y evidencia <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
+        </div>
+      </section>
+      </FadeInUp>
 
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">
-                NO BUSCAMOS CONVERTIRNOS<br/>
-                <span className="text-rauvia-blue">EN OTRA CAPA DE COMPLEJIDAD.</span>
-              </h2>
-              <div className="space-y-4 text-slate-600 text-base leading-relaxed">
-                <p>Trabajamos con propietarios y equipos directivos que necesitan proteger el valor de sus empresas, recuperar recursos, resolver problemas operativos o construir nuevas capacidades de crecimiento.</p>
-                <p>Cada intervención debe dejar una estructura más clara, transferible y medible que la que existía al comenzar.</p>
-              </div>
-            </div>
-            
+      {/* SECCIÓN 9 — CIERRE */}
+      <FadeInUp>
+      <section className="fx-dark nx-relation py-12 md:py-24 bg-rauvia-navy-dark">
+        <ConvergenceField flow="inward" origin={[0.5, 0.5]} className="fx-field" />
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-rauvia-navy leading-tight mb-6">EMPECEMOS POR LO QUE TU EMPRESA <span className="text-rauvia-blue">NECESITA RESOLVER.</span></h2>
+          <p className="text-slate-600 text-base lg:text-lg leading-relaxed mb-8">Tal vez necesitas presentar mejor tu oferta, revisar cómo se encuentra tu información o entender un problema que involucra varias partes de la empresa. Cuéntanos la situación y definamos si RAUVIA puede ayudarte y cuál sería el siguiente paso.</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <WhatsAppCTA
+              href="https://wa.me/525586494076"
+              className="flex items-center justify-center gap-2 bg-rauvia-blue text-white px-6 py-3 rounded text-sm font-semibold tracking-wide min-h-[52px]"
+            >
+              HABLAR CON RAUVIA
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </WhatsAppCTA>
+            <Link to="/soluciones/" className="flex items-center justify-center gap-2 border border-white/40 text-white px-6 py-3 rounded text-sm font-semibold tracking-wide min-h-[52px]">EXPLORAR SOLUCIONES</Link>
           </div>
         </div>
       </section>

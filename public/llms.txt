@@ -1,9 +1,9 @@
 # RAUVIA
 
-> Firma mexicana de consultoría estratégica y desarrollo tecnológico para PyMES y empresas B2B. Ayuda a identificar dónde se pierden oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.
+> Empresa mexicana que combina trabajo especializado, metodología y tecnología para ayudar a las empresas a resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas. Sus servicios digitales incluyen Frente Comercial y SEO para IA; cuando la situación lo requiere, puede definir intervenciones empresariales más amplias, incluida la consultoría especializada, según un alcance acordado.
 
 Sitio oficial: https://rauvia.com.mx/ · Idioma: es-MX.
-RAUVIA es la organización; AETHRYON es su sistema de análisis y convergencia. Las capacidades no constituyen una ruta obligatoria ni una garantía de resultados.
+RAUVIA es la organización; AETHRYON es su sistema de análisis y convergencia. Frente Comercial y SEO para IA son entradas actuales, no la lista exhaustiva de capacidades; el alcance de cada trabajo se acuerda por servicio. Las capacidades no constituyen una ruta obligatoria ni una garantía de resultados.
 
 ## DOMAIN ARCHITECTURE
 
@@ -63,12 +63,13 @@ RAUVIA is the organization through which this work is structured, implemented, a
 
 ## Páginas originales
 
-- [Nosotros](https://rauvia.com.mx/nosotros/): Firma y fundador.
+- [Nosotros](https://rauvia.com.mx/nosotros/): Quiénes somos, cómo trabajamos, AETHRYON y fundador.
 - [Soluciones](https://rauvia.com.mx/soluciones/): Capacidades de intervención.
 - [AETHRYON](https://rauvia.com.mx/aethryon/): Sistema de análisis y decisión.
 - [Frente comercial](https://rauvia.com.mx/frente-comercial/): Información comercial.
 - [RAUVIA Trayectoria](https://rauvia.com.mx/trayectoria/): Planes de presencia digital, suscripciones y cambios de sitios web. Los precios visibles son referencias históricas sujetas a confirmación.
 - [SEO para IA generativa (GEO)](https://rauvia.com.mx/seo-ai/): Preparación y verificación de la información pública de una empresa para buscadores y asistentes de IA. No garantiza posiciones, menciones ni citas.
+- [Guía: SEO, GEO y AEO para empresas](https://rauvia.com.mx/recursos/seo-para-ia/): Guía práctica de autoservicio, sin registro ni compra: plan de cinco pasos, ejemplo ficticio y método de medición. No garantiza posiciones, menciones, citas, tráfico ni ventas.
 - [Auditoría GEO](https://rauvia.com.mx/seo-ai/auditoria/): Diagnóstico con evidencia, prioridades y plan de corrección; no modifica el sitio.
 - [Implementación de SEO para IA](https://rauvia.com.mx/seo-ai/implementacion/): Programa de seis meses con cambios acordados y verificados.
 - [Corregir información de tu empresa en IA](https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/): Auditoría de lo que los asistentes afirman de una empresa, con fuentes y plan de corrección.
@@ -76,7 +77,8 @@ RAUVIA is the organization through which this work is structured, implemented, a
 - [SEO para IA: cobertura y envíos](https://rauvia.com.mx/seo-ai/cobertura-y-envios/): Zonas de servicio, envío, retiro e instalación publicadas por modalidad.
 - [SEO para IA para proveedores técnicos](https://rauvia.com.mx/seo-ai/proveedores-tecnicos/): Línea técnica evaluable por Compras, con evidencia y datos para cotizar.
 - [Casos](https://rauvia.com.mx/casos/): Evidencia publicada.
-- [Infraestructura temporal B2B](https://rauvia.com.mx/casos/infraestructura-temporal-b2b/): Caso de intervención.
+- [Infraestructura temporal B2B](https://rauvia.com.mx/casos/infraestructura-temporal-b2b/): Intervención en evolución (oct 2025 – actualidad). Fase 1 con métricas publicadas: 3,564 conversaciones iniciadas, inversión registrada de 38,345.94 MXN, benchmark interno 2.67 → 4.00 (no es crecimiento en ventas). Las conversaciones no son oportunidades, clientes ni cierres. La trazabilidad del recorrido de cada oportunidad (fase 2) está en construcción.
+- [Presencia y posicionamiento profesional](https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/): Capacidad activa de RAUVIAWEB con seis implementaciones de referencia. Sin métricas publicadas: la evidencia de descubrimiento, contactos y oportunidades está en construcción.
 - [Recursos](https://rauvia.com.mx/recursos/): Artículos publicados desde WordPress y presentados en este sitio.
 
 ## Optional
@@ -86,7 +88,9 @@ RAUVIA is the organization through which this work is structured, implemented, a
 - [Privacidad](https://rauvia.com.mx/aviso-de-privacidad/): Aviso vigente.
 - [Términos](https://rauvia.com.mx/terminos/): Condiciones del sitio.
 
+Precios publicados por producto (MXN, antes de IVA; sin garantía de resultados): https://rauvia.com.mx/llmo/precios.json
 Trayectoria catalog (historical reference, pending commercial confirmation): https://rauvia.com.mx/llmo/trayectoria-catalogo.json
+Case inventory (cada caso con fuente canónica, evidencia y límites): https://rauvia.com.mx/llmo/knowledge-graph.json (nodos Case) y https://rauvia.com.mx/llmo/citation-bundles.json
 Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
 Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
 
@@ -95,5 +99,5 @@ Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
 Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
 
 - [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
-- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 18 familias con condiciones y límites.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 19 familias con condiciones y límites.
 - [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.

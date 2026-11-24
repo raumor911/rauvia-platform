@@ -1,0 +1,297 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "public",
+  "name": "RAUVIA — precios publicados",
+  "publisher": "RAUVIA Consulting",
+  "language": "es-MX",
+  "currency": "MXN",
+  "reviewed_at": "2026-11-23",
+  "basis": "Precios visibles en las páginas canónicas de RAUVIA. No son una cotización vinculante: el alcance, la disponibilidad, las condiciones y el precio final se confirman con RAUVIA antes de contratar.",
+  "rules": [
+    "Salvo indicación contraria, los precios se publican en MXN antes de IVA («+ IVA»).",
+    "«Desde» indica un precio mínimo de referencia; no es el precio final de un proyecto.",
+    "Un precio no garantiza ventas, leads, pacientes, citas, posiciones, menciones ni citas en asistentes de IA.",
+    "Si un producto no aparece con precio, la página canónica no publica uno: no inferir ni estimar.",
+    "Los precios de RAUVIA Trayectoria son una referencia histórica pendiente de confirmación comercial; ver trayectoria-catalogo.json."
+  ],
+  "products": [
+    {
+      "id": "frente-comercial-esencial",
+      "name": "Frente Comercial · Esencial",
+      "canonical": "https://rauvia.com.mx/frente-comercial/",
+      "price_type": "fixed",
+      "amount": 6900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Pago único por alcance; sin mensualidad obligatoria.",
+      "audience": "Empresa con una oferta relativamente clara que necesita presentarla mejor.",
+      "scope": [
+        "Estructura de presentación comercial",
+        "Activo digital responsive",
+        "Presentación clara de oferta",
+        "Evidencia visible"
+      ],
+      "conditions": [
+        "Precio publicado en MXN + IVA (precio publicado antes de IVA).",
+        "No garantiza ventas, leads ni posiciones; no sustituye CRM, seguimiento, publicidad ni generación de demanda."
+      ]
+    },
+    {
+      "id": "frente-comercial-pro",
+      "name": "Frente Comercial · Pro",
+      "canonical": "https://rauvia.com.mx/frente-comercial/",
+      "price_type": "fixed",
+      "amount": 9900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Pago único por alcance; sin mensualidad obligatoria.",
+      "audience": "Empresa que vende soluciones técnicas, personalizadas o que necesitan mayor explicación.",
+      "scope": [
+        "Reorganización de información",
+        "Agrupación de capacidades",
+        "Narrativa comercial ampliada",
+        "Mejor explicación de soluciones"
+      ],
+      "conditions": [
+        "Precio publicado en MXN + IVA (precio publicado antes de IVA).",
+        "No garantiza ventas, leads ni posiciones."
+      ]
+    },
+    {
+      "id": "frente-comercial-portafolio",
+      "name": "Frente Comercial · Portafolio",
+      "canonical": "https://rauvia.com.mx/frente-comercial/",
+      "price_type": "from",
+      "amount": 13900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Pago único por alcance; sin mensualidad obligatoria.",
+      "audience": "Empresa con varias líneas de servicio cuyo comprador necesita identificar cuál le corresponde.",
+      "scope": [
+        "Arquitectura de categorías",
+        "Agrupación por necesidad",
+        "Rutas de decisión",
+        "Navegación del portafolio",
+        "Páginas o vistas por solución",
+        "CTA contextual"
+      ],
+      "conditions": [
+        "Precio «desde» publicado en MXN + IVA (precio publicado antes de IVA).",
+        "No garantiza ventas, leads ni posiciones."
+      ]
+    },
+    {
+      "id": "presencia-medica-rauvia",
+      "name": "Presencia Médica RAUVIA (página médica gratuita)",
+      "canonical": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
+      "price_type": "free_initial",
+      "amount": 0,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Sin costo inicial.",
+      "audience": "Médicos que quieren una primera presencia profesional.",
+      "scope": [
+        "Dominio RAUVIA y alojamiento",
+        "Perfil profesional básico y especialidad",
+        "Ubicación y WhatsApp",
+        "Base SEO/GEO",
+        "Diseño estándar"
+      ],
+      "excludes": [
+        "Dominio propio",
+        "Diseño a medida",
+        "Blog",
+        "SEO avanzado",
+        "Estrategia de contenido",
+        "Branding médico",
+        "Integraciones avanzadas"
+      ],
+      "conditions": [
+        "«$0 MXN» es el costo inicial del plan básico bajo dominio RAUVIA; el alcance es el del plan básico y no incluye lo listado en excludes.",
+        "No garantiza posiciones en buscadores ni resultados inmediatos."
+      ]
+    },
+    {
+      "id": "web-medica-personalizada",
+      "name": "Web Médica Personalizada",
+      "canonical": "https://rauvia.com.mx/pagina-web-para-medicos/",
+      "price_type": "from",
+      "amount": 7900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Alcance definido por proyecto.",
+      "audience": "Médicos que necesitan una presentación adaptada a su práctica o consultorio.",
+      "scope": [
+        "Dominio propio",
+        "Diseño más personalizado y más secciones",
+        "Contenido por especialidad",
+        "Mejor estructura de servicios",
+        "SEO local ampliado",
+        "Analítica básica"
+      ],
+      "conditions": [
+        "Precio «desde» publicado en MXN + IVA (precio publicado antes de IVA); depende de secciones, consultorios, contenido e integraciones.",
+        "Páginas que lo publican: /pagina-web-para-medicos/, /pagina-web-gratis-para-medicos/ y /seo-local-para-medicos/.",
+        "No garantiza posiciones en buscadores ni resultados inmediatos."
+      ]
+    },
+    {
+      "id": "frente-comercial-medico",
+      "name": "Frente Comercial Médico",
+      "canonical": "https://rauvia.com.mx/pagina-web-para-medicos/",
+      "price_type": "from",
+      "amount": 13900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Alcance definido por proyecto.",
+      "audience": "Médicos que necesitan comunicar su experiencia y servicios con una arquitectura completa.",
+      "scope": [
+        "Arquitectura de oferta completa",
+        "Diferenciación profesional",
+        "Servicios y preguntas por especialidad",
+        "SEO/GEO avanzado",
+        "Estrategia de confianza",
+        "Contenido base de posicionamiento",
+        "Recorrido de contacto",
+        "Analítica y optimización"
+      ],
+      "conditions": [
+        "Precio «desde» publicado en MXN + IVA (precio publicado antes de IVA); el alcance se define según la operación del consultorio.",
+        "Páginas que lo publican: /pagina-web-para-medicos/, /pagina-web-gratis-para-medicos/ y /seo-local-para-medicos/.",
+        "No garantiza posiciones en buscadores ni resultados inmediatos."
+      ]
+    },
+    {
+      "id": "seo-ai-auditoria",
+      "name": "Auditoría GEO (SEO para IA)",
+      "canonical": "https://rauvia.com.mx/seo-ai/auditoria/",
+      "price_type": "fixed",
+      "amount": 9900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Pago único.",
+      "audience": "Empresa que quiere saber qué afirman los asistentes de IA sobre ella y qué corregir.",
+      "scope": [
+        "Una línea comercial",
+        "Hasta 3 URLs",
+        "6 preguntas de compra en 2 superficies de IA",
+        "Diagnóstico con evidencia y prioridades"
+      ],
+      "conditions": [
+        "Precio publicado en MXN + IVA (precio publicado antes de IVA).",
+        "Más URLs, preguntas, mercados o superficies requieren un alcance distinto acordado antes de contratar.",
+        "No modifica el sitio ni garantiza posiciones, menciones, citas, tráfico, leads ni ventas."
+      ]
+    },
+    {
+      "id": "seo-ai-implementacion",
+      "name": "Implementación de SEO para IA",
+      "canonical": "https://rauvia.com.mx/seo-ai/implementacion/",
+      "price_type": "monthly_fixed_term",
+      "amount": 29900,
+      "currency": "MXN",
+      "tax": "+ IVA",
+      "billing": "Facturación mensual durante 6 meses, sin renovación automática en la propuesta.",
+      "total_amount": 179400,
+      "term_months": 6,
+      "audience": "Empresa que ya tiene prioridades de corrección de su información pública para IA.",
+      "scope": [
+        "Un dominio y una línea comercial",
+        "Cada mes, un bloque de cambios acordado: hasta 3 URLs existentes o una intervención acotada en una plantilla, no ambas",
+        "Registro del antes y el después con evidencia de verificación",
+        "Reporte mensual de avance"
+      ],
+      "conditions": [
+        "Precio publicado en MXN + IVA (precio publicado antes de IVA) al mes; total publicado de 179,400 MXN + IVA por 6 meses.",
+        "Se cobra por trabajo entregado cada mes, no solo por monitoreo.",
+        "No garantiza posiciones, menciones, citas, tráfico, leads ni ventas."
+      ]
+    }
+  ],
+  "trayectoria": {
+    "canonical": "https://rauvia.com.mx/trayectoria/",
+    "catalog": "https://rauvia.com.mx/llmo/trayectoria-catalogo.json",
+    "status": "historical_reference_pending_commercial_confirmation",
+    "price_version": "historical-v1",
+    "note": "Referencia histórica: no es tarifario vigente ni oferta vinculante.",
+    "plans": [
+      {
+        "name": "Presencia Libre",
+        "monthly_price": 0,
+        "currency": "MXN",
+        "frequency": "sin mensualidad"
+      },
+      {
+        "name": "RAUVIA Trayectoria",
+        "monthly_price": 99,
+        "currency": "MXN",
+        "frequency": "mensual"
+      },
+      {
+        "name": "Trayectoria Activa",
+        "monthly_price": 149,
+        "currency": "MXN",
+        "frequency": "mensual"
+      }
+    ],
+    "change_types": [
+      {
+        "name": "Micro",
+        "price_from": 149,
+        "currency": "MXN"
+      },
+      {
+        "name": "Pequeño",
+        "price_from": 299,
+        "currency": "MXN"
+      },
+      {
+        "name": "Mediano",
+        "price_from": 549,
+        "currency": "MXN"
+      },
+      {
+        "name": "Mayor",
+        "price_from": 1290,
+        "currency": "MXN"
+      }
+    ],
+    "tax_note": "Los precios históricos de cambios individuales se documentaron en MXN, con IVA incluido. La condición fiscal de las suscripciones requiere confirmación."
+  },
+  "no_published_price": [
+    {
+      "name": "Página web para médicos especialistas",
+      "canonical": "https://rauvia.com.mx/pagina-web-para-medicos-especialistas/"
+    },
+    {
+      "name": "Página web para consultorio médico",
+      "canonical": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
+      "note": "La página indica que los proyectos se cotizan según alcance."
+    },
+    {
+      "name": "Agenda y WhatsApp para médicos",
+      "canonical": "https://rauvia.com.mx/pagina-web-medicos-agenda-whatsapp/"
+    },
+    {
+      "name": "Página comercial para servicios profesionales",
+      "canonical": "https://rauvia.com.mx/pagina-comercial-servicios-profesionales/"
+    },
+    {
+      "name": "Sitio web comercial para PyMEs",
+      "canonical": "https://rauvia.com.mx/sitio-web-comercial-para-pymes/"
+    },
+    {
+      "name": "Sitio web para servicios especializados",
+      "canonical": "https://rauvia.com.mx/sitio-web-servicios-especializados/"
+    },
+    {
+      "name": "RAUVIAWEB",
+      "canonical": "https://rauvia.com.mx/rauviaweb/"
+    },
+    {
+      "name": "Soluciones, AETHRYON y Ruta 90",
+      "canonical": "https://rauvia.com.mx/soluciones/"
+    }
+  ],
+  "case_studies": "Los casos publicados en /casos/ no son una oferta con precio. Las cifras de inversión que reportan son métricas del caso, no tarifas de RAUVIA."
+}

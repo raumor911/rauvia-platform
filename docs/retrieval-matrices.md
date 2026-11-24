@@ -32,6 +32,8 @@ Vista generada por `npm run build:retrieval`. 64 intenciones editoriales, no dem
   4 intenciones; asset:pagina-web-consultorio-medico; citation:consultorio-organizado. 
 - **answer:evidencia-comercial** — ¿Qué permite concluir el caso de infraestructura temporal B2B?
   1 intenciones; asset:case-infraestructura-temporal-b2b; citation:evidencia-comercial. 
+- **answer:evidencia-presencia-profesional** — ¿Qué permite concluir el caso de presencia y posicionamiento profesional de RAUVIA?
+  1 intenciones; asset:case-presencia-posicionamiento-profesional; citation:evidencia-presencia-profesional. 
 - **answer:entidad-rauvia** — ¿Qué es RAUVIA y en qué situaciones interviene?
   1 intenciones; asset:nosotros; citation:entidad-rauvia. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
 - **answer:entidad-aethryon** — ¿Qué es AETHRYON y cuándo resulta pertinente?

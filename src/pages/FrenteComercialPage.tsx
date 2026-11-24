@@ -2,6 +2,8 @@ import RouteSEO from '../seo/PageMetadata';
 import React, { useEffect, useRef } from 'react';
 import ConvergenceField from '../components/ConvergenceField';
 import usePageFx from '../hooks/usePageFx';
+import useFrenteMotion from '../hooks/useFrenteMotion';
+import '../styles/frenteMotion.css';
 import '../styles/pageFrontier.css';
 import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
@@ -25,6 +27,7 @@ const trackEvent = (eventName: string, params = {}) => {
 export default function FrenteComercialPage() {
   const root = useRef<HTMLDivElement>(null);
   usePageFx(root);
+  useFrenteMotion(root);
   
   useEffect(() => {
     trackEvent('fce_view');
@@ -110,12 +113,11 @@ export default function FrenteComercialPage() {
       </section>
 
       {/* SÍNTOMA (RECONOCIMIENTO) */}
-      <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-rauvia-navy text-center mb-12">
-            ¿Te pasa algo de esto?
-          </h2>
-          <div className="space-y-4 max-w-2xl mx-auto mb-12">
+      <section className="rv-s py-20 md:py-28 bg-slate-50 border-y border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="rv-s-eyebrow">Reconocimiento</span>
+          <h2 className="rv-s-title">¿Te pasa algo de esto?</h2>
+          <div className="rv-sym">
             {[
               "Tu presentación o página ya no refleja lo que vendes hoy.",
               "Tus clientes necesitan demasiada explicación para entender qué haces.",
@@ -123,13 +125,14 @@ export default function FrenteComercialPage() {
               "Tienes varias líneas de servicio y al cliente le cuesta saber cuál necesita.",
               "Cada vez que alguien pregunta debes reunir archivos, mensajes o enlaces diferentes."
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200 shadow-sm">
-                <XCircle className="w-6 h-6 text-red-400 shrink-0 mt-0.5" />
-                <p className="text-slate-700 leading-relaxed">{item}</p>
+              <div key={i} className="rv-sym-card">
+                <span className="rv-sym-idx" aria-hidden="true">0{i + 1}</span>
+                <span className="rv-sym-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+                <p>{item}</p>
               </div>
             ))}
           </div>
-          <p className="text-center text-lg text-slate-600 max-w-2xl mx-auto font-medium">
+          <p className="rv-s-callout">
             Si alguna te resulta familiar, el problema puede estar menos en generar más atención y más en cómo presentas lo que ya ofreces.
           </p>
         </div>
@@ -142,65 +145,60 @@ export default function FrenteComercialPage() {
             Si hoy un prospecto te pidiera información, ¿podrías enviarle una sola referencia que explique qué haces, qué puede contratar, por qué confiar y cómo continuar?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl flex flex-col items-center">
-              <span className="text-3xl font-black text-green-400 mb-2">SÍ</span>
-              <p className="text-slate-200 text-sm">Probablemente tu frente comercial ya está bien resuelto.</p>
+            <div className="fx-selfcheck-card bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl flex flex-col items-center">
+              <span className="text-3xl font-black text-green-600 mb-2">SÍ</span>
+              <p className="text-sm">Probablemente tu frente comercial ya está bien resuelto.</p>
             </div>
-            <div className="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl flex flex-col items-center">
-              <span className="text-3xl font-black text-red-400 mb-2">NO</span>
-              <p className="text-slate-200 text-sm">Aquí es donde podemos ayudarte.</p>
+            <div className="fx-selfcheck-card bg-white/10 backdrop-blur border border-white/20 p-6 rounded-xl flex flex-col items-center">
+              <span className="text-3xl font-black text-red-600 mb-2">NO</span>
+              <p className="text-sm">Aquí es donde podemos ayudarte.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* REENCUADRE */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="rv-s py-20 md:py-28 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-rauvia-navy mb-6">
-            El problema no siempre es conseguir más prospectos.
+          <span className="rv-s-eyebrow">Reencuadre</span>
+          <h2 className="rv-s-title rv-s-title-lg">
+            El problema no siempre es conseguir <span className="rv-s-hl">más prospectos.</span>
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed">
+          <p className="rv-s-lead">
             Muchas empresas ya generan conversaciones comerciales. La fricción aparece cuando el comprador no entiende con claridad qué ofrece la empresa, qué alternativa le corresponde, por qué confiar o cuál es el siguiente paso.
           </p>
-          <div className="bg-blue-50 border-l-4 border-rauvia-blue p-6 md:p-8 text-left rounded-r-lg">
-            <p className="text-rauvia-navy-dark font-bold text-lg md:text-xl">
-              No buscamos rehacer toda tu operación. Organizamos cómo tu empresa presenta su valor frente al cliente.
-            </p>
-          </div>
+          <blockquote className="rv-quote">
+            <span className="rv-quote-mark" aria-hidden="true">“</span>
+            <p>No buscamos rehacer toda tu operación. Organizamos cómo tu empresa presenta su valor frente al cliente.</p>
+          </blockquote>
         </div>
       </section>
 
       {/* ANTES / DESPUÉS */}
-      <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
+      <section className="rv-s py-20 md:py-28 bg-slate-50 border-y border-slate-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12">
-            {/* Antes */}
-            <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm opacity-80">
-              <span className="text-xs font-bold tracking-widest text-slate-400 uppercase mb-6 block">Antes</span>
-              <ul className="space-y-4">
+          <span className="rv-s-eyebrow">La diferencia</span>
+          <h2 className="rv-s-title">De información dispersa a una sola referencia</h2>
+          <div className="rv-ba grid">
+            <div className="rv-ba-card rv-ba-before">
+              <span className="rv-ba-tag">Antes</span>
+              <ul>
                 {['PDFs dispersos', 'Fotografías y mensajes', 'Redes sociales', 'Enlaces diferentes', 'Versiones distintas', 'Explicación manual'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-500">
-                    <X className="w-5 h-5 text-slate-400 shrink-0" />
-                    {item}
-                  </li>
+                  <li key={i}><span className="rv-ba-ico"><X className="w-4 h-4" /></span>{item}</li>
                 ))}
               </ul>
             </div>
-            {/* Después */}
-            <div className="bg-white p-8 rounded-xl border-2 border-rauvia-blue shadow-lg relative">
-              <span className="text-xs font-bold tracking-widest text-rauvia-blue uppercase mb-6 block">Después</span>
-              <ul className="space-y-4">
+            <span className="rv-ba-arrow" aria-hidden="true"><ArrowRight className="w-6 h-6" /></span>
+            <div className="rv-ba-card rv-ba-after">
+              <span className="rv-ba-tag">Después</span>
+              <ul>
                 {['Una referencia principal', 'Oferta organizada', 'Información vigente', 'Evidencia visible', 'Fácil de compartir', 'Siguiente paso claro'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-rauvia-navy font-medium">
-                    <Check className="w-5 h-5 text-green-500 shrink-0" />
-                    {item}
-                  </li>
+                  <li key={i}><span className="rv-ba-ico"><Check className="w-4 h-4" /></span>{item}</li>
                 ))}
               </ul>
             </div>
           </div>
-          <p className="text-center text-xl font-bold text-rauvia-navy max-w-3xl mx-auto leading-relaxed">
+          <p className="rv-s-callout rv-s-callout-strong">
             Cuando la oferta y la capacidad ya existen, el Frente Comercial ayuda a que el comprador pueda comprenderlas con mayor claridad.
           </p>
         </div>
@@ -220,7 +218,7 @@ export default function FrenteComercialPage() {
 
           <div className="rv-packages grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Esencial */}
-            <div className="flex flex-col bg-slate-50 rounded-2xl border border-slate-200 p-8">
+            <div className="rv-pkg flex flex-col bg-slate-50 rounded-2xl border border-slate-200 p-8">
               <h3 className="text-xl font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Esencial</h3>
               <p className="text-slate-600 text-sm mb-6 min-h-[40px]">La empresa ya tiene una oferta relativamente clara y necesita presentarla mejor.</p>
               <div className="mb-8 pb-8 border-b border-slate-200">
@@ -237,15 +235,16 @@ export default function FrenteComercialPage() {
               </ul>
               <WhatsAppCTA 
                 href={getWaLink("Hola, quiero revisar el Frente Comercial Esencial.")}onClick={() => trackEvent('fce_cta_esencial')}
-                className="w-full text-center py-4 rounded font-bold text-sm tracking-wider border-2 border-rauvia-navy text-rauvia-navy hover:bg-rauvia-navy hover:text-white transition-colors"
+                className="rv-pkg-btn rv-pkg-btn-outline"
               >
-                QUIERO REVISAR EL ESENCIAL
+                <span>QUIERO REVISAR EL ESENCIAL</span>
+                <ArrowRight className="w-4 h-4 rv-pkg-arrow" aria-hidden="true" />
               </WhatsAppCTA>
             </div>
 
             {/* Pro */}
-            <div className="flex flex-col bg-white rounded-2xl border border-slate-200 shadow-xl p-8 relative">
-              <div className="absolute top-0 left-0 w-full h-1 bg-rauvia-blue rounded-t-2xl"></div>
+            <div className="rv-pkg rv-pkg-featured flex flex-col bg-white rounded-2xl border border-slate-200 shadow-xl p-8 relative">
+              <span className="rv-pkg-badge">Más elegido</span>
               <h3 className="text-xl font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Pro</h3>
               <p className="text-slate-600 text-sm mb-6 min-h-[40px]">La empresa vende soluciones técnicas, personalizadas o que necesitan mayor explicación.</p>
               <div className="mb-8 pb-8 border-b border-slate-200">
@@ -261,14 +260,15 @@ export default function FrenteComercialPage() {
               </ul>
               <WhatsAppCTA 
                 href={getWaLink("Hola, quiero revisar si necesito el Frente Comercial Pro.")}onClick={() => trackEvent('fce_cta_pro')}
-                className="w-full text-center py-4 rounded font-bold text-sm tracking-wider bg-rauvia-navy text-white hover:bg-rauvia-navy-dark transition-colors"
+                className="rv-pkg-btn rv-pkg-btn-solid"
               >
-                REVISAR SI NECESITO PRO
+                <span>REVISAR SI NECESITO PRO</span>
+                <ArrowRight className="w-4 h-4 rv-pkg-arrow" aria-hidden="true" />
               </WhatsAppCTA>
             </div>
 
             {/* Portafolio */}
-            <div className="flex flex-col bg-slate-50 rounded-2xl border border-slate-200 p-8">
+            <div className="rv-pkg flex flex-col bg-slate-50 rounded-2xl border border-slate-200 p-8">
               <h3 className="text-xl font-bold text-rauvia-navy mb-2 uppercase tracking-wide">Portafolio</h3>
               <p className="text-slate-600 text-sm mb-6 min-h-[40px]">La empresa tiene varias líneas de servicio y el comprador necesita identificar cuál le corresponde.</p>
               <div className="mb-8 pb-8 border-b border-slate-200">
@@ -286,9 +286,10 @@ export default function FrenteComercialPage() {
               </ul>
               <WhatsAppCTA 
                 href={getWaLink("Hola, quiero revisar el Frente Comercial Portafolio.")}onClick={() => trackEvent('fce_cta_portafolio')}
-                className="w-full text-center py-4 rounded font-bold text-sm tracking-wider border-2 border-rauvia-navy text-rauvia-navy hover:bg-rauvia-navy hover:text-white transition-colors"
+                className="rv-pkg-btn rv-pkg-btn-outline"
               >
-                REVISAR MI PORTAFOLIO
+                <span>REVISAR MI PORTAFOLIO</span>
+                <ArrowRight className="w-4 h-4 rv-pkg-arrow" aria-hidden="true" />
               </WhatsAppCTA>
             </div>
           </div>
@@ -323,52 +324,64 @@ export default function FrenteComercialPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-rauvia-navy text-center mb-12">
             También es importante saber cuándo esto no es lo que necesitas.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="font-bold text-slate-800 mb-3 uppercase text-sm tracking-wide">No es CRM</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">Si el problema es saber qué pasó con cada prospecto, quién debe actuar o cuál es la siguiente tarea, probablemente necesitas un sistema de seguimiento comercial.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 rv-not-grid">
+            <div className="rv-not">
+              <span className="rv-not-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+              <h3 className="rv-not-title">No es CRM</h3>
+              <p className="rv-not-text">Si el problema es saber qué pasó con cada prospecto, quién debe actuar o cuál es la siguiente tarea, probablemente necesitas un sistema de seguimiento comercial.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="font-bold text-slate-800 mb-3 uppercase text-sm tracking-wide">No es Gestión Documental</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">Si el problema principal es encontrar archivos, controlar versiones o definir quién puede modificar información, el problema está dentro de la organización.</p>
+            <div className="rv-not">
+              <span className="rv-not-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+              <h3 className="rv-not-title">No es Gestión Documental</h3>
+              <p className="rv-not-text">Si el problema principal es encontrar archivos, controlar versiones o definir quién puede modificar información, el problema está dentro de la organización.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="font-bold text-slate-800 mb-3 uppercase text-sm tracking-wide">No es una estrategia completa</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">Si todavía no está claro qué vender, a quién, cómo cotizar o cómo organizar el proceso comercial, primero debe resolverse esa estructura.</p>
+            <div className="rv-not">
+              <span className="rv-not-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+              <h3 className="rv-not-title">No es una estrategia completa</h3>
+              <p className="rv-not-text">Si todavía no está claro qué vender, a quién, cómo cotizar o cómo organizar el proceso comercial, primero debe resolverse esa estructura.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="font-bold text-slate-800 mb-3 uppercase text-sm tracking-wide">No genera demanda por sí solo</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">El Frente Comercial mejora las condiciones para que un comprador comprenda y avance. No sustituye publicidad, prospección ni generación de demanda.</p>
+            <div className="rv-not">
+              <span className="rv-not-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+              <h3 className="rv-not-title">No genera demanda por sí solo</h3>
+              <p className="rv-not-text">El Frente Comercial mejora las condiciones para que un comprador comprenda y avance. No sustituye publicidad, prospección ni generación de demanda.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg border border-slate-200 lg:col-span-2">
-              <h3 className="font-bold text-slate-800 mb-3 uppercase text-sm tracking-wide">No automatiza seguimiento</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">Puede preparar la entrada de una oportunidad, pero no sustituye CRM, automatización ni disciplina comercial.</p>
+            <div className="rv-not lg:col-span-2">
+              <span className="rv-not-icon" aria-hidden="true"><XCircle className="w-5 h-5" /></span>
+              <h3 className="rv-not-title">No automatiza seguimiento</h3>
+              <p className="rv-not-text">Puede preparar la entrada de una oportunidad, pero no sustituye CRM, automatización ni disciplina comercial.</p>
             </div>
           </div>
-          <p className="text-center font-semibold text-rauvia-navy max-w-2xl mx-auto">
+          <p className="rv-not-note">
             Si durante la revisión detectamos que el problema está en otra parte, te lo diremos antes de proponerte algo que no corresponda.
           </p>
         </div>
       </section>
 
       {/* CÓMO TRABAJAMOS */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-rauvia-navy text-center mb-16">Cómo trabajamos</h2>
-          <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
+      <section className="rv-tl-section py-20 md:py-32" id="como-trabajamos">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <span className="rv-tl-eyebrow">Proceso</span>
+          <h2 className="rv-tl-title">Cómo trabajamos</h2>
+          <div className="rv-tl">
+            <div className="rv-tl-rail" aria-hidden="true">
+              <div className="rv-tl-fill" />
+              <div className="rv-tl-head" />
+            </div>
             {[
               { num: "1", title: "Revisamos", desc: "Cómo estás presentando actualmente tu empresa y tu oferta." },
               { num: "2", title: "Definimos", desc: "Qué necesita entender un comprador para avanzar." },
               { num: "3", title: "Construimos", desc: "RAUVIA organiza y prepara el activo comercial." },
               { num: "4", title: "Publicamos", desc: "Se realiza la revisión incluida y queda listo para compartir." }
             ].map((step, idx) => (
-              <div key={idx} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rauvia-blue text-white font-bold shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10">
-                  {step.num}
+              <div key={idx} className={`rv-tl-step ${idx % 2 === 0 ? 'rv-tl-l' : 'rv-tl-r'}`}>
+                <div className="rv-tl-node" aria-hidden="true">
+                  <span className="rv-tl-ring" /><span className="rv-tl-ring rv-tl-ring2" />
+                  <span className="rv-tl-num">{step.num}</span>
                 </div>
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
-                  <h3 className="font-bold text-rauvia-navy text-lg mb-2">{step.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+                <div className="rv-tl-card">
+                  <span className="rv-tl-ghost" aria-hidden="true">0{step.num}</span>
+                  <h3>{step.title}</h3>
+                  <p>{step.desc}</p>
                 </div>
               </div>
             ))}
@@ -391,21 +404,32 @@ export default function FrenteComercialPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-24 bg-white border-b border-slate-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-rauvia-navy text-center mb-12">Respuestas rápidas</h2>
-          <div className="space-y-4">
+      <section className="rv-s py-20 md:py-28 bg-white border-b border-slate-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 rv-faq-wrap">
+          <div className="rv-faq-side">
+            <span className="rv-s-eyebrow rv-left">Preguntas frecuentes</span>
+            <h2 className="rv-s-title rv-left">Respuestas rápidas</h2>
+            <p className="rv-faq-note">¿Tienes otra duda? Cuéntanos tu caso y te respondemos sin compromiso.</p>
+            <WhatsAppCTA
+              href={getWaLink("Hola, tengo una pregunta sobre el Frente Comercial.")}
+              onClick={() => trackEvent('fce_faq_cta')}
+              className="rv-pkg-btn rv-pkg-btn-solid rv-faq-cta"
+            >
+              <span>Preguntar por WhatsApp</span>
+              <ArrowRight className="w-4 h-4 rv-pkg-arrow" aria-hidden="true" />
+            </WhatsAppCTA>
+          </div>
+          <div className="rv-faq-list">
             {faqs.map((faq, i) => (
-              <details key={i} className="group bg-slate-50 rounded-lg border border-slate-200" onToggle={(e) => {
+              <details key={i} className="rv-faq group" onToggle={(e) => {
                 if ((e.target as HTMLDetailsElement).open) trackEvent('fce_faq_open', { question: faq.q });
               }}>
-                <summary className="flex items-center justify-between font-bold cursor-pointer list-none p-6 text-slate-800">
-                  {faq.q}
-                  <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+                <summary>
+                  <span className="rv-faq-n" aria-hidden="true">0{i + 1}</span>
+                  <span className="rv-faq-q">{faq.q}</span>
+                  <span className="rv-faq-chev" aria-hidden="true"><ChevronDown className="w-4 h-4" /></span>
                 </summary>
-                <div className="px-6 pb-6 text-slate-600 text-sm leading-relaxed">
-                  {faq.a}
-                </div>
+                <div className="rv-faq-a">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -413,14 +437,23 @@ export default function FrenteComercialPage() {
       </section>
 
       {/* Rutas de continuidad y presencia profesional: enlaces contextuales, sin duplicar la oferta principal. */}
-      <section className="py-12 bg-slate-50 border-t border-slate-200">
+      <section className="rv-s py-16 md:py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-rauvia-navy mb-3">Tu presencia puede seguir evolucionando.</h2>
-          <p className="text-slate-700 mb-6">Conoce cómo mantener actualizada la oferta de una empresa o construir una primera presencia profesional.</p>
-          <nav aria-label="Recursos relacionados" className="flex flex-wrap gap-4">
-            <Link to="/trayectoria/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">RAUVIA Trayectoria</Link>
-            <Link to="/seo-ai/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">SEO para IA generativa (GEO)</Link>
-            <Link to="/rauviaweb/" className="rounded-lg bg-white border border-slate-200 px-5 py-3 font-semibold text-rauvia-blue hover:border-rauvia-blue">RAUVIAWEB</Link>
+          <span className="rv-s-eyebrow">Siguientes pasos</span>
+          <h2 className="rv-s-title">Tu presencia puede seguir evolucionando.</h2>
+          <p className="rv-s-lead rv-s-lead-sm">Conoce cómo mantener actualizada la oferta de una empresa o construir una primera presencia profesional.</p>
+          <nav aria-label="Recursos relacionados" className="rv-routes grid">
+            {[
+              { to: '/trayectoria/', t: 'RAUVIA Trayectoria', d: 'Mantén actualizada la oferta de tu empresa.' },
+              { to: '/seo-ai/', t: 'SEO para IA generativa (GEO)', d: 'Que las IA entiendan y recomienden tu empresa.' },
+              { to: '/rauviaweb/', t: 'RAUVIAWEB', d: 'Construye tu primera presencia profesional.' },
+            ].map(r => (
+              <Link key={r.to} to={r.to} className="rv-route">
+                <span className="rv-route-t">{r.t}</span>
+                <span className="rv-route-d">{r.d}</span>
+                <span className="rv-route-go" aria-hidden="true"><ArrowRight className="w-4 h-4" /></span>
+              </Link>
+            ))}
           </nav>
         </div>
       </section>

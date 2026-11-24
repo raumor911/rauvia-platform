@@ -2,12 +2,12 @@ import { useRef } from "react";
 import { HexIcon, glyphs, hxIdx, useHexMotion } from "./HexTech";
 
 const capabilities = [
-  { title: "ESTRATEGIA", desc: "Definimos dirección, propuesta de valor y modelos de crecimiento.", glyph: glyphs.estrategia },
-  { title: "SISTEMAS COMERCIALES", desc: "Diseñamos métodos, procesos y experiencias que convierten.", glyph: glyphs.comerciales },
+  { title: "ESTRATEGIA", desc: "Definimos dirección y propuesta de valor según el alcance acordado.", glyph: glyphs.estrategia },
+  { title: "SISTEMAS COMERCIALES", desc: "Diseñamos métodos, procesos y experiencias para vender con claridad.", glyph: glyphs.comerciales },
   { title: "TECNOLOGÍA", desc: "Desarrollamos plataformas, integraciones y soluciones a la medida.", glyph: glyphs.tecnologia },
   { title: "AUTOMATIZACIÓN", desc: "Optimizamos operaciones para aumentar eficiencia y reducir fricción.", glyph: glyphs.automatizacion },
   { title: "DATOS & ANALYTICS", desc: "Medimos, analizamos y convertimos datos en decisiones.", glyph: glyphs.datos },
-  { title: "ACOMPAÑAMIENTO", desc: "Trabajamos contigo como socio estratégico en cada etapa del crecimiento.", glyph: glyphs.acompanamiento },
+  { title: "ACOMPAÑAMIENTO", desc: "Trabajamos contigo según el alcance acordado, desde la definición hasta la revisión.", glyph: glyphs.acompanamiento },
 ];
 
 export default function CapabilitiesSection() {

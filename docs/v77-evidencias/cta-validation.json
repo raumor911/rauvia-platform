@@ -1,17 +1,16 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-23T19:09:02.311Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base ef82cd8 + working tree",
+  "capturedAt": "2026-11-24T04:56:41.060Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base b51ed4e + working tree",
   "approval": {
-    "status": "pending",
-    "by": null,
-    "at": null,
-    "note": "El Hero (RAU-004, b9e5c73) no pasó por revisión visual. Revisa docs/v77-evidencias/screens y registra con --approve \"Nombre\"."
+    "status": "approved",
+    "by": "RAUL MORALES",
+    "at": "2026-11-24T04:59:12.932Z"
   },
   "after": [
     [
       {
-        "text": "CONOCER NUESTROS PRODUCTOS",
+        "text": "CONOCER NUESTROS SERVICIOS",
         "href": "/soluciones/",
         "target": null,
         "class": "rv-hero-primary flex",
@@ -29,7 +28,7 @@
       },
       {
         "text": "CÓMO TRABAJAMOS",
-        "href": "/aethryon/",
+        "href": "/nosotros/#como-trabajamos",
         "target": null,
         "class": "rv-hero-secondary flex",
         "icon": null,
@@ -47,7 +46,7 @@
     ],
     [
       {
-        "text": "CONOCER NUESTROS PRODUCTOS",
+        "text": "CONOCER NUESTROS SERVICIOS",
         "href": "/soluciones/",
         "target": null,
         "class": "rv-hero-primary flex",
@@ -55,7 +54,7 @@
         "rect": {
           "x": 42.5,
           "y": 305.015625,
-          "width": 250.140625,
+          "width": 243.46875,
           "height": 61.78125
         },
         "viewport": [
@@ -65,14 +64,14 @@
       },
       {
         "text": "CÓMO TRABAJAMOS",
-        "href": "/aethryon/",
+        "href": "/nosotros/#como-trabajamos",
         "target": null,
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 304.640625,
+          "x": 297.96875,
           "y": 311.90625,
-          "width": 250.15625,
+          "width": 243.484375,
           "height": 48
         },
         "viewport": [
@@ -83,14 +82,14 @@
     ],
     [
       {
-        "text": "CONOCER NUESTROS PRODUCTOS",
+        "text": "CONOCER NUESTROS SERVICIOS",
         "href": "/soluciones/",
         "target": null,
         "class": "rv-hero-primary flex",
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
         "rect": {
           "x": 79.203125,
-          "y": 514.484375,
+          "y": 536.515625,
           "width": 236.9375,
           "height": 60.9375
         },
@@ -101,13 +100,13 @@
       },
       {
         "text": "CÓMO TRABAJAMOS",
-        "href": "/aethryon/",
+        "href": "/nosotros/#como-trabajamos",
         "target": null,
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
           "x": 332.140625,
-          "y": 520.953125,
+          "y": 542.984375,
           "width": 163.59375,
           "height": 48
         },
@@ -135,7 +134,7 @@
       ],
       "method": "secondary_click",
       "tab": "1",
-      "url": "http://127.0.0.1:3118/aethryon/"
+      "url": "http://127.0.0.1:3118/nosotros/#como-trabajamos"
     },
     {
       "viewport": [
@@ -153,7 +152,7 @@
       ],
       "method": "secondary_click",
       "tab": "1",
-      "url": "http://127.0.0.1:3118/aethryon/"
+      "url": "http://127.0.0.1:3118/nosotros/#como-trabajamos"
     },
     {
       "viewport": [
@@ -171,7 +170,7 @@
       ],
       "method": "secondary_click",
       "tab": "1",
-      "url": "http://127.0.0.1:3118/aethryon/"
+      "url": "http://127.0.0.1:3118/nosotros/#como-trabajamos"
     },
     {
       "viewport": [
@@ -186,7 +185,7 @@
         "outline": "rgb(255, 215, 102) solid 3px",
         "outlineOffset": "3px",
         "tag": "A",
-        "text": "CONOCER NUESTROS PRODUCTOS"
+        "text": "CONOCER NUESTROS SERVICIOS"
       }
     }
   ],
@@ -196,7 +195,7 @@
       "outline": "rgb(255, 215, 102) solid 3px",
       "outlineOffset": "3px",
       "tag": "A",
-      "text": "CONOCER NUESTROS PRODUCTOS"
+      "text": "CONOCER NUESTROS SERVICIOS"
     },
     "menu": {
       "bodyOverflow": "hidden",
@@ -224,15 +223,15 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "042fe95b587dd8908a82f14bc3960c4bff56d2f8d74a9cdd5e6bd69fc0c8c27c",
-    "src/components/Footer.tsx": "5b136010a0448dbab88e91e8ea22687cdd8dc7a8c8dae5a4e116c7bf75217cc6",
-    "src/components/AethryonCore.tsx": "47809fadcdfd1153bb652f9887dd8637a65278ea71a4a0731863515ca6ef862f",
+    "src/components/HeroSection.tsx": "7edd640ec59258a56ab51c3c7b1e826c3563fa5c08c5df00b71f0fe8f82a2f5b",
+    "src/components/Footer.tsx": "7221577fe3fc93cbdc93fcacb25a540b284fafbdb5a55bdc13cb641a107ff85d",
+    "src/components/AethryonCore.tsx": "2ef54cba588c88c6b5849c0ab9a292d981da4b00420b503e18bf34547084c539",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
     "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
-    "src/pages/NosotrosPage.tsx": "f6ff7a389053ec8ea34021ad1ab227308a228cf311528f61fb84dfeb5aa5837a",
+    "src/pages/NosotrosPage.tsx": "37f98ec35bb507ce05bef6e0cc746c166ebad7a03362a38a50bf342d6332275c",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
     "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
-    "src/pages/FrenteComercialPage.tsx": "3c3971b49b55f25b5ae0e59025b119f786f5be717367b689a2884c0ab78f64a9",
+    "src/pages/FrenteComercialPage.tsx": "e88966ea3018c49fe35d7f0308477112cbd1da7888e822fc56c086857c011886",
     "src/pages/CasosIndexPage.tsx": "dcfec9bbc28e2299011fb9fdb8d3814a5027d3a4a0689c41fcef8d2b79a5f2f0",
     "src/lib/analytics.ts": "5e95671bbc6ffe4f67272d5fb4f551ee9f8215eec105cd4a0784fe3213254f48"
   }

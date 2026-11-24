@@ -15,6 +15,7 @@ export const routeLoaders = {
   '/ruta-90': () => import('../pages/Ruta90Page'),
   '/aethryon': () => import('../pages/AethryonPage'),
   '/recursos': () => import('../pages/RecursosPage'),
+  '/recursos/seo-para-ia': () => import('../pages/SeoParaIaGuiaPage'),
   '/recursos/:slug': () => import('../pages/PostPage'),
   '/aviso-de-privacidad': () => import('../pages/AvisoPrivacidadPage'),
   '/terminos': () => import('../pages/TerminosPage'),

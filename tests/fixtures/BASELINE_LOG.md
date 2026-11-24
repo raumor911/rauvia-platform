@@ -247,3 +247,80 @@ Semánticos: 0 · Contenido: 1
 Motivo: /recursos cambia por entradas vivas de WordPress al compilar (no por código). Capa de cuerpo de las 10 landings (landingBody.css) es solo CSS: no cambia HTML.
 Semánticos: 0 · Contenido: 1
 - rau004-main-baseline.json /recursos contenido
+
+## 2026-11-24 · b51ed4e
+Motivo: Redefinición de identidad de RAUVIA (servicios habilitados por tecnología): hero e identidad de Inicio y Nosotros, descripción de Organization en todas las páginas, claim rauvia-identidad; incluye cambios ya aprobados de la sesión: hub /seo-ai/ y guía /recursos/seo-para-ia/, IVA en ofertas de Frente Comercial, página gratis para médicos
+Semánticos: 51 · Contenido: 22
+- v72-route-baseline.json / title
+- v72-route-baseline.json / meta
+- v72-route-baseline.json / jsonld
+- v72-route-baseline.json / h1
+- v72-route-baseline.json /soluciones/ jsonld
+- v72-route-baseline.json /aethryon/ jsonld
+- v72-route-baseline.json /ruta-90/ jsonld
+- v72-route-baseline.json /frente-comercial/ jsonld
+- v72-route-baseline.json /nosotros/ title
+- v72-route-baseline.json /nosotros/ meta
+- v72-route-baseline.json /nosotros/ jsonld
+- v72-route-baseline.json /nosotros/ h1
+- v72-route-baseline.json /recursos/ jsonld
+- v72-route-baseline.json /casos/ jsonld
+- aethryon-v70-seo.json jsonld
+- rau004-main-baseline.json /ruta-90 head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json / head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json / h1
+- rau004-main-baseline.json /nosotros head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /nosotros h1
+- rau004-main-baseline.json /soluciones head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /aethryon head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /recursos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /frente-comercial head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /sitio-web-comercial-para-pymes head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /sitio-web-servicios-especializados head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos/infraestructura-temporal-b2b head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-comercial-servicios-profesionales head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-gratis-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-gratis-para-medicos h1
+- rau004-main-baseline.json /pagina-web-para-medicos-especialistas head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-local-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-medicos-agenda-whatsapp head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /aviso-de-privacidad head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /contacto-rauvia head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /terminos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai h1
+- rau004-main-baseline.json /seo-ai/corregir-informacion-en-ia head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/catalogos-para-ia head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/cobertura-y-envios head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/proveedores-tecnicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/auditoria head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-ai/implementacion head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /trayectoria head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /rauviaweb head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /casos/presencia-posicionamiento-profesional head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /recursos/seo-para-ia (ruta nueva)
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /aviso-de-privacidad/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /casos/infraestructura-temporal-b2b/index.html
+- v72-excluded-html.json /terminos/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+- rau004-main-baseline.json / contenido
+- rau004-main-baseline.json /nosotros contenido
+- rau004-main-baseline.json /recursos contenido
+- rau004-main-baseline.json /frente-comercial contenido
+- rau004-main-baseline.json /pagina-web-gratis-para-medicos contenido
+- rau004-main-baseline.json /seo-local-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-medicos contenido
+- rau004-main-baseline.json /seo-ai contenido
+- rau004-main-baseline.json /trayectoria contenido
+- rau004-main-baseline.json /rauviaweb contenido

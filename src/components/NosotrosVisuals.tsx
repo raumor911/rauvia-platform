@@ -130,11 +130,11 @@ export function ProcessScene({ children }: { children?: ReactNode }) {
 /** 3 · AETHRYON conecta cinco capacidades alrededor de un núcleo; la leyenda y el anillo se iluminan a la par. */
 export function ConvergenceScene({ children }: { children?: ReactNode }) {
   const items = [
-    { t: 'ESTRATEGIA', d: 'Claridad, foco y dirección' },
-    { t: 'PROCESOS', d: 'Estructura clara y repetible' },
-    { t: 'TECNOLOGÍA', d: 'Plataformas, datos e integraciones' },
-    { t: 'OPERACIÓN', d: 'Ejecución eficiente y automatizada' },
-    { t: 'RESULTADOS', d: 'Impacto medible y escalable' },
+    { t: 'SITUACIÓN', d: 'Entendemos el problema y su contexto' },
+    { t: 'OFERTA', d: 'Definimos qué necesita comprender el cliente' },
+    { t: 'INFORMACIÓN', d: 'Organizamos evidencia, contenidos y condiciones' },
+    { t: 'IMPLEMENTACIÓN', d: 'Ejecutamos los cambios acordados' },
+    { t: 'VERIFICACIÓN', d: 'Revisamos qué se entregó y qué se pudo observar' },
   ];
   const [active, setActive] = useState(0);
   const [hover, setHover] = useState(false);

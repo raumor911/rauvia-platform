@@ -621,6 +621,22 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "query-archetype:presencia-posicionamiento-profesional",
+      "queries": [
+        "Presencia y posicionamiento profesional de profesionistas",
+        "¿Qué evidencia y límites tiene el caso de presencia y posicionamiento profesional de RAUVIA?"
+      ],
+      "intentId": "intent:presencia-posicionamiento-profesional",
+      "answerId": "answer:evidencia-presencia-profesional",
+      "familyId": "answer-family:evidencia-presencia-profesional",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "query-archetype:procesos-dependen-personas",
       "queries": [
         "Los procesos dependen de personas"

@@ -137,3 +137,114 @@
   .lf-page :is(.hub-showcase, .esp-gallery-section, .sl-build, .med-showcase) figure { transition: box-shadow .5s var(--fx-ease, ease), transform .5s var(--fx-ease, ease); }
   .lf-page :is(.hub-showcase, .esp-gallery-section, .sl-build, .med-showcase) figure:hover { transform: translateY(-4px); box-shadow: 0 0 0 6px rgba(255, 215, 102, .08), 0 56px 90px -40px rgba(0, 0, 0, .95), 0 0 80px -16px rgba(47, 106, 163, .8); }
 }
+
+/* autoverificación: cajas SÍ/NO claras con texto oscuro legible */
+.lf-page .fx-selfcheck-card p { color: #1e3a52 !important; font-size: 1rem; font-weight: 500; }
+
+/* niveles: tarjetas de paquetes */
+.lf-frente #niveles .rv-pkg { position: relative; transition: transform .35s var(--fx-ease, ease), box-shadow .35s, border-color .35s; }
+.lf-frente #niveles .rv-pkg:hover { transform: translateY(-6px); border-color: rgba(230, 163, 0, .55); box-shadow: 0 30px 50px -28px rgba(10, 37, 64, .5), inset 0 3px 0 var(--lf-gold, #E6A300); }
+.lf-frente #niveles .rv-pkg-featured { border-color: rgba(230, 163, 0, .6); box-shadow: 0 30px 60px -30px rgba(10, 37, 64, .55), inset 0 3px 0 var(--lf-gold, #E6A300); }
+.lf-frente #niveles .rv-pkg-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #FFD766, #E6A300); color: #0A2540; font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px; box-shadow: 0 8px 18px -8px rgba(230, 163, 0, .8); white-space: nowrap; }
+.lf-frente #niveles .rv-pkg h3 { font-size: 1.15rem; letter-spacing: .14em; }
+.lf-frente #niveles .rv-pkg-btn { display: flex; align-items: center; justify-content: center; gap: .6rem; width: 100%; min-height: 54px; padding: 0 1.25rem; border-radius: 10px; font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-align: center; text-transform: uppercase; line-height: 1.2; border: 2px solid #0A2540; transition: background .3s, color .3s, box-shadow .3s, transform .3s; }
+.lf-frente #niveles .rv-pkg-btn-outline { background: transparent; color: #0A2540; border-top-color: #0A2540 !important; }
+.lf-frente #niveles .rv-pkg-btn-solid { background: #0A2540; color: #fff; box-shadow: 0 14px 26px -12px rgba(10, 37, 64, .7); }
+.lf-frente #niveles .rv-pkg-btn:hover { background: linear-gradient(135deg, #FFD766, #E6A300); color: #0A2540; border-color: transparent; box-shadow: 0 14px 30px -10px rgba(230, 163, 0, .65); }
+.lf-frente #niveles .rv-pkg-btn:hover .rv-pkg-arrow { transform: translateX(4px); }
+.lf-frente #niveles .rv-pkg-arrow { transition: transform .3s; flex-shrink: 0; }
+
+/* "qué no es": tarjetas de límites */
+.lf-frente .rv-not { position: relative; display: flex; flex-direction: column; padding: 1.75rem 1.5rem 1.5rem; background: linear-gradient(180deg, #fff, #f6f9fc); border: 1px solid rgba(30, 74, 116, .15); border-radius: 16px; box-shadow: 0 1px 0 rgba(255, 255, 255, .9) inset, 0 18px 34px -26px rgba(10, 37, 64, .45); overflow: hidden; transition: transform .35s var(--fx-ease, ease), box-shadow .35s, border-color .35s; }
+.lf-frente .rv-not::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #FFD766, #E6A300); opacity: .55; transition: opacity .35s, width .35s; }
+.lf-frente .rv-not:hover { transform: translateY(-5px); border-color: rgba(230, 163, 0, .5); box-shadow: 0 28px 46px -28px rgba(10, 37, 64, .5); }
+.lf-frente .rv-not:hover::before { opacity: 1; width: 5px; }
+.lf-frente .rv-not-icon { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; margin-bottom: 1rem; border-radius: 50%; color: #0A2540; background: rgba(230, 163, 0, .14); border: 1px solid rgba(230, 163, 0, .35); }
+.lf-frente .rv-not-title { margin: 0 0 .6rem; font-size: .95rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #0A2540; }
+.lf-frente .rv-not-text { margin: 0; font-size: .95rem; line-height: 1.65; color: #475569; }
+.lf-frente .rv-not-note { max-width: 42rem; margin: 0 auto; padding: 1rem 1.5rem; text-align: center; font-weight: 700; color: #0A2540; border-top: 2px solid #E6A300; background: rgba(255, 255, 255, .6); border-radius: 0 0 12px 12px; }
+
+/* ── Secciones de apoyo: eyebrow, títulos y piezas ── */
+.lf-frente .rv-s-eyebrow { display: block; text-align: center; margin-bottom: .75rem; font-size: .72rem; font-weight: 800; letter-spacing: .3em; text-transform: uppercase; color: #B7791F; }
+.lf-frente .rv-s-eyebrow.rv-left, .lf-frente .rv-s-title.rv-left { text-align: left; }
+.lf-frente .rv-s-title { margin: 0 0 3rem; text-align: center; font-size: clamp(1.75rem, 3.6vw, 2.5rem); font-weight: 800; line-height: 1.15; color: #0A2540; }
+.lf-frente .rv-s-title-lg { font-size: clamp(2rem, 4.6vw, 3.25rem); margin-bottom: 1.5rem; }
+.lf-frente .rv-s-hl { background: linear-gradient(transparent 68%, rgba(255, 215, 102, .65) 68%); padding: 0 .1em; }
+.lf-frente .rv-s-lead { max-width: 46rem; margin: 0 auto 2.5rem; font-size: 1.15rem; line-height: 1.75; color: #475569; text-align: center; }
+.lf-frente .rv-s-lead-sm { font-size: 1.05rem; margin-bottom: 2rem; }
+.lf-frente .rv-s-callout { max-width: 44rem; margin: 3rem auto 0; padding: 1.1rem 1.5rem; text-align: center; font-size: 1.1rem; line-height: 1.6; font-weight: 600; color: #0A2540; border-top: 2px solid #E6A300; background: rgba(255, 255, 255, .7); border-radius: 0 0 14px 14px; }
+.lf-frente .rv-s-callout-strong { font-size: 1.2rem; font-weight: 700; }
+
+/* síntomas */
+.lf-frente .rv-sym { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.lf-frente .rv-sym-card { position: relative; display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem 1.4rem; overflow: hidden; background: linear-gradient(180deg, #fff, #f6f9fc); border: 1px solid rgba(30, 74, 116, .15); border-radius: 16px; box-shadow: 0 18px 34px -26px rgba(10, 37, 64, .45); transition: transform .35s var(--fx-ease, ease), box-shadow .35s, border-color .35s; }
+.lf-frente .rv-sym-card:last-child { grid-column: 1 / -1; }
+.lf-frente .rv-sym-card:hover { transform: translateY(-4px); border-color: rgba(220, 38, 38, .35); box-shadow: 0 28px 44px -28px rgba(10, 37, 64, .5); }
+.lf-frente .rv-sym-icon { flex-shrink: 0; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; color: #DC2626; background: rgba(220, 38, 38, .08); border: 1px solid rgba(220, 38, 38, .25); }
+.lf-frente .rv-sym-card p { margin: 0; position: relative; font-size: 1.02rem; line-height: 1.6; font-weight: 500; color: #1e3a52; }
+.lf-frente .rv-sym-idx { position: absolute; right: 14px; bottom: -14px; font-size: 4.5rem; line-height: 1; font-weight: 900; color: rgba(10, 37, 64, .05); pointer-events: none; }
+
+/* cita */
+.lf-frente .rv-quote { position: relative; margin: 2.5rem 0 0; padding: 2.5rem 2.5rem 2.25rem 3.5rem; text-align: left; border-radius: 20px; color: #fff; overflow: hidden;
+  background-color: #0a2540; background-image: radial-gradient(60% 90% at 0% 0%, rgba(47, 106, 163, .55), transparent 70%); box-shadow: 0 40px 70px -40px rgba(5, 19, 32, .9), inset 0 0 0 1px rgba(255, 215, 102, .25); }
+.lf-frente .rv-quote::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #FFD766, #E6A300); }
+.lf-frente .rv-quote-mark { position: absolute; left: 1.1rem; top: -.6rem; font-family: Georgia, serif; font-size: 6rem; line-height: 1; color: rgba(255, 215, 102, .55); }
+.lf-frente .rv-quote p { position: relative; margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.5; font-weight: 700; color: #fff !important; }
+
+/* antes / después */
+.lf-frente .rv-ba { grid-template-columns: 1fr auto 1fr; align-items: stretch; gap: 1.25rem; }
+.lf-frente .rv-ba-card { position: relative; padding: 2rem 1.75rem; border-radius: 20px; }
+.lf-frente .rv-ba-card ul { list-style: none; margin: 1.25rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .85rem; }
+.lf-frente .rv-ba-card li { display: flex; align-items: center; gap: .8rem; font-size: 1rem; }
+.lf-frente .rv-ba-ico { flex-shrink: 0; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; }
+.lf-frente .rv-ba-tag { display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .22em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; }
+.lf-frente .rv-ba-before { background: rgba(255, 255, 255, .6); border: 1px dashed rgba(100, 116, 139, .45); }
+.lf-frente .rv-ba-before .rv-ba-tag { color: #64748b; background: rgba(100, 116, 139, .12); }
+.lf-frente .rv-ba-before li { color: #64748b; text-decoration: line-through; text-decoration-color: rgba(100, 116, 139, .5); }
+.lf-frente .rv-ba-before .rv-ba-ico { color: #94a3b8; background: rgba(148, 163, 184, .18); }
+.lf-frente .rv-ba-after { background: linear-gradient(180deg, #fff, #f2f7fc); border: 2px solid rgba(230, 163, 0, .65); box-shadow: 0 34px 60px -32px rgba(10, 37, 64, .55), 0 0 60px -24px rgba(230, 163, 0, .55); }
+.lf-frente .rv-ba-after .rv-ba-tag { color: #0A2540; background: linear-gradient(135deg, #FFD766, #E6A300); }
+.lf-frente .rv-ba-after li { color: #0A2540; font-weight: 600; }
+.lf-frente .rv-ba-after .rv-ba-ico { color: #fff; background: #16a34a; box-shadow: 0 6px 14px -6px rgba(22, 163, 74, .8); }
+.lf-frente .rv-ba-arrow { align-self: center; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; color: #0A2540; background: linear-gradient(135deg, #FFD766, #E6A300); box-shadow: 0 12px 26px -10px rgba(230, 163, 0, .8); }
+
+/* FAQ */
+.lf-frente .rv-faq-wrap { display: grid; grid-template-columns: 1fr 1.7fr; gap: 3.5rem; align-items: start; }
+.lf-frente .rv-faq-side { position: sticky; top: 7rem; }
+.lf-frente .rv-faq-side .rv-s-eyebrow { text-align: left; }
+.lf-frente .rv-faq-side .rv-s-title { margin-bottom: 1rem; }
+.lf-frente .rv-faq-note { margin: 0 0 1.75rem; font-size: 1.02rem; line-height: 1.65; color: #475569; }
+.lf-frente .rv-faq-cta { max-width: 20rem; }
+.lf-frente .rv-faq-list { display: flex; flex-direction: column; gap: .85rem; }
+.lf-frente .rv-faq { position: relative; border-radius: 16px; background: #f6f9fc; border: 1px solid rgba(30, 74, 116, .14); overflow: hidden; transition: background .3s, box-shadow .3s, border-color .3s; }
+.lf-frente .rv-faq::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, #FFD766, #E6A300); opacity: 0; transition: opacity .3s; }
+.lf-frente .rv-faq:hover { border-color: rgba(230, 163, 0, .45); }
+.lf-frente .rv-faq[open] { background: #fff; border-color: rgba(230, 163, 0, .55); box-shadow: 0 24px 40px -28px rgba(10, 37, 64, .5); }
+.lf-frente .rv-faq[open]::before { opacity: 1; }
+.lf-frente .rv-faq summary { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.4rem; cursor: pointer; list-style: none; }
+.lf-frente .rv-faq summary::-webkit-details-marker { display: none; }
+.lf-frente .rv-faq-n { font-size: .8rem; font-weight: 800; letter-spacing: .1em; color: #B7791F; }
+.lf-frente .rv-faq-q { flex: 1; font-size: 1.05rem; font-weight: 700; color: #0A2540; }
+.lf-frente .rv-faq-chev { flex-shrink: 0; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; color: #0A2540; background: rgba(10, 37, 64, .06); transition: transform .35s, background .3s; }
+.lf-frente .rv-faq[open] .rv-faq-chev { transform: rotate(180deg); background: linear-gradient(135deg, #FFD766, #E6A300); }
+.lf-frente .rv-faq-a { padding: 0 1.4rem 1.4rem 3.4rem; font-size: 1rem; line-height: 1.7; color: #475569; animation: rvFaqIn .4s ease; }
+@keyframes rvFaqIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* rutas */
+.lf-frente .rv-routes { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.lf-frente .rv-route { position: relative; display: flex; flex-direction: column; gap: .4rem; padding: 1.5rem 3.5rem 1.5rem 1.5rem; border-radius: 16px; background: linear-gradient(180deg, #fff, #f6f9fc); border: 1px solid rgba(30, 74, 116, .15); box-shadow: 0 18px 34px -26px rgba(10, 37, 64, .45); transition: transform .35s var(--fx-ease, ease), box-shadow .35s, border-color .35s; }
+.lf-frente .rv-route-t { font-size: 1.05rem; font-weight: 800; color: #0A2540; }
+.lf-frente .rv-route-d { font-size: .92rem; line-height: 1.55; color: #475569; }
+.lf-frente .rv-route-go { position: absolute; right: 1.1rem; top: 50%; margin-top: -18px; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; color: #0A2540; background: rgba(10, 37, 64, .06); transition: transform .3s, background .3s; }
+.lf-frente .rv-route:hover { transform: translateY(-5px); border-color: rgba(230, 163, 0, .55); box-shadow: 0 28px 46px -28px rgba(10, 37, 64, .5); }
+.lf-frente .rv-route:hover .rv-route-go { transform: translateX(4px); background: linear-gradient(135deg, #FFD766, #E6A300); }
+
+@media (max-width: 860px) {
+  .lf-frente .rv-sym, .lf-frente .rv-routes { grid-template-columns: 1fr; }
+  .lf-frente .rv-ba { grid-template-columns: 1fr; }
+  .lf-frente .rv-ba-arrow { transform: rotate(90deg); margin: 0 auto; }
+  .lf-frente .rv-faq-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  .lf-frente .rv-faq-side { position: static; }
+  .lf-frente .rv-quote { padding: 2.25rem 1.5rem 1.75rem 2rem; }
+  .lf-frente .rv-faq-a { padding-left: 1.4rem; }
+}

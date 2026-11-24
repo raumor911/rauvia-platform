@@ -125,6 +125,36 @@
       "representedOffering": []
     },
     {
+      "id": "asset:case-presencia-posicionamiento-profesional",
+      "type": "Asset",
+      "label": "Caso de presencia profesional | RAUVIA Consulting",
+      "description": "Página existente que explica case presencia posicionamiento profesional; la URL procede del registro canónico vigente.",
+      "rationale": "Página existente que explica case presencia posicionamiento profesional; la URL procede del registro canónico vigente.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "canonical": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+      "assetType": "case",
+      "specificity": "specific",
+      "coversIntent": [
+        "intent:presencia-posicionamiento-profesional"
+      ],
+      "explainsProblem": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "supportsCapability": [
+        "capability:presencia-digital-profesional",
+        "capability:presencia-local"
+      ],
+      "representedOffering": []
+    },
+    {
       "id": "asset:casos",
       "type": "Asset",
       "label": "Casos y evidencia | RAUVIA Consulting",
@@ -175,7 +205,7 @@
     {
       "id": "asset:home",
       "type": "Asset",
-      "label": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
+      "label": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
       "description": "Página existente que explica home; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica home; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -198,7 +228,7 @@
     {
       "id": "asset:nosotros",
       "type": "Asset",
-      "label": "RAUVIA Consulting | Nosotros",
+      "label": "Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA",
       "description": "Página existente que explica nosotros; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica nosotros; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -491,7 +521,7 @@
     {
       "id": "asset:seo-ai",
       "type": "Asset",
-      "label": "SEO para IA generativa (GEO) para empresas | RAUVIA",
+      "label": "SEO para IA, GEO y AEO para empresas | RAUVIA",
       "description": "Página existente que explica seo ai; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica seo ai; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -1384,8 +1414,8 @@
       "id": "case:infraestructura-temporal-b2b",
       "type": "Case",
       "label": "Infraestructura temporal B2B: caso publicado",
-      "description": "Caso de intervención en evolución; sus cifras son un reporte propio, no garantía ni atribución causal de ventas.",
-      "rationale": "Caso de intervención en evolución; sus cifras son un reporte propio, no garantía ni atribución causal de ventas.",
+      "description": "Caso de intervención en evolución sobre captación y trazabilidad de demanda de una empresa mexicana de infraestructura temporal B2B; sus cifras son un reporte propio, no garantía ni atribución causal de ventas.",
+      "rationale": "Caso de intervención en evolución sobre captación y trazabilidad de demanda de una empresa mexicana de infraestructura temporal B2B; sus cifras son un reporte propio, no garantía ni atribución causal de ventas.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -1401,12 +1431,101 @@
       "claims": [
         "claim:benchmark-interno",
         "claim:conversaciones-reportadas",
-        "claim:trazabilidad-en-construccion"
+        "claim:inversion-registrada",
+        "claim:costo-por-conversacion",
+        "claim:alcance-visualizaciones",
+        "claim:clasificacion-conversaciones",
+        "claim:trazabilidad-en-construccion",
+        "claim:rediseno-web-estado"
       ],
       "vertical": "vertical:temporary-infrastructure",
-      "period": "Octubre 2025 – julio 2026 para la fase inicial; intervención en evolución.",
+      "period": "Fase 1: octubre 2025 – julio 2026 (cortes de benchmark: 03 oct 2025, 31 dic 2025, 15 jul 2026). Fase 2: julio 2026 – actualidad, en curso.",
       "guaranteesResults": false,
-      "causalStatus": "not_established"
+      "causalStatus": "not_established",
+      "canonicalUrl": "https://rauvia.com.mx/casos/infraestructura-temporal-b2b/",
+      "interventionState": "Intervención en evolución: la fase 1 publicó evidencia; la trazabilidad del recorrido de cada oportunidad (fase 2) es una capacidad en construcción.",
+      "evidenceStatus": "Primera fase con métricas publicadas; no hay cifras publicadas de oportunidades calificadas, cotizaciones, seguimiento, ganados/perdidos ni cierres.",
+      "attributionLimit": "Reporte propio sin validación independiente; no se atribuye a la intervención ninguna variación posterior de ventas. Precio, disponibilidad, calidad del seguimiento, condiciones del mercado, decisión del comprador y capacidad operativa también influyen.",
+      "pendingEvidence": [
+        "Oportunidades calificadas",
+        "Cotizaciones",
+        "Seguimiento",
+        "Ganado/perdido",
+        "Motivos de pérdida",
+        "Canal de origen",
+        "Tiempos de avance",
+        "Comportamiento de demanda",
+        "Evolución del benchmark"
+      ]
+    },
+    {
+      "id": "case:presencia-posicionamiento-profesional",
+      "type": "Case",
+      "label": "Presencia y posicionamiento profesional: capacidad con implementaciones de referencia",
+      "description": "Caso que explica cómo RAUVIA, mediante RAUVIAWEB, organiza trayectoria, especialidad y canales de contacto de profesionistas y pequeños negocios en una presencia digital. Expone la capacidad y sus implementaciones de referencia; no publica métricas de resultado.",
+      "rationale": "Caso que explica cómo RAUVIA, mediante RAUVIAWEB, organiza trayectoria, especialidad y canales de contacto de profesionistas y pequeños negocios en una presencia digital. Expone la capacidad y sus implementaciones de referencia; no publica métricas de resultado.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "representedBy": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "claims": [
+        "claim:presencia-profesional-capacidad",
+        "claim:referencias-implementadas",
+        "claim:presencia-profesional-evidencia-pendiente"
+      ],
+      "vertical": "vertical:professional-services",
+      "period": "Sin periodo de medición publicado.",
+      "guaranteesResults": false,
+      "causalStatus": "not_established",
+      "canonicalUrl": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+      "interventionState": "Capacidad activa. Las seis referencias muestran sitios entregados; el caso no declara intervención en curso ni fecha de cierre.",
+      "evidenceStatus": "Evidencia de descubrimiento, contactos y oportunidades en construcción: el caso no publica métricas, conversaciones, oportunidades, clientes ni cierres.",
+      "attributionLimit": "Una referencia concreta ilustra la capacidad y no establece resultados universales. Las aplicaciones por tipo de profesionista describen necesidades de comunicación atendibles, no implementaciones adicionales ni resultados obtenidos.",
+      "pendingEvidence": [
+        "Consultas de búsqueda y uso de contenidos",
+        "Retroalimentación de los públicos",
+        "Contactos confirmados y su origen"
+      ],
+      "references": [
+        {
+          "name": "Erika Morales",
+          "context": "Product Owner · IA generativa · Transformación de negocio",
+          "url": "https://erikamorales.rauviaweb.mx/"
+        },
+        {
+          "name": "Allison García Urrutia",
+          "context": "Psicología · Educación, comunidad y organizaciones; el sitio no ofrece psicoterapia clínica ni diagnósticos",
+          "url": "https://allisongarcia.rauviaweb.mx/"
+        },
+        {
+          "name": "Mónica García Urrutia",
+          "context": "Product Operations · Experiencia de cliente",
+          "url": "https://monicagarcia.rauviaweb.mx/"
+        },
+        {
+          "name": "Consultorio Médico GALENUS",
+          "context": "Salud · Consultorio con diversas especialidades; la información administrativa no sustituye una valoración médica",
+          "url": "https://galenusconsultorio.rauviaweb.mx/"
+        },
+        {
+          "name": "Antonio Colyn",
+          "context": "Fisioterapia y quiropráctica · Iztapalapa; cada situación requiere valoración individual",
+          "url": "https://antoniocolyn.rauviaweb.mx/"
+        },
+        {
+          "name": "Acacia",
+          "context": "Salón de fiestas · Huixquilucan",
+          "url": "https://acacia.rauviaweb.mx/"
+        }
+      ]
     },
     {
       "id": "claim:aethryon-desarrollado",
@@ -1435,11 +1554,11 @@
       "guaranteesResults": false
     },
     {
-      "id": "claim:benchmark-interno",
+      "id": "claim:alcance-visualizaciones",
       "type": "Claim",
-      "label": "El caso publicado reporta un benchmark interno de 2.67 a 4.00.",
-      "description": "Comparación interna de capacidades digitales/comerciales del caso.",
-      "rationale": "Comparación interna de capacidades digitales/comerciales del caso.",
+      "label": "El caso publicado reporta 811,365 visualizaciones y 447,527 de alcance acumulado.",
+      "description": "Exposición registrada durante la fase 1.",
+      "rationale": "Exposición registrada durante la fase 1.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -1449,13 +1568,41 @@
       "assetRefs": [
         "asset:case-infraestructura-temporal-b2b"
       ],
-      "text": "El caso publicado reporta un benchmark interno de 2.67 a 4.00.",
+      "text": "El caso publicado reporta 811,365 visualizaciones y 447,527 de alcance acumulado.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Exposición registrada durante la fase 1.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Visualizaciones y alcance ≠ demanda calificada, conversaciones, oportunidades ni ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "exposure_count",
+      "outcome": "exposure"
+    },
+    {
+      "id": "claim:benchmark-interno",
+      "type": "Claim",
+      "label": "El caso publicado reporta un benchmark interno comparativo (índice 1–5) de 2.67 el 03 de octubre de 2025, 3.67 el 31 de diciembre de 2025 y 4.00 el 15 de julio de 2026 (+1.33 puntos; +49.8% de evolución relativa acumulada).",
+      "description": "Comparación interna de seis dimensiones de capacidades digitales/comerciales (amplitud de oferta, propuesta de valor, activación social, profundidad web, diferenciación y SEO local); los cortes se grafican a intervalos iguales, no a escala temporal.",
+      "rationale": "Comparación interna de seis dimensiones de capacidades digitales/comerciales (amplitud de oferta, propuesta de valor, activación social, profundidad web, diferenciación y SEO local); los cortes se grafican a intervalos iguales, no a escala temporal.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "assetRefs": [
+        "asset:case-infraestructura-temporal-b2b"
+      ],
+      "text": "El caso publicado reporta un benchmark interno comparativo (índice 1–5) de 2.67 el 03 de octubre de 2025, 3.67 el 31 de diciembre de 2025 y 4.00 el 15 de julio de 2026 (+1.33 puntos; +49.8% de evolución relativa acumulada).",
       "claimType": "result",
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Comparación interna de capacidades digitales/comerciales del caso.",
-      "period": "Fase inicial publicada; la página no precisa fechas independientes para cada medición del benchmark.",
+      "scope": "Comparación interna de seis dimensiones de capacidades digitales/comerciales (amplitud de oferta, propuesta de valor, activación social, profundidad web, diferenciación y SEO local); los cortes se grafican a intervalos iguales, no a escala temporal.",
+      "period": "Tres cortes publicados: 03 oct 2025, 31 dic 2025 y 15 jul 2026.",
       "attributionLimit": "Benchmark interno ≠ crecimiento en ventas; sin validación independiente ni causalidad establecida.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
@@ -1463,11 +1610,39 @@
       "outcome": "benchmark_change"
     },
     {
+      "id": "claim:clasificacion-conversaciones",
+      "type": "Claim",
+      "label": "El caso publicado reporta 511 interacciones clasificadas, de las cuales 154 corresponden a catálogo o información y 25 a conversaciones largas.",
+      "description": "Clasificación de una parte de las interacciones; las categorías describen niveles observados en la revisión.",
+      "rationale": "Clasificación de una parte de las interacciones; las categorías describen niveles observados en la revisión.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "assetRefs": [
+        "asset:case-infraestructura-temporal-b2b"
+      ],
+      "text": "El caso publicado reporta 511 interacciones clasificadas, de las cuales 154 corresponden a catálogo o información y 25 a conversaciones largas.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Clasificación de una parte de las interacciones; las categorías describen niveles observados en la revisión.",
+      "period": "La página no declara un periodo específico para la clasificación.",
+      "attributionLimit": "No constituyen un funnel comercial ni tasas de conversión; no toda la demanda fue clasificada; ni catálogo/información ni conversaciones largas equivalen a oportunidades, ventas o cierres.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "classified_interactions",
+      "outcome": "classification"
+    },
+    {
       "id": "claim:conversaciones-reportadas",
       "type": "Claim",
       "label": "El caso publicado reporta 3,564 conversaciones iniciadas.",
-      "description": "Volumen de interacción reportado en el caso.",
-      "rationale": "Volumen de interacción reportado en el caso.",
+      "description": "Volumen de interacción registrado durante la fase 1 de presencia digital y captación.",
+      "rationale": "Volumen de interacción registrado durante la fase 1 de presencia digital y captación.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -1482,13 +1657,41 @@
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Volumen de interacción reportado en el caso.",
+      "scope": "Volumen de interacción registrado durante la fase 1 de presencia digital y captación.",
       "period": "Octubre 2025 – julio 2026.",
       "attributionLimit": "Conversaciones ≠ oportunidades, clientes ni cierres; no se reinterpreta como funnel o conversión.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
       "measurementKind": "interaction_count",
       "outcome": "interaction"
+    },
+    {
+      "id": "claim:costo-por-conversacion",
+      "type": "Claim",
+      "label": "El caso publicado reporta un costo promedio de $10.76 MXN por conversación iniciada.",
+      "description": "Cociente entre la inversión registrada y las conversaciones iniciadas en la fase 1.",
+      "rationale": "Cociente entre la inversión registrada y las conversaciones iniciadas en la fase 1.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "assetRefs": [
+        "asset:case-infraestructura-temporal-b2b"
+      ],
+      "text": "El caso publicado reporta un costo promedio de $10.76 MXN por conversación iniciada.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Cociente entre la inversión registrada y las conversaciones iniciadas en la fase 1.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Costo por conversación ≠ costo por oportunidad, cliente o cierre.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "unit_cost",
+      "outcome": "spend"
     },
     {
       "id": "claim:frente-comercial-alcance",
@@ -1517,6 +1720,34 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:inversion-registrada",
+      "type": "Claim",
+      "label": "El caso publicado registra una inversión de $38,345.94 MXN durante la fase 1.",
+      "description": "Inversión registrada en el periodo de presencia digital y captación; la página no desglosa canales ni conceptos.",
+      "rationale": "Inversión registrada en el periodo de presencia digital y captación; la página no desglosa canales ni conceptos.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "assetRefs": [
+        "asset:case-infraestructura-temporal-b2b"
+      ],
+      "text": "El caso publicado registra una inversión de $38,345.94 MXN durante la fase 1.",
+      "claimType": "observed",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Inversión registrada en el periodo de presencia digital y captación; la página no desglosa canales ni conceptos.",
+      "period": "Octubre 2025 – julio 2026.",
+      "attributionLimit": "Inversión registrada ≠ retorno, ingreso ni costo de adquisición de clientes; no establece causalidad con ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "measurementKind": "recorded_spend",
+      "outcome": "spend"
+    },
+    {
       "id": "claim:presencia-medica-alcance",
       "type": "Claim",
       "label": "La página para médicos organiza información profesional, especialidad, ubicación y contacto.",
@@ -1541,6 +1772,59 @@
       "attributionLimit": "No es evidencia clínica, garantía de pacientes, posicionamiento local ni confirmación automática de citas.",
       "causalStatus": "not_established",
       "guaranteesResults": false
+    },
+    {
+      "id": "claim:presencia-profesional-capacidad",
+      "type": "Claim",
+      "label": "RAUVIA, mediante RAUVIAWEB, organiza trayectoria, especialidad, capacidades y canales de contacto de profesionistas en un sitio adecuado a cada perfil.",
+      "description": "Capacidad descrita en el caso con seis implementaciones de referencia (profesionistas, salud y un pequeño negocio).",
+      "rationale": "Capacidad descrita en el caso con seis implementaciones de referencia (profesionistas, salud y un pequeño negocio).",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "text": "RAUVIA, mediante RAUVIAWEB, organiza trayectoria, especialidad, capacidades y canales de contacto de profesionistas en un sitio adecuado a cada perfil.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Capacidad descrita en el caso con seis implementaciones de referencia (profesionistas, salud y un pequeño negocio).",
+      "period": "Capacidad activa; sin periodo de medición publicado.",
+      "attributionLimit": "Describe una capacidad y su método, no resultados; las aplicaciones por tipo de profesionista son necesidades atendibles, no implementaciones adicionales.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:presencia-profesional-evidencia-pendiente",
+      "type": "Claim",
+      "label": "La evidencia de descubrimiento, contactos y oportunidades del caso de presencia profesional sigue en construcción y no se publican métricas de impacto.",
+      "description": "Estado de la evidencia reportado por la página original: relevancia informativa por evaluar y oportunidades por documentar con contactos confirmados y su origen.",
+      "rationale": "Estado de la evidencia reportado por la página original: relevancia informativa por evaluar y oportunidades por documentar con contactos confirmados y su origen.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "text": "La evidencia de descubrimiento, contactos y oportunidades del caso de presencia profesional sigue en construcción y no se publican métricas de impacto.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Estado de la evidencia reportado por la página original: relevancia informativa por evaluar y oportunidades por documentar con contactos confirmados y su origen.",
+      "period": "Sin periodo de medición publicado.",
+      "attributionLimit": "Capacidad o evidencia en construcción ≠ resultado concluido; sin métricas, conversaciones, oportunidades, clientes ni cierres publicados.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "fulfilmentState": "in_construction"
     },
     {
       "id": "claim:raul-doctor-administracion-negocios",
@@ -1647,7 +1931,7 @@
     {
       "id": "claim:rauvia-identidad",
       "type": "Claim",
-      "label": "RAUVIA es una firma de consultoría estratégica y desarrollo tecnológico.",
+      "label": "RAUVIA es una empresa mexicana que combina metodología, tecnología y trabajo especializado para ayudar a las empresas a resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas. Sus servicios digitales incluyen Frente Comercial y SEO para IA. Cuando la situación lo requiere, puede definir intervenciones empresariales más amplias, incluyendo consultoría especializada, según un alcance acordado.",
       "description": "Identidad institucional pública.",
       "rationale": "Identidad institucional pública.",
       "status": "supported",
@@ -1659,7 +1943,7 @@
       "assetRefs": [
         "asset:nosotros"
       ],
-      "text": "RAUVIA es una firma de consultoría estratégica y desarrollo tecnológico.",
+      "text": "RAUVIA es una empresa mexicana que combina metodología, tecnología y trabajo especializado para ayudar a las empresas a resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas. Sus servicios digitales incluyen Frente Comercial y SEO para IA. Cuando la situación lo requiere, puede definir intervenciones empresariales más amplias, incluyendo consultoría especializada, según un alcance acordado.",
       "claimType": "factual",
       "supportedBy": [
         "source:nosotros"
@@ -1667,6 +1951,59 @@
       "scope": "Identidad institucional pública.",
       "period": "Identidad vigente en la fuente canónica.",
       "attributionLimit": "Descripción institucional propia, no certificación externa.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:rediseno-web-estado",
+      "type": "Claim",
+      "label": "El caso reporta el estado del rediseño y relanzamiento web: reorganización de arquitectura, casos de uso por necesidad y separación de venta y renta como implementados; mayor profundidad y SEO técnico y local en evolución; GEO/LLMO progresivo como siguiente fase.",
+      "description": "Estado por componente reportado por la página original.",
+      "rationale": "Estado por componente reportado por la página original.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "assetRefs": [
+        "asset:case-infraestructura-temporal-b2b"
+      ],
+      "text": "El caso reporta el estado del rediseño y relanzamiento web: reorganización de arquitectura, casos de uso por necesidad y separación de venta y renta como implementados; mayor profundidad y SEO técnico y local en evolución; GEO/LLMO progresivo como siguiente fase.",
+      "claimType": "capability",
+      "supportedBy": [
+        "source:case-infraestructura-temporal-b2b"
+      ],
+      "scope": "Estado por componente reportado por la página original.",
+      "period": "Estado publicado, sin fechas por componente.",
+      "attributionLimit": "Un componente implementado no demuestra efecto en demanda o ventas; los componentes en evolución o de siguiente fase no son resultados concluidos.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false,
+      "fulfilmentState": "in_evolution"
+    },
+    {
+      "id": "claim:referencias-implementadas",
+      "type": "Claim",
+      "label": "El caso presenta seis implementaciones de referencia enlazadas: Erika Morales, Allison García Urrutia, Mónica García Urrutia, Consultorio Médico GALENUS, Antonio Colyn y Acacia.",
+      "description": "Los sitios ilustran cómo se organiza la información de cada práctica o negocio; en salud, la información administrativa no sustituye una valoración médica y el sitio de psicología no ofrece psicoterapia clínica ni diagnósticos.",
+      "rationale": "Los sitios ilustran cómo se organiza la información de cada práctica o negocio; en salud, la información administrativa no sustituye una valoración médica y el sitio de psicología no ofrece psicoterapia clínica ni diagnósticos.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "text": "El caso presenta seis implementaciones de referencia enlazadas: Erika Morales, Allison García Urrutia, Mónica García Urrutia, Consultorio Médico GALENUS, Antonio Colyn y Acacia.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "scope": "Los sitios ilustran cómo se organiza la información de cada práctica o negocio; en salud, la información administrativa no sustituye una valoración médica y el sitio de psicología no ofrece psicoterapia clínica ni diagnósticos.",
+      "period": "Sitios enlazados al momento de la publicación del caso; sin fecha de entrega publicada.",
+      "attributionLimit": "Una referencia ilustra la capacidad y no establece resultados universales; no demuestra descubrimiento, contactos, oportunidades ni clientes.",
       "causalStatus": "not_established",
       "guaranteesResults": false
     },
@@ -1699,9 +2036,9 @@
     {
       "id": "claim:trazabilidad-en-construccion",
       "type": "Claim",
-      "label": "El caso describe una capacidad de trazabilidad comercial en construcción.",
-      "description": "Estado de la intervención reportado por la página original.",
-      "rationale": "Estado de la intervención reportado por la página original.",
+      "label": "El caso describe una capacidad de trazabilidad comercial en construcción (Catalyst) para observar el recorrido de cada oportunidad.",
+      "description": "Fase 2 de la intervención, reportada por la página original; incluye registro estructurado, variables comerciales observables y seguimiento.",
+      "rationale": "Fase 2 de la intervención, reportada por la página original; incluye registro estructurado, variables comerciales observables y seguimiento.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -1711,14 +2048,14 @@
       "assetRefs": [
         "asset:case-infraestructura-temporal-b2b"
       ],
-      "text": "El caso describe una capacidad de trazabilidad comercial en construcción.",
+      "text": "El caso describe una capacidad de trazabilidad comercial en construcción (Catalyst) para observar el recorrido de cada oportunidad.",
       "claimType": "capability",
       "supportedBy": [
         "source:case-infraestructura-temporal-b2b"
       ],
-      "scope": "Estado de la intervención reportado por la página original.",
-      "period": "Estado publicado, sin fecha de cierre declarada.",
-      "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas.",
+      "scope": "Fase 2 de la intervención, reportada por la página original; incluye registro estructurado, variables comerciales observables y seguimiento.",
+      "period": "Julio 2026 – actualidad; sin fecha de cierre declarada.",
+      "attributionLimit": "Capacidad en construcción ≠ resultado concluido; no se atribuye un incremento de ventas ni se publican oportunidades, cotizaciones o cierres.",
       "causalStatus": "not_established",
       "guaranteesResults": false,
       "fulfilmentState": "in_construction"
@@ -3850,6 +4187,41 @@
       "territory": "territory:activos-digitales"
     },
     {
+      "id": "intent:presencia-posicionamiento-profesional",
+      "type": "Intent",
+      "label": "Presencia y posicionamiento profesional de profesionistas",
+      "description": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "rationale": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [
+        "source:case-presencia-posicionamiento-profesional"
+      ],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "family": "USE_CASE",
+      "expressions": [
+        "Presencia y posicionamiento profesional de profesionistas"
+      ],
+      "icps": [
+        "icp:servicio-profesional-confianza"
+      ],
+      "verticals": [
+        "vertical:professional-services"
+      ],
+      "mapsToProblems": [
+        "problem:presencia-digital-fragmentada"
+      ],
+      "contexts": [],
+      "assets": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "primaryAsset": "asset:case-presencia-posicionamiento-profesional",
+      "territory": "territory:activos-digitales"
+    },
+    {
       "id": "intent:procesos-dependen-personas",
       "type": "Intent",
       "label": "Los procesos dependen de personas",
@@ -4962,8 +5334,8 @@
       "id": "org:rauvia",
       "type": "Organization",
       "label": "RAUVIA",
-      "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
-      "rationale": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+      "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
+      "rationale": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
       "status": "canonical",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -6019,6 +6391,24 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:case-presencia-posicionamiento-profesional",
+      "type": "Source",
+      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA Consulting",
+      "description": "Referencia editorial pública de Caso de presencia profesional | RAUVIA Consulting; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Caso de presencia profesional | RAUVIA Consulting; no constituye validación independiente.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "sources": [],
+      "assetRefs": [
+        "asset:case-presencia-posicionamiento-profesional"
+      ],
+      "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:casos",
       "type": "Source",
       "label": "Publicación institucional: Casos y evidencia | RAUVIA Consulting",
@@ -6057,9 +6447,9 @@
     {
       "id": "source:home",
       "type": "Source",
-      "label": "Publicación institucional: RAUVIA Consulting | Consultoría y desarrollo tecnológico",
-      "description": "Referencia editorial pública de RAUVIA Consulting | Consultoría y desarrollo tecnológico; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de RAUVIA Consulting | Consultoría y desarrollo tecnológico; no constituye validación independiente.",
+      "label": "Publicación institucional: RAUVIA | Servicios digitales y trabajo especializado para empresas",
+      "description": "Referencia editorial pública de RAUVIA | Servicios digitales y trabajo especializado para empresas; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de RAUVIA | Servicios digitales y trabajo especializado para empresas; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -6075,9 +6465,9 @@
     {
       "id": "source:nosotros",
       "type": "Source",
-      "label": "Publicación institucional: RAUVIA Consulting | Nosotros",
-      "description": "Referencia editorial pública de RAUVIA Consulting | Nosotros; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de RAUVIA Consulting | Nosotros; no constituye validación independiente.",
+      "label": "Publicación institucional: Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA",
+      "description": "Referencia editorial pública de Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -6308,9 +6698,9 @@
     {
       "id": "source:seo-ai",
       "type": "Source",
-      "label": "Publicación institucional: SEO para IA generativa (GEO) para empresas | RAUVIA",
-      "description": "Referencia editorial pública de SEO para IA generativa (GEO) para empresas | RAUVIA; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de SEO para IA generativa (GEO) para empresas | RAUVIA; no constituye validación independiente.",
+      "label": "Publicación institucional: SEO para IA, GEO y AEO para empresas | RAUVIA",
+      "description": "Referencia editorial pública de SEO para IA, GEO y AEO para empresas | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO para IA, GEO y AEO para empresas | RAUVIA; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -7139,6 +7529,36 @@
       "from": "asset:case-infraestructura-temporal-b2b",
       "relation": "supportsCapability",
       "to": "capability:trazabilidad-comercial"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "coversIntent",
+      "to": "intent:presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "explainsProblem",
+      "to": "problem:presencia-digital-fragmentada"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "partOf",
+      "to": "website:rauvia"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "supportsCapability",
+      "to": "capability:presencia-digital-profesional"
+    },
+    {
+      "from": "asset:case-presencia-posicionamiento-profesional",
+      "relation": "supportsCapability",
+      "to": "capability:presencia-local"
     },
     {
       "from": "asset:casos",
@@ -8497,12 +8917,37 @@
     {
       "from": "case:infraestructura-temporal-b2b",
       "relation": "containsClaim",
+      "to": "claim:alcance-visualizaciones"
+    },
+    {
+      "from": "case:infraestructura-temporal-b2b",
+      "relation": "containsClaim",
       "to": "claim:benchmark-interno"
     },
     {
       "from": "case:infraestructura-temporal-b2b",
       "relation": "containsClaim",
+      "to": "claim:clasificacion-conversaciones"
+    },
+    {
+      "from": "case:infraestructura-temporal-b2b",
+      "relation": "containsClaim",
       "to": "claim:conversaciones-reportadas"
+    },
+    {
+      "from": "case:infraestructura-temporal-b2b",
+      "relation": "containsClaim",
+      "to": "claim:costo-por-conversacion"
+    },
+    {
+      "from": "case:infraestructura-temporal-b2b",
+      "relation": "containsClaim",
+      "to": "claim:inversion-registrada"
+    },
+    {
+      "from": "case:infraestructura-temporal-b2b",
+      "relation": "containsClaim",
+      "to": "claim:rediseno-web-estado"
     },
     {
       "from": "case:infraestructura-temporal-b2b",
@@ -8520,12 +8965,52 @@
       "to": "source:case-infraestructura-temporal-b2b"
     },
     {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "belongsToVertical",
+      "to": "vertical:professional-services"
+    },
+    {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "containsClaim",
+      "to": "claim:presencia-profesional-capacidad"
+    },
+    {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "containsClaim",
+      "to": "claim:presencia-profesional-evidencia-pendiente"
+    },
+    {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "containsClaim",
+      "to": "claim:referencias-implementadas"
+    },
+    {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "representedBy",
+      "to": "asset:case-presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "case:presencia-posicionamiento-profesional",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
+    },
+    {
       "from": "claim:aethryon-desarrollado",
       "relation": "supportedBy",
       "to": "source:aethryon"
     },
     {
+      "from": "claim:alcance-visualizaciones",
+      "relation": "supportedBy",
+      "to": "source:case-infraestructura-temporal-b2b"
+    },
+    {
       "from": "claim:benchmark-interno",
+      "relation": "supportedBy",
+      "to": "source:case-infraestructura-temporal-b2b"
+    },
+    {
+      "from": "claim:clasificacion-conversaciones",
       "relation": "supportedBy",
       "to": "source:case-infraestructura-temporal-b2b"
     },
@@ -8535,14 +9020,34 @@
       "to": "source:case-infraestructura-temporal-b2b"
     },
     {
+      "from": "claim:costo-por-conversacion",
+      "relation": "supportedBy",
+      "to": "source:case-infraestructura-temporal-b2b"
+    },
+    {
       "from": "claim:frente-comercial-alcance",
       "relation": "supportedBy",
       "to": "source:frente-comercial"
     },
     {
+      "from": "claim:inversion-registrada",
+      "relation": "supportedBy",
+      "to": "source:case-infraestructura-temporal-b2b"
+    },
+    {
       "from": "claim:presencia-medica-alcance",
       "relation": "supportedBy",
       "to": "source:pagina-web-medicos"
+    },
+    {
+      "from": "claim:presencia-profesional-capacidad",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "claim:presencia-profesional-evidencia-pendiente",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
     },
     {
       "from": "claim:raul-doctor-administracion-negocios",
@@ -8578,6 +9083,16 @@
       "from": "claim:rauvia-identidad",
       "relation": "supportedBy",
       "to": "source:nosotros"
+    },
+    {
+      "from": "claim:rediseno-web-estado",
+      "relation": "supportedBy",
+      "to": "source:case-infraestructura-temporal-b2b"
+    },
+    {
+      "from": "claim:referencias-implementadas",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
     },
     {
       "from": "claim:ruta90-adoptado",
@@ -10485,6 +11000,36 @@
       "to": "icp:profesional-medico-presencia-digital"
     },
     {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "belongsToTerritory",
+      "to": "territory:activos-digitales"
+    },
+    {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "belongsToVertical",
+      "to": "vertical:professional-services"
+    },
+    {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "expressesProblem",
+      "to": "problem:presencia-digital-fragmentada"
+    },
+    {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "representedBy",
+      "to": "asset:case-presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "supportedBy",
+      "to": "source:case-presencia-posicionamiento-profesional"
+    },
+    {
+      "from": "intent:presencia-posicionamiento-profesional",
+      "relation": "targetsICP",
+      "to": "icp:servicio-profesional-confianza"
+    },
+    {
       "from": "intent:procesos-dependen-personas",
       "relation": "belongsToTerritory",
       "to": "territory:arquitectura-operativa"
@@ -11493,6 +12038,11 @@
       "from": "org:rauvia",
       "relation": "publishes",
       "to": "asset:case-infraestructura-temporal-b2b"
+    },
+    {
+      "from": "org:rauvia",
+      "relation": "publishes",
+      "to": "asset:case-presencia-posicionamiento-profesional"
     },
     {
       "from": "org:rauvia",
@@ -13256,6 +13806,7 @@
       "asset:aethryon",
       "asset:agenda-whatsapp-medicos",
       "asset:case-infraestructura-temporal-b2b",
+      "asset:case-presencia-posicionamiento-profesional",
       "asset:casos",
       "asset:frente-comercial",
       "asset:home",
@@ -13383,6 +13934,7 @@
       "intent:pagina-web-medicos-especialistas",
       "intent:pagina-web-servicios-profesionales",
       "intent:presencia-medica-dispersa",
+      "intent:presencia-posicionamiento-profesional",
       "intent:procesos-dependen-personas",
       "intent:prospectos-no-avanzan",
       "intent:que-es-aethryon",
@@ -13442,16 +13994,25 @@
       "career:raul-isem",
       "career:raul-prosa",
       "case:infraestructura-temporal-b2b",
+      "case:presencia-posicionamiento-profesional",
       "claim:aethryon-desarrollado",
+      "claim:alcance-visualizaciones",
       "claim:benchmark-interno",
+      "claim:clasificacion-conversaciones",
       "claim:conversaciones-reportadas",
+      "claim:costo-por-conversacion",
       "claim:frente-comercial-alcance",
+      "claim:inversion-registrada",
       "claim:presencia-medica-alcance",
+      "claim:presencia-profesional-capacidad",
+      "claim:presencia-profesional-evidencia-pendiente",
       "claim:raul-doctor-administracion-negocios",
       "claim:raul-ingenieria-quimica-metalurgica",
       "claim:raul-maestria-direccion-organizaciones",
       "claim:rauvia-capacidades",
       "claim:rauvia-identidad",
+      "claim:rediseno-web-estado",
+      "claim:referencias-implementadas",
       "claim:ruta90-adoptado",
       "claim:trazabilidad-en-construccion",
       "content:wp-15",
@@ -13467,6 +14028,7 @@
       "source:aethryon",
       "source:agenda-whatsapp-medicos",
       "source:case-infraestructura-temporal-b2b",
+      "source:case-presencia-posicionamiento-profesional",
       "source:casos",
       "source:frente-comercial",
       "source:home",

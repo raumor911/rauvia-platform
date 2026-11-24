@@ -35,9 +35,9 @@ try{
  });
  for(const p of ['/v73-unknown/','/ruta-90/inventada-v73/','/diagnostico-inventado-v73/','/growth-partner/inventado-v73/','/blueprint-inventado-v73/','/frente-comercial-esencial/inventado-v73/','/servicios/inventado-v73/','/blog/inventado-v73/'])await test(`UNKNOWN: ${p} → 404`,async()=>{const r=await direct(p);assert.equal(r.status,404);assert.equal(r.headers.get('location'),null);});
  await test('Home CTA is a crawlable internal link and secondary CTA is intact',async()=>{
-  const html=await(await direct('/')).text();const a=[...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)];const primary=a.find(x=>x[2].includes('CONOCER NUESTROS PRODUCTOS')),secondary=a.find(x=>x[2].includes('CÓMO TRABAJAMOS'));
-  assert.ok(primary);assert.equal(primary[2].replace(/<[^>]*>/g,'').trim(),'CONOCER NUESTROS PRODUCTOS');assert.match(primary[1],/href="\/soluciones\/"/);assert.doesNotMatch(primary[1],/wa\.me|whatsapp|target="_blank"/i);assert.match(primary[2],/lucide-arrow-right/);
-  assert.match(secondary[1],/href="\/aethryon\/"/);assert.equal(secondary[2].replace(/<[^>]*>/g,'').trim(),'CÓMO TRABAJAMOS'); // RAU-004 approved mockup uses a text-only secondary CTA.
+  const html=await(await direct('/')).text();const a=[...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)];const primary=a.find(x=>x[2].includes('CONOCER NUESTROS SERVICIOS')),secondary=a.find(x=>x[2].includes('CÓMO TRABAJAMOS'));
+  assert.ok(primary);assert.equal(primary[2].replace(/<[^>]*>/g,'').trim(),'CONOCER NUESTROS SERVICIOS');assert.match(primary[1],/href="\/soluciones\/"/);assert.doesNotMatch(primary[1],/wa\.me|whatsapp|target="_blank"/i);assert.match(primary[2],/lucide-arrow-right/);
+  assert.match(secondary[1],/href="\/nosotros\/#como-trabajamos"/);assert.equal(secondary[2].replace(/<[^>]*>/g,'').trim(),'CÓMO TRABAJAMOS'); // RAU-004 approved mockup uses a text-only secondary CTA.
   const r=await direct('/soluciones/');assert.equal(r.status,200);assert.equal(r.headers.get('location'),null);
  });
  await test('Footer signature is secondary, only brand is linked, no technical navigation',async()=>{

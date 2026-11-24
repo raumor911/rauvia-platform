@@ -3,11 +3,11 @@ import {ruta90Seo} from '../data/ruta90.js';
 export const routeSeo = {
   "/ruta-90": ruta90Seo,
   "/": {
-    "title": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
-    "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+    "title": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
+    "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
     "canonical": "https://rauvia.com.mx/",
-    "ogTitle": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
-    "ogDescription": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+    "ogTitle": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
+    "ogDescription": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",
@@ -21,7 +21,7 @@ export const routeSeo = {
         "alternateName": "RAUVIA",
         "url": "https://rauvia.com.mx",
         "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "founder": {
           "@id": "https://rauvia.com.mx/#raul-morales",
           "name": "Raúl Antonio Morales Domínguez",
@@ -60,8 +60,8 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/#webpage",
         "url": "https://rauvia.com.mx/",
-        "name": "RAUVIA Consulting | Consultoría y desarrollo tecnológico",
-        "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+        "name": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
+        "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
         "inLanguage": "es-MX",
         "isPartOf": {"@id": "https://rauvia.com.mx/#website"},
         "about": {"@id": "https://rauvia.com.mx/#organization"}
@@ -99,11 +99,11 @@ export const routeSeo = {
     ]
   },
   "/nosotros": {
-    "title": "RAUVIA Consulting | Nosotros",
-    "description": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+    "title": "Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA",
+    "description": "Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.",
     "canonical": "https://rauvia.com.mx/nosotros/",
-    "ogTitle": "RAUVIA Consulting | Nosotros",
-    "ogDescription": "RAUVIA identifica dónde una empresa está perdiendo valor y construye la capacidad necesaria para corregirlo.",
+    "ogTitle": "Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA",
+    "ogDescription": "Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",
@@ -115,7 +115,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/nosotros/#webpage",
         "url": "https://rauvia.com.mx/nosotros/",
         "name": "Nosotros - RAUVIA",
-        "description": "RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
         },
@@ -156,7 +156,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
         "url": "https://rauvia.com.mx/soluciones/",
         "name": "Portafolio de Soluciones - RAUVIA",
-        "description": "Catálogo de soluciones empresariales. RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.",
+        "description": "Catálogo de soluciones empresariales. RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
         }
@@ -242,14 +242,16 @@ export const routeSeo = {
             "name": "Frente Comercial Esencial",
             "price": "6900.00",
             "priceCurrency": "MXN",
-            "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional."
+            "priceSpecification": {"@type": "UnitPriceSpecification", "price": "6900.00", "priceCurrency": "MXN", "valueAddedTaxIncluded": false},
+            "description": "Activo comercial para presentar la oferta de la empresa de manera clara y profesional. Precio en MXN + IVA, pago único."
           },
           {
             "@type": "Offer",
             "name": "Frente Comercial Pro",
             "price": "9900.00",
             "priceCurrency": "MXN",
-            "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación."
+            "priceSpecification": {"@type": "UnitPriceSpecification", "price": "9900.00", "priceCurrency": "MXN", "valueAddedTaxIncluded": false},
+            "description": "Activo comercial avanzado para empresas con soluciones técnicas que necesitan mayor explicación. Precio en MXN + IVA, pago único."
           },
           {
             "@type": "Offer",
@@ -258,13 +260,14 @@ export const routeSeo = {
               "@type": "UnitPriceSpecification",
               "price": "13900.00",
               "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false,
               "referenceQuantity": {
                 "@type": "QuantitativeValue",
                 "value": "1",
                 "unitCode": "C62"
               }
             },
-            "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión."
+            "description": "Activo comercial estructurado para empresas con múltiples líneas de servicio y rutas de decisión. Precio «desde» en MXN + IVA, pago único."
           }
         ]
       }
@@ -663,10 +666,10 @@ export const routeSeo = {
   },
   "/pagina-web-gratis-para-medicos": {
     "title": "Página web gratis para médicos | RAUVIA",
-    "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp, agenda de citas y base SEO/GEO para presencia digital.",
+    "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp y base SEO/GEO para presencia digital.",
     "canonical": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
     "ogTitle": "Página web gratis para médicos | RAUVIA",
-    "ogDescription": "Página médica gratuita bajo dominio RAUVIA, con perfil profesional, WhatsApp, agenda de citas y base SEO/GEO.",
+    "ogDescription": "Página médica gratuita bajo dominio RAUVIA, con perfil profesional, WhatsApp y base SEO/GEO.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/images/landing-medicos/hero.webp",
     "robots": "index, follow",
@@ -677,7 +680,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
         "url": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/",
         "name": "Página web gratis para médicos | RAUVIA",
-        "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp, agenda de citas y base SEO/GEO para presencia digital.",
+        "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp y base SEO/GEO para presencia digital.",
         "inLanguage": "es-MX",
         "about": {
           "@id": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/#servicio"
@@ -688,7 +691,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/pagina-web-gratis-para-medicos/#servicio",
         "name": "Presencia Médica RAUVIA",
         "serviceType": "Creación de página web informativa para médicos",
-        "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp, agenda de citas y base SEO/GEO para presencia digital.",
+        "description": "RAUVIA ofrece páginas web gratis para médicos bajo dominio RAUVIA, con perfil profesional, WhatsApp y base SEO/GEO para presencia digital.",
         "provider": {
           "@type": "Organization",
           "name": "RAUVIA",
@@ -735,7 +738,7 @@ export const routeSeo = {
             "name": "¿Incluye agenda de citas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Incluye una opción básica para solicitar o agendar citas, según la configuración acordada. Las integraciones avanzadas se revisan por separado."
+              "text": "No. El sitio incluye un botón de WhatsApp como vía directa de contacto, pero no incluye agenda ni sistema de citas."
             }
           },
           {
@@ -1184,7 +1187,7 @@ export const routeSeo = {
             "name": "¿Cuánto cuesta una página web para médicos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del alcance: personalización, número de secciones, consultorios, contenido e integraciones. Existe una opción gratuita con alcance básico; los proyectos personalizados y el Frente Comercial Médico se cotizan según alcance. Contáctanos para identificar la alternativa adecuada."
+              "text": "Depende del alcance: personalización, número de secciones, consultorios, contenido e integraciones. Existe una opción gratuita con alcance básico; la web personalizada parte desde $7,900 MXN + IVA y el Frente Comercial Médico desde $13,900 MXN + IVA, según alcance. Contáctanos para identificar la alternativa adecuada."
             }
           }
         ]
@@ -1570,12 +1573,12 @@ export const routeSeo = {
     "schema": []
   },
   "/seo-ai": {
-    "title": "SEO para IA generativa (GEO) para empresas | RAUVIA",
-    "description": "Preparamos tu sitio para que buscadores y asistentes de IA encuentren qué vende tu empresa, para qué casos sirve y dónde puede entregarlo.",
+    "title": "SEO para IA, GEO y AEO para empresas | RAUVIA",
+    "description": "Revisa qué pueden consultar buscadores y asistentes sobre tu empresa. Auditoría GEO con evidencia y programa de implementación verificable.",
     "canonical": "https://rauvia.com.mx/seo-ai/",
     "lang": "es-MX",
-    "ogTitle": "SEO para IA generativa (GEO) para empresas | RAUVIA",
-    "ogDescription": "Preparamos tu sitio para que buscadores y asistentes de IA encuentren qué vende tu empresa, para qué casos sirve y dónde puede entregarlo.",
+    "ogTitle": "SEO para IA, GEO y AEO para empresas | RAUVIA",
+    "ogDescription": "Revisa qué pueden consultar buscadores y asistentes sobre tu empresa. Auditoría GEO con evidencia y programa de implementación verificable.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",
@@ -1592,6 +1595,56 @@ export const routeSeo = {
         "provider": {
           "@id": "https://rauvia.com.mx/#organization"
         }
+      }
+    ]
+  },
+  "/recursos/seo-para-ia": {
+    "title": "SEO, GEO y AEO en 2027: guía práctica para empresas | RAUVIA",
+    "description": "Aprende a preparar y comprobar la información de tu empresa para buscadores y asistentes de IA con una guía práctica y ejemplos.",
+    "canonical": "https://rauvia.com.mx/recursos/seo-para-ia/",
+    "lang": "es-MX",
+    "ogTitle": "SEO, GEO y AEO en 2027: guía práctica para empresas | RAUVIA",
+    "ogDescription": "Aprende a preparar y comprobar la información de tu empresa para buscadores y asistentes de IA con una guía práctica y ejemplos.",
+    "ogType": "article",
+    "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
+    "robots": "index, follow",
+    "twitterCard": "summary_large_image",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://rauvia.com.mx/recursos/seo-para-ia/#webpage",
+        "name": "SEO, GEO y AEO en 2027: cómo preparar la información de tu empresa para buscadores y asistentes de IA",
+        "url": "https://rauvia.com.mx/recursos/seo-para-ia/",
+        "inLanguage": "es-MX",
+        "publisher": {
+          "@id": "https://rauvia.com.mx/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "@id": "https://rauvia.com.mx/recursos/seo-para-ia/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RAUVIA",
+            "item": "https://rauvia.com.mx/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Recursos",
+            "item": "https://rauvia.com.mx/recursos/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SEO, GEO y AEO para empresas",
+            "item": "https://rauvia.com.mx/recursos/seo-para-ia/"
+          }
+        ]
       }
     ]
   },

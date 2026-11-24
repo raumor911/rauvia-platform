@@ -1,9 +1,16 @@
-import React from 'react';
-import {ArrowRight, CheckCircle2} from 'lucide-react';
+import React, {useRef} from 'react';
+import {ArrowRight, CheckCircle2, Info} from 'lucide-react';
 import {Link} from 'react-router-dom';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from './WhatsAppCTA';
 import TrayectoriaCatalog from './TrayectoriaCatalog';
+import ConvergenceField from './ConvergenceField';
+import usePageFx from '../hooks/usePageFx';
+import useFrenteMotion from '../hooks/useFrenteMotion';
+import '../styles/pageFrontier.css';
+import '../styles/landingFx.css';
+import '../styles/frenteMotion.css';
+import '../styles/presenceUx.css';
 
 export type PresencePageKey = 'trayectoria' | 'rauviaweb' | 'caso-profesional';
 
@@ -94,42 +101,103 @@ const copy: Record<PresencePageKey, PageCopy> = {
 
 export default function PresenceEditorialPage({page}: {page:PresencePageKey}) {
   const item=copy[page];
+  const root=useRef<HTMLDivElement>(null);
+  usePageFx(root);
+  useFrenteMotion(root);
+  const asSteps = page!=='rauviaweb';
+  const [eyebrowMain, eyebrowProduct] = item.eyebrow.split(' · ');
   return <>
     <RouteSEO path={item.path} />
-    <article className="bg-white min-h-screen text-rauvia-navy">
-      <header className="pt-32 pb-16 md:pt-40 md:pb-24 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-xs md:text-sm font-bold uppercase tracking-widest text-rauvia-blue mb-6">{item.eyebrow}</p>
+    <article ref={root} className="fx-page lf-page lf-frente pr-page bg-white min-h-screen text-rauvia-navy">
+      <div className="fx-progress" aria-hidden="true" />
+      <header className="pr-hero fx-hero lf-hero pt-36 md:pt-44 pb-20 md:pb-28 px-4 sm:px-6 lg:px-8">
+        <ConvergenceField origin={[0.5, 0.5]} className="fx-field" />
+        <div className="max-w-5xl mx-auto relative z-10">
+          <p className="pr-hero-eyebrow"><span>{eyebrowMain}</span>{eyebrowProduct&&<span className="pr-hero-chip">{eyebrowProduct}</span>}</p>
           <h1 className="max-w-4xl text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-8">{item.title}</h1>
-          <p className="max-w-3xl text-lg md:text-xl leading-relaxed text-slate-700">{item.intro}</p>
+          <p className="max-w-3xl text-lg md:text-xl leading-relaxed pr-hero-intro">{item.intro}</p>
           <nav aria-label="Siguientes pasos" className="flex flex-wrap gap-4 mt-10">
-            {page==='trayectoria'&&<a href="#planes" className="inline-flex items-center gap-2 min-h-12 px-5 py-3 rounded-lg bg-rauvia-navy text-white font-semibold hover:bg-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2">Ver planes y precios <ArrowRight size={16} aria-hidden="true"/></a>}
-            {item.related.slice(0,2).map(link=><Link key={link.to} to={link.to} className="inline-flex items-center gap-2 min-h-12 px-5 py-3 rounded-lg border border-slate-300 bg-white font-semibold text-rauvia-navy hover:border-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2">{link.label}<ArrowRight size={16} aria-hidden="true"/></Link>)}
+            {page==='trayectoria'&&<a href="#planes" className="pr-btn pr-btn-gold">Ver planes y precios <ArrowRight size={16} aria-hidden="true"/></a>}
+            {item.related.slice(0,2).map(link=><Link key={link.to} to={link.to} className="pr-btn pr-btn-ghost">{link.label}<ArrowRight size={16} aria-hidden="true"/></Link>)}
           </nav>
         </div>
       </header>
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-5">{item.problemTitle}</h2>
-        <p className="text-lg text-slate-700 leading-relaxed max-w-3xl">{item.problem}</p>
-      </section>
-      <section className="bg-slate-50 border-y border-slate-200 py-16 md:py-24">
+
+      <section className="rv-s py-20 md:py-28 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-9">{item.sectionTitle}</h2>
-          <ol className="grid md:grid-cols-2 gap-4 md:gap-6">
-            {item.points.map((point,i)=><li key={i} className="bg-white border border-slate-200 rounded-xl p-6 flex gap-4 items-start text-slate-700 leading-relaxed"><CheckCircle2 className="w-6 h-6 text-rauvia-blue shrink-0 mt-0.5" aria-hidden="true"/><span>{point}</span></li>)}
-          </ol>
+          <div className="pr-problem">
+            <div>
+              <span className="rv-s-eyebrow rv-left">El problema</span>
+              <h2 className="rv-s-title rv-left pr-problem-title">{item.problemTitle}</h2>
+            </div>
+            <blockquote className="rv-quote pr-problem-quote">
+              <span className="rv-quote-mark" aria-hidden="true">“</span>
+              <p>{item.problem}</p>
+            </blockquote>
+          </div>
         </div>
       </section>
+
+      {asSteps ? (
+        <section className="rv-tl-section py-20 md:py-32">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span className="rv-tl-eyebrow">Proceso</span>
+            <h2 className="rv-tl-title">{item.sectionTitle}</h2>
+            <ol className="rv-tl">
+              <li className="rv-tl-rail" aria-hidden="true" role="presentation"><div className="rv-tl-fill" /><div className="rv-tl-head" /></li>
+              {item.points.map((point,i)=><li key={i} className={`rv-tl-step ${i%2===0?'rv-tl-l':'rv-tl-r'}`}>
+                <div className="rv-tl-node" aria-hidden="true"><span className="rv-tl-ring" /><span className="rv-tl-ring rv-tl-ring2" /><span className="rv-tl-num">{i+1}</span></div>
+                <div className="rv-tl-card"><span className="rv-tl-ghost" aria-hidden="true">0{i+1}</span><p>{point}</p></div>
+              </li>)}
+            </ol>
+          </div>
+        </section>
+      ) : (
+        <section className="rv-s py-20 md:py-28 bg-slate-50 border-y border-slate-200">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span className="rv-s-eyebrow">Alcance</span>
+            <h2 className="rv-s-title">{item.sectionTitle}</h2>
+            <ul className="rv-sym pr-points">
+              {item.points.map((point,i)=><li key={i} className="rv-sym-card">
+                <span className="rv-sym-idx" aria-hidden="true">0{i+1}</span>
+                <span className="rv-sym-icon pr-ok" aria-hidden="true"><CheckCircle2 className="w-5 h-5"/></span>
+                <p>{point}</p>
+              </li>)}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {page==='trayectoria'&&<TrayectoriaCatalog/>}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-6">{item.outcomeTitle}</h2>
-        <p className="text-lg text-slate-700 leading-relaxed max-w-3xl mb-7">{item.outcome}</p>
-        <p className="border-l-4 border-rauvia-blue pl-5 text-sm text-slate-600 leading-relaxed max-w-3xl">{item.caveat}</p>
+
+      <section className="rv-s py-20 md:py-28 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="rv-s-eyebrow">Alcance y límites</span>
+          <h2 className="rv-s-title rv-s-title-md">{item.outcomeTitle}</h2>
+          <p className="rv-s-lead">{item.outcome}</p>
+          <div className="pr-caveat" role="note"><span className="pr-caveat-ico" aria-hidden="true"><Info className="w-5 h-5"/></span><p>{item.caveat}</p></div>
+        </div>
       </section>
-      <section className="bg-rauvia-navy py-14 md:py-20 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center gap-7 md:justify-between">
-          <div><h2 className="text-2xl md:text-3xl font-bold mb-3">Conversemos sobre tu situación.</h2><p className="text-slate-200 max-w-lg">Revisamos primero qué necesita entender tu cliente y cuál es el alcance adecuado.</p></div>
-          <WhatsAppCTA href={'https://wa.me/525586494076?text='+encodeURIComponent(item.contactText)} className="inline-flex items-center justify-center gap-2 rounded-lg bg-white text-rauvia-navy px-6 py-4 font-bold min-h-12 hover:bg-slate-100">Consultar con RAUVIA <ArrowRight size={18} aria-hidden="true"/></WhatsAppCTA>
+
+      <section className="rv-s py-16 md:py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="rv-s-eyebrow">Siguientes pasos</span>
+          <h2 className="rv-s-title">Sigue explorando</h2>
+          <nav aria-label="Recursos relacionados" className="rv-routes grid">
+            {item.related.map(r=><Link key={r.to} to={r.to} className="rv-route">
+              <span className="rv-route-t">{r.label}</span>
+              <span className="rv-route-go" aria-hidden="true"><ArrowRight className="w-4 h-4"/></span>
+            </Link>)}
+          </nav>
+        </div>
+      </section>
+
+      <section className="fx-dark lf-final py-20 md:py-28 bg-rauvia-navy text-white text-center">
+        <ConvergenceField flow="inward" className="fx-field" />
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">Conversemos sobre tu situación.</h2>
+          <p className="text-lg text-slate-300 mb-10 leading-relaxed">Revisamos primero qué necesita entender tu cliente y cuál es el alcance adecuado.</p>
+          <WhatsAppCTA href={'https://wa.me/525586494076?text='+encodeURIComponent(item.contactText)} className="pr-btn pr-btn-gold pr-btn-lg">Consultar con RAUVIA <ArrowRight size={18} aria-hidden="true"/></WhatsAppCTA>
         </div>
       </section>
     </article>

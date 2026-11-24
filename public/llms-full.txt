@@ -5,11 +5,21 @@ Este archivo es un resumen curado, no una copia completa del sitio ni de su base
 
 ## Organización
 
-RAUVIA es una firma mexicana de consultoría estratégica y desarrollo tecnológico que ayuda a PyMES y empresas B2B con valor real a identificar dónde están perdiendo oportunidades o capacidad y construir la estructura comercial, operativa o tecnológica necesaria para corregirlo.
+RAUVIA es una empresa mexicana que combina metodología, tecnología y trabajo especializado para ayudar a las empresas a resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas. Sus servicios digitales incluyen Frente Comercial y SEO para IA. Cuando la situación lo requiere, puede definir intervenciones empresariales más amplias, incluyendo consultoría especializada, según un alcance acordado.
 
 Nombre legal: RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO.
 Sitio: https://rauvia.com.mx/
 Fuente: https://rauvia.com.mx/nosotros/
+
+## Preguntas frecuentes sobre la identidad de RAUVIA
+
+Descripción institucional propia; no es certificación externa ni garantía de resultados.
+
+- ¿Qué es RAUVIA? Una empresa mexicana que combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas. Frente Comercial y SEO para IA son dos servicios digitales actuales. También puede definir intervenciones empresariales más amplias, incluida la consultoría, cuando la situación y el alcance acordado lo requieren.
+- ¿RAUVIA es una consultora? La consultoría y la asesoría especializada forman parte de sus capacidades. RAUVIA también diseña e implementa servicios y activos apoyados en tecnología; el alcance de cada trabajo se define según la necesidad.
+- ¿RAUVIA solo crea páginas web? No. Puede desarrollar activos digitales como parte de una solución y también trabajar en aspectos comerciales, operativos o tecnológicos. Frente Comercial y SEO para IA tienen sus propios alcances y exclusiones.
+- ¿RAUVIA interviene toda la empresa? Puede acordar intervenciones que involucren varias áreas cuando el problema lo requiere. Eso no significa que cada producto incluya una transformación integral: cada servicio y proyecto tiene su propio alcance.
+- ¿Los resultados están garantizados? No. Los entregables y criterios de revisión se acuerdan por servicio; los resultados comerciales y las respuestas de terceros dependen de factores que no controla RAUVIA.
 
 ## DOMAIN ARCHITECTURE
 
@@ -96,6 +106,7 @@ El catálogo histórico recuperado el 14 de octubre de 2026 contiene tres modali
 Fuente canónica: https://rauvia.com.mx/seo-ai/
 Auditoría GEO: https://rauvia.com.mx/seo-ai/auditoria/
 Implementación de SEO para IA: https://rauvia.com.mx/seo-ai/implementacion/
+Guía práctica (sin registro ni compra): https://rauvia.com.mx/recursos/seo-para-ia/
 Corregir información de tu empresa en IA: https://rauvia.com.mx/seo-ai/corregir-informacion-en-ia/
 SEO para catálogos de productos e IA: https://rauvia.com.mx/seo-ai/catalogos-para-ia/
 SEO para IA, cobertura y envíos: https://rauvia.com.mx/seo-ai/cobertura-y-envios/
@@ -103,18 +114,39 @@ SEO para IA para proveedores técnicos: https://rauvia.com.mx/seo-ai/proveedores
 
 RAUVIA prepara y verifica la información pública de una empresa para que sea accesible en búsqueda y útil como fuente en respuestas de IA. Son dos servicios distintos. La auditoría es un diagnóstico documentado, con evidencia por URL, una matriz de lo que las respuestas dicen u omiten sobre la oferta y un plan de corrección priorizado; no modifica el sitio y puede contratarse sola. La implementación es un programa de seis meses con cambios acordados cada mes y evidencia del antes y el después; no incluye rediseño, migración, producción masiva ni pauta.
 
+La guía de autoservicio «SEO, GEO y AEO en 2027» enseña a preparar y comprobar la información de una empresa por su cuenta: qué significan las siglas (se solapan; no son tres productos), un plan de cinco pasos por página, un ejemplo ficticio rotulado y cómo medir sin confundir visibilidad con ventas. No predice cómo funcionarán los productos en 2027 ni garantiza apariciones, citas, tráfico o ventas; la cifra de uso de chatbots que cita el hub (42 % de adultos de EE. UU., encuesta de Pew de febrero de 2026) no es una cifra de México.
+
 Precios publicados en esas páginas, antes de IVA: auditoría, $9,900 MXN en pago único; implementación, $29,900 MXN al mes durante 6 meses ($179,400 MXN en total, sin renovación automática en la propuesta). Alcance, condiciones de arranque, pausas, terminación y pago se confirman en la propuesta o contrato antes de contratar.
 
 Cuatro rutas por caso explican a quién sirve cada servicio: corregir lo que un asistente afirma de una empresa y catálogos de productos, y cobertura y envíos y proveedores técnicos. La primera se atiende con la auditoría ($9,900 MXN + IVA, pago único) y las otras tres con la implementación ($29,900 MXN + IVA al mes durante 6 meses). Cada una incluye un ejemplo ficticio rotulado.
 
 RAUVIA no entrena modelos y no garantiza posiciones, menciones, citas, tráfico, leads ni ventas. Una mención en un asistente no demuestra una visita ni una venta. Los ejemplos de esas páginas son ficticios y no corresponden a clientes ni a resultados.
 
+## Precios publicados
+
+Catálogo estructurado: https://rauvia.com.mx/llmo/precios.json (revisado el 2026-11-23). Moneda MXN; precios publicados antes de IVA («+ IVA»). «Desde» es un precio mínimo de referencia, no el precio final. No constituyen una cotización vinculante: alcance, disponibilidad, condiciones y precio final se confirman con RAUVIA antes de contratar. Ningún precio garantiza ventas, leads, pacientes, citas, posiciones, menciones ni citas en asistentes de IA.
+
+- Frente Comercial (https://rauvia.com.mx/frente-comercial/): Esencial $6,900 MXN + IVA; Pro $9,900 MXN + IVA; Portafolio desde $13,900 MXN + IVA. Pago único por alcance, sin mensualidad obligatoria.
+- Presencia Médica RAUVIA, página médica gratuita (https://rauvia.com.mx/pagina-web-gratis-para-medicos/): $0 MXN de costo inicial, bajo dominio RAUVIA, alcance básico. No incluye dominio propio, diseño a medida, blog, SEO avanzado, estrategia de contenido, branding médico ni integraciones avanzadas.
+- Web Médica Personalizada (https://rauvia.com.mx/pagina-web-para-medicos/): desde $7,900 MXN + IVA. Depende de secciones, consultorios, contenido e integraciones.
+- Frente Comercial Médico (https://rauvia.com.mx/pagina-web-para-medicos/): desde $13,900 MXN + IVA. Alcance definido según la operación del consultorio.
+- Auditoría GEO (https://rauvia.com.mx/seo-ai/auditoria/): $9,900 MXN + IVA, pago único; una línea comercial, hasta 3 URLs y 6 preguntas de compra en 2 superficies de IA.
+- Implementación de SEO para IA (https://rauvia.com.mx/seo-ai/implementacion/): $29,900 MXN + IVA al mes durante 6 meses ($179,400 MXN + IVA en total), facturación mensual y sin renovación automática en la propuesta.
+- RAUVIA Trayectoria: tarifas históricas de referencia (planes de $0, $99 y $149 MXN al mes; cambios desde $149, $299, $549 y $1,290 MXN), pendientes de confirmación comercial; no son tarifario vigente. Ver https://rauvia.com.mx/llmo/trayectoria-catalogo.json.
+
+Sin precio publicado (no inferir ni estimar): página para médicos especialistas, consultorio médico (se cotiza según alcance), agenda y WhatsApp para médicos, página comercial para servicios profesionales, sitio web comercial para PyMEs, sitio web para servicios especializados, RAUVIAWEB, y las intervenciones de Soluciones, AETHRYON y Ruta 90. Los casos de /casos/ no son una oferta con precio; sus cifras de inversión son métricas del caso, no tarifas.
+
 ## Casos y recursos
 
 Casos: https://rauvia.com.mx/casos/
 Caso de infraestructura temporal B2B: https://rauvia.com.mx/casos/infraestructura-temporal-b2b/
+Caso de presencia y posicionamiento profesional: https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/
 Artículos: https://rauvia.com.mx/recursos/
 Inventario de URLs: https://rauvia.com.mx/sitemap.xml
+
+Infraestructura temporal B2B (empresa mexicana, sector infraestructura temporal B2B; octubre 2025 – actualidad; intervención en evolución). Fase 1, octubre 2025 – julio 2026: inversión registrada $38,345.94 MXN; 3,564 conversaciones iniciadas; costo promedio $10.76 MXN por conversación; 811,365 visualizaciones; 447,527 de alcance acumulado; 511 interacciones clasificadas (154 de catálogo o información y 25 conversaciones largas); benchmark interno 2.67 (03 oct 2025), 3.67 (31 dic 2025) y 4.00 (15 jul 2026), +1.33 puntos. Límites: las conversaciones no son oportunidades, clientes ni cierres; las categorías no son un funnel ni tasas de conversión; el benchmark no es crecimiento en ventas; no se publican oportunidades calificadas, cotizaciones, ganados/perdidos ni cierres. Fase 2 (julio 2026 – actualidad): trazabilidad comercial en construcción; el rediseño web tiene componentes implementados, en evolución y de siguiente fase (GEO/LLMO).
+
+Presencia y posicionamiento profesional (RAUVIAWEB; capacidad activa). Explica cómo se organizan trayectoria, especialidad y contacto de un profesionista y enlaza seis implementaciones de referencia (Erika Morales, Allison García Urrutia, Mónica García Urrutia, Consultorio Médico GALENUS, Antonio Colyn y Acacia). No publica métricas ni periodo de medición; la evidencia de descubrimiento, contactos y oportunidades está en construcción. Una referencia ilustra la capacidad y no demuestra resultados.
 
 Los resultados de un caso corresponden a su contexto y periodo. Los índices internos comparativos no equivalen a crecimiento en ventas. Las capacidades en construcción no deben interpretarse como resultados terminados. Para cifras y estado de intervención, consultar la página original; este resumen no establece nuevas métricas ni garantías.
 
@@ -135,5 +167,5 @@ Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
 Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
 
 - [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
-- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 18 familias con condiciones y límites.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 19 familias con condiciones y límites.
 - [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.
