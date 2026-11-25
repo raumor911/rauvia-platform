@@ -784,7 +784,7 @@
     {
       "id": "asset:seo-local-medicos",
       "type": "Asset",
-      "label": "SEO local para médicos | RAUVIA",
+      "label": "SEO local para médicos | Revisa tu presencia local | RAUVIA",
       "description": "Página existente que explica seo local medicos; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica seo local medicos; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -8252,9 +8252,9 @@
     {
       "id": "source:seo-local-medicos",
       "type": "Source",
-      "label": "Publicación institucional: SEO local para médicos | RAUVIA",
-      "description": "Referencia editorial pública de SEO local para médicos | RAUVIA; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de SEO local para médicos | RAUVIA; no constituye validación independiente.",
+      "label": "Publicación institucional: SEO local para médicos | Revisa tu presencia local | RAUVIA",
+      "description": "Referencia editorial pública de SEO local para médicos | Revisa tu presencia local | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de SEO local para médicos | Revisa tu presencia local | RAUVIA; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
