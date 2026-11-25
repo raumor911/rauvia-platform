@@ -1199,7 +1199,7 @@ export const routeSeo = {
   },
   "/pagina-web-para-consultorio-medico": {
     "title": "Página web para consultorio médico | RAUVIA",
-    "description": "Crea una página web para tu consultorio médico con ubicación, horarios, profesionales, especialidades, contacto, agenda y estructura SEO/GEO.",
+    "description": "Página web para consultorios médicos: organiza profesionales, especialidades, sedes, horarios y contacto. Agenda según el alcance acordado.",
     "canonical": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
     "ogTitle": "Página web para consultorio médico | RAUVIA",
     "ogDescription": "Organiza la presencia digital de tu consultorio con información clara sobre ubicación, especialistas, horarios y formas de contacto.",
@@ -1213,7 +1213,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
         "url": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/",
         "name": "Página web para consultorio médico | RAUVIA",
-        "description": "Crea una página web para tu consultorio médico con ubicación, horarios, profesionales, especialidades, contacto, agenda y estructura SEO/GEO.",
+        "description": "Página web para consultorios médicos: organiza profesionales, especialidades, sedes, horarios y contacto. Agenda según el alcance acordado.",
         "inLanguage": "es-MX",
         "about": {
           "@id": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/#servicio"
@@ -1227,7 +1227,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/pagina-web-para-consultorio-medico/#servicio",
         "name": "Página web para consultorio médico",
         "serviceType": "Diseño y desarrollo de presencia digital para consultorios",
-        "description": "Crea una página web para tu consultorio médico con ubicación, horarios, profesionales, especialidades, contacto, agenda y estructura SEO/GEO.",
+        "description": "Página web para consultorios médicos: organiza profesionales, especialidades, sedes, horarios y contacto. Agenda según el alcance acordado.",
         "provider": {
           "@id": "https://rauvia.com.mx/#organization"
         }
@@ -1271,7 +1271,7 @@ export const routeSeo = {
             "name": "¿Qué debe incluir una página web para un consultorio médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "El nombre del consultorio, ubicación, horarios, profesionales, especialidades y una forma clara de contacto. Según el alcance, puede incorporar perfiles, solicitud de cita, mapas, preguntas frecuentes e información práctica antes de asistir."
+              "text": "Como base, puede presentar nombre, ubicación, horarios, profesionales, especialidades y contacto. Según el alcance, también puede incluir perfiles, mapas, preguntas frecuentes y una vía para solicitar una cita."
             }
           },
           {
@@ -1279,7 +1279,7 @@ export const routeSeo = {
             "name": "¿Puedo mostrar varios médicos en la misma página?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Se puede organizar el equipo del consultorio y presentar un perfil para cada profesional, con información proporcionada y validada por sus responsables."
+              "text": "Sí. El sitio puede presentar al equipo y una ficha por profesional, con información proporcionada y validada por cada responsable."
             }
           },
           {
@@ -1287,7 +1287,7 @@ export const routeSeo = {
             "name": "¿Puedo incluir diferentes especialidades?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Cada área de atención puede relacionarse con los profesionales que la ofrecen, sus horarios, información relevante y canales de contacto."
+              "text": "Sí. Cada área de atención puede relacionarse con los profesionales que la ofrecen, sus sedes, horarios y canales de contacto."
             }
           },
           {
@@ -1295,7 +1295,7 @@ export const routeSeo = {
             "name": "¿Puedo tener más de una ubicación?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. La arquitectura puede contemplar varias sedes, cada una con dirección, mapa, horarios, profesionales y formas de contacto."
+              "text": "Sí. Se pueden organizar varias sedes con su dirección, mapa, horarios, profesionales y contacto correspondientes, según el alcance acordado."
             }
           },
           {
@@ -1303,7 +1303,7 @@ export const routeSeo = {
             "name": "¿La página puede mostrar horarios diferentes para cada médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Podemos distinguir el horario general del consultorio de los horarios de cada profesional. El equipo responsable debe mantener esa información actualizada."
+              "text": "Sí. Puede distinguir el horario general del consultorio del horario de cada profesional. El equipo responsable deberá revisar y actualizar los datos."
             }
           },
           {
@@ -1311,7 +1311,7 @@ export const routeSeo = {
             "name": "¿Puedo incluir una agenda de citas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí, según el alcance. Puede ser una solicitud de cita o una integración con una herramienta de agenda. La disponibilidad, confirmación y gestión de cambios se definen con el consultorio."
+              "text": "Sí, según el alcance: puede ser una solicitud de cita o una integración de agenda. Solicitar no equivale a confirmar; el consultorio define quién revisa la disponibilidad, da seguimiento y comunica confirmaciones o cambios."
             }
           },
           {
@@ -1319,15 +1319,15 @@ export const routeSeo = {
             "name": "¿Puedo agregar teléfono y mensajería?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Se pueden incluir teléfono, mensajería y formulario, según los canales de atención del consultorio, con indicaciones claras para el primer contacto."
+              "text": "Sí. Pueden incluirse teléfono, mensajería o formulario según los canales y el alcance acordados. Para el primer contacto, evita solicitar datos clínicos o información de pacientes."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Una página de consultorio ayuda al SEO local?",
+            "name": "¿La página ayuda al SEO local y a que la IA entienda mi consultorio?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puede aportar una base para organizar la relación entre consultorio, especialidades, profesionales y ubicación. El posicionamiento depende de varios factores y no se garantizan posiciones específicas."
+              "text": "Puede organizar información sobre profesionales, especialidades, sedes y contacto para ponerla a disposición de buscadores y sistemas de IA. Eso no garantiza posiciones, menciones ni pacientes. Una auditoría SEO para IA es un servicio independiente y no está incluida automáticamente."
             }
           },
           {
@@ -1335,7 +1335,7 @@ export const routeSeo = {
             "name": "¿Qué diferencia existe entre una página para médico y una página para consultorio?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La página para médico se centra en su perfil y práctica individual. La página para consultorio reúne información del lugar, equipo, especialidades, horarios y sedes, y puede enlazar los perfiles de quienes atienden allí."
+              "text": "La primera se centra en un profesional y su práctica individual. La segunda reúne información del lugar, el equipo, las especialidades y las sedes, y puede enlazar perfiles profesionales."
             }
           },
           {
@@ -1343,7 +1343,7 @@ export const routeSeo = {
             "name": "¿Cuánto cuesta una página web para un consultorio médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del alcance: número de profesionales, especialidades, sedes, contenido e integraciones. Los proyectos se cotizan según alcance. Cuéntanos cómo funciona tu consultorio para identificar qué necesita su página."
+              "text": "Se cotiza según el alcance: número de profesionales, especialidades y sedes, contenido e integraciones. No se presenta un precio fijo aquí. Cuéntanos cómo funciona tu consultorio para definir una propuesta; no envíes datos clínicos ni información de pacientes."
             }
           }
         ]
