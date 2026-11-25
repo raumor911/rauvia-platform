@@ -36,8 +36,6 @@
 .cons-landing .cons-entity-center > svg { position: relative; box-sizing: content-box; padding: 14px; border-radius: 50%; color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); box-shadow: 0 0 0 6px rgba(255,215,102,.12); }
 .cons-landing .hub-feature-grid article > svg { color: var(--cp-gold-d); transition: transform .4s var(--cp-ease); }
 .cons-landing .hub-feature-grid article:hover > svg { transform: scale(1.15); }
-.cons-landing .cons-entity .hub-feature-grid article { position: relative; }
-.cons-landing .cons-entity .hub-feature-grid article::before { content: ""; position: absolute; left: 50%; top: -13px; width: 1px; height: 13px; background: linear-gradient(180deg, transparent, rgba(230,163,0,.6)); }
 
 /* ── 04 · Profesionales (sección oscura): legibilidad y acabado ── */
 .cons-landing .cons-professionals article { position: relative; overflow: hidden; transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
@@ -69,6 +67,9 @@
 .cons-landing .cons-location-example::before { content: ""; position: absolute; right: 34px; top: 30px; width: 12px; height: 12px; border-radius: 50%; background: var(--cp-gold); box-shadow: 0 0 0 4px rgba(230,163,0,.2); }
 .cons-landing .cons-location-example::after { content: ""; position: absolute; right: 34px; top: 30px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--cp-gold); opacity: 0; }
 .cons-landing .cons-location-example h3 { font-family: var(--cp-serif); font-weight: 500; }
+/* la etiqueta nunca pasa por debajo del pin */
+.lf-page.cons-landing .cons-location-example > .med-eyebrow { max-width: calc(100% - 44px); }
+@media (max-width: 540px) { .cons-landing .cons-location-example::before, .cons-landing .cons-location-example::after { right: 22px; top: 27px; } }
 .cons-landing .cons-location-example > div > article + article { border-left: 1px solid #e3eaee; padding-left: 30px; }
 @media (max-width: 900px) { .cons-landing .cons-location-example > div > article + article { border-left: 0; padding-left: 0; border-top: 1px solid #e3eaee; padding-top: 22px; } }
 
@@ -78,6 +79,8 @@
 .cons-landing .cons-contact-grid article:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.55); box-shadow: 0 20px 34px -24px rgba(10,37,64,.45); }
 .cons-landing .cons-contact-grid article:hover > svg { color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); transform: scale(1.08); }
 .cons-landing .cons-contact-grid article.fr-rv:not(.fr-in) { border-color: #e5ecef; }
+@media (max-width: 1100px) and (min-width: 541px) { .cons-landing .cons-contact-grid article:nth-child(4) { grid-column: 1 / span 1; } }
+@media (max-width: 540px) { .cons-landing .cons-contact-grid article:last-child { grid-column: 1 / -1; } }
 
 /* ── 08 · Sedes: numeración serif y ruta que las une ── */
 .cons-landing .cons-branches article { position: relative; background: linear-gradient(180deg, #fff, #f7fafb); transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
@@ -89,14 +92,16 @@
 .cons-landing .cons-branches article:hover { transform: translateY(-5px); border-color: rgba(230,163,0,.5); box-shadow: 0 26px 44px -30px rgba(10,37,64,.45); }
 @media (max-width: 900px) { .cons-landing .cons-branches article:not(:last-child)::after { display: none; } }
 
-/* ── 11 · Relaciones: flechas doradas ── */
+/* ── 11 · Relaciones: flechas doradas y numeración serif ── */
+.cons-landing .cons-relations li { justify-content: flex-start; padding-top: 24px; }
+.cons-landing .cons-relations li > span { font-family: var(--cp-serif); font-style: italic; font-size: .95rem; letter-spacing: .04em; }
 .cons-landing .cons-relations li:not(:last-child)::after { color: var(--cp-gold-d); background: transparent; }
 .cons-landing .hub-seo-grid article > svg { box-sizing: content-box; padding: 11px; border-radius: 50%; color: var(--cp-gold-d); background: #fbf3df; border: 1px solid rgba(230,163,0,.3); }
 .cons-landing .hub-seo-grid h3 { font-family: var(--cp-serif); font-weight: 500; }
 
 /* ── 12 · Tipos de práctica ── */
 .cons-landing .hub-audience-grid article { transition: transform .4s var(--cp-ease), border-color .4s, box-shadow .4s; }
-.cons-landing .hub-audience-grid article span { font-family: var(--cp-serif); font-style: italic; color: var(--cp-gold-d); }
+.cons-landing .hub-audience-grid article span { font-family: var(--cp-serif); font-style: italic; font-size: .95rem; line-height: 1.9; color: var(--cp-gold-d); }
 .cons-landing .hub-audience-grid article:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.5); box-shadow: 0 22px 38px -28px rgba(10,37,64,.45); }
 
 /* ── 14 · Franja de Frente Comercial ── */
