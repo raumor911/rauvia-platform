@@ -1048,8 +1048,8 @@ export const routeSeo = {
     "imageAlt": "Concepto de SEO local para médicos con búsqueda, mapa, ubicación del consultorio y sitio médico."
   },
   "/pagina-web-para-medicos": {
-    "title": "Página web para médicos | Presencia profesional | RAUVIA",
-    "description": "Página web para médicos con perfil profesional, especialidad, ubicación, WhatsApp, agenda y estructura SEO/GEO. Construye una presencia médica clara con RAUVIA.",
+    "title": "Página web para médicos | Presenta tu práctica | RAUVIA",
+    "description": "Crea o actualiza tu página web para médicos. Presenta tu especialidad, ubicación y contacto, o revisa la ruta para mejorar el posicionamiento de un sitio existente.",
     "canonical": "https://rauvia.com.mx/pagina-web-para-medicos/",
     "ogTitle": "Página web para médicos | RAUVIA",
     "ogDescription": "Construye una presencia médica profesional que explique quién eres, qué atiendes, dónde te encuentras y cómo pueden contactarte.",
@@ -1062,8 +1062,8 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/pagina-web-para-medicos/",
         "url": "https://rauvia.com.mx/pagina-web-para-medicos/",
-        "name": "Página web para médicos | Presencia profesional | RAUVIA",
-        "description": "Página web para médicos con perfil profesional, especialidad, ubicación, WhatsApp, agenda y estructura SEO/GEO. Construye una presencia médica clara con RAUVIA.",
+        "name": "Página web para médicos | Presenta tu práctica | RAUVIA",
+        "description": "Crea o actualiza tu página web para médicos. Presenta tu especialidad, ubicación y contacto, o revisa la ruta para mejorar el posicionamiento de un sitio existente.",
         "inLanguage": "es-MX",
         "about": {
           "@id": "https://rauvia.com.mx/pagina-web-para-medicos/#servicio"
@@ -1077,7 +1077,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/pagina-web-para-medicos/#servicio",
         "name": "Página web para médicos",
         "serviceType": "Diseño y desarrollo de presencia digital profesional",
-        "description": "Página web para médicos con perfil profesional, especialidad, ubicación, WhatsApp, agenda y estructura SEO/GEO. Construye una presencia médica clara con RAUVIA.",
+        "description": "Crea o actualiza tu página web para médicos. Presenta tu especialidad, ubicación y contacto, o revisa la ruta para mejorar el posicionamiento de un sitio existente.",
         "provider": {
           "@id": "https://rauvia.com.mx/#organization"
         }
@@ -1115,15 +1115,15 @@ export const routeSeo = {
             "name": "¿Qué debe tener una página web para un médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Una presentación profesional clara, especialidad y áreas de atención, ubicación, horarios y formas de contacto. Según tu práctica, puede sumar trayectoria, solicitud de cita, preguntas frecuentes e información útil antes de una consulta."
+              "text": "Debe presentar al profesional, su especialidad, ubicación y forma de contacto. Según la práctica, puede incluir trayectoria validada, horarios, preguntas frecuentes y una vía para solicitar cita."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Necesito una página si ya aparezco en directorios médicos?",
+            "name": "¿Necesito una página si ya aparezco en Google Maps o en un directorio?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Los directorios pueden ayudar al descubrimiento. Una página propia puede complementar esos perfiles y reunir tu información profesional, consultorios y formas de contacto en un lugar que puedas compartir y organizar según tu práctica."
+              "text": "Depende de tu necesidad. Esos perfiles pueden ayudar a que las personas te encuentren; una página propia puede reunir la información profesional que validas y explicar cómo contactar contigo. No es obligatorio crear una si la presencia actual ya cumple tu objetivo."
             }
           },
           {
@@ -1131,23 +1131,23 @@ export const routeSeo = {
             "name": "¿Puedo incluir WhatsApp en mi página?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Podemos incluir un botón visible de WhatsApp con una ruta clara para solicitar información o una cita. El número y los horarios de atención se definen contigo."
+              "text": "Sí, si WhatsApp forma parte de tus canales de atención. El número y la forma de contacto se confirman contigo; el botón no implica respuestas automáticas ni una agenda conectada."
             }
           },
           {
             "@type": "Question",
-            "name": "¿La página puede incluir una agenda de citas?",
+            "name": "¿La página puede incluir agenda de citas?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí, según el alcance del proyecto. Puede ser una solicitud de cita o la integración de una herramienta de agenda. La disponibilidad y el proceso de confirmación se acuerdan con el profesional."
+              "text": "Puede incluir una vía de solicitud o una integración acordada para el proyecto. La disponibilidad y la confirmación dependen del proceso real de la práctica y de la herramienta instalada."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Puedo mostrar diferentes consultorios?",
+            "name": "¿Puedo presentar diferentes consultorios o sedes?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Se pueden organizar las ubicaciones, horarios, referencias y canales de contacto de cada consultorio para que el visitante identifique dónde y cómo solicitar una cita."
+              "text": "Sí, si la información de cada ubicación, sus horarios y canales está confirmada. Para varios profesionales o sedes, revisamos si corresponde la página para consultorio médico."
             }
           },
           {
@@ -1155,7 +1155,7 @@ export const routeSeo = {
             "name": "¿Puedo explicar mi especialidad y trayectoria?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Podemos estructurar tu formación, trayectoria, áreas de atención y enfoque profesional con información proporcionada y validada por ti."
+              "text": "Sí. RAUVIA puede organizar el contenido que proporciones; tú validas la exactitud de la especialidad, formación, trayectoria y demás afirmaciones antes de publicar."
             }
           },
           {
@@ -1163,7 +1163,7 @@ export const routeSeo = {
             "name": "¿Una página web ayuda al SEO local?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puede aportar una base clara para relacionar tu práctica, especialidad y ubicación. Su efecto depende también de la consistencia de tus datos, competencia, contenido y otros factores; no garantiza posiciones específicas."
+              "text": "Puede aportar una base clara para relacionar tu práctica, especialidad, ubicación y contacto. El posicionamiento depende de distintos factores y no se garantiza. Si ya tienes sitio y buscas revisar esta necesidad, consulta la ruta de SEO local para médicos."
             }
           },
           {
@@ -1171,7 +1171,7 @@ export const routeSeo = {
             "name": "¿Qué diferencia hay entre la página gratuita y una página personalizada?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "La opción gratuita permite construir una primera presencia bajo dominio RAUVIA con el alcance de su plan básico. Una página personalizada adapta la presentación, secciones e integraciones a tu práctica y puede contemplar dominio propio, según lo acordado."
+              "text": "La opción gratuita tiene el alcance básico publicado bajo dominio RAUVIA. La opción personalizada define diseño, secciones y funciones de acuerdo con la práctica. Revisa las condiciones vigentes de cada opción antes de solicitarla."
             }
           },
           {
@@ -1179,7 +1179,7 @@ export const routeSeo = {
             "name": "¿Qué es el Frente Comercial Médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Es un alcance más completo que puede integrar presencia web, contacto, agenda, contenido, estructura SEO/GEO y medición. Los componentes se definen según las necesidades del médico o consultorio."
+              "text": "Es un alcance que puede integrar presencia web, contenido, contacto y medición según la necesidad de un profesional o consultorio. Los componentes se definen para cada proyecto; no implica resultados garantizados."
             }
           },
           {
@@ -1187,7 +1187,7 @@ export const routeSeo = {
             "name": "¿Cuánto cuesta una página web para médicos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del alcance: personalización, número de secciones, consultorios, contenido e integraciones. Existe una opción gratuita con alcance básico; la web personalizada parte desde $7,900 MXN + IVA y el Frente Comercial Médico desde $13,900 MXN + IVA, según alcance. Contáctanos para identificar la alternativa adecuada."
+              "text": "La página pública presenta una opción gratuita, una página personalizada desde $7,900 MXN + IVA y Frente Comercial Médico desde $13,900 MXN + IVA. El alcance y las condiciones deben confirmarse antes de cotizar; una agenda, integración o proyecto adicional puede cambiar la propuesta."
             }
           }
         ]

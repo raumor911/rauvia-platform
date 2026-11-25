@@ -1,0 +1,91 @@
+/* /pagina-web-para-medicos/: acabado alineado con /pagina-web-para-consultorio-medico/.
+   Solo presentación; se carga después de PaginaWebMedicosPremium.css. Sin JS o con movimiento
+   reducido todo queda visible y estático. */
+.med-hub { --mh-ease: cubic-bezier(.2,.8,.2,1); --mh-gold: #E6A300; --mh-gold-l: #FFD766; --mh-gold-d: #B7791F; --mh-navy: #0a2540; --mh-serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif; }
+
+/* ── Necesidad y contexto: título editorial y filo dorado ── */
+.med-hub .hub-intro { row-gap: 22px; }
+.med-hub .hub-intro-title { grid-column: 1 / -1; margin: 0; font-family: var(--mh-serif); font-weight: 500; font-size: clamp(1.5rem, 2.2vw, 2rem); line-height: 1.2; letter-spacing: -.01em; color: var(--mh-navy); }
+.med-hub .hub-intro p:first-of-type { position: relative; padding-left: 1.4rem; font-family: var(--mh-serif); font-size: 1.08rem; line-height: 1.75; color: #1e3a52; }
+.med-hub .hub-intro p:first-of-type::before { content: ""; position: absolute; left: 0; top: .35em; bottom: .35em; width: 2px; background: linear-gradient(180deg, var(--mh-gold-l), var(--mh-gold), transparent); }
+.med-hub .hub-intro p:first-of-type strong { font-weight: 600; color: var(--mh-navy); }
+
+/* ── Sellos dorados para los íconos de tarjetas ── */
+.med-hub :is(.hub-question-grid .med-card, .hub-seo-grid article) > svg { box-sizing: content-box; padding: 12px; border-radius: 50%; color: var(--mh-gold-d); background: radial-gradient(circle at 30% 30%, #fff, #fbf3df); border: 1px solid rgba(230,163,0,.35); transition: transform .5s var(--mh-ease), background .4s, color .4s; }
+.med-hub :is(.hub-question-grid .med-card, .hub-seo-grid article):hover > svg { transform: rotate(-8deg) scale(1.08); color: var(--mh-navy); background: linear-gradient(135deg, var(--mh-gold-l), var(--mh-gold)); }
+.med-hub .hub-seo-grid h3 { font-family: var(--mh-serif); font-weight: 500; }
+.med-hub .hub-solution-top > svg { box-sizing: content-box; padding: 12px; border-radius: 14px; color: var(--mh-navy); background: linear-gradient(135deg, var(--mh-gold-l), var(--mh-gold)); box-shadow: 0 12px 24px -12px rgba(230,163,0,.7); transition: transform .5s var(--mh-ease); }
+.med-hub .hub-solution-grid article:hover .hub-solution-top > svg { transform: rotate(-6deg) scale(1.06); }
+.med-hub .hub-solution-top > span { font-family: var(--mh-serif); font-style: italic; font-size: 1.3rem; color: var(--mh-gold-d); }
+
+/* ── Componentes: íconos dorados que crecen ── */
+.med-hub .hub-feature-grid article > svg { color: var(--mh-gold-d); transition: transform .4s var(--mh-ease); }
+.med-hub .hub-feature-grid article:hover > svg { transform: scale(1.15); }
+
+/* ── Para quién: numeración serif ── */
+.med-hub .hub-audience-grid article { transition: transform .4s var(--mh-ease), border-color .4s, box-shadow .4s; }
+.med-hub .hub-audience-grid article span { font-family: var(--mh-serif); font-style: italic; color: var(--mh-gold-d); }
+.med-hub .hub-audience-grid article:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.5); box-shadow: 0 22px 38px -28px rgba(10,37,64,.45); }
+
+/* ── Teléfono (sección oscura): lista legible ── */
+.med-hub .hub-mobile-list li svg { color: var(--mh-gold-l); }
+
+/* ── Responsabilidades: panel con sello ── */
+.med-hub .hub-boundaries > div:last-child { position: relative; padding: 32px 34px; border: 1px solid rgba(255,215,102,.4); border-radius: 18px; color: #fff; background-color: var(--mh-navy); background-image: radial-gradient(80% 90% at 0% 0%, rgba(47,106,163,.6), transparent 70%), radial-gradient(50% 60% at 100% 100%, rgba(230,163,0,.18), transparent 70%); box-shadow: 0 40px 70px -44px rgba(5,19,32,.9); overflow: hidden; }
+.med-hub .hub-boundaries > div:last-child > svg { box-sizing: content-box; padding: 12px; border-radius: 50%; color: var(--mh-navy); background: linear-gradient(135deg, var(--mh-gold-l), var(--mh-gold)); }
+.med-hub .hub-boundaries h3 { font-family: var(--mh-serif); font-weight: 500; color: #fff; }
+.med-hub .hub-boundaries > div:last-child li { color: #dbe6f1; }
+.med-hub .hub-boundaries > div:last-child li::marker { color: var(--mh-gold-l); }
+.med-hub .hub-boundaries-note { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.14); font-size: 13px; line-height: 1.7; color: #c3d3e5; }
+
+/* ── Figuras en secciones claras ── */
+.med-hub .med-section:not(.hub-showcase):not(.hub-mobile-section) .hub-figure > a { box-shadow: 0 40px 80px -56px rgba(10,37,64,.55); transition: box-shadow .5s var(--mh-ease), transform .5s var(--mh-ease), border-color .5s; }
+.med-hub .med-section:not(.hub-showcase):not(.hub-mobile-section) .hub-figure > a:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.45); box-shadow: 0 0 0 6px rgba(230,163,0,.08), 0 50px 90px -50px rgba(10,37,64,.6); }
+
+/* ── Enlaces y preguntas frecuentes ── */
+.med-hub .hub-context-link { margin-top: 18px; }
+.med-hub .med-text-link svg { transition: transform .3s var(--mh-ease); }
+.med-hub .med-text-link:hover svg { transform: translateX(5px); }
+.med-hub .hub-closing a { color: #176b72; text-decoration: underline; text-underline-offset: 4px; }
+.med-hub .med-faq details { transition: background .3s, border-color .3s; border-radius: 4px; }
+.med-hub .med-faq summary svg { color: var(--mh-gold-d); }
+.med-hub .med-faq summary:hover { color: var(--mh-navy); }
+.med-hub .med-faq details[open] { background: linear-gradient(90deg, rgba(230,163,0,.06), transparent 70%); }
+.med-hub .med-faq details[open] :is(summary, p) { padding-left: 16px; }
+
+/* ── Pulido de alineación y ritmo ── */
+/* introducción: el segundo párrafo con el mismo cuerpo y arranque que el primero */
+.med-hub .hub-intro p:last-of-type { padding-top: .15em; font-size: 1rem; line-height: 1.8; color: #4a6071; }
+/* recorrido: número arriba y texto alineado aunque una tarjeta ocupe dos líneas */
+.med-hub .hub-flow li { justify-content: flex-start; padding-top: 24px; }
+.med-hub .hub-flow li > span { font-family: var(--mh-serif); font-style: italic; font-size: .95rem; letter-spacing: .04em; }
+.med-hub .hub-flow svg { color: var(--mh-gold-d); background: #f4f7f9; }
+@media (max-width: 540px) { .med-hub .hub-flow li { padding-top: 18px; align-items: center; } }
+/* comparativo: texto de apoyo legible sobre la tarjeta oscura */
+.lf-page.med-hub .hub-comparison article:last-child p { color: #c3d3e5; }
+/* niveles: título, texto, divisoria, precio y lista a la misma altura en las tres tarjetas */
+.lf-page.med-hub .hub-level-desc { min-height: calc(1.6em * 4); }
+.lf-page.med-hub .hub-level-price { display: flex; align-items: baseline; flex-wrap: wrap; align-content: flex-end; column-gap: .5rem; min-height: 6.1rem; }
+.lf-page.med-hub .hub-level-price small { flex-basis: 100%; }
+.lf-page.med-hub .hub-level-price span { margin-left: 0; }
+.lf-page.med-hub .hub-level-note { min-height: 2.5em; }
+@media (max-width: 900px) { .lf-page.med-hub :is(.hub-level-desc, .hub-level-price, .hub-level-note) { min-height: 0; } }
+/* figuras con marco en secciones oscuras: el pie no toca el borde */
+.med-hub :is(.hub-showcase, .hub-mobile-section) .hub-figure figcaption { padding: 0 16px 14px; }
+/* «RAUVIA no garantiza»: viñetas doradas */
+.med-hub .hub-boundaries > div:last-child ul { list-style: none; padding-left: 0; }
+.med-hub .hub-boundaries > div:last-child li { position: relative; padding-left: 20px; }
+.med-hub .hub-boundaries > div:last-child li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 2px; border-radius: 2px; background: var(--mh-gold-l); }
+/* «Para quién»: número legible y alineado con la primera línea */
+.med-hub .hub-audience-grid article span { font-size: .95rem; line-height: 1.9; }
+
+/* ── Movimiento ── */
+@media (prefers-reduced-motion: no-preference) {
+  .med-hub .hub-boundaries > div:last-child > svg { animation: mhHalo 3.2s ease-in-out infinite; }
+  .med-hub .hub-boundaries > div:last-child::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.1) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; animation: mhSheen 8s ease-in-out 2s infinite; }
+  .med-hub .med-faq details[open] p { animation: mhReveal .45s var(--mh-ease) both; }
+  .med-hub .hub-feature-grid article { transition: opacity .6s, transform .7s var(--mh-ease); }
+}
+@keyframes mhSheen { 0%, 60% { background-position: 160% 0; } 100% { background-position: -60% 0; } }
+@keyframes mhHalo { 0%, 100% { box-shadow: 0 0 0 6px rgba(255,215,102,.12), 0 0 0 0 rgba(255,215,102,.35); } 50% { box-shadow: 0 0 0 6px rgba(255,215,102,.18), 0 0 0 16px rgba(255,215,102,0); } }
+@keyframes mhReveal { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }

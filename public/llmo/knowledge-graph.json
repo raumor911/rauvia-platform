@@ -363,7 +363,7 @@
     {
       "id": "asset:pagina-web-medicos",
       "type": "Asset",
-      "label": "Página web para médicos | Presencia profesional | RAUVIA",
+      "label": "Página web para médicos | Presenta tu práctica | RAUVIA",
       "description": "Página existente que explica pagina web medicos; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica pagina web medicos; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -6537,9 +6537,9 @@
     {
       "id": "source:pagina-web-medicos",
       "type": "Source",
-      "label": "Publicación institucional: Página web para médicos | Presencia profesional | RAUVIA",
-      "description": "Referencia editorial pública de Página web para médicos | Presencia profesional | RAUVIA; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de Página web para médicos | Presencia profesional | RAUVIA; no constituye validación independiente.",
+      "label": "Publicación institucional: Página web para médicos | Presenta tu práctica | RAUVIA",
+      "description": "Referencia editorial pública de Página web para médicos | Presenta tu práctica | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Página web para médicos | Presenta tu práctica | RAUVIA; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
