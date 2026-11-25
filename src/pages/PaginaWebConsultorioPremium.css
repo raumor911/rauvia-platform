@@ -1,0 +1,140 @@
+/* /pagina-web-para-consultorio-medico/: capa premium propia de los bloques cons-*.
+   Solo presentación: no cambia textos, orden, imágenes ni destinos. Se carga después de
+   PaginaWebMedicosPremium.css y PaginaWebConsultorioMedicoPage.css. Sin JS o con movimiento
+   reducido todo queda visible y estático (las clases fr-rv/fr-in las pone useFrenteMotion). */
+.cons-landing { --cp-ease: cubic-bezier(.2,.8,.2,1); --cp-gold: #E6A300; --cp-gold-l: #FFD766; --cp-gold-d: #B7791F; --cp-navy: #0a2540; --cp-serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif; }
+
+/* ── Introducción: voz editorial con filo dorado ── */
+.cons-landing .hub-intro p:first-child { position: relative; padding-left: 1.4rem; font-family: var(--cp-serif); font-size: 1.12rem; line-height: 1.7; color: #1e3a52; }
+.cons-landing .hub-intro p:first-child::before { content: ""; position: absolute; left: 0; top: .35em; bottom: .35em; width: 2px; background: linear-gradient(180deg, var(--cp-gold-l), var(--cp-gold), transparent); }
+.cons-landing .hub-intro p:first-child strong { font-weight: 600; color: var(--cp-navy); }
+
+/* ── 01 · Siete preguntas antes de contactar ── */
+.cons-landing .cons-problem-grid article { position: relative; overflow: hidden; background: linear-gradient(180deg, #fff, #f7fafb); transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
+.cons-landing .cons-problem-grid article span { font-family: var(--cp-serif); font-style: italic; font-size: 1.5rem; line-height: 1; letter-spacing: .02em; color: var(--cp-gold-d); }
+.cons-landing .cons-problem-grid article::after { content: ""; position: absolute; left: 25px; right: 25px; bottom: 0; height: 2px; background: linear-gradient(90deg, var(--cp-gold), var(--cp-gold-l), transparent); transform: scaleX(0); transform-origin: left; transition: transform .6s var(--cp-ease); }
+.cons-landing .cons-problem-grid article:hover { transform: translateY(-5px); border-color: rgba(230,163,0,.45); box-shadow: 0 26px 44px -30px rgba(10,37,64,.45); }
+.cons-landing .cons-problem-grid article:hover::after { transform: scaleX(1); }
+/* la séptima pregunta cierra la fila en lugar de dejar un hueco */
+.cons-landing .cons-problem-grid article:last-child { grid-column: span 2; color: #fff; border-color: rgba(255,215,102,.35); background-color: var(--cp-navy); background-image: radial-gradient(90% 120% at 0% 0%, rgba(47,106,163,.55), transparent 70%); }
+.cons-landing .cons-problem-grid article:last-child h3 { color: #fff; }
+.cons-landing .cons-problem-grid article:last-child span { color: var(--cp-gold-l); }
+@media (max-width: 1100px) { .cons-landing .cons-problem-grid article:last-child { grid-column: span 3; } }
+@media (max-width: 900px) { .cons-landing .cons-problem-grid article:last-child { grid-column: span 2; } }
+@media (max-width: 540px) { .cons-landing .cons-problem-grid article:last-child { grid-column: auto; } }
+.cons-landing .cons-emphasis { display: inline-block; position: relative; font-family: var(--cp-serif); font-style: italic; font-size: 1.35rem; color: var(--cp-navy); }
+.cons-landing .cons-emphasis::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: linear-gradient(90deg, var(--cp-gold), var(--cp-gold-l) 60%, transparent); }
+
+/* ── 02 · Preguntas que responde: icono en sello ── */
+.cons-landing .hub-question-grid .med-card > svg { box-sizing: content-box; padding: 12px; border-radius: 50%; color: var(--cp-gold-d); background: radial-gradient(circle at 30% 30%, #fff, #fbf3df); border: 1px solid rgba(230,163,0,.35); transition: transform .5s var(--cp-ease), background .4s, color .4s; }
+.cons-landing .hub-question-grid .med-card:hover > svg { transform: rotate(-8deg) scale(1.08); color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); }
+
+/* ── 03 · El consultorio como nodo central ── */
+.cons-landing .cons-entity-center { position: relative; overflow: hidden; color: #fff; border: 1px solid rgba(255,215,102,.4); background-color: var(--cp-navy); background-image: radial-gradient(60% 140% at 0% 50%, rgba(47,106,163,.6), transparent 70%), radial-gradient(40% 120% at 100% 50%, rgba(230,163,0,.18), transparent 70%); box-shadow: 0 40px 70px -44px rgba(5,19,32,.9), 0 0 60px -30px rgba(230,163,0,.5); }
+.cons-landing .cons-entity-center h3 { font-family: var(--cp-serif); font-weight: 500; color: #fff; }
+.cons-landing .cons-entity-center p { color: #c3d3e5; }
+.cons-landing .cons-entity-center > svg { position: relative; box-sizing: content-box; padding: 14px; border-radius: 50%; color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); box-shadow: 0 0 0 6px rgba(255,215,102,.12); }
+.cons-landing .hub-feature-grid article > svg { color: var(--cp-gold-d); transition: transform .4s var(--cp-ease); }
+.cons-landing .hub-feature-grid article:hover > svg { transform: scale(1.15); }
+.cons-landing .cons-entity .hub-feature-grid article { position: relative; }
+.cons-landing .cons-entity .hub-feature-grid article::before { content: ""; position: absolute; left: 50%; top: -13px; width: 1px; height: 13px; background: linear-gradient(180deg, transparent, rgba(230,163,0,.6)); }
+
+/* ── 04 · Profesionales (sección oscura): legibilidad y acabado ── */
+.cons-landing .cons-professionals article { position: relative; overflow: hidden; transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
+.cons-landing .cons-professionals article::before { content: ""; position: absolute; left: 30px; top: 0; width: 48px; height: 2px; background: linear-gradient(90deg, var(--cp-gold), var(--cp-gold-l)); transition: width .6s var(--cp-ease); }
+.cons-landing .cons-professionals article:hover { transform: translateY(-6px); border-color: rgba(255,215,102,.45); box-shadow: 0 36px 60px -36px rgba(0,0,0,.8), 0 0 50px -30px rgba(230,163,0,.5); }
+.cons-landing .cons-professionals article:hover::before { width: calc(100% - 60px); }
+.cons-landing .cons-professionals h3 { font-family: var(--cp-serif); font-weight: 500; }
+.cons-landing .hub-showcase .cons-specialty { color: var(--cp-gold-l); font-weight: 500; letter-spacing: .02em; }
+.cons-landing .hub-showcase .cons-schedule { color: #c3d3e5; padding: 12px 14px; border-radius: 10px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); }
+.cons-landing .hub-showcase .cons-schedule svg { color: var(--cp-gold-l); }
+.cons-landing .hub-showcase .cons-professionals details { border-top-color: rgba(255,255,255,.12); }
+.cons-landing .hub-showcase .cons-professionals summary { color: var(--cp-gold-l); }
+.cons-landing .hub-showcase .cons-professionals details p { color: #c3d3e5; }
+
+/* ── 05 · Áreas de atención ── */
+.cons-landing .cons-specialties article { position: relative; overflow: hidden; background: linear-gradient(180deg, #fff, #f6f9fa); transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
+.cons-landing .cons-specialties article > svg { box-sizing: content-box; padding: 13px; border-radius: 16px; color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); box-shadow: 0 12px 24px -12px rgba(230,163,0,.7); transition: transform .5s var(--cp-ease); }
+.cons-landing .cons-specialties article:hover { transform: translateY(-6px); border-color: rgba(230,163,0,.5); box-shadow: 0 30px 50px -30px rgba(10,37,64,.45), inset 0 2px 0 var(--cp-gold); }
+.cons-landing .cons-specialties article:hover > svg { transform: rotate(-6deg) scale(1.06); }
+.cons-landing .cons-specialties h3 { font-family: var(--cp-serif); font-weight: 500; }
+.cons-landing .cons-specialties li svg { color: var(--cp-gold-d); }
+.cons-landing .cons-specialties li { transition: opacity .6s, transform .7s var(--cp-ease); }
+.cons-landing .cons-specialties li:nth-child(1) { transition-delay: .25s; } .cons-landing .cons-specialties li:nth-child(2) { transition-delay: .35s; }
+.cons-landing .cons-specialties li:nth-child(3) { transition-delay: .45s; } .cons-landing .cons-specialties li:nth-child(4) { transition-delay: .55s; }
+.cons-landing .cons-specialties article.fr-rv:not(.fr-in) li { opacity: 0; transform: translateX(-12px); }
+
+/* ── 06 · Ficha de ubicación: retícula de plano y pin que late ── */
+.cons-landing .cons-location-example { position: relative; overflow: hidden; border-color: #d3e0e6; background-color: #fff; background-image: linear-gradient(rgba(10,37,64,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(10,37,64,.035) 1px, transparent 1px); background-size: 28px 28px; box-shadow: 0 34px 60px -44px rgba(10,37,64,.5), inset 4px 0 0 var(--cp-gold); }
+.cons-landing .cons-location-example::before { content: ""; position: absolute; right: 34px; top: 30px; width: 12px; height: 12px; border-radius: 50%; background: var(--cp-gold); box-shadow: 0 0 0 4px rgba(230,163,0,.2); }
+.cons-landing .cons-location-example::after { content: ""; position: absolute; right: 34px; top: 30px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--cp-gold); opacity: 0; }
+.cons-landing .cons-location-example h3 { font-family: var(--cp-serif); font-weight: 500; }
+.cons-landing .cons-location-example > div > article + article { border-left: 1px solid #e3eaee; padding-left: 30px; }
+@media (max-width: 900px) { .cons-landing .cons-location-example > div > article + article { border-left: 0; padding-left: 0; border-top: 1px solid #e3eaee; padding-top: 22px; } }
+
+/* ── 07 · Canales de contacto: se encienden en secuencia ── */
+.cons-landing .cons-contact-grid article { position: relative; background: #fff; transition: transform .4s var(--cp-ease), border-color .5s, box-shadow .5s, opacity .6s; }
+.cons-landing .cons-contact-grid article > svg { box-sizing: content-box; padding: 8px; border-radius: 50%; color: var(--cp-gold-d); background: #fbf3df; transition: background .4s, color .4s, transform .4s var(--cp-ease); }
+.cons-landing .cons-contact-grid article:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.55); box-shadow: 0 20px 34px -24px rgba(10,37,64,.45); }
+.cons-landing .cons-contact-grid article:hover > svg { color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); transform: scale(1.08); }
+.cons-landing .cons-contact-grid article.fr-rv:not(.fr-in) { border-color: #e5ecef; }
+
+/* ── 08 · Sedes: numeración serif y ruta que las une ── */
+.cons-landing .cons-branches article { position: relative; background: linear-gradient(180deg, #fff, #f7fafb); transition: transform .45s var(--cp-ease), box-shadow .45s, border-color .45s; }
+.cons-landing .cons-branches article span { display: inline-flex; align-items: center; gap: 10px; font-family: var(--cp-serif); font-style: italic; font-size: 1.5rem; line-height: 1; color: var(--cp-gold-d); }
+.cons-landing .cons-branches article span::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cp-gold); box-shadow: 0 0 0 4px rgba(230,163,0,.18); }
+.cons-landing .cons-branches h3 { font-family: var(--cp-serif); font-weight: 500; }
+.cons-landing .cons-branches article:not(:last-child)::after { content: ""; position: absolute; top: 39px; right: -21px; width: 21px; height: 0; border-top: 2px dashed rgba(230,163,0,.6); transform-origin: left; transition: transform .7s var(--cp-ease) .4s; }
+.cons-landing .cons-branches article.fr-rv:not(.fr-in)::after { transform: scaleX(0); }
+.cons-landing .cons-branches article:hover { transform: translateY(-5px); border-color: rgba(230,163,0,.5); box-shadow: 0 26px 44px -30px rgba(10,37,64,.45); }
+@media (max-width: 900px) { .cons-landing .cons-branches article:not(:last-child)::after { display: none; } }
+
+/* ── 11 · Relaciones: flechas doradas ── */
+.cons-landing .cons-relations li:not(:last-child)::after { color: var(--cp-gold-d); background: transparent; }
+.cons-landing .hub-seo-grid article > svg { box-sizing: content-box; padding: 11px; border-radius: 50%; color: var(--cp-gold-d); background: #fbf3df; border: 1px solid rgba(230,163,0,.3); }
+.cons-landing .hub-seo-grid h3 { font-family: var(--cp-serif); font-weight: 500; }
+
+/* ── 12 · Tipos de práctica ── */
+.cons-landing .hub-audience-grid article { transition: transform .4s var(--cp-ease), border-color .4s, box-shadow .4s; }
+.cons-landing .hub-audience-grid article span { font-family: var(--cp-serif); font-style: italic; color: var(--cp-gold-d); }
+.cons-landing .hub-audience-grid article:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.5); box-shadow: 0 22px 38px -28px rgba(10,37,64,.45); }
+
+/* ── 14 · Franja de Frente Comercial ── */
+.cons-landing .cons-front-line { margin-top: 28px; position: relative; overflow: hidden; color: #fff; border: 1px solid rgba(255,215,102,.4); background-color: var(--cp-navy); background-image: radial-gradient(70% 160% at 0% 50%, rgba(47,106,163,.6), transparent 70%), radial-gradient(40% 140% at 100% 50%, rgba(230,163,0,.2), transparent 70%); box-shadow: 0 40px 70px -44px rgba(5,19,32,.9); }
+.cons-landing .cons-front-line > svg { box-sizing: content-box; padding: 12px; border-radius: 14px; color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); }
+.cons-landing .cons-front-line strong { font-family: var(--cp-serif); font-size: 1.25rem; font-weight: 500; color: #fff; }
+.cons-landing .cons-front-line .med-button { position: relative; z-index: 1; color: #fff; background: rgba(255,255,255,.06); border: 1px solid rgba(255,215,102,.55); transition: background .35s, color .35s, box-shadow .35s; }
+.cons-landing .cons-front-line .med-button:hover { color: var(--cp-navy); background: linear-gradient(135deg, var(--cp-gold-l), var(--cp-gold)); box-shadow: 0 14px 30px -10px rgba(230,163,0,.6); }
+.cons-landing .cons-front-line::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.1) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; }
+.cons-landing .cons-front-line .med-button:focus-visible { outline: 3px solid var(--cp-gold-l); outline-offset: 3px; }
+
+/* ── Figuras en secciones claras: marco con profundidad ── */
+.cons-landing .med-section:not(.hub-showcase) .hub-figure > a { box-shadow: 0 40px 80px -56px rgba(10,37,64,.55); transition: box-shadow .5s var(--cp-ease), transform .5s var(--cp-ease), border-color .5s; }
+.cons-landing .med-section:not(.hub-showcase) .hub-figure > a:hover { transform: translateY(-4px); border-color: rgba(230,163,0,.45); box-shadow: 0 0 0 6px rgba(230,163,0,.08), 0 50px 90px -50px rgba(10,37,64,.6); }
+
+/* ── Enlaces de contexto y preguntas frecuentes ── */
+.cons-landing .med-text-link svg { transition: transform .3s var(--cp-ease); }
+.cons-landing .med-text-link:hover svg { transform: translateX(5px); }
+.cons-landing .med-faq details { transition: background .3s, border-color .3s; border-radius: 4px; }
+.cons-landing .med-faq summary:hover { color: var(--cp-navy); }
+.cons-landing .med-faq summary svg { color: var(--cp-gold-d); }
+.cons-landing .med-faq details[open] { background: linear-gradient(90deg, rgba(230,163,0,.06), transparent 70%); }
+.cons-landing .med-faq details[open] summary { padding-left: 16px; }
+.cons-landing .med-faq details[open] p { padding-left: 16px; }
+
+/* ── Movimiento (solo si la persona no pidió reducirlo) ── */
+@media (prefers-reduced-motion: no-preference) {
+  .cons-landing .cons-hero-benefits li { animation: frUp .8s var(--cp-ease) both; }
+  .cons-landing .cons-hero-benefits li:nth-child(1) { animation-delay: .55s; } .cons-landing .cons-hero-benefits li:nth-child(2) { animation-delay: .7s; } .cons-landing .cons-hero-benefits li:nth-child(3) { animation-delay: .85s; }
+  .cons-landing .cons-entity-center::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.12) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; animation: cpSheen 7s ease-in-out 1.5s infinite; }
+  .cons-landing .cons-entity-center > svg { animation: cpHalo 3.2s ease-in-out infinite; }
+  .cons-landing .cons-location-example::after { animation: cpPing 2.4s cubic-bezier(.2,.8,.2,1) infinite; }
+  .cons-landing .cons-front-line::after { animation: cpSheen 8s ease-in-out 2s infinite; }
+  .cons-landing .cons-problem-grid article:last-child::before { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.1) 50%, transparent 60%); background-size: 250% 100%; background-position: 160% 0; animation: cpSheen 9s ease-in-out 3s infinite; }
+  .cons-landing .med-faq details[open] p { animation: cpReveal .45s var(--cp-ease) both; }
+  .cons-landing .cons-professionals details[open] p { animation: cpReveal .45s var(--cp-ease) both; }
+}
+@keyframes cpSheen { 0%, 60% { background-position: 160% 0; } 100% { background-position: -60% 0; } }
+@keyframes cpHalo { 0%, 100% { box-shadow: 0 0 0 6px rgba(255,215,102,.12), 0 0 0 0 rgba(255,215,102,.35); } 50% { box-shadow: 0 0 0 6px rgba(255,215,102,.18), 0 0 0 16px rgba(255,215,102,0); } }
+@keyframes cpPing { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(3.4); opacity: 0; } }
+@keyframes cpReveal { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }

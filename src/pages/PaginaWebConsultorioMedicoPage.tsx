@@ -2,6 +2,8 @@ import RouteSEO from '../seo/PageMetadata';
 import React, { useRef } from 'react';
 import ConvergenceField from '../components/ConvergenceField';
 import usePageFx from '../hooks/usePageFx';
+import useFrenteMotion from '../hooks/useFrenteMotion';
+import '../styles/frenteMotion.css';
 import '../styles/pageFrontier.css';
 import '../styles/landingFx.css';
 import { Link } from 'react-router-dom';
@@ -9,7 +11,9 @@ import { ArrowRight, ArrowUpRight, Check, Plus, UsersRound, Stethoscope, MapPin,
 import { ENTITIES } from '../config/entity';
 import './PaginaWebGratisMedicosPage.css';
 import './PaginaWebMedicosPage.css';
+import './PaginaWebMedicosPremium.css';
 import './PaginaWebConsultorioMedicoPage.css';
+import './PaginaWebConsultorioPremium.css';
 
 const canonical = 'https://rauvia.com.mx/pagina-web-para-consultorio-medico/';
 const ogDescription = 'Organiza la presencia digital de tu consultorio con información clara sobre ubicación, especialistas, horarios y formas de contacto.';
@@ -80,6 +84,7 @@ function Figure({ name, caption }: { name: ImageName; caption: string }) {
 export default function PaginaWebConsultorioMedicoPage() {
   const root = useRef<HTMLElement>(null);
   usePageFx(root);
+  useFrenteMotion(root);
   return <div ref={root as any} className="fx-page lf-page med-landing hub-landing cons-landing">
 <div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/pagina-web-para-consultorio-medico" />

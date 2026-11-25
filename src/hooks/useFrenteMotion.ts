@@ -13,6 +13,7 @@ const REVEAL = [
   '.rv-not-note',
   '.hub-flow', '.hub-feature-grid > article', '.hub-solution-grid > article', '.hub-comparison > article', '.hub-seo-grid > article', '.hub-audience-grid > article', '.hub-mobile-grid > div', '.hub-front > div', '.hub-boundaries > div', '.hub-showcase-tags span', '.hub-signals', '.med-heading', '.med-grid:not(.med-plans) > article', '.med-audience li', '.med-upgrades > div', '.med-faq details', '.med-responsibility', '.med-related', '.med-feature-strip span', '.med-showcase-grid', '.med-example-controls',
   '.sl-diag-list', '.sl-diag-list li', '.sl-diag-quote', '.sl-ask-panel', '.sl-ask li', '.esp-statement', '.sl-system', '.sl-system article', '.sl-system-bottom', '.sl-building-blocks span', '.esp-comparison article', '.esp-audiences article', '.sl-mobile-example', '.esp-explain-grid > div', '.esp-front', '.sl-geo-heading > div', '.esp-boundaries > div', '.esp-checklist li',
+  '.cons-problem-grid > article', '.cons-entity-center', '.cons-professionals > article', '.cons-specialties > article', '.cons-location-example', '.cons-contact-grid > article', '.cons-branches > article', '.cons-front-line',
   '.rv-s-eyebrow', '.pr-plan', '.pr-change', '.pr-caveat', '.pr-policy', '.pr-problem > div', '.rv-sym-card', '.rv-s-callout', '.rv-quote', '.rv-ba-card', '.rv-ba-arrow', '.rv-faq-side', '.rv-route',
 ].join(',');
 
