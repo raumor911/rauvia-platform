@@ -53,6 +53,32 @@
 .med-hub .med-faq details[open] { background: linear-gradient(90deg, rgba(230,163,0,.06), transparent 70%); }
 .med-hub .med-faq details[open] :is(summary, p) { padding-left: 16px; }
 
+/* ── Pulido de alineación y ritmo ── */
+/* introducción: el segundo párrafo con el mismo cuerpo y arranque que el primero */
+.med-hub .hub-intro p:last-of-type { padding-top: .15em; font-size: 1rem; line-height: 1.8; color: #4a6071; }
+/* recorrido: número arriba y texto alineado aunque una tarjeta ocupe dos líneas */
+.med-hub .hub-flow li { justify-content: flex-start; padding-top: 24px; }
+.med-hub .hub-flow li > span { font-family: var(--mh-serif); font-style: italic; font-size: .95rem; letter-spacing: .04em; }
+.med-hub .hub-flow svg { color: var(--mh-gold-d); background: #f4f7f9; }
+@media (max-width: 540px) { .med-hub .hub-flow li { padding-top: 18px; align-items: center; } }
+/* comparativo: texto de apoyo legible sobre la tarjeta oscura */
+.lf-page.med-hub .hub-comparison article:last-child p { color: #c3d3e5; }
+/* niveles: título, texto, divisoria, precio y lista a la misma altura en las tres tarjetas */
+.lf-page.med-hub .hub-level-desc { min-height: calc(1.6em * 4); }
+.lf-page.med-hub .hub-level-price { display: flex; align-items: baseline; flex-wrap: wrap; align-content: flex-end; column-gap: .5rem; min-height: 6.1rem; }
+.lf-page.med-hub .hub-level-price small { flex-basis: 100%; }
+.lf-page.med-hub .hub-level-price span { margin-left: 0; }
+.lf-page.med-hub .hub-level-note { min-height: 2.5em; }
+@media (max-width: 900px) { .lf-page.med-hub :is(.hub-level-desc, .hub-level-price, .hub-level-note) { min-height: 0; } }
+/* figuras con marco en secciones oscuras: el pie no toca el borde */
+.med-hub :is(.hub-showcase, .hub-mobile-section) .hub-figure figcaption { padding: 0 16px 14px; }
+/* «RAUVIA no garantiza»: viñetas doradas */
+.med-hub .hub-boundaries > div:last-child ul { list-style: none; padding-left: 0; }
+.med-hub .hub-boundaries > div:last-child li { position: relative; padding-left: 20px; }
+.med-hub .hub-boundaries > div:last-child li::before { content: ""; position: absolute; left: 0; top: .62em; width: 8px; height: 2px; border-radius: 2px; background: var(--mh-gold-l); }
+/* «Para quién»: número legible y alineado con la primera línea */
+.med-hub .hub-audience-grid article span { font-size: .95rem; line-height: 1.9; }
+
 /* ── Movimiento ── */
 @media (prefers-reduced-motion: no-preference) {
   .med-hub .hub-boundaries > div:last-child > svg { animation: mhHalo 3.2s ease-in-out infinite; }
