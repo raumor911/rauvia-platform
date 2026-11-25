@@ -324,3 +324,19 @@ Semánticos: 51 · Contenido: 22
 - rau004-main-baseline.json /seo-ai contenido
 - rau004-main-baseline.json /trayectoria contenido
 - rau004-main-baseline.json /rauviaweb contenido
+
+## 2026-11-25 · dbc859c
+Motivo: Copy SEO/GEO aprobado por Raúl (2026-11-25) en /pagina-web-para-consultorio-medico/ (v2.0), /pagina-web-para-medicos/ (v1.0) y /seo-local-para-medicos/ (v1.0): title, description, H1, JSON-LD (FAQ = texto visible) y contenido; ninguna otra ruta cambia.
+Semánticos: 6 · Contenido: 6
+- rau004-main-baseline.json /seo-local-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-local-para-medicos h1
+- rau004-main-baseline.json /pagina-web-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-medicos h1
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico h1
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- rau004-main-baseline.json /seo-local-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-medicos contenido
+- rau004-main-baseline.json /pagina-web-para-consultorio-medico contenido
