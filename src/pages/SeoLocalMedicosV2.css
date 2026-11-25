@@ -1,0 +1,95 @@
+/* /seo-local-para-medicos/ v2 (brief 2026-11-25): estilos de los elementos nuevos del copy y
+   acabado alineado con /pagina-web-para-consultorio-medico/ y /pagina-web-para-medicos/.
+   Solo presentación; se carga después de SeoLocalMedicosPremium.css. */
+.sl-v2 { --s2-ease: cubic-bezier(.2,.8,.2,1); --s2-gold: #E6A300; --s2-gold-l: #FFD766; --s2-gold-d: #B7791F; --s2-navy: #0a2540; --s2-serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif; }
+
+/* ── Señales: cierre prudente bajo la cita ── */
+.sl-v2 .sl-diag-close { margin-top: 18px; padding-left: 16px; border-left: 2px solid rgba(230,163,0,.55); font-size: 14px; line-height: 1.75; color: #aebdd0; }
+
+.sl-v2 .sl-diag-grid > * { min-width: 0; }
+/* la línea pasa por el centro de los círculos: padding 1rem + margen 9px + medio círculo 12px − medio trazo */
+.lf-page.sl-v2 .sl-diag-list::before { left: calc(1rem + 9px + 12px - 1px); }
+@media (max-width: 540px) {
+  .lf-page.sl-v2 .sl-diag-list li { gap: .75rem; padding: .95rem 1rem .95rem .75rem; }
+  .lf-page.sl-v2 .sl-diag-list::before { left: calc(.75rem + 9px + 12px - 1px); }
+  .lf-page.sl-v2 .sl-diag-n { width: 1.7rem; font-size: 1.3rem; }
+}
+@media (max-width: 540px) { .sl-v2 .sl-diag-grid { grid-template-columns: minmax(0, 1fr); } .sl-v2 .sl-diag-copy .med-heading h2 { font-size: 1.7rem; overflow-wrap: break-word; } }
+
+/* ── Del hallazgo a una decisión: cinco pasos (sección oscura) ── */
+.sl-v2 .sl-steps { position: relative; list-style: none; margin: 34px 0 40px; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; counter-reset: none; }
+.sl-v2 .sl-steps::before { content: ""; position: absolute; left: 27px; right: calc((100% - 64px) / 5 - 27px); top: 23px; height: 1px; background: linear-gradient(90deg, rgba(255,215,102,.6), rgba(255,215,102,.15)); }
+.sl-v2 .sl-steps li { position: relative; padding: 0 4px; transition: opacity .6s, transform .7s var(--s2-ease); }
+.sl-v2 .sl-step-n { position: relative; z-index: 1; display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 16px; border-radius: 50%; font-family: var(--s2-serif); font-style: italic; font-size: 1.05rem; color: var(--s2-navy); background: linear-gradient(135deg, var(--s2-gold-l), var(--s2-gold)); box-shadow: 0 0 0 6px rgba(255,215,102,.1), 0 12px 24px -12px rgba(230,163,0,.8); transition: transform .45s var(--s2-ease); }
+.sl-v2 .sl-steps li:hover .sl-step-n { transform: scale(1.08) rotate(-6deg); }
+.sl-v2 .sl-steps strong { display: block; margin-bottom: 6px; font-family: var(--s2-serif); font-weight: 500; font-size: 1.25rem; color: #fff; }
+.sl-v2 .sl-steps p { margin: 0; font-size: 13.5px; line-height: 1.65; color: #c3d3e5; }
+.sl-v2 .sl-steps li:nth-child(2) { transition-delay: .1s; } .sl-v2 .sl-steps li:nth-child(3) { transition-delay: .2s; }
+.sl-v2 .sl-steps li:nth-child(4) { transition-delay: .3s; } .sl-v2 .sl-steps li:nth-child(5) { transition-delay: .4s; }
+@media (max-width: 1000px) {
+  .sl-v2 .sl-steps { grid-template-columns: 1fr; gap: 22px; }
+  .sl-v2 .sl-steps::before { display: none; }
+  .sl-v2 .sl-steps li { display: grid; grid-template-columns: 46px 1fr; column-gap: 18px; padding: 0; }
+  .sl-v2 .sl-steps li > :not(.sl-step-n) { grid-column: 2; }
+  .sl-v2 .sl-step-n { grid-row: 1 / span 2; margin-bottom: 0; }
+  /* conector vertical solo entre círculos consecutivos */
+  .sl-v2 .sl-steps li:not(:last-child)::after { content: ""; position: absolute; left: 22.5px; top: 52px; bottom: -16px; width: 1px; background: linear-gradient(180deg, rgba(255,215,102,.6), rgba(255,215,102,.2)); }
+}
+
+/* ── Sellos dorados en íconos de «Qué puede entrar» (las tarjetas oscuras de «Tres elementos» conservan su sello propio) ── */
+.sl-v2 #incluye .med-card-top { align-items: center; }
+.sl-v2 #incluye .med-card-top > svg { box-sizing: content-box; padding: 11px; border-radius: 50%; color: var(--s2-gold-d); background: radial-gradient(circle at 30% 30%, #fff, #fbf3df); border: 1px solid rgba(230,163,0,.35); transition: transform .5s var(--s2-ease), background .4s, color .4s; }
+.sl-v2 #incluye .med-card:hover .med-card-top > svg { transform: rotate(-8deg) scale(1.08); color: var(--s2-navy); background: linear-gradient(135deg, var(--s2-gold-l), var(--s2-gold)); }
+.sl-v2 #incluye .med-card-top > span { font-family: var(--s2-serif); font-style: italic; font-size: 1.15rem; line-height: 1; color: var(--s2-gold-d); }
+
+/* ── «Tres elementos»: el «+» queda centrado en la línea también sin animación ── */
+.lf-page.sl-v2 .sl-system article::after { top: 50%; transform: translateY(-50%); }
+.lf-page.sl-v2 .sl-system-top { align-items: center; }
+.lf-page.sl-v2 .sl-system-top span { color: rgba(255,215,102,.32); }
+
+/* ── Comparativo: título y lista con ritmo uniforme ── */
+.sl-v2 .esp-comparison h3 { min-height: 0; margin: 14px 0 0; }
+.sl-v2 .esp-comparison ul { margin-top: 18px; }
+
+/* ── Buscadores e IA: dos definiciones separadas ── */
+.sl-v2 .sl-geo-heading > div > p + p { margin-top: 16px; }
+
+/* ── Opciones: misma altura de título, texto y precio en las tres tarjetas ── */
+.lf-page.sl-v2 .esp-levels h3 { min-height: 0; margin: 14px 0 12px; }
+.lf-page.sl-v2 .esp-levels article > p { flex-grow: 0; min-height: 4.9em; }
+.lf-page.sl-v2 .esp-levels .sl-level-price { display: flex; align-items: baseline; flex-wrap: wrap; column-gap: .45rem; min-height: 5.1rem; align-content: flex-end; }
+.lf-page.sl-v2 .esp-levels .sl-level-price small { flex-basis: 100%; }
+.lf-page.sl-v2 .esp-levels .sl-level-price span { margin-left: 0; }
+.lf-page.sl-v2 .esp-levels .esp-level-detail { flex-grow: 1; }
+@media (max-width: 900px) { .lf-page.sl-v2 .esp-levels article > p, .lf-page.sl-v2 .esp-levels .sl-level-price { min-height: 0; } .lf-page.sl-v2 .esp-levels .esp-level-detail { flex-grow: 0; margin-bottom: .4rem; } }
+
+/* ── Nota de agenda y alcance ── */
+.sl-v2 .sl-contact-example h3 { font-family: var(--s2-serif); font-weight: 500; }
+.sl-v2 .sl-limits .med-heading { align-self: start; }
+.sl-v2 .sl-limits .esp-checklist svg { color: var(--s2-gold-d); }
+.sl-v2 .sl-contact-example p + p { margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(10,37,64,.1); }
+
+/* ── Límites: título de la lista ── */
+.sl-v2 .sl-limits-title { margin: 0 0 14px; font-family: var(--s2-serif); font-weight: 500; font-size: 1.4rem; }
+.sl-v2 .sl-limits .esp-closing strong { font-weight: 600; }
+
+/* ── Figuras en secciones claras ── */
+.sl-v2 .med-section:not(.sl-build):not(.sl-options) .sl-figure-link { box-shadow: 0 40px 80px -56px rgba(10,37,64,.55); transition: box-shadow .5s var(--s2-ease), transform .5s var(--s2-ease), border-color .5s; }
+.sl-v2 .med-section:not(.sl-build):not(.sl-options) .sl-figure-link:hover { transform: translateY(-4px); box-shadow: 0 0 0 6px rgba(230,163,0,.08), 0 50px 90px -50px rgba(10,37,64,.6); }
+
+/* ── Enlaces y preguntas frecuentes ── */
+.sl-v2 .med-text-link svg { transition: transform .3s var(--s2-ease); }
+.sl-v2 .med-text-link:hover svg { transform: translateX(5px); }
+.sl-v2 .esp-closing a { color: #176b72; text-decoration: underline; text-underline-offset: 4px; }
+.sl-v2 .sl-faq-contact { display: inline-flex; margin-top: 26px; }
+.sl-v2 .med-faq summary svg { color: var(--s2-gold-d); }
+.sl-v2 .med-faq details { transition: background .3s; border-radius: 4px; }
+.sl-v2 .med-faq details[open] { background: linear-gradient(90deg, rgba(230,163,0,.06), transparent 70%); }
+.sl-v2 .med-faq details[open] :is(summary, p) { padding-left: 16px; }
+.sl-v2 .sl-final-note { margin-top: 22px; font-size: 13px; opacity: .75; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .sl-v2 .sl-steps.fr-rv:not(.fr-in) li { opacity: 0; transform: translateY(16px); }
+  .sl-v2 .med-faq details[open] p { animation: s2Reveal .45s var(--s2-ease) both; }
+}
+@keyframes s2Reveal { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }

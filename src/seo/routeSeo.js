@@ -922,8 +922,8 @@ export const routeSeo = {
     "imageAlt": "Collage de mockups para página web de médicos especialistas."
   },
   "/seo-local-para-medicos": {
-    "title": "SEO local para médicos | RAUVIA",
-    "description": "RAUVIA ayuda a médicos, especialistas y consultorios a ordenar su presencia digital local con sitio web, ubicación, WhatsApp, agenda y base SEO/GEO.",
+    "title": "SEO local para médicos | Revisa tu presencia local | RAUVIA",
+    "description": "Revisa cómo se relacionan tu especialidad, ubicación, sitio y contacto. SEO local para médicos, especialistas y consultorios, con alcance definido según los activos de tu práctica.",
     "canonical": "https://rauvia.com.mx/seo-local-para-medicos/",
     "ogTitle": "SEO local para médicos | RAUVIA",
     "ogDescription": "Ordenamos tu presencia digital local para que pacientes, buscadores y modelos de IA entiendan mejor tu especialidad, ubicación y forma de contacto.",
@@ -936,8 +936,8 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/seo-local-para-medicos/",
         "url": "https://rauvia.com.mx/seo-local-para-medicos/",
-        "name": "SEO local para médicos | RAUVIA",
-        "description": "RAUVIA ayuda a médicos, especialistas y consultorios a ordenar su presencia digital local con sitio web, ubicación, WhatsApp, agenda y base SEO/GEO.",
+        "name": "SEO local para médicos | Revisa tu presencia local | RAUVIA",
+        "description": "Revisa cómo se relacionan tu especialidad, ubicación, sitio y contacto. SEO local para médicos, especialistas y consultorios, con alcance definido según los activos de tu práctica.",
         "inLanguage": "es-MX",
         "about": {
           "@id": "https://rauvia.com.mx/seo-local-para-medicos/#servicio"
@@ -948,7 +948,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/seo-local-para-medicos/#servicio",
         "name": "SEO local para médicos",
         "serviceType": "Estructura y revisión de presencia digital local",
-        "description": "RAUVIA ayuda a médicos, especialistas y consultorios a ordenar su presencia digital local con sitio web, ubicación, WhatsApp, agenda y base SEO/GEO.",
+        "description": "Revisa cómo se relacionan tu especialidad, ubicación, sitio y contacto. SEO local para médicos, especialistas y consultorios, con alcance definido según los activos de tu práctica.",
         "provider": {
           "@type": "Organization",
           "name": "RAUVIA Consulting",
@@ -964,7 +964,7 @@ export const routeSeo = {
             "name": "¿SEO local significa aparecer primero en Google?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Nadie debería prometer una posición específica. El SEO local ayuda a ordenar tu presencia digital para que tu especialidad, ubicación y forma de contacto sean más claras para buscadores y pacientes."
+              "text": "No. El trabajo puede mejorar la claridad y consistencia de la información local, pero no controla el ranking ni garantiza una posición."
             }
           },
           {
@@ -972,15 +972,15 @@ export const routeSeo = {
             "name": "¿Necesito una página web para trabajar SEO local?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No siempre es el único punto, pero sí es una base importante. Tu sitio puede funcionar como el centro de tu presencia profesional."
+              "text": "No siempre. Si ya tienes sitio o perfiles, primero delimitamos qué se revisará. Si todavía no tienes una página y quieres crearla, revisa la ruta de página web para médicos; desarrollo y SEO local se cotizan como alcances distintos."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Esto incluye Google Maps?",
+            "name": "¿Esto incluye editar Google Maps?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puede incluir revisión y alineación de información local, pero el alcance exacto depende del plan contratado y de los activos digitales que ya tengas."
+              "text": "La revisión de un perfil puede incluirse si se identifica y acuerda en el alcance. RAUVIA no debe prometer acceso, edición ni administración del perfil sin autorización y capacidad confirmadas."
             }
           },
           {
@@ -988,7 +988,7 @@ export const routeSeo = {
             "name": "¿Esto sirve si atiendo en varios consultorios?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. En ese caso conviene estructurar bien las ubicaciones, horarios, datos de contacto y formas de agendar."
+              "text": "Puede revisarse la relación entre profesionales, ubicaciones, horarios y contacto. Antes se define qué sedes entran y quién valida sus datos."
             }
           },
           {
@@ -996,7 +996,7 @@ export const routeSeo = {
             "name": "¿Esto sirve si ya tengo Doctoralia u otro perfil?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. Los perfiles externos ayudan, pero tu sitio propio puede funcionar como una base más controlada para explicar tu práctica profesional."
+              "text": "Puede revisarse cómo se relaciona un perfil público autorizado con tu sitio y otros activos incluidos. No implica alianza con el directorio, control sobre su contenido ni sustitución del perfil."
             }
           },
           {
@@ -1004,7 +1004,7 @@ export const routeSeo = {
             "name": "¿Incluye contenido médico?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Puede incluir contenido informativo base, siempre con enfoque profesional, sin promesas clínicas y validado por el médico."
+              "text": "Puede organizar contenido informativo basado en datos que el profesional proporcione y valide. RAUVIA no inventa credenciales, tratamientos ni resultados clínicos."
             }
           },
           {
@@ -1012,7 +1012,7 @@ export const routeSeo = {
             "name": "¿Puedo empezar con la página gratuita?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. La página gratuita puede ser una primera base. Si después necesitas más personalización o SEO local avanzado, puedes crecer hacia una web personalizada o un Frente Comercial Médico."
+              "text": "La página gratuita es una opción de creación de sitio con alcance propio; no equivale a un servicio de SEO local ni incluye automáticamente revisión de perfiles externos."
             }
           },
           {
@@ -1020,7 +1020,7 @@ export const routeSeo = {
             "name": "¿En cuánto tiempo se ven resultados?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del estado actual de tu presencia digital, competencia local, especialidad, zona, contenido y consistencia de información. RAUVIA no promete resultados inmediatos; trabaja sobre una base estructural."
+              "text": "No hay un plazo garantizado. El alcance del trabajo puede tener una fecha acordada en la propuesta, pero indexación, posiciones, menciones y contactos dependen de plataformas y condiciones externas."
             }
           }
         ]
