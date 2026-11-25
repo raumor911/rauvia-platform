@@ -9,7 +9,28 @@
 .sl-v2 .sl-diag-grid > * { min-width: 0; }
 /* la línea pasa por el centro de los círculos: padding 1rem + margen 9px + medio círculo 12px − medio trazo */
 .lf-page.sl-v2 .sl-diag-list::before { left: calc(1rem + 9px + 12px - 1px); }
+/* la línea va exactamente del centro del primer punto al centro del último (medidas de useDiagTimeline) */
+.lf-page.sl-v2 .sl-diag-list::before { top: var(--tl-top, 24px); bottom: auto; height: var(--tl-h, calc(100% - 48px)); }
+
+/* ── Secuencia sincronizada: la punta de la línea llega a cada punto cuando éste aparece ── */
+.lf-page.sl-v2 .sl-diag-list.tl-armed::before { transform: scaleY(0); transition: none; }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-run::before { transform: scaleY(1); transition: transform var(--tl-d, 2000ms) linear; }
+/* destello en la punta mientras la línea avanza */
+.lf-page.sl-v2 .sl-diag-list.tl-armed::after { content: ""; position: absolute; z-index: 2; left: calc(1rem + 21px - 5px); top: calc(var(--tl-top, 24px) - 5px); width: 10px; height: 10px; border-radius: 50%; pointer-events: none; background: #FFE9A8; box-shadow: 0 0 0 3px rgba(255,215,102,.25), 0 0 18px 4px rgba(255,200,60,.75); opacity: 0; transform: translateY(0); }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-run::after { opacity: 1; transform: translateY(var(--tl-h, 0px)); transition: transform var(--tl-d, 2000ms) linear, opacity .25s ease; }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-done::after { opacity: 0; transition: opacity .5s ease; }
+/* tarjetas: entran un instante antes de que llegue la línea */
+.lf-page.sl-v2 .sl-diag-list.tl-armed li { opacity: 0; transform: translateX(18px); transition: none; }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-run li { opacity: 1; transform: none; transition: opacity .55s ease var(--tl-card, 0ms), transform .7s cubic-bezier(.2,.8,.2,1) var(--tl-card, 0ms); }
+/* puntos: se encienden justo cuando la línea los toca */
+.lf-page.sl-v2 .sl-diag-list.tl-armed .sl-diag-dot { transform: scale(.4); background: #0d2b47; color: transparent; box-shadow: 0 0 0 2px rgba(255,255,255,.2); transition: none; }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-run .sl-diag-dot { transform: none; background: linear-gradient(135deg, #FFD766, #E6A300); color: #0A2540; box-shadow: 0 0 0 5px rgba(255,215,102,.16), 0 0 18px 2px rgba(230,163,0,.6); transition: transform .5s cubic-bezier(.2,1.5,.4,1) var(--tl-dot, 0ms), background .25s ease var(--tl-dot, 0ms), color .25s ease var(--tl-dot, 0ms), box-shadow .5s ease var(--tl-dot, 0ms); }
+/* el número acompaña al punto */
+.lf-page.sl-v2 .sl-diag-list.tl-armed .sl-diag-n { opacity: 0; transition: none; }
+.lf-page.sl-v2 .sl-diag-list.tl-armed.tl-run .sl-diag-n { opacity: 1; transition: opacity .4s ease var(--tl-dot, 0ms); }
+
 @media (max-width: 540px) {
+  .lf-page.sl-v2 .sl-diag-list.tl-armed::after { left: calc(.75rem + 21px - 5px); }
   .lf-page.sl-v2 .sl-diag-list li { gap: .75rem; padding: .95rem 1rem .95rem .75rem; }
   .lf-page.sl-v2 .sl-diag-list::before { left: calc(.75rem + 9px + 12px - 1px); }
   .lf-page.sl-v2 .sl-diag-n { width: 1.7rem; font-size: 1.3rem; }
@@ -44,6 +65,13 @@
 
 /* ── «Tres elementos»: el «+» queda centrado en la línea también sin animación ── */
 .lf-page.sl-v2 .sl-system article::after { top: 50%; transform: translateY(-50%); }
+/* el «+» se dibuja con dos barras centradas geométricamente (el carácter de texto quedaba bajo por su línea base) */
+.lf-page.sl-v2 .sl-system article:not(:last-child)::after { content: ""; box-sizing: border-box; font-size: 0; color: transparent;
+  background: linear-gradient(#0A2540, #0A2540) center / 14px 2.5px no-repeat, linear-gradient(#0A2540, #0A2540) center / 2.5px 14px no-repeat, linear-gradient(135deg, #FFD766, #E6A300); }
+
+/* ── Franja «Qué hacemos / Para quién / Cómo se trabaja»: mismo aire arriba y abajo, sin tocar la sección oscura ── */
+.lf-page.sl-v2 .esp-intro { padding-block: 56px; }
+@media (max-width: 540px) { .lf-page.sl-v2 .esp-intro { padding-block: 36px; } }
 .lf-page.sl-v2 .sl-system-top { align-items: center; }
 .lf-page.sl-v2 .sl-system-top span { color: rgba(255,215,102,.32); }
 

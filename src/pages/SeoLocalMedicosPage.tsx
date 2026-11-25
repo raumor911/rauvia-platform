@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import ConvergenceField from '../components/ConvergenceField';
 import usePageFx from '../hooks/usePageFx';
 import useFrenteMotion from '../hooks/useFrenteMotion';
+import useDiagTimeline from '../hooks/useDiagTimeline';
 import '../styles/frenteMotion.css';
 import '../styles/pageFrontier.css';
 import '../styles/landingFx.css';
@@ -68,6 +69,7 @@ export default function SeoLocalMedicosPage() {
   const root = useRef<HTMLElement>(null);
   usePageFx(root);
   useFrenteMotion(root);
+  useDiagTimeline(root);
   return <div ref={root as any} className="fx-page lf-page med-landing esp-landing sl-landing sl-v2">
 <div className="fx-progress" aria-hidden="true" />
     <RouteSEO path="/seo-local-para-medicos" />
