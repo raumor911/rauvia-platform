@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { HexIcon, glyphs, hxIdx, useHexMotion } from "./HexTech";
 
 const capabilities = [
@@ -30,6 +32,10 @@ export default function CapabilitiesSection() {
             </li>
           ))}
         </ul>
+        <div className="hx-caps-more" data-hx style={hxIdx(capabilities.length + 1)}>
+          <p>Cuando la necesidad va más allá de estas dos puertas, definimos contigo un alcance.</p>
+          <Link to="/soluciones/" className="hx-caps-link">Ver todas las soluciones<ArrowRight aria-hidden="true" size={18} /></Link>
+        </div>
       </div>
     </section>
   );

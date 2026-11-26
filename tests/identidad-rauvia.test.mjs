@@ -17,7 +17,8 @@ test('Home y Nosotros declaran la identidad aprobada en metadata y JSON-LD',()=>
   assert.match(org.description,/trabajo especializado, metodología y tecnología/);
 });
 test('Hero: dos entradas, sin promesa de consultoría total ni crecimiento garantizado',()=>{
-  const h=read('src/components/HeroSection.tsx');
+  // C-02: las dos puertas salieron del hero a HomeDoorsSection; el resto del hero sigue en HeroSection.
+  const h=read('src/components/HeroSection.tsx')+read('src/components/HomeDoorsSection.tsx');
   assert.match(h,/SERVICIOS DIGITALES PARA EMPRESAS/);
   assert.match(h,/ENCONTRAR\./);
   assert.match(h,/to="\/frente-comercial\/"/);assert.match(h,/to="\/seo-ai\/"/);

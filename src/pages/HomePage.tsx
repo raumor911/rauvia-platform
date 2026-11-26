@@ -5,11 +5,14 @@ import { useRef } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
 import useHomeFrontier from '../hooks/useHomeFrontier';
 import HeroSection from '../components/HeroSection';
+import HomeDoorsSection from '../components/HomeDoorsSection';
+import HomeKnowledgeSection from '../components/HomeKnowledgeSection';
 import ProblemSection from '../components/ProblemSection';
 import MethodologySection from '../components/MethodologySection';
 import CapabilitiesSection from '../components/CapabilitiesSection';
 import '../styles/scrollReveal.css';
 import '../styles/homeFrontier.css';
+import '../styles/homeAdecuacion.css';
 
 
 export default function HomePage() {
@@ -38,6 +41,9 @@ export default function HomePage() {
       <FadeInUp>
         <HeroSection />
       </FadeInUp>
+      <FadeInUp className="rv-home-reveal">
+        <HomeDoorsSection />
+      </FadeInUp>
       <FadeInUp className="rv-home-reveal rv-home-problems">
         <ProblemSection />
       </FadeInUp>
@@ -47,7 +53,9 @@ export default function HomePage() {
       <FadeInUp className="rv-home-reveal">
         <CapabilitiesSection />
       </FadeInUp>
-      
+      <FadeInUp className="rv-home-reveal">
+        <HomeKnowledgeSection />
+      </FadeInUp>
     </div>
   );
 }

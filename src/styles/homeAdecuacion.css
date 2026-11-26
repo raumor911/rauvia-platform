@@ -1,0 +1,93 @@
+/* Home · adecuación 2026-11-26 (C-02 a C-04). Solo presentación.
+   Las puertas y "Explora nuestro conocimiento" salen del hero a secciones propias; el hero conserva
+   el instrumento AETHRYON sin la lista de cinco pasos. Paleta RAUVIA (navy #0A2540, azul #1E4A74, dorado #E6A300 / #FFD766). */
+
+/* ---------- Hero: copy + instrumento ---------- */
+.rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1fr); }
+.rv-main-site .rv-home-hero .rv-aethryon-core { grid-template-columns: minmax(0, 1fr); }
+.rv-main-site .rv-home-hero .rv-hero-core { justify-self: center; width: min(100%, 360px); }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 320px); }
+  .rv-main-site .rv-home-hero .rv-aethryon-graphic { max-width: 280px; }
+}
+@media (min-width: 1024px) {
+  .rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; }
+  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 460px); justify-self: center; padding-top: 0; }
+  .rv-main-site .rv-home-hero .rv-aethryon-graphic { max-width: none; margin-inline: auto; }
+  .rv-main-site .rv-home-hero :is(.rv-hero-description) { max-width: 30rem; }
+}
+@media (min-width: 1440px) {
+  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 500px); }
+}
+
+/* ---------- Secciones nuevas: ritmo vertical común ---------- */
+.rv-home-doors, .rv-home-knowledge { position: relative; background: #fff; }
+.rv-home-doors { padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(3rem, 6vw, 5.5rem); background: linear-gradient(180deg, #fff 0%, #f4f8fc 100%); }
+.rv-home-knowledge { padding-block: clamp(2.5rem, 5vw, 4rem) clamp(3.5rem, 6vw, 5.5rem); background: linear-gradient(180deg, #f4f8fc 0%, #fff 100%); }
+
+/* ---------- Por dónde se empieza: dos puertas ---------- */
+.rv-home-doors .rv-hero-offer-duo { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+@media (min-width: 768px) { .rv-home-doors .rv-hero-offer-duo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.25rem, 2.2vw, 2rem); } }
+.rv-home-doors .rv-hero-card {
+  position: relative; display: flex; flex-direction: column; gap: 1rem; padding: clamp(1.4rem, 2.4vw, 2.25rem); border-radius: 20px;
+  background: linear-gradient(180deg, #0f3157 0%, #0A2540 55%, #061b30 100%); border: 1px solid rgba(255, 255, 255, .13);
+  box-shadow: 0 34px 60px -34px rgba(10, 37, 64, .7), inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+.rv-main-site main .rv-home-doors .rv-hero-card-label { margin: 0; font-size: .8125rem; font-weight: 800; letter-spacing: .14em; color: #FFD766; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.rv-home-doors .rv-hero-card-title { margin: 0; font-size: clamp(1.25rem, 1.9vw, 1.65rem); font-weight: 750; line-height: 1.25; letter-spacing: -.02em; color: #fff; }
+.rv-main-site main .rv-home-doors .rv-hero-card-description { margin: 0; font-size: 1rem; line-height: 1.55; color: #b9c9db; }
+.rv-home-doors .rv-hero-offer::before { display: none; }
+.rv-home-doors .rv-hero-card { justify-content: flex-start; }
+.rv-home-doors .rv-hero-price { margin-top: auto; }
+.rv-home-doors .rv-hero-price > span { font-size: .9375rem; }
+.rv-home-doors .rv-hero-primary {
+  min-height: 52px; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px; border-radius: 8px; font-size: .9375rem; font-weight: 700; line-height: 1.35;
+  color: #fff; background: rgba(255, 255, 255, .07); box-shadow: 0 0 0 1px rgba(255, 215, 102, .55) inset;
+  transition: color .3s, background .3s, transform .35s var(--he-ease, ease), box-shadow .35s;
+}
+.rv-home-doors .rv-hero-primary:hover { color: #0A2540; background: linear-gradient(135deg, #FFD766, #E6A300); transform: translateY(-2px); box-shadow: 0 16px 36px -10px rgba(230, 163, 0, .7); }
+.rv-home-doors .rv-hero-primary svg { transition: transform .35s var(--he-ease, ease); }
+.rv-home-doors .rv-hero-primary:hover svg { transform: translateX(5px); }
+.rv-home-doors .rv-hero-primary:focus-visible { outline: 3px solid #FFD766; outline-offset: 3px; }
+
+/* ---------- Explora nuestro conocimiento ---------- */
+.rv-home-knowledge .rv-hero-knowledge {
+  background: linear-gradient(180deg, #0f3157 0%, #0A2540 100%); border-color: rgba(255, 255, 255, .13);
+  box-shadow: 0 30px 56px -34px rgba(10, 37, 64, .7), inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+.rv-home-knowledge .rv-hero-knowledge-heading h2 { margin: 0; font-size: clamp(1.125rem, 1.4vw, 1.5rem); line-height: 1.25; font-weight: 750; letter-spacing: -.025em; color: #fff; }
+.rv-home-knowledge .rv-hero-knowledge > p { flex: 1; margin: 0; padding-left: 28px; border-left: 1px solid rgba(255, 255, 255, .2); color: #b9c9db; font-size: clamp(.9375rem, 1.1vw, 1.0625rem); line-height: 1.5; }
+.rv-home-knowledge .rv-hero-knowledge-link {
+  min-height: 44px; justify-content: center; align-items: center; gap: 24px; padding: 8px 24px; border: 1px solid rgba(255, 215, 102, .6); border-radius: 12px; font-size: .9375rem; font-weight: 700; white-space: nowrap;
+  color: #FFD766; background: transparent; border-color: rgba(255, 215, 102, .6);
+  transition: background .3s, color .3s, transform .3s var(--he-ease, ease), box-shadow .3s;
+}
+.rv-home-knowledge .rv-hero-knowledge-link:hover { background: #FFD766; color: #0A2540; transform: translateY(-1px); box-shadow: 0 12px 26px -10px rgba(230, 163, 0, .7); }
+.rv-home-knowledge .rv-hero-knowledge-link:focus-visible { outline: 3px solid #FFD766; outline-offset: 3px; }
+@media (max-width: 767px) {
+  .rv-home-knowledge .rv-hero-knowledge > p { border: 0; padding: 0; }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rv-home-knowledge .rv-hero-knowledge > p { grid-column: 1 / -1; font-size: .9375rem; }
+}
+
+/* ---------- Cómo trabajamos (método único) ---------- */
+.rv-main-site main .hx-intro { margin: 1.25rem 0 0; max-width: 26rem; color: #475569; font-size: 1.0625rem; line-height: 1.6; }
+
+/* ---------- Cómo lo hacemos realidad: línea y enlace a Soluciones ---------- */
+.hx-caps-more { margin-top: clamp(2rem, 4vw, 3rem); padding-top: clamp(1.5rem, 3vw, 2.25rem); border-top: 1px solid #e2e8f0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1rem 1.75rem; text-align: center; }
+.rv-main-site main .hx-caps-more p { margin: 0; max-width: 34rem; color: #0A2540; font-size: 1.0625rem; line-height: 1.5; font-weight: 600; }
+.hx-caps-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; padding: 10px 22px; border: 1px solid #0A2540; border-radius: 8px;
+  color: #0A2540; font-size: .9375rem; font-weight: 700; line-height: 1.3; white-space: nowrap; text-decoration: none;
+  transition: background .3s, color .3s, transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s;
+}
+.hx-caps-link:hover { background: #0A2540; color: #fff; transform: translateY(-1px); box-shadow: 0 14px 28px -14px rgba(10, 37, 64, .6); }
+.hx-caps-link svg { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.hx-caps-link:hover svg { transform: translateX(4px); }
+.hx-caps-link:focus-visible { outline: 3px solid #E6A300; outline-offset: 3px; }
+@media (max-width: 480px) { .hx-caps-link { width: 100%; white-space: normal; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-home-doors *, .rv-home-knowledge *, .hx-caps-more * { transition: none !important; }
+}

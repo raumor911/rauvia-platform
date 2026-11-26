@@ -18,12 +18,11 @@ export default function MethodologySection() {
       <div className="hx-wrap">
         <div className="hx-method-grid">
           <div data-hx style={hxIdx(0)}>
-            <span className="hx-kicker">NUESTRA METODOLOGÍA</span>
-            <span className="hx-bar" aria-hidden="true" />
-            <h2 id="metodologia-titulo" className="hx-title mt-8">
-              De una necesidad concreta <br className="hidden lg:block" />a una solución que se puede <br className="hidden lg:block" />
-              <em>poner en práctica.</em>
+            <h2 id="metodologia-titulo" className="hx-title">
+              Cómo <em>trabajamos</em>
             </h2>
+            <span className="hx-bar" aria-hidden="true" />
+            <p className="hx-intro">Empezamos por una necesidad concreta. Cuando el problema pide ir más allá del sitio o de la oferta, definimos contigo un alcance.</p>
           </div>
 
           <ol className="hx-steps">
