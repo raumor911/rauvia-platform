@@ -233,7 +233,7 @@
     {
       "id": "asset:home",
       "type": "Asset",
-      "label": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
+      "label": "RAUVIA | Servicios digitales para empresas",
       "description": "Página existente que explica home; la URL procede del registro canónico vigente.",
       "rationale": "Página existente que explica home; la URL procede del registro canónico vigente.",
       "status": "canonical",
@@ -7791,9 +7791,9 @@
     {
       "id": "source:home",
       "type": "Source",
-      "label": "Publicación institucional: RAUVIA | Servicios digitales y trabajo especializado para empresas",
-      "description": "Referencia editorial pública de RAUVIA | Servicios digitales y trabajo especializado para empresas; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de RAUVIA | Servicios digitales y trabajo especializado para empresas; no constituye validación independiente.",
+      "label": "Publicación institucional: RAUVIA | Servicios digitales para empresas",
+      "description": "Referencia editorial pública de RAUVIA | Servicios digitales para empresas; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de RAUVIA | Servicios digitales para empresas; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
