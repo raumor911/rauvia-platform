@@ -125,7 +125,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -242,7 +243,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -280,7 +282,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -354,7 +357,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -392,7 +396,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -430,7 +435,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -517,7 +523,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -604,7 +611,8 @@
     "primaryAsset": null,
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "hypothesis",
     "evidenceState": "editorial",
@@ -958,7 +966,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -1269,7 +1278,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -1307,7 +1317,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -1550,7 +1561,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -1811,7 +1823,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -1978,7 +1991,8 @@
     "primaryAsset": null,
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "hypothesis",
     "evidenceState": "editorial",
@@ -2433,7 +2447,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -2471,7 +2486,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -2545,7 +2561,8 @@
     "primaryAsset": null,
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "hypothesis",
     "evidenceState": "editorial",
@@ -2583,7 +2600,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -2621,7 +2639,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -2659,7 +2678,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -2697,7 +2717,8 @@
     "primaryAsset": "asset:sitio-web-servicios-especializados",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",
@@ -3008,7 +3029,8 @@
     "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
     "supportingAssets": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "status": "supported",
     "evidenceState": "editorial",

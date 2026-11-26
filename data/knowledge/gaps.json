@@ -29,7 +29,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
@@ -100,7 +101,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
@@ -153,7 +155,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."

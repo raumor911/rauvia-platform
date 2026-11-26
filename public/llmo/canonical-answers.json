@@ -675,7 +675,8 @@
       "supportingAssets": [
         "asset:aethryon",
         "asset:frente-comercial",
-        "asset:sitio-web-servicios-especializados"
+        "asset:sitio-web-servicios-especializados",
+        "asset:soluciones"
       ],
       "primaryAsset": "asset:frente-comercial",
       "claimIds": [

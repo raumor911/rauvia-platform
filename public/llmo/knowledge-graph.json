@@ -789,9 +789,9 @@
     {
       "id": "asset:soluciones",
       "type": "Asset",
-      "label": "Portafolio de Soluciones | RAUVIA",
-      "description": "Página existente que explica soluciones; la URL procede del registro canónico vigente.",
-      "rationale": "Página existente que explica soluciones; la URL procede del registro canónico vigente.",
+      "label": "Soluciones | Frente Comercial y SEO para IA | RAUVIA",
+      "description": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada una publica su alcance y su precio en su propia página; se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
+      "rationale": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada una publica su alcance y su precio en su propia página; se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
       "status": "canonical",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -849,6 +849,8 @@
         "offering:arquitectura-operativa",
         "offering:automatizacion",
         "offering:desarrollo-tecnologico",
+        "offering:frente-comercial",
+        "offering:seo-ai",
         "offering:sistema-comercial"
       ]
     },
@@ -5065,14 +5067,17 @@
       "evidenceState": "editorial",
       "visibility": "public",
       "sources": [
-        "source:ruta90"
+        "source:ruta90",
+        "source:soluciones"
       ],
       "assetRefs": [
-        "asset:ruta90"
+        "asset:ruta90",
+        "asset:soluciones"
       ],
       "attribution": "adopted_by_rauvia",
       "representedBy": [
-        "asset:ruta90"
+        "asset:ruta90",
+        "asset:soluciones"
       ],
       "supportsCapabilities": [
         "capability:priorizacion",
@@ -5086,8 +5091,8 @@
       "id": "offering:arquitectura-operativa",
       "type": "Offering",
       "label": "Arquitectura Operativa",
-      "description": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
-      "rationale": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "description": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "rationale": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -5115,8 +5120,8 @@
       "id": "offering:automatizacion",
       "type": "Offering",
       "label": "Automatización",
-      "description": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
-      "rationale": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "description": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "rationale": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -5143,8 +5148,8 @@
       "id": "offering:desarrollo-tecnologico",
       "type": "Offering",
       "label": "Desarrollo tecnológico",
-      "description": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
-      "rationale": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "description": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "rationale": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -5171,19 +5176,22 @@
       "id": "offering:frente-comercial",
       "type": "Offering",
       "label": "Frente Comercial",
-      "description": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
-      "rationale": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "description": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Sin garantía de ventas, posiciones, menciones ni citas.",
+      "rationale": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Sin garantía de ventas, posiciones, menciones ni citas.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
       "sources": [
-        "source:frente-comercial"
+        "source:frente-comercial",
+        "source:soluciones"
       ],
       "assetRefs": [
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "representedBy": [
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "supportsCapabilities": [
         "capability:contacto-claro",
@@ -5212,13 +5220,16 @@
       "evidenceState": "editorial",
       "visibility": "public",
       "sources": [
-        "source:seo-ai"
+        "source:seo-ai",
+        "source:soluciones"
       ],
       "assetRefs": [
-        "asset:seo-ai"
+        "asset:seo-ai",
+        "asset:soluciones"
       ],
       "representedBy": [
-        "asset:seo-ai"
+        "asset:seo-ai",
+        "asset:soluciones"
       ],
       "supportsCapabilities": [],
       "possibleForProblems": []
@@ -5269,8 +5280,8 @@
       "id": "offering:sistema-comercial",
       "type": "Offering",
       "label": "Sistema Comercial",
-      "description": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
-      "rationale": "Intervención existente descrita en Soluciones; pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "description": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
+      "rationale": "Intervención que RAUVIA define con la empresa según un alcance acordado; no es un paquete predefinido ni está incluida por defecto en las soluciones publicadas. Pertinencia y alcance sujetos a diagnóstico, sin garantía.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -6878,9 +6889,9 @@
     {
       "id": "source:soluciones",
       "type": "Source",
-      "label": "Publicación institucional: Portafolio de Soluciones | RAUVIA",
-      "description": "Referencia editorial pública de Portafolio de Soluciones | RAUVIA; no constituye validación independiente.",
-      "rationale": "Referencia editorial pública de Portafolio de Soluciones | RAUVIA; no constituye validación independiente.",
+      "label": "Publicación institucional: Soluciones | Frente Comercial y SEO para IA | RAUVIA",
+      "description": "Referencia editorial pública de Soluciones | Frente Comercial y SEO para IA | RAUVIA; no constituye validación independiente.",
+      "rationale": "Referencia editorial pública de Soluciones | Frente Comercial y SEO para IA | RAUVIA; no constituye validación independiente.",
       "status": "supported",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -11771,8 +11782,18 @@
     },
     {
       "from": "method:ruta90",
+      "relation": "representedBy",
+      "to": "asset:soluciones"
+    },
+    {
+      "from": "method:ruta90",
       "relation": "supportedBy",
       "to": "source:ruta90"
+    },
+    {
+      "from": "method:ruta90",
+      "relation": "supportedBy",
+      "to": "source:soluciones"
     },
     {
       "from": "method:ruta90",
@@ -11871,8 +11892,18 @@
     },
     {
       "from": "offering:frente-comercial",
+      "relation": "representedBy",
+      "to": "asset:soluciones"
+    },
+    {
+      "from": "offering:frente-comercial",
       "relation": "supportedBy",
       "to": "source:frente-comercial"
+    },
+    {
+      "from": "offering:frente-comercial",
+      "relation": "supportedBy",
+      "to": "source:soluciones"
     },
     {
       "from": "offering:frente-comercial",
@@ -11951,8 +11982,18 @@
     },
     {
       "from": "offering:seo-ai",
+      "relation": "representedBy",
+      "to": "asset:soluciones"
+    },
+    {
+      "from": "offering:seo-ai",
       "relation": "supportedBy",
       "to": "source:seo-ai"
+    },
+    {
+      "from": "offering:seo-ai",
+      "relation": "supportedBy",
+      "to": "source:soluciones"
     },
     {
       "from": "offering:sistema-comercial",

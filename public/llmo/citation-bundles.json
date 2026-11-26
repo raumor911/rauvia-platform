@@ -340,6 +340,7 @@
       "supporting_sources": [
         "source:aethryon",
         "source:sitio-web-servicios-especializados",
+        "source:soluciones",
         "source:wp-28",
         "source:wp-31"
       ],
@@ -1178,7 +1179,7 @@
     {
       "id": "source:soluciones",
       "url": "https://rauvia.com.mx/soluciones/",
-      "label": "Publicación institucional: Portafolio de Soluciones | RAUVIA",
+      "label": "Publicación institucional: Soluciones | Frente Comercial y SEO para IA | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
