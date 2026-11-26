@@ -7,7 +7,13 @@ const text=s=>s.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
 const h1=text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)[1]);
 // V73 deliberately adds the existing founder reference; all other SEO stays exact.
 const withFounder=schemas=>schemas.map(s=>s['@type']==='Organization'&&!s.founder?{...s,founder:{'@id':'https://rauvia.com.mx/#raul-morales'}}:s);
-const old=JSON.parse(fs.readFileSync('tests/fixtures/aethryon-v70-seo.json','utf8'));
+// N-03/N-06 (2026-11-26, nombre único RAUVIA): el fixture V70 es histórico e inmutable; estos tres reemplazos son los únicos cambios
+// intencionales sobre él (título «RAUVIA Consulting | AETHRYON» → «AETHRYON | RAUVIA», og:site_name y URL del logo). Todo lo demás debe seguir exacto.
+const nombreUnico=x=>JSON.parse(JSON.stringify(x)
+ .replaceAll('RAUVIA Consulting | AETHRYON','AETHRYON | RAUVIA')
+ .replaceAll('property=\\"og:site_name\\" content=\\"RAUVIA Consulting\\"','property=\\"og:site_name\\" content=\\"RAUVIA\\"')
+ .replaceAll('RAUVIA_CONSULTING_LOGO.png','RAUVIA_LOGO.png'));
+const old=nombreUnico(JSON.parse(fs.readFileSync('tests/fixtures/aethryon-v70-seo.json','utf8')));
 const main=html.match(/<main>([\s\S]*?)<\/main>/)[1];
 test('AETHRYON preserves V70 metadata and H1, with the documented V73 founder reference',()=>{
  assert.equal((html.match(/<h1\b/g)||[]).length,1);assert.equal(h1,old.h1[0]);
