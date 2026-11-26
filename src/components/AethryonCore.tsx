@@ -16,7 +16,10 @@ export default function AethryonCore({ showSteps = true }: { showSteps?: boolean
         {/* Frame the original animated SVG without altering its art or animations.
             Its baked-in labels sit outside this viewport; equivalent HTML follows. */}
         <svg viewBox="240 150 760 800" width="760" height="800" aria-hidden="true" focusable="false">
-          <image href="/media/aethryon-convergence-animated-optimized-v73.svg" width="1400" height="1060" />
+          {/* Si la caja del svg es más ancha que 760:800, el viewBox se ensancha y deja ver las etiquetas
+              horneadas del arte (a la derecha de x=1000), que se encimaban con la lista HTML. El recorte las deja fuera siempre. */}
+          <defs><clipPath id="rv-aethryon-frame"><rect x="240" y="150" width="760" height="800" /></clipPath></defs>
+          <image href="/media/aethryon-convergence-animated-optimized-v73.svg" width="1400" height="1060" clipPath="url(#rv-aethryon-frame)" />
         </svg>
       </Link>
       {showSteps && (
