@@ -10,14 +10,14 @@ export default function AvisoPrivacidadPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInUp>
             <span className="text-rauvia-blue font-bold tracking-widest uppercase text-sm mb-4 block">AVISO DE PRIVACIDAD INTEGRAL</span>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-rauvia-navy mb-4 tracking-tight">RAUVIA Consulting</h1>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-rauvia-navy mb-4 tracking-tight">RAUVIA</h1>
             <p className="text-slate-500 font-medium mb-12">Última actualización: septiembre de 2026</p>
             
             <div className="prose prose-lg prose-rauvia max-w-none text-slate-700">
               
               <h2 className="text-xl font-bold text-rauvia-navy mb-4 border-b border-slate-200 pb-2">1. Responsable del tratamiento</h2>
               <p>
-                RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO, S.A.S. DE C.V., comercialmente identificada como RAUVIA Consulting —en adelante, “RAUVIA”—, es responsable del tratamiento, uso, almacenamiento y protección de los datos personales recabados a través de sus sitios, formularios, comunicaciones y relaciones comerciales.
+                RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO, S.A.S. DE C.V., comercialmente identificada como RAUVIA, es responsable del tratamiento, uso, almacenamiento y protección de los datos personales recabados a través de sus sitios, formularios, comunicaciones y relaciones comerciales.
               </p>
               <p>
                 Para asuntos relacionados con privacidad y protección de datos personales podrá contactarnos mediante:<br/>
@@ -217,7 +217,7 @@ export default function AvisoPrivacidadPage() {
 
               <h2 className="text-xl font-bold text-rauvia-navy mt-12 mb-4 border-b border-slate-200 pb-2">15. Alcance territorial de los servicios</h2>
               <p>
-                RAUVIA Consulting es una empresa mexicana cuyos servicios, ofertas comerciales, formularios y mecanismos de contratación disponibles a través de este sitio están dirigidos principalmente a empresas y personas ubicadas en los Estados Unidos Mexicanos.
+                RAUVIA es una empresa mexicana cuyos servicios, ofertas comerciales, formularios y mecanismos de contratación disponibles a través de este sitio están dirigidos principalmente a empresas y personas ubicadas en los Estados Unidos Mexicanos.
               </p>
               <p>
                 RAUVIA no dirige intencionalmente mediante este sitio sus servicios a consumidores o residentes de otras jurisdicciones, ni pretende establecer mediante su disponibilidad una oferta comercial específica dirigida a dichos territorios.
