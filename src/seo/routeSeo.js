@@ -140,11 +140,11 @@ export const routeSeo = {
     ]
   },
   "/soluciones": {
-    "title": "Portafolio de Soluciones | RAUVIA",
-    "description": "Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.",
+    "title": "Soluciones | Frente Comercial y SEO para IA | RAUVIA",
+    "description": "Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.",
     "canonical": "https://rauvia.com.mx/soluciones/",
-    "ogTitle": "Portafolio de Soluciones | RAUVIA",
-    "ogDescription": "Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.",
+    "ogTitle": "Soluciones | Frente Comercial y SEO para IA | RAUVIA",
+    "ogDescription": "Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",

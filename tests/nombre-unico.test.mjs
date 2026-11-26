@@ -131,7 +131,7 @@ test('Títulos y og:site_name de las cinco páginas de la especificación', {ski
     '/casos/': 'Casos y evidencia | RAUVIA',
     '/casos/presencia-posicionamiento-profesional/': 'Caso de presencia profesional | RAUVIA',
     '/frente-comercial/': 'Frente Comercial para PyMES | RAUVIA',
-    '/soluciones/': 'Portafolio de Soluciones | RAUVIA'
+    '/soluciones/': 'Soluciones | Frente Comercial y SEO para IA | RAUVIA' // S-01: el título lo redefine la especificación de Soluciones (v0.2)
   };
   for (const [p, title] of Object.entries(expected)) {
     const html = await (await fetch(base + p)).text();
