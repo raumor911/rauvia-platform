@@ -51,18 +51,31 @@ RAUVIA is the organization through which this work is structured, implemented, a
 
 ## Referencias públicas para modelos y agentes
 
-- [RAUVIA y sus capacidades](https://rauvia.com.mx/llmo/rauvia.md): Identidad y enfoques de intervención.
+- [RAUVIA y sus capacidades](https://rauvia.com.mx/llmo/rauvia.md): Identidad, soluciones publicadas y límites.
 - [AETHRYON](https://rauvia.com.mx/llmo/aethryon.md): Relación con RAUVIA y alcance público.
 - [Casos y límites de evidencia](https://rauvia.com.mx/llmo/evidencia.md): Cómo interpretar casos y resultados.
 - [Entidad estructurada](https://rauvia.com.mx/llmo/organization.json): Identificadores coherentes con el sitio.
 - [Índice legible por máquinas](https://rauvia.com.mx/llmo/index.json): Directorio de estos recursos públicos.
 
+## Soluciones publicadas
+
+Catálogo de RAUVIA: https://rauvia.com.mx/soluciones/ · Última revisión: 26 de noviembre de 2026. Las soluciones se listan sin orden de prioridad. Cada una publica su alcance y su precio en su propia página; los precios también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.
+
+- [Frente Comercial](https://rauvia.com.mx/frente-comercial/): Organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Para empresas con una oferta existente y suficiente información para explicarla. Niveles Esencial, Pro y Portafolio. No incluye CRM, seguimiento de oportunidades, publicidad, generación de demanda ni estrategia comercial completa.
+- [SEO para IA](https://rauvia.com.mx/seo-ai/): Prepara y verifica la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega. Se ofrece como [auditoría](https://rauvia.com.mx/seo-ai/auditoria/) y como [implementación](https://rauvia.com.mx/seo-ai/implementacion/). No promete posiciones, menciones ni citas.
+- [Ruta 90](https://rauvia.com.mx/ruta-90/): Método de ejecución de 90 días, adoptado por RAUVIA, para convertir una prioridad empresarial en resultados, entregables, responsables, métricas y evidencia. Requiere una prioridad ya identificada. No es una garantía de terminación absoluta.
+- [Páginas para médicos](https://rauvia.com.mx/pagina-web-para-medicos/): Presencia web para médicos y profesionistas de la salud, con una página médica gratuita bajo dominio RAUVIA ([detalle](https://rauvia.com.mx/pagina-web-gratis-para-medicos/)) y opciones personalizadas.
+
+Cuando la necesidad va más allá de estas soluciones, RAUVIA define con la empresa un alcance. Esas intervenciones no son paquetes predefinidos ni están incluidas por defecto en las soluciones publicadas.
+
+RAUVIA Trayectoria (continuidad de sitios web) se describe en su propia página; sus precios son una referencia histórica pendiente de confirmación comercial y por eso no forma parte de este catálogo.
+
 ## Páginas originales
 
 - [Nosotros](https://rauvia.com.mx/nosotros/): Quiénes somos, cómo trabajamos, AETHRYON y fundador.
-- [Soluciones](https://rauvia.com.mx/soluciones/): Capacidades de intervención.
+- [Soluciones](https://rauvia.com.mx/soluciones/): Catálogo de las soluciones publicadas (ver la sección Soluciones publicadas).
 - [AETHRYON](https://rauvia.com.mx/aethryon/): Sistema de análisis y decisión.
-- [Frente comercial](https://rauvia.com.mx/frente-comercial/): Información comercial.
+- [Frente comercial](https://rauvia.com.mx/frente-comercial/): Niveles Esencial, Pro y Portafolio, con alcance, límites y precio.
 - [RAUVIA Trayectoria](https://rauvia.com.mx/trayectoria/): Planes de presencia digital, suscripciones y cambios de sitios web. Los precios visibles son referencias históricas sujetas a confirmación.
 - [SEO para IA generativa (GEO)](https://rauvia.com.mx/seo-ai/): Preparación y verificación de la información pública de una empresa para buscadores y asistentes de IA. No garantiza posiciones, menciones ni citas.
 - [Guía: SEO, GEO y AEO para empresas](https://rauvia.com.mx/recursos/seo-para-ia/): Guía práctica de autoservicio, sin registro ni compra: plan de cinco pasos, ejemplo ficticio y método de medición. No garantiza posiciones, menciones, citas, tráfico ni ventas.
