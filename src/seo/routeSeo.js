@@ -1,4 +1,5 @@
 import {ruta90Seo} from '../data/ruta90.js';
+import {solucionesItemList} from '../data/solucionesCatalog.js';
 // Single source of public route metadata and structured data. Add future landing entries here.
 export const routeSeo = {
   "/ruta-90": ruta90Seo,
@@ -72,7 +73,7 @@ export const routeSeo = {
         "@id": "https://rauvia.com.mx/#service",
         "name": "Consultoría estratégica y desarrollo tecnológico",
         "serviceType": "Consultoría estratégica y desarrollo tecnológico para PyMES y empresas B2B",
-        "description": "Identifica dónde una empresa pierde oportunidades o capacidad y construye la estructura comercial, operativa o tecnológica necesaria para corregirlo. Las capacidades no forman una ruta obligatoria ni garantizan resultados.",
+        "description": "Identifica dónde una empresa pierde oportunidades o capacidad y construye la estructura comercial, operativa o tecnológica necesaria para corregirlo. Las capacidades no forman una ruta obligatoria ni garantizan resultados. Se define con la empresa según el alcance acordado y no está incluida por defecto en las ofertas publicadas.",
         "url": "https://rauvia.com.mx/soluciones/",
         "provider": {"@id": "https://rauvia.com.mx/#organization"},
         "areaServed": {"@type": "Country", "name": "México"},
@@ -155,11 +156,13 @@ export const routeSeo = {
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
         "url": "https://rauvia.com.mx/soluciones/",
-        "name": "Portafolio de Soluciones - RAUVIA",
-        "description": "Catálogo de soluciones empresariales. RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
+        "name": "Soluciones | RAUVIA",
+        "description": "Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
-        }
+        },
+        // S-04.5: solo las soluciones que hoy tienen tarjeta, sin orden, sin Offer, Product, precio ni FAQPage. Misma fuente que la página.
+        "mainEntity": solucionesItemList()
       }
     ]
   },
