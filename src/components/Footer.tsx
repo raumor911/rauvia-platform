@@ -118,10 +118,6 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
             </a>
           </div>
         </div>
-        <p data-ft style={{"--i":5} as React.CSSProperties} className="ft-credit max-w-[1600px] mx-auto mt-4 text-center text-xs text-slate-400">
-          Experiencia digital desarrollada por{' '}
-          <a href="https://rauvia.com.mx/" className="inline-flex items-center min-h-[44px] underline underline-offset-4 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">RAUVIA Consulting</a>
-        </p>
       </div>
     </footer>
   );
