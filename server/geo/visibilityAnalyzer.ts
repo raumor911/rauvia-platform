@@ -4,7 +4,7 @@ export function analyzeGeoVisibility(response: NormalizedGenerativeResponse): Ge
   const text = response.responseText.toLowerCase();
   
   // A. Mention
-  const mentionKeywords = ['rauvia', 'rauvia consulting', 'rauvia.com.mx'];
+  const mentionKeywords = ['rauvia', 'rauvia.com.mx'];
   const mentioned = mentionKeywords.some(kw => text.includes(kw));
 
   // B. Citation

@@ -70,6 +70,16 @@ test('N-09: toda entidad Organization del JSON-LD de cada página tiene name «R
   assert.equal(node.legalName, 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
 });
 
+test('N-10: datos que describen a RAUVIA sin el nombre viejo; la cita de fuente externa se conserva con el nombre vigente', () => {
+  const master = fs.readFileSync('data/knowledge/master-graph.json', 'utf8');
+  assert.doesNotMatch(master, /consulting/i, 'master-graph.json');
+  const obs = JSON.parse(fs.readFileSync('data/knowledge/person-source-observations.json', 'utf8'));
+  const quote = obs.observations.find(o => o.observedFields?.includes('Fundador de RAUVIA Consulting'));
+  assert.ok(quote, 'la cita textual de la fuente externa no se reescribe');
+  assert.equal(quote.currentOrganizationName, 'RAUVIA');
+  for (const f of ['src/knowledge/personDiscovery.ts', 'server/geo/visibilityAnalyzer.ts']) assert.doesNotMatch(fs.readFileSync(f, 'utf8'), /rauvia consulting|Morales Consulting/i, f);
+});
+
 test('Ninguna URL de logo contiene CONSULTING y el logo nuevo existe', () => {
   const org = JSON.parse(fs.readFileSync('public/llmo/organization.json', 'utf8'));
   assert.equal(org.logo, 'https://rauvia.com.mx/media/RAUVIA_LOGO.png');
