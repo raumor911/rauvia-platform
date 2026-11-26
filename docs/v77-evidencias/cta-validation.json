@@ -1,11 +1,12 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-24T04:56:41.060Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base b51ed4e + working tree",
+  "capturedAt": "2026-11-26T20:42:07.963Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base 67dde21 + working tree",
   "approval": {
-    "status": "approved",
-    "by": "RAUL MORALES",
-    "at": "2026-11-24T04:59:12.932Z"
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "note": "El Hero (RAU-004, b9e5c73) no pasó por revisión visual. Revisa docs/v77-evidencias/screens y registra con --approve \"Nombre\"."
   },
   "after": [
     [
@@ -89,9 +90,9 @@
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
         "rect": {
           "x": 79.203125,
-          "y": 536.515625,
-          "width": 236.9375,
-          "height": 60.9375
+          "y": 585.28125,
+          "width": 385.359375,
+          "height": 58
         },
         "viewport": [
           1440,
@@ -105,9 +106,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 332.140625,
-          "y": 542.984375,
-          "width": 163.59375,
+          "x": 480.5625,
+          "y": 590.28125,
+          "width": 256.34375,
           "height": 48
         },
         "viewport": [
@@ -223,9 +224,9 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "7edd640ec59258a56ab51c3c7b1e826c3563fa5c08c5df00b71f0fe8f82a2f5b",
+    "src/components/HeroSection.tsx": "86959de2cf4de149fd2f3467540a8fa7e842b4af4bb42abb01b21c0e46538ea3",
     "src/components/Footer.tsx": "7221577fe3fc93cbdc93fcacb25a540b284fafbdb5a55bdc13cb641a107ff85d",
-    "src/components/AethryonCore.tsx": "2ef54cba588c88c6b5849c0ab9a292d981da4b00420b503e18bf34547084c539",
+    "src/components/AethryonCore.tsx": "28aef9cc0c923e612c8ef5bd6406f61fc2ae32cbfea59b188e008f14c44210c1",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
     "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
     "src/pages/NosotrosPage.tsx": "37f98ec35bb507ce05bef6e0cc746c166ebad7a03362a38a50bf342d6332275c",
