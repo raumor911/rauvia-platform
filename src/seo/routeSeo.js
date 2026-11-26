@@ -140,10 +140,10 @@ export const routeSeo = {
     ]
   },
   "/soluciones": {
-    "title": "RAUVIA Consulting | Portafolio de Soluciones",
+    "title": "Portafolio de Soluciones | RAUVIA",
     "description": "Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.",
     "canonical": "https://rauvia.com.mx/soluciones/",
-    "ogTitle": "RAUVIA Consulting | Portafolio de Soluciones",
+    "ogTitle": "Portafolio de Soluciones | RAUVIA",
     "ogDescription": "Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
@@ -164,10 +164,10 @@ export const routeSeo = {
     ]
   },
   "/aethryon": {
-    "title": "RAUVIA Consulting | AETHRYON",
+    "title": "AETHRYON | RAUVIA",
     "description": "AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.",
     "canonical": "https://rauvia.com.mx/aethryon/",
-    "ogTitle": "RAUVIA Consulting | AETHRYON",
+    "ogTitle": "AETHRYON | RAUVIA",
     "ogDescription": "AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
@@ -218,10 +218,10 @@ export const routeSeo = {
     ]
   },
   "/frente-comercial": {
-    "title": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "title": "Frente Comercial para PyMES | RAUVIA",
     "description": "Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.",
     "canonical": "https://rauvia.com.mx/frente-comercial/",
-    "ogTitle": "Frente Comercial para PyMES | RAUVIA Consulting",
+    "ogTitle": "Frente Comercial para PyMES | RAUVIA",
     "ogDescription": "Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
@@ -498,10 +498,10 @@ export const routeSeo = {
     ]
   },
   "/casos": {
-    "title": "Casos y evidencia | RAUVIA Consulting",
+    "title": "Casos y evidencia | RAUVIA",
     "description": "Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.",
     "canonical": "https://rauvia.com.mx/casos/",
-    "ogTitle": "Casos y evidencia | RAUVIA Consulting",
+    "ogTitle": "Casos y evidencia | RAUVIA",
     "ogDescription": "Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
@@ -2018,10 +2018,10 @@ export const routeSeo = {
     ]
   },
   "/casos/presencia-posicionamiento-profesional": {
-    "title": "Caso de presencia profesional | RAUVIA Consulting",
+    "title": "Caso de presencia profesional | RAUVIA",
     "description": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
     "canonical": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
-    "ogTitle": "Caso de presencia profesional | RAUVIA Consulting",
+    "ogTitle": "Caso de presencia profesional | RAUVIA",
     "ogDescription": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
@@ -2033,7 +2033,7 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/#webpage",
         "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
-        "name": "Caso de presencia profesional | RAUVIA Consulting",
+        "name": "Caso de presencia profesional | RAUVIA",
         "description": "Cómo organizar información, experiencia, servicios y contacto para construir una presencia profesional coherente. Enfoque de implementación y límites de evidencia.",
         "isPartOf": {
           "@id": "https://rauvia.com.mx/#website"
@@ -2045,10 +2045,10 @@ export const routeSeo = {
     ]
   },
   "/404": {
-    "title": "Página no encontrada | RAUVIA Consulting",
+    "title": "Página no encontrada | RAUVIA",
     "description": "La página que buscas no existe o ha sido movida.",
     "canonical": null,
-    "ogTitle": "Página no encontrada | RAUVIA Consulting",
+    "ogTitle": "Página no encontrada | RAUVIA",
     "ogDescription": "La página que buscas no existe o ha sido movida.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
