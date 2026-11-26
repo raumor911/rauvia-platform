@@ -5,7 +5,7 @@ import {routeSeo} from '../src/seo/routeSeo.js';
 const read=p=>fs.readFileSync(p,'utf8');
 const OLD=/firma mexicana de consultoría estratégica|identifica dónde una empresa está perdiendo valor|CONSULTORÍA PARA PYMES/i;
 test('Home y Nosotros declaran la identidad aprobada en metadata y JSON-LD',()=>{
-  assert.equal(routeSeo['/'].title,'RAUVIA | Servicios digitales y trabajo especializado para empresas');
+  assert.equal(routeSeo['/'].title,'RAUVIA | Servicios digitales para empresas');
   assert.equal(routeSeo['/nosotros'].title,'Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA');
   for(const k of ['/','/nosotros']){
     const s=routeSeo[k];assert.doesNotMatch(JSON.stringify(s),OLD);

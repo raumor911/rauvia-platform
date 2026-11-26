@@ -3,11 +3,11 @@ import {ruta90Seo} from '../data/ruta90.js';
 export const routeSeo = {
   "/ruta-90": ruta90Seo,
   "/": {
-    "title": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
-    "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
+    "title": "RAUVIA | Servicios digitales para empresas",
+    "description": "Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.",
     "canonical": "https://rauvia.com.mx/",
-    "ogTitle": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
-    "ogDescription": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
+    "ogTitle": "RAUVIA | Servicios digitales para empresas",
+    "ogDescription": "Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.",
     "ogType": "website",
     "ogImage": "https://rauvia.com.mx/media/og-image.jpg",
     "robots": "index, follow",
@@ -60,8 +60,8 @@ export const routeSeo = {
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/#webpage",
         "url": "https://rauvia.com.mx/",
-        "name": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
-        "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
+        "name": "RAUVIA | Servicios digitales para empresas",
+        "description": "Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.",
         "inLanguage": "es-MX",
         "isPartOf": {"@id": "https://rauvia.com.mx/#website"},
         "about": {"@id": "https://rauvia.com.mx/#organization"}
