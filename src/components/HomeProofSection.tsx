@@ -9,7 +9,7 @@ export default function HomeProofSection() {
     <section className="rv-home-proof" id="prueba" aria-labelledby="prueba-titulo">
       <div className="rv-hero-container">
         <article className="rv-proof-card">
-          <span className="rv-proof-kicker">PRUEBA</span>
+          <span className="rv-proof-kicker">CASO</span>
           <h2 id="prueba-titulo" className="rv-proof-title">Un proveedor B2B de infraestructura temporal</h2>
           <p className="rv-proof-text">
             En septiembre de 2026 tenía dos artículos accesibles en su sitio, frente a competidores con catálogos más amplios. Ordenamos su oferta por necesidad, construimos las páginas que faltaban y publicamos fichas de sus proyectos. Al 20 de noviembre su sitio declaraba 58 páginas, y el 26 de noviembre aparecía en la primera página de Google México en las cinco búsquedas comerciales que revisamos. No es una cifra de ventas: es lo que se midió, con fecha.
