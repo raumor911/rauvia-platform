@@ -29,7 +29,7 @@ export default function HeroSection() {
                 <Link to="/nosotros/#como-trabajamos" className="rv-hero-secondary flex">CÓMO TRABAJAMOS</Link>
               </div>
             </div>
-            <div className="rv-hero-core"><AethryonCore showSteps={false} /></div>
+            <div className="rv-hero-core"><AethryonCore /></div>
           </div>
           <a href="#problema" className="rv-hero-continue flex" aria-label="Explorar los retos que atendemos"><ChevronDown aria-hidden="true" /></a>
         </div>

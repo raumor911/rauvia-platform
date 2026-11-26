@@ -2,22 +2,14 @@
    Las puertas y "Explora nuestro conocimiento" salen del hero a secciones propias; el hero conserva
    el instrumento AETHRYON sin la lista de cinco pasos. Paleta RAUVIA (navy #0A2540, azul #1E4A74, dorado #E6A300 / #FFD766). */
 
-/* ---------- Hero: copy + instrumento ---------- */
+/* ---------- Hero: copy + instrumento AETHRYON con su lista 01-05 ----------
+   Las puertas salieron del hero, así que la rejilla pasa de tres a dos columnas. */
 .rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1fr); }
-.rv-main-site .rv-home-hero .rv-aethryon-core { grid-template-columns: minmax(0, 1fr); }
-.rv-main-site .rv-home-hero .rv-hero-core { justify-self: center; width: min(100%, 360px); }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 320px); }
-  .rv-main-site .rv-home-hero .rv-aethryon-graphic { max-width: 280px; }
-}
 @media (min-width: 1024px) {
-  .rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; }
-  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 460px); justify-self: center; padding-top: 0; }
-  .rv-main-site .rv-home-hero .rv-aethryon-graphic { max-width: none; margin-inline: auto; }
-  .rv-main-site .rv-home-hero :is(.rv-hero-description) { max-width: 30rem; }
+  .rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); align-items: center; }
 }
-@media (min-width: 1440px) {
-  .rv-main-site .rv-home-hero .rv-hero-core { width: min(100%, 500px); }
+@media (min-width: 1200px) {
+  .rv-main-site .rv-home-hero .rv-hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr); column-gap: clamp(28px, 3vw, 56px); }
 }
 
 /* ---------- Secciones nuevas: ritmo vertical común ---------- */
