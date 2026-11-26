@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-26T20:42:07.963Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base 67dde21 + working tree",
+  "capturedAt": "2026-11-26T20:49:15.699Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base c52ba41 + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -90,8 +90,8 @@
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
         "rect": {
           "x": 79.203125,
-          "y": 585.28125,
-          "width": 385.359375,
+          "y": 590.234375,
+          "width": 319.3125,
           "height": 58
         },
         "viewport": [
@@ -106,9 +106,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 480.5625,
-          "y": 590.28125,
-          "width": 256.34375,
+          "x": 414.515625,
+          "y": 595.234375,
+          "width": 215.078125,
           "height": 48
         },
         "viewport": [
@@ -224,7 +224,7 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "86959de2cf4de149fd2f3467540a8fa7e842b4af4bb42abb01b21c0e46538ea3",
+    "src/components/HeroSection.tsx": "cedf6e0fbe9e5e7033e6ed353332648d5c6b82d86afa541f0d31154f52a9cf0a",
     "src/components/Footer.tsx": "7221577fe3fc93cbdc93fcacb25a540b284fafbdb5a55bdc13cb641a107ff85d",
     "src/components/AethryonCore.tsx": "28aef9cc0c923e612c8ef5bd6406f61fc2ae32cbfea59b188e008f14c44210c1",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
