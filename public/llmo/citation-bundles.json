@@ -1066,7 +1066,7 @@
     {
       "id": "source:aethryon",
       "url": "https://rauvia.com.mx/aethryon/",
-      "label": "Publicación institucional: RAUVIA Consulting | AETHRYON",
+      "label": "Publicación institucional: AETHRYON | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1090,7 +1090,7 @@
     {
       "id": "source:case-presencia-posicionamiento-profesional",
       "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
-      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA Consulting",
+      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1098,7 +1098,7 @@
     {
       "id": "source:frente-comercial",
       "url": "https://rauvia.com.mx/frente-comercial/",
-      "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA Consulting",
+      "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1178,7 +1178,7 @@
     {
       "id": "source:soluciones",
       "url": "https://rauvia.com.mx/soluciones/",
-      "label": "Publicación institucional: RAUVIA Consulting | Portafolio de Soluciones",
+      "label": "Publicación institucional: Portafolio de Soluciones | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"

@@ -1,4 +1,4 @@
-# robots.txt for RAUVIA Consulting
+# robots.txt for RAUVIA
 # https://rauvia.com.mx
 
 User-agent: *

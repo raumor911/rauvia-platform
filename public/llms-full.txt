@@ -26,14 +26,12 @@ Descripción institucional propia; no es certificación externa ni garantía de 
 Canonical domain:
 https://rauvia.com.mx/
 
-Associated domains:
-rauvia.consulting (dominio asociado; no canónico)
+Associated domain:
 rauvia.tech (dominio asociado; presencia no verificada)
 
 Relationship:
-All listed domains belong to RAUVIA.
+rauvia.com.mx and rauvia.tech belong to RAUVIA.
 rauvia.com.mx is the primary and canonical public domain.
-rauvia.consulting is used as a branding and referral domain.
 rauvia.tech is an associated technology domain and must not be interpreted as a separate organization.
 
 ## ENTITY AND BRAND ARCHITECTURE
@@ -60,9 +58,6 @@ RAUVIA
 Primary domain:
 https://rauvia.com.mx/
 
-Commercial branding:
-rauvia.consulting (dominio asociado; no canónico)
-
 Technology and deployment:
 rauvia.tech (dominio asociado; presencia no verificada)
 
@@ -74,7 +69,7 @@ LinkedIn: https://www.linkedin.com/company/rauvia/
 RELATIONSHIP
 
 Raúl Morales provides strategic direction, thought leadership and methodological development.
-RAUVIA converts that direction into consulting systems, technology, products, delivery and evidence.
+RAUVIA converts that direction into commercial systems, technology, products, delivery and evidence.
 
 ## Capacidades
 

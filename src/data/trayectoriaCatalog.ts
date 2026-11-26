@@ -3,7 +3,7 @@
 export const trayectoriaCatalog = {
   "schema_version": "1.0.0",
   "product": "RAUVIA Trayectoria",
-  "publisher": "RAUVIA Consulting",
+  "publisher": "RAUVIA",
   "canonical": "https://rauvia.com.mx/trayectoria/",
   "source_date": "2026-10-14",
   "reviewed_at": "2026-11-10",

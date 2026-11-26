@@ -20,7 +20,7 @@ export const routeSeo = {
         "name": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "alternateName": "RAUVIA",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "founder": {
           "@id": "https://rauvia.com.mx/#raul-morales",
@@ -554,7 +554,7 @@ export const routeSeo = {
     "ogTitle": "Página comercial para servicios profesionales | RAUVIA",
     "ogDescription": "RAUVIA construye páginas comerciales para servicios profesionales que necesitan explicar mejor su oferta, generar confianza y convertir visitas en conversaciones reales.",
     "ogType": "website",
-    "ogImage": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+    "ogImage": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
     "robots": "index, follow",
     "twitterCard": "summary_large_image",
     "schema": [
@@ -832,9 +832,7 @@ export const routeSeo = {
         "serviceType": "Diseño y desarrollo de presencia digital profesional",
         "description": "RAUVIA crea páginas web para médicos especialistas con perfil profesional, especialidad, ubicación, WhatsApp, agenda de citas y estructura SEO/GEO.",
         "provider": {
-          "@type": "Organization",
-          "name": "RAUVIA Consulting",
-          "url": "https://rauvia.com.mx/"
+          "@id": "https://rauvia.com.mx/#organization"
         }
       },
       {
@@ -950,9 +948,7 @@ export const routeSeo = {
         "serviceType": "Estructura y revisión de presencia digital local",
         "description": "Revisa cómo se relacionan tu especialidad, ubicación, sitio y contacto. SEO local para médicos, especialistas y consultorios, con alcance definido según los activos de tu práctica.",
         "provider": {
-          "@type": "Organization",
-          "name": "RAUVIA Consulting",
-          "url": "https://rauvia.com.mx/"
+          "@id": "https://rauvia.com.mx/#organization"
         }
       },
       {

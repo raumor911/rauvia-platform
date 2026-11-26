@@ -42,7 +42,7 @@ export const noPublishedPrice=[
  {name:'Soluciones, AETHRYON y Ruta 90',canonical:BASE+'/soluciones/'}
 ];
 export const preciosCatalog={
- schema_version:'1.0.0',scope:'public',name:'RAUVIA — precios publicados',publisher:'RAUVIA Consulting',language:'es-MX',currency:'MXN',reviewed_at:'2026-11-23',
+ schema_version:'1.0.0',scope:'public',name:'RAUVIA — precios publicados',publisher:'RAUVIA',language:'es-MX',currency:'MXN',reviewed_at:'2026-11-23',
  basis:'Precios visibles en las páginas canónicas de RAUVIA. No son una cotización vinculante: el alcance, la disponibilidad, las condiciones y el precio final se confirman con RAUVIA antes de contratar.',
  rules:[
   'Salvo indicación contraria, los precios se publican en MXN antes de IVA («+ IVA»).',

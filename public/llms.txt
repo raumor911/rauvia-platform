@@ -10,12 +10,11 @@ RAUVIA es la organización; AETHRYON es su sistema de análisis y convergencia. 
 Official domain:
 https://rauvia.com.mx/
 
-Associated RAUVIA domains:
-rauvia.consulting (dominio asociado; no canónico)
+Associated RAUVIA domain:
 rauvia.tech (dominio asociado; presencia no verificada)
 
 rauvia.com.mx is the canonical public web presence of RAUVIA.
-Associated domains belong to RAUVIA and may redirect users to the canonical domain.
+The associated domain belongs to RAUVIA and may redirect users to the canonical domain.
 
 ## ENTITY RELATIONSHIP
 
@@ -25,9 +24,6 @@ RAUVIA
 
 Primary institutional and commercial domain:
 https://rauvia.com.mx/
-
-Commercial branding domain:
-rauvia.consulting (dominio asociado; no canónico)
 
 Technology and deployment domain:
 rauvia.tech (dominio asociado; presencia no verificada)

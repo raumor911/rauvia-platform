@@ -5,7 +5,7 @@ export const ENTITIES = {
     name: "RAUVIA",
     legalName: "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
     url: "https://rauvia.com.mx",
-    logo: "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+    logo: "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
     description: "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
     telephone: "+52 55 8649 4076",
     // Solo país: RAUVIA no publica domicilio; no se inventa calle ni ciudad.
