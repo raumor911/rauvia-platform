@@ -6,6 +6,7 @@ import useScrollReveal from '../hooks/useScrollReveal';
 import useHomeFrontier from '../hooks/useHomeFrontier';
 import HeroSection from '../components/HeroSection';
 import HomeDoorsSection from '../components/HomeDoorsSection';
+import HomeProofSection from '../components/HomeProofSection';
 import HomeKnowledgeSection from '../components/HomeKnowledgeSection';
 import ProblemSection from '../components/ProblemSection';
 import MethodologySection from '../components/MethodologySection';
@@ -13,6 +14,7 @@ import CapabilitiesSection from '../components/CapabilitiesSection';
 import '../styles/scrollReveal.css';
 import '../styles/homeFrontier.css';
 import '../styles/homeAdecuacion.css';
+import '../styles/homeProof.css';
 
 
 export default function HomePage() {
@@ -52,6 +54,9 @@ export default function HomePage() {
       </FadeInUp>
       <FadeInUp className="rv-home-reveal">
         <CapabilitiesSection />
+      </FadeInUp>
+      <FadeInUp className="rv-home-reveal">
+        <HomeProofSection />
       </FadeInUp>
       <FadeInUp className="rv-home-reveal">
         <HomeKnowledgeSection />

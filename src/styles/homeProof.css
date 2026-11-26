@@ -1,0 +1,22 @@
+/* Home · C-05 Prueba (caso anonimizado). Solo presentación, paleta RAUVIA. */
+.rv-home-proof { position: relative; background: linear-gradient(180deg, #fff 0%, #f4f8fc 100%); padding-block: clamp(3rem, 6vw, 5.5rem); }
+.rv-proof-card {
+  position: relative; overflow: hidden; max-width: 62rem; margin-inline: auto; padding: clamp(1.75rem, 4vw, 3rem) clamp(1.5rem, 4vw, 3.25rem) clamp(1.75rem, 4vw, 3rem) clamp(1.75rem, 4.5vw, 3.5rem);
+  border: 1px solid #dce5ee; border-radius: 20px; background: #fff; box-shadow: 0 30px 56px -38px rgba(10, 37, 64, .45);
+}
+.rv-proof-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #FFD766, #E6A300 55%, #1E4A74); }
+.rv-proof-kicker { display: block; font: 800 .78rem/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .14em; color: #1E4A74; }
+.rv-proof-kicker::after { content: ''; display: block; width: 2rem; height: 3px; margin-top: .75rem; border-radius: 2px; background: linear-gradient(90deg, #E6A300, #FFD766); }
+.rv-proof-title { margin: 1.25rem 0 0; font-size: clamp(1.5rem, 2.8vw, 2.25rem); font-weight: 800; line-height: 1.15; letter-spacing: -.025em; color: #0A2540; }
+.rv-main-site main .rv-proof-text { margin: 1.1rem 0 0; max-width: 54rem; color: #334155; font-size: clamp(1rem, 1.3vw, 1.125rem); line-height: 1.7; }
+.rv-proof-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; margin-top: 1.5rem; padding: 10px 22px; border: 1px solid #0A2540; border-radius: 8px;
+  color: #0A2540; font-size: .9375rem; font-weight: 700; line-height: 1.3; text-decoration: none;
+  transition: background .3s, color .3s, transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s;
+}
+.rv-proof-link:hover { background: #0A2540; color: #fff; transform: translateY(-1px); box-shadow: 0 14px 28px -14px rgba(10, 37, 64, .6); }
+.rv-proof-link svg { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.rv-proof-link:hover svg { transform: translateX(4px); }
+.rv-proof-link:focus-visible { outline: 3px solid #E6A300; outline-offset: 3px; }
+@media (max-width: 480px) { .rv-proof-link { width: 100%; } }
+@media (prefers-reduced-motion: reduce) { .rv-proof-link, .rv-proof-link svg { transition: none; } }
