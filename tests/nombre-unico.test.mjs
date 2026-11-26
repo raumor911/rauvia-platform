@@ -41,9 +41,33 @@ test('Las redes con rauviaconsulting se conservan en llms.txt y en el sameAs del
   const org = jsonLd(await (await fetch(base + '/')).text()).find(x => x['@type'] === 'Organization');
   assert.ok(org.sameAs.includes('https://www.facebook.com/rauviaconsulting/') && org.sameAs.includes('https://www.instagram.com/rauviaconsulting/'));
   assert.equal(org.logo, 'https://rauvia.com.mx/media/RAUVIA_LOGO.png');
-  // El name de la home es la razón social (no cambia, §5); el nombre comercial es alternateName y nunca «RAUVIA Consulting».
-  assert.doesNotMatch(org.name, /consulting/i);
-  assert.equal(org.alternateName, 'RAUVIA');
+  // N-09 (adenda): name = «RAUVIA»; la razón social vive en legalName; sin alternateName.
+  assert.equal(org.name, 'RAUVIA');
+  assert.equal(org.legalName, 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
+  assert.equal('alternateName' in org, false);
+});
+
+test('N-09: toda entidad Organization del JSON-LD de cada página tiene name «RAUVIA», sin alternateName', {skip: !base}, async () => {
+  const sitemap = await (await fetch(base + '/sitemap.xml')).text();
+  const paths = [...sitemap.matchAll(/<loc>https:\/\/rauvia\.com\.mx([^<]*)<\/loc>/g)].map(m => m[1] || '/');
+  const orgs = (node, out = []) => { if (Array.isArray(node)) node.forEach(n => orgs(n, out)); else if (node && typeof node === 'object') { if (node['@id'] === 'https://rauvia.com.mx/#organization' && 'name' in node) out.push(node); for (const v of Object.values(node)) orgs(v, out); } return out; };
+  const bad = [];
+  let seen = 0;
+  for (const p of paths) {
+    const html = await (await fetch(base + p)).text();
+    for (const block of jsonLd(html)) for (const o of orgs(block)) {
+      seen++;
+      if (o.name !== 'RAUVIA') bad.push(`${p}: name «${o.name}»`);
+      if ('alternateName' in o) bad.push(`${p}: alternateName «${o.alternateName}»`);
+      if ('legalName' in o && o.legalName !== 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO') bad.push(`${p}: legalName «${o.legalName}»`);
+    }
+  }
+  assert.ok(seen >= 30, `debería haber entidades Organization con name (${seen})`);
+  assert.deepEqual(bad, []);
+  const kg = JSON.parse(fs.readFileSync('public/llmo/knowledge-graph.json', 'utf8'));
+  const node = kg.nodes.find(n => n.id === 'org:rauvia');
+  assert.equal(node.name, 'RAUVIA');
+  assert.equal(node.legalName, 'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
 });
 
 test('Ninguna URL de logo contiene CONSULTING y el logo nuevo existe', () => {

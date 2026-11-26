@@ -13,7 +13,10 @@ test('Home y Nosotros declaran la identidad aprobada en metadata y JSON-LD',()=>
   }
   const org=routeSeo['/'].schema.find(x=>x['@type']==='Organization');
   assert.equal(org['@id'],'https://rauvia.com.mx/#organization');
-  assert.equal(org.legalName??'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO','RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
+  // N-09 (adenda 2026-11-26): name = nombre comercial, razón social en legalName y sin alternateName.
+  assert.equal(org.name,'RAUVIA');
+  assert.equal(org.legalName,'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
+  assert.equal('alternateName' in org,false);
   assert.match(org.description,/trabajo especializado, metodología y tecnología/);
 });
 test('Hero: dos entradas, sin promesa de consultoría total ni crecimiento garantizado',()=>{
