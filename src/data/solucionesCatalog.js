@@ -7,7 +7,8 @@
 // sin promesa de ventas, posiciones, menciones ni citas. Los textos salen de las páginas publicadas; si una difiere, manda la página.
 //
 // Dos registros de redacción, ambos de la especificación: la tarjeta le habla al lector («tu empresa») y los archivos para
-// máquinas están en tercera persona («una empresa»). `definitionMachine` y `audienceMachine` son la misma frase en tercera persona;
+// máquinas están en tercera persona («una empresa»). `definitionMachine`, `audienceMachine` e `includesMachine` (solo donde la
+// tarjeta dice «tu») son la misma frase en tercera persona;
 // tests/capa-maquinas-soluciones.test.mjs comprueba que no se desfasen de la tarjeta.
 
 export const SOLUCIONES_URL = 'https://rauvia.com.mx/soluciones/';
@@ -52,6 +53,11 @@ export const soluciones = [
       'Con la implementación, tu oferta corregida y aprobada.',
       'Registro fechado de las preguntas de compra.'
     ],
+    includesMachine: [
+      'Revisión con evidencia de lo que consulta un buscador o asistente.',
+      'Con la implementación, la oferta de la empresa corregida y aprobada.',
+      'Registro fechado de las preguntas de compra.'
+    ],
     excludes: 'No promete posiciones, menciones ni citas; una respuesta de un tercero puede cambiar.',
     url: `${BASE}/seo-ai/`,
     path: '/seo-ai/',
@@ -72,6 +78,11 @@ export const soluciones = [
       'Un ciclo de 90 días con resultado esperado, responsables y entregables.',
       'Revisión semanal y evidencia de cierre.',
       'Aplicación por tu cuenta o con acompañamiento de RAUVIA, según el alcance.'
+    ],
+    includesMachine: [
+      'Un ciclo de 90 días con resultado esperado, responsables y entregables.',
+      'Revisión semanal y evidencia de cierre.',
+      'Aplicación por cuenta de la empresa o con acompañamiento de RAUVIA, según el alcance.'
     ],
     excludes: 'Una garantía de terminación absoluta: los 90 días son un horizonte, no una promesa.',
     url: `${BASE}/ruta-90/`,

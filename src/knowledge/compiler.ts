@@ -1,6 +1,7 @@
 import {personProfiles} from './personProfiles.ts';
 import {trayectoriaCatalog} from '../data/trayectoriaCatalog.ts';
 import {preciosCatalog} from '../data/preciosCatalog.ts';
+import {solucionesJson} from '../data/solucionesMachine.js';
 import {personSchema} from '../seo/personSchema.ts';
 import {buildGraph} from './graph.ts';
 import {publicProjection} from './publication.ts';
@@ -30,6 +31,7 @@ export function compileKnowledge(){
  const outputs:Record<string,string>={
   'public/llmo/knowledge-graph.json':json(publicGraph),'public/llmo/intent-coverage.json':json(publicCoverage),
   'public/llmo/trayectoria-catalogo.json':json(trayectoriaCatalog),'public/llmo/precios.json':json(preciosCatalog),
+  'public/llmo/soluciones.json':json(solucionesJson()),
   'data/knowledge/person-profiles.json':json(personProfiles(graph)),'data/knowledge/person-schema.json':json(personSchema()),'data/knowledge/master-graph.json':json(graph),'data/knowledge/intent-coverage.json':json(coverage),'data/knowledge/gaps.json':json(gaps),
   'data/knowledge/intent-coverage.csv':csv(headers,rows),'data/knowledge/gaps.csv':csv(gh,gr),
   'docs/search-intent-map.md':intentMap,'docs/business-problem-map.md':problemMap,'docs/knowledge-matrices.md':matrix,'docs/knowledge-graph-ontology.md':ontology

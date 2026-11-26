@@ -1,0 +1,92 @@
+{
+  "name": "RAUVIA — catálogo de soluciones publicadas",
+  "language": "es-MX",
+  "description": "Las soluciones que RAUVIA publica en https://rauvia.com.mx/soluciones/, en el mismo texto que las tarjetas de esa página. Convención de directorio de RAUVIA; no garantiza indexación, menciones ni citas.",
+  "page": "https://rauvia.com.mx/soluciones/",
+  "order": "unordered",
+  "reviewed_at": "2026-11-26",
+  "solutions": [
+    {
+      "id": "frente-comercial",
+      "name": "Frente Comercial",
+      "definition": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+      "audience": "Empresas con una oferta existente y suficiente información para explicarla.",
+      "includes": [
+        "Estructura de presentación comercial y organización de productos y servicios.",
+        "Evidencia y elementos de confianza.",
+        "Contacto y siguiente paso visible."
+      ],
+      "excludes": "CRM, seguimiento de oportunidades, publicidad, generación de demanda ni estrategia comercial completa.",
+      "canonical": "https://rauvia.com.mx/frente-comercial/",
+      "price_source": [
+        "frente-comercial-esencial",
+        "frente-comercial-pro",
+        "frente-comercial-portafolio"
+      ]
+    },
+    {
+      "id": "seo-para-ia",
+      "name": "SEO para IA",
+      "definition": "SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega.",
+      "audience": "Empresas con sitio y oferta, y quien apruebe lo publicado.",
+      "includes": [
+        "Revisión con evidencia de lo que consulta un buscador o asistente.",
+        "Con la implementación, la oferta de la empresa corregida y aprobada.",
+        "Registro fechado de las preguntas de compra."
+      ],
+      "excludes": "No promete posiciones, menciones ni citas; una respuesta de un tercero puede cambiar.",
+      "canonical": "https://rauvia.com.mx/seo-ai/",
+      "price_source": [
+        "seo-ai-auditoria",
+        "seo-ai-implementacion"
+      ]
+    },
+    {
+      "id": "ruta-90",
+      "name": "Ruta 90",
+      "definition": "Ruta 90 es un método de ejecución de 90 días, adoptado por RAUVIA, para convertir una prioridad empresarial en resultados, entregables, responsables, métricas y evidencia.",
+      "audience": "Empresas con una prioridad ya identificada que necesitan ejecución en un plazo definido.",
+      "includes": [
+        "Un ciclo de 90 días con resultado esperado, responsables y entregables.",
+        "Revisión semanal y evidencia de cierre.",
+        "Aplicación por cuenta de la empresa o con acompañamiento de RAUVIA, según el alcance."
+      ],
+      "excludes": "Una garantía de terminación absoluta: los 90 días son un horizonte, no una promesa.",
+      "canonical": "https://rauvia.com.mx/ruta-90/",
+      "price_source": []
+    },
+    {
+      "id": "medicos",
+      "name": "Páginas para médicos",
+      "definition": "Las páginas para médicos son páginas web que RAUVIA crea o actualiza con información profesional que el médico valida, con una opción gratuita y opciones personalizadas.",
+      "audience": "Médicos, especialistas y consultorios que quieren ser más fáciles de encontrar y contactar.",
+      "includes": [
+        "Página gratuita bajo dominio RAUVIA: perfil, especialidad, ubicación, WhatsApp y base SEO/GEO.",
+        "Opciones personalizadas: dominio propio, diseño y secciones a la medida."
+      ],
+      "excludes": "La página gratuita no incluye dominio propio, diseño a medida, blog ni agenda; no garantiza posiciones.",
+      "canonical": "https://rauvia.com.mx/pagina-web-para-medicos/",
+      "price_source": [
+        "presencia-medica-rauvia",
+        "web-medica-personalizada",
+        "frente-comercial-medico"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "trayectoria",
+      "reason": "Su catálogo es una referencia histórica pendiente de confirmación comercial (llmo/trayectoria-catalogo.json)."
+    },
+    {
+      "id": "entrada-gratuita-empresas",
+      "reason": "Camino gratuito para empresas sin confirmar por Producto. La única gratuidad publicada es la de médicos."
+    }
+  ],
+  "rules": [
+    "Las soluciones se listan sin orden de prioridad.",
+    "Sin promesa de ventas, posiciones, menciones ni citas.",
+    "Este archivo no contiene precios: cada price_source apunta a los id de https://rauvia.com.mx/llmo/precios.json; si está vacío, la página no publica precio y no debe estimarse.",
+    "Cuando la necesidad va más allá de estas soluciones, RAUVIA define con la empresa un alcance; esas intervenciones no son paquetes predefinidos."
+  ]
+}

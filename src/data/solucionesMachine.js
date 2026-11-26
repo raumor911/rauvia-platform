@@ -46,4 +46,32 @@ export const LINEA_FRENTE_COMERCIAL = '- [Frente comercial](https://rauvia.com.m
 export const LINEA_CATALOGO_JSON = `Catálogo de soluciones: ${SOLUCIONES_JSON_URL}`;
 export const LINEA_REFERENCIA_JSON = `- [Catálogo de soluciones](${SOLUCIONES_JSON_URL}): Una entrada por solución publicada, sin precios.`;
 
+// public/llmo/soluciones.json (L-03). Registro de máquinas (tercera persona), sin precios: `price_source` apunta a los `id` de llmo/precios.json.
+// Un `price_source` vacío significa que la página de la solución no publica precio; no se estima.
+export const solucionesJson = () => ({
+  name: 'RAUVIA — catálogo de soluciones publicadas',
+  language: 'es-MX',
+  description: 'Las soluciones que RAUVIA publica en https://rauvia.com.mx/soluciones/, en el mismo texto que las tarjetas de esa página. Convención de directorio de RAUVIA; no garantiza indexación, menciones ni citas.',
+  page: SOLUCIONES_URL,
+  order: 'unordered',
+  reviewed_at: SOLUCIONES_REVIEWED_AT,
+  solutions: soluciones.map(s => ({
+    id: s.id,
+    name: s.name,
+    definition: s.definitionMachine,
+    audience: s.audienceMachine,
+    includes: s.includesMachine ?? s.includes,
+    excludes: s.excludes,
+    canonical: s.url,
+    price_source: s.priceSource
+  })),
+  excluded: solucionesExcluidas,
+  rules: [
+    'Las soluciones se listan sin orden de prioridad.',
+    'Sin promesa de ventas, posiciones, menciones ni citas.',
+    'Este archivo no contiene precios: cada price_source apunta a los id de https://rauvia.com.mx/llmo/precios.json; si está vacío, la página no publica precio y no debe estimarse.',
+    'Cuando la necesidad va más allá de estas soluciones, RAUVIA define con la empresa un alcance; esas intervenciones no son paquetes predefinidos.'
+  ]
+});
+
 export {soluciones, solucionesExcluidas, SOLUCIONES_REVIEWED_AT};
