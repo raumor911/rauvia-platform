@@ -10,7 +10,7 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
   const isFooter = variant === 'footer';
 
   // Versión compacta (sin lema): a tamaño de barra el lema no se lee y ensuciaba el conjunto.
-  const logoSrc = "/media/RAUVIA_CONSULTING_LOGO_compact.svg";
+  const logoSrc = "/media/RAUVIA_LOGO_compact.svg";
 
   if (isFooter) {
     return (
@@ -18,7 +18,7 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
         {!imgError ? (
           <img 
             src={logoSrc} 
-            alt="RAUVIA Consulting" 
+            alt="RAUVIA" 
             className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
             onError={() => setImgError(true)}
           />
@@ -32,7 +32,6 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
             </svg>
             <div className="flex flex-col">
               <span className="font-extrabold text-base tracking-[0.18em] text-white leading-none">RAUVIA</span>
-              <span className="text-[0.6rem] tracking-[0.3em] text-slate-300 font-semibold leading-none mt-1">CONSULTING</span>
             </div>
           </div>
         )}
@@ -45,7 +44,7 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
       {!imgError ? (
         <img 
           src={logoSrc} 
-          alt="RAUVIA Consulting" 
+          alt="RAUVIA" 
           className="h-10 md:h-14 w-auto object-contain"
           onError={() => setImgError(true)}
         />
@@ -59,7 +58,6 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
           </svg>
           <div className="flex flex-col">
             <span className="font-extrabold text-lg md:text-xl tracking-[0.18em] text-rauvia-navy leading-none">RAUVIA</span>
-            <span className="text-[0.62rem] tracking-[0.32em] text-slate-500 font-semibold leading-none mt-1">CONSULTING</span>
           </div>
         </div>
       )}
