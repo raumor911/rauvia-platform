@@ -104,7 +104,7 @@ export default function Footer({mobileLayer=false}: {mobileLayer?:boolean}) {
             <Link to="/aviso-de-privacidad/" rel="privacy-policy" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Aviso de Privacidad</Link>
             <Link to="/terminos/" rel="terms-of-service" title="Términos y condiciones" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Términos y condiciones</Link>
             <Link to="/contacto-rauvia/" rel="contact" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors">Contacto</Link>
-            <a href="tel:+525586494076" className="text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors" aria-label="Llamar al +52 55 8649 4076">+52 55 8649 4076</a>
+            <a href="tel:+525586494076" className="whitespace-nowrap text-slate-500 hover:text-slate-300 text-xs tracking-wider uppercase py-3 flex items-center min-h-[44px] transition-colors" aria-label="Llamar al +52 55 8649 4076">+52 55 8649 4076</a>
           </div>
           <div className="flex justify-center md:justify-end gap-2 order-3 md:order-3 min-h-[44px] items-center">
             <a href="https://www.facebook.com/rauviaconsulting/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-slate-300 transition-colors p-2 flex items-center justify-center" aria-label="Facebook">

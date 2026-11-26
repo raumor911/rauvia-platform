@@ -18,8 +18,10 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
         {!imgError ? (
           <img 
             src={logoSrc} 
+            width={851}
+            height={289}
             alt="RAUVIA" 
-            className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
+            className="h-10 md:h-12 w-auto max-w-none flex-shrink-0 object-contain brightness-0 invert"
             onError={() => setImgError(true)}
           />
         ) : (
@@ -44,8 +46,10 @@ export default function Logo({ variant = 'default', className = "" }: LogoProps)
       {!imgError ? (
         <img 
           src={logoSrc} 
+          width={851}
+          height={289}
           alt="RAUVIA" 
-          className="h-10 md:h-14 w-auto object-contain"
+          className="h-10 md:h-14 w-auto flex-shrink-0 object-contain"
           onError={() => setImgError(true)}
         />
       ) : (
