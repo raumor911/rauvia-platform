@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-26T21:48:13.090Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base c1e2212 + working tree",
+  "capturedAt": "2026-11-26T21:50:16.292Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base d47fbff + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -171,7 +171,7 @@
       ],
       "method": "secondary_click",
       "tab": "1",
-      "url": "https://www.google.com/"
+      "url": "http://127.0.0.1:3118/nosotros/#como-trabajamos"
     },
     {
       "viewport": [
