@@ -193,6 +193,12 @@ test('sitemap: las páginas del sitio con registro llevan lastmod válido y no f
   // Una página sin fecha verificable queda sin lastmod (no se inventa).
   const parcial = registryOf(date); parcial[routeUrl('/nosotros')] = {hash: 'h', lastmod: null};
   assert.equal(lastmods(renderSitemap(blog, parcial))[routeUrl('/nosotros')], null);
+  // Una ruta institucional bajo /recursos/ que reaparece en la caché como «artículo» no pierde su lastmod.
+  const guia = publicRoutes.find(r => r.startsWith('/recursos/') && r !== '/recursos');
+  if (guia) {
+    const cache = renderSitemap([{slug: guia.split('/')[2]}], registryOf(date));
+    assert.equal(lastmods(reconcileCachedSitemap(cache, registryOf(date)))[routeUrl(guia)], date, guia);
+  }
   // Idempotente: reconciliar una caché ya reconciliada no cambia nada.
   assert.equal(reconcileCachedSitemap(xml, registryOf(date)), xml);
 });

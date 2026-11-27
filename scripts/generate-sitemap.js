@@ -81,6 +81,7 @@ export function renderSitemap(posts, registry = loadLastmodRegistry()) {
     const known = registry[`https://rauvia.com.mx${cleanRoute}`]?.lastmod;
     return [cleanRoute, typeof known === 'string' && Number.isFinite(Date.parse(known)) ? known : null];
   }));
+  const institutional = new Set(entries.keys());
   for (const post of posts) {
     const date = post.modified_gmt || post.modified;
     // WordPress typically returns "YYYY-MM-DDTHH:mm:ss". Let's append +00:00 if it's GMT
@@ -89,6 +90,9 @@ export function renderSitemap(posts, registry = loadLastmodRegistry()) {
     if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(date) && Number.isFinite(Date.parse(date))) {
       lastmod = isGmt && !date.includes('+') && !date.endsWith('Z') ? `${date}+00:00` : date;
     }
+    // Una ruta institucional (p. ej. /recursos/seo-para-ia/) conserva el lastmod de su registro: al reconciliar la caché, esa URL
+    // vuelve como si fuera un artículo y no debe pisarlo con null.
+    if (institutional.has(`/recursos/${post.slug}/`)) continue;
     entries.set(`/recursos/${post.slug}/`, lastmod);
   }
   if (entries.size > 50000) throw new Error('Se requiere dividir el sitemap.');
