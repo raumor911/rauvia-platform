@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-26T21:50:16.292Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base d47fbff + working tree",
+  "capturedAt": "2026-11-27T00:28:08.113Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base ffed6ea + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -228,7 +228,7 @@
     "src/components/Footer.tsx": "28f5c51e08624a89c6b1bc699e1f221aa78831cae48c319779f8c5e7f89acc15",
     "src/components/AethryonCore.tsx": "1342c48d27d5afd6cb840d37d4ca027e99d43fa7f07a6809b7ebfac9d0c4f87c",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
-    "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
+    "src/pages/SolucionesPage.tsx": "d985a42590c238e5ee70446efe85b9193fab738152a6216a1802696477193fed",
     "src/pages/NosotrosPage.tsx": "37f98ec35bb507ce05bef6e0cc746c166ebad7a03362a38a50bf342d6332275c",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
     "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
