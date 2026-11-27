@@ -175,3 +175,45 @@ export const cases: Record<CaseId, SeoAiCase> = {
     dontSend: 'No envíes especificaciones confidenciales ni datos de clientes en este primer contacto.',
   },
 };
+
+// Ola B · enlazado y bloque de decisión por caso (contrato v1.1 §3). Textos literales; no tocar sin revisión editorial.
+export const caseRelatedLinks: Record<CaseId, readonly {label: string; href: string}[]> = {
+  correccion: [
+    {label: "Si el dato incorrecto es dónde entregas o instalas, revisa cómo documentar tu cobertura.", href: "/seo-ai/cobertura-y-envios/"},
+  ],
+  catalogos: [
+    {label: "Si la duda es dónde entregas el producto, revisa cómo explicar tus zonas y modalidades.", href: "/seo-ai/cobertura-y-envios/"},
+    {label: "Si Compras necesita validar la aplicación técnica, revisa cómo presentar una línea para evaluación.", href: "/seo-ai/proveedores-tecnicos/"},
+  ],
+  cobertura: [
+    {label: "Si un asistente ya atribuye a tu empresa una zona que no atiendes, revisa cómo comprobar ese dato.", href: "/seo-ai/corregir-informacion-en-ia/"},
+    {label: "Si no está clara la aplicación del producto, revisa qué información mostrar en sus fichas.", href: "/seo-ai/catalogos-para-ia/"},
+  ],
+  proveedores: [
+    {label: "Si el problema abarca fichas de toda una línea, revisa cómo priorizar un catálogo.", href: "/seo-ai/catalogos-para-ia/"},
+  ],
+};
+
+export const caseDecisionContent: Partial<Record<CaseId, {heading: string; intro: string; example: string; scope: string; check: string}>> = {
+  catalogos: {
+    heading: "La ficha debe explicar para qué sirve el producto",
+    intro: "Un catálogo puede tener el producto correcto y aun así dejar al comprador sin saber para qué aplicación sirve o qué dato necesita para cotizar. El trabajo empieza por una línea prioritaria, no por rehacer todo el catálogo.",
+    example: "Una ficha solo dice «Caja C-12». La versión organizada distingue tres datos: aplicación (almacenaje en interior), información para cotizar (medidas y cantidad) y una condición por validar (uso a la intemperie). El uso exterior no se presenta como compatible sin confirmación.",
+    scope: "Fichas HTML de la línea acordada con aplicación, límites y datos necesarios para solicitar cotización.",
+    check: "La ficha permite identificar para qué sirve el producto, qué no está confirmado y qué datos enviar; toda afirmación aprobada se puede cotejar con su fuente.",
+  },
+  cobertura: {
+    heading: "Una zona no significa lo mismo para envío, retiro e instalación",
+    intro: "Decir «atendemos la región» no aclara si la empresa envía, instala o solo permite recoger en sucursal. La decisión del comprador depende de combinar zona, modalidad y condición.",
+    example: "En Zona A se puede pedir envío previa confirmación del código postal. En Zona B hay retiro en sucursal; la instalación queda por confirmar. La matriz no presenta Zona B como zona de instalación ni convierte una excepción en cobertura general.",
+    scope: "Una matriz web con las zonas, modalidades y excepciones que la empresa valide.",
+    check: "Cada fila distingue qué está disponible y qué requiere confirmación; la matriz, las fichas y el canal de contacto no se contradicen.",
+  },
+  proveedores: {
+    heading: "Compras necesita comprobar si tu línea sirve para su aplicación",
+    intro: "Una lista de modelos no siempre basta para evaluar a un proveedor. Compras necesita comparar la aplicación, los requisitos de selección y la evidencia que respalda lo ofrecido antes de pedir cotización.",
+    example: "Una ficha enumera «Serie P-4». La versión organizada pregunta si se usará en interior o exterior, qué dimensiones admite la instalación y qué documento respalda la compatibilidad. Si esa compatibilidad todavía no se valida, la ficha indica que se debe confirmar en vez de declararla.",
+    scope: "Presentación de una línea técnica que reúna aplicaciones, requisitos para evaluar el encaje y evidencia disponible.",
+    check: "Cada requisito publicado se vincula con su respaldo o se señala como pendiente, y el comprador sabe qué información aportar para cotizar.",
+  },
+};

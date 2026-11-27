@@ -4,7 +4,7 @@ import {ArrowRight, Check, X} from 'lucide-react';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import {idx, trackCta, useTechMotion, whatsappUrl, SeoAiHero, SeoAiFaq} from './seoAiShared';
-import {offers, type SeoAiCase} from './seoAiCases';
+import {offers, caseRelatedLinks, caseDecisionContent, type SeoAiCase} from './seoAiCases';
 import './SeoAiPage.css';
 
 // Plantilla común de las cuatro landings por caso (contrato v0.3 §2):
@@ -15,6 +15,8 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
   const offer = offers[c.intent];
   const whatsapp = whatsappUrl(c.whatsappMessage);
   const {demo} = c;
+  const decision = caseDecisionContent[c.id];
+  const related = caseRelatedLinks[c.id];
   return <div ref={root} className="seoai bg-white text-slate-800">
     <RouteSEO path={c.path} />
     <div className="seoai-progress" aria-hidden="true" />
@@ -44,6 +46,16 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
       </div>
     </section>
 
+    {decision && <section id="decision-del-comprador" aria-labelledby="decision-del-comprador-titulo" className="py-16 scroll-mt-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="decision-del-comprador-titulo" className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3">{decision.heading}</h2>
+        <p className="text-slate-700 mb-4 max-w-3xl">{decision.intro}</p>
+        <p className="text-slate-700 mb-4 max-w-3xl"><strong>Ejemplo ficticio.</strong>{' '}{decision.example}</p>
+        <p className="text-slate-700 mb-4 max-w-3xl"><strong>Qué se trabaja según alcance.</strong>{' '}{decision.scope}</p>
+        <p className="text-slate-700 max-w-3xl"><strong>Cómo se comprueba.</strong>{' '}{decision.check}</p>
+      </div>
+    </section>}
+
     <section id="demostracion" className="py-16 bg-slate-50 border-y border-slate-100 scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="inline-block rounded border border-amber-300 bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-900 mb-4" data-sa>Ejemplo ficticio, no es un cliente ni un resultado</p>
@@ -62,6 +74,15 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
         </div>}
         <p className="seoai-query text-sm md:text-base mt-8" data-sa><span className="sr-only">Pregunta de prueba: </span>«{demo.testQuestion}»</p>
         <p className="text-sm text-slate-600 mt-4" data-sa>{demo.note}</p>
+      </div>
+    </section>
+
+    <section id="casos-relacionados" aria-labelledby="casos-relacionados-titulo" className="py-16 scroll-mt-24">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="casos-relacionados-titulo" className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-4">Si el problema está en otra parte</h2>
+        <ul className="space-y-3">
+          {related.map(l => <li key={l.href}><a href={l.href} className="text-rauvia-blue underline font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">{l.label}</a></li>)}
+        </ul>
       </div>
     </section>
 
