@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {ArrowRight, Check} from 'lucide-react';
 import RouteSEO from '../seo/PageMetadata';
 import WhatsAppCTA from '../components/WhatsAppCTA';
-import {idx, trackCta, useTechMotion, whatsappUrl, SeoAiHero, SeoAiFaq, months} from './seoAiShared';
+import {idx, trackCta, useIntentId, useTechMotion, whatsappUrl, SeoAiHero, SeoAiFaq, months} from './seoAiShared';
 import './SeoAiPage.css';
 
 // Contrato: RAUVIA_SEO_AI_Especificacion_tecnica_auditoria_e_implementacion_v0.1 §3, con precios y CTA de
@@ -33,6 +33,7 @@ const faqs = [
 ] as const;
 
 export default function SeoAiImplementacionPage() {
+  const intentId = useIntentId('implementacion');
   const root = useRef<HTMLDivElement>(null);
   useTechMotion(root);
   return <div ref={root} className="seoai bg-white text-slate-800">
@@ -48,7 +49,7 @@ export default function SeoAiImplementacionPage() {
       chip="$29,900 MXN + IVA al mes · durante 6 meses · $179,400 MXN + IVA en total"
       primary={{href: '#solicitar-implementacion', label: 'Solicitar propuesta de implementación', placement: 'hero_primary'}}
       secondary={{href: '#cambios', label: 'Ver qué podemos cambiar', placement: 'hero_secondary'}}
-      intent="implementacion"
+      intent="implementacion" intentId={intentId}
       signal={{nodes: [['HALLAZGO', 'html · enlaces'], ['CAMBIO', 'plantilla · ficha'], ['VERIFICACIÓN', 'antes · después']], panel: 'ANTES / DESPUÉS', foot: 'evidencia · QA'}}
     />
 
@@ -148,7 +149,7 @@ export default function SeoAiImplementacionPage() {
         <p className="text-slate-200 mb-3" data-sa style={idx(3)}>Cuéntanos tu sitio, el cambio o problema que quieres resolver y, si lo tienes, tu diagnóstico previo y una fecha objetivo. Revisaremos el alcance antes de presentar una propuesta.</p>
         <p className="text-slate-200 mb-3" data-sa style={idx(4)}>Escribirnos por WhatsApp no contrata el servicio. En este primer contacto no adjuntes archivos ni compartas accesos.</p>
         <div className="mt-6" data-sa style={idx(5)}>
-          <WhatsAppCTA href={whatsapp} onClick={trackCta('solicitud', 'implementacion')} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solicitar por WhatsApp <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
+          <WhatsAppCTA href={whatsapp} onClick={trackCta('solicitud', 'implementacion', intentId)} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solicitar por WhatsApp <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
         </div>
         <p className="text-sm text-slate-300 mt-6" data-sa style={idx(6)}>Cómo tratamos tus datos: <Link className="underline font-semibold" to="/aviso-de-privacidad/">Aviso de privacidad</Link>.</p>
       </div>
