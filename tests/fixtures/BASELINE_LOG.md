@@ -351,3 +351,28 @@ Semánticos: 0 · Contenido: 6
 - rau004-main-baseline.json /seo-ai/cobertura-y-envios contenido
 - rau004-main-baseline.json /seo-ai/proveedores-tecnicos contenido
 Nota: /recursos también cambió en la simulación pero ya fallaba en main antes de la Ola B; no se refrescó y queda como fallo previo.
+
+## 2026-11-27 · 55aaee3
+Motivo: Integración de las Olas A (H-2), B (B1/B2) y C (C1–C3) en main: cambios de contenido esperados por las especificaciones; semánticos solo en metadescripciones de 5 rutas (C1), sin cambios de title, canónica ni H1.
+Semánticos: 5 · Contenido: 15
+- rau004-main-baseline.json /sitio-web-comercial-para-pymes head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /sitio-web-servicios-especializados head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-comercial-servicios-profesionales head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /seo-local-para-medicos head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json /pagina-web-para-medicos head (title/meta/canonical/JSON-LD)
+- v72-excluded-html.json /sitio-web-comercial-para-pymes/index.html
+- v72-excluded-html.json /pagina-web-para-medicos-especialistas/index.html
+- v72-excluded-html.json /seo-local-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-medicos/index.html
+- v72-excluded-html.json /pagina-web-para-consultorio-medico/index.html
+- v72-excluded-html.json /pagina-web-medicos-agenda-whatsapp/index.html
+- v72-excluded-html.json /pagina-web-gratis-para-medicos/index.html
+- v72-excluded-html.json /sitio-web-servicios-especializados/index.html
+- v72-excluded-html.json /pagina-comercial-servicios-profesionales/index.html
+- rau004-main-baseline.json /pagina-comercial-servicios-profesionales contenido
+- rau004-main-baseline.json /seo-ai contenido
+- rau004-main-baseline.json /seo-ai/corregir-informacion-en-ia contenido
+- rau004-main-baseline.json /seo-ai/catalogos-para-ia contenido
+- rau004-main-baseline.json /seo-ai/cobertura-y-envios contenido
+- rau004-main-baseline.json /seo-ai/proveedores-tecnicos contenido
+Nota: /recursos también cambió en la simulación pero ya fallaba en main antes de las olas A/B/C; no se refrescó y queda como fallo previo.

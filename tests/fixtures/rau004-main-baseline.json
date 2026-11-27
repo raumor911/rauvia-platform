@@ -56,14 +56,14 @@
     "outsideHero": "8b677b4a2a23963d2c35e8f2c7f9cead2ae1b7b5b6304d15ff0e9c3562a580ef"
   },
   "/sitio-web-comercial-para-pymes": {
-    "head": "ef6e26dfa0cfee744812b2026fc5ca4e15ed24a2429a67d79d7ac00eb5e3fd1b",
+    "head": "04925fb8b88f39e3f22315a9676b4418cdd85d6859819cc85ca68dc592b4d8bf",
     "h1": [
       "Sitio web comercial para PyMES que necesitan explicar mejor lo que venden"
     ],
     "outsideHero": "86ea7d048c8e5741a2dba6eec917d9d969af990b43e2cff6931753f2b63e5aa6"
   },
   "/sitio-web-servicios-especializados": {
-    "head": "68da5aee33130389159181248be4b30f05841cef407d2d3662de3ae12a8cb626",
+    "head": "0b151c50a510de8c7b1cede05b6dba8314fcc15145c272afa7a4e27ba0e51437",
     "h1": [
       "Sitio web para empresas de servicios especializados que necesitan explicar mejor su valor"
     ],
@@ -84,11 +84,11 @@
     "outsideHero": "d91eb620fa722025e21954bc17b5fd8b58ed488a49933023dd0eed6cf5bea24d"
   },
   "/pagina-comercial-servicios-profesionales": {
-    "head": "0719920f70417db13cf15da63c2d5459b75800c1e645081d1971b9403495fd24",
+    "head": "0d6ec7cbc41d6c8e5f1ffc03a5124bcc7348c6db503d84100b4d52c751887a9b",
     "h1": [
       "Página comercial para servicios profesionales que necesitan explicar mejor su valor"
     ],
-    "outsideHero": "c20b08f64204f2461a6ee4e2ede0827f73edd8e97670159896789e7416107c91"
+    "outsideHero": "13812a639bef237042401b1f5a17b3c348f2c2f4b53243e8979fc8556ae48569"
   },
   "/pagina-web-gratis-para-medicos": {
     "head": "a1b857912583d64a8d5feaf22b8d3f53c1bda57e1eead8f728e0e6122dc9173c",
@@ -105,14 +105,14 @@
     "outsideHero": "de7078c6161e5753c0dbfe89246b30d2368a546890d51f0e0da2c7141c2e7fd5"
   },
   "/seo-local-para-medicos": {
-    "head": "b248de6916424f2f78056b90cda58fb00c4813b3d27103e345c33e190a6873a2",
+    "head": "a310e4edf3090d3a03a8b4a8b5512a0ecf698c08ab33a6f458698efce2220bc3",
     "h1": [
       "SEO local para médicos: aclara quién eres, dónde atiendes y cómo contactarte"
     ],
     "outsideHero": "1e1b117f5aa76cef8d6b1230c6e40e4d729c6d51384e1206ec980843cc9fb61d"
   },
   "/pagina-web-para-medicos": {
-    "head": "9227eae11fa92a5e00ccd3448ff8c85ae1d2eee8b65f65f90b272c5c2d4ec030",
+    "head": "84980fa3ba0d418d883e1f43f85432da2965c7897134253658d2bbd452f0f727",
     "h1": [
       "Página web para médicos: presenta tu práctica y facilita el contacto"
     ],
@@ -158,7 +158,7 @@
     "h1": [
       "Prepara tu empresa para las búsquedas con IA en 2027"
     ],
-    "outsideHero": "374e7170e1f934c4e73264ee4407a3efbb7da5022a2b01b945cbd2d9a95280ce"
+    "outsideHero": "dbc8f0027b5efce627c22aa8ca04a44f9e6208eb25b753df0cea90a68d91392c"
   },
   "/recursos/seo-para-ia": {
     "head": "175eb8e9b9249556b206c3da9a878f587a05c4f4dc9bfb4486d5e23dde492d16",
@@ -172,28 +172,28 @@
     "h1": [
       "Aclara lo que los asistentes de IA dicen de tu empresa"
     ],
-    "outsideHero": "ac9f315043d5e6a66faa61cb8e96aebb79ba1ea6a49422d8e2901fb7d21e1cb1"
+    "outsideHero": "6bcd78470c82c8a7c37446ec64657e17e879c199000de000c220432b29590e7e"
   },
   "/seo-ai/catalogos-para-ia": {
     "head": "ff7e9c7893253a556bea3b146e5183f48e1d7e12789e198d662cd4276ac5a732",
     "h1": [
       "SEO para catálogos de productos en buscadores y asistentes de IA"
     ],
-    "outsideHero": "8023953611aa8888b0ca9832248226dd8fc68de30fd7c8f77d30726864eb48b8"
+    "outsideHero": "6ead30c097b891daceba5e258ec1176f06c67ac02971ff2c16e1b4c4a0abce54"
   },
   "/seo-ai/cobertura-y-envios": {
     "head": "b09049f7a6a6e8154a62f42f6547d379e4c7d94b2add3cba48311ac1b279d89b",
     "h1": [
       "SEO para IA: aclara dónde vendes, envías e instalas"
     ],
-    "outsideHero": "85756a583f6512b831f2898938abfc590aa444e3d7b0568fd0a7a15092ebe50c"
+    "outsideHero": "fa66758b2eb8cf846a7a3402d5e1c5d485219218c42fb698adc869d85960c22b"
   },
   "/seo-ai/proveedores-tecnicos": {
     "head": "f1bdcb1920548c1dde3cc24a4149a999c23646b64d3e6355f82f27c014c11f07",
     "h1": [
       "SEO para IA para proveedores técnicos"
     ],
-    "outsideHero": "1fe06da98bee2108dd4587619100dee097f994f5ab0f8d805b6311cd5718ca48"
+    "outsideHero": "df2175fda728bfa3a59581d49f6d24e47facc5614b0630c3607e65e4fa649a7f"
   },
   "/seo-ai/auditoria": {
     "head": "c424739086173e8eb9d3e73ec05c317ed90150358237dcfa948d795db3b6db06",
