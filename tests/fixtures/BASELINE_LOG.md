@@ -340,3 +340,14 @@ Semánticos: 6 · Contenido: 6
 - rau004-main-baseline.json /seo-local-para-medicos contenido
 - rau004-main-baseline.json /pagina-web-para-medicos contenido
 - rau004-main-baseline.json /pagina-web-para-consultorio-medico contenido
+
+## 2026-11-27 · e418d48
+Motivo: Ola B (B1 sección por necesidad en /frente-comercial; B2 bloque de decisión, casos relacionados y puente en la guía). Contenido añadido por contrato v1.1; sin cambios semánticos.
+Semánticos: 0 · Contenido: 6
+- rau004-main-baseline.json /frente-comercial contenido
+- rau004-main-baseline.json /recursos/seo-para-ia contenido
+- rau004-main-baseline.json /seo-ai/corregir-informacion-en-ia contenido
+- rau004-main-baseline.json /seo-ai/catalogos-para-ia contenido
+- rau004-main-baseline.json /seo-ai/cobertura-y-envios contenido
+- rau004-main-baseline.json /seo-ai/proveedores-tecnicos contenido
+Nota: /recursos también cambió en la simulación pero ya fallaba en main antes de la Ola B; no se refrescó y queda como fallo previo.

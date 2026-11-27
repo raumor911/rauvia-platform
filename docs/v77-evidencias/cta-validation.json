@@ -1,11 +1,12 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-24T04:56:41.060Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base b51ed4e + working tree",
+  "capturedAt": "2026-11-27T05:56:56.819Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base e418d48 + working tree",
   "approval": {
-    "status": "approved",
-    "by": "RAUL MORALES",
-    "at": "2026-11-24T04:59:12.932Z"
+    "status": "pending",
+    "by": null,
+    "at": null,
+    "note": "El Hero (RAU-004, b9e5c73) no pasó por revisión visual. Revisa docs/v77-evidencias/screens y registra con --approve \"Nombre\"."
   },
   "after": [
     [
@@ -231,7 +232,7 @@
     "src/pages/NosotrosPage.tsx": "37f98ec35bb507ce05bef6e0cc746c166ebad7a03362a38a50bf342d6332275c",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
     "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
-    "src/pages/FrenteComercialPage.tsx": "e88966ea3018c49fe35d7f0308477112cbd1da7888e822fc56c086857c011886",
+    "src/pages/FrenteComercialPage.tsx": "eea5bc730b367e358423265bb89a8e65c92f4b36f8a16091f7445b1d3e2f48be",
     "src/pages/CasosIndexPage.tsx": "dcfec9bbc28e2299011fb9fdb8d3814a5027d3a4a0689c41fcef8d2b79a5f2f0",
     "src/lib/analytics.ts": "5e95671bbc6ffe4f67272d5fb4f551ee9f8215eec105cd4a0784fe3213254f48"
   }
