@@ -1,17 +1,17 @@
 {
-  "title": "RAUVIA Consulting | AETHRYON",
+  "title": "AETHRYON | RAUVIA",
   "meta": [
     "<meta charset=\"UTF-8\" />",
     "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
     "<meta name=\"robots\" content=\"index, follow\">",
-    "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta property=\"og:title\" content=\"AETHRYON | RAUVIA\">",
     "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
     "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">",
     "<meta property=\"og:type\" content=\"website\">",
-    "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+    "<meta property=\"og:site_name\" content=\"RAUVIA\">",
     "<meta property=\"og:locale\" content=\"es_MX\">",
     "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-    "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+    "<meta name=\"twitter:title\" content=\"AETHRYON | RAUVIA\">",
     "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
     "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
     "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
@@ -44,7 +44,7 @@
       "name": "RAUVIA",
       "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
       "url": "https://rauvia.com.mx",
-      "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+      "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
       "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
       "telephone": "+52 55 8649 4076",
       "address": {

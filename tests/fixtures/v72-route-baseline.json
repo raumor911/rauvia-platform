@@ -11,7 +11,7 @@
       "<meta property=\"og:description\" content=\"Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
       "<meta name=\"twitter:title\" content=\"RAUVIA | Servicios digitales para empresas\">",
@@ -27,10 +27,10 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "@id": "https://rauvia.com.mx/#organization",
-        "name": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
-        "alternateName": "RAUVIA",
+        "name": "RAUVIA",
+        "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "founder": {
           "@id": "https://rauvia.com.mx/#raul-morales",
@@ -108,7 +108,7 @@
         "@id": "https://rauvia.com.mx/#service",
         "name": "Consultoría estratégica y desarrollo tecnológico",
         "serviceType": "Consultoría estratégica y desarrollo tecnológico para PyMES y empresas B2B",
-        "description": "Identifica dónde una empresa pierde oportunidades o capacidad y construye la estructura comercial, operativa o tecnológica necesaria para corregirlo. Las capacidades no forman una ruta obligatoria ni garantizan resultados.",
+        "description": "Identifica dónde una empresa pierde oportunidades o capacidad y construye la estructura comercial, operativa o tecnológica necesaria para corregirlo. Las capacidades no forman una ruta obligatoria ni garantizan resultados. Se define con la empresa según el alcance acordado y no está incluida por defecto en las ofertas publicadas.",
         "url": "https://rauvia.com.mx/soluciones/",
         "provider": {
           "@id": "https://rauvia.com.mx/#organization"
@@ -179,21 +179,21 @@
   },
   "/soluciones/": {
     "title": [
-      "RAUVIA Consulting | Portafolio de Soluciones"
+      "Soluciones | Frente Comercial y SEO para IA | RAUVIA"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
-      "<meta name=\"description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+      "<meta name=\"description\" content=\"Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
-      "<meta property=\"og:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+      "<meta property=\"og:title\" content=\"Soluciones | Frente Comercial y SEO para IA | RAUVIA\">",
+      "<meta property=\"og:description\" content=\"Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/soluciones/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | Portafolio de Soluciones\">",
-      "<meta name=\"twitter:description\" content=\"Catálogo de soluciones empresariales. RAUVIA construye capacidades que las organizaciones incorporan para resolver etapas específicas de crecimiento.\">",
+      "<meta name=\"twitter:title\" content=\"Soluciones | Frente Comercial y SEO para IA | RAUVIA\">",
+      "<meta name=\"twitter:description\" content=\"Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
     ],
@@ -206,10 +206,43 @@
         "@type": "CollectionPage",
         "@id": "https://rauvia.com.mx/soluciones/#webpage",
         "url": "https://rauvia.com.mx/soluciones/",
-        "name": "Portafolio de Soluciones - RAUVIA",
-        "description": "Catálogo de soluciones empresariales. RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
+        "name": "Soluciones | RAUVIA",
+        "description": "Dos formas de empezar con RAUVIA: Frente Comercial, para que tu oferta se entienda, y SEO para IA, para que te encuentren buscadores y asistentes.",
         "publisher": {
           "@id": "https://rauvia.com.mx/#organization"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "@id": "https://rauvia.com.mx/soluciones/#catalogo",
+          "name": "Soluciones de RAUVIA",
+          "itemListOrder": "https://schema.org/ItemListUnordered",
+          "numberOfItems": 4,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "name": "Frente Comercial",
+              "url": "https://rauvia.com.mx/frente-comercial/",
+              "description": "Frente Comercial organiza la oferta que tu empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso."
+            },
+            {
+              "@type": "ListItem",
+              "name": "SEO para IA",
+              "url": "https://rauvia.com.mx/seo-ai/",
+              "description": "SEO para IA es preparar y verificar la información pública de tu empresa para que buscadores y asistentes puedan encontrar qué vendes, para qué sirve y dónde lo entregas."
+            },
+            {
+              "@type": "ListItem",
+              "name": "Ruta 90",
+              "url": "https://rauvia.com.mx/ruta-90/",
+              "description": "Ruta 90 es un método de ejecución de 90 días, adoptado por RAUVIA, para convertir una prioridad empresarial en resultados, entregables, responsables, métricas y evidencia."
+            },
+            {
+              "@type": "ListItem",
+              "name": "Páginas para médicos",
+              "url": "https://rauvia.com.mx/pagina-web-para-medicos/",
+              "description": "Las páginas para médicos son páginas web que RAUVIA crea o actualiza con información profesional que el médico valida, con una opción gratuita y opciones personalizadas."
+            }
+          ]
         }
       },
       {
@@ -219,7 +252,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -268,25 +301,25 @@
       }
     ],
     "h1": [
-      "CONSTRUIMOS LOS ACTIVOS <br class=\"hidden lg:block\"/>QUE TU EMPRESA NECESITA <br class=\"hidden lg:block\"/>PARA <span class=\"text-rauvia-blue\">CRECER</span><span class=\"text-rauvia-gold\">.</span>"
+      "Empieza por lo que hoy frena a tu empresa<span class=\"text-rauvia-gold\">.</span>"
     ]
   },
   "/aethryon/": {
     "title": [
-      "RAUVIA Consulting | AETHRYON"
+      "AETHRYON | RAUVIA"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
       "<meta name=\"description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+      "<meta property=\"og:title\" content=\"AETHRYON | RAUVIA\">",
       "<meta property=\"og:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/aethryon/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"RAUVIA Consulting | AETHRYON\">",
+      "<meta name=\"twitter:title\" content=\"AETHRYON | RAUVIA\">",
       "<meta name=\"twitter:description\" content=\"AETHRYON es el sistema de análisis de RAUVIA para identificar qué está frenando el crecimiento de una empresa y convertirlo en una ruta de acción.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
@@ -319,7 +352,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -383,7 +416,7 @@
       "<meta property=\"og:description\" content=\"Ruta 90 convierte una prioridad empresarial en un sistema de ejecución de 90 días con responsables, entregables, métricas, revisiones y evidencia.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/ruta-90/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
       "<meta name=\"twitter:title\" content=\"Ruta 90 para PyMES | Sistema de ejecución de 90 días | RAUVIA\">",
@@ -456,7 +489,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -510,20 +543,20 @@
   },
   "/frente-comercial/": {
     "title": [
-      "Frente Comercial para PyMES | RAUVIA Consulting"
+      "Frente Comercial para PyMES | RAUVIA"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
       "<meta name=\"description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+      "<meta property=\"og:title\" content=\"Frente Comercial para PyMES | RAUVIA\">",
       "<meta property=\"og:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/frente-comercial/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"Frente Comercial para PyMES | RAUVIA Consulting\">",
+      "<meta name=\"twitter:title\" content=\"Frente Comercial para PyMES | RAUVIA\">",
       "<meta name=\"twitter:description\" content=\"Organiza cómo presentas tu empresa, productos y servicios en un activo comercial digital claro, actualizado y fácil de compartir.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
@@ -592,7 +625,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -656,7 +689,7 @@
       "<meta property=\"og:description\" content=\"Conoce cómo RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/nosotros/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
       "<meta name=\"twitter:title\" content=\"Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA\">",
@@ -735,7 +768,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -799,7 +832,7 @@
       "<meta property=\"og:description\" content=\"Artículos, guías y recursos sobre crecimiento estructural, sistemas comerciales y arquitectura operativa.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/recursos/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
       "<meta name=\"twitter:title\" content=\"Recursos y Blog | RAUVIA\">",
@@ -829,7 +862,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
@@ -883,20 +916,20 @@
   },
   "/casos/": {
     "title": [
-      "Casos y evidencia | RAUVIA Consulting"
+      "Casos y evidencia | RAUVIA"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
       "<meta name=\"description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+      "<meta property=\"og:title\" content=\"Casos y evidencia | RAUVIA\">",
       "<meta property=\"og:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/casos/\">",
       "<meta property=\"og:type\" content=\"website\">",
-      "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
+      "<meta property=\"og:site_name\" content=\"RAUVIA\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"Casos y evidencia | RAUVIA Consulting\">",
+      "<meta name=\"twitter:title\" content=\"Casos y evidencia | RAUVIA\">",
       "<meta name=\"twitter:description\" content=\"Intervenciones documentadas de RAUVIA: situación, restricción, capacidades construidas y evidencia observable.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
@@ -922,7 +955,7 @@
         "name": "RAUVIA",
         "legalName": "RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO",
         "url": "https://rauvia.com.mx",
-        "logo": "https://rauvia.com.mx/media/RAUVIA_CONSULTING_LOGO.png",
+        "logo": "https://rauvia.com.mx/media/RAUVIA_LOGO.png",
         "description": "RAUVIA combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades comerciales, operativas y tecnológicas en empresas.",
         "telephone": "+52 55 8649 4076",
         "address": {
