@@ -8,7 +8,7 @@ import ConvergenceField from '../components/ConvergenceField';
 import HeroScene from '../components/HeroScene';
 import HomeHumanSection from '../components/HomeHumanSection';
 import WhatsAppCTA from '../components/WhatsAppCTA';
-import {soluciones, SOLUCIONES_REVIEWED_AT, SOLUCIONES_REVIEWED_LABEL} from '../data/solucionesCatalog.js';
+import {soluciones} from '../data/solucionesCatalog.js';
 import '../styles/scrollReveal.css';
 import '../styles/pageFrontier.css';
 import '../styles/homeHuman.css';
@@ -157,7 +157,6 @@ export default function SolucionesPage() {
       <section id="catalogo" className="rv-sol-section rv-sol-section--white" aria-labelledby="catalogo-titulo">
         <div className="rv-sol-container">
           <h2 id="catalogo-titulo" className="rv-sol-h2">Soluciones de RAUVIA</h2>
-          <p className="rv-sol-lead">Lo que hoy tiene página pública, con su alcance y, donde se publica, su precio. Última revisión: <time dateTime={SOLUCIONES_REVIEWED_AT}>{SOLUCIONES_REVIEWED_LABEL}</time>.</p>
           <div className="rv-sol-grid rv-sol-grid--primary">
             {soluciones.slice(0, 2).map(s => <SolucionCard key={s.id} s={s} size="primary" />)}
           </div>

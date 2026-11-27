@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {soluciones, cardText, wordCount, SOLUCIONES_REVIEWED_AT, SOLUCIONES_REVIEWED_LABEL} from '../src/data/solucionesCatalog.js';
+import {soluciones, cardText, wordCount} from '../src/data/solucionesCatalog.js';
 
 // S-05 · /soluciones/ como catálogo plano (spec «página Soluciones» v0.2). Se prueba el HTML construido y servido, sin ejecutar scripts.
 const base = process.env.TEST_BASE_URL;
@@ -89,7 +89,8 @@ test('Todo el texto está en el HTML estático: sin pestañas, acordeones, «lee
   // las cuatro tarjetas completas, leídas sin scripts
   const sinScripts = textOf(h.replace(/<script[\s\S]*?<\/script>/g, ''));
   for (const s of soluciones) for (const piece of [s.name, s.definition, s.audience, ...s.includes, s.excludes]) assert.ok(sinScripts.includes(piece), `${s.id}: «${piece.slice(0, 40)}…»`);
-  assert.match(m, new RegExp(`<time datetime="${SOLUCIONES_REVIEWED_AT}">${SOLUCIONES_REVIEWED_LABEL}</time>`, 'i')); // React escribe el atributo como dateTime; en HTML no distingue mayúsculas
+  // Sin «Última revisión» visible (decisión de Raúl, 2026-11-26): la fecha vive solo en soluciones.json (reviewed_at) y llms.txt.
+  assert.doesNotMatch(m, /<time\b|Última revisión|Lo que hoy tiene página pública/);
 });
 
 test('Jerarquía de encabezados limpia: un H1, H2 por bloque, H3 solo por solución, sin saltos', opts, async () => {
