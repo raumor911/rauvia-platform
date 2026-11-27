@@ -204,6 +204,37 @@ export default function FrenteComercialPage() {
         </div>
       </section>
 
+      {/* FRENTE COMERCIAL POR NECESIDAD */}
+      <section id="frente-comercial-por-necesidad" aria-labelledby="frente-comercial-por-necesidad-titulo" className="rv-s py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="frente-comercial-por-necesidad-titulo" className="rv-s-title">¿Qué necesitas explicar mejor a tus clientes?</h2>
+          <p className="text-slate-700 mb-8">Una página comercial no tiene que explicar lo mismo para todos. Empieza por la situación que más se parece a la tuya.</p>
+          <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <li className="rounded-lg border border-slate-200 bg-white p-5">
+              <h3 className="text-lg font-bold text-rauvia-navy mb-2">Mi PyME necesita ordenar su oferta</h3>
+              <p className="text-slate-700 mb-3">Reúne tus productos o servicios, la evidencia que ya tienes y el siguiente paso en una sola referencia comercial.</p>
+              <a href="/sitio-web-comercial-para-pymes/" className="underline font-semibold text-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Ver sitio web comercial para PyMEs</a>
+            </li>
+            <li className="rounded-lg border border-slate-200 bg-white p-5">
+              <h3 className="text-lg font-bold text-rauvia-navy mb-2">Mi empresa vende servicios especializados</h3>
+              <p className="text-slate-700 mb-3">Explica qué problema resuelves, en qué situaciones intervienes y qué información necesita el cliente para evaluar tu propuesta.</p>
+              <a href="/sitio-web-servicios-especializados/" className="underline font-semibold text-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Ver sitio web para servicios especializados</a>
+            </li>
+            <li className="rounded-lg border border-slate-200 bg-white p-5">
+              <h3 className="text-lg font-bold text-rauvia-navy mb-2">Ofrezco servicios profesionales</h3>
+              <p className="text-slate-700 mb-3">Presenta qué haces, para quién trabajas y cómo iniciar una conversación sin depender de repetir toda la explicación en cada contacto.</p>
+              <a href="/pagina-comercial-servicios-profesionales/" className="underline font-semibold text-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Ver página comercial para servicios profesionales</a>
+            </li>
+            <li className="rounded-lg border border-slate-200 bg-white p-5">
+              <h3 className="text-lg font-bold text-rauvia-navy mb-2">Necesito presentar mi práctica médica</h3>
+              <p className="text-slate-700 mb-3">Reúne especialidad, trayectoria validada, sedes y formas de contacto. Si hay un equipo o varias sedes, la página para médicos te orienta a la ruta adecuada.</p>
+              <a href="/pagina-web-para-medicos/" className="underline font-semibold text-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Ver opciones de página web para médicos</a>
+            </li>
+          </ul>
+          <p className="text-slate-700 mt-8">Si no sabes cuál describe tu caso, revisa primero <a href="#niveles" className="underline font-semibold text-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">qué incluye Frente Comercial</a>.</p>
+        </div>
+      </section>
+
       {/* NIVELES */}
       <section className="py-20 md:py-32 bg-white" id="niveles">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

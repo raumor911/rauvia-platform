@@ -167,6 +167,17 @@ export default function SeoParaIaGuiaPage() {
           </ol>
         </section>
 
+        <section id="ejemplos-por-necesidad" aria-labelledby="ejemplos-por-necesidad-titulo" className="scroll-mt-28">
+          <h2 id="ejemplos-por-necesidad-titulo" className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3">Ejemplos según la información que falta</h2>
+          <p>Si ya identificaste dónde falta información, revisa el ejemplo más cercano a tu situación.</p>
+          <ul className="list-disc pl-6 space-y-2 mt-3">
+            <li><a href="/seo-ai/catalogos-para-ia/" className="underline font-semibold text-rauvia-blue">Fichas que no explican para qué sirve un producto</a></li>
+            <li><a href="/seo-ai/cobertura-y-envios/" className="underline font-semibold text-rauvia-blue">Zonas, envíos o instalación poco claros</a></li>
+            <li><a href="/seo-ai/proveedores-tecnicos/" className="underline font-semibold text-rauvia-blue">Oferta técnica sin evidencia suficiente para Compras</a></li>
+            <li><a href="/seo-ai/corregir-informacion-en-ia/" className="underline font-semibold text-rauvia-blue">Una afirmación incorrecta sobre tu empresa</a></li>
+          </ul>
+        </section>
+
         <section id="medicion" className="scroll-mt-28">
           <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>Cómo medir sin confundir visibilidad con ventas</h2>
           <p><strong>Antes de modificar:</strong> selecciona páginas, consultas y países; registra fechas, cambios previstos y una ventana comparable anterior. Si tienes acceso, exporta impresiones, clics y consultas de Search Console para esas páginas. Google ha anunciado información específica de apariciones en sus funciones de IA para un subconjunto de propietarios; comprueba la disponibilidad y los límites de tu propiedad antes de usarla. No supongas que cubre otros asistentes ni todos los eventos.</p>
