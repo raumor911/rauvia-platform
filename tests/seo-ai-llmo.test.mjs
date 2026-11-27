@@ -19,7 +19,8 @@ test('grafo público: activo, oferta y fuente por cada página SEO AI, con la UR
     const asset = byId.get(`asset:${key}`);
     assert.equal(asset.canonical, routeSeo[route].canonical);
     assert.equal(asset.label ?? asset.title, routeSeo[route].title);
-    assert.deepEqual(byId.get(`offering:${key}`).representedBy, [`asset:${key}`]);
+    // L-04 (S-06): la oferta madre «SEO para IA» también la presenta el catálogo /soluciones/; auditoría e implementación solo su página.
+    assert.deepEqual(byId.get(`offering:${key}`).representedBy, key === 'seo-ai' ? [`asset:${key}`, 'asset:soluciones'] : [`asset:${key}`]);
   }
 });
 

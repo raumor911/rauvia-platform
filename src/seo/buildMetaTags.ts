@@ -33,7 +33,7 @@ export function metaEntries(seo: PageSeo): Array<{name?: string; property?: stri
     {name:'description',content:seo.description}, {name:'robots',content:seo.robots || 'index, follow'},
     {property:'og:title',content:ogTitle}, {property:'og:description',content:desc},
     ...(seo.canonical ? [{property:'og:url',content:seo.canonical}] : []), {property:'og:type',content:seo.ogType || 'website'},
-    {property:'og:site_name',content:'RAUVIA Consulting'}, {property:'og:locale',content:'es_MX'},
+    {property:'og:site_name',content:'RAUVIA'}, {property:'og:locale',content:'es_MX'},
     {name:'twitter:card',content:seo.twitterCard || 'summary_large_image'},
     {name:'twitter:title',content:ogTitle}, {name:'twitter:description',content:desc},
   ];

@@ -46,7 +46,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:url" content={absoluteUrl} />
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={absoluteOgImage} />
-      <meta property="og:site_name" content="RAUVIA Consulting" />
+      <meta property="og:site_name" content="RAUVIA" />
       <meta property="og:locale" content="es_MX" />
 
       {/* Twitter */}

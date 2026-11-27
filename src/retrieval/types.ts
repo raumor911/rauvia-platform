@@ -3,6 +3,7 @@ export interface AnswerSeed {
  key:string; question:string; answer:string; intents:string[]; primary:string;
  claims:string[]; limitations:string[]; fit:{when:string[];possible:string[];nonFit:string[]};
  context?:{problems:string[];capabilities:string[]};
+ assets?:string[]; // activos de apoyo adicionales (clave sin «asset:»), además del principal y los de cobertura
 }
 export interface CanonicalAnswer {
  id:string;familyId:string;question:string;answer:string;intentIds:string[];problemIds:string[];

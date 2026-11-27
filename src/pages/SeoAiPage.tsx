@@ -87,7 +87,7 @@ export default function SeoAiPage() {
     <section className="seoai-hero pt-16 md:pt-24 pb-16 md:pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
         <div>
-          <p className="seoai-kicker mb-4 sa-rise" style={idx(0)}>SEO AI · RAUVIA Consulting · Edición 2027</p>
+          <p className="seoai-kicker mb-4 sa-rise" style={idx(0)}>SEO AI · RAUVIA · Edición 2027</p>
           <p className="seoai-hook sa-rise" style={idx(1)}>Las personas pueden buscar respuestas en Google y también conversar con un asistente. ¿Qué podría encontrar un comprador sobre tu empresa?</p>
           <h1 className="seoai-h1 text-3xl md:text-5xl font-extrabold leading-tight mb-6 sa-rise" style={idx(2)}>Prepara tu empresa para las búsquedas con IA en 2027</h1>
           <p className="seoai-lead text-lg md:text-xl max-w-2xl mb-4 sa-rise" style={idx(3)}>Preparamos y verificamos la información pública de tu empresa para que buscadores y asistentes puedan encontrar qué vendes, para qué sirve y dónde lo entregas.</p>

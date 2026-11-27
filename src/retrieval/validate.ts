@@ -5,7 +5,7 @@ export function validateRetrieval(r:{graph:Graph;answers:CanonicalAnswer[];arche
  const check=(ok:unknown,msg:string)=>{if(!ok)errors.push(msg);};
  const unique=(ids:string[],label:string)=>check(new Set(ids).size===ids.length,'Duplicate '+label);
  unique(r.answers.map(a=>a.id),'answer');unique(r.archetypes.map(q=>q.id),'archetype');unique(r.bundles.map(b=>b.id),'bundle');
- check(r.answers.length>=12&&r.answers.length<=20,'Answer families must remain 12–20');
+ check(r.answers.length>=12&&r.answers.length<=22,'Answer families must remain 12–22'); // 20 → 22 con S-06.2 (L-05): una respuesta actualizada y tres nuevas
  for(const i of r.graph.nodes.filter(n=>n.type==='Intent')){
   check(r.answers.filter(a=>a.intentIds.includes(i.id)).length===1,'Intent requires one answer family: '+i.id);
   check(r.archetypes.some(q=>q.intentId===i.id&&q.queries.length),'Intent requires approved natural query: '+i.id);
@@ -17,7 +17,7 @@ export function validateRetrieval(r:{graph:Graph;answers:CanonicalAnswer[];arche
   check(a.status==='supported'&&a.visibility==='public'&&a.publication.approved,'Unapproved answer: '+a.id);
   check(a.answer.length<1300,'Excessive answer length: '+a.id);
   check((a.answer.match(/RAUVIA/g)||[]).length<=4,'Keyword repetition: '+a.id);
-  check(!/garantiza(?:mos)? (?:ventas|resultados|pacientes)|aumentará tus ventas|crecimiento asegurado/i.test(a.answer),'Guarantee: '+a.id);
+  check(!/(?<!\b(?:no|ni|ninguna|ninguno) )garantiza(?:mos)? (?:ventas|resultados|pacientes)|aumentará tus ventas|crecimiento asegurado/i.test(a.answer),'Guarantee: '+a.id);
   check(!/Ruta 90 (?:es .*?)?(?:cread[oa]|desarrollad[oa]) por RAUVIA|Autor: Raúl|Morales, R\. \(2026\)/i.test(a.answer),'False method authorship: '+a.id);
   check(!/3[,.]564 (?:clientes|ventas|oportunidades|conversaciones analizadas)/i.test(a.answer),'Interaction reinterpreted: '+a.id);
   check(!/causó|provocó un incremento|demuestra.*(?:ventas|efectividad)/i.test(a.answer),'Unsupported causal statement: '+a.id);

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "node --import tsx scripts/build-knowledge-graph.js && node --import tsx scripts/build-retrieval.js && vite build && node scripts/prerender.js && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs",
+    "build": "node --import tsx scripts/build-knowledge-graph.js && node --import tsx scripts/build-retrieval.js && node scripts/build-machine-layer.js && vite build && node scripts/prerender.js && node scripts/lastmod-registry.mjs && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --loader:.css=empty --outfile=dist/server.cjs",
     "start": "NODE_ENV=production node dist/server.cjs",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
@@ -27,6 +27,9 @@
     "test:knowledge": "node --import tsx --test tests/knowledge.test.ts tests/person-knowledge.test.ts tests/person-practice.test.ts",
     "test:knowledge-http": "node --test tests/knowledge-http.test.mjs",
     "build:retrieval": "node --import tsx scripts/build-retrieval.js",
+    "build:lastmod": "node scripts/lastmod-registry.mjs",
+    "build:machine-layer": "node scripts/build-machine-layer.js",
+    "check:machine-layer": "node scripts/build-machine-layer.js --check",
     "audit:retrieval": "node --import tsx scripts/retrieval-audit.js",
     "test:retrieval": "node --import tsx --test tests/retrieval.test.ts tests/v75-security.test.ts tests/v75-http.test.mjs",
     "test:person-knowledge": "node --import tsx --test tests/person-knowledge.test.ts tests/person-practice.test.ts",

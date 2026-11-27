@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { publicRoutes } from './public-routes.js';
@@ -67,12 +68,20 @@ export async function fetchPosts(fetcher = fetchWithRetry, env = process.env) {
   return posts;
 }
 
-export function renderSitemap(posts) {
+// lastmod de las páginas del sitio: sale de data/lastmod-registry.json, que escribe la construcción (scripts/lastmod-registry.mjs)
+// solo cuando cambia el HTML de la página. Nunca se calcula con la hora del servidor al servir el archivo (S-06.3).
+export function loadLastmodRegistry(file = process.env.LASTMOD_REGISTRY_PATH || path.join(process.cwd(), 'data', 'lastmod-registry.json')) {
+  try { return JSON.parse(fsSync.readFileSync(file, 'utf8')); } catch { return {}; }
+}
+
+export function renderSitemap(posts, registry = loadLastmodRegistry()) {
   const entries = new Map(publicRoutes.map(route => {
     // Enforce trailing slash para estandarización SEO/GEO
     const cleanRoute = route === '/' ? '/' : (route.endsWith('/') ? route : `${route}/`);
-    return [cleanRoute, null];
+    const known = registry[`https://rauvia.com.mx${cleanRoute}`]?.lastmod;
+    return [cleanRoute, typeof known === 'string' && Number.isFinite(Date.parse(known)) ? known : null];
   }));
+  const institutional = new Set(entries.keys());
   for (const post of posts) {
     const date = post.modified_gmt || post.modified;
     // WordPress typically returns "YYYY-MM-DDTHH:mm:ss". Let's append +00:00 if it's GMT
@@ -81,6 +90,9 @@ export function renderSitemap(posts) {
     if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}T/.test(date) && Number.isFinite(Date.parse(date))) {
       lastmod = isGmt && !date.includes('+') && !date.endsWith('Z') ? `${date}+00:00` : date;
     }
+    // Una ruta institucional (p. ej. /recursos/seo-para-ia/) conserva el lastmod de su registro: al reconciliar la caché, esa URL
+    // vuelve como si fuera un artículo y no debe pisarlo con null.
+    if (institutional.has(`/recursos/${post.slug}/`)) continue;
     entries.set(`/recursos/${post.slug}/`, lastmod);
   }
   if (entries.size > 50000) throw new Error('Se requiere dividir el sitemap.');
@@ -92,10 +104,10 @@ export function renderSitemap(posts) {
 // Reconcilia un sitemap persistido con las rutas institucionales del código desplegado.
 // Conserva las entradas editoriales (/recursos/…) con su lastmod y regenera las institucionales desde publicRoutes.
 // Así un despliegue con rutas nuevas (o retiradas) se refleja al arrancar, sin esperar al refresco programado.
-export function reconcileCachedSitemap(xml) {
+export function reconcileCachedSitemap(xml, registry = loadLastmodRegistry()) {
   const posts = [];
   for (const m of String(xml).matchAll(/<url><loc>https:\/\/rauvia\.com\.mx\/recursos\/([^/<>]+)\/<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?<\/url>/g)) {
     posts.push({ slug: m[1], ...(m[2] ? { modified: m[2] } : {}) });
   }
-  return renderSitemap(posts);
+  return renderSitemap(posts, registry);
 }

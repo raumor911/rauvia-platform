@@ -1,21 +1,21 @@
 {
   "/": {
     "title": [
-      "RAUVIA | Servicios digitales y trabajo especializado para empresas"
+      "RAUVIA | Servicios digitales para empresas"
     ],
     "meta": [
       "<meta charset=\"UTF-8\" />",
-      "<meta name=\"description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
+      "<meta name=\"description\" content=\"Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.\">",
       "<meta name=\"robots\" content=\"index, follow\">",
-      "<meta property=\"og:title\" content=\"RAUVIA | Servicios digitales y trabajo especializado para empresas\">",
-      "<meta property=\"og:description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
+      "<meta property=\"og:title\" content=\"RAUVIA | Servicios digitales para empresas\">",
+      "<meta property=\"og:description\" content=\"Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.\">",
       "<meta property=\"og:url\" content=\"https://rauvia.com.mx/\">",
       "<meta property=\"og:type\" content=\"website\">",
       "<meta property=\"og:site_name\" content=\"RAUVIA Consulting\">",
       "<meta property=\"og:locale\" content=\"es_MX\">",
       "<meta name=\"twitter:card\" content=\"summary_large_image\">",
-      "<meta name=\"twitter:title\" content=\"RAUVIA | Servicios digitales y trabajo especializado para empresas\">",
-      "<meta name=\"twitter:description\" content=\"Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.\">",
+      "<meta name=\"twitter:title\" content=\"RAUVIA | Servicios digitales para empresas\">",
+      "<meta name=\"twitter:description\" content=\"Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.\">",
       "<meta property=\"og:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">",
       "<meta name=\"twitter:image\" content=\"https://rauvia.com.mx/media/og-image.jpg\">"
     ],
@@ -92,8 +92,8 @@
         "@type": "WebPage",
         "@id": "https://rauvia.com.mx/#webpage",
         "url": "https://rauvia.com.mx/",
-        "name": "RAUVIA | Servicios digitales y trabajo especializado para empresas",
-        "description": "Presenta mejor tu oferta y prepara la información de tu empresa para buscadores y asistentes de IA con servicios de RAUVIA.",
+        "name": "RAUVIA | Servicios digitales para empresas",
+        "description": "Frente Comercial y SEO para IA: hacemos que tu empresa se entienda y se encuentre. Detectamos qué falta, lo construimos y una persona revisa cada entrega.",
         "inLanguage": "es-MX",
         "isPartOf": {
           "@id": "https://rauvia.com.mx/#website"

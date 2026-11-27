@@ -1,7 +1,7 @@
 {
   "version": "v77",
-  "capturedAt": "2026-11-27T05:56:56.819Z",
-  "source": "Chrome (puppeteer) sobre dist/ local, commit base e418d48 + working tree",
+  "capturedAt": "2026-11-27T00:34:11.032Z",
+  "source": "Chrome (puppeteer) sobre dist/ local, commit base b188ac3 + working tree",
   "approval": {
     "status": "pending",
     "by": null,
@@ -90,9 +90,9 @@
         "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg>",
         "rect": {
           "x": 79.203125,
-          "y": 536.515625,
-          "width": 236.9375,
-          "height": 60.9375
+          "y": 590.234375,
+          "width": 319.3125,
+          "height": 58
         },
         "viewport": [
           1440,
@@ -106,9 +106,9 @@
         "class": "rv-hero-secondary flex",
         "icon": null,
         "rect": {
-          "x": 332.140625,
-          "y": 542.984375,
-          "width": 163.59375,
+          "x": 414.515625,
+          "y": 595.234375,
+          "width": 215.078125,
           "height": 48
         },
         "viewport": [
@@ -224,15 +224,15 @@
   },
   "geometryToleranceCssPx": 1,
   "sourceHashes": {
-    "src/components/HeroSection.tsx": "7edd640ec59258a56ab51c3c7b1e826c3563fa5c08c5df00b71f0fe8f82a2f5b",
-    "src/components/Footer.tsx": "7221577fe3fc93cbdc93fcacb25a540b284fafbdb5a55bdc13cb641a107ff85d",
-    "src/components/AethryonCore.tsx": "2ef54cba588c88c6b5849c0ab9a292d981da4b00420b503e18bf34547084c539",
+    "src/components/HeroSection.tsx": "cedf6e0fbe9e5e7033e6ed353332648d5c6b82d86afa541f0d31154f52a9cf0a",
+    "src/components/Footer.tsx": "28f5c51e08624a89c6b1bc699e1f221aa78831cae48c319779f8c5e7f89acc15",
+    "src/components/AethryonCore.tsx": "1342c48d27d5afd6cb840d37d4ca027e99d43fa7f07a6809b7ebfac9d0c4f87c",
     "src/styles/mobileExperience.css": "c901cfa32dadc8aaecdcde9852c173eebcb46b1f02c8674ae98e153411bf26b3",
-    "src/pages/SolucionesPage.tsx": "2af584fe24e58035296b74034c1527f4f6582743561cb31a97fb879d78f9d07e",
+    "src/pages/SolucionesPage.tsx": "50ffb71ea94afe82efabe858228da8679749b1dc5204052b45e4e1694f6c1275",
     "src/pages/NosotrosPage.tsx": "37f98ec35bb507ce05bef6e0cc746c166ebad7a03362a38a50bf342d6332275c",
     "src/App.tsx": "c01b68b6b3c633f5715fe66a804ad52852eef5fb04b7b66ce461dff0d2f99706",
     "src/pages/AethryonPage.tsx": "c1c516787fed21e5a6da56f32ac27ea1581efd38cb6a3d2d687125630054abc8",
-    "src/pages/FrenteComercialPage.tsx": "eea5bc730b367e358423265bb89a8e65c92f4b36f8a16091f7445b1d3e2f48be",
+    "src/pages/FrenteComercialPage.tsx": "e88966ea3018c49fe35d7f0308477112cbd1da7888e822fc56c086857c011886",
     "src/pages/CasosIndexPage.tsx": "dcfec9bbc28e2299011fb9fdb8d3814a5027d3a4a0689c41fcef8d2b79a5f2f0",
     "src/lib/analytics.ts": "5e95671bbc6ffe4f67272d5fb4f551ee9f8215eec105cd4a0784fe3213254f48"
   }

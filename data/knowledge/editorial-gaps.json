@@ -332,6 +332,94 @@
       "publication": "not_authorized"
     },
     {
+      "familyId": "answer-family:soluciones-rauvia",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+        "intents": [
+          "intent:que-soluciones-ofrece-rauvia"
+        ],
+        "problems": [
+          "problem:oferta-poco-clara",
+          "problem:ejecucion-sin-continuidad"
+        ],
+        "capabilities": [
+          "capability:traduccion-comercial",
+          "capability:priorizacion"
+        ],
+        "primarySource": "asset:soluciones",
+        "claims": [
+          "claim:soluciones-catalogo"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Catálogo vigente a la fecha de revisión; RAUVIA Trayectoria no forma parte del catálogo (precios históricos pendientes de confirmación comercial).",
+          "Ninguna solución garantiza ventas, posiciones, menciones ni citas."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:frente-comercial",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué es Frente Comercial?",
+        "intents": [
+          "intent:que-es-frente-comercial"
+        ],
+        "problems": [
+          "problem:oferta-poco-clara"
+        ],
+        "capabilities": [
+          "capability:traduccion-comercial",
+          "capability:representacion-comercial"
+        ],
+        "primarySource": "asset:frente-comercial",
+        "claims": [
+          "claim:frente-comercial-definicion"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Descripción de una solución publicada, no diagnóstico individual; la pertinencia se confirma con el alcance."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
+      "familyId": "answer-family:seo-para-ia",
+      "priority": "LATER",
+      "action": "NEW_CONTENT_NEEDED",
+      "reason": "No artículo asociado en el snapshot de diez entradas; comprobar inventario vivo antes de encargar una pieza.",
+      "brief": {
+        "question": "¿Qué es SEO para IA y qué no promete?",
+        "intents": [
+          "intent:que-es-seo-para-ia"
+        ],
+        "problems": [
+          "problem:brecha-capacidad-percepcion"
+        ],
+        "capabilities": [
+          "capability:representacion-comercial"
+        ],
+        "primarySource": "asset:seo-ai",
+        "claims": [
+          "claim:seo-ia-definicion"
+        ],
+        "limitations": [
+          "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+          "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+          "Las respuestas de asistentes de terceros pueden cambiar; cada una es una observación fechada."
+        ]
+      },
+      "publication": "not_authorized"
+    },
+    {
       "familyId": "answer-family:entidad-aethryon",
       "priority": "LATER",
       "action": "NEW_CONTENT_NEEDED",

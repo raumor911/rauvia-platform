@@ -29,7 +29,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
@@ -100,7 +101,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
@@ -153,7 +155,8 @@
     ],
     "existingCoverage": [
       "asset:aethryon",
-      "asset:frente-comercial"
+      "asset:frente-comercial",
+      "asset:soluciones"
     ],
     "missing": "Página de explicación aprobada",
     "rationale": "Ausencia en este catálogo; no autoriza crear una landing."
@@ -766,6 +769,19 @@
     "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
   },
   {
+    "id": "gap:content-gap:intent-que-es-frente-comercial",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-frente-comercial"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:frente-comercial"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
     "id": "gap:content-gap:intent-que-es-rauvia",
     "type": "CONTENT_GAP",
     "intents": [
@@ -787,6 +803,32 @@
     "capabilities": [],
     "existingCoverage": [
       "asset:ruta90"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-es-seo-para-ia",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-es-seo-para-ia"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:seo-ai"
+    ],
+    "missing": "Artículo o guía relacionada en el snapshot",
+    "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."
+  },
+  {
+    "id": "gap:content-gap:intent-que-soluciones-ofrece-rauvia",
+    "type": "CONTENT_GAP",
+    "intents": [
+      "intent:que-soluciones-ofrece-rauvia"
+    ],
+    "capabilities": [],
+    "existingCoverage": [
+      "asset:soluciones"
     ],
     "missing": "Artículo o guía relacionada en el snapshot",
     "rationale": "El catálogo offline sólo representa diez artículos; no afirma ausencia en todo WordPress ni demanda de ese contenido."

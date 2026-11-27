@@ -54,14 +54,13 @@
 .ft-epic .ft-cta:focus-visible, .ft-bar a:focus-visible { outline: 3px solid #FFD766; outline-offset: 3px; }
 
 /* barra inferior: la columna central toma el ancho que necesita para que los enlaces no se partan */
-@media (min-width: 768px) { .ft-epic .ft-bar { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); } }
+/* Las columnas laterales nunca bajan de su contenido (logo, redes); la central se parte en líneas. Antes el logo medía 0 px a 768 y 82 px a 1024. */
+@media (min-width: 768px) { .ft-epic .ft-bar { grid-template-columns: minmax(min-content, 1fr) minmax(0, auto) minmax(min-content, 1fr); } }
 
 .ft-bar { border-image: linear-gradient(90deg, transparent, rgba(148, 180, 215, .35), rgba(255, 215, 102, .55) 50%, rgba(148, 180, 215, .35), transparent) 1; }
 .ft-epic .ft-bar a { color: #9fb2c8; transition: color .3s, text-shadow .3s, transform .3s var(--ft-ease); }
 .ft-epic .ft-bar a:hover { color: #FFD766; text-shadow: 0 0 18px rgba(230, 163, 0, .6); }
 .ft-epic .ft-bar a[aria-label]:hover { transform: translateY(-2px); }
-.ft-credit { color: #9fb2c8; text-shadow: 0 1px 14px rgba(5, 19, 32, .9); }
-.ft-epic .ft-credit a:hover { color: #FFD766; }
 
 /* entrada del cierre al llegar a él */
 .ft-armed:not(.ft-in) [data-ft] { opacity: 0; }

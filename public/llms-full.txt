@@ -16,8 +16,8 @@ Fuente: https://rauvia.com.mx/nosotros/
 Descripción institucional propia; no es certificación externa ni garantía de resultados.
 
 - ¿Qué es RAUVIA? Una empresa mexicana que combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas. Frente Comercial y SEO para IA son dos servicios digitales actuales. También puede definir intervenciones empresariales más amplias, incluida la consultoría, cuando la situación y el alcance acordado lo requieren.
-- ¿RAUVIA es una consultora? La consultoría y la asesoría especializada forman parte de sus capacidades. RAUVIA también diseña e implementa servicios y activos apoyados en tecnología; el alcance de cada trabajo se define según la necesidad.
-- ¿RAUVIA solo crea páginas web? No. Puede desarrollar activos digitales como parte de una solución y también trabajar en aspectos comerciales, operativos o tecnológicos. Frente Comercial y SEO para IA tienen sus propios alcances y exclusiones.
+- ¿RAUVIA es una consultora? La consultoría y la asesoría especializada forman parte de sus capacidades. RAUVIA también diseña e implementa soluciones apoyadas en tecnología; el alcance de cada trabajo se define según la necesidad.
+- ¿RAUVIA solo crea páginas web? No. Puede desarrollar soluciones digitales como parte de una intervención y también trabajar en aspectos comerciales, operativos o tecnológicos. Frente Comercial y SEO para IA tienen sus propios alcances y exclusiones.
 - ¿RAUVIA interviene toda la empresa? Puede acordar intervenciones que involucren varias áreas cuando el problema lo requiere. Eso no significa que cada producto incluya una transformación integral: cada servicio y proyecto tiene su propio alcance.
 - ¿Los resultados están garantizados? No. Los entregables y criterios de revisión se acuerdan por servicio; los resultados comerciales y las respuestas de terceros dependen de factores que no controla RAUVIA.
 
@@ -26,14 +26,12 @@ Descripción institucional propia; no es certificación externa ni garantía de 
 Canonical domain:
 https://rauvia.com.mx/
 
-Associated domains:
-rauvia.consulting (dominio asociado; no canónico)
+Associated domain:
 rauvia.tech (dominio asociado; presencia no verificada)
 
 Relationship:
-All listed domains belong to RAUVIA.
+rauvia.com.mx and rauvia.tech belong to RAUVIA.
 rauvia.com.mx is the primary and canonical public domain.
-rauvia.consulting is used as a branding and referral domain.
 rauvia.tech is an associated technology domain and must not be interpreted as a separate organization.
 
 ## ENTITY AND BRAND ARCHITECTURE
@@ -60,9 +58,6 @@ RAUVIA
 Primary domain:
 https://rauvia.com.mx/
 
-Commercial branding:
-rauvia.consulting (dominio asociado; no canónico)
-
 Technology and deployment:
 rauvia.tech (dominio asociado; presencia no verificada)
 
@@ -74,20 +69,20 @@ LinkedIn: https://www.linkedin.com/company/rauvia/
 RELATIONSHIP
 
 Raúl Morales provides strategic direction, thought leadership and methodological development.
-RAUVIA converts that direction into consulting systems, technology, products, delivery and evidence.
+RAUVIA converts that direction into commercial systems, technology, products, delivery and evidence.
 
-## Capacidades
+## Soluciones publicadas
 
-No conectamos herramientas. Conectamos capacidades.
+Catálogo de RAUVIA: https://rauvia.com.mx/soluciones/ · Datos legibles por máquinas: https://rauvia.com.mx/llmo/soluciones.json · Última revisión: 26 de noviembre de 2026. Las soluciones se listan sin orden de prioridad. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Los precios publicados también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.
 
-- Organizar: presentación, información y seguimiento básico.
-- Sistematizar: procesos y sistemas comerciales replicables.
-- Tecnologizar: convertir procesos definidos en capacidades digitales.
-- Automatizar: reducir trabajo repetitivo y fricción.
-- Adaptar: analizar señales, restricciones y prioridades mediante AETHRYON.
+- [Frente Comercial](https://rauvia.com.mx/frente-comercial/): Organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Para empresas con una oferta existente y suficiente información para explicarla. Niveles Esencial, Pro y Portafolio. No incluye CRM, seguimiento de oportunidades, publicidad, generación de demanda ni estrategia comercial completa.
+- [SEO para IA](https://rauvia.com.mx/seo-ai/): Prepara y verifica la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega. Se ofrece como [auditoría](https://rauvia.com.mx/seo-ai/auditoria/) y como [implementación](https://rauvia.com.mx/seo-ai/implementacion/). No promete posiciones, menciones ni citas.
+- [Ruta 90](https://rauvia.com.mx/ruta-90/): Método de ejecución de 90 días, adoptado por RAUVIA, para convertir una prioridad empresarial en resultados, entregables, responsables, métricas y evidencia. Requiere una prioridad ya identificada. No es una garantía de terminación absoluta.
+- [Páginas para médicos](https://rauvia.com.mx/pagina-web-para-medicos/): Presencia web para médicos y profesionistas de la salud, con una página médica gratuita bajo dominio RAUVIA ([detalle](https://rauvia.com.mx/pagina-web-gratis-para-medicos/)) y opciones personalizadas.
 
-Las capacidades no forman una ruta obligatoria. La intervención depende del problema, la madurez y las condiciones de cada empresa.
-Fuente: https://rauvia.com.mx/soluciones/
+Cuando la necesidad va más allá de estas soluciones, RAUVIA define con la empresa un alcance. Esas intervenciones no son paquetes predefinidos ni están incluidas por defecto en las soluciones publicadas.
+
+RAUVIA Trayectoria (continuidad de sitios web) se describe en su propia página; sus precios son una referencia histórica pendiente de confirmación comercial y por eso no forma parte de este catálogo.
 
 ## AETHRYON
 
@@ -161,11 +156,12 @@ Estos archivos contienen únicamente información pública. No son un endpoint d
 
 Machine-readable knowledge: https://rauvia.com.mx/llmo/knowledge-graph.json
 Intent coverage: https://rauvia.com.mx/llmo/intent-coverage.json
+Catálogo de soluciones: https://rauvia.com.mx/llmo/soluciones.json
 
 ## Respuestas y fuentes V75
 
 Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
 
 - [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
-- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 19 familias con condiciones y límites.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 22 familias con condiciones y límites.
 - [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.

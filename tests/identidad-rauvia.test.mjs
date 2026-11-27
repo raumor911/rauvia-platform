@@ -5,7 +5,7 @@ import {routeSeo} from '../src/seo/routeSeo.js';
 const read=p=>fs.readFileSync(p,'utf8');
 const OLD=/firma mexicana de consultoría estratégica|identifica dónde una empresa está perdiendo valor|CONSULTORÍA PARA PYMES/i;
 test('Home y Nosotros declaran la identidad aprobada en metadata y JSON-LD',()=>{
-  assert.equal(routeSeo['/'].title,'RAUVIA | Servicios digitales y trabajo especializado para empresas');
+  assert.equal(routeSeo['/'].title,'RAUVIA | Servicios digitales para empresas');
   assert.equal(routeSeo['/nosotros'].title,'Nosotros | Trabajo especializado y tecnología para empresas | RAUVIA');
   for(const k of ['/','/nosotros']){
     const s=routeSeo[k];assert.doesNotMatch(JSON.stringify(s),OLD);
@@ -13,11 +13,15 @@ test('Home y Nosotros declaran la identidad aprobada en metadata y JSON-LD',()=>
   }
   const org=routeSeo['/'].schema.find(x=>x['@type']==='Organization');
   assert.equal(org['@id'],'https://rauvia.com.mx/#organization');
-  assert.equal(org.legalName??'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO','RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
+  // N-09 (adenda 2026-11-26): name = nombre comercial, razón social en legalName y sin alternateName.
+  assert.equal(org.name,'RAUVIA');
+  assert.equal(org.legalName,'RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO');
+  assert.equal('alternateName' in org,false);
   assert.match(org.description,/trabajo especializado, metodología y tecnología/);
 });
 test('Hero: dos entradas, sin promesa de consultoría total ni crecimiento garantizado',()=>{
-  const h=read('src/components/HeroSection.tsx');
+  // C-02: las dos puertas salieron del hero a HomeDoorsSection; el resto del hero sigue en HeroSection.
+  const h=read('src/components/HeroSection.tsx')+read('src/components/HomeDoorsSection.tsx');
   assert.match(h,/SERVICIOS DIGITALES PARA EMPRESAS/);
   assert.match(h,/ENCONTRAR\./);
   assert.match(h,/to="\/frente-comercial\/"/);assert.match(h,/to="\/seo-ai\/"/);

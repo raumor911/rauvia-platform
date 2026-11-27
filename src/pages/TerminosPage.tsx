@@ -10,12 +10,12 @@ export default function TerminosPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInUp>
             <span className="text-rauvia-blue font-bold tracking-widest uppercase text-sm mb-4 block">TÉRMINOS Y CONDICIONES DE USO</span>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-rauvia-navy mb-4 tracking-tight">RAUVIA Consulting</h1>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-rauvia-navy mb-4 tracking-tight">RAUVIA</h1>
             <p className="text-slate-500 font-medium mb-12">Última actualización: septiembre de 2026</p>
 
             <div className="prose prose-lg prose-rauvia max-w-none text-slate-700">
               <p>
-                El presente sitio web es operado por RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO, S.A.S. DE C.V., comercialmente identificada como RAUVIA Consulting —en adelante, “RAUVIA”—.
+                El presente sitio web es operado por RAUVIA CONSULTORIA Y DESARROLLO TECNOLOGICO, S.A.S. DE C.V., comercialmente identificada como RAUVIA.
               </p>
               <p>
                 Estos Términos y Condiciones regulan exclusivamente el acceso, navegación y uso de rauvia.com.mx, sus páginas, contenidos y mecanismos de contacto.

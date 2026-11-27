@@ -376,3 +376,12 @@ Semánticos: 5 · Contenido: 15
 - rau004-main-baseline.json /seo-ai/cobertura-y-envios contenido
 - rau004-main-baseline.json /seo-ai/proveedores-tecnicos contenido
 Nota: /recursos también cambió en la simulación pero ya fallaba en main antes de las olas A/B/C; no se refrescó y queda como fallo previo.
+## 2026-11-26 · c52ba41
+Motivo: Adecuación de la home 2026-11-26 (C-01 a C-06, autorizada por Raúl): título y meta nuevos, puertas y Recursos fuera del hero, método único, bloques de prueba y revisión humana. /recursos: deriva de contenido ya presente en main limpio ae3e002 (artículos de WordPress).
+Semánticos: 4 · Contenido: 2
+- v72-route-baseline.json / title
+- v72-route-baseline.json / meta
+- v72-route-baseline.json / jsonld
+- rau004-main-baseline.json / head (title/meta/canonical/JSON-LD)
+- rau004-main-baseline.json / contenido
+- rau004-main-baseline.json /recursos contenido

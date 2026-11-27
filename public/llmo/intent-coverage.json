@@ -141,7 +141,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -215,7 +216,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -253,7 +255,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -327,7 +330,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -365,7 +369,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -403,7 +408,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -490,7 +496,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -893,7 +900,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -1161,7 +1169,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -1199,7 +1208,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -1442,7 +1452,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -1660,7 +1671,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -1907,6 +1919,25 @@
       "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
     },
     {
+      "intent": "intent:que-es-frente-comercial",
+      "label": "¿Qué es Frente Comercial?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:frente-comercial",
+      "supportingAssets": [],
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
       "intent": "intent:que-es-rauvia",
       "label": "¿Qué es RAUVIA?",
       "family": "ENTITY",
@@ -1938,6 +1969,25 @@
       "possibleInterventions": [],
       "conditionalInterventions": [],
       "primaryAsset": "asset:ruta90",
+      "supportingAssets": [],
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-es-seo-para-ia",
+      "label": "¿Qué es SEO para IA y qué no promete?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:seo-ai",
       "supportingAssets": [],
       "status": "canonical",
       "evidenceState": "editorial",
@@ -1992,6 +2042,25 @@
         "asset:ruta90"
       ],
       "status": "supported",
+      "evidenceState": "editorial",
+      "coverage": "MEDIUM",
+      "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
+    },
+    {
+      "intent": "intent:que-soluciones-ofrece-rauvia",
+      "label": "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+      "family": "ENTITY",
+      "icps": [],
+      "verticals": [],
+      "problems": [],
+      "restrictions": [],
+      "capabilityGaps": [],
+      "capabilities": [],
+      "possibleInterventions": [],
+      "conditionalInterventions": [],
+      "primaryAsset": "asset:soluciones",
+      "supportingAssets": [],
+      "status": "canonical",
       "evidenceState": "editorial",
       "coverage": "MEDIUM",
       "rationale": "Contexto coherente y fuente editorial; página general o contexto de identidad sin problema."
@@ -2115,7 +2184,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2153,7 +2223,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2227,7 +2298,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2265,7 +2337,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2303,7 +2376,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2341,7 +2415,8 @@
       "primaryAsset": "asset:sitio-web-servicios-especializados",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",
@@ -2652,7 +2727,8 @@
       "primaryAsset": "asset:pagina-comercial-servicios-profesionales",
       "supportingAssets": [
         "asset:aethryon",
-        "asset:frente-comercial"
+        "asset:frente-comercial",
+        "asset:soluciones"
       ],
       "status": "supported",
       "evidenceState": "editorial",

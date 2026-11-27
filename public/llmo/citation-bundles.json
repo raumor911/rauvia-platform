@@ -340,6 +340,7 @@
       "supporting_sources": [
         "source:aethryon",
         "source:sitio-web-servicios-especializados",
+        "source:soluciones",
         "source:wp-28",
         "source:wp-31"
       ],
@@ -769,6 +770,110 @@
       ]
     },
     {
+      "id": "citation:soluciones-rauvia",
+      "answerId": "answer:soluciones-rauvia",
+      "primary_source": "source:soluciones",
+      "supporting_sources": [
+        "source:frente-comercial",
+        "source:pagina-web-gratis-medicos",
+        "source:pagina-web-medicos",
+        "source:ruta90",
+        "source:seo-ai"
+      ],
+      "claims": [
+        "claim:soluciones-catalogo"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Catálogo de soluciones publicadas, no prueba de efectividad ni garantía de resultados; Trayectoria no forma parte de él.",
+        "Catálogo vigente a la fecha de revisión; RAUVIA Trayectoria no forma parte del catálogo (precios históricos pendientes de confirmación comercial).",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Ninguna solución garantiza ventas, posiciones, menciones ni citas.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:soluciones-catalogo",
+          "sourceIds": [
+            "source:soluciones",
+            "source:frente-comercial",
+            "source:seo-ai",
+            "source:ruta90",
+            "source:pagina-web-medicos"
+          ],
+          "scope": "Catálogo vigente a la fecha de revisión.",
+          "period": "Revisión del 2026-11-26.",
+          "attributionLimit": "Catálogo de soluciones publicadas, no prueba de efectividad ni garantía de resultados; Trayectoria no forma parte de él."
+        }
+      ]
+    },
+    {
+      "id": "citation:frente-comercial",
+      "answerId": "answer:frente-comercial",
+      "primary_source": "source:frente-comercial",
+      "supporting_sources": [],
+      "claims": [
+        "claim:frente-comercial-definicion"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Descripción de una solución publicada, no diagnóstico individual; la pertinencia se confirma con el alcance.",
+        "Descripción institucional propia; no es resultado ni garantía de ventas.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:frente-comercial-definicion",
+          "sourceIds": [
+            "source:frente-comercial"
+          ],
+          "scope": "Definición de la solución según su página.",
+          "period": "Alcance publicado vigente a la fecha de revisión.",
+          "attributionLimit": "Descripción institucional propia; no es resultado ni garantía de ventas."
+        }
+      ]
+    },
+    {
+      "id": "citation:seo-para-ia",
+      "answerId": "answer:seo-para-ia",
+      "primary_source": "source:seo-ai",
+      "supporting_sources": [
+        "source:seo-ai-auditoria",
+        "source:seo-ai-implementacion"
+      ],
+      "claims": [
+        "claim:seo-ia-definicion"
+      ],
+      "evidence": [],
+      "limitations": [
+        "Artículos asociados por metadata del snapshot; el cuerpo requiere revisión editorial antes de usarlo como evidencia.",
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Fuentes institucionales propias; contenido editorial no equivale a corroboración externa.",
+        "Las respuestas de asistentes de terceros pueden cambiar; cada una es una observación fechada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Una respuesta de un asistente es una observación separada; no es resultado atribuible."
+      ],
+      "last_reviewed": "2026-10-06",
+      "assertions": [
+        {
+          "claimId": "claim:seo-ia-definicion",
+          "sourceIds": [
+            "source:seo-ai"
+          ],
+          "scope": "Definición de la solución según su página.",
+          "period": "Alcance publicado vigente a la fecha de revisión.",
+          "attributionLimit": "Una respuesta de un asistente es una observación separada; no es resultado atribuible."
+        }
+      ]
+    },
+    {
       "id": "citation:entidad-aethryon",
       "answerId": "answer:entidad-aethryon",
       "primary_source": "source:aethryon",
@@ -928,6 +1033,19 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:frente-comercial-definicion",
+      "text": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:frente-comercial"
+      ],
+      "scope": "Definición de la solución según su página.",
+      "period": "Alcance publicado vigente a la fecha de revisión.",
+      "attributionLimit": "Descripción institucional propia; no es resultado ni garantía de ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
       "id": "claim:inversion-registrada",
       "text": "El caso publicado registra una inversión de $38,345.94 MXN durante la fase 1.",
       "claimType": "observed",
@@ -1048,6 +1166,36 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:seo-ia-definicion",
+      "text": "SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:seo-ai"
+      ],
+      "scope": "Definición de la solución según su página.",
+      "period": "Alcance publicado vigente a la fecha de revisión.",
+      "attributionLimit": "Una respuesta de un asistente es una observación separada; no es resultado atribuible.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:soluciones-catalogo",
+      "text": "RAUVIA publica un catálogo de soluciones con Frente Comercial, SEO para IA, Ruta 90 y páginas para médicos; cada solución publica su alcance en su página.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:soluciones",
+        "source:frente-comercial",
+        "source:seo-ai",
+        "source:ruta90",
+        "source:pagina-web-medicos"
+      ],
+      "scope": "Catálogo vigente a la fecha de revisión.",
+      "period": "Revisión del 2026-11-26.",
+      "attributionLimit": "Catálogo de soluciones publicadas, no prueba de efectividad ni garantía de resultados; Trayectoria no forma parte de él.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
       "id": "claim:trazabilidad-en-construccion",
       "text": "El caso describe una capacidad de trazabilidad comercial en construcción (Catalyst) para observar el recorrido de cada oportunidad.",
       "claimType": "capability",
@@ -1066,7 +1214,7 @@
     {
       "id": "source:aethryon",
       "url": "https://rauvia.com.mx/aethryon/",
-      "label": "Publicación institucional: RAUVIA Consulting | AETHRYON",
+      "label": "Publicación institucional: AETHRYON | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1090,7 +1238,7 @@
     {
       "id": "source:case-presencia-posicionamiento-profesional",
       "url": "https://rauvia.com.mx/casos/presencia-posicionamiento-profesional/",
-      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA Consulting",
+      "label": "Publicación institucional: Caso de presencia profesional | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1098,7 +1246,7 @@
     {
       "id": "source:frente-comercial",
       "url": "https://rauvia.com.mx/frente-comercial/",
-      "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA Consulting",
+      "label": "Publicación institucional: Frente Comercial para PyMES | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"
@@ -1160,6 +1308,30 @@
       "publisher": "org:rauvia"
     },
     {
+      "id": "source:seo-ai",
+      "url": "https://rauvia.com.mx/seo-ai/",
+      "label": "Publicación institucional: SEO para IA, GEO y AEO para empresas | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-auditoria",
+      "url": "https://rauvia.com.mx/seo-ai/auditoria/",
+      "label": "Publicación institucional: Auditoría GEO para empresas | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
+      "id": "source:seo-ai-implementacion",
+      "url": "https://rauvia.com.mx/seo-ai/implementacion/",
+      "label": "Publicación institucional: Implementación de SEO para IA (GEO) | RAUVIA",
+      "kind": "first_party_publication",
+      "verification": "published_self_report",
+      "publisher": "org:rauvia"
+    },
+    {
       "id": "source:seo-local-medicos",
       "url": "https://rauvia.com.mx/seo-local-para-medicos/",
       "label": "Publicación institucional: SEO local para médicos | Revisa tu presencia local | RAUVIA",
@@ -1178,7 +1350,7 @@
     {
       "id": "source:soluciones",
       "url": "https://rauvia.com.mx/soluciones/",
-      "label": "Publicación institucional: RAUVIA Consulting | Portafolio de Soluciones",
+      "label": "Publicación institucional: Soluciones | Frente Comercial y SEO para IA | RAUVIA",
       "kind": "first_party_publication",
       "verification": "published_self_report",
       "publisher": "org:rauvia"

@@ -40,8 +40,8 @@ try{
   assert.match(secondary[1],/href="\/nosotros\/#como-trabajamos"/);assert.equal(secondary[2].replace(/<[^>]*>/g,'').trim(),'CÓMO TRABAJAMOS'); // RAU-004 approved mockup uses a text-only secondary CTA.
   const r=await direct('/soluciones/');assert.equal(r.status,200);assert.equal(r.headers.get('location'),null);
  });
- await test('Footer signature is secondary, only brand is linked, no technical navigation',async()=>{
-  const html=await(await direct('/')).text(),footer=html.match(/<footer[\s\S]*?<\/footer>/)[0];assert.match(footer,/Experiencia digital desarrollada por/);assert.match(footer,/<a href="https:\/\/rauvia.com.mx\/"[^>]*>RAUVIA Consulting<\/a>/);assert.doesNotMatch(footer,/GEO &amp; LLM Dossier|href="\/(?:llms.txt|robots.txt|sitemap.xml)"/);
+ await test('Footer: sin crédito de desarrollo (N-05, 2026-11-26: solo los sitios de clientes lo llevan) y sin navegación técnica',async()=>{
+  const html=await(await direct('/')).text(),footer=html.match(/<footer[\s\S]*?<\/footer>/)[0];assert.doesNotMatch(footer,/Experiencia digital desarrollada por/);assert.doesNotMatch(footer.replace(/https:\/\/www\.(?:facebook|instagram)\.com\/rauviaconsulting\/?/g,''),/Consulting/i);assert.doesNotMatch(footer,/GEO &amp; LLM Dossier|href="\/(?:llms.txt|robots.txt|sitemap.xml)"/);
  });
  await test('Gone routes absent from sitemap; telemetry uses existing finished response status',async()=>{
   const map=await(await direct('/sitemap.xml')).text();for(const p of removed)assert.ok(!map.includes('https://rauvia.com.mx'+p));

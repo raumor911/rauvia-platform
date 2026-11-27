@@ -1,7 +1,7 @@
 {
   "name": "RAUVIA — referencias públicas",
   "language": "es-MX",
-  "reviewed_at": "2026-11-23",
+  "reviewed_at": "2026-11-26",
   "description": "Convención de directorio de RAUVIA; no es un protocolo obligatorio ni una API de conversación, y no garantiza indexación ni citas.",
   "entrypoint": "https://rauvia.com.mx/llms.txt",
   "resources": [
@@ -43,6 +43,10 @@
     },
     {
       "url": "https://rauvia.com.mx/llmo/precios.json",
+      "type": "application/json"
+    },
+    {
+      "url": "https://rauvia.com.mx/llmo/soluciones.json",
       "type": "application/json"
     },
     {

@@ -1,0 +1,109 @@
+/* Página Soluciones · catálogo plano (spec v0.2, S-02). Solo presentación. Paleta RAUVIA: navy #0A2540, azul #1E4A74, dorado #E6A300 / #FFD766.
+   Las reglas de párrafo llevan el prefijo .rv-main-site main porque mobileExperience.css fija `main p{font-size:1rem}`. */
+
+.rv-sol-section { position: relative; padding-block: clamp(2.5rem, 5vw, 4.5rem); background: #fff; }
+.rv-sol-section--soft { background: linear-gradient(180deg, #f4f8fc 0%, #fff 100%); }
+.rv-sol-section--white { background: #fff; }
+.rv-sol-section--tight { padding-block: clamp(1.75rem, 3.5vw, 2.75rem); }
+.rv-sol-section--navy { background: linear-gradient(180deg, #0f3157 0%, #0A2540 60%, #061b30 100%); color: #fff; }
+.rv-sol-container { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 16px; }
+@media (min-width: 640px) { .rv-sol-container { padding-inline: 24px; } }
+@media (min-width: 1024px) { .rv-sol-container { padding-inline: 32px; } }
+.rv-sol-container--narrow { max-width: 62rem; }
+.rv-sol-center { text-align: center; }
+
+.rv-sol-h2 { margin: 0; font-size: clamp(1.5rem, 2.8vw, 2.25rem); font-weight: 800; line-height: 1.15; letter-spacing: -.025em; color: #0A2540; }
+.rv-sol-h2--small { font-size: clamp(1.25rem, 2.1vw, 1.625rem); }
+.rv-sol-h2--light { color: #fff; max-width: 40rem; margin-inline: auto; }
+.rv-main-site main .rv-sol-lead { margin: .85rem 0 0; max-width: 44rem; color: #334155; font-size: clamp(1rem, 1.3vw, 1.125rem); line-height: 1.7; }
+.rv-sol-action { margin: 1.25rem 0 0; }
+.rv-main-site main .rv-sol-action { font-size: 1rem; }
+
+/* Botones del mismo tamaño y peso (hero y cierre): misma clase, mismo dorado, en fondo oscuro y claro */
+.rv-main-site main a.rv-sol-btn {
+  color: #0A2540; background: linear-gradient(135deg, #FFE08A 0%, #F6C334 55%, #E6A300 100%); border: 0; font-weight: 800; text-decoration: none;
+  box-shadow: 0 14px 30px -14px rgba(230, 163, 0, .75);
+  transition: transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s;
+}
+.rv-main-site main a.rv-sol-btn:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -14px rgba(230, 163, 0, .85); }
+.rv-main-site main a.rv-sol-btn:focus-visible, .rv-sol-link:focus-visible, .rv-sol-table-link:focus-visible, .rv-sol-minor a:focus-visible, .rv-sol-minor-link:focus-visible { outline: 3px solid #E6A300; outline-offset: 3px; }
+.rv-sol-btn svg { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.rv-sol-btn:hover svg { transform: translateX(4px); }
+@media (max-width: 639px) { .rv-main-site main a.rv-sol-btn { width: 100%; } }
+
+.rv-main-site main .rv-sol-minor { margin: .25rem 0 0; font-size: .9375rem; }
+.rv-sol-minor a, .rv-sol-minor-link { color: #cfe0f1; text-decoration: underline; text-underline-offset: 4px; font-weight: 600; }
+.rv-sol-minor a:hover, .rv-sol-minor-link:hover { color: #FFD766; }
+.rv-sol-minor--light { margin-top: 1.25rem; }
+
+/* Bloque 2 · ¿Por dónde empiezo? */
+.rv-sol-table-wrap { margin-top: 1.5rem; background: #fff; border: 1px solid #dce5ee; border-radius: 14px; overflow: hidden; box-shadow: 0 24px 48px -36px rgba(10, 37, 64, .45); }
+.rv-sol-table th { padding: 14px 24px; background: #f4f8fc; border-bottom: 1px solid #dce5ee; color: #475569; font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.rv-sol-table th:last-child { width: 32%; }
+.rv-sol-table td { padding: 18px 24px; border-top: 1px solid #eef2f7; vertical-align: middle; color: #1e293b; font-size: 1rem; line-height: 1.5; }
+.rv-sol-table tbody tr:first-child td { border-top: 0; }
+.rv-sol-table-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #1E4A74; font-weight: 800; text-decoration: none; }
+.rv-sol-table-link:hover { color: #0A2540; text-decoration: underline; text-underline-offset: 4px; }
+.rv-sol-table-link svg { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.rv-sol-table-link:hover svg { transform: translateX(4px); }
+@media (max-width: 699px) {
+  .rv-sol-table td { padding: 0; }
+  .rv-sol-table td:last-child { margin-top: 14px; }
+}
+
+/* Bloque 3 · Catálogo: cuatro tarjetas con la misma estructura. Las dos primeras, lado a lado y del mismo tamaño;
+   Ruta 90 y médicos después, con el mismo formato en tamaño menor. */
+.rv-sol-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; margin-top: 1.5rem; align-items: stretch; }
+@media (min-width: 768px) { .rv-sol-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.25rem, 2.2vw, 2rem); } }
+.rv-sol-grid--compact { margin-top: clamp(1.25rem, 2.2vw, 2rem); }
+.rv-sol-card {
+  position: relative; display: flex; flex-direction: column; gap: .85rem; padding: clamp(1.25rem, 2.2vw, 2rem); background: #fff; border: 1px solid #dce5ee; border-radius: 16px;
+  box-shadow: 0 28px 52px -38px rgba(10, 37, 64, .55); scroll-margin-top: calc(var(--rv-header-height, 76px) + 16px);
+}
+.rv-sol-card::before { content: ''; position: absolute; left: clamp(1.25rem, 2.2vw, 2rem); top: -1px; width: 56px; height: 3px; background: linear-gradient(90deg, #E6A300, #FFD766); border-radius: 0 0 3px 3px; }
+.rv-sol-card:target { border-color: #E6A300; box-shadow: 0 0 0 3px rgba(230, 163, 0, .35), 0 28px 52px -38px rgba(10, 37, 64, .55); }
+.rv-sol-name { margin: .35rem 0 0; font-size: clamp(1.3rem, 2.1vw, 1.7rem); font-weight: 800; line-height: 1.2; letter-spacing: -.02em; color: #0A2540; }
+.rv-main-site main .rv-sol-def { margin: 0; color: #0A2540; font-size: 1.0625rem; line-height: 1.6; font-weight: 600; }
+.rv-main-site main .rv-sol-row { margin: 0; color: #334155; font-size: .9375rem; line-height: 1.6; }
+.rv-sol-row strong { display: block; color: #1E4A74; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .2rem; }
+.rv-sol-row ul { margin: .25rem 0 0; padding-left: 1.15rem; list-style: disc; font-size: .9375rem; line-height: 1.55; color: #334155; }
+.rv-sol-row li + li { margin-top: .25rem; }
+.rv-sol-row li::marker { color: #E6A300; }
+.rv-sol-links { margin: auto 0 0; padding-top: .5rem; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.25rem; }
+.rv-main-site main .rv-sol-links { font-size: .9375rem; }
+.rv-sol-link {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 20px; border: 1px solid #0A2540; border-radius: 8px;
+  color: #0A2540; font-size: .9375rem; font-weight: 700; line-height: 1.3; text-decoration: none;
+  transition: background .3s, color .3s, transform .3s cubic-bezier(.2, .7, .2, 1), box-shadow .3s;
+}
+.rv-sol-link:hover { background: #0A2540; color: #fff; transform: translateY(-1px); box-shadow: 0 14px 28px -14px rgba(10, 37, 64, .6); }
+.rv-sol-link svg { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.rv-sol-link:hover svg { transform: translateX(4px); }
+.rv-sol-link--minor { border-color: transparent; padding-inline: 4px; text-decoration: underline; text-underline-offset: 4px; color: #1E4A74; }
+.rv-sol-link--minor:hover { background: transparent; color: #0A2540; box-shadow: none; }
+@media (max-width: 480px) { .rv-sol-link:not(.rv-sol-link--minor) { width: 100%; } }
+/* Tarjetas de tamaño menor (Ruta 90 y médicos): mismo orden y mismos campos */
+.rv-sol-card--compact { padding: clamp(1.1rem, 1.8vw, 1.5rem); gap: .7rem; }
+.rv-sol-card--compact .rv-sol-name { font-size: clamp(1.125rem, 1.7vw, 1.35rem); }
+.rv-main-site main .rv-sol-card--compact .rv-sol-def { font-size: 1rem; }
+.rv-main-site main .rv-sol-card--compact .rv-sol-row, .rv-sol-card--compact .rv-sol-row ul { font-size: .875rem; }
+
+/* Bloque 4 · Otras rutas: cuatro líneas, sin tarjetas ni enlaces */
+.rv-sol-routes { margin: 1.25rem 0 0; padding: 0; list-style: none; display: grid; gap: .6rem; max-width: 44rem; }
+.rv-sol-routes li { position: relative; padding-left: 1.25rem; color: #334155; font-size: 1rem; line-height: 1.6; }
+.rv-sol-routes li::before { content: ''; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border-radius: 2px; background: #E6A300; }
+.rv-sol-routes strong { color: #0A2540; }
+
+/* Bloque 8 · Preguntas */
+.rv-sol-faq { margin: 1.25rem 0 0; display: grid; gap: 0; border-top: 1px solid #dce5ee; }
+.rv-sol-faq-item { padding: 1.1rem 0; border-bottom: 1px solid #dce5ee; }
+.rv-sol-faq dt { margin: 0; color: #0A2540; font-size: 1.0625rem; font-weight: 800; line-height: 1.4; }
+.rv-sol-faq dd { margin: .45rem 0 0; max-width: 46rem; color: #334155; font-size: 1rem; line-height: 1.65; }
+
+/* Bloque 9 · Cierre */
+.rv-sol-actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .85rem 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rv-sol-btn, .rv-sol-btn svg, .rv-sol-link, .rv-sol-link svg, .rv-sol-table-link svg { transition: none; }
+  .rv-sol-link:hover, .rv-main-site main a.rv-sol-btn:hover { transform: none; }
+}
