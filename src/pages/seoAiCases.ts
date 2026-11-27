@@ -18,7 +18,7 @@ export type SeoAiCase = {
 };
 
 export const offers = {
-  auditoria: {name: 'Auditoría GEO', to: '/seo-ai/auditoria/', link: 'Ver el detalle de la auditoría GEO', price: '$9,900 MXN + IVA', terms: 'Pago único. Una línea comercial, hasta 3 URLs y 6 preguntas de compra en 2 superficies de IA acordadas. Entrega diagnóstico, evidencia y prioridades.', chip: '$9,900 MXN + IVA · pago único', notPromised: 'No modifica el sitio, no cierra posiciones, no elimina respuestas ni garantiza citas.'},
+  auditoria: {name: 'Auditoría GEO', to: '/seo-ai/auditoria/', link: 'Ver el detalle de la auditoría GEO', price: '$9,900 MXN + IVA', terms: 'Pago único. Una línea comercial, hasta 3 URLs y 6 preguntas de compra en 2 superficies de IA acordadas. Entrega diagnóstico, evidencia y prioridades.', chip: '$9,900 MXN + IVA · pago único', notPromised: 'No modifica el sitio, no garantiza posiciones, no elimina respuestas ni garantiza citas.'},
   implementacion: {name: 'Implementación de SEO para IA', to: '/seo-ai/implementacion/', link: 'Ver el detalle de la implementación', price: '$29,900 MXN + IVA al mes', terms: 'Durante 6 meses · $179,400 MXN + IVA en total, sin renovación automática. Un dominio y una línea comercial; la unidad mensual se acota en la propuesta (hasta 3 URLs existentes o una intervención de plantilla, con una ronda de ajustes). No exige Demanda Inteligente.', chip: '$29,900 MXN + IVA al mes · durante 6 meses · $179,400 MXN + IVA en total', notPromised: 'No incluye rediseño integral, alta masiva de fichas nuevas, integración con marketplaces, cambios sin autorización, recuperación inmediata en asistentes ni renovación automática.'},
 } as const;
 
@@ -42,7 +42,7 @@ export const cases: Record<CaseId, SeoAiCase> = {
     demo: {
       title: 'Una afirmación, su evidencia y su corrección',
       intro: 'Cada afirmación relevante se registra con su evidencia observada, la verdad que aprueba la empresa, la corrección propuesta y cómo comprobarla. La muestra se puede copiar como plantilla.',
-      table: {caption: 'Muestra ficticia de una fila de la matriz de afirmaciones', headers: ['Afirmación', 'Evidencia observada', 'Verdad aprobada', 'Corrección propuesta', 'Verificación'], rows: [['Incluye instalación', 'Sin cita, o cita X', 'La entrega no incluye montaje', 'Ficha y página de cobertura', 'Buscar la condición en el HTML y repetir la pregunta']]},
+      table: {caption: 'Muestra ficticia de una fila de la matriz de afirmaciones', headers: ['Afirmación', 'Evidencia observada', 'Verdad aprobada', 'Corrección propuesta', 'Verificación'], rows: [['Incluye instalación', 'Sin cita observable en este ejemplo', 'La entrega no incluye montaje', 'Ficha y página de cobertura', 'Buscar la condición en el HTML y repetir la pregunta']]},
       states: ['Respaldada', 'Contradicha', 'Sin evidencia', 'No observada'],
       testQuestion: '¿La oferta incluye instalación en Naucalpan o solo entrega, y qué fuente lo indica?',
       note: 'Muestra de formato: no contiene respuestas de un asistente real ni mide impacto.',
@@ -162,7 +162,7 @@ export const cases: Record<CaseId, SeoAiCase> = {
     deliverable: {
       intro: 'Compras la Implementación de SEO para IA. El trabajo de esta ruta es:',
       items: ['Página o módulo de aplicación.', 'Ficha de oferta o de casos.', 'Criterios para cotizar, verificados con el responsable.'],
-      notIncluded: 'No se venden como creación de pipeline comercial.',
+      notIncluded: 'No incluye operar prospectos ni dar seguimiento a cotizaciones.',
     },
     verify: {criterion: 'Un revisor puede responder para quién es la línea, qué debe comprobar y cómo avanzar, y verificarlo en la fuente pública aprobada.', notJudged: 'No se juzga el resultado por nuevas oportunidades de venta ni por menciones en asistentes.'},
     faqs: [

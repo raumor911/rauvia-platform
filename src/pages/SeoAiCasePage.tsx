@@ -2,8 +2,7 @@ import React, {useRef} from 'react';
 import {Link} from 'react-router-dom';
 import {ArrowRight, Check, X} from 'lucide-react';
 import RouteSEO from '../seo/PageMetadata';
-import WhatsAppCTA from '../components/WhatsAppCTA';
-import {idx, trackCta, useTechMotion, whatsappUrl, SeoAiHero, SeoAiFaq} from './seoAiShared';
+import {idx, trackCta, useTechMotion, caseRequestTo, SeoAiHero, SeoAiFaq} from './seoAiShared';
 import {offers, type SeoAiCase} from './seoAiCases';
 import './SeoAiPage.css';
 
@@ -13,7 +12,7 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
   const root = useRef<HTMLDivElement>(null);
   useTechMotion(root);
   const offer = offers[c.intent];
-  const whatsapp = whatsappUrl(c.whatsappMessage);
+  const request = caseRequestTo(c.id);
   const {demo} = c;
   return <div ref={root} className="seoai bg-white text-slate-800">
     <RouteSEO path={c.path} />
@@ -21,7 +20,7 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
 
     <SeoAiHero
       crumb={c.crumb} kicker={c.kicker} hook={c.hook} h1={c.h1} lead={c.lead} chip={offer.chip}
-      primary={{href: whatsapp, label: c.ctaLabel, placement: 'hero_primary'}}
+      primary={{href: request, label: c.ctaLabel, placement: 'hero_primary'}}
       secondary={{href: '#demostracion', label: c.demoLabel, placement: 'hero_demo'}}
       intent={c.intent} intentId={c.id} signal={c.signal}
     />
@@ -113,7 +112,7 @@ export default function SeoAiCasePage({c}: {c: SeoAiCase}) {
         <ul className="list-disc pl-6 text-slate-200 mb-3 space-y-1" data-sa style={idx(3)}>{c.prepare.map(t => <li key={t}>{t}</li>)}</ul>
         <p className="text-slate-200 mb-3" data-sa style={idx(4)}>{c.dontSend} Escribirnos por WhatsApp no contrata el servicio: primero se acuerda el alcance.</p>
         <div className="mt-6" data-sa style={idx(5)}>
-          <WhatsAppCTA href={whatsapp} onClick={trackCta('siguiente_paso', c.intent, c.id)} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">{c.ctaLabel} <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
+          <Link to={request} onClick={trackCta('siguiente_paso', c.intent, c.id)} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">{c.ctaLabel} <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
         </div>
         <p className="text-sm text-slate-300 mt-8" data-sa style={idx(6)}>Cómo tratamos tus datos: <Link className="underline font-semibold" to="/aviso-de-privacidad/">Aviso de privacidad</Link>.</p>
       </div>

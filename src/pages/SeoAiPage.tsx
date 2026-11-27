@@ -58,7 +58,6 @@ const examples = [
 
 // Oferta y precios: RAUVIA_SEO_AI_Precios_y_entregables_v0.2 (decisión de mesa; pendiente de publicación).
 // Precios antes de IVA. Mensualidad siempre con duración y total. Sin cifras de control interno.
-const whatsappImpl = whatsappUrl('Hola RAUVIA, quiero solicitar una propuesta de implementación de SEO para IA (GEO) para mi empresa.');
 
 const measure = [
   ['Acceso y rastreo', 'Si las páginas acordadas responden y pueden rastrearse. Responder, poder rastrearse y estar indexada son estados distintos.'],
@@ -174,13 +173,14 @@ export default function SeoAiPage() {
         <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(2)}>Esa frase puede describir tres problemas distintos. Separarlos evita corregir lo que no era. No prometemos aparecer ni controlar lo que genera un modelo; sí podemos revisar la evidencia pública y comprobar qué cambia al repetir las preguntas.</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            ['Ausencia', 'La pregunta correcta no devuelve tu empresa. Se revisa si tu oferta, tu cobertura y tus páginas pueden consultarse y entenderse. Empieza con una auditoría.'],
-            ['Afirmación incorrecta', 'Un asistente atribuye servicios, condiciones o zonas que no son los tuyos. Se rastrea qué fuente puede respaldarlo y qué verdad debes publicar.'],
-            ['Falta de evidencia para comprar', 'Tu empresa aparece, pero Compras no encuentra aplicación, requisitos o datos para cotizar. Se trabaja la ficha que debe responder esa pregunta.'],
-          ].map(([name, text], i) => <article key={name} className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa style={idx(i)}>
+            ['Ausencia', 'La pregunta correcta no devuelve tu empresa. Se revisa si tu oferta, tu cobertura y tus páginas pueden consultarse y entenderse. Empieza con una auditoría.', '/seo-ai/auditoria/', 'Revisar la auditoría para empresas que no aparecen', 'auditoria'],
+            ['Afirmación incorrecta', 'Un asistente atribuye servicios, condiciones o zonas que no son los tuyos. Se rastrea qué fuente puede respaldarlo y qué verdad debes publicar.', '/seo-ai/corregir-informacion-en-ia/', 'Ver cómo corregir información incorrecta en IA', 'auditoria'],
+            ['Falta de evidencia para comprar', 'Tu empresa aparece, pero Compras no encuentra aplicación, requisitos o datos para cotizar. Se trabaja la ficha que debe responder esa pregunta.', '#soluciones-por-caso', 'Ver soluciones por caso', 'general'],
+          ].map(([name, text, to, label, svc], i) => <article key={name} className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa style={idx(i)}>
             <p className="seoai-index mb-2">[ 0{i + 1} ] Tipo {i + 1}</p>
             <h3 className="text-xl font-bold text-rauvia-navy mb-3">{name}</h3>
-            <p className="text-slate-700">{text}</p>
+            <p className="text-slate-700 mb-4">{text}</p>
+            {to.startsWith('#') ? <a href={to} onClick={trackCta('diagnostico', 'general')} className="seoai-link font-semibold text-rauvia-blue underline">{label}</a> : <Link to={to} onClick={trackCta('diagnostico', svc as 'auditoria' | 'general')} className="seoai-link font-semibold text-rauvia-blue underline">{label}</Link>}
           </article>)}
         </div>
       </div>
@@ -209,7 +209,7 @@ export default function SeoAiPage() {
     <section id="alcance" className="py-16 scroll-mt-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="seoai-h2 text-2xl md:text-3xl font-bold text-rauvia-navy mb-3" data-sa>Auditoría e implementación</h2>
-        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Primero se audita. Después, si quieres ejecutar el plan, hay un programa de seis meses. La auditoría se puede comprar sola.</p>
+        <p className="text-slate-700 mb-8 max-w-3xl" data-sa style={idx(1)}>Si no sabes qué corregir, empieza por una auditoría. Si ya tienes un diagnóstico que delimita el trabajo, puedes solicitar implementación directamente.</p>
         <div className="grid lg:grid-cols-2 gap-6">
           <article className="seoai-card rounded-lg border border-slate-200 bg-white p-6" data-sa>
             <p className="seoai-index mb-2">[ A ] Auditoría GEO</p>
@@ -233,7 +233,7 @@ export default function SeoAiPage() {
               {['El alcance del bloque acordado.', 'Evidencia del antes y el después, o instrucciones verificables si despliega tu equipo.', 'Un reporte que separa rastreo e indexación, presencia o cita en asistentes y fidelidad de las respuestas.', 'Qué se pudo verificar, qué queda pendiente y prioridades del mes siguiente.'].map((t, i) => <li key={t} className="seoai-check flex gap-2" style={idx(i)}><Check className="w-5 h-5 mt-0.5 shrink-0 text-rauvia-blue" aria-hidden="true" /><span>{t}</span></li>)}
             </ul>
             <p className="text-slate-600 text-sm mb-6">Se cobra por trabajo entregado cada mes, no solo por monitoreo. El compromiso inicial es de seis meses, con facturación mensual y sin renovación automática en la propuesta.</p>
-            <a href="#solicitar-auditoria" onClick={trackCta('alcance_implementacion', 'implementacion')} className="seoai-btn inline-flex items-center gap-2 rounded-lg bg-rauvia-navy px-5 py-3 font-semibold text-white hover:bg-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Solicitar propuesta de implementación <ArrowRight className="w-4 h-4" aria-hidden="true" /></a>
+            <Link to="/seo-ai/implementacion/#solicitar-implementacion" onClick={trackCta('alcance_implementacion', 'implementacion')} className="seoai-btn inline-flex items-center gap-2 rounded-lg bg-rauvia-navy px-5 py-3 font-semibold text-white hover:bg-rauvia-blue focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rauvia-blue">Solicitar propuesta de implementación <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
             <p className="mt-4 text-sm"><Link to="/seo-ai/implementacion/" className="seoai-link font-semibold text-rauvia-blue underline">Ver el detalle de la implementación: cambios, requisitos y entrega</Link></p>
           </article>
         </div>
@@ -279,13 +279,13 @@ export default function SeoAiPage() {
         <p className="text-slate-200 mb-6" data-sa style={idx(4)}>No necesitamos contraseñas ni accesos para empezar.</p>
         <div className="mb-4 flex flex-wrap gap-4" data-sa style={idx(5)}>
           <Link to="/seo-ai/auditoria/" onClick={trackCta('solicitar_alcance', 'auditoria')} className="seoai-btn seoai-btn-gold inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold">Ver alcance y solicitar auditoría <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
-          <Link to="/seo-ai/implementacion/" onClick={trackCta('solicitar_alcance', 'implementacion')} className="underline font-semibold self-center text-slate-100">Ya tengo diagnóstico: solicitar implementación</Link>
+          <Link to="/seo-ai/implementacion/#solicitar-implementacion" onClick={trackCta('solicitar_alcance', 'implementacion')} className="underline font-semibold self-center text-slate-100">Ya tengo diagnóstico: solicitar implementación</Link>
         </div>
         <div data-sa style={idx(5)}>
           <WhatsAppCTA href={whatsapp} onClick={trackCta('solicitud', 'auditoria')} className="seoai-btn seoai-btn-pulse inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-rauvia-navy hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Solicitar por WhatsApp <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
         </div>
         <div className="mt-4" data-sa style={idx(5)}>
-          <WhatsAppCTA href={whatsappImpl} onClick={trackCta('solicitud_implementacion', 'implementacion')} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold">Solicitar propuesta de implementación <ArrowRight className="w-4 h-4" aria-hidden="true" /></WhatsAppCTA>
+          <Link to="/seo-ai/implementacion/#solicitar-implementacion" onClick={trackCta('solicitud_implementacion', 'implementacion')} className="seoai-btn seoai-btn-ghost inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold">Solicitar propuesta de implementación <ArrowRight className="w-4 h-4" aria-hidden="true" /></Link>
         </div>
         <p className="text-sm text-slate-300 mt-6" data-sa style={idx(6)}>Cómo tratamos tus datos: <Link className="underline font-semibold" to="/aviso-de-privacidad/">Aviso de privacidad</Link>.</p>
       </div>
