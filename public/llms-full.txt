@@ -73,7 +73,7 @@ RAUVIA converts that direction into commercial systems, technology, products, de
 
 ## Soluciones publicadas
 
-Catálogo de RAUVIA: https://rauvia.com.mx/soluciones/ · Datos legibles por máquinas: https://rauvia.com.mx/llmo/soluciones.json · Última revisión: 26 de noviembre de 2026. Las soluciones se listan sin orden de prioridad. Cada una publica su alcance y su precio en su propia página; los precios también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.
+Catálogo de RAUVIA: https://rauvia.com.mx/soluciones/ · Datos legibles por máquinas: https://rauvia.com.mx/llmo/soluciones.json · Última revisión: 26 de noviembre de 2026. Las soluciones se listan sin orden de prioridad. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Los precios publicados también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.
 
 - [Frente Comercial](https://rauvia.com.mx/frente-comercial/): Organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Para empresas con una oferta existente y suficiente información para explicarla. Niveles Esencial, Pro y Portafolio. No incluye CRM, seguimiento de oportunidades, publicidad, generación de demanda ni estrategia comercial completa.
 - [SEO para IA](https://rauvia.com.mx/seo-ai/): Prepara y verifica la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega. Se ofrece como [auditoría](https://rauvia.com.mx/seo-ai/auditoria/) y como [implementación](https://rauvia.com.mx/seo-ai/implementacion/). No promete posiciones, menciones ni citas.
@@ -163,5 +163,5 @@ Catálogo de soluciones: https://rauvia.com.mx/llmo/soluciones.json
 Arquetipos y asociaciones editoriales; no demanda observada, garantía de resultados ni validación externa.
 
 - [Retrieval map](https://rauvia.com.mx/llmo/retrieval-map.json): Consulta, intención, problema, entidad y capacidad.
-- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 19 familias con condiciones y límites.
+- [Canonical answers](https://rauvia.com.mx/llmo/canonical-answers.json): 22 familias con condiciones y límites.
 - [Citation bundles](https://rauvia.com.mx/llmo/citation-bundles.json): Claims, fuentes, alcance, periodo y atribución.

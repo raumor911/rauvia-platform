@@ -1,6 +1,6 @@
 # Respuestas y citas V75
 
-Vista generada por `npm run build:retrieval`. 64 intenciones editoriales, no demanda observada.
+Vista generada por `npm run build:retrieval`. 68 intenciones editoriales, no demanda observada.
 
 - **answer:deterioro-comercial** — ¿Por qué los interesados no avanzan después del contacto o la cotización?
   7 intenciones; asset:soluciones; citation:deterioro-comercial. 
@@ -36,6 +36,12 @@ Vista generada por `npm run build:retrieval`. 64 intenciones editoriales, no dem
   1 intenciones; asset:case-presencia-posicionamiento-profesional; citation:evidencia-presencia-profesional. 
 - **answer:entidad-rauvia** — ¿Qué es RAUVIA y en qué situaciones interviene?
   1 intenciones; asset:nosotros; citation:entidad-rauvia. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
+- **answer:soluciones-rauvia** — ¿Qué soluciones ofrece RAUVIA y por dónde se empieza?
+  1 intenciones; asset:soluciones; citation:soluciones-rauvia. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
+- **answer:frente-comercial** — ¿Qué es Frente Comercial?
+  1 intenciones; asset:frente-comercial; citation:frente-comercial. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
+- **answer:seo-para-ia** — ¿Qué es SEO para IA y qué no promete?
+  1 intenciones; asset:seo-ai; citation:seo-para-ia. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
 - **answer:entidad-aethryon** — ¿Qué es AETHRYON y cuándo resulta pertinente?
   1 intenciones; asset:aethryon; citation:entidad-aethryon. Problem/Capability describen contexto de aplicación; no diagnostican a quien pregunta por una entidad.
 - **answer:entidad-ruta90** — ¿Qué es Ruta 90 y cómo la utiliza RAUVIA?

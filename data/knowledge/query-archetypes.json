@@ -701,6 +701,22 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "query-archetype:que-es-frente-comercial",
+      "queries": [
+        "Frente Comercial de RAUVIA",
+        "¿Qué es Frente Comercial?"
+      ],
+      "intentId": "intent:que-es-frente-comercial",
+      "answerId": "answer:frente-comercial",
+      "familyId": "answer-family:frente-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "query-archetype:que-es-rauvia",
       "queries": [
         "¿Qué es RAUVIA?"
@@ -731,6 +747,22 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "query-archetype:que-es-seo-para-ia",
+      "queries": [
+        "¿Qué es SEO para IA y qué no promete?",
+        "¿Qué es SEO para IA?"
+      ],
+      "intentId": "intent:que-es-seo-para-ia",
+      "answerId": "answer:seo-para-ia",
+      "familyId": "answer-family:seo-para-ia",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "query-archetype:que-necesito-antes-crm",
       "queries": [
         "¿Qué debe existir antes de un CRM?"
@@ -738,6 +770,23 @@
       "intentId": "intent:que-necesito-antes-crm",
       "answerId": "answer:tecnologia-sin-estructura",
       "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-soluciones-ofrece-rauvia",
+      "queries": [
+        "Soluciones de RAUVIA",
+        "¿Qué ofrece RAUVIA?",
+        "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?"
+      ],
+      "intentId": "intent:que-soluciones-ofrece-rauvia",
+      "answerId": "answer:soluciones-rauvia",
+      "familyId": "answer-family:soluciones-rauvia",
       "visibility": "public",
       "publication": {
         "approved": true,

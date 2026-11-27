@@ -8,13 +8,19 @@ export const SOLUCIONES_HEADING = '## Soluciones publicadas';
 
 const TRAYECTORIA_LINEA = 'RAUVIA Trayectoria (continuidad de sitios web) se describe en su propia página; sus precios son una referencia histórica pendiente de confirmación comercial y por eso no forma parte de este catálogo.';
 
+// Alcance y precio (contrastado con las páginas el 2026-11-26): Ruta 90 no publica precio, así que «cada una publica su precio» sería falso.
+const nombres = lista => lista.length > 1 ? `${lista.slice(0, -1).join(', ')} y ${lista[lista.length - 1]}` : lista[0];
+const conPrecio = () => soluciones.filter(s => s.priceSource.length).map(s => s.id === 'medicos' ? 'las páginas para médicos' : s.name);
+const sinPrecio = () => soluciones.filter(s => !s.priceSource.length).map(s => s.name);
+export const fraseAlcancePrecio = () => `Cada solución publica su alcance en su propia página; ${nombres(conPrecio())} publican también su precio${sinPrecio().length ? ` y ${nombres(sinPrecio())} no publica precio` : ''}.`;
+
 // Sección completa de llms.txt y llms-full.txt (S-06.1). `conJson` agrega la referencia a llmo/soluciones.json (L-03).
 export const seccionSolucionesLlms = ({conJson}) => {
   const datos = conJson ? ` · Datos legibles por máquinas: ${SOLUCIONES_JSON_URL}` : '';
   return [
     SOLUCIONES_HEADING,
     '',
-    `Catálogo de RAUVIA: ${SOLUCIONES_URL}${datos} · Última revisión: ${SOLUCIONES_REVIEWED_LABEL}. Las soluciones se listan sin orden de prioridad. Cada una publica su alcance y su precio en su propia página; los precios también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.`,
+    `Catálogo de RAUVIA: ${SOLUCIONES_URL}${datos} · Última revisión: ${SOLUCIONES_REVIEWED_LABEL}. Las soluciones se listan sin orden de prioridad. ${fraseAlcancePrecio()} Los precios publicados también están en https://rauvia.com.mx/llmo/precios.json. Ninguna garantiza ventas, posiciones, menciones ni citas.`,
     '',
     ...soluciones.map(s => `- ${s.llms}`),
     '',
@@ -30,7 +36,7 @@ export const seccionSolucionesRauviaMd = ({conJson}) => {
   return [
     SOLUCIONES_HEADING,
     '',
-    `Catálogo: ${SOLUCIONES_URL}. Última revisión: ${SOLUCIONES_REVIEWED_LABEL}. Se listan sin orden de prioridad; cada una publica su alcance y su precio en su propia página.${datos}`,
+    `Catálogo: ${SOLUCIONES_URL}. Última revisión: ${SOLUCIONES_REVIEWED_LABEL}. Se listan sin orden de prioridad. ${fraseAlcancePrecio()}${datos}`,
     '',
     ...soluciones.map(s => `- [${s.name}](${s.url}): ${s.definitionMachine}`),
     '',

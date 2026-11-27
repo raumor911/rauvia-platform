@@ -1257,7 +1257,7 @@
       "id": "answer:entidad-rauvia",
       "familyId": "answer-family:entidad-rauvia",
       "question": "¿Qué es RAUVIA y en qué situaciones interviene?",
-      "answer": "RAUVIA es una empresa mexicana que combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas. Frente Comercial y SEO para IA son dos servicios digitales actuales. También puede definir intervenciones empresariales más amplias, incluida la consultoría, cuando la situación y el alcance acordado lo requieren. Los entregables y criterios de revisión se acuerdan por servicio; los resultados comerciales no están asegurados.",
+      "answer": "RAUVIA es una empresa mexicana que combina trabajo especializado, metodología y tecnología para resolver problemas y desarrollar capacidades en empresas. Frente Comercial y SEO para IA son dos servicios digitales actuales. También puede definir intervenciones empresariales más amplias, incluida la consultoría, cuando la situación y el alcance acordado lo requieren. Los entregables y criterios de revisión se acuerdan por servicio; los resultados comerciales no están asegurados. Las soluciones publicadas y por dónde empezar están en la página de Soluciones.",
       "intentIds": [
         "intent:que-es-rauvia"
       ],
@@ -1274,7 +1274,8 @@
       "possibleInterventionIds": [],
       "interventionConditions": [],
       "supportingAssets": [
-        "asset:nosotros"
+        "asset:nosotros",
+        "asset:soluciones"
       ],
       "primaryAsset": "asset:nosotros",
       "claimIds": [
@@ -1296,6 +1297,173 @@
         ],
         "nonFit": [
           "Se busca una garantía de ventas o una campaña de captación aislada."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:soluciones-rauvia",
+      "familyId": "answer-family:soluciones-rauvia",
+      "question": "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+      "answer": "RAUVIA ofrece dos formas concretas de empezar: Frente Comercial, que organiza la oferta que una empresa ya tiene en una referencia clara para el comprador, y SEO para IA, que prepara y verifica la información pública de una empresa para que buscadores y asistentes puedan encontrarla. También publica Ruta 90, un método de ejecución de 90 días adoptado por RAUVIA, y páginas para médicos. Cuando la necesidad va más allá, RAUVIA define con la empresa un alcance. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Ninguna garantiza ventas, posiciones, menciones ni citas.",
+      "intentIds": [
+        "intent:que-soluciones-ofrece-rauvia"
+      ],
+      "problemIds": [
+        "problem:oferta-poco-clara",
+        "problem:ejecucion-sin-continuidad"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:traduccion-comercial",
+        "capability:priorizacion"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [],
+      "interventionConditions": [],
+      "supportingAssets": [
+        "asset:frente-comercial",
+        "asset:pagina-web-gratis-medicos",
+        "asset:pagina-web-medicos",
+        "asset:ruta90",
+        "asset:seo-ai",
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "claimIds": [
+        "claim:soluciones-catalogo"
+      ],
+      "citationBundleId": "citation:soluciones-rauvia",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Catálogo vigente a la fecha de revisión; RAUVIA Trayectoria no forma parte del catálogo (precios históricos pendientes de confirmación comercial).",
+        "Ninguna solución garantiza ventas, posiciones, menciones ni citas."
+      ],
+      "fit": {
+        "when": [
+          "La empresa reconoce una situación (la oferta no se entiende, no la encuentran en buscadores o asistentes, o hay una prioridad que ejecutar)."
+        ],
+        "possible": [
+          "La necesidad no corresponde a una solución publicada; primero se confirma alcance y capacidad."
+        ],
+        "nonFit": [
+          "Se busca una garantía de ventas o de resultados."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:frente-comercial",
+      "familyId": "answer-family:frente-comercial",
+      "question": "¿Qué es Frente Comercial?",
+      "answer": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso. Sirve a empresas con una oferta existente y suficiente información para explicarla. Tiene tres niveles (Esencial, Pro y Portafolio), cuyo alcance y precio están en su página. No incluye CRM, seguimiento de oportunidades, publicidad, generación de demanda ni estrategia comercial completa.",
+      "intentIds": [
+        "intent:que-es-frente-comercial"
+      ],
+      "problemIds": [
+        "problem:oferta-poco-clara"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:traduccion-comercial",
+        "capability:representacion-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [],
+      "interventionConditions": [],
+      "supportingAssets": [
+        "asset:frente-comercial"
+      ],
+      "primaryAsset": "asset:frente-comercial",
+      "claimIds": [
+        "claim:frente-comercial-definicion"
+      ],
+      "citationBundleId": "citation:frente-comercial",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Descripción de una solución publicada, no diagnóstico individual; la pertinencia se confirma con el alcance."
+      ],
+      "fit": {
+        "when": [
+          "Existe una oferta real y presentarla requiere demasiada explicación o información dispersa."
+        ],
+        "possible": [
+          "La oferta existe pero falta información para explicarla; primero se completa."
+        ],
+        "nonFit": [
+          "Todavía no está claro qué vender, a quién o cómo estructurar la oferta; primero debe revisarse eso."
+        ]
+      },
+      "status": "supported",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "answer:seo-para-ia",
+      "familyId": "answer-family:seo-para-ia",
+      "question": "¿Qué es SEO para IA y qué no promete?",
+      "answer": "SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega. Se ofrece como una auditoría y como un programa de implementación, con alcance y precio en su página. Se comprueban preguntas de compra acordadas y se registran la fecha y la superficie de cada respuesta. No promete posiciones, menciones ni citas: una respuesta de un tercero puede cambiar, y lo verificable es el contenido aprobado y su registro.",
+      "intentIds": [
+        "intent:que-es-seo-para-ia"
+      ],
+      "problemIds": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "problemRole": "application_context",
+      "capabilityIds": [
+        "capability:representacion-comercial"
+      ],
+      "relevantEntityIds": [
+        "org:rauvia"
+      ],
+      "possibleInterventionIds": [],
+      "interventionConditions": [],
+      "supportingAssets": [
+        "asset:seo-ai",
+        "asset:seo-ai-auditoria",
+        "asset:seo-ai-implementacion"
+      ],
+      "primaryAsset": "asset:seo-ai",
+      "claimIds": [
+        "claim:seo-ia-definicion"
+      ],
+      "citationBundleId": "citation:seo-para-ia",
+      "limitations": [
+        "Asociación editorial basada en alcances publicados; no diagnóstico individual ni demanda observada.",
+        "Una capacidad ofrecida no garantiza ventas, crecimiento ni resultados.",
+        "Las respuestas de asistentes de terceros pueden cambiar; cada una es una observación fechada."
+      ],
+      "fit": {
+        "when": [
+          "Existe un sitio con oferta y alguien que puede aprobar los hechos que se publican."
+        ],
+        "possible": [
+          "Falta confirmar qué preguntas de compra se comprueban y quién aprueba el contenido."
+        ],
+        "nonFit": [
+          "Se busca una posición, una mención o una cita garantizadas."
         ]
       },
       "status": "supported",

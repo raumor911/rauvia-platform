@@ -223,7 +223,9 @@
       "canonical": "https://rauvia.com.mx/frente-comercial/",
       "assetType": "landing",
       "specificity": "specific",
-      "coversIntent": [],
+      "coversIntent": [
+        "intent:que-es-frente-comercial"
+      ],
       "explainsProblem": [],
       "supportsCapability": [],
       "representedOffering": [
@@ -608,7 +610,9 @@
       "canonical": "https://rauvia.com.mx/seo-ai/",
       "assetType": "landing",
       "specificity": "specific",
-      "coversIntent": [],
+      "coversIntent": [
+        "intent:que-es-seo-para-ia"
+      ],
       "explainsProblem": [],
       "supportsCapability": [],
       "representedOffering": [
@@ -898,8 +902,8 @@
       "id": "asset:soluciones",
       "type": "Asset",
       "label": "Soluciones | Frente Comercial y SEO para IA | RAUVIA",
-      "description": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada una publica su alcance y su precio en su propia página; se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
-      "rationale": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada una publica su alcance y su precio en su propia página; se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
+      "description": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
+      "rationale": "Catálogo de las soluciones que RAUVIA publica: Frente Comercial, SEO para IA, Ruta 90, Páginas para médicos. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Se listan sin orden de prioridad. Revisión 2026-11-26. No garantiza ventas, posiciones, menciones ni citas.",
       "status": "canonical",
       "evidenceState": "editorial",
       "visibility": "public",
@@ -936,6 +940,7 @@
         "intent:prospectos-no-avanzan",
         "intent:que-es-arquitectura-operativa",
         "intent:que-necesito-antes-crm",
+        "intent:que-soluciones-ofrece-rauvia",
         "intent:sistema-comercial-pyme",
         "intent:software-o-proceso",
         "intent:whatsapp-carga-proceso-comercial"
@@ -1974,6 +1979,36 @@
       "guaranteesResults": false
     },
     {
+      "id": "claim:frente-comercial-definicion",
+      "type": "Claim",
+      "label": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+      "description": "Definición de la solución según su página.",
+      "rationale": "Definición de la solución según su página.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:frente-comercial"
+      ],
+      "assetRefs": [
+        "asset:frente-comercial"
+      ],
+      "text": "Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:frente-comercial"
+      ],
+      "scope": "Definición de la solución según su página.",
+      "period": "Alcance publicado vigente a la fecha de revisión.",
+      "attributionLimit": "Descripción institucional propia; no es resultado ni garantía de ventas.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
       "id": "claim:inversion-registrada",
       "type": "Claim",
       "label": "El caso publicado registra una inversión de $38,345.94 MXN durante la fase 1.",
@@ -2332,6 +2367,70 @@
       "scope": "Uso del método por RAUVIA.",
       "period": "Definición pública vigente.",
       "attributionLimit": "No se atribuye creación ni desarrollo del método a RAUVIA o su fundador.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:seo-ia-definicion",
+      "type": "Claim",
+      "label": "SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega.",
+      "description": "Definición de la solución según su página.",
+      "rationale": "Definición de la solución según su página.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:seo-ai"
+      ],
+      "assetRefs": [
+        "asset:seo-ai"
+      ],
+      "text": "SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:seo-ai"
+      ],
+      "scope": "Definición de la solución según su página.",
+      "period": "Alcance publicado vigente a la fecha de revisión.",
+      "attributionLimit": "Una respuesta de un asistente es una observación separada; no es resultado atribuible.",
+      "causalStatus": "not_established",
+      "guaranteesResults": false
+    },
+    {
+      "id": "claim:soluciones-catalogo",
+      "type": "Claim",
+      "label": "RAUVIA publica un catálogo de soluciones con Frente Comercial, SEO para IA, Ruta 90 y páginas para médicos; cada solución publica su alcance en su página.",
+      "description": "Catálogo vigente a la fecha de revisión.",
+      "rationale": "Catálogo vigente a la fecha de revisión.",
+      "status": "supported",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "existing_public_content"
+      },
+      "sources": [
+        "source:soluciones"
+      ],
+      "assetRefs": [
+        "asset:soluciones"
+      ],
+      "text": "RAUVIA publica un catálogo de soluciones con Frente Comercial, SEO para IA, Ruta 90 y páginas para médicos; cada solución publica su alcance en su página.",
+      "claimType": "factual",
+      "supportedBy": [
+        "source:soluciones",
+        "source:frente-comercial",
+        "source:seo-ai",
+        "source:ruta90",
+        "source:pagina-web-medicos"
+      ],
+      "scope": "Catálogo vigente a la fecha de revisión.",
+      "period": "Revisión del 2026-11-26.",
+      "attributionLimit": "Catálogo de soluciones publicadas, no prueba de efectividad ni garantía de resultados; Trayectoria no forma parte de él.",
       "causalStatus": "not_established",
       "guaranteesResults": false
     },
@@ -5233,6 +5332,43 @@
       "matchGroups": []
     },
     {
+      "id": "intent:que-es-frente-comercial",
+      "type": "Intent",
+      "label": "¿Qué es Frente Comercial?",
+      "description": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "rationale": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "sources": [
+        "source:frente-comercial"
+      ],
+      "assetRefs": [
+        "asset:frente-comercial"
+      ],
+      "family": "ENTITY",
+      "expressions": [
+        "¿Qué es Frente Comercial?",
+        "Frente Comercial de RAUVIA"
+      ],
+      "icps": [],
+      "verticals": [],
+      "mapsToProblems": [],
+      "contexts": [
+        "org:rauvia"
+      ],
+      "assets": [
+        "asset:frente-comercial"
+      ],
+      "primaryAsset": "asset:frente-comercial",
+      "territory": "territory:transformacion-digital",
+      "matchGroups": []
+    },
+    {
       "id": "intent:que-es-rauvia",
       "type": "Intent",
       "label": "¿Qué es RAUVIA?",
@@ -5305,6 +5441,43 @@
       "matchGroups": []
     },
     {
+      "id": "intent:que-es-seo-para-ia",
+      "type": "Intent",
+      "label": "¿Qué es SEO para IA y qué no promete?",
+      "description": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "rationale": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "sources": [
+        "source:seo-ai"
+      ],
+      "assetRefs": [
+        "asset:seo-ai"
+      ],
+      "family": "ENTITY",
+      "expressions": [
+        "¿Qué es SEO para IA y qué no promete?",
+        "¿Qué es SEO para IA?"
+      ],
+      "icps": [],
+      "verticals": [],
+      "mapsToProblems": [],
+      "contexts": [
+        "org:rauvia"
+      ],
+      "assets": [
+        "asset:seo-ai"
+      ],
+      "primaryAsset": "asset:seo-ai",
+      "territory": "territory:transformacion-digital",
+      "matchGroups": []
+    },
+    {
       "id": "intent:que-necesito-antes-crm",
       "type": "Intent",
       "label": "¿Qué debe existir antes de un CRM?",
@@ -5351,6 +5524,44 @@
           "ventas"
         ]
       ]
+    },
+    {
+      "id": "intent:que-soluciones-ofrece-rauvia",
+      "type": "Intent",
+      "label": "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+      "description": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "rationale": "Formulación editorial de una necesidad relacionada con problemas y páginas existentes, sin inferir demanda.",
+      "status": "canonical",
+      "evidenceState": "editorial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "sources": [
+        "source:soluciones"
+      ],
+      "assetRefs": [
+        "asset:soluciones"
+      ],
+      "family": "ENTITY",
+      "expressions": [
+        "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+        "¿Qué ofrece RAUVIA?",
+        "Soluciones de RAUVIA"
+      ],
+      "icps": [],
+      "verticals": [],
+      "mapsToProblems": [],
+      "contexts": [
+        "org:rauvia"
+      ],
+      "assets": [
+        "asset:soluciones"
+      ],
+      "primaryAsset": "asset:soluciones",
+      "territory": "territory:transformacion-digital",
+      "matchGroups": []
     },
     {
       "id": "intent:reservas-restaurante",
@@ -9162,6 +9373,11 @@
     },
     {
       "from": "asset:frente-comercial",
+      "relation": "coversIntent",
+      "to": "intent:que-es-frente-comercial"
+    },
+    {
+      "from": "asset:frente-comercial",
       "relation": "partOf",
       "to": "website:rauvia"
     },
@@ -9677,6 +9893,11 @@
     },
     {
       "from": "asset:seo-ai",
+      "relation": "coversIntent",
+      "to": "intent:que-es-seo-para-ia"
+    },
+    {
+      "from": "asset:seo-ai",
       "relation": "partOf",
       "to": "website:rauvia"
     },
@@ -9939,6 +10160,11 @@
       "from": "asset:soluciones",
       "relation": "coversIntent",
       "to": "intent:que-necesito-antes-crm"
+    },
+    {
+      "from": "asset:soluciones",
+      "relation": "coversIntent",
+      "to": "intent:que-soluciones-ofrece-rauvia"
     },
     {
       "from": "asset:soluciones",
@@ -10620,6 +10846,11 @@
       "to": "source:frente-comercial"
     },
     {
+      "from": "claim:frente-comercial-definicion",
+      "relation": "supportedBy",
+      "to": "source:frente-comercial"
+    },
+    {
       "from": "claim:inversion-registrada",
       "relation": "supportedBy",
       "to": "source:case-infraestructura-temporal-b2b"
@@ -10688,6 +10919,36 @@
       "from": "claim:ruta90-adoptado",
       "relation": "supportedBy",
       "to": "source:ruta90"
+    },
+    {
+      "from": "claim:seo-ia-definicion",
+      "relation": "supportedBy",
+      "to": "source:seo-ai"
+    },
+    {
+      "from": "claim:soluciones-catalogo",
+      "relation": "supportedBy",
+      "to": "source:frente-comercial"
+    },
+    {
+      "from": "claim:soluciones-catalogo",
+      "relation": "supportedBy",
+      "to": "source:pagina-web-medicos"
+    },
+    {
+      "from": "claim:soluciones-catalogo",
+      "relation": "supportedBy",
+      "to": "source:ruta90"
+    },
+    {
+      "from": "claim:soluciones-catalogo",
+      "relation": "supportedBy",
+      "to": "source:seo-ai"
+    },
+    {
+      "from": "claim:soluciones-catalogo",
+      "relation": "supportedBy",
+      "to": "source:soluciones"
     },
     {
       "from": "claim:trazabilidad-en-construccion",
@@ -12835,6 +13096,26 @@
       "to": "icp:pyme-dependencia-operativa"
     },
     {
+      "from": "intent:que-es-frente-comercial",
+      "relation": "aboutEntity",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "intent:que-es-frente-comercial",
+      "relation": "belongsToTerritory",
+      "to": "territory:transformacion-digital"
+    },
+    {
+      "from": "intent:que-es-frente-comercial",
+      "relation": "representedBy",
+      "to": "asset:frente-comercial"
+    },
+    {
+      "from": "intent:que-es-frente-comercial",
+      "relation": "supportedBy",
+      "to": "source:frente-comercial"
+    },
+    {
       "from": "intent:que-es-rauvia",
       "relation": "aboutEntity",
       "to": "org:rauvia"
@@ -12875,6 +13156,26 @@
       "to": "source:ruta90"
     },
     {
+      "from": "intent:que-es-seo-para-ia",
+      "relation": "aboutEntity",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "intent:que-es-seo-para-ia",
+      "relation": "belongsToTerritory",
+      "to": "territory:transformacion-digital"
+    },
+    {
+      "from": "intent:que-es-seo-para-ia",
+      "relation": "representedBy",
+      "to": "asset:seo-ai"
+    },
+    {
+      "from": "intent:que-es-seo-para-ia",
+      "relation": "supportedBy",
+      "to": "source:seo-ai"
+    },
+    {
       "from": "intent:que-necesito-antes-crm",
       "relation": "belongsToTerritory",
       "to": "territory:sistemas-comerciales"
@@ -12898,6 +13199,26 @@
       "from": "intent:que-necesito-antes-crm",
       "relation": "targetsICP",
       "to": "icp:pyme-deterioro-comercial"
+    },
+    {
+      "from": "intent:que-soluciones-ofrece-rauvia",
+      "relation": "aboutEntity",
+      "to": "org:rauvia"
+    },
+    {
+      "from": "intent:que-soluciones-ofrece-rauvia",
+      "relation": "belongsToTerritory",
+      "to": "territory:transformacion-digital"
+    },
+    {
+      "from": "intent:que-soluciones-ofrece-rauvia",
+      "relation": "representedBy",
+      "to": "asset:soluciones"
+    },
+    {
+      "from": "intent:que-soluciones-ofrece-rauvia",
+      "relation": "supportedBy",
+      "to": "source:soluciones"
     },
     {
       "from": "intent:reservas-restaurante",
@@ -15747,9 +16068,12 @@
       "intent:prospectos-no-avanzan",
       "intent:que-es-aethryon",
       "intent:que-es-arquitectura-operativa",
+      "intent:que-es-frente-comercial",
       "intent:que-es-rauvia",
       "intent:que-es-ruta90",
+      "intent:que-es-seo-para-ia",
       "intent:que-necesito-antes-crm",
+      "intent:que-soluciones-ofrece-rauvia",
       "intent:reservas-restaurante",
       "intent:restaurante-depende-redes",
       "intent:seo-local-medicos",
@@ -15813,6 +16137,7 @@
       "claim:conversaciones-reportadas",
       "claim:costo-por-conversacion",
       "claim:frente-comercial-alcance",
+      "claim:frente-comercial-definicion",
       "claim:inversion-registrada",
       "claim:presencia-medica-alcance",
       "claim:presencia-profesional-capacidad",
@@ -15825,6 +16150,8 @@
       "claim:rediseno-web-estado",
       "claim:referencias-implementadas",
       "claim:ruta90-adoptado",
+      "claim:seo-ia-definicion",
+      "claim:soluciones-catalogo",
       "claim:trazabilidad-en-construccion",
       "content:wp-15",
       "content:wp-18",

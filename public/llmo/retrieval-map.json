@@ -234,6 +234,36 @@
       ]
     },
     {
+      "id": "answer-family:soluciones-rauvia",
+      "question": "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?",
+      "answerIds": [
+        "answer:soluciones-rauvia"
+      ],
+      "intentIds": [
+        "intent:que-soluciones-ofrece-rauvia"
+      ]
+    },
+    {
+      "id": "answer-family:frente-comercial",
+      "question": "¿Qué es Frente Comercial?",
+      "answerIds": [
+        "answer:frente-comercial"
+      ],
+      "intentIds": [
+        "intent:que-es-frente-comercial"
+      ]
+    },
+    {
+      "id": "answer-family:seo-para-ia",
+      "question": "¿Qué es SEO para IA y qué no promete?",
+      "answerIds": [
+        "answer:seo-para-ia"
+      ],
+      "intentIds": [
+        "intent:que-es-seo-para-ia"
+      ]
+    },
+    {
       "id": "answer-family:entidad-aethryon",
       "question": "¿Qué es AETHRYON y cuándo resulta pertinente?",
       "answerIds": [
@@ -954,6 +984,22 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "query-archetype:que-es-frente-comercial",
+      "queries": [
+        "Frente Comercial de RAUVIA",
+        "¿Qué es Frente Comercial?"
+      ],
+      "intentId": "intent:que-es-frente-comercial",
+      "answerId": "answer:frente-comercial",
+      "familyId": "answer-family:frente-comercial",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "query-archetype:que-es-rauvia",
       "queries": [
         "¿Qué es RAUVIA?"
@@ -984,6 +1030,22 @@
       "evidenceState": "editorial"
     },
     {
+      "id": "query-archetype:que-es-seo-para-ia",
+      "queries": [
+        "¿Qué es SEO para IA y qué no promete?",
+        "¿Qué es SEO para IA?"
+      ],
+      "intentId": "intent:que-es-seo-para-ia",
+      "answerId": "answer:seo-para-ia",
+      "familyId": "answer-family:seo-para-ia",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
       "id": "query-archetype:que-necesito-antes-crm",
       "queries": [
         "¿Qué debe existir antes de un CRM?"
@@ -991,6 +1053,23 @@
       "intentId": "intent:que-necesito-antes-crm",
       "answerId": "answer:tecnologia-sin-estructura",
       "familyId": "answer-family:tecnologia-sin-estructura",
+      "visibility": "public",
+      "publication": {
+        "approved": true,
+        "basis": "editorial_model"
+      },
+      "evidenceState": "editorial"
+    },
+    {
+      "id": "query-archetype:que-soluciones-ofrece-rauvia",
+      "queries": [
+        "Soluciones de RAUVIA",
+        "¿Qué ofrece RAUVIA?",
+        "¿Qué soluciones ofrece RAUVIA y por dónde se empieza?"
+      ],
+      "intentId": "intent:que-soluciones-ofrece-rauvia",
+      "answerId": "answer:soluciones-rauvia",
+      "familyId": "answer-family:soluciones-rauvia",
       "visibility": "public",
       "publication": {
         "approved": true,
@@ -2078,6 +2157,23 @@
       "citationBundleId": "citation:estructura-operativa"
     },
     {
+      "queryArchetypeId": "query-archetype:que-es-frente-comercial",
+      "intentId": "intent:que-es-frente-comercial",
+      "answerId": "answer:frente-comercial",
+      "problemIds": [
+        "problem:oferta-poco-clara"
+      ],
+      "problemRole": "application_context",
+      "entityIds": [
+        "org:rauvia"
+      ],
+      "capabilityIds": [
+        "capability:traduccion-comercial",
+        "capability:representacion-comercial"
+      ],
+      "citationBundleId": "citation:frente-comercial"
+    },
+    {
       "queryArchetypeId": "query-archetype:que-es-rauvia",
       "intentId": "intent:que-es-rauvia",
       "answerId": "answer:entidad-rauvia",
@@ -2111,6 +2207,22 @@
       "citationBundleId": "citation:entidad-ruta90"
     },
     {
+      "queryArchetypeId": "query-archetype:que-es-seo-para-ia",
+      "intentId": "intent:que-es-seo-para-ia",
+      "answerId": "answer:seo-para-ia",
+      "problemIds": [
+        "problem:brecha-capacidad-percepcion"
+      ],
+      "problemRole": "application_context",
+      "entityIds": [
+        "org:rauvia"
+      ],
+      "capabilityIds": [
+        "capability:representacion-comercial"
+      ],
+      "citationBundleId": "citation:seo-para-ia"
+    },
+    {
       "queryArchetypeId": "query-archetype:que-necesito-antes-crm",
       "intentId": "intent:que-necesito-antes-crm",
       "answerId": "answer:tecnologia-sin-estructura",
@@ -2126,6 +2238,24 @@
         "capability:priorizacion"
       ],
       "citationBundleId": "citation:tecnologia-sin-estructura"
+    },
+    {
+      "queryArchetypeId": "query-archetype:que-soluciones-ofrece-rauvia",
+      "intentId": "intent:que-soluciones-ofrece-rauvia",
+      "answerId": "answer:soluciones-rauvia",
+      "problemIds": [
+        "problem:oferta-poco-clara",
+        "problem:ejecucion-sin-continuidad"
+      ],
+      "problemRole": "application_context",
+      "entityIds": [
+        "org:rauvia"
+      ],
+      "capabilityIds": [
+        "capability:traduccion-comercial",
+        "capability:priorizacion"
+      ],
+      "citationBundleId": "citation:soluciones-rauvia"
     },
     {
       "queryArchetypeId": "query-archetype:seo-local-medicos",

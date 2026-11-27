@@ -55,9 +55,12 @@ Generado desde `src/knowledge/intents.ts`; editar esa autoridad y ejecutar `npm 
 | intent:prospectos-no-avanzan | PROBLEM | Tengo prospectos pero no avanzan | territory:sistemas-comerciales | supported | public |
 | intent:que-es-aethryon | ENTITY | ¿Qué es inteligencia estructural y AETHRYON?; ¿Qué es AETHRYON?; ¿Qué es inteligencia estructural? | territory:inteligencia-estructural | canonical | public |
 | intent:que-es-arquitectura-operativa | ENTITY | ¿Qué es arquitectura operativa? | territory:arquitectura-operativa | supported | public |
+| intent:que-es-frente-comercial | ENTITY | ¿Qué es Frente Comercial?; Frente Comercial de RAUVIA | territory:transformacion-digital | canonical | public |
 | intent:que-es-rauvia | ENTITY | ¿Qué es RAUVIA? | territory:inteligencia-estructural | canonical | public |
 | intent:que-es-ruta90 | ENTITY | ¿Qué es Ruta 90? | territory:inteligencia-estructural | canonical | public |
+| intent:que-es-seo-para-ia | ENTITY | ¿Qué es SEO para IA y qué no promete?; ¿Qué es SEO para IA? | territory:transformacion-digital | canonical | public |
 | intent:que-necesito-antes-crm | COMPARISON | ¿Qué debe existir antes de un CRM? | territory:sistemas-comerciales | supported | public |
+| intent:que-soluciones-ofrece-rauvia | ENTITY | ¿Qué soluciones ofrece RAUVIA y por dónde se empieza?; ¿Qué ofrece RAUVIA?; Soluciones de RAUVIA | territory:transformacion-digital | canonical | public |
 | intent:reservas-restaurante | USE_CASE | Reservas para restaurante | territory:activos-digitales | hypothesis | internal |
 | intent:restaurante-depende-redes | PROBLEM | El restaurante depende de redes | territory:activos-digitales | hypothesis | internal |
 | intent:seo-local-medicos | SOLUTION | SEO local para médicos | territory:activos-digitales | supported | public |

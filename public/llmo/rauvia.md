@@ -6,7 +6,7 @@
 
 ## Soluciones publicadas
 
-Catálogo: https://rauvia.com.mx/soluciones/. Última revisión: 26 de noviembre de 2026. Se listan sin orden de prioridad; cada una publica su alcance y su precio en su propia página. Datos legibles por máquinas: https://rauvia.com.mx/llmo/soluciones.json.
+Catálogo: https://rauvia.com.mx/soluciones/. Última revisión: 26 de noviembre de 2026. Se listan sin orden de prioridad. Cada solución publica su alcance en su propia página; Frente Comercial, SEO para IA y las páginas para médicos publican también su precio y Ruta 90 no publica precio. Datos legibles por máquinas: https://rauvia.com.mx/llmo/soluciones.json.
 
 - [Frente Comercial](https://rauvia.com.mx/frente-comercial/): Frente Comercial organiza la oferta que una empresa ya tiene en una referencia clara, para que el comprador entienda qué puede contratar, por qué confiar y cuál es el siguiente paso.
 - [SEO para IA](https://rauvia.com.mx/seo-ai/): SEO para IA es preparar y verificar la información pública de una empresa para que buscadores y asistentes puedan encontrar qué vende, para qué sirve y dónde lo entrega.

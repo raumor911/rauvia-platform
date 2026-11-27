@@ -91,6 +91,11 @@ export const intents:IntentNode[]=[
 for(const [key,label,context,asset] of [['que-es-rauvia','¿Qué es RAUVIA?','org:rauvia','nosotros'],['que-es-aethryon','¿Qué es inteligencia estructural y AETHRYON?','system:aethryon','aethryon'],['que-es-ruta90','¿Qué es Ruta 90?','method:ruta90','ruta90']]){
  intents.push({...group([[key,label,'ENTITY','']], '',[],'',asset,'inteligencia-estructural')[0],status:'canonical',contexts:[context]});
 }
+// L-05 (S-06.2): tres preguntas de entidad nuevas, mismo patrón que las anteriores. Cada una apunta a su página.
+for(const [key,label,asset,extra] of [['que-soluciones-ofrece-rauvia','¿Qué soluciones ofrece RAUVIA y por dónde se empieza?','soluciones',['¿Qué ofrece RAUVIA?','Soluciones de RAUVIA']],['que-es-frente-comercial','¿Qué es Frente Comercial?','frente-comercial',['Frente Comercial de RAUVIA']],['que-es-seo-para-ia','¿Qué es SEO para IA y qué no promete?','seo-ai',['¿Qué es SEO para IA?']]] as [string,string,string,string[]][]){
+ const i={...group([[key,label,'ENTITY','']], '',[],'',asset,'transformacion-digital')[0],status:'canonical' as const,contexts:['org:rauvia']};
+ i.expressions.push(...extra);intents.push(i);
+}
 // Prefer the purpose-specific page instead of the general medical overview.
 for(const i of intents.filter(i=>i.verticals.includes('vertical:medical')&&i.assets.length>1)){
  i.assets=[...new Set([...i.assets.slice(1),i.assets[0]])];i.assetRefs=[...i.assets];i.primaryAsset=i.assets[0];i.sources=i.assets.map(a=>'source:'+a.slice(6));
